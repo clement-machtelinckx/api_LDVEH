@@ -4,16 +4,19 @@ namespace App\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
 use App\Repository\BookRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: BookRepository::class)]
 #[ApiResource]
+#[ORM\HasLifecycleCallbacks]
 class Book
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
-    #[ORM\Column]
+    #[ORM\Column(type: 'integer')]
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
@@ -33,6 +36,17 @@ class Book
 
     #[ORM\Column]
     private ?\DateTimeImmutable $updatedAt = null;
+
+    /**
+     * @var Collection<int, Page>
+     */
+    #[ORM\OneToMany(targetEntity: Page::class, mappedBy: 'book', orphanRemoval: true)]
+    private Collection $page;
+
+    public function __construct()
+    {
+        $this->page = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -94,6 +108,19 @@ class Book
         return $this;
     }
 
+    #[ORM\PrePersist]
+    public function onPrePersist(): void
+    {
+        $this->createdAt = new \DateTimeImmutable();
+        $this->updatedAt = new \DateTimeImmutable();
+    }
+
+    #[ORM\PreUpdate]
+    public function onPreUpdate(): void
+    {
+        $this->updatedAt = new \DateTimeImmutable();
+    }
+
     public function getCreatedAt(): ?\DateTimeImmutable
     {
         return $this->createdAt;
@@ -114,6 +141,36 @@ class Book
     public function setUpdatedAt(\DateTimeImmutable $updatedAt): static
     {
         $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, page>
+     */
+    public function getPage(): Collection
+    {
+        return $this->page;
+    }
+
+    public function addPage(page $page): static
+    {
+        if (!$this->page->contains($page)) {
+            $this->page->add($page);
+            $page->setBook($this);
+        }
+
+        return $this;
+    }
+
+    public function removePage(page $page): static
+    {
+        if ($this->page->removeElement($page)) {
+            // set the owning side to null (unless already changed)
+            if ($page->getBook() === $this) {
+                $page->setBook(null);
+            }
+        }
 
         return $this;
     }

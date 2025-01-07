@@ -4,17 +4,35 @@ namespace App\Entity;
 
 use App\Repository\ChoiceRepository;
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Metadata\ApiResource;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ORM\Entity(repositoryClass: ChoiceRepository::class)]
+#[ApiResource(
+    normalizationContext: ['groups' => ['choice:read']],
+    denormalizationContext: ['groups' => ['choice:write']]
+)]
 class Choice
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
-    #[ORM\Column]
+    #[ORM\Column(type: 'integer')]
+    #[Groups(['choice:read', 'page:read'])]
     private ?int $id = null;
 
     #[ORM\Column(length: 255, nullable: true)]
+    #[Groups(['choice:read', 'choice:write', 'page:read', 'page:write'])]
     private ?string $text = null;
+
+    #[ORM\ManyToOne(targetEntity: Page::class, inversedBy: 'choices')]
+    #[Groups(['choice:read', 'choice:write'])]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?Page $page = null;
+
+    #[ORM\ManyToOne(targetEntity: Page::class)]
+    #[ORM\JoinColumn(nullable: false)]
+    #[Groups(['choice:read', 'choice:write', 'page:read', 'page:write'])]
+    private ?Page $nextPage = null;
 
     public function getId(): ?int
     {
@@ -36,6 +54,30 @@ class Choice
     public function setText(?string $text): static
     {
         $this->text = $text;
+
+        return $this;
+    }
+
+    public function getPage(): ?Page
+    {
+        return $this->page;
+    }
+
+    public function setPage(?Page $page): static
+    {
+        $this->page = $page;
+
+        return $this;
+    }
+
+    public function getNextPage(): ?Page
+    {
+        return $this->nextPage;
+    }
+
+    public function setNextPage(?Page $nextPage): static
+    {
+        $this->nextPage = $nextPage;
 
         return $this;
     }
