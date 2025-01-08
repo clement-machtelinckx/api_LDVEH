@@ -2,12 +2,13 @@
 
 namespace App\Entity;
 
-use ApiPlatform\Metadata\ApiResource;
-use App\Repository\PageRepository;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use App\Repository\PageRepository;
+use ApiPlatform\Metadata\ApiResource;
+use Doctrine\Common\Collections\Collection;
+use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Component\Serializer\Annotation\Groups;
+use Symfony\Component\Serializer\Annotation\MaxDepth;
 
 #[ORM\Entity(repositoryClass: PageRepository::class)]
 #[ApiResource(
@@ -34,8 +35,9 @@ class Page
     /**
      * @var Collection<int, Choice>
      */
-    #[ORM\OneToMany(targetEntity: Choice::class, mappedBy: 'page', orphanRemoval: true, cascade: ['persist'])]
+    #[ORM\OneToMany(targetEntity: Choice::class, mappedBy: 'page', orphanRemoval: true, cascade: ['persist'], fetch: 'LAZY')]
     #[Groups(['page:read', 'page:write'])]
+    #[MaxDepth(1)]
     private Collection $choices;
 
 

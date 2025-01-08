@@ -2,10 +2,11 @@
 
 namespace App\Entity;
 
-use App\Repository\ChoiceRepository;
 use Doctrine\ORM\Mapping as ORM;
+use App\Repository\ChoiceRepository;
 use ApiPlatform\Metadata\ApiResource;
 use Symfony\Component\Serializer\Annotation\Groups;
+use Symfony\Component\Serializer\Annotation\MaxDepth;
 
 #[ORM\Entity(repositoryClass: ChoiceRepository::class)]
 #[ApiResource(
@@ -27,11 +28,13 @@ class Choice
     #[ORM\ManyToOne(targetEntity: Page::class, inversedBy: 'choices')]
     #[Groups(['choice:read', 'choice:write'])]
     #[ORM\JoinColumn(nullable: false)]
+    #[MaxDepth(1)]
     private ?Page $page = null;
 
     #[ORM\ManyToOne(targetEntity: Page::class)]
-    #[ORM\JoinColumn(nullable: false)]
+    #[ORM\JoinColumn(nullable: true)] // a mettre false dans le future 
     #[Groups(['choice:read', 'choice:write', 'page:read', 'page:write'])]
+    #[MaxDepth(1)]
     private ?Page $nextPage = null;
 
     public function getId(): ?int

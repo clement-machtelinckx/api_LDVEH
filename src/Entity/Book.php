@@ -8,39 +8,51 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ORM\Entity(repositoryClass: BookRepository::class)]
-#[ApiResource]
+#[ApiResource(
+    normalizationContext: ['groups' => ['book:read']],
+    denormalizationContext: ['groups' => ['book:write']]
+)]
 #[ORM\HasLifecycleCallbacks]
 class Book
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column(type: 'integer')]
+    #[Groups(['book:read'])]
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
+    #[Groups(['book:read', 'book:write'])]
     private ?string $title = null;
 
     #[ORM\Column(length: 255, nullable: true)]
+    #[Groups(['book:read', 'book:write'])]
     private ?string $author = null;
 
     #[ORM\Column(type: Types::TEXT, nullable: true)]
+    #[Groups(['book:read', 'book:write'])]
     private ?string $desciption = null;
 
     #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
+    #[Groups(['book:read', 'book:write'])]
     private ?\DateTimeInterface $publicationDate = null;
 
     #[ORM\Column]
+    #[Groups(['book:read', 'book:write'])]
     private ?\DateTimeImmutable $createdAt = null;
 
     #[ORM\Column]
+    #[Groups(['book:read', 'book:write'])]
     private ?\DateTimeImmutable $updatedAt = null;
 
     /**
      * @var Collection<int, Page>
      */
     #[ORM\OneToMany(targetEntity: Page::class, mappedBy: 'book', orphanRemoval: true)]
+    #[Groups(['book:read', 'book:write'])]
     private Collection $page;
 
     public function __construct()
