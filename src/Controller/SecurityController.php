@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use Symfony\Bundle\SecurityBundle\Security;
+
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
@@ -14,11 +16,15 @@ use Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenManagerInterface;
 class SecurityController extends AbstractController
 {
     #[Route('/login', name: 'app_login')]
-    public function login(AuthenticationUtils $authenticationUtils): Response
+    public function login(AuthenticationUtils $authenticationUtils, Security $security): Response
     {
+        // Vérifie si l'utilisateur est déjà connecté en tant qu'admin
+        if ($security->isGranted('ROLE_API_ADMIN')) {
+            return $this->redirectToRoute('/api'); // Remplace 'api_home' par le nom correct de ta route
+        }
 
+        // Récupère la dernière erreur de connexion
         $error = $authenticationUtils->getLastAuthenticationError();
-
         $lastUsername = $authenticationUtils->getLastUsername();
 
         return $this->render('security/login.html.twig', [
