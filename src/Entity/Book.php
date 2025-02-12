@@ -34,7 +34,7 @@ class Book
 
     #[ORM\Column(type: Types::TEXT, nullable: true)]
     #[Groups(['book:read', 'book:write'])]
-    private ?string $desciption = null;
+    private ?string $description = null;
 
     #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
     #[Groups(['book:read', 'book:write'])]
@@ -96,14 +96,14 @@ class Book
         return $this;
     }
 
-    public function getDesciption(): ?string
+    public function getDescription(): ?string
     {
-        return $this->desciption;
+        return $this->description;
     }
 
-    public function setDesciption(?string $desciption): static
+    public function setDescription(?string $description): static
     {
-        $this->desciption = $desciption;
+        $this->description = $description;
 
         return $this;
     }
@@ -185,5 +185,10 @@ class Book
         }
 
         return $this;
+    }
+
+    public function __toString(): string
+    {
+        return $this->title; // Vous pouvez ajuster cela pour retourner une chaîne de caractères appropriée
     }
 }
