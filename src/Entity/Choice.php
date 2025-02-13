@@ -84,4 +84,9 @@ class Choice
 
         return $this;
     }
+
+    public function __toString(): string
+    {
+        return $this->id; // Vous pouvez ajuster cela pour retourner une chaîne de caractères appropriée
+    }
 }

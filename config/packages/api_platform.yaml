@@ -3,6 +3,6 @@ api_platform:
     version: 1.0.0
     eager_loading:
         force_eager: false
-        max_joins: 5 # Augmentez cette valeur selon vos besoins
+        max_joins: 5 
     defaults:
-        stateless: true
+        stateless: false

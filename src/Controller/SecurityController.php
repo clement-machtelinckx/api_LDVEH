@@ -3,24 +3,30 @@
 namespace App\Controller;
 
 use Symfony\Bundle\SecurityBundle\Security;
-
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Attribute\Route;
+use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenManagerInterface;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
 
 class SecurityController extends AbstractController
 {
     #[Route('/login', name: 'app_login')]
-    public function login(AuthenticationUtils $authenticationUtils, Security $security): Response
+    public function login(AuthenticationUtils $authenticationUtils, Security $security, JWTTokenManagerInterface $jwtManager, SessionInterface $session): Response
     {
         // Vérifie si l'utilisateur est déjà connecté en tant qu'admin
-        if ($security->isGranted('ROLE_API_ADMIN')) {
-            return $this->redirectToRoute('/api'); // Remplace 'api_home' par le nom correct de ta route
+        if ($security->isGranted('ROLE_ADMIN')) {
+            $user = $security->getUser();
+            $token = $jwtManager->create($user);
+
+            // Stocker le token dans une session
+            $session->set('jwt_token', $token);
+
+            return $this->redirectToRoute('api_doc'); // Remplace 'api_doc' par le nom correct de ta route
         }
 
         // Récupère la dernière erreur de connexion
@@ -36,7 +42,6 @@ class SecurityController extends AbstractController
     #[Route('/api/login', name: 'api_login', methods: ['POST'])]
     public function loginCheck(
         Request $request,
-        AuthenticationUtils $authenticationUtils,
         JWTTokenManagerInterface $jwtManager
     ): JsonResponse {
         // Vérifier si l'utilisateur a bien soumis des identifiants
@@ -59,8 +64,11 @@ class SecurityController extends AbstractController
     }
 
     #[Route('/logout', name: 'app_logout', methods: ['GET'])]
-    public function logout(): void
+    public function logout(SessionInterface $session): void
     {
+        // Supprimer le token de la session
+        $session->remove('jwt_token');
+
         // Symfony va gérer la déconnexion automatiquement
         throw new \LogicException('This method can be blank - it will be intercepted by the logout key on your firewall.');
     }
