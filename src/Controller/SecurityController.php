@@ -26,10 +26,9 @@ class SecurityController extends AbstractController
             // Stocker le token dans une session
             $session->set('jwt_token', $token);
 
-            return $this->redirectToRoute('api_doc'); // Remplace 'api_doc' par le nom correct de ta route
+            return $this->redirectToRoute('api_doc'); 
         }
 
-        // Récupère la dernière erreur de connexion
         $error = $authenticationUtils->getLastAuthenticationError();
         $lastUsername = $authenticationUtils->getLastUsername();
 
@@ -66,10 +65,8 @@ class SecurityController extends AbstractController
     #[Route('/logout', name: 'app_logout', methods: ['GET'])]
     public function logout(SessionInterface $session): void
     {
-        // Supprimer le token de la session
         $session->remove('jwt_token');
 
-        // Symfony va gérer la déconnexion automatiquement
         throw new \LogicException('This method can be blank - it will be intercepted by the logout key on your firewall.');
     }
 }
