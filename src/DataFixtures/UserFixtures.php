@@ -25,7 +25,7 @@ class UserFixtures extends Fixture
         // Hacher le mot de passe avant de le définir
         $hashedPassword = $this->passwordHasher->hashPassword(
             $user,
-            '1234' // Remplacez 'password' par le mot de passe souhaité
+            '1234' 
         );
         $user->setPassword($hashedPassword);
 

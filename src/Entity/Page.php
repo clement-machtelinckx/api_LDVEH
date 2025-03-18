@@ -11,6 +11,9 @@ use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Serializer\Annotation\MaxDepth;
 
 #[ORM\Entity(repositoryClass: PageRepository::class)]
+#[ORM\Table(name: "page", uniqueConstraints: [
+    new ORM\UniqueConstraint(name: "unique_page_number_per_book", columns: ["book_id", "page_number"])
+])]
 #[ApiResource(
     normalizationContext: ['groups' => ['page:read']],
     denormalizationContext: ['groups' => ['page:write']]
@@ -39,6 +42,10 @@ class Page
     #[Groups(['page:read', 'page:write'])]
     #[MaxDepth(1)]
     private Collection $choices;
+
+    #[ORM\Column]
+    #[Groups(['page:read', 'page:write'])]
+    private ?int $pageNumber = null;
 
 
     public function __construct()
@@ -112,6 +119,18 @@ class Page
         return $this;
     }
 
+    public function getPageNumber(): ?int
+    {
+        return $this->pageNumber;
+    }
+
+    public function setPageNumber(int $pageNumber): static
+    {
+        $this->pageNumber = $pageNumber;
+
+        return $this;
+    }
+    
     public function __toString(): string
     {
         return $this->id; // Vous pouvez ajuster cela pour retourner une chaîne de caractères appropriée
