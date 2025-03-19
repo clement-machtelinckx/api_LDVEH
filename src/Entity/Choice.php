@@ -5,6 +5,7 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use App\Repository\ChoiceRepository;
 use ApiPlatform\Metadata\ApiResource;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Serializer\Annotation\MaxDepth;
 
@@ -36,6 +37,10 @@ class Choice
     #[Groups(['choice:read', 'choice:write', 'page:read', 'page:write'])]
     #[MaxDepth(1)]
     private ?Page $nextPage = null;
+
+    #[Groups(['choice:read', 'choice:write'])]
+    private ?int $nextPageNumber = null;
+
 
     public function getId(): ?int
     {
@@ -84,6 +89,22 @@ class Choice
 
         return $this;
     }
+
+    public function setNextPageNumber(?int $pageNumber): static
+    {
+        if ($pageNumber !== null) {
+            // On ne crée pas la page ici ! Juste stocker temporairement le numéro
+            $this->nextPageNumber = $pageNumber;
+        }
+        return $this;
+    }
+    
+    public function getNextPageNumber(): ?int
+    {
+        return $this->nextPage ? $this->nextPage->getPageNumber() : $this->nextPageNumber;
+    }
+    
+
 
     public function __toString(): string
     {

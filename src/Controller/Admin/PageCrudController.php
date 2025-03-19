@@ -31,6 +31,7 @@ class PageCrudController extends AbstractCrudController
                 ->useEntryCrudForm() // Utilisation du CRUD EasyAdmin pour gérer les choix
                 ->setFormTypeOptions([
                     'by_reference' => false,
+                    'allow_add' => true
                 ])
         ];
     }

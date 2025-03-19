@@ -22,7 +22,6 @@ class UserFixtures extends Fixture
         $user->setEmail('example@example.com');
         $user->setRoles(['ROLE_ADMIN']);
 
-        // Hacher le mot de passe avant de le définir
         $hashedPassword = $this->passwordHasher->hashPassword(
             $user,
             '1234' 
