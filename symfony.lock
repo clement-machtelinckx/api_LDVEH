@@ -276,5 +276,8 @@
     },
     "twig/extra-bundle": {
         "version": "v3.19.0"
+    },
+    "zenstruck/foundry": {
+        "version": "v2.0.8"
     }
 }

@@ -3,10 +3,14 @@
 namespace App\Tests\Entity;
 
 use App\Entity\Book;
+use App\Factory\PageFactory;
 use PHPUnit\Framework\TestCase;
+use Zenstruck\Foundry\Test\Factories;
 
 class BookTest extends TestCase
 {
+    use Factories;
+
     public function testGettersAndSetters(): void
     {
         $book = new Book();
@@ -60,7 +64,7 @@ class BookTest extends TestCase
     public function testPageCollection(): void
     {
         $book = new Book();
-        $page = $this->createMock(\App\Entity\Page::class);
+        $page = PageFactory::createOne();
 
         // Test addPage
         $book->addPage($page);
