@@ -23,6 +23,7 @@ class Skill
     #[ORM\Column(type: Types::TEXT, nullable: true)]
     private ?string $effect = null;
 
+
     public function getId(): ?int
     {
         return $this->id;
@@ -70,4 +71,6 @@ class Skill
 
         return $this;
     }
+    
+
 }
