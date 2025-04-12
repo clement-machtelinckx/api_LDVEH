@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use App\Repository\UserRepository;
 use ApiPlatform\Metadata\ApiResource;
@@ -40,6 +42,17 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column]
     #[Groups(['user:write'])]
     private ?string $password = null;
+
+    /**
+     * @var Collection<int, Adventurer>
+     */
+    #[ORM\OneToMany(targetEntity: Adventurer::class, mappedBy: 'user', orphanRemoval: true)]
+    private Collection $adventurers;
+
+    public function __construct()
+    {
+        $this->adventurers = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -114,5 +127,40 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
+    }
+
+    /**
+     * @return Collection<int, Adventurer>
+     */
+    public function getAdventurers(): Collection
+    {
+        return $this->adventurers;
+    }
+
+    public function addAdventurer(Adventurer $adventurer): static
+    {
+        if (!$this->adventurers->contains($adventurer)) {
+            $this->adventurers->add($adventurer);
+            $adventurer->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeAdventurer(Adventurer $adventurer): static
+    {
+        if ($this->adventurers->removeElement($adventurer)) {
+            // set the owning side to null (unless already changed)
+            if ($adventurer->getUser() === $this) {
+                $adventurer->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+
+    public function __toString(): string
+    {
+        return $this->email; // Vous pouvez ajuster cela pour retourner une chaîne de caractères appropriée
     }
 }

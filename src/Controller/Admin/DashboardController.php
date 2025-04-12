@@ -5,11 +5,13 @@ namespace App\Controller\Admin;
 use App\Entity\Book;
 use App\Entity\Page;
 use App\Entity\Choice;
+use App\Entity\Monster;
+use App\Entity\Adventurer;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
-use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 
+use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Attribute\AdminDashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
@@ -37,5 +39,7 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToCrud('Book', 'fas fa-box', Book::class);
         yield MenuItem::linkToCrud('Page', 'fas fa-box', Page::class);
         yield MenuItem::linkToCrud('Choice', 'fas fa-box', Choice::class);
+        yield MenuItem::linkToCrud('Adventurer', 'fas fa-box', Adventurer::class);
+        yield MenuItem::linkToCrud('Monster', 'fas fa-box', Monster::class);
     }
 }
