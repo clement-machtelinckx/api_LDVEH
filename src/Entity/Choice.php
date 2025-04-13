@@ -41,6 +41,9 @@ class Choice
     #[Groups(['choice:read', 'choice:write'])]
     private ?int $nextPageNumber = null;
 
+    #[ORM\Column(nullable: true)]
+    private ?bool $requiresVictory = null;
+
 
     public function getId(): ?int
     {
@@ -108,6 +111,18 @@ class Choice
 
     public function __toString(): string
     {
-        return $this->id; // Vous pouvez ajuster cela pour retourner une chaîne de caractères appropriée
+        return $this->id; 
+    }
+
+    public function isRequiresVictory(): ?bool
+    {
+        return $this->requiresVictory;
+    }
+
+    public function setRequiresVictory(?bool $requiresVictory): static
+    {
+        $this->requiresVictory = $requiresVictory;
+
+        return $this;
     }
 }

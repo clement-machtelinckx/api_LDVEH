@@ -1,3 +1,88 @@
-# pour lancer els test unitaire 
+# 📚 API LDVEH - Livre Dont Vous Êtes Le Héros
 
-php vendor/bin/phpunit
+Projet Symfony API REST pour un moteur de jeu type "Livre Dont Vous Êtes Le Héros".
+
+Développé avec :
+- Symfony 6
+- API Platform
+- Docker / Docker Compose
+- MySQL 8
+- Authentification JWT
+- Tests automatisés avec PHPUnit, Foundry (Zenstruck)
+
+---
+
+## 🚀 Démarrage rapide
+
+### ⚙️ Prérequis
+
+- [Docker](https://www.docker.com/) & Docker Compose installés
+- Git installé
+- Pas besoin de PHP ou MySQL en local — tout passe par Docker
+
+---
+
+### 🧱 1. Cloner le projet
+
+```bash
+git clone https://github.com/clement-machtelinckx/api_LDVEH.git
+cd api_LDVEH
+
+
+🐳 2. Lancer les conteneurs Docker
+bash
+Copy
+Edit
+docker compose up --build -d
+Cela va :
+
+Construire l'image PHP + Composer
+
+Démarrer le conteneur php (Symfony)
+
+Démarrer MySQL sur le port 3307
+
+Vérifie que la BDD est prête :
+
+bash
+Copy
+Edit
+docker compose logs -f db
+✅ Tu dois voir ready for connections.
+
+
+📦 3. Installer les dépendances PHP (dans le conteneur)
+bash
+Copy
+Edit
+docker compose exec php composer install
+🛠️ 4. Initialiser la base de données
+bash
+Copy
+Edit
+docker compose exec php php bin/console doctrine:database:create --if-not-exists
+docker compose exec php php bin/console doctrine:migrations:migrate --no-interaction
+docker compose exec php php bin/console doctrine:fixtures:load --no-interaction
+🧪 5. Lancer les tests
+bash
+Copy
+Edit
+docker compose exec php ./vendor/bin/phpunit
+
+
+🌐 Accès API
+📍 http://localhost:8000
+
+Tu peux tester les routes avec Postman ou Thunder Client.
+L’interface API Platform est dispo à la racine (/).
+
+🔐 Authentification
+Le projet utilise JWT avec [LexikJWTAuthenticationBundle].
+
+Endpoints :
+
+POST /api/login_check pour obtenir un token
+
+Ajoute le token dans Authorization: Bearer <TOKEN> pour les routes protégées
+
+Les utilisateurs sont chargés depuis la BDD via les fixtures (src/DataFixtures/UserFixtures.php).

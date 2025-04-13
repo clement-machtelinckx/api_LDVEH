@@ -2,8 +2,9 @@
 
 namespace App\Service;
 
-use App\Entity\Adventurer;
+use App\Entity\Page;
 use App\Entity\Monster;
+use App\Entity\Adventurer;
 
 class CombatService
 {
@@ -40,4 +41,22 @@ class CombatService
             )
         ];
     }
+
+    public function canAccessPage(Page $page, Adventurer $adventurer): bool
+    {
+        $monster = $page->getMonster();
+
+        if (!$monster || !$page->isCombatIsBlocking()) {
+            return true; // aucun monstre ou le combat est non-bloquant
+        }
+
+        return $this->hasDefeated($adventurer, $monster);
+    }
+
+    public function hasDefeated(Adventurer $adventurer, Monster $monster): bool
+    {
+        // TODO: implémenter cette logique correctement avec un historique ou un flag
+        return true; // temporairement toujours vrai
+    }
+
 }
