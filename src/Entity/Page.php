@@ -47,6 +47,12 @@ class Page
     #[Groups(['page:read', 'page:write'])]
     private ?int $pageNumber = null;
 
+    #[ORM\ManyToOne]
+    private ?Monster $monster = null;
+
+    #[ORM\Column(nullable: true)]
+    private ?bool $combatIsBlocking = null;
+
 
     public function __construct()
     {
@@ -134,6 +140,30 @@ class Page
     public function __toString(): string
     {
         return $this->id; // Vous pouvez ajuster cela pour retourner une chaîne de caractères appropriée
+    }
+
+    public function getMonster(): ?Monster
+    {
+        return $this->monster;
+    }
+
+    public function setMonster(?Monster $monster): static
+    {
+        $this->monster = $monster;
+
+        return $this;
+    }
+
+    public function isCombatIsBlocking(): ?bool
+    {
+        return $this->combatIsBlocking;
+    }
+
+    public function setCombatIsBlocking(?bool $combatIsBlocking): static
+    {
+        $this->combatIsBlocking = $combatIsBlocking;
+
+        return $this;
     }
 
 }
