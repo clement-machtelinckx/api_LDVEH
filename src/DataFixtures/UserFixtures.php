@@ -1,34 +1,48 @@
 <?php
 
+// src/DataFixtures/UserFixtures.php
+
 namespace App\DataFixtures;
 
 use App\Entity\User;
+use App\Entity\Adventurer;
 use Doctrine\Persistence\ObjectManager;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 
 class UserFixtures extends Fixture
 {
-    private UserPasswordHasherInterface $passwordHasher;
-
-    public function __construct(UserPasswordHasherInterface $passwordHasher)
-    {
-        $this->passwordHasher = $passwordHasher;
-    }
+    public function __construct(
+        private UserPasswordHasherInterface $passwordHasher,
+    ) {}
 
     public function load(ObjectManager $manager): void
     {
-        $user = new User();
-        $user->setEmail('example@example.com');
-        $user->setRoles(['ROLE_ADMIN']);
+        $usersData = [
+            ['email' => 'admin@example.com', 'roles' => ['ROLE_ADMIN'], 'password' => 'admin123', 'adventurers' => ['Conan', 'Lara']],
+            ['email' => 'user@example.com',  'roles' => ['ROLE_USER'],  'password' => 'user123',  'adventurers' => ['Frodo', 'Arya']],
+        ];
 
-        $hashedPassword = $this->passwordHasher->hashPassword(
-            $user,
-            '1234' 
-        );
-        $user->setPassword($hashedPassword);
+        foreach ($usersData as $data) {
+            $user = new User();
+            $user->setEmail($data['email']);
+            $user->setRoles($data['roles']);
+            $user->setPassword(
+                $this->passwordHasher->hashPassword($user, $data['password'])
+            );
 
-        $manager->persist($user);
+            $manager->persist($user);
+
+            foreach ($data['adventurers'] as $name) {
+                $adventurer = new Adventurer();
+                $adventurer->setAdventurerName($name);
+                $adventurer->setAbility(rand(5, 12));
+                $adventurer->setEndurance(rand(10, 20));
+                $adventurer->setUser($user);
+                $manager->persist($adventurer);
+            }
+        }
+
         $manager->flush();
     }
 }
