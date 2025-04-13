@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\AdventurerRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: AdventurerRepository::class)]
@@ -25,6 +27,17 @@ class Adventurer
     #[ORM\ManyToOne(inversedBy: 'adventurers')]
     #[ORM\JoinColumn(nullable: false)]
     private ?User $user = null;
+
+    /**
+     * @var Collection<int, FightHistory>
+     */
+    #[ORM\OneToMany(mappedBy: 'adventurer', targetEntity: FightHistory::class, orphanRemoval: true)]
+    private Collection $fightHistories;
+    
+    public function __construct()
+    {
+        $this->fightHistories = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -89,5 +102,34 @@ class Adventurer
     public function __toString(): string
     {
         return $this->AdventurerName; // Vous pouvez ajuster cela pour retourner une chaîne de caractères appropriée
+    }
+
+    /**
+     * @return Collection<int, FightHistory>
+     */
+    public function getFightHistories(): Collection
+    {
+        return $this->fightHistories;
+    }
+    
+    public function addFightHistory(FightHistory $history): static
+    {
+        if (!$this->fightHistories->contains($history)) {
+            $this->fightHistories[] = $history;
+            $history->setAdventurer($this);
+        }
+    
+        return $this;
+    }
+    
+    public function removeFightHistory(FightHistory $history): static
+    {
+        if ($this->fightHistories->removeElement($history)) {
+            if ($history->getAdventurer() === $this) {
+                $history->setAdventurer(null);
+            }
+        }
+    
+        return $this;
     }
 }

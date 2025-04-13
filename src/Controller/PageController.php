@@ -11,51 +11,67 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class PageController extends AbstractController
 {
-    #[Route('/page/{pageId}/adventurer/{adventurerId}', name: 'view_page', methods: ['GET'])]
+    #[Route('/page/{pageId}/adventurer/{adventurerId}/from/{fromPageId}', name: 'app_view_page', methods: ['GET'])]
     public function viewPage(
         int $pageId,
         int $adventurerId,
+        int $fromPageId,
         PageRepository $pageRepo,
         AdventurerRepository $adventurerRepo,
         CombatService $combatService
     ): JsonResponse {
-        $page = $pageRepo->find($pageId);
         $adventurer = $adventurerRepo->find($adventurerId);
-
-        if (!$page || !$adventurer) {
-            return $this->json(['error' => 'Page ou aventurier introuvable'], 404);
+        $fromPage = $pageRepo->find($fromPageId);
+        $targetPage = $pageRepo->find($pageId);
+    
+        if (!$adventurer || !$fromPage || !$targetPage) {
+            return $this->json(['error' => 'Page, page précédente ou aventurier introuvable'], 404);
         }
-
-        if (!$combatService->canAccessPage($page, $adventurer)) {
+    
+        // Vérifie que la page courante est bien une des destinations possibles depuis la page précédente
+        $isAccessible = false;
+        foreach ($fromPage->getChoices() as $choice) {
+            if ($choice->getNextPage()?->getId() === $pageId) {
+                $isAccessible = true;
+                break;
+            }
+        }
+    
+        if (!$isAccessible) {
             return $this->json([
-                'error' => 'Vous devez vaincre le monstre pour accéder à cette page.',
-                'monsterId' => $page->getMonster()?->getId(),
-                'monsterName' => $page->getMonster()?->getMonsterName()
+                'error' => 'Cette page n’est pas accessible depuis la page précédente.',
+                'fromPageId' => $fromPageId,
+                'requestedPageId' => $pageId,
             ], 403);
         }
-        
-
-        // Récupération des choix disponibles pour cette page
+    
+        // Vérifie si le combat de la page précédente est bloquant
+        if (!$combatService->canAccessPage($fromPage, $adventurer)) {
+            return $this->json([
+                'error' => 'Vous devez vaincre le monstre pour continuer.',
+                'monsterId' => $fromPage->getMonster()?->getId(),
+                'monsterName' => $fromPage->getMonster()?->getMonsterName(),
+            ], 403);
+        }
+    
+        // Récupère les choix
         $choices = [];
-        foreach ($page->getChoices() as $choice) {
+        foreach ($targetPage->getChoices() as $choice) {
             $choices[] = [
                 'text' => $choice->getText(),
-                'nextPage' => $choice->getNextPage()->getId(),
+                'nextPage' => $choice->getNextPage()?->getId(),
             ];
         }
-
+    
         return $this->json([
-            'pageId' => $page->getId(),
-            'pageNumber' => $page->getPageNumber(),
-            'content' => $page->getContent(),
-            'monsterId' => $page->getMonster()?->getId(),
-            'monster' => $page->getMonster()?->getMonsterName(),
-            'canAccess' => $combatService->canAccessPage($page, $adventurer),
-            'isBlocking' => $page->isCombatIsBlocking(),
+            'pageId' => $targetPage->getId(),
+            'pageNumber' => $targetPage->getPageNumber(),
+            'content' => $targetPage->getContent(),
+            'monsterId' => $targetPage->getMonster()?->getId(),
+            'monster' => $targetPage->getMonster()?->getMonsterName(),
+            'canAccess' => $combatService->canAccessPage($targetPage, $adventurer),
+            'isBlocking' => $targetPage->isCombatIsBlocking(),
             'choices' => $choices,
-
-
-
         ]);
     }
 }
