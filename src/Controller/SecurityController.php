@@ -2,16 +2,19 @@
 
 namespace App\Controller;
 
+use App\Entity\User;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
+use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenManagerInterface;
-use Symfony\Component\HttpFoundation\Session\SessionInterface;
 
 class SecurityController extends AbstractController
 {
@@ -60,6 +63,40 @@ class SecurityController extends AbstractController
                 'roles' => $user->getRoles()
             ]
         ]);
+    }
+
+    #[Route('/api/register', name: 'app_register', methods: ['POST'])]
+    public function register(
+        Request $request,
+        UserPasswordHasherInterface $passwordHasher,
+        EntityManagerInterface $em
+    ): JsonResponse {
+        $data = json_decode($request->getContent(), true);
+
+        $email = $data['email'] ?? null;
+        $password = $data['password'] ?? null;
+
+        if (!$email || !$password) {
+            return $this->json(['error' => 'Email et mot de passe requis'], 400);
+        }
+
+        // Vérifier si l'utilisateur existe déjà
+        $existingUser = $em->getRepository(User::class)->findOneBy(['email' => $email]);
+        if ($existingUser) {
+            return $this->json(['error' => 'Cet utilisateur existe déjà'], 409);
+        }
+
+        $user = new User();
+        $user->setEmail($email);
+        $user->setRoles(['ROLE_USER']);
+
+        $hashedPassword = $passwordHasher->hashPassword($user, $password);
+        $user->setPassword($hashedPassword);
+
+        $em->persist($user);
+        $em->flush();
+
+        return $this->json(['message' => 'Utilisateur créé avec succès ✅']);
     }
 
     #[Route('/logout', name: 'app_logout', methods: ['GET'])]
