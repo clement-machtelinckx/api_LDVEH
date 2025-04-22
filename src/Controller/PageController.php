@@ -2,8 +2,10 @@
 
 namespace App\Controller;
 
+use App\Repository\AdventureRepository;
 use App\Repository\AdventurerRepository;
 use App\Repository\PageRepository;
+use App\Service\AdventureService;
 use App\Service\CombatService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -18,7 +20,9 @@ class PageController extends AbstractController
         int $adventurerId,
         PageRepository $pageRepo,
         AdventurerRepository $adventurerRepo,
+        AdventureRepository $adventureRepo,
         CombatService $combatService,
+        AdventureService $adventureService,
         ?int $fromPageId = null,
     ): JsonResponse {
         $adventurer = $adventurerRepo->find($adventurerId);
@@ -29,7 +33,15 @@ class PageController extends AbstractController
             return $this->json(['error' => 'Aventurier ou page cible introuvable'], 404);
         }
     
-        // Si fromPageId est fourni, on vérifie qu’on peut accéder à pageId depuis fromPageId
+        $adventure = $adventureRepo->findOneBy([
+            'adventurer' => $adventurer,
+            'isFinished' => false
+        ]);
+    
+        if (!$adventure) {
+            return $this->json(['error' => 'Aucune aventure en cours pour cet aventurier'], 404);
+        }
+    
         if ($fromPageId) {
             if (!$fromPage) {
                 return $this->json(['error' => 'Page précédente introuvable'], 404);
@@ -51,7 +63,6 @@ class PageController extends AbstractController
                 ], 403);
             }
     
-            // On vérifie si le combat sur la page précédente est bloquant
             if (!$combatService->canAccessPage($fromPage, $adventurer)) {
                 return $this->json([
                     'error' => 'Vous devez vaincre le monstre pour continuer.',
@@ -59,9 +70,11 @@ class PageController extends AbstractController
                     'monsterName' => $fromPage->getMonster()?->getMonsterName(),
                 ], 403);
             }
+    
+            // ✅ Mise à jour de la progression
+            $adventureService->updatePage($adventure, $targetPage, $fromPage);
         }
     
-        // Récupère les choix depuis la page cible
         $choices = [];
         foreach ($targetPage->getChoices() as $choice) {
             $choices[] = [
@@ -81,5 +94,6 @@ class PageController extends AbstractController
             'choices' => $choices,
         ]);
     }
+    
     
 }

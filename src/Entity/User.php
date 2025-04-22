@@ -49,9 +49,16 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\OneToMany(targetEntity: Adventurer::class, mappedBy: 'user', orphanRemoval: true)]
     private Collection $adventurers;
 
+    /**
+     * @var Collection<int, Adventure>
+     */
+    #[ORM\OneToMany(targetEntity: Adventure::class, mappedBy: 'user', orphanRemoval: true)]
+    private Collection $adventures;
+
     public function __construct()
     {
         $this->adventurers = new ArrayCollection();
+        $this->adventures = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -162,5 +169,35 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function __toString(): string
     {
         return $this->email; // Vous pouvez ajuster cela pour retourner une chaîne de caractères appropriée
+    }
+
+    /**
+     * @return Collection<int, Adventure>
+     */
+    public function getAdventures(): Collection
+    {
+        return $this->adventures;
+    }
+
+    public function addAdventure(Adventure $adventure): static
+    {
+        if (!$this->adventures->contains($adventure)) {
+            $this->adventures->add($adventure);
+            $adventure->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeAdventure(Adventure $adventure): static
+    {
+        if ($this->adventures->removeElement($adventure)) {
+            // set the owning side to null (unless already changed)
+            if ($adventure->getUser() === $this) {
+                $adventure->setUser(null);
+            }
+        }
+
+        return $this;
     }
 }

@@ -33,6 +33,9 @@ class Adventurer
      */
     #[ORM\OneToMany(mappedBy: 'adventurer', targetEntity: FightHistory::class, orphanRemoval: true)]
     private Collection $fightHistories;
+
+    #[ORM\OneToOne(mappedBy: 'adventurer', cascade: ['persist', 'remove'])]
+    private ?Adventure $adventure = null;
     
     public function __construct()
     {
@@ -130,6 +133,23 @@ class Adventurer
             }
         }
     
+        return $this;
+    }
+
+    public function getAdventure(): ?Adventure
+    {
+        return $this->adventure;
+    }
+
+    public function setAdventure(Adventure $adventure): static
+    {
+        // set the owning side of the relation if necessary
+        if ($adventure->getAdventurer() !== $this) {
+            $adventure->setAdventurer($this);
+        }
+
+        $this->adventure = $adventure;
+
         return $this;
     }
 }
