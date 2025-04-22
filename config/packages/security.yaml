@@ -44,7 +44,8 @@ security:
     access_control:
         - { path: ^/api/login, roles: PUBLIC_ACCESS }
         - { path: ^/api/register, roles: PUBLIC_ACCESS }
-        - { path: ^/api, roles: IS_AUTHENTICATED_FULLY }
+        - { path: ^/api, roles: PUBLIC_ACCESS }
+        - { path: ^/api/my-adventurers, roles: IS_AUTHENTICATED_FULLY }
         - { path: ^/fight, roles: IS_AUTHENTICATED_FULLY }
         - { path: ^/page, roles: IS_AUTHENTICATED_FULLY }
         - { path: ^/login, roles: PUBLIC_ACCESS }
