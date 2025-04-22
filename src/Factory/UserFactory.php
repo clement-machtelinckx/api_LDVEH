@@ -37,6 +37,7 @@ final class UserFactory extends PersistentProxyObjectFactory
             'roles' => [],
         ];
     }
+    
 
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#initialization

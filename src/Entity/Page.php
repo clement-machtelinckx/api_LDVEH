@@ -23,7 +23,7 @@ class Page
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column(type: 'integer')]
-    #[Groups(['page:read'])]
+    #[Groups(['page:read', 'adventurer:read'])]
     private ?int $id = null;
 
     #[ORM\Column(type: 'text', nullable: true)]
@@ -44,7 +44,7 @@ class Page
     private Collection $choices;
 
     #[ORM\Column]
-    #[Groups(['page:read', 'page:write'])]
+    #[Groups(['page:read', 'page:write', 'adventurer:read'])]
     private ?int $pageNumber = null;
 
     #[ORM\ManyToOne]

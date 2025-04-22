@@ -33,7 +33,6 @@ class ChoiceTest extends TestCase
         $page = new Page();
         $choice = new Choice();
 
-        // Test setPage and getPage
         $choice->setPage($page);
         $this->assertSame($page, $choice->getPage());
     }
@@ -43,11 +42,9 @@ class ChoiceTest extends TestCase
         $nextPage = new Page();
         $choice = new Choice();
 
-        // Test setNextPage and getNextPage
         $choice->setNextPage($nextPage);
         $this->assertSame($nextPage, $choice->getNextPage());
 
-        // Test getNextPageNumber when nextPage is set
         $nextPage->setPageNumber(20);
         $this->assertEquals(20, $choice->getNextPageNumber());
     }

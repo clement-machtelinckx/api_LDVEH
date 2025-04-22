@@ -2,26 +2,37 @@
 
 namespace App\Entity;
 
-use App\Repository\AdventurerRepository;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
+use ApiPlatform\Metadata\ApiResource;
+use App\Repository\AdventurerRepository;
+use Doctrine\Common\Collections\Collection;
+use Doctrine\Common\Collections\ArrayCollection;
+use Symfony\Component\Serializer\Annotation\MaxDepth;
 
 #[ORM\Entity(repositoryClass: AdventurerRepository::class)]
+#[ApiResource(
+    normalizationContext: ['groups' => ['adventurer:read']],
+    denormalizationContext: ['groups' => ['adventurer:write']]
+)]
 class Adventurer
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
+    #[Groups(['adventurer:read'])]
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
+    #[Groups(['adventurer:read', 'adventurer:write'])]
     private ?string $AdventurerName = null;
 
     #[ORM\Column]
+    #[Groups(['adventurer:read', 'adventurer:write'])]
     private ?int $Ability = null;
 
     #[ORM\Column]
+    #[Groups(['adventurer:read', 'adventurer:write'])]
     private ?int $Endurance = null;
 
     #[ORM\ManyToOne(inversedBy: 'adventurers')]
@@ -35,6 +46,8 @@ class Adventurer
     private Collection $fightHistories;
 
     #[ORM\OneToOne(mappedBy: 'adventurer', cascade: ['persist', 'remove'])]
+    #[Groups(['adventurer:read', 'adventurer:write'])]
+    // #[MaxDepth(1)]
     private ?Adventure $adventure = null;
     
     public function __construct()

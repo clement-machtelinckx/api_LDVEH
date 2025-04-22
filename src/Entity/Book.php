@@ -21,11 +21,11 @@ class Book
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column(type: 'integer')]
-    #[Groups(['book:read'])]
+    #[Groups(['book:read', 'adventurer:read'])]
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
-    #[Groups(['book:read', 'book:write'])]
+    #[Groups(['book:read', 'book:write', 'adventurer:read'])]
     private ?string $title = null;
 
     #[ORM\Column(length: 255, nullable: true)]

@@ -20,7 +20,7 @@ class MonsterCrudController extends AbstractCrudController
     public function configureFields(string $pageName): iterable
     {
         return [
-            IdField::new('id'),
+            // IdField::new('id'),
             TextField::new('MonsterName'),
             IntegerField::new('Ability'),
             IntegerField::new('Endurance'),

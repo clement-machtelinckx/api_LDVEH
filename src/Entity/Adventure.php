@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\AdventureRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ORM\Entity(repositoryClass: AdventureRepository::class)]
 class Adventure
@@ -11,6 +12,7 @@ class Adventure
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
+    #[Groups(['adventurer:read'])]
     private ?int $id = null;
 
     #[ORM\ManyToOne(inversedBy: 'adventures')]
@@ -19,6 +21,7 @@ class Adventure
 
     #[ORM\ManyToOne]
     #[ORM\JoinColumn(nullable: false)]
+    #[Groups(['adventurer:read'])]
     private ?Book $book = null;
 
     #[ORM\OneToOne(inversedBy: 'adventure', cascade: ['persist', 'remove'])]
@@ -27,18 +30,22 @@ class Adventure
 
     #[ORM\ManyToOne]
     #[ORM\JoinColumn(nullable: false)]
+    #[Groups(['adventurer:read'])]
     private ?Page $currentPage  = null;
 
     #[ORM\ManyToOne]
+    #[Groups(['adventurer:read'])]
     private ?Page $fromLastPage = null;
 
     #[ORM\Column]
+    #[Groups(['adventurer:read'])]
     private ?\DateTimeImmutable $startedAt = null;
 
     #[ORM\Column(nullable: true)]
     private ?\DateTimeImmutable $endedAt = null;
 
     #[ORM\Column(nullable: true)]
+    #[Groups(['adventurer:read'])]
     private ?bool $isFinished = null;
 
     public function __construct()
