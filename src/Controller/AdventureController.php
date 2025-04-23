@@ -41,7 +41,7 @@ class AdventureController extends AbstractController
         $adventurer = new Adventurer();
         $adventurer->setUser($user);
         $adventurer->setAdventurerName($adventurerName);
-        $adventurer->setAbility(random_int(6, 12));
+        $adventurer->setAbility(random_int(18, 20));
         $adventurer->setEndurance(random_int(10, 20));
         $em->persist($adventurer);
     

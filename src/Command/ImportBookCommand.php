@@ -1,11 +1,11 @@
 <?php
-// src/Command/ImportBookCommand.php
 
 namespace App\Command;
 
 use App\Entity\Book;
 use App\Entity\Page;
 use App\Entity\Choice;
+use App\Entity\Monster;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
@@ -22,7 +22,7 @@ class ImportBookCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $json = file_get_contents(__DIR__ . '/../../parsed_book.json');
+        $json = file_get_contents(__DIR__ . '/../../parsed_book_with_monsters.json');
         $data = json_decode($json, true);
 
         $book = new Book();
@@ -30,27 +30,37 @@ class ImportBookCommand extends Command
         $book->setDescription('Importé automatiquement depuis le PDF');
         $this->em->persist($book);
 
-        // map temporaire pour retrouver les pages par numéro
         $pageMap = [];
 
-        // Création des pages sans les choix
+        // Création des pages (et monstres si présents)
         foreach ($data as $entry) {
             $page = new Page();
             $page->setPageNumber($entry['pageNumber']);
             $page->setContent($entry['content']);
             $page->setBook($book);
-            $this->em->persist($page);
 
+            // Création du monstre s'il existe
+            if (isset($entry['monster'])) {
+                $monsterData = $entry['monster'];
+                $monster = new Monster();
+                $monster->setMonsterName($monsterData['monsterName']);
+                $monster->setAbility($monsterData['ability']);
+                $monster->setEndurance($monsterData['endurance']);
+
+                $this->em->persist($monster);
+                $page->setMonster($monster);
+                $page->setCombatIsBlocking(true); // ⚔️ par défaut on bloque l’avancée
+            }
+
+            $this->em->persist($page);
             $pageMap[$entry['pageNumber']] = $page;
         }
 
-        $this->em->flush(); // Pour que toutes les pages aient un ID
+        $this->em->flush();
 
-        // Création des choix maintenant que toutes les pages existent
+        // Création des choix
         foreach ($data as $entry) {
-            if (!isset($entry['choices'])) {
-                continue;
-            }
+            if (!isset($entry['choices'])) continue;
 
             $fromPage = $pageMap[$entry['pageNumber']] ?? null;
             if (!$fromPage) continue;
@@ -66,7 +76,7 @@ class ImportBookCommand extends Command
 
         $this->em->flush();
 
-        $output->writeln('📘 Livre importé avec succès !');
+        $output->writeln('📘 Livre + monstres importés avec succès !');
         return Command::SUCCESS;
     }
 }
