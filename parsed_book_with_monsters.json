@@ -486,7 +486,16 @@
   {
     "pageNumber": 36,
     "content": "Le bois de l'échelle qui monte à la vieille tour de guet, est pourri\net plusieurs barreaux cèdent sous votre poids. Utilisez la Table de\nHasard pour obtenir un chiffre. Si vous tirez un chiffre égal ou\ninférieur à 4, vous tombez. Vous perdez donc 2 points\nd'ENDURANCE et vous vous rendez au 140. Si ce chiffre est\nsupérieur à 4, vous ne tombez pas et vous vous rendez au 323.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Si vous tirez un chiffre égal ou\ninférieur à 4, vous rendez au 140",
+        "nextPage": 140
+      },
+      {
+        "text": "Si vous tirez un chiffre égale ou superieur a 5, vous ne tombez pas et vous vous rendez au 323.",
+        "nextPage": 323
+      }
+    ]
   },
   {
     "pageNumber": 37,
@@ -1954,7 +1963,12 @@
   {
     "pageNumber": 155,
     "content": "A votre approche, leur conversation s'interrompt. Vous constatez\npar l'expression de leurs visages que tous ces gens ont reconnu\nen vous un Seigneur Kaï. Alors, lentement, l'un des hommes tend\nla main vers vous en un geste amical.\n«Seigneur, dit-il, nous avons entendu dire que le Monastère Kaï\navait été détruit et tous ceux qui l'occupaient impitoyablement\nmassacrés. Heureusement, votre présence ici montre qu'il\ns'agissait là de fausses rumeurs. Nous avions peur que tout ne\nsoit perdu. » Vous préférez ne pas leur révéler que le Monastère a\nbel et bien été anéanti : ce serait, en effet, enlever tout espoir à\nces hommes et à ces femmes qui ont fui la ville de Toran dévastée\npar les armées ennemies. Ils ont dû abandonner tous leurs biens\net les voilà qui errent sur les chemins pour tenter d'échapper à la\nguerre, en espérant que les Seigneurs Kaï conduiront à la victoire\nl'armée du Sommerlund. Vous apprenez par leurs récits que le\nport de Toran a été attaqué par mer et par air et que les armées\ndes Maîtres des Ténèbres surpassaient largement en nombre la\ngarnison de la ville. En dépit de la vaillance dont ils ont fait\npreuve, les soldats du Roi ont ainsi dû s'incliner. Vous essayez de\nrassurer de votre mieux ces malheureux réfugiés en affirmant\nque le Sommerlund ne tombera jamais aux mains des\nenvahisseurs. Puis vous leur souhaitez bonne chance au long de\nleur exode et vous reprenez vous-même votre chemin. Rendez-\nvous au 70.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous reprenez vous-même votre chemin. Rendez-\nvous au 70.",
+        "nextPage": 70
+      }
+    ]
   },
   {
     "pageNumber": 156,
