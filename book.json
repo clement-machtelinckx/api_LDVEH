@@ -236,6 +236,7 @@
         "nextPage": 331
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Kraan",
       "ability": 16,
@@ -425,6 +426,7 @@
         "nextPage": 270
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Vordak",
       "ability": 17,
@@ -488,6 +490,7 @@
         "nextPage": 328
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Vordak",
       "ability": 17,
@@ -615,6 +618,7 @@
         "nextPage": 106
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Ours Noir",
       "ability": 16,
@@ -764,6 +768,7 @@
         "nextPage": 325
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Glok",
       "ability": 9,
@@ -865,6 +870,7 @@
         "nextPage": 269
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Vieil Homme Fou",
       "ability": 11,
@@ -984,6 +990,7 @@
         "nextPage": 265
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Loup Maudit",
       "ability": 15,
@@ -1779,6 +1786,7 @@
         "nextPage": 266
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Serpent Ailé",
       "ability": 16,
@@ -1822,6 +1830,7 @@
         "nextPage": 313
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "GLOK",
       "ability": 13,
@@ -1847,6 +1856,7 @@
         "nextPage": 291
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "GLOK",
       "ability": 13,
@@ -2238,6 +2248,7 @@
         "nextPage": 137
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Monstres Des Cryptes",
       "ability": 16,
@@ -2253,6 +2264,7 @@
         "nextPage": 319
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Gluâtre Des Profondeurs",
       "ability": 17,
@@ -2394,6 +2406,7 @@
         "nextPage": 22
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Chef Des Soldats",
       "ability": 15,
@@ -2517,6 +2530,7 @@
         "nextPage": 24
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Garde Du Corps",
       "ability": 11,
@@ -2740,6 +2754,7 @@
         "nextPage": 320
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Gloks",
       "ability": 15,
@@ -2881,6 +2896,7 @@
         "nextPage": 24
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Garde Du Corps",
       "ability": 11,
@@ -2980,6 +2996,7 @@
         "nextPage": 348
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Vipère Des Marais",
       "ability": 16,
@@ -3012,6 +3029,7 @@
         "text": "poursuivre votre\nchemin le long du sentier orienté à l'est.",
         "nextPage": 125
       }],
+      "isBlocking": true,
     "monster": {
       "monsterName": "Kraan",
       "ability": 16,
@@ -3041,6 +3059,7 @@
         "nextPage": 7
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Voleur Au Poignard",
       "ability": 13,
@@ -3220,6 +3239,7 @@
         "nextPage": 197
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Drakkarim",
       "ability": 15,
@@ -3307,6 +3327,7 @@
         "nextPage": 278
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Loup Maudit",
       "ability": 13,
@@ -3336,6 +3357,7 @@
         "nextPage": 82
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Gourgaz",
       "ability": 20,
@@ -3391,6 +3413,7 @@
         "nextPage": 156
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "GLOK",
       "ability": 11,
@@ -3666,6 +3689,7 @@
         "nextPage": 123
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Vordak",
       "ability": 17,
@@ -4252,6 +4276,7 @@
         "nextPage": 117
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Glok",
       "ability": 14,
@@ -4291,6 +4316,7 @@
         "nextPage": 203
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Voleur",
       "ability": 13,
@@ -4306,6 +4332,7 @@
         "nextPage": 193
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Glok + Loup Maudit",
       "ability": 14,
@@ -4339,6 +4366,7 @@
         "nextPage": 123
       }
     ],
+    "isBlocking": true,
     "monster": {
       "monsterName": "Vordak",
       "ability": 18,
@@ -4348,7 +4376,12 @@
   {
     "pageNumber": 343,
     "content": "Vous êtes prisonnier des branches et des racines, mais vous\nparvenez finalement à dégager votre main droite, à empoigner\nvotre Hache et à vous tailler un chemin à travers l'épaisse\nvégétation. Un peu plus loin, la forêt s'éclaircit et vous avancez\ndans cette direction. Votre cape est déchirée en plusieurs\nendroits et votre bras gauche écorché au-dessus du coude. Vous\nperdez 2 points d'ENDURANCE avant de vous rendre au 213.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous rendre au 213.",
+        "nextPage": 213
+      }
+    ]
   },
   {
     "pageNumber": 344,

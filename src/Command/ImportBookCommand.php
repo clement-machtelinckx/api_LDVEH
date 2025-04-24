@@ -38,6 +38,7 @@ class ImportBookCommand extends Command
             $page = new Page();
             $page->setPageNumber($entry['pageNumber']);
             $page->setContent($entry['content']);
+            $page->setCombatIsBlocking($entry['isBlocking'] ?? false);
             $page->setBook($book);
 
             // Optional: endingType ("death" ou "victory")
