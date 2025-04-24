@@ -8,11 +8,11 @@
         "nextPage": 85
       },
       {
-        "text": "Si vous préférez suivre celui de gauche,",
+        "text": "vous préférez suivre celui de gauche,",
         "nextPage": 275
       },
       {
-        "text": "Enfin, si vous maîtrisez la Discipline Kaï du Sixième Sens,",
+        "text": "vous maîtrisez la Discipline Kaï du Sixième Sens,",
         "nextPage": 141
       }
     ]
@@ -22,11 +22,11 @@
     "content": "Tandis que vous courez à perdre haleine dans la forêt qui\ns'épaissit, les cris des Gloks s'évanouissent peu à peu derrière\nvous. Vous les avez presque semés lorsque vous trébuchez\nsoudain en tombant tête la première dans un enchevêtrement de\nbranches basses. Utilisez la Table de Hasard pour obtenir un\nchiffre. Si vous tirez entre 0 et 4, rendez-vous au 343. Entre 5 et\n9, rendez-vous au 276.",
     "choices": [
       {
-        "text": "chiffre. Si vous tirez entre 0 et 4,",
+        "text": "vous tirez entre 0 et 4,",
         "nextPage": 343
       },
       {
-        "text": "9,",
+        "text": "Entre 5 et\n9,",
         "nextPage": 276
       }
     ]
@@ -40,7 +40,7 @@
         "nextPage": 196
       },
       {
-        "text": "préférez décliner son offre et retourner dans les rues populeuses,",
+        "text": "vous préférez décliner son offre et retourner dans les rues populeuses,",
         "nextPage": 144
       }
     ]
@@ -50,7 +50,7 @@
     "content": "C'est un petit canoë à une place, en très mauvais état. Des pièces\nde bois disjointes laissent apparaître des trous en plusieurs\nendroits de la coque et il vous faut les boucher à la hâte avec de\nl'argile. Vous videz ensuite l'embarcation de son eau et il vous\nsemble alors qu'elle est en état de flotter. Vous rangez votre\néquipement à l'avant du canoë, puis vous descendez le cours de\nla rivière en pagayant à l'aide d'un débris de bois ramassé à la\nsurface de l'eau. Un instant plus tard, vous entendez des chevaux\ngaloper dans votre direction, le long de la rive gauche. Si vous\nsouhaitez vous cacher au fond du canoë, rendez-vous au 75. Si\nvous préférez au contraire attirer l'attention des cavaliers,\nrendez-vous au 175. Si vous maîtrisez la Discipline Kaï du\nSixième Sens, rendez-vous au 218.",
     "choices": [
       {
-        "text": "souhaitez vous cacher au fond du canoë,",
+        "text": "vous souhaitez vous cacher au fond du canoë,",
         "nextPage": 75
       },
       {
@@ -58,7 +58,7 @@
         "nextPage": 175
       },
       {
-        "text": "Sixième Sens,",
+        "text": "vous maîtrisez la Discipline Kaï du\nSixième Sens,",
         "nextPage": 218
       }
     ]
@@ -68,7 +68,7 @@
     "content": "Vous avez marché pendant environ une heure lorsque le sentier\ns'oriente peu à peu vers l'est. Vous atteignez bientôt un gué qui\ntraverse un ruisseau coulant vers le sud. Le courant en est rapide\net le lit, rocheux et escarpé. Au-delà du gué, le sentier que vous\nsuivez croise un chemin plus large, orienté nord-sud. En allant\nvers le nord, vous vous éloigneriez de la capitale et vous décidez\ndonc de prendre à droite, en direction du sud. Rendez-vous au\n111.",
     "choices": [
       {
-        "text": "donc de prendre à droite, en direction du sud",
+        "text": "vous décidez donc de prendre à droite, en direction du sud.",
         "nextPage": 111
       }
     ]
@@ -78,11 +78,11 @@
     "content": "Vous entendez au loin des chevaux dont le galop se rapproche et\nvous vous accroupissez derrière un arbre pour voir passer les\ncavaliers sans être vu. Bientôt, vous reconnaissez l'uniforme\nblanc de l'armée du Sommerlund : ce sont des soldats de la\nGarde du Roi. Si vous souhaitez les appeler, rendez-vous au 183.\nSi vous préférez les laisser passer et poursuivre votre chemin à\ntravers la forêt, rendez-vous au 200.",
     "choices": [
       {
-        "text": "Garde du Roi. Si vous souhaitez les appeler,",
+        "text": "vous souhaitez les appeler,",
         "nextPage": 183
       },
       {
-        "text": "travers la forêt,",
+        "text": "vous préférez les laisser passer et poursuivre votre chemin à\ntravers la forêt,",
         "nextPage": 200
       }
     ]
@@ -94,6 +94,10 @@
       {
         "text": "un chiffre entre 0 et 2,",
         "nextPage": 108
+      },
+      {
+        "text": "Entre 3 et 9,",
+        "nextPage": 25
       }
     ]
   },
@@ -102,7 +106,7 @@
     "content": "Votre Sixième Sens vous avertit qu'une terrible bataille fait rage\ndans le sud. Mais votre simple bon sens vous rappelle également\nque le chemin le plus court pour rejoindre la capitale passe\nprécisément par le sud. Rendez-vous au 70 pour établir votre\nitinéraire.",
     "choices": [
       {
-        "text": "précisément par le sud",
+        "text": "Rendez-vous au 70 pour établir votre\nitinéraire.",
         "nextPage": 70
       }
     ]
@@ -112,7 +116,7 @@
     "content": "Vous ne pouvez plus bouger : une force mystérieuse vous\nimmobilise et vos yeux sont attirés par la bouche du squelette.\nMontant des profondeurs de la terre, vous entendez alors un\nbourdonnement grave, comme si des millions d'abeilles en fureur\nétaient rassemblées là. Puis une lueur rougeâtre s'allume dans les\norbites vides du roi mort et le bourdonnement augmente\nd'intensité jusqu'à devenir assourdissant. Vous êtes en présence\nd'une force maléfique plus ancienne et plus puissante encore que\ncelle des Maîtres des Ténèbres. Si vous possédez une Pierre de\nVordak, rendez-vous au 236. Sinon, rendez-vous au 292.",
     "choices": [
       {
-        "text": "Vordak,",
+        "text": "Pierre Vordak,",
         "nextPage": 236
       },
       {
@@ -126,12 +130,12 @@
     "content": "Vous êtes en sueur et vos jambes vous font mal. Un peu plus loin,\nvous apercevez quelques maisonnettes rassemblées. Si vous\nsouhaitez entrer dans l'une de ces maisonnettes pour y prendre\nquelque repos, rendez-vous au 115. Si vous préférez poursuivre\nvotre chemin, rendez-vous au 83.",
     "choices": [
       {
-        "text": "quelque repos,",
-        "nextPage": 115
+        "text": "vous préférez poursuivre\nvotre chemin,",
+        "nextPage": 83
       },
       {
-        "text": "votre chemin,",
-        "nextPage": 83
+        "text": "vous souhaitez entrer dans l'une de ces maisonnettes pour y prendre\nquelque repos,",
+        "nextPage": 115
       }
     ]
   },
@@ -150,7 +154,11 @@
     "content": "Le garde du corps vous observe d'un regard soupçonneux puis\nvous claque la porte au nez. Vous entendez alors des voix à\nl'intérieur de la roulotte, puis, soudain, la porte s'ouvre à\nnouveau et un marchand à l'allure prospère apparaît devant\nvous. Il exige 10 Couronnes pour prix de votre transport. Si vous\navez ces 10 Couronnes et que vous désirez les lui donner, rendez-\nvous au 262. Si vous n'avez pas cette somme, ou si vous ne\nsouhaitez pas la lui payer, rendez-vous au 247.",
     "choices": [
       {
-        "text": "souhaitez pas la lui payer,",
+        "text": "vous désirez les lui donner,",
+        "nextPage": 262
+      },
+      {
+        "text": "vous n'avez pas cette somme, ou si vous ne\nsouhaitez pas la lui payer,",
         "nextPage": 247
       }
     ]
@@ -160,11 +168,11 @@
     "content": "Le chemin aboutit bientôt à une vaste clairière. En son centre se\ndresse un arbre plus haut et plus large que les autres. Nichée\ndans son feuillage, à quelque huit mètres au-dessus du sol, se\ntrouve une grande maison. Aucune échelle ne permet d'y\naccéder, mais l'écorce noueuse de l'arbre offre de nombreux\npoints d'appui et il ne doit pas être trop difficile de grimper là-\nhaut. Si vous souhaitez escalader cet arbre pour inspecter la\nmaison, rendez-vous au 307. Si vous préférez poursuivre votre\nchemin, rendez-vous au 213.",
     "choices": [
       {
-        "text": "maison,",
+        "text": "inspecter la maison,",
         "nextPage": 307
       },
       {
-        "text": "chemin,",
+        "text": "préférez poursuivre votre chemin,",
         "nextPage": 213
       }
     ]
@@ -176,6 +184,10 @@
       {
         "text": "possible au bas de la colline,",
         "nextPage": 106
+      },
+      {
+        "text": "vous voulez dégainer votre arme et vous préparer à combattre,",
+        "nextPage": 43
       }
     ]
   },
@@ -200,7 +212,12 @@
   {
     "pageNumber": 16,
     "content": "Vous parvenez à détacher l'un des chevaux de la roulotte. L'odeur\ndes Loups Maudits et les cris des Gloks qui les chevauchent\nsemblent l'effrayer, mais vous arrivez malgré tout à le lancer au\ngalop en direction des monstrueuses créatures qui s'approchent\nde vous. Les Gloks et leurs montures sataniques ne sont plus qu'à\nune cinquantaine de mètres, la lance pointée en avant. Face à\nface à présent, vous foncez les uns vers les autres. Rendez-vous\nau 192.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous foncez les uns vers les autres. Rendez-vous",
+        "nextPage": 192
+      }
+    ]
   },
   {
     "pageNumber": 17,
@@ -234,11 +251,11 @@
         "nextPage": 239
       },
       {
-        "text": "Camouflage,",
+        "text": "vous maîtrisez la Discipline Kaï du Camouflage,",
         "nextPage": 114
       },
       {
-        "text": "créature,",
+        "text": "vous préférez combattre la créature,",
         "nextPage": 29
       }
     ]
@@ -246,19 +263,57 @@
   {
     "pageNumber": 19,
     "content": "Un peu plus loin, à travers les arbres, vous apercevez des\nbuissons de couleur rouge. Ce sont des Brosses à Potence dont\nles épines écarlates et pointues sont communément appelées des\nDents de Sommeil : elles ont en effet la propriété, lorsqu'on s'y\npique, de provoquer faiblesse et engourdissement. Vous pouvez\néviter les Dents de Sommeil en revenant sur le sentier. Rendez-\nvous alors au 272. Vous pouvez au contraire essayer de vous\nfrayer un chemin parmi ces buissons pour pénétrer plus\nprofondément dans la forêt. Rendez-vous dans ce cas au 119.\nEnfin, si vous maîtrisez la Discipline Kaï de l'Orientation, rendez-\nvous au 69.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous alors au 272.",
+        "nextPage": 272
+      },
+      {
+        "text": "Rendez-vous dans ce cas au 119.",
+        "nextPage": 119
+      },
+      {
+        "text": "si vous maîtrisez la Discipline Kaï de l'Orientation,",
+        "nextPage": 69
+      }
+    ]
   },
   {
     "pageNumber": 20,
     "content": "Il semble que le ou les occupants de la péniche soient partis en\ntoute hâte il y a peu de temps. Les restes d'un repas à moitié\nmangé traînent sur la table ainsi qu'une tasse de Jala encore\nchaud. En fouillant un coffre et un petit placard, vous trouvez un\nSac à Dos, de la Nourriture (l'équivalent de 2 Repas) et un\nPoignard. Si vous souhaitez emporter l'un ou l'autre de ces objets\n(ou tous les trois), n'oubliez pas de les inscrire sur votre Feuille\nd'Aventure. Rendez-vous ensuite au 272.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Poignard. Si vous souhaitez emporter l'un ou l'autre de ces objets\nou tous les trois,",
+        "nextPage": 272
+      }
+    ]
   },
   {
     "pageNumber": 21,
     "content": "Vous avez parcouru trois kilomètres à cheval parmi les arbres\ntouffus lorsque le sol devient soudain marécageux. Utilisez la\nTable de Hasard pour obtenir un chiffre : Si vous tirez un chiffre\ninférieur à 5, votre cheval s'est enfoncé jusqu'au ventre dans une\nboue épaisse. Si le chiffre obtenu est égal ou supérieur à 5, vous\nparvenez à vous éloigner de ce bourbier et vous vous rendez au\n189. Si votre cheval s'est enlisé, utilisez à nouveau la Table de\nHasard pour tirer un autre chiffre. Si vous obtenez cette fois un\nchiffre égal ou inférieur à 7, vous vous enfoncez dans la boue\njusqu'aux aisselles. En poussant un ultime hennissement\ndésespéré, votre cheval, quant à lui, disparaît définitivement\ndans la vase. Si le chiffre que vous avez tiré est supérieur à 7,\nvous réussissez tant bien que mal à vous hisser sur un sol plus\nferme et vous vous rendez au 189. Si vous êtes enlisé jusqu'aux\naisselles, voici votre dernière chance ! Tirez un autre chiffre à\nl'aide de la Table de Hasard. Si vous obtenez tout autre chiffre\nque le 9, le marécage vous engloutit définitivement et votre\nmission s'achève ici, en même temps que votre vie. Si en\nrevanche vous tirez un 9, rendez-vous au 312.",
     "choices": [
       {
-        "text": "revanche vous tirez un 9,",
+        "text": "chiffre inférieur à 5,",
+        "nextPage": 5
+      },
+      {
+        "text": "chiffre égal ou supérieur à 5,",
+        "nextPage": 189
+      },
+      {
+        "text": "chiffre égal ou inférieur à 7,",
+        "nextPage": 7
+      },
+      {
+        "text": "chiffre supérieur à 7,",
+        "nextPage": 189
+      },
+      {
+        "text": "chiffre que le 9,",
+        "nextPage": 9
+      },
+      {
+        "text": "vous tirez un 9,",
         "nextPage": 312
       }
     ]
@@ -268,11 +323,11 @@
     "content": "D'un coup d'épaule, vous bousculez le chef et vous vous enfuyez à\ntoutes jambes le long de la route. Vous entendez aussitôt derrière\nvous le déclic menaçant d'une arbalète que l'on tend. Un frisson\nvous parcourt l'échiné et vous saisissez d'un geste prompt votre\nTable de Hasard afin de tirer un chiffre. Si vous obtenez entre 0\net 4, rendez-vous au 181. Entre 5 et 9, rendez-vous au 145.",
     "choices": [
       {
-        "text": "et 4,",
+        "text": "entre 0 et 4,",
         "nextPage": 181
       },
       {
-        "text": ". Entre 5 et 9,",
+        "text": "5 et 9,",
         "nextPage": 145
       }
     ]
@@ -282,11 +337,11 @@
     "content": "Le couloir aboutit bientôt à une vaste chambre mortuaire dont\nles murs sont gravés de motifs anciens. Dans le coin opposé, un\nescalier de pierre mène à une porte immense. De chaque côté des\nmarches, deux chandelles noires diffusent une faible clarté. Vous\nremarquez alors qu'aucune cire ne coule le long des chandelles,\net tandis que vous vous approchez, vous constatez que leurs\nflammes ne diffusent aucune chaleur. Soucieux de quitter au plus\nvite cet endroit sinistre, vous examinez la serrure de la porte.\nUne broche sculptée semble fermer le panneau, mais un trou de\nserrure apparaît également. Si vous souhaitez retirer la broche,\nrendez-vous au 337. Si vous possédez la Discipline Kaï de la\nMaîtrise Psychique de la Matière, rendez-vous au 151. Enfin, si\nvous avez une Clé d'Or, rendez-vous au 326.",
     "choices": [
       {
-        "text": "serrure apparaît également. Si vous souhaitez retirer la broche,",
+        "text": "souhaitez retirer la broche,",
         "nextPage": 337
       },
       {
-        "text": "Maîtrise Psychique de la Matière,",
+        "text": "possédez la Discipline Kaï de la Maîtrise Psychique de la Matière,",
         "nextPage": 151
       },
       {
@@ -300,11 +355,11 @@
     "content": "Le marchand crie au conducteur de la roulotte de sauter. « On\nnous attaque ! » s'exclame-t-il. Puis il se jette au-dehors par une\nfenêtre circulaire. Si vous souhaitez sauter à votre tour de la\nroulotte, rendez-vous au 234. Si vous préférez essayer d'attraper\nles rênes des chevaux pour prendre le contrôle de l'attelage,\nrendez-vous au 184.",
     "choices": [
       {
-        "text": "roulotte,",
+        "text": "sauter à votre tour de la roulotte,",
         "nextPage": 234
       },
       {
-        "text": "les rênes des chevaux pour prendre le contrôle de l'attelage,",
+        "text": "essayer d'attraper les rênes des chevaux pour prendre le contrôle de l'attelage,",
         "nextPage": 184
       }
     ]
@@ -314,7 +369,7 @@
     "content": "Vous atterrissez si brutalement sur l'autre toit que vous en avez\nle souffle coupé. La tête vous tourne, et vous restez étendu sur le\ndos. Au bout d'une minute environ, vous comprenez enfin que\nvous avez réussi à passer de l'autre côté et que vous êtes\nindemne. Lorsque vous êtes vraiment sûr que tout va bien, vous\nvous relevez d'un bond et vous poussez un cri de victoire pour\nsaluer votre adresse et votre audace. Puis vous vous hâtez de\ngagner le bord opposé du toit où une longue gouttière vous\npermet de descendre dans la rue. Les hautes portes de fer de la\ncitadelle sont ouvertes et un chariot, tiré par deux grands\nchevaux, essaie de sortir dans la rue. Mais les chevaux effrayés\npar le bruit de la foule se cabrent soudain et l'une des roues avant\ndu véhicule se brise en heurtant violemment la porte. Profitant\nde la confusion, vous vous glissez à l'intérieur de la citadelle juste\navant que les gardes aient refermé les lourds battants\nmétalliques. Rendez-vous au 139.",
     "choices": [
       {
-        "text": "métalliques",
+        "text": "avant que les gardes aient refermé les lourds battants\nmétalliques",
         "nextPage": 139
       }
     ]
@@ -328,7 +383,7 @@
         "nextPage": 249
       },
       {
-        "text": "chemin et prendre le couloir orienté au sud,",
+        "text": "rebrousser chemin et prendre le couloir orienté au sud,",
         "nextPage": 100
       }
     ]
@@ -338,12 +393,12 @@
     "content": "Vous suivez ce chemin pendant plus d'une heure en surveillant le\nciel de peur que le Kraan n'attaque à nouveau. A quelque\ndistance devant vous, un grand arbre s'est abattu en travers du\nsentier, et lorsque vous vous en approchez, vous entendez des\nvoix qui s'élèvent de l'autre côté du tronc massif. Si vous\nsouhaitez passer à l'attaque, rendez-vous au 250. Si vous\npréférez écouter ce que disent ces voix, rendez-vous au 52.",
     "choices": [
       {
-        "text": "souhaitez passer à l'attaque,",
-        "nextPage": 250
-      },
-      {
         "text": "préférez écouter ce que disent ces voix,",
         "nextPage": 52
+      },
+      {
+        "text": "passer à l'attaque,",
+        "nextPage": 250
       }
     ]
   },
@@ -352,8 +407,12 @@
     "content": "Une centaine de mètres plus loin, le sentier en croise un autre\norienté nord-sud. Si vous souhaitez prendre la direction du nord,\nrendez-vous au 130. Si vous préférez aller au sud, rendez-vous\nau 147.",
     "choices": [
       {
-        "text": "orienté nord-sud. Si vous souhaitez prendre la direction du nord,",
+        "text": "direction du nord,",
         "nextPage": 130
+      },
+      {
+        "text": "préférez aller au sud,",
+        "nextPage": 147
       }
     ]
   },
@@ -377,12 +436,12 @@
     "content": "Tous ces gens semblent fatigués et affamés. Ils ont parcouru des\ndizaines de kilomètres pour fuir leur ville incendiée. Soudain,\nvous entendez en direction du nord de forts battements d'ailes. «\nDes Kraans ! Cachez-vous ! » hurlent des voix tout au long du\nchemin. En face de vous, un chariot transportant des enfants\ncasse un essieu : l'une des roues s'est coincée dans une ornière\nprofonde. Les enfants, saisis de panique, se mettent à hurler. Si\nvous souhaitez aider ces enfants, rendez-vous au 194. Si vous\npréférez vous mettre à l'abri des arbres, rendez-vous au 261.",
     "choices": [
       {
-        "text": "vous souhaitez aider ces enfants,",
-        "nextPage": 194
-      },
-      {
         "text": "préférez vous mettre à l'abri des arbres,",
         "nextPage": 261
+      },
+      {
+        "text": "aider ces enfants,",
+        "nextPage": 194
       }
     ]
   },
@@ -391,7 +450,7 @@
     "content": "Vous essayez de réconforter de votre mieux l'homme blessé, mais\nses plaies sont profondes et il perd à nouveau connaissance. Vous\nle couvrez alors de sa cape et vous poursuivez votre chemin en\nvous enfonçant plus profondément dans la forêt. Rendez-vous au\n264.",
     "choices": [
       {
-        "text": "vous enfonçant plus profondément dans la forêt",
+        "text": "vous enfonçant plus profondément dans la forêt. Rendez-vous au",
         "nextPage": 264
       }
     ]
@@ -401,11 +460,11 @@
     "content": "Vous avez parcouru environ cinq kilomètres à cheval lorsque\nvous apercevez à quelque distance la silhouette caractéristique de\ncinq grands Loups Maudits. Des Gloks les chevauchent et ils\nsemblent se diriger vers une prairie située au bout du chemin.\nSoudain, l'un des Gloks s'écarte de ses compagnons et revient sur\nses pas, lançant sa monture en direction de l'endroit où vous\nvous trouvez. Si vous souhaitez vous cacher dans les sous-bois et\nle laisser passer, rendez-vous au 176. Si vous préférez le\ncombattre, rendez-vous au 340.",
     "choices": [
       {
-        "text": "le laisser passer,",
+        "text": "vous souhaitez vous cacher dans les sous-bois et le laisser passer,",
         "nextPage": 176
       },
       {
-        "text": "combattre,",
+        "text": "préférez le combattre,",
         "nextPage": 340
       }
     ]
@@ -440,7 +499,7 @@
     "content": "La forêt devient de plus en plus dense, et un enchevêtrement de\nbuissons d'épines recouvre le chemin en s'épaississant à mesure\nque vous avancez. Bien qu'il soit presque entièrement caché par\nces broussailles, vous découvrez un autre sentier orienté vers\nl'est. Celui que vous suivez semble aboutir à un cul-de-sac de\nbuissons inextricables, et vous décidez donc d'emprunter ce\nnouveau chemin en prenant la direction de l'est. Rendez-vous au\n207.",
     "choices": [
       {
-        "text": "nouveau chemin en prenant la direction de l'est",
+        "text": "direction de l'est. Rendez-vous au",
         "nextPage": 207
       }
     ]
@@ -464,11 +523,11 @@
     "content": "Vous vous sentez fatigué et affamé, et il vous faut faire une halte\npour prendre un Repas. Après avoir mangé, vous rebroussez\nchemin jusqu'à la citadelle et vous marchez le long de ses hautes\nmurailles de pierre. Vous découvrez une autre entrée dans le mur\nest, gardée, elle aussi, par deux soldats en armes. Si vous voulez\nvous approcher d'eux et leur raconter votre histoire, rendez-vous\nau 289. Si vous maîtrisez la Discipline Kaï du Camouflage,\nrendez-vous au 282.",
     "choices": [
       {
-        "text": " Si vous voulez\nvous approcher d'eux et leur raconter votre histoire.",
+        "text": "vous voulez vous approcher d'eux et leur raconter votre histoire,",
         "nextPage": 289
       },
       {
-        "text": " Si vous maîtrisez la Discipline Kaï du Camouflage,",
+        "text": "Camouflage,",
         "nextPage": 282
       }
     ]
@@ -478,11 +537,11 @@
     "content": "Pendant plus d'une demi-heure, vous poursuivez votre chemin\ndans la forêt, parmi les fougères et les feuillages touffus des\narbres et des buissons. Bientôt, vous parvenez au bord d'un\nruisseau où vous vous arrêtez quelques instants pour vous laver\nle visage et boire un peu d'eau. Lorsque vous vous sentez\nrafraîchi, vous traversez le ruisseau et vous reprenez votre\nmarche. Quelques instants plus tard, vous sentez une odeur de\nbois brûlé qui semble venir du nord. Si vous souhaitez aller voir\nd'où vient cette odeur, rendez-vous au 128. Si vous préférez ne\npas y prêter attention, rendez-vous au 347.",
     "choices": [
       {
-        "text": "d'où vient cette odeur,",
+        "text": "vous sentez une odeur de\nbois brûlé qui semble venir du nord. Si vous souhaitez aller voir\nd'où vient cette odeur,",
         "nextPage": 128
       },
       {
-        "text": "pas y prêter attention,",
+        "text": "Si vous préférez ne\npas y prêter attention,",
         "nextPage": 347
       }
     ]
@@ -502,7 +561,7 @@
     "content": "Vous contournez la clairière avec précaution en progressant à\nl'abri des arbres et en surveillant les huttes pour y déceler toute\nprésence éventuelle de l'ennemi. Bientôt, vous rejoignez le\nsentier et vous vous éloignez en hâte du Bois des Brumes.\nRendez-vous au 105.",
     "choices": [
       {
-        "text": "sentier et vous vous éloignez en hâte du Bois des Brumes",
+        "text": "vous éloignez en hâte du Bois des Brumes.\nRendez-vous au 105.",
         "nextPage": 105
       }
     ]
@@ -512,11 +571,11 @@
     "content": "Trois soldats galopent le long de la rive, suivis de près par les\nGloks montés sur des Loups Maudits qui poussent des\ngrognements agressifs. La rive est surélevée et, bientôt, le chef\ndes Gloks vous aperçoit au fond du canoë. Il ordonne alors à cinq\nde ses congénères de vous tirer dessus à l'aide de leurs arcs. Un\ninstant plus tard, une pluie de flèches noires s'abat sur vous. Si\nvous voulez essayer de vous enfuir en pagayant le plus vite\npossible le long de la rivière, rendez-vous au 174. Si vous\npréférez gagner la rive opposée et tenter de vous cacher à l'abri\ndes arbres, rendez-vous au 116.",
     "choices": [
       {
-        "text": "possible le long de la rivière,",
+        "text": "vous enfuir en pagayant le plus vite\npossible le long de la rivière,",
         "nextPage": 174
       },
       {
-        "text": "des arbres,",
+        "text": "gagner la rive opposée et tenter de vous cacher à l'abri\ndes arbres,",
         "nextPage": 116
       }
     ]
@@ -526,15 +585,15 @@
     "content": "Vous suivez le sentier pendant environ une heure et vous arrivez\nalors à un croisement. Si vous souhaitez continuer vers l'est,\nrendez-vous au 86. Si vous préférez aller au nord, rendez-vous au\n238. Si vous choisissez de vous aventurer au sud, rendez-vous au\n157. Enfin, s'il vous semble plus judicieux de prendre la direction\nde l'ouest, rendez-vous au 147.",
     "choices": [
       {
-        "text": "alors à un croisement. Si vous souhaitez continuer vers l'est,",
+        "text": "est,",
         "nextPage": 86
       },
       {
-        "text": ". Si vous préférez aller au nord,",
+        "text": "au nord,",
         "nextPage": 238
       },
       {
-        "text": ". Si vous choisissez de vous aventurer au sud,",
+        "text": "au sud,",
         "nextPage": 157
       },
       {
@@ -569,6 +628,10 @@
       {
         "text": "un chiffre entre 0 et 4,",
         "nextPage": 277
+      },
+      {
+        "text": "Entre 5 et 9,",
+        "nextPage": 338
       }
     ]
   },
@@ -577,7 +640,7 @@
     "content": "Ces hommes ne sont pas, en réalité, ce qu'ils semblent être. La\ntunique de leur chef est authentique, mais elle est tachée de sang\nautour du col comme si son véritable propriétaire avait été tué.\nQuant aux armes dont disposent ces prétendus soldats, elles\nn'appartiennent pas à l'armée ; elles sont, en effet, richement\nouvragées comme celles que fabriquent les armuriers du\nRoyaume de Durenor. Le chef porte une arbalète en bandoulière,\net une tentative de fuite équivaudrait à un suicide. Vous décidez\nalors de combattre ces trois hommes, sinon ils vous tueront dès\nque vous aurez lâché votre arme. Rendez-vous au 180.",
     "choices": [
       {
-        "text": "que vous aurez lâché votre arme",
+        "text": "Vous décidez\nalors de combattre ces trois hommes, sinon ils vous tueront dès\nque vous aurez lâché votre arme. Rendez-vous au 180.",
         "nextPage": 180
       }
     ]
@@ -593,20 +656,33 @@
       {
         "text": "au 90. Enfin, si vous maîtrisez la Discipline Kaï du Sixième Sens,",
         "nextPage": 296
+      },
+      {
+        "text": "refuser et contourner le lac à cheval,",
+        "nextPage": 90
       }
     ]
   },
   {
     "pageNumber": 47,
     "content": "A bout de souffle et le visage ruisselant de sueur, vous vous\nfrayez un chemin vers le sommet de la colline. Mais, soudain,\nune immense ombre noire se dessine devant vous : c'est un\nKraan qui tournoie dans le ciel tandis que les Gloks, dans votre\ndos, gagnent peu à peu du terrain. Souhaitez-vous attendre les\nGloks pour les affronter en prenant avantage de votre position\nélevée ? Rendez-vous dans ce cas au 136. Préférez-vous serrer\nles dents et poursuivre l'escalade jusqu'au sommet ? Vous vous\nrendrez alors au 322.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Préférez-vous serrer\nles dents et poursuivre l'escalade jusqu'au sommet ? Vous vous\nrendrez alors au 322.",
+        "nextPage": 322
+      },
+      {
+        "text": "affronter en prenant avantage de votre position\nélevée ? Rendez-vous dans ce cas au 136.",
+        "nextPage": 136
+      }
+    ]
   },
   {
     "pageNumber": 48,
     "content": "Votre Sixième Sens vous avertit que ces soldats ne sont pas ce\nqu'ils semblent être. Vous percevez une aura maléfique autour\nd'eux : ce sont des serviteurs des Maîtres des Ténèbres. Il vous\nfaut prendre aussitôt la fuite avant qu'ils vous aperçoivent.\nRendez-vous au 243.",
     "choices": [
       {
-        "text": "faut prendre aussitôt la fuite avant qu'ils vous aperçoivent",
+        "text": "fuite avant qu'ils vous aperçoivent.\nRendez-vous au 243.",
         "nextPage": 243
       }
     ]
@@ -616,11 +692,11 @@
     "content": "Tandis que vous lisez l'inscription, une ombre se dessine derrière\nle paravent. Utilisez la Table de Hasard pour obtenir un chiffre :\nSi vous tirez un chiffre entre 0 et 4, rendez-vous au 339. Entre 5\net 9, rendez-vous au 60.",
     "choices": [
       {
-        "text": "Si vous tirez un chiffre entre 0 et 4,",
+        "text": "un chiffre entre 0 et 4,",
         "nextPage": 339
       },
       {
-        "text": "et 9,",
+        "text": "Entre 5\net 9,",
         "nextPage": 60
       }
     ]
@@ -630,8 +706,12 @@
     "content": "Vous entendez les échos d'un combat qui se déroule à quelque\ndistance. Si vous souhaitez poursuivre votre chemin vers le nord\nen direction de la bataille, rendez-vous au 97. Si vous préférez\néviter ce combat, prenez une autre direction en vous rendant au\n243.",
     "choices": [
       {
-        "text": "en direction de la bataille,",
+        "text": "nord en direction de la bataille,",
         "nextPage": 97
+      },
+      {
+        "text": "autre direction en vous rendant au 243.",
+        "nextPage": 243
       }
     ]
   },
@@ -640,11 +720,11 @@
     "content": "Après avoir escaladé en toute hâte la berge boisée de la rivière,\nvous apercevez un peu plus loin la palissade en rondins du camp\nfortifié dressé autour de la capitale. La bataille fait rage à trois\nkilomètres environ et le mur en rondins s'est écroulé en plusieurs\nendroits, là où les Maîtres des Ténèbres ont porté leur attaque.\nLe camp est presque désert, la plupart des soldats ayant dû le\nquitter pour rejoindre le champ de bataille. Une porte est\naménagée dans la palissade. Si vous souhaitez vous en\napprocher, rendez-vous au 288. Si vous préférez escalader le\nmur de rondins, rendez-vous au 221.",
     "choices": [
       {
-        "text": "approcher,",
+        "text": "vous en\napprocher,",
         "nextPage": 288
       },
       {
-        "text": "mur de rondins,",
+        "text": "escalader le mur de rondins,",
         "nextPage": 221
       }
     ]
@@ -654,20 +734,26 @@
     "content": "A présent que vous vous êtes approché, vous vous apercevez qu'il\nne s'agit pas là de voix humaines. On dirait plutôt des\ngrognements et des cris d'animaux. Si vous maîtrisez la\nDiscipline Kaï de la Communication animale, rendez-vous au\n225. Sinon, montez sur le tronc de l'arbre pour aller voir qui se\ncache derrière. Rendez-vous pour cela au 250.",
     "choices": [
       {
-        "text": "Discipline Kaï de la Communication animale,",
+        "text": "Communication animale,",
         "nextPage": 225
+      },
+      {
+        "text": "aller voir qui se cache derrière.",
+        "nextPage": 250
       }
     ]
   },
   {
     "pageNumber": 53,
     "content": "Une douleur fulgurante vous déchire soudain la jambe droite :\nvous venez de vous tordre la cheville et vous trébuchez en\ntombant tête la première. Entraîné par le poids de votre corps,\nvous roulez alors sur vous-même le long du flanc de la colline\navant d'atterrir enfin dans un fossé où vous perdez connaissance.\nVous êtes réveillé par une autre douleur: quelque chose s'enfonce\ndans votre poitrine. C'est le fer de la lance d'un Glok. La créature\nvous plaque au sol en vous gratifiant d'un sourire diabolique, et,\nd'un geste instinctif, vous essayez de saisir votre arme, mais elle\na disparu. Vous êtes désormais sans défense contre les Gloks\ncruels et avant que toute lumière s'éteigne, vous apercevez dans\nune ultime vision l'extrémité de la lance qui s'abat à présent sur\nvotre gorge. Votre mission vient de prendre fin.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 54,
     "content": "Il semble que le ciel soit resté sourd à vos prières car un instant\nplus tard, une lance siffle à vos oreilles et vient se planter dans le\ncou de votre cheval. Celui-ci pousse un hennissement de douleur\npuis s'abat en avant. Vous roulez tous deux dans la poussière du\nchemin et vous vous retrouvez coincé sous le cadavre de votre\nmonture. Avant de fermer les yeux à jamais, vous avez le temps\nde saisir une dernière vision : les fers de lance que les Gloks vous\nauront, dans quelques secondes, enfoncés profondément dans la\npoitrine. Votre mission a échoué.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 55,
@@ -687,22 +773,27 @@
   {
     "pageNumber": 56,
     "content": "Vous entendez un cri au-dessus des arbres : c'est un Kraan, une\nde ces grandes créatures volantes et sanguinaires qui comptent\nparmi les plus redoutables serviteurs des Maîtres des Ténèbres.\nVous plongez aussitôt dans l'épaisseur des fougères pour vous\ncacher jusqu'à ce que le cri du monstre se soit évanoui au\nlointain. Rendez-vous à présent au 222.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous cacher jusqu'à ce que le cri du monstre se soit évanoui au\nlointain.",
+        "nextPage": 222
+      }
+    ]
   },
   {
     "pageNumber": 57,
     "content": "La cabane n'a qu'une seule pièce meublée d'une table de bois, de\ndeux bancs et d'un lit fait de bottes de paille attachées ensemble.\nUn tapis brodé orne le plancher et plusieurs bouteilles contenant\ndes liquides de différentes couleurs sont posées sur la table. Si\nvous souhaitez examiner ces bouteilles, rendez-vous au 164. Si\nvous voulez soulever le tapis, rendez-vous au 109. Si vous\npréférez quitter la cabane et inspecter l'écurie, rendez-vous au\n308.",
     "choices": [
       {
-        "text": "vous souhaitez examiner ces bouteilles,",
+        "text": "examiner ces bouteilles,",
         "nextPage": 164
       },
       {
-        "text": "vous voulez soulever le tapis,",
+        "text": "soulever le tapis,",
         "nextPage": 109
       },
       {
-        "text": "préférez quitter la cabane et inspecter l'écurie,",
+        "text": "inspecter l'écurie,",
         "nextPage": 308
       }
     ]
@@ -712,11 +803,11 @@
     "content": "Vous vous lancez sur la route au pas de course en maintenant\nune allure régulière. A l'ouest, l'armée des Maîtres des Ténèbres\nressemble à une immense tache d'encre noire qui se serait\nrépandue entre les montagnes. Vous courez depuis vingt minutes\nenviron lorsque vous apercevez à votre droite une meute de\nLoups Maudits qui avancent en file indienne le long d'une\ncorniche. Si vous souhaitez vous plaquer contre les rochers qui\nbordent la route et attendre qu'ils soient passés, rendez-vous au\n286. Si vous préférez continuer à courir en tirant votre épée\npour vous préparer à toute éventualité, rendez-vous au 160.",
     "choices": [
       {
-        "text": "bordent la route et attendre qu'ils soient passés,",
+        "text": "vous souhaitez vous plaquer contre les rochers qui\nbordent la route et attendre qu'ils soient passés,",
         "nextPage": 286
       },
       {
-        "text": "pour vous préparer à toute éventualité,",
+        "text": "vous préférez continuer à courir en tirant votre épée\npour vous préparer à toute éventualité,",
         "nextPage": 160
       }
     ]
@@ -726,11 +817,15 @@
     "content": "Scrutant l'obscurité, vous distinguez quelques marches taillées\ngrossièrement dans la terre et vous vous apercevez que cette\ngrotte est en fait l'entrée d'un tunnel. Vous descendez\nprudemment les marches glissantes et vous découvrez au bas de\ncet escalier de fortune une petite boîte en argent posée sur une\nétagère. Si vous souhaitez ouvrir la boîte, rendez-vous au 124. Si\nvous préférez ressortir et poursuivre votre chemin, rendez-vous\nau 106. Si vous choisissez enfin de vous enfoncer plus avant dans\nle tunnel, rendez-vous au 211.",
     "choices": [
       {
-        "text": "étagère. Si vous souhaitez ouvrir la boîte,",
+        "text": "vous souhaitez ouvrir la boîte,",
         "nextPage": 124
       },
       {
-        "text": "le tunnel,",
+        "text": "vous préférez ressortir et poursuivre votre chemin,",
+        "nextPage": 106
+      },
+      {
+        "text": "vous choisissez enfin de vous enfoncer plus avant dans\nle tunnel,",
         "nextPage": 211
       }
     ]
@@ -738,17 +833,28 @@
   {
     "pageNumber": 60,
     "content": "Avant que les ténèbres vous engloutissent, vous apercevez l'éclat\nd'une longue lame de couteau. Votre nom s'ajoutera à la liste des\nvictimes du Sage et de son fils, le Voleur, celui-là même qui vient\nde vous trancher la gorge. Votre mission est terminée.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 61,
     "content": "Vous atteignez enfin la palissade en rondins du camp fortifié qui\na été dressé autour de la ville. Et tandis que vous courez vers le\nposte de garde, vous entendez les soldats pousser des\nacclamations enthousiastes : les Dieux en soient loués, ils vous\nont reconnu en dépit de vos vêtements déchirés et de votre triste\napparence ! Votre cape est en lambeaux, votre visage écorché et\ntaché de sang, et vous êtes couvert de la tête aux pieds de la\npoussière du cimetière.\nPataugeant dans un petit ruisseau qu'il vous faut traverser, vous\navancez en titubant vers l'une des entrées du camp. Peu à peu, la\nvision que vous venez d'avoir dans le cimetière vous apparaît\ndans toute son horreur ; vous êtes épuisé, affaibli, glacé et, juste\navant de perdre connaissance, vous vous laissez tomber dans les\nbras tendus de deux soldats accourus à votre rencontre. Rendez-\nvous au 268.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous vous laissez tomber dans les\nbras tendus de deux soldats accourus à votre rencontre. Rendez-\nvous au 268.",
+        "nextPage": 268
+      }
+    ]
   },
   {
     "pageNumber": 62,
     "content": "Les « soldats » sont étendus raides morts à vos pieds. C'étaient\ndes brigands qui détroussaient les réfugiés de Toran et pillaient\nles maisons et les fermes abandonnées de la région.\nEn fouillant leurs cadavres, vous trouvez 28 Pièces d'Or et deux\nSacs à Dos qui contiennent des provisions équivalant à trois\nRepas. Ils étaient armés d'une Arbalète et de Trois Epées.\nL'Arbalète a été endommagée au cours du combat, mais les trois\nEpées sont intactes, et vous pouvez en emporter une si vous le\nsouhaitez. Vous modifiez, en conséquence, votre Feuille\nd'Aventure, vous rangez soigneusement vos nouvelles\nacquisitions et vous jetez un coup d'œil en direction de l'ouest\npour voir si la voie est libre. Enfin, vous vous remettez en route\nvers le camp fortifié, dressé à l'extérieur de la ville. Rendez-vous\nau 288.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous vous remettez en route\nvers le camp fortifié, dressé à l'extérieur de la ville. Rendez-vous\nau 288.",
+        "nextPage": 288
+      }
+    ]
   },
   {
     "pageNumber": 63,
@@ -794,7 +900,7 @@
     "content": "Surpris, vous faites volte-face et vous voyez courir vers vous un\nrobuste sergent accompagné de deux soldats. Tous trois\nbrandissent leurs épées, prêts à frapper. A votre tour, vous\ndégainez votre arme car, apparemment, ils vont vous attaquer\nsans prendre la peine de poser des questions. Mais, soudain, le\nsergent ordonne à ses hommes de s'arrêter. Il a, en effet, reconnu\nvotre cape de Seigneur Kaï. Tous trois remettent aussitôt leurs\népées au fourreau et se confondent en excuses. Le sergent vous\naccompagne ensuite vers l'Entrée Principale et envoie un de ses\nhommes chercher le capitaine de la garde. Vous êtes bientôt\naccueilli par un soldat de haute taille et de belle allure qui écoute\nattentivement votre récit. Lorsque vous avez fini de lui raconter\nvotre périlleux voyage jusqu'à la capitale, vous remarquez qu'il a\nles larmes aux yeux. Il vous demande alors de le suivre et vous\nparcourez les salons et les couloirs somptueux du palais royal.\nTout ici n'est que splendeur et magnificence. Enfin, vous arrivez\ndevant une haute porte sculptée gardée par deux soldats revêtus\nd'armures en argent. Dans quelques instants, vous serez devant\nle Roi. Rendez-vous au 350.",
     "choices": [
       {
-        "text": "le Roi",
+        "text": "Dans quelques instants, vous serez devant\nle Roi. Rendez-vous au 350.",
         "nextPage": 350
       }
     ]
@@ -887,7 +993,12 @@
   {
     "pageNumber": 73,
     "content": "Vous ramenez votre cape autour de vos épaules et vous vous\nfondez dans les rochers et les feuillages. Puis vous observez\nattentivement les nouveaux arrivants et vous vous apercevez\nalors avec un frisson d'horreur qu'il ne s'agit pas du tout de\nsoldats du Roi. Ce sont, en fait, des Drakkarims qui comptent\nparmi les plus cruels serviteurs des Maîtres des Ténèbres. Ils se\nsont déguisés en gardes de l'armée royale pour n'être pas\nreconnus et pouvoir ainsi traverser la forêt sans encombre. Votre\ninitiation aux Disciplines Kaï vous a sauvé la vie et vous\nremerciez intérieurement vos maîtres. Quelques instants plus\ntard, vous avez quitté la rive du cours d'eau et vous vous enfoncez\ndans la forêt en prenant garde à ne pas faire de bruit. Rendez-\nvous au 243.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous vous enfoncez\ndans la forêt en prenant garde à ne pas faire de bruit. Rendez-\nvous au 243.",
+        "nextPage": 243
+      }
+    ]
   },
   {
     "pageNumber": 74,
@@ -942,32 +1053,50 @@
     "content": "Au moment où la roulotte passe devant vous, vous faites un bond\nen avant et vous parvenez à vous y agripper; vous vous retrouvez\nsur l'échelon inférieur d'un petit escabeau qui permet d'accéder à\nla porte arrière du véhicule. Vous vous redressez avec précaution\nen vous efforçant de maintenir votre prise et, soudain, la partie\nsupérieure de la porte qui vous fait face s'ouvre à la volée. Le\nvisage furieux d'un garde du corps apparaît alors dans\nl'encadrement. Si vous souhaitez lui expliquer que vous êtes un\nSeigneur Kaï, porteur d'un message urgent destiné au Roi,\nrendez-vous au 132. Si vous choisissez de lui offrir de l'Or pour\npayer votre voyage jusqu'à la capitale, rendez-vous au 12. Enfin,\nsi vous décidez d'attaquer le garde avec votre arme, rendez-vous\nau 220.",
     "choices": [
       {
-        "text": "Seigneur Kaï, porteur d'un message urgent destiné au Roi,",
+        "text": "Si vous souhaitez lui expliquer que vous êtes un\nSeigneur Kaï, porteur d'un message urgent destiné au Roi,\nrendez-vous au 132",
         "nextPage": 132
       },
       {
         "text": "payer votre voyage jusqu'à la capitale,",
         "nextPage": 12
+      },
+      {
+        "text": "Enfin,\nsi vous décidez d'attaquer le garde avec votre arme, rendez-vous\nau 220.",
+        "nextPage": 220
       }
     ]
   },
   {
     "pageNumber": 79,
     "content": "Vous arrivez à un petit pont qui traverse un ruisseau au cours\nrapide. De l'autre côté du pont, le chemin s'oriente au sud. Vous\ndécidez de franchir le pont et de suivre le sentier. Rendez-vous\nau 204.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Vous\ndécidez de franchir le pont et de suivre le sentier. Rendez-vous\nau 204.",
+        "nextPage": 204
+      }
+    ]
   },
   {
     "pageNumber": 80,
     "content": "Vous trébuchez en arrière et vous franchissez la porte d'entrée à\nreculons, les mains crispées sur votre poitrine en feu. De la\nfumée jaillit de la boutique et il vous faut prendre la fuite avant\nque le Sage et son Voleur vous attrapent. Vous parvenez à\nrejoindre la grand-rue et vous vous fondez dans la foule. Rendez-\nvous au 7.",
-    "choices": []
+    "choices": [
+      {
+        "text": " Vous parvenez à\nrejoindre la grand-rue et vous vous fondez dans la foule. Rendez-\nvous au 7.",
+        "nextPage": 7
+      }
+    ]
   },
   {
     "pageNumber": 81,
     "content": "Une heure plus tard environ, les Kraans et leurs terribles\ncavaliers disparaissent en direction de l'ouest. Les réfugiés,\ntremblants de peur, sortent alors de la forêt, et vous entendez au\nmême moment des chevaux au galop s'approcher de l'endroit où\nvous êtes. Ce sont des soldats de la cavalerie royale qui portent\nl'uniforme blanc des armées de Sa Majesté. Si vous souhaitez leur\nfaire signe, rendez-vous au 183. Si vous préférez poursuivre\nvotre chemin vers le sud en longeant la lisière de la forêt, rendez-\nvous au 200.",
     "choices": [
       {
-        "text": "faire signe,",
+        "text": "Si vous souhaitez leur\nfaire signe, rendez-vous au 183",
         "nextPage": 183
+      },
+      {
+        "text": "Si vous préférez poursuivre\nvotre chemin vers le sud en longeant la lisière de la forêt, rendez-\nvous au 200.",
+        "nextPage": 200
       }
     ]
   },
@@ -1048,7 +1177,12 @@
   {
     "pageNumber": 87,
     "content": "Concentrant votre pouvoir de Seigneur Kaï sur la serrure, vous\nessayez de vous en représenter le mécanisme. Peu à peu son\nimage se forme dans votre esprit et vous constatez qu'il est vieux\net usé, mais qu'il fonctionne toujours. L'intensité de votre\nconcentration commence à faiblir dangereusement lorsque vous\nentendez enfin un faible déclic qui témoigne que vos efforts n'ont\npas été vains. Il est plus facile d'ôter la broche qui, lentement, se\ndégage de ses attaches, puis tombe sur le sol. La porte de granité\ntourne alors sur des gonds invisibles et la faible clarté qui baigne\nle cimetière se répand dans le caveau. Le passage menant à\nl'extérieur est envahi de ronces qui vous écorchent le visage et les\nmains tandis que vous vous hissez au-dehors. Puis, soudain, au\nmoment où vous reparaissez enfin à l'air libre, un bruit vous fait\nsursauter. Vous vous retournez et vous apercevez la tête d'un\ncadavre décapité, une tête de mort aux chairs décomposées :\ncette tête vous regarde et semble rire de toutes ses dents. Saisi\nd'une panique aveugle, vous vous mettez aussitôt à courir de\ntoute la force de vos jambes et vous traversez l'effroyable\ncimetière en direction de la porte sud de la capitale. Rendez-vous\nau 61.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous traversez l'effroyable\ncimetière en direction de la porte sud de la capitale. Rendez-vous\nau 61.",
+        "nextPage": 61
+      }
+    ]
   },
   {
     "pageNumber": 88,
@@ -1087,7 +1221,7 @@
     "content": "La nuit tombe et vous vous retrouvez bientôt dans une obscurité\ntotale. Il ne servirait à rien de poursuivre votre chemin, car vous\nvous perdriez à coup sûr. Vous attachez donc votre cheval à un\narbre, vous vous étendez sur le sol en vous couvrant de votre\ncape et vous sombrez dans un sommeil agité. Rendez-vous au 18.",
     "choices": [
       {
-        "text": "cape et vous sombrez dans un sommeil agité",
+        "text": "vous sombrez dans un sommeil agité",
         "nextPage": 18
       }
     ]
@@ -1115,7 +1249,7 @@
     "content": "Vous plongez pour vous mettre à l'abri : il était temps, car une\npluie de flèches noires jaillies de la forêt s'abat en sifflant à\nl'endroit où vous vous trouviez quelques secondes plus tôt. Vous\nramenez votre cape sur vos épaules : sa couleur verte vous\npermet de vous fondre dans la végétation et vous vous mettez à\ncourir dans la forêt pour fuir le plus loin possible de vos\nassaillants. Tous les environs sont infestés de Gloks, et il faut\nvous échapper au plus vite. Vous courez sans vous arrêter\npendant plus d'une heure, et vous arrivez enfin sur un chemin\nforestier qui mène droit vers l'est. Vous décidez de suivre ce\nchemin en surveillant sans cesse les alentours de peur de voir\nsurgir un ennemi. Rendez-vous au 13.",
     "choices": [
       {
-        "text": "surgir un ennemi",
+        "text": "Vous décidez de suivre ce\nchemin en surveillant sans cesse les alentours",
         "nextPage": 13
       }
     ]
@@ -1147,6 +1281,10 @@
       {
         "text": "vous souhaitez suivre ce chemin étroit en direction du nord,",
         "nextPage": 240
+      },
+      {
+        "text": "Si vous préférez aller au sud, rendez-vous\nau 5.",
+        "nextPage": 5
       }
     ]
   },
@@ -1203,7 +1341,7 @@
     "content": "Le couloir glacial tourne brusquement vers l'est et vous\napercevez au loin une lueur verdâtre qui diffuse une faible clarté.\nVous constatez bientôt que le couloir aboutit à une grande pièce,\net que l'étrange lumière provient d'une sorte de coupe, posée sur\nle haut dossier d'un trône de granité. Devant le trône, se trouve\nune statue sur son socle. Elle représente un serpent ailé dont le\ncorps a la forme d'un S. Si vous souhaitez vous asseoir sur ce\ntrône, rendez-vous au 161. Si vous préférez examiner la statue,\nrendez-vous au 133. Enfin, s'il vous semble plus judicieux de\nchercher une sortie qui vous permettrait de quitter cet endroit,\nrendez-vous au 257.",
     "choices": [
       {
-        "text": "trône,",
+        "text": "Si vous souhaitez vous asseoir sur ce\ntrône, rendez-vous au 161.,",
         "nextPage": 161
       },
       {
@@ -1211,7 +1349,7 @@
         "nextPage": 133
       },
       {
-        "text": "chercher une sortie qui vous permettrait de quitter cet endroit,",
+        "text": "s'il vous semble plus judicieux de\nchercher une sortie qui vous permettrait de quitter cet endroit,\nrendez-vous au 257.",
         "nextPage": 257
       }
     ]
@@ -1219,7 +1357,12 @@
   {
     "pageNumber": 101,
     "content": "Le tumulte de la bataille se dissipe derrière vous, mais, dans le\nsilence qui lui succède, une voix intérieure vous traite de poltron\net vous reproche d'avoir abandonné un homme en danger. Vous\nessayez alors de faire taire votre conscience en vous disant que\nvotre mission est beaucoup plus importante, car ce n'est pas\nseulement la vie de ce jeune magicien qui est menacée, mais celle\nde tous vos compatriotes si vous n'atteignez pas vivant la capitale\ndu royaume. Or soudain, vous apercevez un peu plus loin une\nmeute de Gloks : vous vous mettez aussitôt à couvert pour leur\néchapper, mais il est trop tard, ils vous ont vu et il ne vous reste\nplus qu'à vous enfuir en courant aussi vite que possible. Rendez-\nvous au 281.",
-    "choices": []
+    "choices": [
+      {
+        "text": "il ne vous reste\nplus qu'à vous enfuir en courant aussi vite que possible. Rendez-\nvous au 281.",
+        "nextPage": 281
+      }
+    ]
   },
   {
     "pageNumber": 102,
@@ -1238,6 +1381,10 @@
       {
         "text": "nouveau chemin orienté à l'est,",
         "nextPage": 13
+      },
+      {
+        "text": "Si vous\npréférez poursuivre votre route en direction du nord-est, rendez-\nvous au 287.",
+        "nextPage": 287
       }
     ]
   },
@@ -1258,7 +1405,16 @@
   {
     "pageNumber": 105,
     "content": "Un peu plus loin, vous apercevez un Corbeau, d'un noir de jais,\nperché sur la branche d'un vieux chêne. Si vous maîtrisez la\nDiscipline Kaï de la Communication Animale, vous pouvez\nappeler cet oiseau en vous rendant au 298. Sinon, rendez-vous\nau 335.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Si vous maîtrisez la\nDiscipline Kaï de la Communication Animale, vous pouvez\nappeler cet oiseau en vous rendant au 298.",
+        "nextPage": 298
+      },
+      {
+        "text": "Sinon, rendez-vous\nau 335.",
+        "nextPage": 335
+      }
+    ]
   },
   {
     "pageNumber": 106,
@@ -1287,12 +1443,22 @@
   {
     "pageNumber": 108,
     "content": "Tout semble se dérouler au ralenti tandis que vous décrivez dans\nles airs un grand arc de cercle. Dans la rue au-dessous, vous\ndistinguez la foule qui grouille sur toute la largeur de la chaussée\net vous apercevez, sur votre droite, un nid de moineaux, blotti\ndans une gouttière. Vous entendez alors leurs pépiements affolés\nlorsque vous atterrissez avec fracas sur le toit d'en face. C'est\nmalheureusement la dernière chose que vous entendrez, car les\ntuiles cèdent sous le choc et vous passez au travers des quatre\nétages de VAuberge de la Pantoufle Verte. Inutile de préciser que\nvous vous êtes rompu le cou plusieurs fois et qu'il ne reste de\nvous qu'un misérable petit tas de chair et d'os brisés. Votre\nmission s'achève ici, en même temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 109,
     "content": "Sous le tapis, vous ne trouvez que de la poussière ! Vous pouvez à\nprésent examiner les bouteilles en vous rendant au 164. Vous\npouvez également quitter la cabane et inspecter l'écurie ; vous\nvous rendrez alors au 308.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Vous\npouvez également quitter la cabane et inspecter l'écurie ; vous\nvous rendrez alors au 308.",
+        "nextPage": 308
+      },
+      {
+        "text": "Vous pouvez à\nprésent examiner les bouteilles en vous rendant au 164.",
+        "nextPage": 164
+      }
+    ]
   },
   {
     "pageNumber": 110,
@@ -1309,7 +1475,11 @@
     "content": "Quelques minutes après avoir quitté le croisement, vous\napercevez un peu plus loin une petite cabane en rondins à côté\nd'une écurie. Vous vous approchez et vous jetez un coup d'oeil\ndans la cabane à travers le carreau d'une fenêtre. L'endroit\nsemble désert. Si vous souhaitez entrer dans la cabane, rendez-\nvous au 57. Si vous préférez inspecter l'écurie, rendez-vous au\n308.",
     "choices": [
       {
-        "text": "vous au 57. Si vous préférez inspecter l'écurie,",
+        "text": "entrer dans la cabane,",
+        "nextPage": 57
+      },
+      {
+        "text": "inspecter l'écurie,",
         "nextPage": 308
       }
     ]
@@ -1317,14 +1487,23 @@
   {
     "pageNumber": 112,
     "content": "Soudain, le gros rocher derrière lequel vous vous êtes caché roule\nsur lui-même, poussé par deux Gloks hurlants qui vous font face\net qui ont visiblement l'intention de vous tuer. L'entrée de la\ngrotte est étroite, et vous ne pouvez combattre qu'un Glok à la\nfois. Vous devrez donc les affronter à tour de rôle.\nHABILETÉ ENDURANCE\nPremier GLOK 13 10\nDeuxième GLOK 12 10\nSi vous êtes vainqueur, vous pouvez explorer la grotte plus avant\nen vous rendant au 33. Mais vous pouvez également quitter les\nlieux et descendre le flanc de la colline ; rendez-vous pour cela au\n248.",
-    "choices": []
+    "choices": [
+      {
+        "text": "explorer la grotte plus avant",
+        "nextPage": 33
+      },
+      {
+        "text": "descendre le flanc de la colline",
+        "nextPage": 248
+      }
+    ]
   },
   {
     "pageNumber": 113,
     "content": "Vous avez marché pendant plus d'une demi-heure lorsque vous\napercevez des fleurs d'un rouge vif qui poussent sur un\nmonticule. Vous reconnaissez aussitôt cette plante : c'est du\nLaumspur, une herbe rare très recherchée pour ses vertus\ncuratives. Vous cueillez alors une bonne poignée de cette herbe\nque vous rangez dans votre Sac à Dos. Elle vous servira à\nrécupérer des points d'ENDURANCE lorsque vous en mangerez.\nChaque dose de Laumspur vous rendra 3 points d'ENDURANCE\net vous avez cueilli là l'équivalent de 2 doses. Vous refermez votre\nSac à Dos et vous poursuivez votre route. Si vous souhaitez vous\ndiriger vers le nord-est, rendez-vous au 347. Si vous préférez\naller à l'est, rendez-vous au 295.",
     "choices": [
       {
-        "text": "diriger vers le nord-est,",
+        "text": "vous diriger vers le nord-est,",
         "nextPage": 347
       },
       {
@@ -1338,7 +1517,7 @@
     "content": "Vous amenez votre cheval à se coucher et vous le recouvrez, ainsi\nque vous-même, de branches et de feuilles mortes. Vous\nentendez les battements d'ailes du Kraan lorsqu'il passe au-\ndessus des arbres : il se met à tournoyer au-dessus de vous, mais\nrepart bientôt en direction du lac qu'il traverse dans l'autre sens.\nVous décidez alors de partir au plus vite de peur qu'il ne revienne\navec quelques-uns de ses compagnons. Rendez-vous au 239.",
     "choices": [
       {
-        "text": "avec quelques-uns de ses compagnons",
+        "text": "partir au plus vite de peur qu'il ne revienne",
         "nextPage": 239
       }
     ]
@@ -1348,12 +1527,16 @@
     "content": "Vous entrez d'un pas chancelant dans la première maison et vous\nvous écroulez sur le sol, complètement épuisé. Vous sentez alors\nune odeur de viande cuite et vous apercevez une marmite\nsuspendue au-dessus des braises d'un feu mourant. Une grande\ntable de chêne est dressée au centre de la pièce : de toute\névidence, le ou les habitants de cette maison l'ont quittée en\ntoute hâte le matin même. Au milieu de la table sont posées une\ncruche d'eau et une miche de pain. Si vous voulez prendre\nrapidement un Repas, rendez-vous au 150. Si vous souhaitez\ninspecter la maison, rendez-vous au 177. Si vous préférez quitter\nles lieux dès maintenant et reprendre votre course, rendez-vous\nau 83.",
     "choices": [
       {
-        "text": "rapidement un Repas,",
+        "text": "prendre rapidement un Repas,",
         "nextPage": 150
       },
       {
         "text": "inspecter la maison,",
         "nextPage": 177
+      },
+      {
+        "text": "préférez quitter les lieux dès maintenant et reprendre votre course,",
+        "nextPage": 83
       }
     ]
   },
@@ -1382,7 +1565,7 @@
     "content": "Vous lancez votre cheval au galop le long du chemin droit. Vous\napercevez à l'horizon les contours de Holmgard dont les hautes\nmurailles et les tours scintillent sous les rayons du soleil. Le\nsentier que vous suivez rejoint bientôt une grande route orientée\nnord-sud. C'est la voie principale qui relie le port de Toran à la\ncapitale. Vous prenez donc la direction de Holmgard en\nsurveillant le ciel clair de peur que n'y apparaisse la silhouette\nd'un Kraan. Rendez-vous au 224.",
     "choices": [
       {
-        "text": "d'un Kraan",
+        "text": "direction de Holmgard en surveillant le ciel clair",
         "nextPage": 224
       }
     ]
@@ -1392,8 +1575,12 @@
     "content": "Les Brosses à Potence déchirent votre cape et vous écorchent\nbras et jambes tandis que vous vous frayez un chemin dans leur\nenchevêtrement d'épines. Un quart d'heure plus tard, vous sortez\nenfin des buissons et vous poursuivez votre route d'un pas\nchancelant, mais parmi les arbres cette fois. Les plaies\noccasionnées par les Brosses à Potence vous coûtent 2 points\nd'ENDURANCE, à déduire de votre total actuel. Alors que vous\ncontinuez d'avancer, vous vous sentez pris de vertiges et vos\npaupières vous semblent lourdes. Bientôt, vous arrivez au bord\nd'une pente escarpée et couverte d'arbres. Si vous souhaitez vous\nlaisser glisser le long de cette pente en prenant bien garde à ne\npas tomber, rendez-vous au 226. Si, en revanche, vous ne voulez\npas prendre le risque de descendre la pente dans l'état de\nsomnolence où vous êtes, vous marcherez le long du bord en\nvous rendant au 38.",
     "choices": [
       {
-        "text": "pas tomber,",
+        "text": "glisser le long de cette pente en prenant bien garde à ne pas tomber,",
         "nextPage": 226
+      },
+      {
+        "text": "marcherez le long du bord en vous rendant au 38.",
+        "nextPage": 38
       }
     ]
   },
@@ -1408,6 +1595,10 @@
       {
         "text": "protéger, tandis que vous galoperez droit devant,",
         "nextPage": 54
+      },
+      {
+        "text": "sauter au même moment de votre cheval,",
+        "nextPage": 84
       }
     ]
   },
@@ -1422,13 +1613,22 @@
       {
         "text": "judicieux de dégainer votre arme et de l'attaquer,",
         "nextPage": 283
+      },
+      {
+        "text": "appeler cet homme,",
+        "nextPage": 342
       }
     ]
   },
   {
     "pageNumber": 122,
     "content": "Dès que le cheval sent que vous communiquez directement avec\nlui, il se calme. Vous vous approchez alors de ce magnifique\nétalon et vous lui caressez la tête d'un geste rassurant. Vous\nsentez à présent qu'il ne sait plus très bien s'il doit avoir peur ou\npas. Vous montez ensuite sur son dos et vous le lancez sur le\nchemin, en prenant cette fois encore la direction du sud. Rendez-\nvous au 206.",
-    "choices": []
+    "choices": [
+      {
+        "text": "direction du sud.",
+        "nextPage": 206
+      }
+    ]
   },
   {
     "pageNumber": 123,
@@ -1447,23 +1647,32 @@
   {
     "pageNumber": 124,
     "content": "Dans la boîte, vous trouvez 15 Pièces d'Or et une Clé d'Argent. Si\nvous souhaitez conserver la Clé, inscrivez-la sur votre Feuille\nd'Aventure dans la case Objets Spéciaux. Vous pouvez continuer\nà explorer le tunnel en vous rendant au 211. Vous pouvez\négalement descendre le flanc de la colline en vous rendant au\n106.",
-    "choices": []
+    "choices": [
+      {
+        "text": "explorer le tunnel en vous rendant au 211.",
+        "nextPage": 211
+      },
+      {
+        "text": "descendre le flanc de la colline en vous rendant au\n106.",
+        "nextPage": 106
+      }
+    ]
   },
   {
     "pageNumber": 125,
     "content": "Le chemin mène à une grande clairière. Vous remarquez aussitôt\nsur le sol d'étranges empreintes de pattes griffues. De toute\névidence, des Kraans se sont posés ici même. A en juger par le\nnombre d'empreintes et la surface qu'elles couvrent, ce sont au\nmoins cinq de ces répugnantes créatures qui se sont rassemblées\nlà dans les dernières douze heures. De l'autre côté de la clairière,\ndeux chemins s'enfoncent dans la forêt. L'un est orienté à l'ouest,\nl'autre au sud. Si vous souhaitez emprunter le sentier orienté au\nsud, rendez-vous au 27. Si vous préférez prendre celui qui va\nvers l'ouest, rendez-vous au 214. Enfin, si vous maîtrisez la\nDiscipline Kaï de l'Orientation, rendez-vous au 301.",
     "choices": [
       {
-        "text": "sud,",
+        "text": " si vous maîtrisez la\nDiscipline Kaï de l'Orientation, rendez-vous au 301.",
+        "nextPage": 301
+      },
+      {
+        "text": "emprunter le sentier orienté au sud,",
         "nextPage": 27
       },
       {
-        "text": "vers l'ouest,",
+        "text": "prendre celui qui va\nvers l'ouest,",
         "nextPage": 214
-      },
-      {
-        "text": "Discipline Kaï de l'Orientation,",
-        "nextPage": 301
       }
     ]
   },
@@ -1472,11 +1681,11 @@
     "content": "Vous chevauchez de plus en plus loin dans la forêt et, dans votre\nfor intérieur, vous remerciez le Prince de vous avoir donné un si\nbon cheval, car bien que le sol soit entièrement recouvert d'un\nenchevêtrement de buissons et de racines, l'étalon blanc n'a\njamais fait le moindre faux pas. Bientôt les Loups Maudits sont\nloin derrière vous et vous arrêtez votre cheval. La lumière\ncommence à décliner, il fait presque nuit, à présent. Si vous\nsouhaitez poursuivre votre chemin dans la même direction,\nrendez-vous au 46. Si vous préférez aller à gauche (dans une\ndirection parallèle au chemin que vous avez laissé loin derrière),\nrendez-vous au 143.",
     "choices": [
       {
-        "text": "souhaitez poursuivre votre chemin dans la même direction,",
+        "text": "poursuivre votre chemin dans la même direction,",
         "nextPage": 46
       },
       {
-        "text": "direction parallèle au chemin que vous avez laissé loin derrière),",
+        "text": "aller à gauche (dans une\ndirection parallèle au chemin que vous avez laissé loin derrière),",
         "nextPage": 143
       }
     ]
@@ -1484,15 +1693,20 @@
   {
     "pageNumber": 127,
     "content": "Après avoir marché pendant une heure, les Drakkarims\ns'arrêtent soudain tandis qu'une énorme créature couverte\nd'écaillés grises s'approche sur le chemin. Lorsque la bête\nrépugnante se trouve tout près de vous, son haleine fétide vous\nfait grimacer. Le monstre pousse un rugissement et vous saisit la\ntête entre ses pattes palmées. Vous entendez alors un\ncraquement: votre colonne vertébrale vient de se briser à hauteur\nde votre cou. C'est d'ailleurs le dernier son qui vous parvient en\nce bas monde, car vous mourez à l'instant même. Votre mission\ns'achève ici.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 128,
     "content": "Vous écartez prudemment le feuillage, et une vision d'horreur\ns'offre aussitôt à vous : un peu plus loin, dans une petite clairière,\ntrois Gloks ont attaché un homme à un poteau et sont en train de\nmettre le feu à un tas de broussailles disposé à ses pieds. Sa\ntunique est celle d'un Garde-Frontière, il appartient au régiment\nchargé de surveiller les frontières occidentales du royaume, en\nbordure des monts Durncrag. L'homme a reçu une sévère\ncorrection et il est à demi inconscient. Si vous maîtrisez la\nDiscipline Kaï de la Chasse, rendez-vous au 297. Dans le cas\ncontraire, vous n'avez plus qu'à attaquer les Gloks pour sauver la\nvie du soldat. Rendez-vous alors au 336.",
     "choices": [
       {
-        "text": "Discipline Kaï de la Chasse,",
+        "text": "maîtrisez la\nDiscipline Kaï de la Chasse,",
         "nextPage": 297
+      },
+      {
+        "text": "attaquer les Gloks pour sauver la\nvie du soldat. Rendez-vous alors au 336.",
+        "nextPage": 336
       }
     ]
   },
@@ -1513,27 +1727,36 @@
   {
     "pageNumber": 130,
     "content": "Vous parvenez bientôt à une petite clairière. En son centre, vous\ntrouvez un banc taillé dans le tronc d'un arbre.\nVous avez faim, et il vous faut prendre un Repas, sinon, vous\nperdrez 3 points d'ENDURANCE. Lorsque vous avez fini de\nmanger, vous pourrez quitter la clairière par le sud en vous\nrendant au 28. Mais si vous préférez emprunter le sentier plus\nétroit qui mène vers l'est en s'enfonçant dans la forêt, rendez-\nvous au 201.",
-    "choices": []
+    "choices": [
+      {
+        "text": "prendre un Repas, sinon, vous\nperdrez 3 points d'ENDURANCE. Lorsque vous avez fini de\nmanger, vous pourrez quitter la clairière par le sud en vous\nrendant au 28.",
+        "nextPage": 28
+      },
+      {
+        "text": "préférez emprunter le sentier plus\nétroit qui mène vers l'est en s'enfonçant dans la forêt,",
+        "nextPage": 201
+      }
+    ]
   },
   {
     "pageNumber": 131,
     "content": "Vous avez parcouru environ cinq cents mètres lorsque vous\nentendez des cris et des bruits semblables au fracas du tonnerre.\nEn vous approchant, vous apercevez bientôt une clairière que\nvous connaissez déjà. C'est là que s'élèvent les ruines de Raumas,\nun ancien temple de la forêt. Une troupe de Gloks dont vous\névaluez le nombre à vingt-cinq ou trente sont en train d'attaquer\nles ruines qu'ils encerclent. D'autres Gloks, plus nombreux\nencore, sont étendus raides morts ou agonisent parmi les\nvestiges de marbre du temple.\nL'assaut des Gloks survivants ne faiblit pas pour autant et ils\ncontinuent de mener l'attaque contre les ruines. Qui s'y cache ?\nVous l'ignorez. Or, soudain, un éclair jaillit et vient frapper le\npremier rang des Gloks. Les monstres revêtus de leurs armures\nsont alors projetés en tous sens, trébuchant et roulant sur eux-\nmêmes. L'un d'eux, plus grand que les autres et couvert de la tête\naux pieds d'une grosse cotte de mailles noire, lance des jurons à\nses congénères et les incite à repartir à l'attaque en les frappant à\ngrands coups d'un fouet aux lanières de fer barbelé. Vous\ndégainez votre arme et vous vous approchez de la clairière en\nrestant à l'abri du feuillage. Vous essayez de voir qui défend ainsi\nles ruines du temple et, à votre grand étonnement, vous vous\napercevez bientôt que c'est un jeune homme seul, guère plus âgé\nque vous, qui tient ainsi tête aux créatures déchaînées. Vous\nreconnaissez aussitôt sa toge bleu ciel brodée d'étoiles : c'est un\njeune Théurgiste de la Guilde des Magiciens de Toran, un\napprenti en magie blanche. Cinq Gloks, la lance brandie,\nchargent le jeune homme qui bat rapidement en retraite à\nl'intérieur des ruines. Vous le voyez alors se tourner et lever la\nmain gauche : au même instant, un éclair bleu jaillit du bout de\nses doigts et vient frapper les Gloks hurlants. Non loin de\nl'endroit où vous êtes caché, un autre Glok contourne les ruines\nen courant et grimpe au sommet d'une des colonnes du temple. Il\nserre entre ses dents un long poignard à la lame recourbée et\ns'apprête à sauter sur le jeune sorcier qui se tient debout juste\nau-dessous de lui. Si vous souhaitez crier pour avertir le sorcier\ndu danger qui le menace, rendez-vous au 241. Si vous voulez\nvous précipiter en avant pour attaquer le Glok au moment où il\nbondira, rendez-vous au 55. Si vous préférez ramasser une pierre\ndans les ruines et la jeter à la tête du Glok, rendez-vous au 302.\nEnfin, si vous estimez plus judicieux de quitter ce champ de\nbataille et de poursuivre votre chemin en retournant dans la\nforêt, rendez-vous au 101.",
     "choices": [
       {
-        "text": "du danger qui le menace,",
-        "nextPage": 241
-      },
-      {
-        "text": "bondira,",
+        "text": "vous précipiter en avant pour attaquer le Glok au moment où il\nbondira,",
         "nextPage": 55
       },
       {
-        "text": "dans les ruines et la jeter à la tête du Glok,",
+        "text": "préférez ramasser une pierre\ndans les ruines et la jeter à la tête du Glok,",
         "nextPage": 302
       },
       {
-        "text": "forêt,",
+        "text": "estimez plus judicieux de quitter ce champ de\nbataille et de poursuivre votre chemin en retournant dans la\nforêt,",
         "nextPage": 101
+      },
+      {
+        "text": "crier pour avertir le sorcier\ndu danger qui le menace,",
+        "nextPage": 241
       }
     ]
   },
@@ -1542,7 +1765,7 @@
     "content": "Le garde du corps vous observe d'un regard soupçonneux et vous\nclaque la porte au nez. Vous entendez parler à l'intérieur de la\nroulotte puis, soudain, la porte s'ouvre à nouveau et le visage\nd'un marchand prospère apparaît. Il reconnaît aussitôt votre\ncape de Seigneur Kaï et vous demande de bien vouloir excuser la\nconduite de son serviteur. Il vous fait entrer dans la roulotte et\nvous raconte qu'il a été attaqué plusieurs fois depuis qu'il a quitté\nle port de Toran, notamment par des Kraans et par des brigands.\nSon garde du corps a tout de suite pensé que vous pouviez être\nun bandit, ce qui explique son comportement. La roulotte est\nremplie de soieries et d'épices. Le marchand vous propose\nquelque chose à manger et vous acceptez avec gratitude. Après\navoir fait un somptueux repas, la fatigue accumulée au cours de\nvos épreuves a raison de vous et vous sombrez dans un sommeil\nprofond. Rendez-vous au 64.",
     "choices": [
       {
-        "text": "profond",
+        "text": "somptueux repas, la fatigue accumulée au cours de vos épreuves a raison de vous et vous sombrez dans un sommeil profond.",
         "nextPage": 64
       }
     ]
@@ -1552,7 +1775,7 @@
     "content": "Quand vous vous approchez de la statue, celle-ci commence à se\ncraqueler et, soudain, elle explose devant vous tandis qu'un\nvéritable serpent ailé, débarrassé de son manteau de pierre vous\nattaque férocement. Il vous faut combattre la créature.\nSERPENT AILÉ HABILETÉ : 16 ENDURANCE : 18\nVotre adversaire est insensible à la Discipline Kaï de la Puissance\nPsychique. Si vous êtes vainqueur, rendez-vous au 266.",
     "choices": [
       {
-        "text": "Psychique. Si vous êtes vainqueur,",
+        "text": "Si vous êtes vainqueur,",
         "nextPage": 266
       }
     ],
@@ -1567,11 +1790,11 @@
     "content": "Vos talents de Seigneur Kaï vous permettent de déceler des\ntraces de Gloks tout autour de la clairière. Les empreintes sont\nfraîches, et il ne fait aucun doute que ces cruels serviteurs des\nMaîtres des Ténèbres se trouvaient là il y a moins de deux\nheures. Si vous décidez d'inspecter les maisons, rendez-vous au\n305. Si vous préférez éviter cette clairière, rendez-vous au 40.",
     "choices": [
       {
-        "text": "heures. Si vous décidez d'inspecter les maisons,",
+        "text": "inspecter les maisons,",
         "nextPage": 305
       },
       {
-        "text": ". Si vous préférez éviter cette clairière,",
+        "text": "préférer éviter cette clairière,",
         "nextPage": 40
       }
     ]
@@ -1581,11 +1804,11 @@
     "content": "Parvenu au bord de l'escarpement de la berge, vous jetez un coup\nd'œil en contrebas et vous apercevez un enchevêtrement de\ndébris de bois portés là par le courant. Un gros tronc d'arbre,\nnotamment, s'est échoué sur la rive, à côté d'un petit canoë. Si\nvous souhaitez utiliser le tronc d'arbre pour descendre le cours\nde la rivière, rendez-vous au 223. Si vous préférez vous servir du\ncanoë, rendez-vous au 4.",
     "choices": [
       {
-        "text": "de la rivière,",
+        "text": "tronc d'arbre pour descendre le cours\nde la rivière,",
         "nextPage": 223
       },
       {
-        "text": "canoë,",
+        "text": "vous servir du\ncanoë,",
         "nextPage": 4
       }
     ]
@@ -1598,14 +1821,19 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 313
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "GLOK",
+      "ability": 13,
+      "endurance": 10
+    }
   },
   {
     "pageNumber": 137,
     "content": "Lorsque la dernière de ces répugnantes créatures meurt enfin, la\nlumière verdâtre commence à diminuer. Vous constatez alors\nque dans chacun des crânes fracassés se trouve une Pierre\nPrécieuse. Vous ramassez ces vingt Pierres juste avant que la\nlueur s'éteigne, plongeant la chambre mortuaire dans une totale\nobscurité. N'oubliez pas d'inscrire ces Pierres Précieuses sur\nvotre Feuille d'Aventure. Elles prennent place dans votre bourse.\nVous vous hâtez de quitter la Crypte et vous poursuivez votre\nchemin. Rendez-vous au 23.",
     "choices": [
       {
-        "text": "chemin",
+        "text": "vous hâtez de quitter la Crypte et vous poursuivez votre chemin.",
         "nextPage": 23
       }
     ]
@@ -1618,7 +1846,12 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 291
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "GLOK",
+      "ability": 13,
+      "endurance": 10
+    }
   },
   {
     "pageNumber": 139,
@@ -1635,19 +1868,19 @@
     "content": "Vous vous trouvez dans une clairière au centre de laquelle on a\nélevé une tour branlante à l'aide de troncs d'arbres grossièrement\ntaillés. Au pied de la tour, trois sentiers partent dans différentes\ndirections. Si vous souhaitez prendre le sentier qui mène au sud,\nrendez-vous au 14. Si vous préférez celui qui mène à l'est,\nrendez-vous au 252. Si le sentier orienté au sud-ouest vous\nparaît plus attrayant, rendez-vous au 215. Enfin, si l'envie vous\nprend plutôt de monter dans la tour, rendez-vous au 36.",
     "choices": [
       {
-        "text": "directions. Si vous souhaitez prendre le sentier qui mène au sud,",
+        "text": "sud,",
         "nextPage": 14
       },
       {
-        "text": ". Si vous préférez celui qui mène à l'est,",
+        "text": "est,",
         "nextPage": 252
       },
       {
-        "text": "paraît plus attrayant,",
+        "text": "sud-ouest vous paraît plus attrayant,",
         "nextPage": 215
       },
       {
-        "text": "prend plutôt de monter dans la tour,",
+        "text": "monter dans la tour,",
         "nextPage": 36
       }
     ]
@@ -1657,7 +1890,7 @@
     "content": "Votre Sixième Sens vous avertit que quelques-unes des créatures\nqui ont attaqué le monastère sont restées dans les environs et\ninspectent les deux chemins, en quête d'éventuels survivants à\nmassacrer. Vous pouvez cependant éviter ces deux sentiers en\ncoupant par les sous-bois de la forêt. Si vous souhaitez aller vers\nle sud, rendez-vous au 56. Si vous préférez vous frayer un\nchemin dans le feuillage plus touffu qui s'étend au nord-est,\nrendez-vous au 333.",
     "choices": [
       {
-        "text": "le sud,",
+        "text": "sud,",
         "nextPage": 56
       },
       {
@@ -1671,11 +1904,15 @@
     "content": "Vous apercevez les hautes murailles blanches et les tours\nscintillantes de Holmgard, dont les étendards flottent au vent\nfrais du matin. S'étirant vers l'ouest, le fleuve Eledil jaillit des\nmonts Durncrag et se jette dans le golfe de Holm. Or, soudain,\nvous distinguez au loin, à l'ombre des montagnes, une immense\narmée aux uniformes noirs qui marche sans répit vers la capitale.\nA votre droite, la grand-route mène à Holmgard à travers les\nplaines. En courant vite, vous pourriez atteindre en une heure le\ncamp fortifié qui se dresse autour de la ville, mais vous seriez la\nplupart du temps à découvert, offrant aux Kraans une proie\nfacile. A quelque distance devant vous, cependant, une large\nrivière aux eaux boueuses coule paresseusement en direction du\nfleuve Eledil dans lequel elle finit par se jeter. Vous pourriez\nprofiter de l'escarpement de ses berges pour nager à couvert et\nrejoindre ainsi la capitale. A votre gauche, par ailleurs, s'étend le\nCimetière des Anciens. En marchant parmi les tombes et les\nmonuments funéraires en ruine, vous pourriez échapper aux\nregards et vous approcher de votre but, mais c'est là une zone\ninterdite : des forces ténébreuses restent, en effet, tapies dans\nl'ombre de la nécropole, attendant qu'un passant téméraire\ns'offre à leurs maléfices. Si vous voulez tenter votre chance en\nempruntant la grand-route, rendez-vous au 58. Si vous pensez\navoir plus de chance d'atteindre la capitale par la rivière, rendez-\nvous au 135. Enfin, si vous êtes suffisamment courageux pour\nvous risquer dans le Cimetière des Anciens, rendez-vous au 102.",
     "choices": [
       {
-        "text": "empruntant la grand-route,",
+        "text": "grand-route,",
         "nextPage": 58
       },
       {
-        "text": "vous risquer dans le Cimetière des Anciens,",
+        "text": "atteindre la capitale par la rivière,",
+        "nextPage": 135
+      },
+      {
+        "text": "risquer dans le Cimetière des Anciens,",
         "nextPage": 102
       }
     ]
@@ -1707,7 +1944,12 @@
   {
     "pageNumber": 145,
     "content": "Vous avez l'impression d'avoir été renversé par un chariot. Vous\ntombez en avant et vous perdez connaissance en ressentant une\nterrible douleur dans le dos, et avec un goût désagréable dans la\nbouche : celui de la poussière qui recouvre la route. Rendez-vous\nau 165.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous au 165.",
+        "nextPage": 165
+      }
+    ]
   },
   {
     "pageNumber": 146,
@@ -1738,11 +1980,15 @@
     "content": "Vous ouvrez la porte d'un coup de pied et vous vous ruez à\nl'intérieur de la ferme. Un Kraan s'élève dans les airs en poussant\nun cri de victoire : il tient une victime dans ses serres pointues.\nVous reprenez votre équilibre et vous jetez un coup d'œil autour\nde vous : l'endroit est désert. En vous approchant de la cheminée,\nvous trouvez un Marteau de Guerre posé contre le mur. Vous\npouvez le prendre si vous le désirez. Si vous souhaitez rester dans\ncette ferme, rendez-vous au 81. Si vous pensez que vous serez\nplus en sécurité dans la forêt, vous pouvez courir vous y réfugier\nen vous rendant au 320. Enfin, si vous souhaitez inspecter plus\navant la pièce dans laquelle vous vous trouvez, rendez-vous au\n199.",
     "choices": [
       {
-        "text": "cette ferme,",
+        "text": "si vous le désirez. Si vous souhaitez rester dans cette ferme,",
         "nextPage": 81
       },
       {
-        "text": "avant la pièce dans laquelle vous vous trouvez,",
+        "text": "vous y réfugier en vous rendant au 320.",
+        "nextPage": 320
+      },
+      {
+        "text": "dans laquelle vous vous trouvez,",
         "nextPage": 199
       }
     ]
@@ -1760,14 +2006,19 @@
   {
     "pageNumber": 150,
     "content": "Bien qu'elle soit un peu trop cuite, cette nourriture a un goût\ndélicieux (il n'y en a pas assez cependant pour constituer un\nrepas complet) et l'eau claire étanche votre soif. Vous avez passé\nenviron une demi-heure dans cette maison lorsque vous vous\nrendez soudain compte que vous êtes en train de prendre du\nretard. Ramassez vos affaires et reprenez votre chemin en vous\nrendant au 83.",
-    "choices": []
+    "choices": [
+      {
+        "text": "votre chemin en vous rendant au 83.",
+        "nextPage": 83
+      }
+    ]
   },
   {
     "pageNumber": 151,
     "content": "En vous concentrant sur le trou de la serrure, vous pourrez peut-\nêtre actionner le mécanisme interne et repousser le pêne par\nvotre seule force mentale. Vous ferez ensuite léviter la broche\npour la libérer de ses attaches. En opérant ainsi à distance, vous\nresterez hors d'atteinte des pièges éventuels qui pourraient se\ndéclencher lors de l'ouverture de la serrure. Pour savoir si votre\nMaîtrise Psychique de la Matière se révélera efficace dans le cas\nprésent, rendez-vous au 87.",
     "choices": [
       {
-        "text": "présent,",
+        "text": "vous concentrant sur le trou de la serrure,",
         "nextPage": 87
       }
     ]
@@ -1777,7 +2028,7 @@
     "content": "L'herboriste vous offre tout un choix de potions : certaines\nd'entre elles accroissent votre force, d'autres vous rendent\ninvisible, d'autres encore vous donnent la faculté de vous faufiler\npartout, et il en est même qui vous permettent de prendre une\nforme gazeuse. Ensuite, l'homme ouvre un tiroir au bas de son\ncomptoir et vous montre une magnifique Baguette Magique.\nD'après lui, il s'agit là d'une arme puissante qui vous permettra\nde combattre efficacement toute créature malfaisante en vous\nrendant vous-même invulnérable aux coups de vos adversaires.\nPour mieux vous en convaincre, il vous invite à lire une\ninscription magique gravée sur la baguette. Si vous souhaitez\nvous pencher par-dessus le comptoir pour lire l'étrange\ninscription, rendez-vous au 49. Si vous vous intéressez\ndavantage aux potions, rendez-vous au 231.",
     "choices": [
       {
-        "text": "inscription,",
+        "text": "l'étrange inscription,",
         "nextPage": 49
       },
       {
@@ -1791,7 +2042,7 @@
     "content": "Au loin se dressent les hautes murailles blanches et les tours\nscintillantes de Holmgard dont les étendards flottent au vent\nfrais du matin. S'étirant vers l'ouest, le fleuve Eledil jaillit des\nmonts Durncrag et se jette dans le golfe de Holm. Or, soudain,\nvous distinguez au pied des montagnes une immense armée aux\nuniformes noirs qui s'avance inexorablement vers la capitale. A\nvotre droite, la grand-route mène à Holmgard à travers les\nplaines. En vous lançant au galop, vous pourriez atteindre en\nmoins d'une heure le camp fortifié qui entoure la ville, mais vous\nseriez la plupart du temps à découvert, offrant aux Kraans une\nproie facile. A quelque distance devant vous, cependant, une\nlarge rivière aux eaux boueuses coule paresseusement en\ndirection du fleuve Eledil dans lequel elle finit par se jeter. Vous\npourriez abandonner votre cheval et profiter de l'escarpement de\nses berges pour nager à couvert jusqu'aux abords de la capitale. Il\nexiste enfin une troisième voie : à votre gauche s'étend, en effet,\nle Cimetière des Anciens. Si vous marchiez parmi les tombes et\nles monuments funéraires en ruine, vous n'auriez aucun mal à\nvous approcher de votre but en échappant aux regards, mais c'est\nlà une zone interdite car des forces ténébreuses restent tapies\ndans l'ombre de la nécropole et attendent qu'un passant\ntéméraire s'offre à leurs maléfices. Si vous souhaitez tenter votre\nchance en empruntant la grand-route, rendez-vous au 202. Si\nvous pensez que vous pourrez plus facilement atteindre la\ncapitale par la rivière, rendez-vous au 135. Si, enfin, vous vous\nsentez suffisamment courageux pour affronter les terribles périls\ndu Cimetière des Anciens, rendez-vous au 329.",
     "choices": [
       {
-        "text": "chance en empruntant la grand-route,",
+        "text": "empruntant la grand-route,",
         "nextPage": 202
       },
       {
@@ -1799,7 +2050,7 @@
         "nextPage": 135
       },
       {
-        "text": "du Cimetière des Anciens,",
+        "text": "vous vous sentez suffisamment courageux pour affronter les terribles périls du Cimetière des Anciens,",
         "nextPage": 329
       }
     ]
@@ -1807,20 +2058,30 @@
   {
     "pageNumber": 154,
     "content": "Votre blessure vous donne le tournis et vous titubez parmi les\narbres comme un aveugle. Soudain, vous tombez en avant\ncomme si le sol s'était dérobé sous vos pieds ; c'est, d'ailleurs, ce\nqui s'est passé : vous venez d'être précipité tête la première dans\nun piège à ours. Vous levez alors les yeux et vous distinguez les\nsilhouettes de quatre Drakkarims qui tendent leurs arcs en vous\nvisant de leurs flèches. Ils tirent tous les quatre en même temps\net vous entendez des grognements de triomphe s'échapper de\nleurs lèvres, tordues en un rictus répugnant. Les quatre flèches\ns'enfoncent profondément dans votre poitrine et toute lumière\ns'éteint. Votre mission a échoué.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 155,
     "content": "A votre approche, leur conversation s'interrompt. Vous constatez\npar l'expression de leurs visages que tous ces gens ont reconnu\nen vous un Seigneur Kaï. Alors, lentement, l'un des hommes tend\nla main vers vous en un geste amical.\n«Seigneur, dit-il, nous avons entendu dire que le Monastère Kaï\navait été détruit et tous ceux qui l'occupaient impitoyablement\nmassacrés. Heureusement, votre présence ici montre qu'il\ns'agissait là de fausses rumeurs. Nous avions peur que tout ne\nsoit perdu. » Vous préférez ne pas leur révéler que le Monastère a\nbel et bien été anéanti : ce serait, en effet, enlever tout espoir à\nces hommes et à ces femmes qui ont fui la ville de Toran dévastée\npar les armées ennemies. Ils ont dû abandonner tous leurs biens\net les voilà qui errent sur les chemins pour tenter d'échapper à la\nguerre, en espérant que les Seigneurs Kaï conduiront à la victoire\nl'armée du Sommerlund. Vous apprenez par leurs récits que le\nport de Toran a été attaqué par mer et par air et que les armées\ndes Maîtres des Ténèbres surpassaient largement en nombre la\ngarnison de la ville. En dépit de la vaillance dont ils ont fait\npreuve, les soldats du Roi ont ainsi dû s'incliner. Vous essayez de\nrassurer de votre mieux ces malheureux réfugiés en affirmant\nque le Sommerlund ne tombera jamais aux mains des\nenvahisseurs. Puis vous leur souhaitez bonne chance au long de\nleur exode et vous reprenez vous-même votre chemin. Rendez-\nvous au 70.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous-même votre chemin. Rendez-vous au 70.",
+        "nextPage": 70
+      }
+    ]
   },
   {
     "pageNumber": 156,
     "content": "Des flèches noires se fichent dans la boue tout autour de vous.\nD'autres Gloks ont fait leur apparition sur la berge escarpée de la\nrivière et vous tirent dessus. De ce côté du cours d'eau, il n'y a\npas d'arbres pour vous mettre à l'abri. Si vous souhaitez plonger\ndans l'eau de la rivière et nager au fil du courant, rendez-vous au\n294. Si vous préférez traverser le cours d'eau à la nage pour aller\nvous mettre à couvert des arbres, sur la rive opposée, rendez-\nvous au 245.",
     "choices": [
       {
-        "text": "dans l'eau de la rivière et nager au fil du courant,",
+        "text": "nager au fil du courant,",
         "nextPage": 294
+      },
+      {
+        "text": "vous mettre à couvert des arbres, sur la rive opposée,",
+        "nextPage": 245
       }
     ]
   },
@@ -1853,7 +2114,7 @@
     "content": "Le marchand refuse votre offre : il ne vous laissera pas monter\ndans la roulotte. Et, soudain, il claque des doigts à l'adresse d'un\nde ses gardes du corps qui empoigne aussitôt le pommeau de son\narme. Si vous souhaitez le combattre, rendez-vous au 191. Si\nvous préférez sauter de la roulotte, rendez-vous au 234.",
     "choices": [
       {
-        "text": "arme. Si vous souhaitez le combattre,",
+        "text": "Si vous souhaitez le combattre,",
         "nextPage": 191
       },
       {
