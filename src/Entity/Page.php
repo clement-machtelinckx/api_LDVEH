@@ -54,7 +54,8 @@ class Page
     private ?bool $combatIsBlocking = null;
 
     #[ORM\Column(length: 50, nullable: true)]
-    private ?string $endingType = null;
+    #[Groups(['page:read', 'adventurer:read'])]
+    private ?string $endingType = null; // "death", "victory", or null
 
 
     public function __construct()
@@ -179,6 +180,16 @@ class Page
         $this->endingType = $endingType;
 
         return $this;
+    }
+
+    public function isEnding(): bool
+    {
+        return $this->endingType !== null;
+    }
+
+    public function isVictory(): bool
+    {
+        return $this->endingType === 'victory';
     }
 
 }

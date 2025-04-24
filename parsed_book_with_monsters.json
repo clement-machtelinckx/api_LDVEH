@@ -448,14 +448,27 @@
   {
     "pageNumber": 36,
     "content": "Le bois de l'échelle qui monte à la vieille tour de guet, est pourri\net plusieurs barreaux cèdent sous votre poids. Utilisez la Table de\nHasard pour obtenir un chiffre. Si vous tirez un chiffre égal ou\ninférieur à 4, vous tombez. Vous perdez donc 2 points\nd'ENDURANCE et vous vous rendez au 140. Si ce chiffre est\nsupérieur à 4, vous ne tombez pas et vous vous rendez au 323.",
-    "choices": []
+    "choices": [
+      {
+        "text": "ce chiffre est supérieur à 4,",
+        "nextPage": 323
+      },
+      {
+        "text": "vous tombez. Vous perdez donc 2 points d'ENDURANCE et vous vous rendez au 140.",
+        "nextPage": 140
+      }
+    ]
   },
   {
     "pageNumber": 37,
     "content": "Vous vous sentez fatigué et affamé, et il vous faut faire une halte\npour prendre un Repas. Après avoir mangé, vous rebroussez\nchemin jusqu'à la citadelle et vous marchez le long de ses hautes\nmurailles de pierre. Vous découvrez une autre entrée dans le mur\nest, gardée, elle aussi, par deux soldats en armes. Si vous voulez\nvous approcher d'eux et leur raconter votre histoire, rendez-vous\nau 289. Si vous maîtrisez la Discipline Kaï du Camouflage,\nrendez-vous au 282.",
     "choices": [
       {
-        "text": "au 289. Si vous maîtrisez la Discipline Kaï du Camouflage,",
+        "text": " Si vous voulez\nvous approcher d'eux et leur raconter votre histoire.",
+        "nextPage": 289
+      },
+      {
+        "text": " Si vous maîtrisez la Discipline Kaï du Camouflage,",
         "nextPage": 282
       }
     ]
@@ -477,7 +490,12 @@
   {
     "pageNumber": 39,
     "content": "Quelques secondes plus tard, deux petites têtes au pelage ras et à\nla mine inquiète apparaissent derrière le tronc : ce sont des\nKakarmis qui se sont cachés là. Ils vous avertissent que les\nKraans sont partout et qu'ils ont attaqué leur village, un peu plus\nloin à l'ouest, ne laissant que ruines sur leur passage. Les\nKakarmis essaient de retrouver le reste de leur tribu qui s'est\nenfuie dans la forêt lorsque les Ailes Noires ont lancé leur assaut\nsur le village. Les petites créatures apeurées vous montrent la\ndirection de l'est : le chemin semble aboutir à un cul-de-sac, mais\nd'après elles, si vous vous enfoncez dans les sous-bois, vous\ntrouverez quelques mètres plus loin une tour de guet où le\nsentier se divise en trois voies. En continuant alors vers l'est,\nvous arriverez bientôt à la Route du Roi qui relie Holmgard, la\ncapitale, au port de Toran. Vous remerciez les Kakarmis et vous\nprenez congé d'eux. Rendez-vous ensuite au 228.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous\nprenez congé d'eux. Rendez-vous ensuite au 228.",
+        "nextPage": 228
+      }
+    ]
   },
   {
     "pageNumber": 40,
@@ -1847,14 +1865,23 @@
   {
     "pageNumber": 160,
     "content": "Utilisez la Table de Hasard pour obtenir un chiffre : Si vous tirez\nentre 0 et 4, vous avez été repéré. Rendez-vous alors au 286. Si\nvous tirez entre 5 et 9, ils ne vous ont pas vu et poursuivent leur\nchemin en s'éloignant de vous. Rendez-vous dans ce cas au 10.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Si vous tirez\nentre 0 et 4, vous avez été repéré",
+        "nextPage": 286
+      },
+      {
+        "text": "Si vous tirez entre 5 et 9, ils ne vous ont pas vu et poursuivent leur\nchemin en s'éloignant de vous",
+        "nextPage": 10
+      }
+    ]
   },
   {
     "pageNumber": 161,
     "content": "Au moment où vous vous asseyez, le Serpent de Pierre se met à\nbouger. Une sueur froide perle à votre front et vous empoignez\nvotre arme d'une main tremblante, prêt à vous défendre contre\nune attaque éventuelle. Une langue rouge et fourchue jaillit alors\nde la tête de cette étrange statue et vient plonger dans la coupe\nde lumière verte posée sur le dossier du trône, au-dessus de vous.\nLentement, la langue fourchue ressort de la coupe en tenant une\nClé d'Or qu'elle laisse tomber sur vos genoux.\nUn instant plus tard, un panneau glisse dans le mur est de la\npièce, découvrant l'entrée d'un passage secret. Vous prenez la Clé\n(notez-la sur votre Feuille d'Aventure dans la case Objets\nSpéciaux) et vous vous hâtez de quitter les lieux par cette sortie\ninattendue. Rendez-vous au 209.",
     "choices": [
       {
-        "text": "inattendue",
+        "text": "Vous prenez la Clé et vous vous hâtez de quitter les lieux par cette sortie\ninattendue.",
         "nextPage": 209
       }
     ]
@@ -1866,6 +1893,10 @@
       {
         "text": "Psychique de la Matière,",
         "nextPage": 258
+      },
+      {
+        "text": "vous rendez-vous au 127",
+        "nextPage": 127
       }
     ]
   },
@@ -1882,7 +1913,12 @@
   {
     "pageNumber": 164,
     "content": "Vous débouchez prudemment chacune des bouteilles et vous\nreniflez son contenu. Il semble s'agir là de différentes sortes de\nvin. Mais soudain, une autre bouteille, plus petite, coincée parmi\nles autres, attire votre attention. Elle est remplie d'un liquide de\ncouleur orange dont l'odeur vous est familière : c'est de l'Essence\nd'Alether, une puissante potion qui a la propriété d'accroître\nvotre force. Vous pouvez conserver cette fiole et en boire le\ncontenu au début d'un combat : votre total d'HABILETÉ\naugmentera alors de 2 points pendant toute la durée de\nl'affrontement. Cette quantité d'essence d'Alether ne représente\nqu'une seule dose, vous ne pourrez donc en faire usage qu'une\nfois. Inscrivez cette Potion dans la case Objets Spéciaux de votre\nFeuille d'Aventure, et n'oubliez pas de l'effacer lorsque vous\nl'aurez bue. Vous décidez à présent d'inspecter l'écurie en vous\nrendant au 308.",
-    "choices": []
+    "choices": [
+      {
+        "text": "l'écurie en vous rendant au 308",
+        "nextPage": 308
+      }
+    ]
   },
   {
     "pageNumber": 165,
@@ -1977,15 +2013,32 @@
     "content": "La nuit tombe et l'obscurité bientôt vous engloutit. Il serait vain\nde poursuivre votre route car vous vous perdriez à coup sûr. Vous\nattachez donc votre cheval à un arbre, vous vous étendez sur le\nsol en vous emmitouflant dans votre cape de Seigneur Kaï et vous\nsombrez dans un sommeil sans rêves. Au matin vous êtes réveillé\npar des bruits de galops lointains. De l'autre côté du lac, vous\ndistinguez des silhouettes noires de Drakkarims et une meute de\nLoups Maudits. Un Kraan apparaît également au-dessus des\narbres et se pose sur le toit de la petite cabane. Il est monté par\nune créature vêtue de rouge. Un instant plus tard, le monstre\nredoutable reprend son vol et traverse le lac en se dirigeant vers\nl'endroit où vous êtes caché. Si vous souhaitez vous enfoncer plus\nprofondément dans la forêt afin d'échapper au Kraan, rendez-\nvous au 239. Si vous maîtrisez la Discipline Kaï du Camouflage\net que vous désirez en faire usage pour vous dissimuler aux\nregards, vous et votre cheval, rendez-vous au 114. Enfin, si vous\npréférez vous préparer à combattre l'ignoble créature, rendez-\nvous au 29.",
     "choices": [
       {
-        "text": "regards, vous et votre cheval,",
+        "text": "vous enfoncer plus profondément dans la forêt afin d'échapper au Kraan,",
+        "nextPage": 239
+      },
+      {
+        "text": "vous et votre cheval, rendez-vous au 114.",
         "nextPage": 114
+      },
+      {
+        "text": "préférez vous préparer à combattre l'ignoble créature,",
+        "nextPage": 29
       }
     ]
   },
   {
     "pageNumber": 173,
     "content": "Lorsque vous atteignez la porte, un énorme bloc de pierre\ntombant du plafond s'écrase au sol, juste derrière vous. Vous\nfaites volte-face et vous constatez que la sortie est à présent\nentièrement obstruée. Si vous possédez une Clé d'Argent, vous\npouvez vous en servir pour essayer d'ouvrir la porte. Rendez-\nvous pour cela au 158. Si vous n'avez pas cette Clé, rendez-vous\nau 259.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous n'avez pas cette Clé,",
+        "nextPage": 259
+      },
+      {
+        "text": "vous pouvez vous en servir pour essayer d'ouvrir la porte. Rendez-vous pour cela au 158.",
+        "nextPage": 158
+      }
+    ]
   },
   {
     "pageNumber": 174,
@@ -2002,12 +2055,16 @@
     "content": "De la main, vous faites signe aux cavaliers en qui vous\nreconnaissez des Gardes-Frontières de l'armée du Roi. Ils font\npartie du régiment chargé de surveiller les frontières occidentales\ndu Royaume, souvent menacées. Mais le soulagement que vous\néprouvez à rencontrer des alliés est de courte durée, car vous\nvous apercevez bientôt que ces soldats sont, en fait, poursuivis\npar des Gloks hurlants qui chevauchent des Loups Maudits. Des\nflèches noires tombent en pluie tout autour des Gardes-\nFrontières tandis que leurs terribles poursuivants gagnent du\nterrain. Si vous voulez essayer de vous cacher là où vous êtes,\nrendez-vous au 41. Si vous préférez traverser la rivière à la nage\npour vous réfugier sur l'autre berge, rendez-vous au 116. Enfin,\nsi vous maîtrisez la Discipline Kaï du Camouflage, rendez-vous\nau 182.",
     "choices": [
       {
-        "text": "terrain. Si vous voulez essayer de vous cacher là où vous êtes,",
-        "nextPage": 41
+        "text": "vous préférez traverser la rivière à la nage pour vous réfugier sur l'autre berge,",
+        "nextPage": 116
       },
       {
-        "text": "pour vous réfugier sur l'autre berge,",
-        "nextPage": 116
+        "text": "si vous maîtrisez la Discipline Kaï du Camouflage,",
+        "nextPage": 182
+      },
+      {
+        "text": "vous voulez essayer de vous cacher là où vous êtes,",
+        "nextPage": 41
       }
     ]
   },
@@ -2018,6 +2075,10 @@
       {
         "text": "enfonçant plus avant dans la forêt,",
         "nextPage": 126
+      },
+      {
+        "text": "attaquer les autres Loups Maudits et leurs cavaliers,",
+        "nextPage": 253
       }
     ]
   },
@@ -2050,11 +2111,11 @@
     "content": "Vous avez été repéré par les gardes qui vous mettent en joue avec\nleurs arbalètes. Si vous souhaitez lever les mains et avancer vers\neux, rendez-vous au 318. Si vous préférez prendre vos jambes à\nvotre cou pour vous cacher parmi les arbres, rendez-vous au 51.",
     "choices": [
       {
-        "text": "eux,",
+        "text": "Si vous souhaitez lever les mains et avancer vers eux,",
         "nextPage": 318
       },
       {
-        "text": "votre cou pour vous cacher parmi les arbres,",
+        "text": " vous préférez prendre vos jambes à votre cou pour vous cacher parmi les arbres,",
         "nextPage": 51
       }
     ]
@@ -2071,7 +2132,12 @@
         "text": "vous souhaitez prendre la fuite,",
         "nextPage": 22
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Chef Des Soldats",
+      "ability": 15,
+      "endurance": 22
+    }
   },
   {
     "pageNumber": 181,
@@ -2120,7 +2186,8 @@
   {
     "pageNumber": 185,
     "content": "Vous plissez les yeux et vous scrutez le feuillage des arbres pour\nvoir s'il ne s'y cache pas un archer. Votre attente ne dure guère\ncar, quelques instants plus tard, une douleur fulgurante vous\ndéchire la poitrine et vous êtes projeté en arrière sous le choc de\ntrois flèches qui vous transpercent le corps. Deux de ces flèches\nse sont enfoncées profondément dans votre thorax et la troisième\ns'est plantée dans votre cuisse. Avant de sombrer dans les\nténèbres, vous contemplez dans une ultime vision le feuillage des\narbres qui forme un dôme au-dessus de vous et une libellule qui\nvient se poser sur la boucle de votre ceinture. Votre mission\ns'achève ici.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 186,
@@ -2137,8 +2204,12 @@
     "content": "Deux têtes au pelage ras apparaissent derrière le tronc. Les deux\ncréatures jettent un coup d'œil à votre arme et poussent un cri\nd'effroi. Elles bondissent alors loin du tronc et s'enfuient dans la\nforêt. Si vous souhaitez vous lancer à leur poursuite, rendez-vous\nau 186. Si vous préférez les laisser partir et continuer votre\nchemin, rendez-vous au 228.",
     "choices": [
       {
-        "text": "chemin,",
+        "text": "vous lancer à leur poursuite,",
         "nextPage": 228
+      },
+      {
+        "text": "les laisser partir et continuer votre chemin,",
+        "nextPage": 186
       }
     ]
   },
@@ -2198,6 +2269,10 @@
       {
         "text": "bride abattue sans vous occuper du Kraan,",
         "nextPage": 120
+      },
+      {
+        "text": "vous réfugier à l'abri des arbres de la forêt,",
+        "nextPage": 171
       }
     ]
   },
@@ -2250,6 +2325,10 @@
       {
         "text": "suivre cet homme dans le passage,",
         "nextPage": 332
+      },
+      {
+        "text": "vous quittez les lieux et vous retournez dans la rue",
+        "nextPage": 144
       }
     ]
   },
@@ -2280,7 +2359,12 @@
   {
     "pageNumber": 199,
     "content": "La plupart des placards et des tiroirs sont vides. Les habitants de\ncette maison ont presque tout emporté avec eux ; vous parvenez\ncependant à trouver dans la cave suffisamment de fruits pour\nvous faire un Repas. Notez-le sur votre Feuille d'Aventure.\nRendez-vous ensuite au 81.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous faire un Repas. Notez-le sur votre Feuille d'Aventure",
+        "nextPage": 81
+      }
+    ]
   },
   {
     "pageNumber": 200,
@@ -2289,6 +2373,10 @@
       {
         "text": "souhaitez sauter sur la roulotte,",
         "nextPage": 78
+      },
+      {
+        "text": "vous pourrez vous accrocher à la roulotte et vous dissimuler parmi les bagages",
+        "nextPage": 168
       }
     ]
   },
@@ -2297,11 +2385,15 @@
     "content": "Vous suivez le sentier pendant une heure environ, puis vous\ndécouvrez un autre chemin plus large qui part en direction du\nsud. Si vous souhaitez suivre ce chemin orienté au sud, rendez-\nvous au 238. Si vous souhaitez aller à l'est, rendez-vous au 215.\nSi vous préférez aller vers l'ouest, rendez-vous au 130.",
     "choices": [
       {
-        "text": "vous au 238. Si vous souhaitez aller à l'est,",
+        "text": "Si vous souhaitez suivre ce chemin orienté au sud, rendez-\nvous au 238",
+        "nextPage": 238
+      },
+      {
+        "text": "Si vous souhaitez aller à l'est, rendez-vous au 215",
         "nextPage": 215
       },
       {
-        "text": "Si vous préférez aller vers l'ouest,",
+        "text": "Si vous préférez aller vers l'ouest, rendez-vous au 130",
         "nextPage": 130
       }
     ]
@@ -2309,7 +2401,12 @@
   {
     "pageNumber": 202,
     "content": "Vous galopez le long de la grand-route qui mène à la capitale\nlorsque votre cheval ralentit soudain l'allure, se met à boiter, puis\ns'arrête. Vous mettez pied à terre pour examiner sa jambe avant\ndroite qu'il tient levée : il a perdu un fer et s'est blessé au sabot.\nEn maudissant votre mauvaise fortune, vous l'abandonnez donc\nsur le bas-côté et vous poursuivez à pied votre chemin. Rendez-\nvous au 58.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous poursuivez à pied votre chemin",
+        "nextPage": 58
+      }
+    ]
   },
   {
     "pageNumber": 203,
@@ -2342,6 +2439,10 @@
       {
         "text": "un chiffre entre 0 et 4,",
         "nextPage": 181
+      },
+      {
+        "text": "un chiffre entre 5 et 9,",
+        "nextPage": 145
       }
     ]
   },
@@ -2368,7 +2469,16 @@
   {
     "pageNumber": 208,
     "content": "Les répugnantes créatures brandissent leurs lances et vous\nattaquent. Il vous faut les combattre en les considérant comme\nun seul et même ennemi.\nGLOKS HABILETÉ: 15 ENDURANCE: 13\nSi vous êtes vainqueur, vous pourrez aller vous réfugier dans la\nferme en vous rendant au 148. Vous pouvez également, toujours\nen cas de victoire, retourner dans la forêt. Rendez-vous alors au\n320.",
-    "choices": [],
+    "choices": [
+      {
+        "text": "vous pourrez aller vous réfugier dans la ferme",
+        "nextPage": 148
+      },
+      {
+        "text": "retourner dans la forêt",
+        "nextPage": 320
+      }
+    ],
     "monster": {
       "monsterName": "Gloks",
       "ability": 15,
@@ -2378,15 +2488,24 @@
   {
     "pageNumber": 209,
     "content": "Devant vous un couloir monte en pente douce. Lorsque vous\narrivez au bout de cette pente, une porte de pierre glisse dans le\nmur, découvrant un autre passage. Vous franchissez la porte qui\nse referme aussitôt derrière vous avec un grincement. Rendez-\nvous au 23.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous franchissez la porte qui se referme aussitôt derrière vous",
+        "nextPage": 23
+      }
+    ]
   },
   {
     "pageNumber": 210,
     "content": "A peine avez-vous franchi la porte qu'un compagnon de la Guilde\nvous barre le passage et vous demande ce que vous voulez. Vous\nlui expliquez alors la nature de votre mission et il s'empresse\naussitôt de vous mener dans les appartements des Maîtres de la\nGuilde. Un vieil homme distingué vêtu d'une toge violette vous\naccueille et écoute votre récit. Puis, vous prenant par le bras, il\nvous conduit dans une bibliothèque contiguë dont il ferme la\nporte derrière lui. Il pousse ensuite l'un des milliers de livres\nalignés sur les étagères et un pan de mur glisse alors sur le côté,\ndécouvrant un passage secret. L'homme vous fait signe de le\nsuivre dans ce mystérieux couloir. Si vous souhaitez lui emboîter\nle pas, rendez-vous au 332. Si cet homme ne vous inspire pas\nentièrement confiance, vous pouvez quitter les lieux et retourner\nau-dehors en vous rendant au 37.",
     "choices": [
       {
-        "text": "le pas,",
+        "text": "vous emboîter le pas,",
         "nextPage": 332
+      },
+      {
+        "text": "vous pouvez quitter les lieux et retourner au-dehors",
+        "nextPage": 37
       }
     ]
   },
@@ -2469,6 +2588,10 @@
       {
         "text": "et entrer dans la boutique du Sage,",
         "nextPage": 91
+      },
+      {
+        "text": "vous préférez attendre là quelques minutes pour être sûr que le vieux\nfou s'en est allé, puis revenir ensuite dans la grand-rue,",
+        "nextPage": 7
       }
     ]
   },
@@ -2485,7 +2608,8 @@
   {
     "pageNumber": 219,
     "content": "Ce qui reste de vous se trouve encastré dans l'escalier, à une\nprofondeur de deux mètres, sous la masse d'un énorme bloc de\ngranité. Votre mission s'achève ici, en même temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 220,
@@ -2505,7 +2629,12 @@
   {
     "pageNumber": 221,
     "content": "Vous vous approchez prudemment de la palissade. Les rondins\nqui la constituent ont été grossièrement taillés et offrent de\nnombreuses prises qui vous permettent de l'escalader. Mais\nlorsque vous parvenez au sommet, vous vous trouvez face à une\narbalète : le soldat qui la tient vous fait signe de descendre à terre\nen empruntant une échelle de bois fixée à la palissade. Il serait\ntout à fait vain de discuter, et vous vous empressez donc d'obéir\nen descendant précautionneusement les échelons. Rendez-vous\nau 318.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous empressez donc d'obéir\nen descendant précautionneusement les échelons. Rendez-vous\nau 318.",
+        "nextPage": 318
+      }
+    ]
   },
   {
     "pageNumber": 222,
@@ -2552,7 +2681,16 @@
   {
     "pageNumber": 225,
     "content": "Ce langage est celui des Kakarmis, une race d'animaux forestiers,\ndoués d'intelligence, qui habitent les forêts du Sommerlund.\nVous n'avez rien à redouter de ces créatures timides et paisibles\net votre Sens de la Communication Animale vous permet de leur\nparler dans leur étrange dialecte. Que désirez-vous leur dire ? «\nN'ayez pas peur, je viens en ami » ? Rendez-vous dans ce cas au\n187. « Je suis un Seigneur Kaï, je ne vous veux aucun mal, je\nsouhaite simplement parler avec vous » ? Rendez-vous alors au\n39.",
-    "choices": []
+    "choices": [
+      {
+        "text": "«N'ayez pas peur, je viens en ami » ?",
+        "nextPage": 187
+      },
+      {
+        "text": "« Je suis un Seigneur Kaï, je ne vous veux aucun mal, je souhaite simplement parler avec vous » ?",
+        "nextPage": 39
+      }
+    ]
   },
   {
     "pageNumber": 226,
@@ -2563,7 +2701,7 @@
         "nextPage": 277
       },
       {
-        "text": "9,",
+        "text": "Entre 5 et 9,",
         "nextPage": 338
       }
     ]
@@ -2604,7 +2742,15 @@
   {
     "pageNumber": 229,
     "content": "Le Kraan vole au-dessus de votre tête en soulevant des nuages de\npoussière par le seul battement de ses ailes immenses. Bientôt,\nvous avez le nez et les yeux pleins de poussière et vous vous\nmettez à tousser et à cligner les paupières. Puis, soudain, le\nmonstre vous attaque. Vous allez devoir le combattre jusqu'à la\nmort de l'un de vous deux, mais en raison de la poussière qui\nvous désavantage, il vous faut réduire de 1 point votre total\nd'HABILETÉ pendant toute la durée de l'affrontement.\nKRAAN HABILETÉ: 16 ENDURANCE: 25\nSi vous êtes vainqueur, vous avez le choix entre : vérifier si la\ncréature ne transportait pas quelque objet qui pourrait mériter\nvotre intérêt. Rendez-vous alors au 267 ; ou poursuivre votre\nchemin le long du sentier orienté à l'est. Rendez-vous pour cela\nau 125.",
-    "choices": [],
+    "choices": [
+      {
+        "text":" vérifier si la\ncréature ne transportait pas quelque objet qui pourrait mériter\nvotre intérêt.",
+        "nextPage": 267
+      },
+      {
+        "text": "poursuivre votre\nchemin le long du sentier orienté à l'est.",
+        "nextPage": 125
+      }],
     "monster": {
       "monsterName": "Kraan",
       "ability": 16,
@@ -2628,6 +2774,10 @@
       {
         "text": "vous au 94. Si, après quatre assauts, il est toujours vivant,",
         "nextPage": 203
+      },
+      {
+        "text": "vous courrez jusqu'à la grand-rue en vous rendant au 7.",
+        "nextPage": 7
       }
     ],
     "monster": {
@@ -2663,7 +2813,8 @@
   {
     "pageNumber": 234,
     "content": "Vous sautez de la roulotte qui file à bonne allure, mais vous vous\nrecevez mal et vous vous brisez la cheville en tombant. La\ndouleur est insupportable : elle vous fait perdre connaissance.\nHélas ! vous ne vous réveillerez jamais. Peut-être, cependant,\nserez-vous intéressé d'apprendre que votre tête orne désormais\nla selle d'un Kraan ? Votre mission s'est achevée ici, en même\ntemps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 235,
@@ -2696,7 +2847,16 @@
   {
     "pageNumber": 237,
     "content": "Déployant pleinement vos talents de Seigneur Kaï en matière de\nCamouflage, vous vous enfouissez dans le sol meuble du flanc de\nla colline. Puis vous vous couvrez de votre cape et vous disposez\nquelques branches d'arbre sur cet abri improvisé pour mieux le\ndissimuler aux regards. Utilisez à présent la Table de Hasard\npour obtenir un chiffre. Si vous tirez un chiffre entre 0 et 4,\npersonne ne vous découvre et vous vous rendez au 265. Si en\nrevanche vous tirez un chiffre entre 5 et 9, vous avez encore des\nprogrès à faire dans la Discipline Kaï du Camouflage, car l'un de\nvos ennemis a tôt fait de vous trouver et de vous attaquer.\nRendez-vous alors au 72 pour voir à qui vous avez affaire.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous tirez un chiffre entre 5 et 9, l'un de\nvos ennemis a tôt fait de vous trouver et de vous attaquer.\nRendez-vous alors au 72",
+        "nextPage": 72
+      },
+      {
+        "text":"Si vous tirez un chiffre entre 0 et 4,\npersonne ne vous découvre et vous vous rendez au 265",
+        "nextPage": 265
+      }
+    ]
   },
   {
     "pageNumber": 238,
@@ -2717,7 +2877,7 @@
     "content": "Tandis que vous vous enfoncez dans la forêt, vous entendez\nbattre les ailes du Kraan qui passe en volant au-dessus des arbres\navant de disparaître en direction du nord. Vous chevauchez\npendant environ une heure, puis vous arrivez à une clairière. De\nl'autre côté, face à vous, un sentier mène vers le sud. Si vous\nsouhaitez traverser la clairière pour prendre ce sentier orienté au\nsud, rendez-vous au 34. Si vous préférez rejoindre ce même\nchemin en contournant la clairière, rendez-vous au 118.",
     "choices": [
       {
-        "text": "sud,",
+        "text": "Si vous\nsouhaitez traverser la clairière pour prendre ce sentier orienté au\nsud",
         "nextPage": 34
       },
       {
@@ -2763,7 +2923,12 @@
   {
     "pageNumber": 243,
     "content": "En courant dans la forêt, vous trébuchez bientôt contre une\nracine et vous dévalez une pente escarpée en roulant sur vous-\nmême. Vous atterrissez sur un petit chemin caché sous les arbres\net vous y découvrez un cadavre étendu parmi les broussailles.\nC'est celui d'un Glok, une de ces créatures monstrueuses et\nrépugnantes que les Maîtres des Ténèbres emploient à leurs\nservices. Il y a bien longtemps, les ancêtres des Gloks servaient\nd'esclaves aux Maîtres des Ténèbres et ceux-ci leur firent bâtir la\nville infernale d'Helgedad située dans les déserts volcaniques qui\ns'étendent au-delà des monts Durncrag. La construction de cette\ncité représenta un long et douloureux cauchemar pour ces\ncréatures, dont seules les plus fortes survécurent à la terrible\népreuve. La chaleur et les vapeurs empoisonnées qui se\ndégageaient des terrains alentour se révélaient, en effet,\nmortelles pour la plupart d'entre elles. Le monstre mort qui gît à\nvos pieds est, comme tous ses congénères, un descendant de ces\nanciens esclaves Gloks. Il a été tué par un coup d'épée en pleine\ntête et une Masse d'Armes est posée à côté de lui. Vous pouvez\nprendre cette arme si vous le souhaitez en n'oubliant pas de\nl'inscrire sur votre Feuille d'Aventure. Vous poursuivrez ensuite\nvotre chemin le long du sentier en vous rendant au 97.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Vous poursuivrez ensuite\nvotre chemin le long du sentier.",
+        "nextPage": 97
+      }
+    ]
   },
   {
     "pageNumber": 244,
@@ -2880,7 +3045,12 @@
         "text": "Si vous parvenez à les tuer tous,",
         "nextPage": 278
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Loup Maudit",
+      "ability": 13,
+      "endurance": 24
+    }
   },
   {
     "pageNumber": 254,
@@ -2948,7 +3118,8 @@
   {
     "pageNumber": 259,
     "content": "La pièce devient de plus en plus froide. Peu à peu, vous sentez\nune odeur de soufre puis, bientôt, les échos d'un chant vous\nparviennent : il y a quelqu'un d'autre dans ces souterrains.\nSoudain, une brèche s'ouvre dans le mur et l'extrémité d'un\nbâton noir apparaît. Un éclair bleu jaillit alors de ce bâton et\nvient vous frapper en pleine poitrine. Vos forces lentement vous\nquittent tandis que la silhouette d'un vieil homme vêtu d'une\nample toge noire se dessine devant vous, dans une sorte de\nbrouillard. L'homme lève un poignard et s'apprête à vous égorger\n: c'est la dernière vision que vous emporterez de ce monde. Votre\nmission s'achève ici, en même temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType":"death"
   },
   {
     "pageNumber": 260,
@@ -2958,7 +3129,12 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 156
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "GLOK",
+      "ability": 11,
+      "endurance": 18
+    }
   },
   {
     "pageNumber": 261,
@@ -2981,13 +3157,26 @@
       {
         "text": "corps vous attaque aussitôt. Si vous souhaitez le combattre,",
         "nextPage": 191
+      },
+      {
+        "text": "vous\npouvez sauter en marche de la roulotte.",
+        "nextPage": 234
       }
     ]
   },
   {
     "pageNumber": 263,
     "content": "Vous suivez prudemment le cours d'eau qui coule vers l'est puis\nsoudain, vous vous immobilisez : vous venez, en effet,\nd'apercevoir la silhouette d'un Kraan mort qui gît dans l'eau tel\nun grand barrage noir. En restant à l'abri du feuillage, vous\navancez avec précaution vers le cadavre de la créature : trois\nflèches sont profondément enfoncées dans son poitrail. Un autre\ncorps est coincé sous le Kraan mort: c'est celui d'un Glok qui le\nchevauchait. Les Gloks sont des êtres méprisables et malfaisants\nentièrement dévoués à la cause des Maîtres des Ténèbres. Il y a\nbien longtemps, les ancêtres des Gloks servaient d'esclaves aux\nMaîtres des Ténèbres et ceux-ci leur firent bâtir la ville infernale\nd'Helgedad, située dans les déserts volcaniques qui s'étendent\nau-delà des monts Durncrag. La construction de cette cité\nreprésenta un long et douloureux cauchemar pour ces créatures,\ndont seules les plus fortes survécurent à la terrible épreuve. La\nchaleur et les vapeurs empoisonnées qui se dégageaient des\nterrains alentour se révélaient, en effet, mortelles pour la plupart\nd'entre eux. Le monstre mort qui repose dans le lit du cours\nd'eau est l'un des descendants de ces anciens esclaves.\nApparemment, il s'est noyé. Dans une bourse accrochée à sa\nceinture, vous trouvez 3 Pièces d'Or que vous pouvez prendre si\nvous le souhaitez. Vous pourrez ensuite continuer votre chemin\nle long du cours d'eau en vous rendant au 70. Mais vous pouvez\négalement quitter sa berge et prendre la direction du sud ;\nrendez-vous pour cela au 157.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Vous pouvez\négalement quitter sa berge et prendre la direction du sud.",
+        "nextPage": 157
+      },
+      {
+        "text": "continuer votre chemin\nle long du cours d'eau",
+        "nextPage": 70
+      }
+    ]
   },
   {
     "pageNumber": 264,
@@ -3036,7 +3225,12 @@
   {
     "pageNumber": 268,
     "content": "Quelques minutes plus tard, vous reprenez vos esprits tandis que\nl'on vous fait boire une rasade d'eau-de-vie. Epuisé mais heureux\nd'être toujours vivant, vous avancez d'un pas chancelant, soutenu\npar les soldats du Roi, en direction du camp fortifié. Rendez-vous\nau 288.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous avancez d'un pas chancelant, soutenu\npar les soldats du Roi, en direction du camp fortifié.",
+        "nextPage": 288
+      }
+    ]
   },
   {
     "pageNumber": 269,
@@ -3065,7 +3259,8 @@
   {
     "pageNumber": 271,
     "content": "Vous vous sentez très faible. Le venin du serpent circule à\nprésent dans votre sang et vos muscles se raidissent, puis se\ndétendent. Vos jambes bientôt se dérobent et vous vous enfoncez\nalors dans la vase pestilentielle du marécage qui vous engloutit\nen quelques instants. Votre vie vient de s'achever.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 272,
@@ -3074,6 +3269,10 @@
       {
         "text": "Discipline Kaï de l'Orientation,",
         "nextPage": 134
+      },
+      {
+        "text": "Dans le cas\ncontraire, vous dégainez votre arme et vous vous approchez\nsilencieusement des huttes.",
+        "nextPage": 305
       }
     ]
   },
@@ -3118,7 +3317,12 @@
   {
     "pageNumber": 276,
     "content": "Vous empoignez votre Hache et vous vous frayez un chemin dans\nl'enchevêtrement de racines et de branches noueuses qui obstrue\nle chemin. Bientôt, votre cape est déchirée en plusieurs endroits\net votre jambe droite douloureusement meurtrie, juste au-dessus\ndu genou. Vous perdez 1 point d'ENDURANCE avant de vous\nrendre au 213.",
-    "choices": []
+    "choices": [
+      {
+        "text": "votre jambe droite douloureusement meurtrie, juste au-dessus\ndu genou.",
+        "nextPage": 213
+      }
+    ]
   },
   {
     "pageNumber": 277,
@@ -3185,7 +3389,12 @@
   {
     "pageNumber": 282,
     "content": "En portant votre regard au-delà de la foule, vous remarquez que\nl'une des boutiques qui font face à la Porte Principale est une\nofficine de médecin. Un plan audacieux germe alors dans votre\nesprit. Vous vous frayez un chemin parmi la multitude et vous\ntraversez la rue. Vous vous glissez ensuite dans la boutique du\nmédecin : l'endroit semble désert à l'exception d'un perroquet\naux vives couleurs enfermé dans une cage suspendue près de la\nvitrine. Vous enfilez rapidement une blouse blanche et vous\nramassez quelques fioles de potions diverses, puis vous\nretraversez la rue jusqu'à la Porte Principale. « C'est pour une\nurgence ! vous exclamez-vous lorsque les sentinelles vous\narrêtent à l'entrée. La femme du cuisinier du roi est sur le point\nd'accoucher ! » Les soldats hésitent un instant, mais vous\naffirmez qu'il s'agit bel et bien d'une urgence et ils finissent par\nvous laisser entrer. L'un des battants de la haute porte\ns'entrouvre d'une cinquantaine de centimètres et les gardes vous\npoussent d'un geste brusque par l'entrebâillement. Vous vous\nretrouvez alors dans la cour intérieure de la citadelle. Rendez-\nvous au 11.",
-    "choices": []
+    "choices": [
+      {
+        "text":"Vous vous\nretrouvez alors dans la cour intérieure de la citadelle. Rendez-\nvous au 11.",
+        "nextPage": 11
+      }
+    ]
   },
   {
     "pageNumber": 283,
@@ -3225,7 +3434,8 @@
   {
     "pageNumber": 286,
     "content": "Ces messagers de la mort que sont les Loups Maudits, trop\nheureux de vous annoncer la vôtre, vous encerclent et vous\nattaquent. Vous vous défendez vaillamment, mais c'est inutile car\nils sont trop nombreux. Votre corps bientôt se vide de son sang et\nl'ombre éternelle vous envahit. Avant de fermer les yeux, vous\napercevez les tours de Holmgard qui scintillent au soleil : c'est la\ndernière vision que vous emporterez de ce monde. Votre mission\na échoué.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 287,
@@ -3254,14 +3464,19 @@
   {
     "pageNumber": 289,
     "content": "Les deux soldats ont l'air fatigué et inquiet. Ils tiennent leur\nhallebarde devant eux, les mains crispées sur la hampe, et\nrepoussent systématiquement quiconque veut s'approcher de la\nporte. Une femme en fureur attaque alors l'un d'eux, lui\nmartelant la poitrine de ses poings, et le fait tomber sur l'autre\ngarde. Tous trois s'écroulent aussitôt les uns sur les autres dans\nun enchevêtrement de bras et de jambes battant l'air en tous\nsens. C'est là votre chance, et vous vous précipitez vers la porte\ndont vous parvenez à déverrouiller les deux vantaux. Un instant\nplus tard, vous vous êtes glissé dans l'enceinte de la citadelle et\nvous vous retrouvez à l'entrée d'une cour intérieure. Tout a été si\nrapide qu'aucune des deux sentinelles ne vous a vu. Rendez-vous\nau 139.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Tout a été si\nrapide qu'aucune des deux sentinelles ne vous a vu.",
+        "nextPage": 139
+      }
+    ]
   },
   {
     "pageNumber": 290,
     "content": "A l'intérieur de la longue boîte, vous trouvez un Bâton enveloppé\nde cuir. Vous pouvez le prendre si vous le désirez. Vous refermez\nensuite la boîte et vous redescendez l'échelle en prenant soin de\nne poser les pieds que sur les barreaux encore solides. Inscrivez,\nle cas échéant, votre nouvelle Arme sur votre Feuille d'Aventure\net rendez-vous au 140.",
     "choices": [
       {
-        "text": "et",
+        "text": "rendez-vous au 140",
         "nextPage": 140
       }
     ]
@@ -3279,7 +3494,8 @@
   {
     "pageNumber": 292,
     "content": "La dernière sensation que vous emporterez de ce monde n'a rien\nde réjouissant : vous êtes, en effet, littéralement englouti dans\nd'épaisses ténèbres où vous mènerez désormais une existence\nd'esclave dans un univers hors du temps et de l'espace. Votre\nmaître pour l'éternité est une entité maléfique dont l'origine se\nperd dans la nuit des temps. Votre aventure vient de prendre fin.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 293,
@@ -3348,8 +3564,12 @@
     "content": "L'oiseau tourne lentement la tête vers vous et se met à vous\ninjurier. Un instant plus tard, il s'envole au-dessus des arbres et\ndisparaît bientôt. Ce que vous venez d'entendre ne vous laisse\nplus aucun doute : le corbeau était un éclaireur au service des\nMaîtres des Ténèbres et il ne va sans doute pas tarder à les\ninformer de l'endroit où vous vous trouvez. Si vous souhaitez\npoursuivre votre chemin le long du même sentier, rendez-vous\nau 121. Si vous préférez quitter ce sentier et vous enfoncer dans\nla forêt, rendez-vous au 38.",
     "choices": [
       {
-        "text": "la forêt,",
+        "text": " Si vous préférez quitter ce sentier et vous enfoncer dans\nla forêt.",
         "nextPage": 38
+      },
+      {
+        "text": " Si vous souhaitez\npoursuivre votre chemin le long du même sentier.",
+        "nextPage": 121
       }
     ]
   },
@@ -3358,20 +3578,34 @@
     "content": "Vous vous apercevez bientôt que vous venez d'aborder une\nrégion marécageuse. Continuer dans cette direction serait\ndangereux et ralentirait votre avance. Si vous souhaitez\npoursuivre malgré tout, rendez-vous au 227. Si vous préférez\nchanger de direction et retrouver un terrain plus ferme, rendez-\nvous au 95.",
     "choices": [
       {
-        "text": "poursuivre malgré tout,",
+        "text": "Si vous souhaitez\npoursuivre malgré tout,",
         "nextPage": 227
+      },
+      {
+        "text": "Si vous préférez\nchanger de direction et retrouver un terrain plus ferme.",
+        "nextPage": 95
       }
     ]
   },
   {
     "pageNumber": 300,
     "content": "Vous avez marché pendant plus d'une heure en surveillant le ciel\nde peur de voir apparaître des Kraans. Par deux fois, vous avez\naperçu leurs silhouettes caractéristiques qui se dessinaient au\nloin, mais la promptitude de vos réflexes vous a gardé d'être\nrepéré. Cette longue marche vous a affamé cependant et il vous\nfaut prendre un Repas, sinon vous perdrez 3 points\nd'ENDURANCE. Vous poursuivrez ensuite votre chemin en vous\nrendant au 13.",
-    "choices": []
+    "choices": [
+      {
+        "text": " Vous poursuivrez ensuite votre chemin",
+        "nextPage": 13
+      }
+    ]
   },
   {
     "pageNumber": 301,
     "content": "Votre Sens de l'Orientation vous indique que le sentier orienté à\nl'ouest aboutit à un cul-de-sac. Vous choisissez donc d'emprunter\nle chemin menant au sud et vous vous rendez pour cela au 27.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Vous choisissez donc d'emprunter\nle chemin menant au sud et vous vous rendez pour cela au 27.",
+        "nextPage": 27
+      }
+    ]
   },
   {
     "pageNumber": 302,
@@ -3380,6 +3614,10 @@
       {
         "text": "un chiffre entre 0 et 2,",
         "nextPage": 110
+      },
+      {
+        "text": "Entre 3 et 9,",
+        "nextPage": 285
       }
     ]
   },
@@ -3420,12 +3658,18 @@
   {
     "pageNumber": 306,
     "content": "Les échos de la bataille s'évanouissent peu à peu derrière vous.\nEt soudain, vous vous retrouvez plaqué au sol : trois Drakkarims,\ncachés dans le feuillage d'un arbre, juste au-dessus de votre tête,\nvous ont sauté dessus. Il est inutile d'essayer de lutter : ils sont\ntrop nombreux et trop robustes pour espérer pouvoir leur\néchapper. Vous les entendez alors grogner de plaisir tandis qu'ils\nlèvent leurs lances pour vous achever : c'est la dernière vision\nque vous emporterez de ce monde. Votre mission s'achève ici, en\nmême temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType":"death"
   },
   {
     "pageNumber": 307,
     "content": "Vous n'avez aucune difficulté à atteindre la cabane et, tandis que\nvous escaladez l'arbre, des souvenirs d'enfance vous reviennent\nen mémoire : vous vous rappelez le temps où, tout jeune garçon,\nvous montiez également aux arbres, non loin de la ville de Toran,\npour aller cueillir des fruits ou admirer la campagne\nenvironnante. Vous ouvrez la porte de la cabane et vous tombez\nnez à nez avec un vieil ermite recroquevillé dans un coin de la\npièce. Une expression d'intense soulagement apparaît sur son\nvisage lorsqu'il reconnaît votre cape de Seigneur Kaï. Il vous\nraconte alors que toute la région est envahie par des Gloks et\nqu'il a dénombré plus de quarante Kraans volant au-dessus de sa\nmaison dans les trois heures qui ont précédé. Ils se dirigeaient\ntous vers l'est. Il s'approche ensuite d'un buffet et vous apporte\nune assiette de fruits. Vous le remerciez et vous rangez les fruits\ndans votre Sac à Dos. Ils représentent l'équivalent d'un Repas,\nnotez-le sur votre Feuille d'Aventure. L'ermite vous montre\négalement un magnifique Marteau de Guerre qu'il pose sur une\ntable, près de la porte. « Vous en avez plus besoin que moi,\nSeigneur Kaï, dit-il. Prenez ce Marteau si vous le désirez, c'est\nune Arme à laquelle vous pourrez vous fier. » Vous n'aurez le\ndroit de prendre ce Marteau de Guerre qu'à la condition de\nl'échanger contre une autre Arme que vous possédez déjà, car\nvous ne pouvez laisser l'ermite sans aucune défense contre\nl'ennemi. Faites, le cas échéant, les ajustements nécessaires sur\nvotre Feuille d'Aventure. Vous remerciez alors le vieil homme et\nvous redescendez de l'arbre pour continuer votre route. Rendez-\nvous au 213.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous redescendez de l'arbre pour continuer votre route. Rendez-\nvous au 213.",
+        "nextPage": 213
+      }
+    ]
   },
   {
     "pageNumber": 308,
@@ -3440,7 +3684,8 @@
   {
     "pageNumber": 309,
     "content": "Vous avez à peine fait dix pas lorsque le corbeau se met à\ncroasser pour avertir l'étranger de votre présence. Le personnage\nfait alors volte-face et lance un cri perçant qui vous glace le sang\net vous noue l'estomac sous l'effet d'une peur panique. Car c'est\nun Vordak que vous avez devant vous, un des plus cruels\nlieutenants des Maîtres des Ténèbres. C'est également une\ncréature qui appartient au monde des morts vivants. En quelques\nsecondes, une horde de Gloks apparaissent à ses côtés et vous\nattaquent. Vous vous défendez vaillamment, mais vous\nsuccombez sous le nombre. Et bientôt, les doigts squelettiques du\nVordak se referment inexorablement sur votre gorge : c'est la\ndernière sensation que vous emporterez de ce monde. Votre\nmission s'achève ici en même temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType":"death"
   },
   {
     "pageNumber": 310,
@@ -3459,9 +3704,12 @@
       {
         "text": "vous cacher dans cette grotte,",
         "nextPage": 279
+      },{
+        "text": "continuer à grimper le flanc de la colline,",
+        "nextPage": 47
       },
       {
-        "text": "au 47. Enfin, si vous maîtrisez la Discipline Kaï du Camouflage,",
+        "text": "Enfin, si vous maîtrisez la Discipline Kaï du Camouflage,",
         "nextPage": 324
       }
     ]
@@ -3543,7 +3791,12 @@
   {
     "pageNumber": 319,
     "content": "La gluante créature laisse échapper un long cri d'agonie et\ns'écroule sur le sol. Vous êtes proche de la panique et vous vous\nhâtez de vous relever en arrachant des mâchoires du monstre ce\nque vous pensez être votre ceinture. Vous apercevez une lumière\nau loin et vous courez à toutes jambes dans cette direction.\nLorsque, enfin, vous vous retrouvez à l'air libre, vous vous laissez\ntomber à terre parmi les feuilles mortes et vous essayez de\nreprendre votre souffle en haletant désespérément. Dès que vous\npouvez à nouveau respirer normalement, vous vous asseyez et\nvous remarquez alors que votre ceinture est toujours nouée\nautour de votre taille : finalement, vous ne l'aviez pas perdue\ndans la bagarre. Ce que vous avez arraché aux mâchoires de la\ncréature est, en fait, une lanière de cuir à laquelle sont attachés\nune Bourse et un Poignard dans son fourreau. En ouvrant la\nBourse, vous trouvez 20 Pièces d'Or. Vous pouvez prendre ces\nPièces et le Poignard si vous le désirez. Faites les modifications\nnécessaires sur votre Feuille d'Aventure. Vous vous sentez mieux\nà présent : vous ramassez donc vos affaires et vous poursuivez\nvotre route vers l'est en vous enfonçant dans la forêt. Rendez-\nvous au 157.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous ramassez donc vos affaires et vous poursuivez\nvotre route vers l'est en vous enfonçant dans la forêt. Rendez-\nvous au 157.",
+        "nextPage": 157
+      }
+    ]
   },
   {
     "pageNumber": 320,
@@ -3560,7 +3813,7 @@
     "content": "Vous marchez pendant presque une heure le long de la berge. La\nrivière est sinueuse, et vous tournez sans cesse d'un côté et\nd'autre. Enfin, au détour d'un méandre, vous entendez les faibles\néchos d'une bataille et vous escaladez avec précaution un\nmonticule rocailleux afin de pouvoir mieux observer les\nalentours. Rendez-vous au 273.",
     "choices": [
       {
-        "text": "alentours",
+        "text": "escaladez avec précaution un\nmonticule rocailleux afin de pouvoir mieux observer les\nalentours.",
         "nextPage": 273
       }
     ]
@@ -3612,7 +3865,7 @@
     "content": "En vous voyant apparaître, le chef des Gloks se met à hurler : «\nGroh Gaï oh ! Groh gaï oh !» à l'adresse de ses compagnons qui\ns'enfuient des ruines et courent se réfugier dans la forêt.\nL'officier Glok, vêtu de noir, se tourne alors vers vous en\nbrandissant le poing. « Rob Gaï ohrringh âârh oho key ! Pamark\nhélbutt ! » s'écrie-t-il avec fureur avant de prendre la fuite à son\ntour. Vous jetez ensuite un coup d'oeil sur le champ de bataille :\nplus de quinze cadavres de Gloks sont étendus parmi les ruines\ndu temple de Raumas. Le jeune sorcier essuie son front\nruisselant de sueur et s'avance vers vous, la main tendue en signe\nd'amitié. Rendez-vous au 349.",
     "choices": [
       {
-        "text": "d'amitié",
+        "text": " la main tendue en signe\nd'amitié.",
         "nextPage": 349
       }
     ]
@@ -3630,7 +3883,8 @@
   {
     "pageNumber": 327,
     "content": "Quelques minutes plus tard, vous voyez les Kraans apparaître au-\ndessus d'une petite colline située derrière vous. Vous en\ndénombrez au moins seize qui sont chacun montés par deux\nGloks. Ces derniers sont armés de lances et coiffés de casques de\nbronze. Vous les entendez aussitôt pousser des grognements\nsatisfaits : ils vous ont repéré... Vous bondissez alors en direction\nde l'entrée du tunnel quelque huit mètres plus bas, mais votre\nbotte se prend dans un buisson et vous tombez de tout votre\nlong. Dans votre chute, vous avez lâché votre Arme et vous êtes\ndésormais à la merci de vos adversaires. Fort heureusement,\nvotre fin est rapide: le premier Glok qui s'approche de vous\nenfonce sa lance dans votre poitrine et vous transperce le cœur.\nVous mourez sur le coup. Votre mission s'achève ici, en même\ntemps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 328,
@@ -3649,7 +3903,12 @@
   {
     "pageNumber": 329,
     "content": "En descendant vers le Cimetière des Anciens, vous remarquez\nune étrange brume qui baigne les lieux. Des nuages\ntourbillonnent sur cette étendue grise, empêchant le soleil de\npasser et maintenant la nécropole dans une obscurité\npermanente. Vous sentez un frisson vous parcourir le corps\ntandis que la température fraîchit peu à peu. Votre cheval se met\nà regimber et vous avez beau l'éperonner, il refuse de s'approcher\nde cet endroit sinistre. Il ne vous reste donc plus qu'à\nabandonner votre monture pour continuer à pied. Rendez-vous\nau 284.",
-    "choices": []
+    "choices": [
+      {
+        "text": "abandonner votre monture pour continuer à pied. Rendez-vous",
+        "nextPage": 284
+      }
+    ]
   },
   {
     "pageNumber": 330,
@@ -3726,7 +3985,17 @@
   {
     "pageNumber": 336,
     "content": "Vous vous ruez dans la clairière en prenant les Gloks au\ndépourvu. Sans la moindre seconde d'hésitation, vous frappez\ncelui qui se trouve le plus proche de vous et vous le tuez avant\nmême que son corps se soit écroulé sur le sol. Les autres Gloks\ndégainent leurs épées à la lame recourbée et vous attaquent, il\nvous faut les combattre un par un.\nHABILETÉ ENDURANCE\nPremier GLOK 14 11\nDeuxième GLOK 13 11\nSi vous êtes vainqueur, vous libérez le soldat et vous vous rendez\nau 117.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous libérez le soldat et vous vous rendez",
+        "nextPage": 117
+      }
+    ],
+    "monster": {
+      "monsterName": "Glok",
+      "ability": 14,
+      "endurance": 11
+    }
   },
   {
     "pageNumber": 337,
@@ -3775,7 +4044,12 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 193
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Glok + Loup Maudit",
+      "ability": 14,
+      "endurance": 24
+    }
   },
   {
     "pageNumber": 341,
@@ -3828,7 +4102,16 @@
   {
     "pageNumber": 345,
     "content": "Vous rabattez sur votre tête le capuchon de votre cape de\nSeigneur Kaï et vous retenez votre souffle tandis que le Kraan\ntournoie au-dessus de vous. Quelques minutes plus tard, vous\nentendez les Gloks pousser des jurons furieux et les battements\nd'ailes des Kraans s'évanouissent bientôt: ils sont partis vers\nl'ouest. La promptitude de vos réflexes vous a sauvé d'une\ncapture certaine et d'une mort probable. Vous pouvez à présent\nrevenir sur le sentier en vous rendant au 272. Mais vous pouvez\négalement choisir de poursuivre votre chemin parmi les arbres\nde la forêt. Rendez-vous pour cela au 19.",
-    "choices": []
+    "choices": [
+      {
+        "text": " Mais vous pouvez également choisir de poursuivre votre chemin parmi les arbres",
+        "nextPage": 19
+      },
+      {
+        "text": "revenir sur le sentier.",
+        "nextPage": 272
+      }
+    ]
   },
   {
     "pageNumber": 346,
@@ -3853,7 +4136,12 @@
   {
     "pageNumber": 348,
     "content": "D'un coup de pied, vous jetez au loin le corps du serpent et vous\nêtes alors saisi d'une terreur rétrospective, car cette Vipère des\nMarais était une vipère rouge et aucun remède n'existe contre la\npuissance de son venin ! Vous estimez qu'il serait suicidaire de\ncontinuer plus avant dans cette direction et vous revenez donc\nsur vos pas jusqu'à ce que vous retrouviez un terrain plus ferme.\nVous poursuivez ensuite votre chemin en vous rendant au 95.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous retrouviez un terrain plus ferme. Vous poursuivez ensuite votre chemin",
+        "nextPage": 95
+      }
+    ]
   },
   {
     "pageNumber": 349,
@@ -3868,6 +4156,7 @@
   {
     "pageNumber": 350,
     "content": "Vous entrez dans la grande Salle du Conseil, une pièce immense\nmagnifiquement décorée de tentures blanc et or. Le Roi et ses\nplus proches conseillers sont en train d'examiner une grande\ncarte étalée sur une table de marbre, au centre de la salle. Leurs\nvisages expriment l'inquiétude et la concentration. Lorsque vous\nfaites le récit de la mort de vos compagnons et des périls que\nvous avez dû affronter pour atteindre la citadelle, tout le monde\nvous écoute en silence sans jamais vous interrompre. Enfin,\nquand vous en avez terminé, le Roi s'approche de vous et prend\nvotre main droite dans la sienne. « Loup Solitaire, tu as fait\npreuve de courage et d'abnégation : ce sont là les qualités d'un\nvéritable Seigneur Kaï. Ton voyage a été semé de dangers et bien\nque tu nous apportes des nouvelles qui nous plongent dans le\nchagrin, ta détermination illumine ces heures sombres d'un\nrayon d'espoir. Tu as grandement honoré la mémoire de tes\nMaîtres et nous t'en portons louange. » Toutes les personnes\nrassemblées dans la salle se joignent à cet hommage et vous\nexpriment leur profonde gratitude. Devant tant d'honneur, vous\nne pouvez vous empêcher de rougir. Le Roi alors lève la main et\ntout le monde fait silence. « Tu as fait tout ce que le Royaume du\nSommerlund pouvait attendre d'un de ses fidèles sujets, reprend\nle monarque, mais notre patrie a encore grand besoin de toi. Les\nMaîtres des Ténèbres ont, en effet, retrouvé leur puissance, et\nleur ambition ne connaît plus de bornes. Notre seul espoir de les\nrepousser se trouve désormais au royaume de Durenor. C'est là\nque repose l'instrument de la puissance qui les a vaincus\nautrefois. Loup Solitaire, tu es le dernier des Seigneurs Kaï et tu\npossèdes la science que t'ont enseignée tes maîtres. Iras-tu à\nDurenor pour y chercher le Glaive de Sommer, l'Épée du Soleil ?\nSeul ce don des Dieux nous permettra d'écraser l'ennemi et de\nsauver le royaume. »\nSi vous acceptez de partir en quête du Glaive de Sommer, vous\npourrez le faire en vivant l'aventure que vous propose le\ndeuxième volume de la série du Loup Solitaire :\nLa Traversée Infernale",
-    "choices": []
+    "choices": [],
+    "endingType": "victory"
   }
 ]
