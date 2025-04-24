@@ -90,8 +90,9 @@ class PageController extends AbstractController
             'monsterId' => $targetPage->getMonster()?->getId(),
             'monster' => $targetPage->getMonster()?->getMonsterName(),
             'canAccess' => $combatService->canAccessPage($targetPage, $adventurer),
-            'isBlocking' => $targetPage->isCombatIsBlocking(),
+            'isBlocking' => $targetPage->isCombatIsBlocking(true),
             'choices' => $choices,
+            'endingType' => $targetPage->getEndingType(),
         ]);
     }
     
