@@ -92,6 +92,7 @@ class PageController extends AbstractController
             'canAccess' => $combatService->canAccessPage($targetPage, $adventurer),
             'isBlocking' => $targetPage->isCombatIsBlocking(),
             'choices' => $choices,
+            'endingType' => $targetPage->getEndingType(),
         ]);
     }
     

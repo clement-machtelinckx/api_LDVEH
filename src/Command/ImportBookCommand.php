@@ -6,6 +6,7 @@ namespace App\Command;
 use App\Entity\Book;
 use App\Entity\Page;
 use App\Entity\Choice;
+use App\Entity\Monster;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
@@ -22,7 +23,7 @@ class ImportBookCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $json = file_get_contents(__DIR__ . '/../../parsed_book.json');
+        $json = file_get_contents(__DIR__ . '/../../book.json');
         $data = json_decode($json, true);
 
         $book = new Book();
@@ -30,23 +31,40 @@ class ImportBookCommand extends Command
         $book->setDescription('Importé automatiquement depuis le PDF');
         $this->em->persist($book);
 
-        // map temporaire pour retrouver les pages par numéro
         $pageMap = [];
 
-        // Création des pages sans les choix
+        // Création des pages avec endingType et monstres
         foreach ($data as $entry) {
             $page = new Page();
             $page->setPageNumber($entry['pageNumber']);
             $page->setContent($entry['content']);
+            $page->setCombatIsBlocking($entry['isBlocking'] ?? false);
             $page->setBook($book);
-            $this->em->persist($page);
 
+            // Optional: endingType ("death" ou "victory")
+            if (isset($entry['endingType'])) {
+                $page->setEndingType($entry['endingType']); // ← Assure-toi que ce champ existe dans Page
+            }
+
+            // Optional: monster
+            if (isset($entry['monster'])) {
+                $monsterData = $entry['monster'];
+                $monster = new Monster();
+                $monster->setMonsterName($monsterData['monsterName']);
+                $monster->setAbility($monsterData['ability']);
+                $monster->setEndurance($monsterData['endurance']);
+                $this->em->persist($monster);
+
+                $page->setMonster($monster); // ← Relation OneToOne ? Assure-toi que c’est mappé dans l'entité Page
+            }
+
+            $this->em->persist($page);
             $pageMap[$entry['pageNumber']] = $page;
         }
 
-        $this->em->flush(); // Pour que toutes les pages aient un ID
+        $this->em->flush();
 
-        // Création des choix maintenant que toutes les pages existent
+        // Création des choix
         foreach ($data as $entry) {
             if (!isset($entry['choices'])) {
                 continue;
@@ -66,7 +84,7 @@ class ImportBookCommand extends Command
 
         $this->em->flush();
 
-        $output->writeln('📘 Livre importé avec succès !');
+        $output->writeln('📘 Livre importé avec succès avec endings + monstres !');
         return Command::SUCCESS;
     }
 }
