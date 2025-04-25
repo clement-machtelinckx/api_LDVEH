@@ -23,17 +23,17 @@ class ImportBookCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $json = file_get_contents(__DIR__ . '/../../book.json');
+        $json = file_get_contents(__DIR__ . '/../../book04_Le_Gouffre_Maudit.json');
         $data = json_decode($json, true);
 
         $book = new Book();
-        $book->setTitle('Loup Solitaire - Les Maîtres des Ténèbres');
+        $book->setTitle('Loup Solitaire - Gouffre Maudit');
+        $book->setAuthor('Joe Dever');
         $book->setDescription('Importé automatiquement depuis le PDF');
         $this->em->persist($book);
 
         $pageMap = [];
 
-        // Création des pages avec endingType et monstres
         foreach ($data as $entry) {
             $page = new Page();
             $page->setPageNumber($entry['pageNumber']);
@@ -43,7 +43,7 @@ class ImportBookCommand extends Command
 
             // Optional: endingType ("death" ou "victory")
             if (isset($entry['endingType'])) {
-                $page->setEndingType($entry['endingType']); // ← Assure-toi que ce champ existe dans Page
+                $page->setEndingType($entry['endingType']); 
             }
 
             // Optional: monster
@@ -55,7 +55,7 @@ class ImportBookCommand extends Command
                 $monster->setEndurance($monsterData['endurance']);
                 $this->em->persist($monster);
 
-                $page->setMonster($monster); // ← Relation OneToOne ? Assure-toi que c’est mappé dans l'entité Page
+                $page->setMonster($monster); 
             }
 
             $this->em->persist($page);
