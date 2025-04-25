@@ -13,7 +13,7 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-#[AsCommand(name: 'app:import-book')]
+#[AsCommand(name: 'app:import-books')]
 class ImportBookCommand extends Command
 {
     public function __construct(private EntityManagerInterface $em)
@@ -23,68 +23,80 @@ class ImportBookCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $json = file_get_contents(__DIR__ . '/../../book.json');
-        $data = json_decode($json, true);
+        $booksToImport = [
+            ['file' => 'book01_maitre_tenebre.json', 'title' => 'Loup Solitaire - Les Maîtres des Ténèbres'],
+            ['file' => 'book02_traversee_infernal.json', 'title' => 'Loup Solitaire - La Traversée Infernale'],
+            ['file' => 'book03_Les_Grottes_de_Kalte.json', 'title' => 'Loup Solitaire - Les Grottes de Kalte'],
+            ['file' => 'book04_Le_Gouffre_Maudit.json', 'title' => 'Loup Solitaire - Le Gouffre Maudit'],
+        ];
 
-        $book = new Book();
-        $book->setTitle('Loup Solitaire - Les Maîtres des Ténèbres');
-        $book->setDescription('Importé automatiquement depuis le PDF');
-        $this->em->persist($book);
+        foreach ($booksToImport as $bookData) {
+            $jsonPath = __DIR__ . '/../../' . $bookData['file'];
 
-        $pageMap = [];
-
-        // Création des pages avec endingType et monstres
-        foreach ($data as $entry) {
-            $page = new Page();
-            $page->setPageNumber($entry['pageNumber']);
-            $page->setContent($entry['content']);
-            $page->setCombatIsBlocking($entry['isBlocking'] ?? false);
-            $page->setBook($book);
-
-            // Optional: endingType ("death" ou "victory")
-            if (isset($entry['endingType'])) {
-                $page->setEndingType($entry['endingType']); // ← Assure-toi que ce champ existe dans Page
-            }
-
-            // Optional: monster
-            if (isset($entry['monster'])) {
-                $monsterData = $entry['monster'];
-                $monster = new Monster();
-                $monster->setMonsterName($monsterData['monsterName']);
-                $monster->setAbility($monsterData['ability']);
-                $monster->setEndurance($monsterData['endurance']);
-                $this->em->persist($monster);
-
-                $page->setMonster($monster); // ← Relation OneToOne ? Assure-toi que c’est mappé dans l'entité Page
-            }
-
-            $this->em->persist($page);
-            $pageMap[$entry['pageNumber']] = $page;
-        }
-
-        $this->em->flush();
-
-        // Création des choix
-        foreach ($data as $entry) {
-            if (!isset($entry['choices'])) {
+            if (!file_exists($jsonPath)) {
+                $output->writeln("<error>❌ Fichier introuvable : {$bookData['file']}</error>");
                 continue;
             }
 
-            $fromPage = $pageMap[$entry['pageNumber']] ?? null;
-            if (!$fromPage) continue;
+            $data = json_decode(file_get_contents($jsonPath), true);
 
-            foreach ($entry['choices'] as $choiceData) {
-                $choice = new Choice();
-                $choice->setText($choiceData['text']);
-                $choice->setPage($fromPage);
-                $choice->setNextPage($pageMap[$choiceData['nextPage']] ?? null);
-                $this->em->persist($choice);
+            $book = new Book();
+            $book->setTitle($bookData['title']);
+            $book->setAuthor('Joe Dever');
+            $book->setDescription('Importé automatiquement depuis le PDF');
+            $this->em->persist($book);
+
+            $pageMap = [];
+
+            foreach ($data as $entry) {
+                $page = new Page();
+                $page->setPageNumber($entry['pageNumber']);
+                $page->setContent($entry['content']);
+                $page->setBook($book);
+                $page->setCombatIsBlocking($entry['isBlocking'] ?? false);
+
+                if (isset($entry['endingType'])) {
+                    $page->setEndingType($entry['endingType']);
+                }
+
+                if (isset($entry['monster'])) {
+                    $monsterData = $entry['monster'];
+                    $monster = new Monster();
+                    $monster->setMonsterName($monsterData['monsterName']);
+                    $monster->setAbility($monsterData['ability']);
+                    $monster->setEndurance($monsterData['endurance']);
+                    $this->em->persist($monster);
+                    $page->setMonster($monster);
+                }
+
+                $this->em->persist($page);
+                $pageMap[$entry['pageNumber']] = $page;
             }
+
+            $this->em->flush();
+
+            foreach ($data as $entry) {
+                if (!isset($entry['choices'])) {
+                    continue;
+                }
+
+                $fromPage = $pageMap[$entry['pageNumber']] ?? null;
+                if (!$fromPage) continue;
+
+                foreach ($entry['choices'] as $choiceData) {
+                    $choice = new Choice();
+                    $choice->setText($choiceData['text']);
+                    $choice->setPage($fromPage);
+                    $choice->setNextPage($pageMap[$choiceData['nextPage']] ?? null);
+                    $this->em->persist($choice);
+                }
+            }
+
+            $this->em->flush();
+            $output->writeln("✅ Livre importé : <info>{$bookData['title']}</info>");
         }
 
-        $this->em->flush();
-
-        $output->writeln('📘 Livre importé avec succès avec endings + monstres !');
+        $output->writeln('<comment>📚 Tous les livres ont été importés avec succès !</comment>');
         return Command::SUCCESS;
     }
 }
