@@ -18,7 +18,11 @@
     "content": "Vous suivez une route étroite et sinueuse, le long de la côte. De hautes\nfalaises en surplomb se dressent sur un côté du chemin. A quelque\ndistance, un éboulement interdit le passage et il vous faut vous arrêter\npour dégager la voie. Mais, alors que vous aidez le conducteur à\nsoulever un énorme rocher en vous servant d'un levier, vous en\nentendez tomber un autre et, un instant plus tard, une gigantesque\nmasse de pierre se fracasse sur la chaussée, écrasant le conducteur sous\nson poids. L'homme est tué sur le coup avant que vous ayez pu faire le\nmoindre geste pour essayer de le sauver. Le rocher est tombé du haut\nde la falaise et vous avez bien failli vous-même le recevoir sur la tête,\ncar le malheureux qui vient de périr ne se trouvait qu'à deux mètres de\nvous. Si vous maîtrisez la Discipline Kaï du Sixième Sens, rendez-vous\nau 42. Dans le cas contraire, rendez-vous au 168.",
     "choices": [
       {
-        "text": "au 42. Dans le cas contraire,",
+        "text":"Si vous maîtrisez la Discipline Kaï du Sixième Sens, rendez-vous\nau 42.",
+        "nextPage": 42
+      },
+      {
+        "text": "Dans le cas contraire,",
         "nextPage": 168
       }
     ]
@@ -58,7 +62,18 @@
   {
     "pageNumber": 5,
     "content": "La porte s'ouvre à la volée et un MONSTRE d'ENFER se rue sur vous\nen brandissant son épée. Vous frappez la créature dès qu'elle a pénétré\ndans la cale et sous l'effet du coup, une longue et profonde entaille\napparaît sur sa poitrine. Le Monstre pousse un cri épouvantable, mais,\nmalgré sa blessure, il a encore la force de bondir sur vous. Il vous faut\nengager un combat à mort.\nMONSTRE BLESSÉ HABILETÉ: 22 ENDURANCE: 20\nLe Monstre d'Enfer est un être de l'au-delà, un mort vivant, et la\npuissance du Glaive de Sommer vous permet de multiplier par deux\ntous les points d'ENDURANCE qu'il perdra au cours du combat. Il est\ncependant insensible à la Puissance Psychique. Si vous parvenez à tuer\nle Monstre, vous pourrez vous enfuir de la cale par l'écoutille. Rendez-\nvous alors au 166.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Si vous parvenez à tuer\nle Monstre, vous pourrez vous enfuir de la cale par l'écoutille. Rendez-\nvous alors au 166.",
+        "nextPage": 166
+      }
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "ONSTRE BLESSÉ",
+      "ability": 22,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 6,
@@ -67,6 +82,10 @@
       {
         "text": "Si vous souhaitez entrer dans cette boutique,",
         "nextPage": 266
+      },
+      {
+        "text": "poursuivre votre chemin en direction de l'est,",
+        "nextPage": 310
       }
     ]
   },
@@ -78,12 +97,19 @@
         "text": "Psychique. Si vous sortez vainqueur de ce combat,",
         "nextPage": 33
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "DORIER GANON",
+      "ability": 28,
+      "endurance": 30
+    }
   },
   {
     "pageNumber": 8,
     "content": "A la vérité, vous êtes plongé dans un sommeil si profond que vous ne\nvous réveillerez jamais plus car au cours de la nuit un Serpent des\nSables vous a mordu et son venin mortel a eu raison de vous en\nquelques secondes. Votre mission s'achève ici, en même temps que\nvotre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 9,
@@ -104,7 +130,7 @@
         "nextPage": 51
       },
       {
-        "text": ". 4, 5 ou 6,",
+        "text": ". 4, 5 ou 6,7 , 8\n",
         "nextPage": 195
       },
       {
@@ -116,7 +142,8 @@
   {
     "pageNumber": 11,
     "content": "Vous vous cachez dans un grand tonneau en vous dissimulant sous\nvotre cape de Seigneur Kaï. Mais votre tentative reste vaine car moins\nd'une minute plus tard la trappe s'ouvre à la volée et les villageois\nfurieux sautent sur le sol de pierre en brandissant des torches et des\népées. Ils vous arrachent à votre tonneau et vous font rouler à terre à\ngrands coups de pied. Les cris de la foule étouffent vos supplications,\ninutile d'espérer la moindre pitié. Votre quête s'achève ici, en même\ntemps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 12,
@@ -151,7 +178,7 @@
     "content": "Dès que la lutte s'engage, vous vous servez du pouvoir que vous donne\nla Discipline Kaï pour affaiblir la concentration de votre adversaire.\nVous voyez la sueur perler à son front et ses yeux se fermer tandis qu'il\ncède peu à peu sous l'effet de votre implacable Puissance Psychique.\nEnfin, moins d'une minute plus tard, il s'écroule sur le sol, sans\nconnaissance. Rendez-vous au 305.",
     "choices": [
       {
-        "text": "connaissance",
+        "text": "s'écroule sur le sol, sans\nconnaissance",
         "nextPage": 305
       }
     ]
@@ -161,7 +188,7 @@
     "content": "Il n'a plus l'air soupçonneux, à présent, mais surpris. «Je pensais que\nvous étiez un imposteur, Seigneur Kaï, dit-il, et je dois vous avouer que\nj'avais l'intention de vous donner une leçon que vous n'auriez jamais\noubliée votre vie durant. Pardonnez-moi d'avoir douté de vous mais\nvotre récit m'a paru si effrayant que je n'ai pu me résoudre à y croire, de\npeur qu'il ne fût vrai. J'ai fait le serment de défendre cette frontière et il\nm'est impossible de quitter la tour, mais si l'un quelconque des objets\nque je possède peut être utile à votre quête, sachez que je vous en fait\nvolontiers don. » Il dispose alors sur une grande table de chêne les\nobjets suivants et vous invite à choisir l'un d'eux : Glaive, Masse\nd'Armes, Bâton, Potion de Guérison (une dose qui vous redonne 3\npoints d'ENDURANCE), 3 Repas, 1 Sac à Dos, 12 Pièces d'Or. Vous\nfaites votre choix et vous vous apprêtez à quitter la tour. L'homme vous\nindique du doigt la direction à prendre. « Lorsque vous serez parvenu\nau chenal de Ryner, suivez le chemin orienté au nord. Vous arriverez\nalors à un pont que gardent des soldats du roi. Quand ils vous\ndemanderont le mot de passe, vous répondrez : \"Crépuscule.\" La route\nau-delà du pont mène à Port Bax. Que Dieu vous aide, Loup Solitaire. »\nVous remerciez ce valeureux guerrier et vous vous mettez en chemin. Il\nvous faut cependant abandonner votre cheval car il vous serait\nimpossible de franchir sur son dos la forêt dense qui s'étend devant\nvous. Rendez-vous au 244.",
     "choices": [
       {
-        "text": "vous",
+        "text": "vous abandonner votre cheval.",
         "nextPage": 244
       }
     ]
@@ -179,7 +206,12 @@
   {
     "pageNumber": 17,
     "content": "Vous avez réussi à vous hisser à mi-corps lorsque la porte de la cale,\nau-dessous de vous, s'ouvre à la volée. Un MONSTRE D'ENFER se\nprécipite alors et vous blesse aux jambes d'un coup de son épée noire\navant même que vous ayez pu tenter de vous enfuir. La blessure est\nsérieuse et vous perdez 5 points d'ENDURANCE. Vous tombez ensuite\nau fond de la cale, et il vous faut combattre la créature jusqu'à ce que\nmort s'ensuive.\nMONSTRE D'ENFER HABILETÉ: 22 ENDURANCE:30\nIl s'agit là d'un mort vivant et la puissance du Glaive de Sommer vous\npermet de multiplier par deux tous les points d'ENDURANCE que\nperdra la créature. Elle reste cependant insensible à la Puissance\nPsychique. Si vous parvenez à tuer le Monstre d'Enfer, vous pourrez\nquitter la cale par la porte ouverte. Rendez-vous alors au 166.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous pourrez\nquitter la cale par la porte ouverte. Rendez-vous alors au 166.",
+        "nextPage": 166
+      }
+    ]
   },
   {
     "pageNumber": 18,
