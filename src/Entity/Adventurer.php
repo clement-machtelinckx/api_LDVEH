@@ -11,10 +11,10 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Component\Serializer\Annotation\MaxDepth;
 
 #[ORM\Entity(repositoryClass: AdventurerRepository::class)]
-#[ApiResource(
-    normalizationContext: ['groups' => ['adventurer:read']],
-    denormalizationContext: ['groups' => ['adventurer:write']]
-)]
+// #[ApiResource(
+//     normalizationContext: ['groups' => ['adventurer:read']],
+//     denormalizationContext: ['groups' => ['adventurer:write']]
+// )]
 class Adventurer
 {
     #[ORM\Id]

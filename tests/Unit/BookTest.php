@@ -1,86 +1,90 @@
 <?php
 
-namespace App\Tests\Entity;
+namespace App\Tests\Unit;
 
 use App\Entity\Book;
-use App\Factory\PageFactory;
+use App\Entity\Page;
 use PHPUnit\Framework\TestCase;
-use Zenstruck\Foundry\Test\Factories;
 
 class BookTest extends TestCase
 {
-    use Factories;
-
-    public function testGettersAndSetters(): void
+    public function testSetAndGetId(): void
     {
         $book = new Book();
-
-        // Test setId and getId
-        $book->setId(1);
-        $this->assertEquals(1, $book->getId());
-
-        // Test setTitle and getTitle
-        $book->setTitle('The Hobbit');
-        $this->assertEquals('The Hobbit', $book->getTitle());
-
-        // Test setAuthor and getAuthor
-        $book->setAuthor('J.R.R. Tolkien');
-        $this->assertEquals('J.R.R. Tolkien', $book->getAuthor());
-
-        // Test setDescription and getDescription
-        $book->setDescription('A great adventure.');
-        $this->assertEquals('A great adventure.', $book->getDescription());
-
-        // Test setPublicationDate and getPublicationDate
-        $publicationDate = new \DateTime();
-        $book->setPublicationDate($publicationDate);
-        $this->assertEquals($publicationDate, $book->getPublicationDate());
-
-        // Test setCreatedAt and getCreatedAt
-        $createdAt = new \DateTimeImmutable();
-        $book->setCreatedAt($createdAt);
-        $this->assertEquals($createdAt, $book->getCreatedAt());
-
-        // Test setUpdatedAt and getUpdatedAt
-        $updatedAt = new \DateTimeImmutable();
-        $book->setUpdatedAt($updatedAt);
-        $this->assertEquals($updatedAt, $book->getUpdatedAt());
+        $book->setId(5);
+        $this->assertSame(5, $book->getId());
     }
 
-    public function testLifecycleCallbacks(): void
+    public function testSetAndGetTitle(): void
     {
         $book = new Book();
+        $book->setTitle("La traversée infernale");
+        $this->assertSame("La traversée infernale", $book->getTitle());
+    }
 
-        // Simulate prePersist callback
+    public function testSetAndGetAuthor(): void
+    {
+        $book = new Book();
+        $book->setAuthor("Joe Dever");
+        $this->assertSame("Joe Dever", $book->getAuthor());
+    }
+
+    public function testSetAndGetDescription(): void
+    {
+        $book = new Book();
+        $desc = "Deuxième volume de la saga de Loup Solitaire.";
+        $book->setDescription($desc);
+        $this->assertSame($desc, $book->getDescription());
+    }
+
+    public function testSetAndGetPublicationDate(): void
+    {
+        $date = new \DateTimeImmutable("1985-05-01");
+        $book = new Book();
+        $book->setPublicationDate($date);
+        $this->assertSame($date, $book->getPublicationDate());
+    }
+
+    public function testPrePersistSetsDates(): void
+    {
+        $book = new Book();
         $book->onPrePersist();
-        $this->assertNotNull($book->getCreatedAt());
-        $this->assertNotNull($book->getUpdatedAt());
 
-        // Simulate preUpdate callback
-        $book->onPreUpdate();
-        $this->assertNotNull($book->getUpdatedAt());
+        $this->assertInstanceOf(\DateTimeImmutable::class, $book->getCreatedAt());
+        $this->assertInstanceOf(\DateTimeImmutable::class, $book->getUpdatedAt());
     }
 
-    public function testPageCollection(): void
+    public function testPreUpdateUpdatesUpdatedAt(): void
     {
         $book = new Book();
-        $page = PageFactory::createOne();
+        $book->onPrePersist(); // Set initial value
+        sleep(1);
+        $book->onPreUpdate();
 
-        // Test addPage
+        $this->assertGreaterThan(
+            $book->getCreatedAt()->getTimestamp(),
+            $book->getUpdatedAt()->getTimestamp()
+        );
+    }
+
+    public function testAddAndRemovePage(): void
+    {
+        $book = new Book();
+        $page = new Page();
+
         $book->addPage($page);
         $this->assertCount(1, $book->getPage());
-        $this->assertTrue($book->getPage()->contains($page));
+        $this->assertSame($book, $page->getBook());
 
-        // Test removePage
         $book->removePage($page);
         $this->assertCount(0, $book->getPage());
-        $this->assertFalse($book->getPage()->contains($page));
+        $this->assertNull($page->getBook());
     }
 
-    public function testToString(): void
+    public function testToStringReturnsTitle(): void
     {
         $book = new Book();
-        $book->setTitle('The Hobbit');
-        $this->assertEquals('The Hobbit', (string) $book);
+        $book->setTitle("Le Gouffre Maudit");
+        $this->assertSame("Le Gouffre Maudit", (string)$book);
     }
 }

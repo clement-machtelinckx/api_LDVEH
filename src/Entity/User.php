@@ -16,6 +16,7 @@ use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 #[ApiResource(
     normalizationContext: ['groups' => ['user:read']],
     denormalizationContext: ['groups' => ['user:write']],
+    security: "is_granted('ROLE_ADMIN')"
 )]
 class User implements UserInterface, PasswordAuthenticatedUserInterface
 {

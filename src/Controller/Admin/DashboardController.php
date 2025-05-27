@@ -2,11 +2,14 @@
 
 namespace App\Controller\Admin;
 
+use App\Entity\Adventure;
 use App\Entity\Book;
 use App\Entity\Page;
 use App\Entity\Choice;
 use App\Entity\Monster;
 use App\Entity\Adventurer;
+use App\Entity\FightHistory;
+use App\Entity\User;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
@@ -41,5 +44,9 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToCrud('Choice', 'fas fa-box', Choice::class);
         yield MenuItem::linkToCrud('Adventurer', 'fas fa-box', Adventurer::class);
         yield MenuItem::linkToCrud('Monster', 'fas fa-box', Monster::class);
+        yield MenuItem::linkToCrud('Adventure', 'fas fa-box', Adventure::class);
+        yield MenuItem::linkToCrud('Fight History', 'fas fa-box', FightHistory::class);
+        yield MenuItem::LinkToCrud('User', 'fas fa-users', User::class)
+            ->setPermission('ROLE_ADMIN');
     }
 }

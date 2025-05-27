@@ -12,7 +12,8 @@ use Symfony\Component\Serializer\Annotation\MaxDepth;
 #[ORM\Entity(repositoryClass: ChoiceRepository::class)]
 #[ApiResource(
     normalizationContext: ['groups' => ['choice:read']],
-    denormalizationContext: ['groups' => ['choice:write']]
+    denormalizationContext: ['groups' => ['choice:write']],
+    security: "is_granted('ROLE_ADMIN')"
 )]
 class Choice
 {

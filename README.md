@@ -1,0 +1,63 @@
+# 📚 API LDVEH - Livre Dont Vous Êtes Le Héros
+
+Bienvenue sur **api_LDVEH**, un projet Symfony qui permet de jouer à des Livres Dont Vous Êtes Le Héros (LDVEH) en mode API + front mobile. Ce projet gère les livres, les pages, les combats, les choix, les aventures… bref, une vraie app d’exploration narrative 🧙‍♂️🗺️
+
+---
+
+## ⚙️ Prérequis
+
+- PHP ^8.3  
+- Composer  
+- Symfony CLI (optionnel mais recommandé)
+
+---
+
+## 🚀 Installation rapide
+
+### 1. Cloner le projet
+
+```bash
+git clone https://github.com/clement-machtelinckx/api_LDVEH.git
+cd api_LDVEH
+
+### 2. Installer les dépendances
+
+```bash
+composer install
+
+### 3. Créer la base de données et appliquer les migrations
+
+```bash
+php bin/console doctrine:database:create
+php bin/console doctrine:migrations:migrate
+
+### 4. Importer les livres (4 tomes disponibles)
+
+```bash
+php bin/console app:import-books
+
+### lancer les test unitaire 
+
+php vendor\phpunit\phpunit\phpunit
+
+
+
+💡 Fonctionnalités
+
+Navigation d’un paragraphe à l’autre via les choix
+Gestion des monstres et des combats
+Système d’aventure persistante par utilisateur
+Écran de mort ou de victoire
+Import JSON automatique des livres depuis un script
+Structure extensible pour ajouter facilement d’autres livres
+
+📱 Front mobile (React Native)
+Un front mobile est également disponible ici 👉
+➡️ https://github.com/clement-machtelinckx/front_LDVEH
+
+Il permet de :
+
+Se connecter / créer un compte
+Visualiser la liste des livres
+Créer un aventurier
+Jouer et combattre, en gardant sa progression
