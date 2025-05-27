@@ -1,45 +1,49 @@
 <?php
 
-namespace App\Tests\Entity;
+namespace App\Tests\Unit;
 
 use App\Entity\Monster;
-use App\Factory\MonsterFactory;
-use App\Tests\Functional\ApiTestCase;
 use PHPUnit\Framework\TestCase;
-use Zenstruck\Foundry\Test\Factories;
-use Zenstruck\Foundry\Test\ResetDatabase;
-use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
-class MonsterTest extends ApiTestCase
+class MonsterTest extends TestCase
 {
-    
-    use Factories;
-    use ResetDatabase;
-    
-    public function testMonsterProperties(): void
+    public function testSetAndGetId(): void
     {
-
         $monster = new Monster();
-        $monster->setMonsterName('Gobelin')
-                ->setAbility(8)
-                ->setEndurance(14);
+        $refClass = new \ReflectionClass($monster);
+        $property = $refClass->getProperty('id');
+        $property->setAccessible(true);
+        $property->setValue($monster, 5);
 
-        $this->assertSame('Gobelin', $monster->getMonsterName());
-        $this->assertSame(8, $monster->getAbility());
-        $this->assertSame(14, $monster->getEndurance());
-        $this->assertSame('Gobelin', (string) $monster);
+        $this->assertSame(5, $monster->getId());
     }
-    public function testMonsterFactory(): void
-    {
-        $monster = MonsterFactory::createOne([
-            'monsterName' => 'Orc',
-            'ability' => 10,
-            'endurance' => 12,
-        ]);
 
-        $this->assertNotNull($monster->getId());
-        $this->assertSame('Orc', $monster->getMonsterName());
-        $this->assertSame(10, $monster->getAbility());
-        $this->assertSame(12, $monster->getEndurance());
+    public function testSetAndGetMonsterName(): void
+    {
+        $monster = new Monster();
+        $monster->setMonsterName("Gorak");
+        $this->assertSame("Gorak", $monster->getMonsterName());
+    }
+
+    public function testSetAndGetAbility(): void
+    {
+        $monster = new Monster();
+        $monster->setAbility(8);
+        $this->assertSame(8, $monster->getAbility());
+    }
+
+    public function testSetAndGetEndurance(): void
+    {
+        $monster = new Monster();
+        $monster->setEndurance(20);
+        $this->assertSame(20, $monster->getEndurance());
+    }
+
+    public function testToStringReturnsMonsterName(): void
+    {
+        $monster = new Monster();
+        $monster->setMonsterName("Kragg");
+        $this->assertSame("Kragg", (string)$monster);
     }
 }
+    

@@ -76,8 +76,15 @@ class SecurityController extends AbstractController
         $email = $data['email'] ?? null;
         $password = $data['password'] ?? null;
 
+
         if (!$email || !$password) {
             return $this->json(['error' => 'Email et mot de passe requis'], 400);
+        }
+
+        if (!preg_match('/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\W_]).{8,}$/', $password)) {
+            return $this->json([
+                'error' => 'Le mot de passe doit contenir au moins 8 caractères, une majuscule, un chiffre et un caractère spécial.'
+            ], 400);
         }
 
         // Vérifier si l'utilisateur existe déjà

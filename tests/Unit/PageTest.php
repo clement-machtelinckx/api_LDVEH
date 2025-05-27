@@ -1,64 +1,121 @@
 <?php
 
-namespace App\Tests\Entity;
+namespace App\Tests\Unit;
 
 use App\Entity\Page;
 use App\Entity\Book;
+use App\Entity\Monster;
 use App\Entity\Choice;
 use PHPUnit\Framework\TestCase;
-use Zenstruck\Foundry\Test\Factories;
 
 class PageTest extends TestCase
 {
-    use Factories;
-
-    public function testGettersAndSetters(): void
+    public function testSetAndGetId(): void
     {
         $page = new Page();
+        $ref = new \ReflectionClass($page);
+        $property = $ref->getProperty('id');
+        $property->setAccessible(true);
+        $property->setValue($page, 42);
 
-        // Test setId and getId
-        $page->setId(1);
-        $this->assertEquals(1, $page->getId());
-
-        // Test setContent and getContent
-        $page->setContent('Sample content');
-        $this->assertEquals('Sample content', $page->getContent());
-
-        // Test setPageNumber and getPageNumber
-        $page->setPageNumber(10);
-        $this->assertEquals(10, $page->getPageNumber());
+        $this->assertSame(42, $page->getId());
     }
 
-    public function testBookRelationship(): void
+    public function testSetAndGetContent(): void
+    {
+        $page = new Page();
+        $page->setContent("Vous entrez dans une grotte sombre...");
+        $this->assertSame("Vous entrez dans une grotte sombre...", $page->getContent());
+    }
+
+    public function testSetAndGetBook(): void
     {
         $book = new Book();
         $page = new Page();
-
-        // Test setBook and getBook
         $page->setBook($book);
         $this->assertSame($book, $page->getBook());
     }
 
-    public function testChoicesCollection(): void
+    public function testSetAndGetPageNumber(): void
+    {
+        $page = new Page();
+        $page->setPageNumber(13);
+        $this->assertSame(13, $page->getPageNumber());
+    }
+
+    public function testSetAndGetMonster(): void
+    {
+        $monster = new Monster();
+        $page = new Page();
+        $page->setMonster($monster);
+        $this->assertSame($monster, $page->getMonster());
+    }
+
+    public function testCombatIsBlocking(): void
+    {
+        $page = new Page();
+        $page->setCombatIsBlocking(true);
+        $this->assertTrue($page->isCombatIsBlocking());
+
+        $page->setCombatIsBlocking(false);
+        $this->assertFalse($page->isCombatIsBlocking());
+
+        $page->setCombatIsBlocking(null);
+        $this->assertNull($page->isCombatIsBlocking());
+    }
+
+    public function testSetAndGetEndingType(): void
+    {
+        $page = new Page();
+        $page->setEndingType('death');
+        $this->assertSame('death', $page->getEndingType());
+    }
+
+    public function testIsEnding(): void
+    {
+        $page = new Page();
+        $this->assertFalse($page->isEnding());
+
+        $page->setEndingType('victory');
+        $this->assertTrue($page->isEnding());
+    }
+
+    public function testIsVictory(): void
+    {
+        $page = new Page();
+
+        $page->setEndingType('victory');
+        $this->assertTrue($page->isVictory());
+
+        $page->setEndingType('death');
+        $this->assertFalse($page->isVictory());
+
+        $page->setEndingType(null);
+        $this->assertFalse($page->isVictory());
+    }
+
+    public function testAddAndRemoveChoice(): void
     {
         $page = new Page();
         $choice = new Choice();
 
-        // Test addChoice
         $page->addChoice($choice);
         $this->assertCount(1, $page->getChoices());
-        $this->assertTrue($page->getChoices()->contains($choice));
+        $this->assertSame($page, $choice->getPage());
 
-        // Test removeChoice
         $page->removeChoice($choice);
         $this->assertCount(0, $page->getChoices());
-        $this->assertFalse($page->getChoices()->contains($choice));
+        $this->assertNull($choice->getPage());
     }
 
-    public function testToString(): void
+    public function testToStringWithId(): void
     {
         $page = new Page();
-        $page->setId(1);
-        $this->assertEquals('1', (string) $page);
+        $ref = new \ReflectionClass($page);
+        $property = $ref->getProperty('id');
+        $property->setAccessible(true);
+        $property->setValue($page, 9);
+
+        $this->assertSame("9", (string)$page);
     }
 }

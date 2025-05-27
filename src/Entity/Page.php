@@ -7,6 +7,7 @@ use App\Repository\PageRepository;
 use ApiPlatform\Metadata\ApiResource;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\Common\Collections\ArrayCollection;
+use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Serializer\Annotation\MaxDepth;
 
@@ -16,7 +17,8 @@ use Symfony\Component\Serializer\Annotation\MaxDepth;
 ])]
 #[ApiResource(
     normalizationContext: ['groups' => ['page:read']],
-    denormalizationContext: ['groups' => ['page:write']]
+    denormalizationContext: ['groups' => ['page:write']],
+    security: "is_granted('ROLE_ADMIN')"
 )]
 class Page
 {
