@@ -29,7 +29,9 @@ class SecurityController extends AbstractController
             // Stocker le token dans une session
             $session->set('jwt_token', $token);
 
-            return $this->redirectToRoute('api_doc'); 
+            // return $this->redirectToRoute('api_doc'); 
+            return $this->redirectToRoute('admin');
+
         }
 
         $error = $authenticationUtils->getLastAuthenticationError();
@@ -103,7 +105,7 @@ class SecurityController extends AbstractController
         $em->persist($user);
         $em->flush();
 
-        return $this->json(['message' => 'Utilisateur créé avec succès ✅']);
+        return $this->json(['message' => 'Utilisateur créé avec succès.']);
     }
 
     #[Route('/logout', name: 'app_logout', methods: ['GET'])]
