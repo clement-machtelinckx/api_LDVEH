@@ -29,7 +29,9 @@ class SecurityController extends AbstractController
             // Stocker le token dans une session
             $session->set('jwt_token', $token);
 
-            return $this->redirectToRoute('api_doc'); 
+            // return $this->redirectToRoute('api_doc'); 
+            return $this->redirectToRoute('admin');
+
         }
 
         $error = $authenticationUtils->getLastAuthenticationError();
