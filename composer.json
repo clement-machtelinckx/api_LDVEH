@@ -33,7 +33,6 @@
         "symfony/twig-bundle": "7.2.*",
         "symfony/validator": "7.2.*",
         "symfony/yaml": "7.2.*",
-        "doctrine/doctrine-fixtures-bundle": "^3.4"
     },
     "config": {
         "allow-plugins": {
@@ -86,7 +85,7 @@
         }   
     },
     "require-dev": {
-
+        "doctrine/doctrine-fixtures-bundle": "^3.6",
         "phpunit/phpunit": "^10.5",
         "symfony/debug-bundle": "7.2.*",
         "symfony/maker-bundle": "^1.61",
