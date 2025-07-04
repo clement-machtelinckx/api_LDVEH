@@ -5,3 +5,9 @@ controllers:
     type: attribute
 
 
+# config/routes.yaml
+redirect_root_to_login:
+    path: /
+    controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController
+    defaults:
+        route: app_login

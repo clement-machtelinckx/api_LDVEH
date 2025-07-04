@@ -29,7 +29,6 @@ class UserCrudController extends AbstractCrudController
                 ->setChoices([
                     'User' => 'ROLE_USER',
                     'Admin' => 'ROLE_ADMIN',
-                    'Super Admin' => 'ROLE_SUPER_ADMIN',
                 ])
                 ->renderExpanded() // case à cocher
                 ->setHelp('Sélectionner un ou plusieurs rôles'),
