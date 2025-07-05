@@ -14,8 +14,8 @@ security:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
 
-        api:
-            pattern: ^/(api|fight|page)
+        api_login:
+            pattern: ^/api/login
             stateless: true
             provider: app_user_provider
             json_login:
@@ -24,6 +24,11 @@ security:
                 failure_handler: lexik_jwt_authentication.handler.authentication_failure
                 username_path: email
                 password_path: password
+
+        api:
+            pattern: ^/(api|fight|page)
+            stateless: true
+            provider: app_user_provider
             jwt: ~
 
         main:
@@ -33,8 +38,6 @@ security:
             form_login:
                 login_path: app_login
                 check_path: app_login
-                # success_handler: lexik_jwt_authentication.handler.authentication_success
-                # failure_handler: lexik_jwt_authentication.handler.authentication_failure
                 default_target_path: /admin
             logout:
                 path: app_logout
@@ -46,7 +49,6 @@ security:
         - { path: ^/api/login, roles: PUBLIC_ACCESS }
         - { path: ^/api/register, roles: PUBLIC_ACCESS }
         - { path: ^/api, roles: IS_AUTHENTICATED_FULLY }
-        - { path: ^/api/my-adventurers, roles: IS_AUTHENTICATED_FULLY }
         - { path: ^/fight, roles: IS_AUTHENTICATED_FULLY }
         - { path: ^/page, roles: IS_AUTHENTICATED_FULLY }
         - { path: ^/login, roles: PUBLIC_ACCESS }
