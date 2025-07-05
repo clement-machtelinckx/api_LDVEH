@@ -70,7 +70,7 @@
         },
         "post-install-cmd": [
             "@auto-scripts",
-            "php bin/console lexik:jwt:generate-keypair --overwrite"
+            "php bin/console lexik:jwt:generate-keypair --overwrite --no-passphrase"
         ],
         "post-update-cmd": [
             "@auto-scripts"
