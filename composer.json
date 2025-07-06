@@ -66,11 +66,11 @@
     "scripts": {
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
-            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+            "assets:install %PUBLIC_DIR%": "symfony-cmd",
+            "lexik:jwt:generate-keypair": "symfony-cmd"
         },
         "post-install-cmd": [
-            "@auto-scripts",
-            "php bin/console lexik:jwt:generate-keypair --overwrite"
+            "@auto-scripts"
         ],
         "post-update-cmd": [
             "@auto-scripts"
