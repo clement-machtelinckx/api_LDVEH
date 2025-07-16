@@ -2,11 +2,12 @@
 
 namespace App\Service;
 
-use App\Entity\Adventure;
-use App\Entity\Adventurer;
 use App\Entity\Book;
 use App\Entity\Page;
 use App\Entity\User;
+use App\Entity\Adventure;
+use App\Entity\Adventurer;
+use App\Entity\AdventureHistory;
 use App\Repository\AdventureRepository;
 use Doctrine\ORM\EntityManagerInterface;
 
@@ -19,7 +20,7 @@ class AdventureService
 
     public function startAdventure(User $user, Book $book, Adventurer $adventurer): Adventure
     {
-        // ⚠️ On supprime toute aventure existante pour ce user sur ce book
+
         $existing = $this->adventureRepository->findOneBy(['user' => $user, 'book' => $book, 'isFinished' => false]);
 
         if ($existing) {
@@ -27,13 +28,11 @@ class AdventureService
             $this->em->flush();
         }
 
-        // 📘 On trouve la première page du livre
         $startPage = $book->getPage()->first();
         if (!$startPage instanceof Page) {
             throw new \LogicException("Le livre n’a pas de page de départ.");
         }
 
-        // 🛠️ On crée l'aventure
         $adventure = new Adventure();
         $adventure->setUser($user);
         $adventure->setBook($book);
@@ -55,10 +54,24 @@ class AdventureService
         $this->em->flush();
     }
 
-    public function finishAdventure(Adventure $adventure): void
-    {
-        $adventure->setIsFinished(true);
-        $adventure->setEndedAt(new \DateTimeImmutable());
-        $this->em->flush();
+public function finishAdventure(Adventure $adventure): void
+{
+    $adventure->setIsFinished(true);
+    $adventure->setEndedAt(new \DateTimeImmutable());
+    
+    // Snapshot de la victoire
+    if ($adventure->getCurrentPage()?->isVictory()) {
+        $history = new AdventureHistory();
+        $history->setUser($adventure->getUser());
+        $history->setBook($adventure->getBook());
+        $history->setBookTitle($adventure->getBook()->getTitle());
+        $history->setAdventurerName($adventure->getAdventurer()->getAdventurerName());
+        $history->setFinishAt(new \DateTimeImmutable());
+
+        $this->em->persist($history);
     }
+
+    $this->em->flush();
+}
+
 }
