@@ -2,10 +2,16 @@
 
 namespace App\Entity;
 
-use App\Repository\AdventureHistoryRepository;
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Metadata\ApiResource;
+use App\Repository\AdventureHistoryRepository;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ORM\Entity(repositoryClass: AdventureHistoryRepository::class)]
+#[ApiResource(
+    normalizationContext: ['groups' => ['history:read']],
+    order: ['finishAt' => 'DESC']
+)]
 class AdventureHistory
 {
     #[ORM\Id]
@@ -14,12 +20,15 @@ class AdventureHistory
     private ?int $id = null;
 
     #[ORM\Column(length: 255, nullable: true)]
+    #[Groups(['history:read'])]
     private ?string $bookTitle = null;
 
     #[ORM\Column(length: 255)]
+    #[Groups(['history:read'])]
     private ?string $adventurerName = null;
 
     #[ORM\Column]
+    #[Groups(['history:read'])]
     private ?\DateTimeImmutable $finishAt = null;
 
     #[ORM\ManyToOne(inversedBy: 'adventureHistories')]

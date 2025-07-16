@@ -54,24 +54,33 @@ class AdventureService
         $this->em->flush();
     }
 
-public function finishAdventure(Adventure $adventure): void
-{
-    $adventure->setIsFinished(true);
-    $adventure->setEndedAt(new \DateTimeImmutable());
-    
-    // Snapshot de la victoire
-    if ($adventure->getCurrentPage()?->isVictory()) {
-        $history = new AdventureHistory();
-        $history->setUser($adventure->getUser());
-        $history->setBook($adventure->getBook());
-        $history->setBookTitle($adventure->getBook()->getTitle());
-        $history->setAdventurerName($adventure->getAdventurer()->getAdventurerName());
-        $history->setFinishAt(new \DateTimeImmutable());
+    public function finishAdventure(Adventure $adventure): void
+    {
+        $adventure->setIsFinished(true);
+        $adventure->setEndedAt(new \DateTimeImmutable());
 
-        $this->em->persist($history);
+        $currentPage = $adventure->getCurrentPage();
+        
+        if ($currentPage && $currentPage->getEndingType() === 'victory') {
+            $history = new AdventureHistory();
+            $history->setUser($adventure->getUser());
+            $history->setBook($adventure->getBook());
+            $history->setBookTitle($adventure->getBook()->getTitle());
+            $history->setAdventurerName($adventure->getAdventurer()->getAdventurerName());
+            $history->setFinishAt(new \DateTimeImmutable());
+
+            $this->em->persist($history);
+        }
+
+        $this->em->flush();
+    }
+    
+    public function deleteAdventure(Adventure $adventure): void
+    {
+        $this->em->remove($adventure);
+        $this->em->flush();
     }
 
-    $this->em->flush();
-}
+
 
 }
