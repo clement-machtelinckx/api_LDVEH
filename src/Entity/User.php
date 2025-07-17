@@ -56,10 +56,17 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\OneToMany(targetEntity: Adventure::class, mappedBy: 'user', orphanRemoval: true)]
     private Collection $adventures;
 
+    /**
+     * @var Collection<int, AdventureHistory>
+     */
+    #[ORM\OneToMany(targetEntity: AdventureHistory::class, mappedBy: 'user')]
+    private Collection $adventureHistories;
+
     public function __construct()
     {
         $this->adventurers = new ArrayCollection();
         $this->adventures = new ArrayCollection();
+        $this->adventureHistories = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -196,6 +203,36 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
             // set the owning side to null (unless already changed)
             if ($adventure->getUser() === $this) {
                 $adventure->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, AdventureHistory>
+     */
+    public function getAdventureHistories(): Collection
+    {
+        return $this->adventureHistories;
+    }
+
+    public function addAdventureHistory(AdventureHistory $adventureHistory): static
+    {
+        if (!$this->adventureHistories->contains($adventureHistory)) {
+            $this->adventureHistories->add($adventureHistory);
+            $adventureHistory->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeAdventureHistory(AdventureHistory $adventureHistory): static
+    {
+        if ($this->adventureHistories->removeElement($adventureHistory)) {
+            // set the owning side to null (unless already changed)
+            if ($adventureHistory->getUser() === $this) {
+                $adventureHistory->setUser(null);
             }
         }
 

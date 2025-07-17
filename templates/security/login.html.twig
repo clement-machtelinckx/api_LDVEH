@@ -1,28 +1,90 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello SecurityController!{% endblock %}
+{% block title %}Connexion Admin{% endblock %}
 
 {% block body %}
-    <h1>Connexion</h1>
+    <style>
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
 
-    {% if error %}
-        <div class="alert alert-danger">
-            {{ error.messageKey|trans(error.messageData, 'security') }}
+        .login-box {
+            width: 100%;
+            max-width: 400px;
+            padding: 2rem;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .login-box h1 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .login-box div {
+            margin-bottom: 1rem;
+        }
+
+        .login-box label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .login-box input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .login-box button {
+            width: 100%;
+            padding: 0.75rem;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .login-box button:hover {
+            background-color: #0056b3;
+        }
+
+        .alert {
+            margin-bottom: 1rem;
+        }
+    </style>
+
+    <div class="login-container">
+        <div class="login-box">
+            <h1>Connexion</h1>
+
+            {% if error %}
+                <div class="alert alert-danger">
+                    {{ error.messageKey|trans(error.messageData, 'security') }}
+                </div>
+            {% endif %}
+
+            <form method="post">
+                <div>
+                    <label for="username">Email :</label>
+                    <input type="email" id="username" name="_username" value="{{ last_username }}" required autofocus>
+                </div>
+
+                <div>
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" name="_password" required>
+                </div>
+
+                <button type="submit">Se connecter</button>
+            </form>
         </div>
-    {% endif %}
-
-    <form method="post">
-        <div>
-            <label for="username">Email :</label>
-            <input type="email" id="username" name="_username" value="{{ last_username }}" required autofocus>
-        </div>
-
-        <div>
-            <label for="password">Mot de passe :</label>
-            <input type="password" id="password" name="_password" required>
-        </div>
-
-        <button type="submit">Se connecter</button>
-    </form>
-
+    </div>
 {% endblock %}

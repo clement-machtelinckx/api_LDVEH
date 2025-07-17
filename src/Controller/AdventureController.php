@@ -12,6 +12,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 
 class AdventureController extends AbstractController
 {
@@ -56,5 +57,47 @@ class AdventureController extends AbstractController
             'fromPageId' => null,
         ]);
     }
+
+    
+    #[Route('/api/adventure/{id}/finish', name: 'api_adventure_finish', methods: ['POST'])]
+    public function finishAdventure(
+        Adventure $adventure,
+        AdventureService $adventureService
+    ): JsonResponse {
+        $user = $this->getUser();
+
+        if ($adventure->getUser() !== $user) {
+            throw new AccessDeniedException('Vous ne pouvez terminer que vos propres aventures.');
+        }
+        if ($adventure->isFinished()) {
+            return $this->json(['message' => 'Cette aventure est déjà terminée.'], 400);
+        }
+        $adventureService->finishAdventure($adventure);
+
+        $adventureService->deleteAdventure($adventure);
+
+        return $this->json([
+            'message' => 'Aventure terminée avec succès.',
+            'adventureId' => $adventure->getId(),
+            'finishedAt' => $adventure->getEndedAt()?->format('Y-m-d H:i:s'),
+        ]);
+    }
+
+    #[Route('/api/adventure/{id}', name: 'api_adventure_delete', methods: ['DELETE'])]
+    public function deleteAdventure(
+        Adventure $adventure,
+        AdventureService $adventureService
+    ): JsonResponse {
+        $user = $this->getUser();
+
+        if ($adventure->getUser() !== $user) {
+            return $this->json(['error' => 'Accès interdit.'], 403);
+        }
+
+        $adventureService->deleteAdventure($adventure);
+
+        return $this->json(['message' => 'Aventure supprimée.']);
+    }
+
     
 }

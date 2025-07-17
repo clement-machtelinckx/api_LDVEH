@@ -55,9 +55,16 @@ class Book
     #[Groups(['book:read', 'book:write'])]
     private Collection $page;
 
+    /**
+     * @var Collection<int, AdventureHistory>
+     */
+    #[ORM\OneToMany(targetEntity: AdventureHistory::class, mappedBy: 'book')]
+    private Collection $adventureHistories;
+
     public function __construct()
     {
         $this->page = new ArrayCollection();
+        $this->adventureHistories = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -190,5 +197,35 @@ class Book
     public function __toString(): string
     {
         return $this->title; // Vous pouvez ajuster cela pour retourner une chaîne de caractères appropriée
+    }
+
+    /**
+     * @return Collection<int, AdventureHistory>
+     */
+    public function getAdventureHistories(): Collection
+    {
+        return $this->adventureHistories;
+    }
+
+    public function addAdventureHistory(AdventureHistory $adventureHistory): static
+    {
+        if (!$this->adventureHistories->contains($adventureHistory)) {
+            $this->adventureHistories->add($adventureHistory);
+            $adventureHistory->setBook($this);
+        }
+
+        return $this;
+    }
+
+    public function removeAdventureHistory(AdventureHistory $adventureHistory): static
+    {
+        if ($this->adventureHistories->removeElement($adventureHistory)) {
+            // set the owning side to null (unless already changed)
+            if ($adventureHistory->getBook() === $this) {
+                $adventureHistory->setBook(null);
+            }
+        }
+
+        return $this;
     }
 }
