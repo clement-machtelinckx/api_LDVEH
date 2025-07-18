@@ -6,12 +6,15 @@ use Doctrine\ORM\Mapping as ORM;
 use ApiPlatform\Metadata\ApiResource;
 use App\Repository\AdventureHistoryRepository;
 use Symfony\Component\Serializer\Annotation\Groups;
+use ApiPlatform\Metadata\ApiFilter;
+use ApiPlatform\Doctrine\Orm\Filter\SearchFilter;
 
 #[ORM\Entity(repositoryClass: AdventureHistoryRepository::class)]
 #[ApiResource(
     normalizationContext: ['groups' => ['history:read']],
     order: ['finishAt' => 'DESC']
 )]
+#[ApiFilter(SearchFilter::class, properties: ['user' => 'exact'])]
 class AdventureHistory
 {
     #[ORM\Id]
