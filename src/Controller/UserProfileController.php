@@ -46,9 +46,16 @@ class UserProfileController extends AbstractController
         
         $user->setEmail($data->email);
 
+
         if ($data->newPassword) {
             $user->setPassword($passwordHasher->hashPassword($user, $data->newPassword));
         }
+
+        $user->setFirstname($data->firstname);
+        $user->setLastname($data->lastname);
+        $user->setNickname($data->nickname);
+        $user->setGender($data->gender);
+        $user->setAge($data->age);
 
         $em->flush();
 
