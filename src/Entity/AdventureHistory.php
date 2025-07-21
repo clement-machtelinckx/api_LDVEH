@@ -2,15 +2,22 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Metadata\Get;
 use Doctrine\ORM\Mapping as ORM;
-use ApiPlatform\Metadata\ApiResource;
-use App\Repository\AdventureHistoryRepository;
-use Symfony\Component\Serializer\Annotation\Groups;
 use ApiPlatform\Metadata\ApiFilter;
+use ApiPlatform\Metadata\ApiResource;
+use ApiPlatform\Metadata\GetCollection;
+use App\Repository\AdventureHistoryRepository;
 use ApiPlatform\Doctrine\Orm\Filter\SearchFilter;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ORM\Entity(repositoryClass: AdventureHistoryRepository::class)]
+
 #[ApiResource(
+    operations: [
+        new Get(),
+        new GetCollection()
+    ],
     normalizationContext: ['groups' => ['history:read']],
     order: ['finishAt' => 'DESC']
 )]

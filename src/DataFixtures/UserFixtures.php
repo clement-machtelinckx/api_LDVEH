@@ -33,14 +33,7 @@ class UserFixtures extends Fixture
 
             $manager->persist($user);
 
-            foreach ($data['adventurers'] as $name) {
-                $adventurer = new Adventurer();
-                $adventurer->setAdventurerName($name);
-                $adventurer->setAbility(rand(5, 12));
-                $adventurer->setEndurance(rand(10, 20));
-                $adventurer->setUser($user);
-                $manager->persist($adventurer);
-            }
+
         }
 
         $manager->flush();
