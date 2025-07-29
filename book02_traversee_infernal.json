@@ -70,7 +70,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "ONSTRE BLESSÉ",
+      "monsterName": "MONSTRE BLESSÉ",
       "ability": 22,
       "endurance": 20
     }
@@ -865,7 +865,7 @@
       {
         "text": "Si vous êtes vainqueur,",
         "nextPage": 218
-      },
+      }
 
     ],
     "isBlocking": true,
@@ -1649,7 +1649,7 @@
     "pageNumber": 126,
     "content": "L'homme tire sur la corde d'une clochette dissimulée aux regards et,\nsoudain, quatre gardes armés font irruption dans la pièce. « Ces\ndocuments sont des faux. Vous êtes sans aucun doute un espion, peut-\nêtre même pire. Quoi qu'il en soit, vous n'allez pas tarder à apprendre\nce que nous faisons des criminels dans votre genre, à Port Bax.\nEmmenez-le ! » Avant que vous n'ayez pu fournir la moindre\nexplication, les gardes vous saisissent et vous emmènent à la prison de\nla ville. Tout votre équipement est confisqué, y compris les Objets\nSpéciaux et les armes, et on vous jette dans une cellule remplie de\ncanailles à l'aspect patibulaire. Vous remarquez aussitôt que plusieurs\nde ces fripons portent au poignet gauche un tatouage qui représente un\nserpent : c'est le signe de Vonatar le Traître. Et lorsque, enfin, les\ngardes découvrent votre véritable identité en examinant votre\néquipement, il est trop tard : les séides du sorcier vous ont déjà\nétranglé. Votre mission s'achève donc tragiquement en même temps\nque votre vie dans un cul-de-basse-fosse de Port Bax.",
     "choices": [],
-    "endingType": "death",
+    "endingType": "death"
   },
   {
     "pageNumber": 127,
@@ -1712,7 +1712,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Chef VOLEUR",
+      "monsterName": "VOLEUR",
       "ability": 15,
       "endurance": 23
     }
@@ -2134,7 +2134,7 @@
     ],
     "isBlocking": false,
     "monster": {
-      "monsterName": "CHEVALIER DELA MONTAGNE BLANCHE",
+      "monsterName": "CHEVALIER",
       "ability": 20,
       "endurance": 27
     }
@@ -2445,13 +2445,12 @@
       }
     ],
     "isBlocking": false,
-    "monster": [
+    "monster": 
       {
         "monsterName": "1er DRAKKARIM",
         "ability": 17,
         "endurance": 25
       }
-    ]
   },
   {
     "pageNumber": 186,
@@ -2593,7 +2592,7 @@
   },
   {
     "pageNumber": 197,
-    "content": "Lorsque l'aube paraît, une terrible tempête se lève sur h mer et vous\nêtes réveillé par le violent roulis du navire. Le plancher de votre cabine\nest inondé cm li s hurlements du vent laissent à peine percevoir de\ntemps à autre les cris de l'équipage. Vous vous habillez en hâte, vous\nrassemblez vos affaires et vous montez sur le pont. Le capitaine vous\nrejoint bientôt ; il vous prend par le bras et vous donne l'ordre de\nretourner dans votre cabine. Vous revenez donc sur vos pas, mais\nsoudain un craquement effroyable retentit ; vous levez la tête : la partie\nsupérieure du grand mât vient de se rompre dans la tourmente et tombe\ndroit sur vous. Utilisez la Table de Hasard pour obtenir un chiffre. Si\nvous tirez un chiffre entre 1 et 4, rendez-vous au 78. Entre 5 et 9,\nrendez-vous au 141. Enfin, si vous tirez le 0, rendez-vous au 247.",
+    "content": "Lorsque l'aube paraît, une terrible tempête se lève sur les mer et vous\nêtes réveillé par le violent roulis du navire. Le plancher de votre cabine\nest inondé les hurlements du vent laissent à peine percevoir de\ntemps à autre les cris de l'équipage. Vous vous habillez en hâte, vous\nrassemblez vos affaires et vous montez sur le pont. Le capitaine vous\nrejoint bientôt ; il vous prend par le bras et vous donne l'ordre de\nretourner dans votre cabine. Vous revenez donc sur vos pas, mais\nsoudain un craquement effroyable retentit ; vous levez la tête : la partie\nsupérieure du grand mât vient de se rompre dans la tourmente et tombe\ndroit sur vous. Utilisez la Table de Hasard pour obtenir un chiffre. Si\nvous tirez un chiffre entre 1 et 4, rendez-vous au 78. Entre 5 et 9,\nrendez-vous au 141. Enfin, si vous tirez le 0, rendez-vous au 247.",
     "choices": [
       {
         "text": "Si vous tirez un chiffre entre 1 et 4,",
@@ -2879,7 +2878,7 @@
   },
   {
     "pageNumber": 222,
-    "content": "Après avoir soigneusement refermé la porte de sa cabine, le capitaine\nouvre son mystérieux paquet et en répand le contenu sur une table. 11\ns'agit d'une cruche de faïence noircie et de lambeaux d'étoffe calcinés\nqui dégagent une étrange odeur d'huile. « Cet incendie n'est pas un\naccident, déclare le capitaine Kelman d'une voix solennelle, c'est un\nacte de sabotage. Cette cruche d'huile et ces chiffons que j'ai trouvés\nsur le plancher de la cale n'avaient rien à y faire ; quelqu'un à bord de\nce navire est prêt à risquer sa vie pour nous empêcher d'atteindre\nDurenor. » Vous contemplez tous deux les chiffons brûlés, comme s'ils\npouvaient répondre aux questions que vous vous posez. Et soudain un\ncri retentit au-dessus de vos têtes, brisant le silence qui règne dans la\ncabine. « Navire en vue ! Navire en vue sur bâbord avant ! » Le\ncapitaine saisit aussitôt sa lunette d'approche et se hâte de monter sur le\npont par une échelle d'écoutille. Si vous désirez le suivre, rendez-vous\nau 175. Si vous préférez fouiller rapidement sa cabine, rendez-vous au\n315.",
+    "content": "Après avoir soigneusement refermé la porte de sa cabine, le capitaine\nouvre son mystérieux paquet et en répand le contenu sur une table. Il\ns'agit d'une cruche de faïence noircie et de lambeaux d'étoffe calcinés\nqui dégagent une étrange odeur d'huile. « Cet incendie n'est pas un\naccident, déclare le capitaine Kelman d'une voix solennelle, c'est un\nacte de sabotage. Cette cruche d'huile et ces chiffons que j'ai trouvés\nsur le plancher de la cale n'avaient rien à y faire ; quelqu'un à bord de\nce navire est prêt à risquer sa vie pour nous empêcher d'atteindre\nDurenor. » Vous contemplez tous deux les chiffons brûlés, comme s'ils\npouvaient répondre aux questions que vous vous posez. Et soudain un\ncri retentit au-dessus de vos têtes, brisant le silence qui règne dans la\ncabine. « Navire en vue ! Navire en vue sur bâbord avant ! » Le\ncapitaine saisit aussitôt sa lunette d'approche et se hâte de monter sur le\npont par une échelle d'écoutille. Si vous désirez le suivre, rendez-vous\nau 175. Si vous préférez fouiller rapidement sa cabine, rendez-vous au\n315.",
     "choices": [
       {
         "text": "Si vous désirez le suivre,",
@@ -3102,7 +3101,7 @@
     ],
     "isBlocking":true,
     "monster": {
-      "name": "MONSTRE D'ENFER",
+      "monsterName": "MONSTRE D'ENFER",
       "ability": 23,
       "endurance": 30
     }
@@ -3140,15 +3139,15 @@
     "content": "Après trois jours en mer durant lesquels il ne s'est rien passé, vous\ncommencez à trouver le temps long. Si vous maîtrisez la Discipline Kaï\nde la Guérison, vous pouvez récupérer tous les points d'ENDURANCE\nque vous avez éventuellement perdus depuis le début de votre aventure.\nVous retrouverez dans ce cas le total d'ENDURANCE dont vous\ndisposiez au départ. Si vous ne maîtrisez pas cette Discipline, vous ne\nrécupérerez que la moitié des points d'ENDURANCE perdus\n(arrondissez au chiffre supérieur si le nombre à diviser par deux est\nimpair). Dans l'après-midi du quatrième jour, vous êtes sur le pont du\nnavire en train de bavarder avec un homme d'équipage lorsqu'une odeur\nde brûlé se dégage soudain d'une des cales. Si vous souhaitez descendre\ndans cette cale, rendez-vous au 29. Si vous pensez qu'il est préférable\nde crier « Au feu ! », rendez-vous au 236. Enfin, si vous décidez plutôt\nd'aller prévenir le capitaine, rendez-vous au 101.",
     "choices": [
       {
-        "text": "rendez-vous au 29.",
+        "text": "Si vous souhaitez descendre\ndans cette cale",
         "nextPage": 29
       },
       {
-        "text": "rendez-vous au 236.",
+        "text": "Si vous pensez qu'il est préférable\nde crier « Au feu ! »",
         "nextPage": 236
       },
       {
-        "text": "rendez-vous au 101.",
+        "text": "Si vous décidez plutôt\nd'aller prévenir le capitaine",
         "nextPage": 101
       }
     ]
@@ -3164,7 +3163,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "name": "TRICHEUR",
+      "monsterName": "TRICHEUR",
       "ability": 17,
       "endurance": 25
     }
@@ -3498,10 +3497,16 @@
         "nextPage": 333
       },
       {
-        "text": "vous sortirez alors par la porte latérale en vous rendant au",
+        "text": "Vous aurez le droit de prendre la fuite après avoir mené deux assauts ; vous sortirez alors par la porte latérale en vous rendant au",
         "nextPage": 125
       }
-    ]
+    ],
+    "isBlocking": false,
+    "monster": {
+      "monsterName": "BRIGANDS",
+      "ability": 16,
+      "endurance": 25
+    }
   },
   {
     "pageNumber": 269,
@@ -3524,7 +3529,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "name": "DORIER ET GANON",
+      "monsterName": "DORIER ET GANON",
       "ability": 28,
       "endurance": 30
     }
@@ -3602,7 +3607,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "name": "MARIN PATIBULAIRE",
+      "monsterName": "MARIN PATIBULAIRE",
       "ability": 18,
       "endurance": 25
     }
@@ -3828,7 +3833,7 @@
     ],
     "isBlocking": false,
     "monster": {
-      "name": "GARDES",
+      "monsterName": "GARDES",
       "ability": 13,
       "endurance": 22
     }
@@ -3858,7 +3863,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "name": "VOLEURS",
+      "monsterName": "VOLEURS",
       "ability": 15,
       "endurance": 23
     }
@@ -4228,9 +4233,9 @@
     ],
     "isBlocking": true,
     "monster": {
-      "name": "GUERRIER DRAKKARIM",
-      "skill": 15,
-      "stamina": 25
+      "monsterName": "GUERRIER DRAKKARIM",
+      "ability": 15,
+      "endurance": 25
     }
   },
   {
@@ -4310,9 +4315,9 @@
     ],
     "isBlocking": true,
     "monster": {
-      "name": "MONSTRE D'ENFER",
-      "skill": 21,
-      "stamina": 30
+      "monsterName": "MONSTRE D'ENFER",
+      "ability": 21,
+      "endurance": 30
     }
   },
   {
@@ -4494,7 +4499,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "name": "DRAKKARIM",
+      "monsterName": "DRAKKARIM",
       "ability": 16,
       "endurance": 24
     }
@@ -4538,9 +4543,9 @@
     ],
     "isBlocking": true,
     "monster": {
-      "name": "BRIGANDS",
-      "skill": 16,
-      "stamina": 25
+      "monsterName": "BRIGANDS",
+      "ability": 16,
+      "endurance": 25
     }
   },
   {
