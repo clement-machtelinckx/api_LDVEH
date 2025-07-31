@@ -2,11 +2,13 @@
 
 namespace App\Entity;
 
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
+use DateTime;
+use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use App\Repository\UserRepository;
 use ApiPlatform\Metadata\ApiResource;
+use Doctrine\Common\Collections\Collection;
+use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
@@ -78,9 +80,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[Groups(['user:read', 'user:write'])]
     private ?string $gender = null;
 
-    #[ORM\Column(nullable: true)]
+    #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
     #[Groups(['user:read', 'user:write'])]
-    private ?int $age = null;
+    private ?\DateTimeInterface $dateOfBirth = null;
 
     public function __construct()
     {
@@ -307,14 +309,14 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    public function getAge(): ?int
+    public function getDateOfBirth(): ?\DateTimeInterface
     {
-        return $this->age;
+        return $this->dateOfBirth;
     }
 
-    public function setAge(?int $age): static
+    public function setDateOfBirth(?\DateTimeInterface $dateOfBirth): static
     {
-        $this->age = $age;
+        $this->dateOfBirth = $dateOfBirth;
 
         return $this;
     }

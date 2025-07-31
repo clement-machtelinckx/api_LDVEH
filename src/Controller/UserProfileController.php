@@ -55,7 +55,7 @@ class UserProfileController extends AbstractController
         $user->setLastname($data->lastname);
         $user->setNickname($data->nickname);
         $user->setGender($data->gender);
-        $user->setAge($data->age);
+        $user->setDateOfBirth($data->dateOfBirth);
 
         $em->flush();
 

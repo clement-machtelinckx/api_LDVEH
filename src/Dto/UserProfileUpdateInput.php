@@ -24,6 +24,6 @@ class UserProfileUpdateInput
     #[Assert\Choice(choices: ['male', 'female', 'other'])]
     public ?string $gender = null;
 
-    #[Assert\Range(min: 6, max: 130)]
-    public ?int $age = null;
+    #[Assert\LessThan("today")]
+    public ?\DateTimeInterface $dateOfBirth = null;
 }
