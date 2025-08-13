@@ -45,14 +45,26 @@ security:
             security: true
 
     access_control:
-        - { path: ^/admin, roles: ROLE_ADMIN }
-        - { path: ^/api/login, roles: PUBLIC_ACCESS }
-        - { path: ^/api/register, roles: PUBLIC_ACCESS }
-        - { path: ^/api, roles: IS_AUTHENTICATED_FULLY }
-        - { path: ^/fight, roles: IS_AUTHENTICATED_FULLY }
-        - { path: ^/page, roles: IS_AUTHENTICATED_FULLY }
-        - { path: ^/login, roles: PUBLIC_ACCESS }
-        - { path: ^/, roles: ROLE_USER }
+    - { path: ^/admin, roles: ROLE_ADMIN }
+    - { path: ^/api/login, roles: PUBLIC_ACCESS }
+    - { path: ^/api/register, roles: PUBLIC_ACCESS }
+    - { path: ^/about, roles: PUBLIC_ACCESS }
+
+    # Feedback d'abord (règles spécifiques)
+    - { path: ^/api/feedback$, roles: IS_AUTHENTICATED_FULLY, methods: [POST] }
+    - { path: ^/api/feedback$, roles: ROLE_ADMIN, methods: [GET] }
+
+    # Puis le catch-all API
+    - { path: ^/api, roles: IS_AUTHENTICATED_FULLY }
+
+    # Le reste
+    - { path: ^/fight, roles: IS_AUTHENTICATED_FULLY }
+    - { path: ^/page, roles: IS_AUTHENTICATED_FULLY }
+    - { path: ^/login, roles: PUBLIC_ACCESS }
+
+    # ⚠️ Cette règle capte tout le reste — garde-la en tout dernier ou supprime-la si tu n'en as pas l'usage
+    - { path: ^/, roles: ROLE_USER }
+
 
 when@test:
     security:

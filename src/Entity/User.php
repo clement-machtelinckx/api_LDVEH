@@ -84,11 +84,18 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[Groups(['user:read', 'user:write'])]
     private ?\DateTimeInterface $dateOfBirth = null;
 
+    /**
+     * @var Collection<int, Feedback>
+     */
+    #[ORM\OneToMany(targetEntity: Feedback::class, mappedBy: 'user')]
+    private Collection $feedback;
+
     public function __construct()
     {
         $this->adventurers = new ArrayCollection();
         $this->adventures = new ArrayCollection();
         $this->adventureHistories = new ArrayCollection();
+        $this->feedback = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -317,6 +324,36 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setDateOfBirth(?\DateTimeInterface $dateOfBirth): static
     {
         $this->dateOfBirth = $dateOfBirth;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Feedback>
+     */
+    public function getFeedback(): Collection
+    {
+        return $this->feedback;
+    }
+
+    public function addFeedback(Feedback $feedback): static
+    {
+        if (!$this->feedback->contains($feedback)) {
+            $this->feedback->add($feedback);
+            $feedback->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeFeedback(Feedback $feedback): static
+    {
+        if ($this->feedback->removeElement($feedback)) {
+            // set the owning side to null (unless already changed)
+            if ($feedback->getUser() === $this) {
+                $feedback->setUser(null);
+            }
+        }
 
         return $this;
     }

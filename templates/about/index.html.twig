@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}À propos – {{ project_name }}{% endblock %}
+
+{% block body %}
+<div class="wrap">
+  <div class="card">
+    <h1>{{ project_name }}</h1>
+    <p class="meta">Stack : Symfony • API Platform • JWT</p>
+
+    <p>
+      Cette API alimente l’application mobile LDVEH (Livres Dont Vous Êtes le Héros).
+      Elle a été conçue pour offrir une expérience fluide et immersive aux joueurs,
+      en gérant les livres, les pages, les combats et la progression.
+    </p>
+
+    <h2>À propos de moi</h2>
+    <p>
+      Je m'appelle <strong>Clément</strong>, développeur passionné
+      par le web, le mobile et l’univers des livres-jeux.  
+      J’aime créer des outils qui mêlent technologie et narration interactive.
+      Quand je ne code pas, je bois un bon café ☕ et j’explore de nouvelles idées.
+    </p>
+
+    <h2>Soutenir le projet</h2>
+    <p>
+      Si vous appréciez le travail et souhaitez encourager le développement
+      de LDVEH, vous pouvez m’offrir un café via le bouton ci-dessous.
+    </p>
+
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
+    data-name="bmc-button" 
+    data-slug="{{buymeacoffee_slug}}" 
+    data-color="#FFDD00" 
+    data-emoji=""  
+    data-font="Cookie" 
+    data-text="Buy me a coffee" 
+    data-outline-color="#000000" 
+    data-font-color="#000000" 
+    data-coffee-color="#ffffff" >
+</script>
+  </div>
+</div>
+
+<style>
+  .wrap { max-width: 860px; margin: 40px auto; padding: 0 16px; }
+  .card { background: #fff; border: 1px solid #e5e5e5; border-radius: 12px; padding: 24px; }
+  h1, h2 { margin-top: 0; }
+  .meta { color: #666; margin-bottom: 16px; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #111; color: #eee; }
+    .card { background: #1a1a1a; border-color: #333; }
+  }
+</style>
+{% endblock %}

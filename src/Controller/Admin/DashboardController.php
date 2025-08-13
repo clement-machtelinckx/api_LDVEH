@@ -53,6 +53,8 @@ class DashboardController extends AbstractDashboardController
                 yield MenuItem::linkToCrud('History', 'fas fa-box', AdventureHistory::class);
         yield MenuItem::LinkToCrud('User', 'fas fa-users', User::class)
             ->setPermission('ROLE_ADMIN');
+        yield MenuItem::linkToCrud('Feedback', 'fas fa-comments', \App\Entity\Feedback::class)
+            ->setPermission('ROLE_ADMIN');
 
     }
 }
