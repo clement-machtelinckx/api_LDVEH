@@ -51,7 +51,6 @@ class CombatService
         $playerHab  = (int) $adventurer->getAbility();
         $enemyHab   = (int) $monster->getAbility();
 
-        // On essaie Endurance/HP selon les noms les plus probables
         $playerEnd  = $this->readEndurance($adventurer);
         $enemyEnd   = $this->readEndurance($monster);
 
@@ -65,9 +64,7 @@ class CombatService
             $qa   = ($playerHab + $bonusHab) - $enemyHab;
             $band = $this->mapQaToBand($qa);
 
-            // reroll 0 pour pas trop assasiner les joueur (temporaire)
             $roll = random_int(0, 9);
-
 
             $cell = self::TABLE[$roll][$band] ?? null;
             if (!$cell) {
