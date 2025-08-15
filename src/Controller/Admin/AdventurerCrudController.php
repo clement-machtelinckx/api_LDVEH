@@ -19,6 +19,7 @@ class AdventurerCrudController extends AbstractCrudController
     public function configureFields(string $pageName): iterable
     {
         return [
+            IntegerField::new('id')->hideOnForm(),
             TextField::new('AdventurerName'),
             IntegerField::new('Ability'),
             IntegerField::new('Endurance'),
