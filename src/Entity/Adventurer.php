@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Metadata\Get;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\Groups;
 use ApiPlatform\Metadata\ApiResource;
@@ -11,10 +12,19 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Component\Serializer\Annotation\MaxDepth;
 
 #[ORM\Entity(repositoryClass: AdventurerRepository::class)]
-// #[ApiResource(
-//     normalizationContext: ['groups' => ['adventurer:read']],
-//     denormalizationContext: ['groups' => ['adventurer:write']]
-// )]
+#[ApiResource(
+    normalizationContext: ['groups' => ['adventurer:read']],
+    denormalizationContext: ['groups' => ['adventurer:write']],
+    operations: [
+        new Get(
+            uriTemplate: '/adventurers/{id}',
+            name: 'get_adventurer',
+            requirements: ['id' => '\d+'],
+            security: "is_granted('ROLE_ADMIN') or object.getUser() == user",
+            securityMessage: "Accès refusé."
+        ),
+    ]
+)]
 class Adventurer
 {
     #[ORM\Id]
