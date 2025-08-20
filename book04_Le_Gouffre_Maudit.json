@@ -58,6 +58,10 @@
     "content": "Vous arrivez bientôt au croisement où le sentier aboutit à la\ngrand-route. Vous apercevez à nouveau le chariot brûlé,\nabandonné sur le bas-côté. Si vous n'avez pas encore examiné ce\nchariot, vous pouvez le faire en vous rendant au 80. Si vous\npréférez ne pas y prêter attention et poursuivre votre chemin le\nlong de la grand-route en direction du sud, rendez-vous au 175.",
     "choices": [
       {
+        "text": "examiner ce chariot",
+        "nextPage": 80
+      },
+      {
         "text": "long de la grand-route en direction du sud,",
         "nextPage": 175
       }
@@ -80,6 +84,10 @@
       {
         "text": "entrer dans le tunnel qui s'ouvre devant vous,",
         "nextPage": 151
+      },
+      {
+        "text": "continuer le long de la rivière souterraine",
+        "nextPage": 240
       }
     ]
   },
@@ -266,6 +274,10 @@
     "content": "Vous sautez par-dessus le corps du Guerrier mort et vous\npénétrez dans la tour de guet. Montant quatre à quatre le large\nescalier de pierre, vous atteignez un palier au premier étage où\ndeux soldats tirent des flèches à travers des meurtrières.\nSoudain, l'un d'eux pousse un cri de douleur et recule en\nchancelant, une flèche enfoncée dans la poitrine. Si vous\nmaîtrisez la Discipline Kaï de la Guérison, vous pouvez venir en\naide à ce soldat blessé en vous rendant au 238. Si vous souhaitez\ncontinuer à monter les marches jusqu'au sommet de la tour,\nrendez-vous au 223. Si vous préférez ramasser l'arc du soldat\nblessé et prendre sa place derrière la meurtrière, rendez-vous au\n207.",
     "choices": [
       {
+        "text": "venir en aide à ce soldat blessé",
+        "nextPage": 238
+      },
+      {
         "text": "continuer à monter les marches jusqu'au sommet de la tour,",
         "nextPage": 223
       },
@@ -328,6 +340,10 @@
       {
         "text": "disposez d'une Sphère de Feu,",
         "nextPage": 168
+      },
+      {
+        "text": "poursuivre votre chemin dans l'obscurité,",
+        "nextPage": 246
       },
       {
         "text": "la porte de la crypte que surveillent les Gardes,",
@@ -646,6 +662,14 @@
       {
         "text": "Guerrier,",
         "nextPage": 4
+      },
+      {
+        "text": "poursuivre votre chemin sur ce sol envahi de champignons",
+        "nextPage": 65
+      },
+      {
+        "text": "manger quelques-uns de ces champignons,",
+        "nextPage": 201
       }
     ]
   },
@@ -1376,8 +1400,16 @@
         "nextPage": 166
       },
       {
+        "text": "attaque surprise contre les bandits",
+        "nextPage": 14
+      },
+      {
         "text": "vous préférez essayer de traverser la rivière à l'abri des rochers,",
         "nextPage": 316
+      },
+      {
+        "text": "rebrousser chemin",
+        "nextPage": 232
       }
     ]
   },
@@ -1435,6 +1467,10 @@
     "pageNumber": 118,
     "content": "La porte de fer est fermée à clé. Elle comporte une grosse\npoignée à laquelle est suspendu un Fouet. Si vous voulez prendre\nce Fouet, inscrivez-le sur votre Feuille d'Aventure dans la case\ndes objets contenus dans votre Sac à Dos. Si vous possédez une\nClé de Fer, vous pouvez ouvrir la porte en vous rendant au 308.\nSi vous ne possédez pas cette Clé, ou si vous ne souhaitez pas\nouvrir la porte, vous pouvez quitter les lieux en empruntant un\nescalier en colimaçon. Pour monter cet escalier, rendez-vous au\n170. Si vous préférez descendre les marches, rendez-vous au\n228.",
     "choices": [
+      {
+        "text": "ouvrir la porte",
+        "nextPage": 308
+      },
       {
         "text": "escalier en colimaçon. Pour monter cet escalier,",
         "nextPage": 170
@@ -1496,8 +1532,8 @@
     "content": "Vous escaladez la colline boisée. Vous avez la gorge sèche et votre\ncœur bat avec force comme s'il était près d'éclater, mais vous ne\nvoulez pas prendre le risque de ralentir votre allure. Quatre\nheures passent avant que vous ne soyez certain d'avoir distancé\nl'ennemi. La nuit est presque tombée lorsque vous découvrez par\nhasard un étroit passage aux flancs escarpés, creusé dans la\ncolline pour donner accès à une galerie de mines. Pendant des\ncentaines d'années, les filons de la chaîne de Maaken ont\nreprésenté tout à la fois une bénédiction et un fléau pour ceux\nqui venaient ici chercher fortune. Des hommes, en effet, y ont\ntrouvé des richesses qui dépassaient leurs espérances les plus\ninsensées, tandis que d'autres ont péri sans laisser de traces dans\nun labyrinthe de tunnels sombres et glacés. Vous examinez\nl'entrée de la mine. Si vous parvenez à trouver l'un des tunnels\nprincipaux, vous devriez pouvoir atteindre Ruanon par ces\nsouterrains. Quelques mètres plus loin, vous découvrez une\ncaisse de bois contenant 6 Torches et 1 Briquet d'Amadou. Les\ngaleries de mines sont obscures et vous aurez besoin d'au moins\nune Torche pour vous éclairer. Vous avez cependant le droit d'en\nprendre davantage si vous le désirez, mais rappelez-vous que\nchaque Torche compte pour un objet dans votre Sac à Dos. Faites\nles modifications nécessaires sur votre Feuille d'Aventure avant\nd'entrer dans les mines en vous rendant au 315.",
     "choices": [
       {
-        "text": "entrer dans la cité",
-        "nextPage": 257
+        "text": "entrer dans les mines",
+        "nextPage": 315
       }
     ]
   },
@@ -1748,6 +1784,10 @@
     "content": "Quels que soient vos efforts, l'étai refuse de bouger. Soudain, vos\npoursuivants émergent des tunnels obscurs et vous attaquent. Ils\nne sont que deux, mais d'autres les suivent un peu plus loin. Le\ncombat est inévitable, et vous allez devoir les affronter un par un.\nHABILETÉ ENDURANCE\n1e GARDE DES TUNNELS 16 22\n2e GARDE DES TUNNELS 15 21\nSi vous parvenez à tuer le premier Garde, vous aurez le droit de\nprendre la fuite en vous rendant au 87. Si vous tuez les deux\nGardes, rendez-vous au 230.",
     "choices": [
       {
+        "text": "prendre la fuite",
+        "nextPage": 87
+      },
+      {
         "text": "Gardes,",
         "nextPage": 230
       }
@@ -1834,6 +1874,10 @@
       {
         "text": "galerie,",
         "nextPage": 288
+      },
+      {
+        "text": "revenir sur vos pas le long du sentier de la colline",
+        "nextPage": 6
       }
     ]
   },
@@ -2236,6 +2280,10 @@
       {
         "text": "l'acteur,",
         "nextPage": 58
+      },
+      {
+        "text": "le laisser s'enfuir, revenez auprès de vos hommes",
+        "nextPage": 165
       }
     ]
   },
@@ -2602,6 +2650,10 @@
       {
         "text": "de la Communication Animale,",
         "nextPage": 41
+      },
+      {
+        "text": "chercher une issue à cette salle",
+        "nextPage": 276
       }
     ]
   },
@@ -2686,8 +2738,12 @@
     "content": "Il vous faut une demi-heure pour reprendre vos esprits et\nlocaliser l'endroit où vous vous trouvez à présent. Vous vous\napercevez bientôt que vous êtes au pied d'un énorme crassier qui\némerge de la rivière souterraine. A moins de 6 mètres de son\nsommet, une faible lueur éclaire un long tunnel de pierre qui sert\nde plan incliné. Il vous est possible d'y grimper, bien que cette\nescalade soit difficile et périlleuse. Il vous faut une heure d'efforts\npour arriver enfin au sommet du crassier. Vous pénétrez alors\ndans le petit tunnel désert où vous trouvez un chariot de mine\nprès de l'entrée. Si vous souhaitez examiner ce chariot, rendez-\nvous au 167. Si vous préférez ne pas y prêter attention, vous\nmonterez la pente escarpée de ce tunnel en vous rendant au 185.",
     "choices": [
       {
-        "text": "escalader le crassier",
-        "nextPage": 115
+        "text": "examiner ce chariot,",
+        "nextPage": 167
+      },
+      {
+        "text": "monterez la pente escarpée de ce tunnel",
+        "nextPage": 185
       }
     ]
   },
