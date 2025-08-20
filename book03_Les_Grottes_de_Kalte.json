@@ -20,6 +20,10 @@
       {
         "text": "vous souhaitez tirer ce levier,",
         "nextPage": 290
+      },
+      {
+        "text": "continuer à monter l'escalier",
+        "nextPage": 76
       }
     ]
   },
@@ -1203,7 +1207,13 @@
         "text": "Si vous sortez vainqueur de l'affrontement,",
         "nextPage": 230
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Monstre d'Enfer",
+      "ability": 22,
+      "endurance": 30
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 100,
@@ -1495,7 +1505,13 @@
         "text": "sans perdre de points d'ENDURANCE,",
         "nextPage": 174
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Languabarb",
+      "ability": 11,
+      "endurance": 30
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 124,
@@ -1663,7 +1679,13 @@
         "text": "Si vous sortez vainqueur de l'affrontement,",
         "nextPage": 28
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Barbare des Glaces et Loup Maudit",
+      "ability": 30,
+      "endurance": 30
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 138,
@@ -1672,8 +1694,18 @@
       {
         "text": "Si vous êtes vainqueur",
         "nextPage": 25
+      },
+      {
+        "text": "prendre la fuite",
+        "nextPage": 277
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Languabarb",
+      "ability": 11,
+      "endurance": 35
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 139,
@@ -1779,7 +1811,13 @@
         "text": "remportez la victoire sans perdre un seul point d'ENDURANCE,",
         "nextPage": 84
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Languabarb",
+      "ability": 10,
+      "endurance": 28
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 148,
@@ -2142,7 +2180,13 @@
         "text": "Si vous tuez la créature sans perdre aucun point d'ENDURANCE,",
         "nextPage": 70
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Languabarb",
+      "ability": 11,
+      "endurance": 35
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 181,
@@ -2426,12 +2470,32 @@
   {
     "pageNumber": 208,
     "content": "Le Barbare des Glaces vous voit approcher et tire aussitôt son\népée en os, puis il se poste devant l'escalier pour vous empêcher\nde passer. Il vous faut l'affronter.\nBARBARE DES GLACES HABILETÉ : 17 ENDURANCE : 30\nSi vous remportez la victoire en 4 Assauts ou moins, rendez-vous\nau 4. Si vous gagnez le combat en plus de 4 Assauts, rendez-vous\nau 81.",
-    "choices": []
+    "choices": [
+      {
+        "text": "remportez la victoire en 4 Assauts ou moins,",
+        "nextPage": 4
+      },
+      {
+        "text": "gagnez le combat en plus de 4 Assauts,",
+        "nextPage": 81
+      }
+    ],
+    "monster": {
+      "monsterName": "Barbare des Glaces",
+      "ability": 17,
+      "endurance": 30
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 209,
     "content": "Vous vous cramponnez à la paroi rocheuse pendant toute la nuit.\nLe vent glacial vous cingle le visage et vous êtes saisi de\ntremblements incontrôlables, luttant de toutes vos forces pour ne\npas vous évanouir. Vous perdez 2 points d'ENDURANCE. L'huile\nde Bakanal vous permet cependant de conserver suffisamment\nde chaleur dans votre corps pour arriver à survivre : sans elle, le\nfroid aurait eu raison de vous. Rendez-vous à présent au 155.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous à présent",
+        "nextPage": 155
+      }
+    ]
   },
   {
     "pageNumber": 210,
@@ -2957,7 +3021,18 @@
   {
     "pageNumber": 259,
     "content": "Soudain, Fenor se relève d'un bond et saisit son épée. « C'est un\nLanguabarb ! s'écrie-t-il. Vite ! prenez vos armes ou nous\nsommes perdus. » Les autres se hâtent d'empoigner leurs armes\ntandis que Fenor disparaît au-dehors. Presque immédiatement,\nun hurlement de douleur retentit et quelque chose se trouve\nviolemment projeté contre la toile de la tente qui s'écroule\naussitôt sous le choc. Vous vous retrouvez alors couché côte à\ncôte avec le cadavre mutilé de Fenor. Saisi de panique, vous vous\ndépêtrez de la toile de tente et vous tirez votre arme. A ce\nmoment, un énorme monstre quadrupède vous saute dessus. Ses\nyeux rouges brillent comme deux charbons ardents et sa gueule\nouverte, hérissée de dents pointues, laisse apparaître une langue\ncouverte d'un poil rêche. La bête est sur vous et il vous faut la\ncombattre.\nLANGUABARB HABILETÉ: 11 ENDURANCE: 35\nSi vous perdez des points d'ENDURANCE au cours de ce combat,\nrendez-vous immédiatement au 129. Si vous parvenez à tuer la\ncréature sans perdre un seul point d'ENDURANCE, rendez-vous\nau 151.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Si vous parvenez à tuer la créature sans perdre un seul point d'ENDURANCE,",
+        "nextPage": 151
+      }
+    ],
+    "monster": {
+      "monsterName": "Languabarb",
+      "ability": 11,
+      "endurance": 35
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 260,
@@ -2967,7 +3042,13 @@
         "text": "Si vous remportez la victoire,",
         "nextPage": 210
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Barbare des Glaces",
+      "ability": 17,
+      "endurance": 29
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 261,
@@ -2999,8 +3080,19 @@
   },
   {
     "pageNumber": 263,
-    "content": "Le passage étant étroit, il vous faut combattre I Languabarbs un\npar un. Leurs langues venimeus. pointées sur vous, ils\ns'apprêtent à vous piquer.\nHABILETÉ ENDURANCE\nPremier LANGUABARB 11 35\nDeuxième LANGUABARB 10 32\nTroisième LANGUABARB 8 30",
-    "choices": []
+    "content": "Le passage étant étroit, il vous faut combattre I Languabarbs un\npar un. Leurs langues venimeus. pointées sur vous, ils\ns'apprêtent à vous piquer.\nHABILETÉ ENDURANCE\nPremier LANGUABARB 11 35\nDeuxième LANGUABARB 10 32\nTroisième LANGUABARB 8 30\nSi vous perdez des points d'ENDURANCE au cours de ce combat,\nrendez-vous immédiatement au 66. Si vous remportez le combat\nsans perdre de points d'ENDURANCE, rendez-vous au 25.",
+    "choices": [
+      {
+        "text": "sans perdre de points d'ENDURANCE,",
+        "nextPage": 25
+      }
+    ],
+    "monster": {
+      "monsterName": "Languabarb",
+      "ability": 11,
+      "endurance": 35
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 264,
@@ -3045,7 +3137,12 @@
   {
     "pageNumber": 267,
     "content": "Loi-Kymar montre soudain la poche dans laquelle vous avez\nrangé la Pierre Rayonnante. « Pourquoi donc conservez-vous une\npierre maudite, Seigneur Kaï ? Ignorez-vous les dangers qu'elle\nprésente ?» Vous retirez aussitôt la Pierre de votre poche et vous\nla montrez au magicien. « Argh ! s'écrie-t-il comme si le simple\nfait de la regarder lui causait une intense douleur. Jetez-la au\nplus vite, avant que nous ne succombions au terrible mal. C'est\nune pierre maudite des Anciens, elle ne peut apporter que\nmaladie et mort à quiconque d'entre les mortels convoite sa\nbeauté. » A contrecœur, vous obéissez à Loi-Kymar et vous vous\ndébarrassez de la Pierre. Rayez-la de votre Feuille d'Aventure.\nRendez-vous ensuite au 44.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous ensuite",
+        "nextPage": 44
+      }
+    ]
   },
   {
     "pageNumber": 268,
@@ -3182,7 +3279,16 @@
   {
     "pageNumber": 277,
     "content": "Vous vous enfuyez à toutes jambes en revenant sur vos pas, mais\nles Languabarbs sont familiers des lieux et ils gagnent du terrain.\nLorsque vous atteignez la cascade gelée, vous remarquez qu'un\ngros bloc rocheux aux couleurs argentées forme saillie au-dessus\nde l'entrée de la grotte. Si vous possédez une arme, vous pouvez\nessayer de faire tomber ce roc pour obstruer le passage ; rendez-\nvous pour cela au 142. Si vous ne disposez d'aucune arme, vous\ndevrez faire face aux créatures et les combattre ; rendez-vous\nalors au 32.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous possédez une arme",
+        "nextPage": 142
+      },
+      {
+        "text": "vous ne disposez d'aucune arme",
+        "nextPage": 32
+      }
+    ]
   },
   {
     "pageNumber": 278,
@@ -3420,7 +3526,16 @@
   {
     "pageNumber": 298,
     "content": "Vous découvrez un étrange Triangle de Pierre Bleue attaché à\nune chaînette. La main décharnée de l'un des cadavres le tient\nétroitement serré et vous êtes obligé de fracasser les phalanges\nblanchies pour libérer l'objet. Si vous souhaitez conserver ce\nTriangle de Pierre Bleue, passez la chaînette autour de votre cou\net glissez l'objet sous votre tunique. Inscrivez-le ensuite sur votre\nFeuille d'Aventure dans la case Objets Spéciaux. Vous pouvez\nquitter les lieux par un tunnel dont l'entrée se trouve dans le mur\ndu fond ; rendez-vous pour cela au 315. Vous pouvez également\nrevenir sur vos pas et emprunter l'autre tunnel en vous rendant\nau 125.",
-    "choices": []
+    "choices": [
+      {
+        "text": "tunnel dont l'entrée se trouve dans le mur du fond",
+        "nextPage": 315
+      },
+      {
+        "text": "revenir sur vos pas et emprunter l'autre tunnel",
+        "nextPage": 125
+      }
+    ]
   },
   {
     "pageNumber": 299,
@@ -3549,12 +3664,22 @@
   {
     "pageNumber": 308,
     "content": "En dépit de sa taille, le Casque vous paraît léger et agréable à\nporter. Inscrivez-le sur votre Feuille d'Aventure, dans la case\nObjets Spéciaux. Chaque fois que vous en serez coiffé au cours\nd'un combat, il augmentera de 2 points votre total d'HABILETÉ.\nLe couvercle du coffre se referme lentement et vous quittez les\nlieux, enchanté de votre trouvaille. Vous poursuivez ensuite votre\nchemin le long du couloir et vous montez l'escalier. Rendez-vous\nau 323.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous montez l'escalier",
+        "nextPage": 323
+      }
+    ]
   },
   {
     "pageNumber": 309,
     "content": "Vous fouillez les cadavres des Barbares et vous découvrez, passée\nau cou de l'un d'eux, une chaînette à laquelle est accroché un\nTriangle de Pierre Bleue. Si vous souhaitez conserver cet objet,\ninscrivez-le sur votre Feuille d'Aventure dans la case Objets\nSpéciaux. Vous êtes affamé et vous dévorez gloutonnement la\ncarcasse rôtie en ne cessant d'engloutir la viande que pour\ncracher parfois quelques os. Bientôt, vous remarquez que le feu\nallumé devant vous brûle dans une demi-sphère de métal. Une\nautre demi-sphère est posée sur le sol de glace, un peu plus loin,\net vous constatez que les deux moitiés s'ajustent parfaitement\npour former une sphère complète. Lorsque vous séparez à\nnouveau les deux moitiés, le feu continue de brûler à l'intérieur :\nc'est donc un feu perpétuel qui est enfermé dans ce globe. Si vous\nsouhaitez conserver cette Sphère de Feu, rangez-la dans votre\ntunique et inscrivez-la sur votre Feuille d'Aventure dans la case\nObjets Spéciaux. Vous finissez alors les derniers restes de viande\nencore attachés aux os et vous retournez dans le tunnel. Rendez-\nvous au 132.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous retournez dans le tunnel",
+        "nextPage": 132
+      }
+    ]
   },
   {
     "pageNumber": 310,
@@ -3590,7 +3715,12 @@
   {
     "pageNumber": 314,
     "content": "Vous parcourez encore une centaine de mètres le long de la paroi\nrocheuse, et vous découvrez alors une grande fissure : c'est\nl'entrée d'une grotte. Dans votre impatience d'échapper à la\nmorsure du vent, vous vous hâtez d'y entrer et, dans l'obscurité,\nvous ne remarquez pas la crevasse qui s'ouvre dans le sol de la\ngrotte. Vous tombez aussitôt tête la première dans les ténèbres,\naccompagné d'une avalanche de glace et de pierres. Rendez-vous\nau 240.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous",
+        "nextPage": 240
+      }
+    ]
   },
   {
     "pageNumber": 315,
@@ -3705,7 +3835,12 @@
   {
     "pageNumber": 324,
     "content": "Tandis que le répugnant Akranionor meurt à vos pieds, vous\nvoyez le traître bossu descendre de sa plate-forme et se précipiter\nvers une porte, un peu plus loin. Vous vous apprêtez à le\npoursuivre lorsque vous vous immobilisez soudain en découvrant\nle corps de Loi-Kymar étendu dans le fossé. Il est mort, tué au\ncours du combat psychique qui l'a opposé à Vonotar. La colère\nbouillonne en vous et vous brandissez votre arme en vous\nlançant à la poursuite de l'infâme renégat ; cette fois, vous êtes\ndécidé à le tuer. La porte s'ouvre sur un long couloir au bout\nduquel se trouve une arcade fermée par des rideaux. D'un geste\nvif, vous écartez les rideaux et vous continuez à courir. Rendez-\nvous au 61.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous continuez à courir",
+        "nextPage": 61
+      }
+    ]
   },
   {
     "pageNumber": 325,
