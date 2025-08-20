@@ -129,8 +129,7 @@
         "text": "partir pour Maaken",
         "nextPage": 140
       }
-    ],
-    "isBlocking": true
+    ]
   },
   {
     "pageNumber": 13,
@@ -208,8 +207,7 @@
         "text": "prendre un repas et dormir",
         "nextPage": 233
       }
-    ],
-    "isBlocking": true
+    ]
   },
   {
     "pageNumber": 20,
@@ -509,8 +507,7 @@
         "text": "est de 7 ou plus,",
         "nextPage": 111
       }
-    ],
-    "isBlocking": true
+    ]
   },
   {
     "pageNumber": 44,
@@ -624,8 +621,7 @@
         "text": "chancelant de l'entrée du tunnel",
         "nextPage": 248
       }
-    ],
-    "isBlocking": true
+    ]
   },
   {
     "pageNumber": 53,
@@ -969,8 +965,7 @@
         "text": "dormir dans le campement",
         "nextPage": 233
       }
-    ],
-    "isBlocking": true
+    ]
   },
   {
     "pageNumber": 79,
@@ -1576,8 +1571,7 @@
         "text": "puis",
         "nextPage": 309
       }
-    ],
-    "isBlocking": true
+    ]
   },
   {
     "pageNumber": 130,
@@ -1729,8 +1723,7 @@
         "text": "continuer sous la pluie",
         "nextPage": 105
       }
-    ],
-    "isBlocking": true
+    ]
   },
   {
     "pageNumber": 142,
@@ -1930,8 +1923,7 @@
         "text": "vous poursuivez votre exploration du tunnel",
         "nextPage": 309
       }
-    ],
-    "isBlocking": true
+    ]
   },
   {
     "pageNumber": 158,
@@ -1941,8 +1933,7 @@
         "text": "nécessaires à votre Feuille d'Aventure, puis",
         "nextPage": 219
       }
-    ],
-    "isBlocking": true
+    ]
   },
   {
     "pageNumber": 159,
@@ -2040,8 +2031,7 @@
         "text": "points d'ENDURANCE",
         "nextPage": 13
       }
-    ],
-    "isBlocking": true
+    ]
   },
   {
     "pageNumber": 166,
@@ -2281,8 +2271,7 @@
         "text": "kilomètres avant d'aboutir enfin à une longue galerie déserte",
         "nextPage": 40
       }
-    ],
-    "isBlocking": true
+    ]
   },
   {
     "pageNumber": 186,
@@ -3338,8 +3327,7 @@
         "text": "continuer",
         "nextPage": 73
       }
-    ],
-    "isBlocking": true
+    ]
   },
   {
     "pageNumber": 270,
@@ -3381,8 +3369,7 @@
         "text": "Feuille d'Aventure, puis",
         "nextPage": 79
       }
-    ],
-    "isBlocking": true
+    ]
   },
   {
     "pageNumber": 273,
@@ -3416,8 +3403,7 @@
         "text": "pas soufflées",
         "nextPage": 335
       }
-    ],
-    "isBlocking": true
+    ]
   },
   {
     "pageNumber": 276,
@@ -3615,8 +3601,7 @@
         "text": "de les capturer vivants,",
         "nextPage": 102
       }
-    ],
-    "isBlocking": true
+    ]
   },
   {
     "pageNumber": 291,
@@ -3762,8 +3747,7 @@
     "pageNumber": 302,
     "content": "Le coffre n'est pas fermé à clé. Ce qui vient d'arriver à vos\nhommes vous rend cependant très prudent, et vous décidez de ne\npas prendre de risques. Vous tenant à l'écart du coffre, vous\nsoulevez le couvercle de la pointe de votre arme et vous le\nrabattez d'un coup sec. Vous attendez un instant en retenant\nvotre souffle, mais rien ne se produit. Le propriétaire du coffre\nestime sans doute que le piège aménagé dans le passage suffit à\nle protéger des voleurs. Le coffre contient nombre d'objets de\nvaleur: des assiettes et des coupes d'or incrustées de pierreries,\ndes colliers de turquoise, des perles, des statuettes de jade et une\npierre précieuse d'un grand prix. Vous contemplez ces richesses\navec émerveillement, mais vous décidez de n'en emporter\naucune. Elles seraient trop lourdes, en effet, et inutiles à votre\nmission. Vous remarquez alors, sous les assiettes d'or, un sac de\ncuir. Vous le retirez du coffre et vous reconnaissez aussitôt sa\nforme caractéristique ; il s'agit d'un sac d'herboriste qui contient\nles objets suivants :\n— 2 flacons de Potion de Laumspur : chaque dose vous permet de\nregagner 4 points d'ENDURANCE ;\n— 1 fiole de Potion d'Aléther : elle vous permet d'augmenter de 2\npoints votre HABILETÉ au cours d'un combat (et un seul) ;\n- 1 flacon d'Eau Bénite.\nSi vous souhaitez conserver l'un ou l'autre de ces objets,\ninscrivez-les sur votre Feuille d'Aventure. Dirigez-vous à présent\nvers la porte située de l'autre côté en vous rendant au 131.",
     "choices": [],
-    "endingType": "death",
-    "isBlocking": true
+    "endingType": "death"
   },
   {
     "pageNumber": 303,
@@ -3773,8 +3757,7 @@
         "text": "l'ouest",
         "nextPage": 348
       }
-    ],
-    "isBlocking": true
+    ]
   },
   {
     "pageNumber": 304,
@@ -4018,8 +4001,7 @@
         "text": "prendre celui orienté au sud,",
         "nextPage": 129
       }
-    ],
-    "isBlocking": true
+    ]
   },
   {
     "pageNumber": 323,
@@ -4223,8 +4205,7 @@
         "text": "d'ENDURANCE",
         "nextPage": 32
       }
-    ],
-    "isBlocking": true
+    ]
   },
   {
     "pageNumber": 341,
@@ -4234,8 +4215,7 @@
         "text": "vous-même, dans la tour de guet",
         "nextPage": 116
       }
-    ],
-    "isBlocking": true
+    ]
   },
   {
     "pageNumber": 342,
