@@ -132,6 +132,10 @@
       {
         "text": "Noir",
         "nextPage": 225
+      },
+      {
+        "text": "vous poursuivrez alors votre chemin vers le nord",
+        "nextPage": 126
       }
     ]
   },
@@ -254,7 +258,11 @@
     "content": "Vous courez le long du pont de glace et vous plongez pour\nattraper la main de Dyce, mais il est trop tard. Une seconde à\npeine avant que vous ne l'ayez atteint, il lâche prise et tombe en\narrière dans le vide béant. Un frisson vous parcourt l'échiné\ntandis que vous entendez son hurlement disparaître dans les\nprofondeurs obscures. Vous scrutez le fond du précipice sans\npouvoir rien faire, lorsqu'Irian pousse soudain un cri : « Là, là-\nbas ! s'exclame-t-il, je suis sûr que j'ai vu quelque chose ! » Vous\nregardez avec attention dans l'espoir de voir quelque chose à\nvotre tour, mais la gorge est aussi noire qu'une nuit sans lune.\nVous vous tournez alors vers Irian qui vous désigne non pas le\nprécipice, mais l'horizon en direction de l'ouest. « Regardez là-\nbas ! » dit-il en montrant une hauteur qui se dessine au loin.\nDeux guerriers vêtus de fourrure se tiennent debout au sommet\nd'une vaste étendue de glace. Ils regardent vers vous, alertés sans\naucun doute par le cri désespéré de Dyce. « Des Barbares des\nGlaces, avertit Fenor, la voix tremblante de peur, s'ils atteignent\nIkaya avant nous, c'est comme si nous étions déjà morts ! » Vous\nêtes à présent à 25 kilomètres de la forteresse et il reste moins de\ntrois heures de jour. Si vous souhaitez poursuivre votre chemin\nen espérant que vous arriverez avant les Barbares, rendez-vous\nau 327. Si vous préférez les attaquer pour les empêcher de\ndonner l'alerte, rendez-vous au 307.",
     "choices": [
       {
-        "text": "donner l'alerte,",
+        "text": "poursuivre votre chemin en espérant que vous arriverez avant les Barbares",
+        "nextPage": 327
+      },
+      {
+        "text": "les attaquer pour les empêcher de donner l'alerte",
         "nextPage": 307
       }
     ]
@@ -388,8 +396,12 @@
     "content": "Le passage se prolonge tout droit pendant quelques mètres, puis\nil tourne brusquement vers l'est. Un peu plus loin, vous\napercevez une lueur qui filtre à travers une fente dans le mur. En\ny regardant de plus près, vous découvrez une porte secrète et un\npetit levier de pierre. Vous tirez sur le levier et la porte s'ouvre\naussitôt en glissant latéralement, révélant un large couloir bien\néclairé. A votre gauche, à moins de 10 mètres, vous remarquez un\ncroisement. A votre droite, vous voyez une porte de pierre\nfermée. Si vous souhaitez examiner cette porte, rendez-vous au\n203. Si vous préférez vous diriger vers le croisement, rendez-\nvous au 276.",
     "choices": [
       {
-        "text": "fermée. Si vous souhaitez examiner cette porte,",
+        "text": "examiner cette porte",
         "nextPage": 203
+      },
+      {
+        "text": "vous diriger vers le croisement",
+        "nextPage": 276
       }
     ]
   },
@@ -398,7 +410,11 @@
     "content": "La statue se dresse lentement sur l'autel et s'avance vers vous.\nTandis qu'elle s'approche, vous sentez un froid intense rayonner\nde sa surface de pierre lisse. Ses mouvements, cependant, sont\nraides et imprécis ; il ne vous serait pas difficile d'éviter ses bras\ntendus. Si vous souhaitez attaquer cette étrange statue, rendez-\nvous au 150. Si vous préférez la contourner et courir vers l'arcade\nqui se trouve derrière elle, rendez-vous au 306.",
     "choices": [
       {
-        "text": "qui se trouve derrière elle,",
+        "text": "attaquer cette étrange statue",
+        "nextPage": 150
+      },
+      {
+        "text": "la contourner et courir vers l'arcade qui se trouve derrière elle",
         "nextPage": 306
       }
     ]
@@ -462,12 +478,16 @@
     "content": "Vous montez plus de cinquante marches avant d'atteindre\nl'arcade. Tandis que vous reprenez votre souffle, vous remarquez\nque des volutes de brume virevoltant et serpentant dans les airs\ndissimulent l'ouverture et ce qui se trouve derrière. Vous vous\napercevez également que la température est beaucoup plus\nfraîche aux environs de cette porte voûtée. Si vous maîtrisez la\nDiscipline Kaï du Sixième Sens et si vous avez le titre Kaï de\nGardien (ce qui signifie que vous maîtrisez 7 Disciplines Kaï),\nrendez-vous au 341. Si vous maîtrisez la Discipline Kaï du\nSixième Sens sans avoir le rang de Gardien, rendez-vous au 124.\nEnfin, si vous ne maîtrisez pas la Discipline Kaï du Sixième Sens,\npréparez-vous à passer à l'attaque et franchissez l'arcade en vous\nrendant au 264.",
     "choices": [
       {
-        "text": "Gardien (ce qui signifie que vous maîtrisez 7 Disciplines Kaï),",
+        "text": "Gardien (ce qui signifie que vous maîtrisez 7 Disciplines Kaï)",
         "nextPage": 341
       },
       {
-        "text": "Sixième Sens sans avoir le rang de Gardien,",
+        "text": "Sixième Sens sans avoir le rang de Gardien",
         "nextPage": 124
+      },
+      {
+        "text": "ne maîtrisez pas la Discipline Kaï du Sixième Sens",
+        "nextPage": 264
       }
     ]
   },
@@ -530,8 +550,12 @@
     "content": "Vous tirez le Glaive magnifique de son fourreau et vous en\nfrappez la porte à coups redoublés. A chaque fois que le Glaive de\nSommer ébrèche l'antique pierre, une gerbe d'étincelles illumine\nla pièce. La lame de l'épée rayonne d'un intense flamboiement\nd'or tandis que vous l'abattez avec force. Le Glaive de Sommer\nparviendra sans nul doute à détruire la pierre, mais il vous\nfaudra plusieurs heures pour pratiquer une ouverture qui vous\npermette de vous enfuir. Si vous souhaitez continuer à marteler\nla porte à l'aide du Glaive de Sommer, rendez-vous au 294. Si\nvous préférez abandonner, vous pouvez quitter la pièce par le\npassage secret aménagé dans le mur nord ; rendez-vous pour cela\nau 145.",
     "choices": [
       {
-        "text": "la porte à l'aide du Glaive de Sommer,",
+        "text": "continuer à marteler la porte à l'aide du Glaive de Sommer",
         "nextPage": 294
+      },
+      {
+        "text": "abandonner, vous pouvez quitter la pièce par le passage secret",
+        "nextPage": 145
       }
     ]
   },
@@ -550,12 +574,16 @@
     "content": "« Suivez-moi, dit Loi-Kymar, j'ai écouté attentivement tous les\nbruits de la forteresse pendant plus d'un an et je connais à\nprésent toutes les portes dérobées, tous les passages cachés. Du\nfond de ma cellule, j'en ai appris davantage sur ces couloirs que\nVonotar lui-même avec toute sa ruse. » Vous suivez alors le\nmagicien à travers un réseau de tunnels et de passages secrets,\nd'escaliers et de salles froides et obscures. Au sommet d'un\nescalier particulièrement raide, vous arrivez devant une porte de\npierre. Une odeur étrange et écœurante filtre à travers un petit\njudas. « Ce sont les cuisines », murmure Loi-Kymar en faisant\nune grimace éloquente pour exprimer tout le dégoût que lui\ninspire la pitance servie dans la forteresse. Cette porte secrète est\nsituée juste à côté d'une cheminée dans laquelle brûle un feu\nd'enfer. Un grand chaudron de pierre rempli de gruau est\nsuspendu au-dessus du feu. Deux Barbares des Glaces sont assis\nà une table proche, devant des bols vides. Si vous avez une Potion\nNoire de Ronces des Cimetières, rendez-vous au 79. Si vous avez\nune Potion Verte de Brosse à Potences, rendez-vous au 157. Si\nvous ne possédez aucune de ces deux potions, il vous reste à\nouvrir la porte pour attaquer par surprise les Barbares désarmés\n; rendez-vous pour cela au 270.",
     "choices": [
       {
-        "text": "Noire de Ronces des Cimetières,",
+        "text": "Potion Noire de Ronces des Cimetières",
         "nextPage": 79
       },
       {
-        "text": "une Potion Verte de Brosse à Potences,",
+        "text": "Potion Verte de Brosse à Potences",
         "nextPage": 157
+      },
+      {
+        "text": "ne possédez aucune de ces deux potions",
+        "nextPage": 270
       }
     ]
   },
@@ -644,8 +672,12 @@
     "content": "Vous sentez que les Loups Maudits sont profondément\nendormis. Vous avez une chance de pouvoir passer devant eux,\nde maîtriser le Barbare des Glaces et de refermer la porte de la\ncellule avant qu'ils ne s'éveillent. Vous savez cependant que vous\ncourez là un grand risque et que vos chances de réussite sont\nfaibles. Si vous êtes suffisamment courageux pour entrer dans\nune cellule remplie de Loups Maudits, rendez-vous au 285. Si\nvous préférez ne pas prendre ce risque, il vous faut quitter les\nlieux et descendre l'escalier. Rendez-vous pour cela au 261.",
     "choices": [
       {
-        "text": "une cellule remplie de Loups Maudits,",
+        "text": "entrer dans une cellule remplie de Loups Maudits",
         "nextPage": 285
+      },
+      {
+        "text": "ne pas prendre ce risque, il vous faut quitter les lieux",
+        "nextPage": 261
       }
     ]
   },
@@ -674,11 +706,11 @@
     "content": "Le verre est très fin et vous avez besoin de toute votre\nconcentration et de toute votre habileté pour éviter de le casser.\nUtilisez la Table de Hasard pour obtenir un chiffre. Si vous\npossédez la Discipline Kaï de la Maîtrise Psychique de la Matière\nou celle de la Puissance Psychique, ajoutez 3 au chiffre que vous\naurez tiré. Si votre total est de 0 à 4, rendez-vous au 250. De 5 à\n12, rendez-vous au 268.",
     "choices": [
       {
-        "text": "aurez tiré. Si votre total est de 0 à 4,",
+        "text": "Si votre total est de 0 à 4",
         "nextPage": 250
       },
       {
-        "text": "12,",
+        "text": "De 5 a 12",
         "nextPage": 268
       }
     ]
@@ -732,8 +764,8 @@
     "content": "Emporté par son élan, le Languabarb continue de charger sur la\nmince couche de glace qui cède sous son poids. Sous la surface\ngelée, une ombre file alors vers la créature qui se débat\nfurieusement dans l'eau glacée et l'emporte soudain dans les\nprofondeurs. Tout devient aussitôt étrangement immobile,\ntandis qu'une nappe d'eau rougie s'étale lentement sous la glace.\nVous vous hâtez en direction du tunnel dont les contours\ndéchiquetés se dessinent de l'autre côté du lac. Lorsque vous\nprenez pied sur la glace épaisse de la rive, vous remarquez un\nobjet à terre. C'est un petit Triangle de Pierre Bleue attaché à une\nchaînette. Si vous souhaitez conserver ce Triangle de Pierre\nBleue, passez la chaîne autour de votre cou, et inscrivez l'objet\nsur votre Feuille d'Aventure, dans la case Objets Spéciaux. Entrez\nensuite dans le tunnel en vous rendant au 235.",
     "choices": [
       {
-        "text": "rendez-vous au 176",
-        "nextPage": 176
+        "text": "Entrez ensuite dans le tunnel",
+        "nextPage": 235
       }
     ]
   },
@@ -776,8 +808,12 @@
     "content": "Vous suivez le passage qui se prolonge vers le nord puis tourne\nbrusquement vers l'ouest. Un peu plus loin, un escalier de pierre\nmène à une arcade située à une dizaine de mètres plus haut. De\nl'autre côté de l'escalier, vous remarquez une autre porte de\npierre à côté de laquelle se trouve un levier fixé au mur. Le levier\nest relevé et la porte fermée. Si vous souhaitez monter l'escalier,\nrendez-vous au 323. Si vous préférez examiner la porte, rendez-\nvous au 246.",
     "choices": [
       {
-        "text": "est relevé et la porte fermée. Si vous souhaitez monter l'escalier,",
+        "text": "monter l'escalier",
         "nextPage": 323
+      },
+      {
+        "text": "examiner la porte",
+        "nextPage": 246
       }
     ]
   },
@@ -808,20 +844,20 @@
   {
     "pageNumber": 66,
     "content": "Le crin qui recouvre la langue des Languabarbs contient un\npuissant venin grâce auquel la créature paralyse ses victimes\navant de les dévorer. Le venin agit en quelques secondes ; or,\nmalheureusement pour vous, le poil rêche de la langue du\nmonstre vous a inoculé le poison et vous perdez très vite\nconscience. Jamais vous ne vous réveillerez de ce sommeil qui\nmet fin à votre mission en même temps qu'à votre vie.",
-    "choices": [
-      {
-        "text": "vous atteignez l'autre rive",
-        "nextPage": 284
-      }
-    ]
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 67,
     "content": "L'homme rejette soudain la tête en arrière comme si on venait de\nl'éveiller brusquement d'une transe. « Qui est là ? murmure-t-il\nen scrutant l'obscurité de ses yeux profondément enfoncés dans\nleurs orbites. Y a-t-il quelqu'un ici ou est-ce la folie qui me visite\n?»\nVous tendez alors la main à travers l'ouverture et vous lui faites\nun signe pour montrer où vous êtes. « Loués soient les dieux !\ns'écrit l'homme en se levant d'un bond. Je m'appelle Tygon et je\nsuis un marchand de Radagorn. Les Barbares des Glaces m'ont\ncapturé, ils ont volé ma marchandise et m'ont amené ici.\nJ'attends maintenant d'être reçu par leur nouveau Brumalmarc,\nle mage Vonotar du Sommerlund. C'est lui, semble-t-il, qui doit\ndécider de mon sort. Si vous me libérez, je ferai tout ce qui sera\nen mon pouvoir pour vous aider. » Si vous disposez d'une Corde,\nvous pouvez la descendre à travers l'ouverture et aider l'homme à\nsortir de sa cellule ; rendez-vous pour cela au 328. Si vous n'avez\npas de Corde, ou si vous ne souhaitez pas aider cet homme, vous\nreprendrez votre chemin le long du tunnel en direction de\nl'escalier. Rendez-vous alors au 166.",
     "choices": [
       {
-        "text": "vous dirigez vers la grotte",
-        "nextPage": 336
+        "text": "Si vous disposez d'une Corde",
+        "nextPage": 328
+      },
+      {
+        "text": "Si vous n'avez pas de Corde, ou si vous ne souhaitez pas aider cet homme",
+        "nextPage": 166
       }
     ]
   },
@@ -878,8 +914,8 @@
     "content": "Vous sentez que l'enfant Barbare cache un poignard en os dans\nl'une de ses bottes. Il essaie de s'en saisir pour vous attaquer. A\nprésent que votre Sixième Sens vous a averti du danger, rendez-\nvous au 320.",
     "choices": [
       {
-        "text": "rendez-vous au 242",
-        "nextPage": 242
+        "text": "A présent que votre Sixième Sens vous a averti du danger",
+        "nextPage": 320
       }
     ]
   },
@@ -898,7 +934,11 @@
     "content": "Les guides vous regardent comme si vous étiez fou et refusent de\nvous accompagner. Tout d'abord, les chiens Kanu sont réticents\nlorsque vous approchez de la gorge, mais en les encourageant à\nl'aide de quelques bons coups de fouet, vous parvenez à les faire\nchanger d'avis. Il y a moins de 15 centimètres de glace de chaque\ncôté des patins de votre traîneau et vous avez besoin de toute\nvotre concentration pour vous maintenir au centre de ce pont\ngelé. Vous êtes parvenu à moins de 5 mètres du bord opposé\nquand soudain un terrible craquement retentit. Le traîneau est\nalors violemment secoué. Utilisez la Table de Hasard pour\nobtenir un chiffre. Si vous tirez un chiffre entre 0 et 7, rendez-\nvous au 119. Si vous tirez le 8 ou le 9, rendez-vous au 136.",
     "choices": [
       {
-        "text": "vous au 119. Si vous tirez le 8 ou le 9,",
+        "text": "Si vous tirez un chiffre entre 0 et 7",
+        "nextPage": 119
+      },
+      {
+        "text": "Si vous tirez le 8 ou le 9",
         "nextPage": 136
       }
     ]
@@ -908,11 +948,11 @@
     "content": "Les murs de pierre du couloir sont couverts d'étranges sculptures\nqui projettent de grandes ombres. Vous vous servez de ces\nombres pour vous y dissimuler avec l'agilité qui vous est\ncoutumière. Le Barbare des Glaces avance lentement dans votre\ndirection, les muscles tendus, la démarche hésitante. Vous avez\nalors la chair de poule en remarquant pour la première fois que\nses yeux blancs sont dépourvus de pupilles. Retenant votre\nsouffle, vous faites des prières pour qu'il ne vous ait pas vu.\nUtilisez la Table de Hasard pour obtenir un chiffre. Si vous tirez\nun chiffre entre 0 et 4, rendez-vous au 48. Si vous tirez entre 5 et\n9, rendez-vous au 287.",
     "choices": [
       {
-        "text": "un chiffre entre 0 et 4,",
+        "text": "Si vous tirez un chiffre entre 0 et 4",
         "nextPage": 48
       },
       {
-        "text": "9,",
+        "text": "entre 5 et 9",
         "nextPage": 287
       }
     ]
