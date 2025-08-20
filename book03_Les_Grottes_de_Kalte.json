@@ -1665,8 +1665,12 @@
     "content": "Vous sentez que ce Casque est doté d'un pouvoir magique qui\npourrait se révéler utile lors de vos futurs combats. Vous ne\ndécelez aucune onde maléfique provenant de cet objet ni du\ncoffre de pierre dans lequel il est conservé. Si vous souhaitez\nprendre ce Casque et vous en coiffer, rendez-vous au 308. Si\nvous continuez malgré tout à vous méfier des effets nocifs qu'il\npourrait produire, n'y touchez pas et dirigez-vous plutôt vers\nl'escalier pour voir où il mène. Rendez-vous pour cela au 323.",
     "choices": [
       {
-        "text": "prendre ce Casque et vous en coiffer,",
+        "text": "prendre ce Casque et vous en coiffer",
         "nextPage": 308
+      },
+      {
+        "text": "dirigez-vous vers l'escalier",
+        "nextPage": 323
       }
     ]
   },
@@ -1675,11 +1679,15 @@
     "content": "Lorsque la porte de pierre s'ouvre en grinçant, l'homme, dans\nune réaction de surprise, rejette la tête en arrière.\n« Qui est là ?» murmure-t-il d'une voix fluette et étranglée. Ses\nyeux brillent dans l'ombre de son capuchon en lambeaux. Puis\nsoudain, il semble vous reconnaître et se relève d'un bond. « Un\nSeigneur Kaï ! s'exclame-t-il, les dieux soient loués ! Je m'appelle\nTygon et je suis un marchand de Ragadorn. Les Barbares des\nGlaces m'ont capturé à Liouk et amené ici. J'attends à présent\nd'être reçu en audience par leur nouveau Brumalmarc, le sorcier\ndu Sommerlund qu'ils appellent Vonotar. Il semble que ce soit\nlui qui doive décider de mon sort. Mais si vous me délivrez de ce\npentagramme magique, je ferai de mon mieux pour vous aider. »\nCe pentagramme ne vous est pas inconnu : il s'agit en effet d'un\ncercle de claustration, une prison magique qui ne peut être\ndétruite que de l'extérieur. Pour libérer cet homme, il vous suffit\nd'effacer une partie du cercle tracé sur le sol. Si vous souhaitez le\nlibérer, rendez-vous au 170. S'il vous est arrivé de vous rendre à\nRagadorn, vous voudrez peut-être lui poser quelques questions\nsur cette ville afin de dissiper les soupçons que vous pourriez\navoir quant à son identité véritable ; rendez-vous pour cela au 11.\nEnfin, si vous préférez refermer la porte de la cellule et retourner\ndans le couloir principal, rendez-vous au 254.",
     "choices": [
       {
-        "text": "libérer,",
+        "text": "libérer cet homme",
         "nextPage": 170
       },
       {
-        "text": "dans le couloir principal,",
+        "text": "lui poser quelques questions sur Ragadorn",
+        "nextPage": 11
+      },
+      {
+        "text": "retourner dans le couloir principal",
         "nextPage": 254
       }
     ]
@@ -1713,8 +1721,12 @@
     "content": "Vous sentez que ces boutons commandent quelque ancien\nmécanisme et que, si on appuie dessus dans le bon ordre, une\nquelconque cachette, coffre ou compartiment secret, sera\ndévoilée. Mais il se peut aussi qu'en appuyant dessus dans le\nmauvais ordre ils déclenchent un piège. Si vous souhaitez\nappuyer sur ces boutons, rendez-vous au 227. Si vous ne voulez\npas prendre le risque d'actionner un piège, vous pouvez quitter le\ntemple en vous rendant au 306.",
     "choices": [
       {
-        "text": "appuyer sur ces boutons,",
+        "text": "appuyer sur ces boutons",
         "nextPage": 227
+      },
+      {
+        "text": "quitter le temple",
+        "nextPage": 306
       }
     ]
   },
@@ -1723,8 +1735,12 @@
     "content": "A moins que vous ne veniez de prendre un Repas, vous perdez 3\npoints d'ENDURANCE, tant vous êtes affamé. Vous poursuivez\nvotre chemin le long du tunnel pendant encore plus d'un\nkilomètre, mais bientôt, vous êtes fatigué et vous vous arrêtez\npour dormir. Lorsque vous vous réveillez, vous vous sentez\nmieux ; vous n'avez cependant aucune idée du temps qu'a duré\nvotre sommeil, car la lumière qui éclaire ces grottes ne change\njamais, qu'il fasse jour ou nuit. Vous reprenez votre marche en\ncontinuant tout droit pendant des kilomètres. Vous traversez\nplusieurs grottes immenses où se dressent d'imposants piliers de\ncristal. Dans l'une de ces vastes cavernes, vous êtes fasciné par\nune magnifique voûte de glace étincelante. Mais un peu plus loin,\nun spectacle encore plus impressionnant vous attend. Un étroit\npassage conduit en effet à une corniche qui longe le bord d'un\ngouffre gigantesque de près d'un kilomètre de largeur. Vous\ncontournez ce vide terrifiant en essayant de ne pas baisser le\nregard vers ses profondeurs agitées par les vents, à plusieurs\nkilomètres au-dessous. Vous marchez sur la corniche depuis\nseulement quelques minutes lorsqu'un bruit dans votre dos attire\nvotre attention. Vous jetez un coup d'œil en arrière et vous vous\napercevez alors avec horreur qu'un monstrueux serpent à deux\ntêtes vous suit à quelques mètres. Si vous maîtrisez les\nDisciplines Kaï de l'Orientation ou de la Communication\nAnimale, rendez-vous au 229. Dans le cas contraire, rendez-vous\nau 88.",
     "choices": [
       {
-        "text": "Animale,",
+        "text": "Orientation ou Communication Animale",
         "nextPage": 229
+      },
+      {
+        "text": "dans le cas contraire",
+        "nextPage": 88
       }
     ]
   },
@@ -1733,8 +1749,12 @@
     "content": "Une coupe de M'iare est suspendue au plafond, juste au-dessus\nde la crevasse. Si vous voulez essayer d'attacher votre Corde à\ncette coupe pour vous élancer ensuite de l'autre côté, rendez-\nvous au 201. Si vous ne voulez pas prendre le risque de tomber\ndans la crevasse, vous devrez revenir sur vos pas et emprunter un\nautre chemin en vous rendant au 297.",
     "choices": [
       {
-        "text": "vous attachez votre Corde",
-        "nextPage": 328
+        "text": "revenir sur vos pas et emprunter un autre chemin",
+        "nextPage": 297
+      },
+      {
+        "text": "attacher votre Corde à cette coupe",
+        "nextPage": 201
       }
     ]
   },
@@ -1769,12 +1789,7 @@
   {
     "pageNumber": 136,
     "content": "Soudain, vous êtes projeté en arrière tandis que le pont de glace\ncommence à se disloquer. Pendant quelques secondes, le\ntraîneau reste en équilibre instable sur le bord, comme une\nbalançoire, et vous entendez les cris d'horreur de vos guides\nimpuissants à vous venir en aide. C'est d'ailleurs là le dernier son\nque vous entendrez jamais, car le pont s'effondre et vous\nprécipite dans le gouffre. Vous faites une chute de 600 mètres au\nterme de laquelle vous êtes, bien entendu, tué sur le coup. Votre\nmission s'achève donc ici en même temps que votre vie.",
-    "choices": [
-      {
-        "text": "rendez-vous au 111",
-        "nextPage": 111
-      }
-    ]
+    "endingType": "death"
   },
   {
     "pageNumber": 137,
@@ -1841,8 +1856,16 @@
     "content": "L'homme observe un instant de silence, puis il donne sa réponse\n: « Killean le Suzerain. » Si vous souhaitez à présent effacer le\npentagramme pour le libérer, rendez-vous au 170. Si vous ne\nvoulez pas le libérer, refermez la porte de sa cellule et retournez\ndans le couloir principal en vous rendant au 254.",
     "choices": [
       {
-        "text": "pentagramme pour le libérer,",
+        "text": "effacer le pentagramme pour le libérer",
         "nextPage": 170
+      },
+      {
+        "text": "retourner dans le couloir principal",
+        "nextPage": 254
+      },
+      {
+        "text": "continuer votre exploration",
+        "nextPage": 245
       }
     ]
   },
@@ -1877,11 +1900,11 @@
     "content": "Ce couloir n'est pas très long et vous arrivez bientôt dans une\nautre salle aux murs de pierre. Un peu plus loin un escalier mène\nà une arcade plongée dans l'ombre, à bonne distance au-dessus\ndu sol. Au pied de cet escalier, vous distinguez le squelette d'un\nancien gardien de tombes, encore vêtu de son armure et toujours\ndebout. Ses phalanges nues tiennent une grande épée noire. Si\nvous souhaitez monter l'escalier sans prêter attention au\nsquelette, rendez-vous au 36. Si vous préférez attaquer le\nsquelette, rendez-vous au 278.",
     "choices": [
       {
-        "text": "squelette,",
+        "text": "monter l'escalier en ignorant le squelette gardien",
         "nextPage": 36
       },
       {
-        "text": "squelette,",
+        "text": "attaquer le squelette armé de l'épée noire",
         "nextPage": 278
       }
     ]
@@ -1946,18 +1969,22 @@
   },
   {
     "pageNumber": 150,
-    "content": "Le coup que vous assénez fracasse la surface lisse et blanche de la\nStatue. Aussitôt une rafale de vent glacé s'échappe en sifflant de\nl'ouverture et, quelques secondes plus tard, tous les murs de la\nsalle sont recouverts d'une couche de glace étincelante. La chute\nsoudaine de la température vous fait perdre 2 points\nd'ENDURANCE, à moins que votre peau ne soit protégée par de\nl'huile de Bakanal. Vous constatez alors avec un sentiment\nd'horreur que la rafale de vent prend peu à peu la forme d'un\npetit cyclone qui attire dans son œil tous les morceaux de pierre\net de glace traînant alentour. Vous venez de libérer un Démon de\nGlace et cette terrifiante créature a l'intention de vous anéantir.\nSi vous disposez du Glaive de Sommer, rendez-vous\nimmédiatement au 120. Si vous souhaitez attaquer le cyclone\navec une arme normale, rendez-vous au 18. Si vous préférez\nessayer de vous enfuir en courant vers l'arcade, rendez-vous au\n211. Enfin, si vous possédez une Sphère de Feu, rendez-vous au\n310.",
+    "content": "Le coup que vous assênez fracasse la surface lisse et blanche de la\nStatue. Aussitôt une rafale de vent glacé s'échappe en sifflant de\nl'ouverture et, quelques secondes plus tard, tous les murs de la\nsalle sont recouverts d'une couche de glace étincelante. La chute\nsoudaine de la température vous fait perdre 2 points\nd'ENDURANCE, à moins que votre peau ne soit protégée par de\nl'huile de Bakanal. Vous constatez alors avec un sentiment\nd'horreur que la rafale de vent prend peu à peu la forme d'un\npetit cyclone qui attire dans son œil tous les morceaux de pierre\net de glace traînant alentour. Vous venez de libérer un Démon de\nGlace et cette terrifiante créature a l'intention de vous anéantir.\nSi vous disposez du Glaive de Sommer, rendez-vous\nimmédiatement au 120. Si vous souhaitez attaquer le cyclone\navec une arme normale, rendez-vous au 18. Si vous préférez\nessayer de vous enfuir en courant vers l'arcade, rendez-vous au\n211. Enfin, si vous possédez une Sphère de Feu, rendez-vous au\n310.",
     "choices": [
       {
-        "text": "avec une arme normale,",
+        "text": "vous disposez du Glaive de Sommer",
+        "nextPage": 120
+      },
+      {
+        "text": "attaquer le cyclone avec une arme normale",
         "nextPage": 18
       },
       {
-        "text": "essayer de vous enfuir en courant vers l'arcade,",
+        "text": "vous enfuir en courant vers l'arcade",
         "nextPage": 211
       },
       {
-        "text": ". Enfin, si vous possédez une Sphère de Feu,",
+        "text": "vous possédez une Sphère de Feu",
         "nextPage": 310
       }
     ]
