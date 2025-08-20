@@ -2060,18 +2060,24 @@
   {
     "pageNumber": 158,
     "content": "L'éclaireur Barbare étant à skis, vous ne pourrez livrer contre lui\nqu'un seul Assaut ; emporté par son élan, en effet, il passera\ndevant vous sans s'arrêter, en essayant de vous porter un coup.\nVous devrez alors tenter de le blesser au moment où il arrivera à\nvotre hauteur.\nÉCLAIREUR BARBARE HABILETÉ: 20 ENDURANCE: 28\nSi vous subissez une perte de points d'ENDURANCE supérieure\nà celle de votre adversaire au cours de cet unique Assaut, rendez-\nvous au 165. Si, en revanche, c'est le Barbare qui perd plus de\npoints d'ENDURANCE que vous, rendez-vous au 271. Enfin, si\nvous perdez tous deux le même nombre de points\nd'ENDURANCE, rendez-vous au 337.",
+    "monster": {
+      "name": "Eclaireur Barbare",
+      "ability": 20,
+      "endurance": 28,
+      "isBlocking": false
+    },
     "choices": [
       {
-        "text": "points d'ENDURANCE que vous,",
+        "text": "vous subissez une perte supérieure",
+        "nextPage": 165
+      },
+      {
+        "text": "le Barbare perd plus de points que vous",
         "nextPage": 271
       },
       {
-        "text": "d'ENDURANCE,",
+        "text": "vous perdez le même nombre de points",
         "nextPage": 337
-      },
-      {
-        "text": "poursuivre votre chemin",
-        "nextPage": 21
       }
     ]
   },
@@ -2106,9 +2112,15 @@
   {
     "pageNumber": 161,
     "content": "Le Barbare des Glaces s'avance lentement et ses yeux blancs\ndépourvus de pupilles vous donnent la chair de poule. Dans sa\nmain droite, il tient un cimeterre en os, mais, bien qu'il soit prêt\nà frapper, ses gestes sont raides et incertains, comme s'il vous\nattaquait contre sa volonté. Le Barbare est insensible à la\nDiscipline Kaï de la Puissance Psychique.\nBARBARE DES GLACES HABILETÉ : 17 ENDURANCE : 29\nSi vous sortez vainqueur de ce combat, rendez-vous au 210.",
+    "monster": {
+      "name": "Barbare des glaces",
+      "ability": 17,
+      "endurance": 29,
+      "isBlocking": true
+    },
     "choices": [
       {
-        "text": "Si vous sortez vainqueur de ce combat,",
+        "text": "sortez vainqueur de ce combat",
         "nextPage": 210
       }
     ]
@@ -2118,7 +2130,11 @@
     "content": "Le traîneau est déchargé et le matériel qu'il contenait transporté\nde l'autre côté de la gorge à raison d'un objet par voyage. Tout se\npasse comme prévu, et il ne reste plus qu'à franchir une dernière\nfois le pont avec le traîneau lui-même. C'est Dyce qui le conduit\nen le maintenant à grand-peine au milieu du pont étroit. Mais\nsoudain les deux chiens de tête glissent et tombent dans la gorge.\nIls restent suspendus par leur harnais et poussent de longs\ngémissements en se débattant inutilement dans le vide. Dyce tire\nfrénétiquement sur les rênes pour essayer d'empêcher les autres\nchiens de tomber à leur tour, mais ses efforts restent vains : un\npar un, en effet, les quatre autres chiens de l'attelage sont attirés\ndans le précipice par le poids grandissant de ceux qui sont déjà\ntombés. « Saute, Dyce, saute ! » hurle Irian tandis que le dernier\nchien disparaît dans le vide. Dyce bondit juste à temps, avant que\nle traîneau ne bascule dans la gorge, mais il atterrit à l'endroit où\nle pont est le plus étroit et perd l'équilibre. Dans un geste\ndésespéré, il parvient à s'agripper au rebord de glace, mais ses\nmains glissent inexorablement. « Au secours ! Aidez-moi ! »\ns'écrie-t-il. Si vous souhaitez essayer de sauver Dyce, rendez-vous\nau 19. Si vous pensez qu'il n'y a aucun moyen de lui venir en\naide, rendez-vous au 257.",
     "choices": [
       {
-        "text": "aide,",
+        "text": "essayer de sauver Dyce",
+        "nextPage": 19
+      },
+      {
+        "text": "il n'y a aucun moyen de lui venir en aide",
         "nextPage": 257
       }
     ]
@@ -2140,7 +2156,22 @@
   {
     "pageNumber": 164,
     "content": "Le monstre aux tentacules se hisse hors du fossé et vous attaque.\nEn même temps, vous remarquez que Vonotar lève sa Crosse\nnoire en fixant les yeux sur Loi-Kymar. Il est en train d'attaquer\nle magicien à l'aide de sa Puissance Psychique. Vous vous rendez\ncompte alors que si Loi-Kymar est tué, il emportera dans la mort\nle secret de la Crosse de la Guilde. Mais avant tout, il vous faut\ncombattre le monstre. Cette créature est un Akranionor qui\nappartient au monde des morts vivants. Vous pourrez donc\nmultiplier par deux tous les points d'ENDURANCE que votre\nadversaire perdra au cours du combat, en raison de la puissance\ndu Glaive de Sommer.\nAKRANIONOR HABILETÉ: 23 ENDURANCE: 50\nSi vous remportez la victoire en 5 Assauts ou moins, rendez-vous\nau 272. Si le combat se prolonge au-delà de 5 Assauts, rendez-\nvous au 324.",
-    "choices": []
+    "monster": {
+      "name": "Akranionor",
+      "ability": 23,
+      "endurance": 50,
+      "isBlocking": true
+    },
+    "choices": [
+      {
+        "text": "victoire en 5 Assauts ou moins",
+        "nextPage": 272
+      },
+      {
+        "text": "combat se prolonge au-delà de 5 Assauts",
+        "nextPage": 324
+      }
+    ]
   },
   {
     "pageNumber": 165,
@@ -2157,7 +2188,11 @@
     "content": "Au pied de l'escalier, vous découvrez un autre tunnel orienté au\nnord. Vous vous apprêtez à l'emprunter lorsque votre main entre\nsoudain en contact avec un levier qui dépasse du mur, à votre\ndroite. En regardant de plus près, vous constatez l'existence\nd'une porte secrète. Si vous souhaitez ouvrir cette porte, rendez-\nvous au 111. Si vous préférez poursuivre votre chemin le long du\nnouveau tunnel, rendez-vous au 336.",
     "choices": [
       {
-        "text": "nouveau tunnel,",
+        "text": "ouvrir cette porte",
+        "nextPage": 111
+      },
+      {
+        "text": "poursuivre votre chemin le long du nouveau tunnel",
         "nextPage": 336
       }
     ]
@@ -2252,13 +2287,7 @@
   {
     "pageNumber": 175,
     "content": "Vous faites un pas de côté pour esquiver la créature et vous lui\nportez à la tête un coup qui aurait mis hors de combat n'importe\nquel mortel. Mais, à votre grand dam, le Monstre d'Enfer est\nindemne et se lance à nouveau à l'attaque. C'est un mort vivant\naux pouvoirs redoutables, invulnérable aux armes normales. Les\nMaîtres des Ténèbres l'ont envoyé ici en mission pour tuer\nVonotar et le punir ainsi de sa défaite dans la bataille du golfe de\nHolm. A présent qu'il est libéré du pentagramme qui\nl'emprisonnait, le Monstre d'Enfer peut accomplir sa mission et\nretourner chez lui pour y recevoir de ses maîtres récompenses et\nhonneurs. Vous hurlez de terreur lorsque les doigts de la créature\ns'enfoncent dans les chairs de votre cou, mais vos hurlements ne\nsont entendus de personne dans ce sombre couloir et seule la\nmort mettra un terme à l'insupportable douleur qui vous étreint\nla gorge. Votre mission s'achève ici en même temps que votre vie.",
-    "choices": [],
-    "monster": {
-      "monsterName": "Monstre d'Enfer",
-      "ability": 20,
-      "endurance": 25
-    },
-    "isBlocking": true
+    "endingType": "death"
   },
   {
     "pageNumber": 176,
@@ -2515,13 +2544,19 @@
   {
     "pageNumber": 200,
     "content": "L'effroyable monstre aux longs tentacules surgit du fossé et vous\nattaque. Il vous faut le combattre jusqu'à la mort de l'un de vous.\nAKRANION OR HABILETÉ: 22 ENDURANCE: 50\nAu cours du combat, vous apercevez parfois Vonotar qui brandit\nson bâton noir de magicien en gardant les yeux fixés sur Loi-\nKymar. Il est en train d'attaquer le vieil homme à l'aide de sa\npuissante Force Mentale. Et si Loi-Kymar succombe, il\nemportera dans la mort le secret de la Crosse de la Guilde. Si\nvous remportez la victoire en 7 Assauts ou moins, rendez-vous au\n272. S'il vous faut livrer plus de 7 Assauts pour gagner le combat,\nrendez-vous au 324.",
+    "monster": {
+      "name": "Arkranion",
+      "ability": 22,
+      "endurance": 50,
+      "isBlocking": true
+    },
     "choices": [
       {
-        "text": "vous remportez la victoire en 7 Assauts ou moins,",
+        "text": "victoire en 7 Assauts ou moins",
         "nextPage": 272
       },
       {
-        "text": ". S'il vous faut livrer plus de 7 Assauts pour gagner le combat,",
+        "text": "plus de 7 Assauts pour gagner le combat",
         "nextPage": 324
       }
     ]
@@ -2573,15 +2608,23 @@
   {
     "pageNumber": 205,
     "content": "La nuit durant, un violent blizzard fait rage, enterrant votre abri\nde fortune sous une couche de neige de 3,50 mètres d'épaisseur.\nLe froid vous engourdit les mains et les pieds et, peu à peu, votre\ncorps se vide de toute son énergie. Vous glissez alors dans un\nsommeil dont vous ne vous éveillerez jamais: vous étouffez en\neffet sous les neiges de Kalte. Votre mission s'achève donc ici en\nmême temps que votre vie.",
-    "choices": []
+    "endingType": "death"
   },
   {
     "pageNumber": 206,
     "content": "Retenant à la fois votre souffle et votre matériel, vous essayez\nd'atterrir le plus silencieusement possible sur le sol poussiéreux\ndu couloir. Malheureusement, vous vous tordez la cheville en\ntombant et vous laissez échapper un cri de douleur. Vous perdez\n1 point d'ENDURANCE. Vous apercevez alors avec horreur un\nBarbare des Glaces assis à une dizaine de mètres de vous, sur\nvotre gauche. Il tourne lentement la tête dans votre direction\nmais, en jetant un bref coup d'œil vers la droite, vous découvrez\nun autre couloir orienté au nord, à moins de 5 mètres de l'endroit\noù vous êtes agenouillé. Si vous maîtrisez la Discipline Kaï du\nCamouflage, rendez-vous au 74. Sinon, vous pouvez essayer de\ncourir en direction du couloir orienté au nord, en priant le ciel\nque le Barbare des Glaces ne vous voie pas. Rendez-vous pour\ncela au 183. Enfin, si vous préférez attaquer le Barbare pour\ntenter de le neutraliser avant qu'il ait pu donner l'alerte, rendez-\nvous au 161.",
     "choices": [
       {
-        "text": "Camouflage,",
+        "text": "maîtrisez la Discipline Kaï du Camouflage",
         "nextPage": 74
+      },
+      {
+        "text": "courir vers le couloir orienté au nord",
+        "nextPage": 183
+      },
+      {
+        "text": "attaquer le Barbare pour le neutraliser",
+        "nextPage": 161
       }
     ]
   },
