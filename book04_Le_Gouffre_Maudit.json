@@ -4,6 +4,10 @@
     "content": "Pendant trois jours vous menez votre détachement de\npatrouilleurs à travers les plaines fertiles situées au sud du\nSommerlund. C'est là la première étape de votre voyage. Les\nchamps qui vous entourent sont entièrement dépourvus d'arbres\net vous n'apercevez que de vastes surfaces de blé qui semblent\ns'étendre à l'infini. Bien que vous soyez à cheval, les épis de blé\nvous arrivent au-dessus du genou et vos montures paraissent\nnager dans un immense océan d'un jaune éclatant où\napparaissent parfois un sentier ou un groupe de fermes isolées.\nLes habitants de la région vous accueillent avec chaleur, mais\nvous ne faites que de brèves haltes pour vous restaurer et vous\nreposer. Vous ne voulez pas, en effet, abuser de l'hospitalité des\npaysans ni les inquiéter en leur laissant deviner la nature de\nvotre mission. Le quatrième jour vers midi, vous atteignez la\npasse de Moytura. Là, les plaines font place aux contreforts\ndéchiquetés des monts Durncrag. Bientôt vous arrivez sur une\ngrande route orientée au sud et dont la surface est creusée\nd'ornières et de nids-de-poule. C'est la célèbre voie de Ruanon.\nAu sud de la passe, la voie de Ruanon traverse sur 150 km\nenviron un territoire à découvert qu'on appelle la Contrée des\nPillards. Des bandes de brigands venues du Pays Sauvage et des\nhordes de Gloks descendues des montagnes de l'ouest tendent\nfréquemment des embuscades aux voyageurs qui empruntent la\ngrande route. A plusieurs reprises, les chargements d'or et de\npierres précieuses en provenance des mines de Ruanon ont ainsi\noffert de riches butins à ces voleurs impitoyables. « Éclaireurs,\nen position ! » C'est vous qui venez de donner cet ordre ; aussitôt\ntrois groupes de patrouilleurs s'écartent de la colonne et lancent\nleurs chevaux au galop. Vous regardez avec fierté ces habiles\ncavaliers prendre position pour reconnaître le terrain en avant et\nsur les flancs de la troupe en marche. A la fin de l'après-midi, l'un\ndes éclaireurs revenant de l'ouest vient vous montrer une sorte\nde cratère rocheux d'où s'élève un filet de fumée : de toute\névidence il y a là une maison dissimulée à l'abri des rocs en\nsurplomb. Si vous souhaitez examiner cette maison, rendez-vous\nau 160. Si vous préférez ne pas y prêter attention et poursuivre\nvotre chemin le long de la voie de Ruanon, rendez-vous au 273.",
     "choices": [
       {
+        "text": "examiner cette maison",
+        "nextPage": 160
+      },
+      {
         "text": "votre chemin le long de la voie de Ruanon,",
         "nextPage": 273
       }
@@ -27,7 +31,13 @@
         "text": "point d'ENDURANCE",
         "nextPage": 62
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Brigands",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 4,
@@ -96,7 +106,12 @@
   {
     "pageNumber": 10,
     "content": "Le Guerrier recule en vacillant puis bascule par-dessus les\nremparts, tombant parmi les combattants engagés dans la\nbataille qui fait rage. Sa monture emplumée s'envole en poussant\nun hideux croassement dans le ciel d'orage. Vous trouvez alors\nsur le sol taché de sang un magnifique Médaillon d'Onyx arraché\nà l'armure du Guerrier au moment de sa chute. Si vous souhaitez\nconserver ce Médaillon d'Onyx, glissez-le dans votre poche et\ninscrivez-le sur votre Feuille d'Aventure dans la case Objets\nSpéciaux. Quittez à présent la tour de guet en vous rendant au\n59.",
-    "choices": []
+    "choices": [
+      {
+        "text": "quitter la tour de guet",
+        "nextPage": 59
+      }
+    ]
   },
   {
     "pageNumber": 11,
@@ -115,7 +130,13 @@
   {
     "pageNumber": 12,
     "content": "A 80 kilomètres au sud de Ruanon, la cité en ruines de Maaken\nse dresse tout au bord des gorges du même nom. Vous sentez\nsoudain une sueur froide perler à votre front. Vous venez en effet\nde vous rendre compte que, pour atteindre votre but, il vous\nfaudra parcourir 80 kilomètres de terrain entièrement contrôlé\npar l'ennemi. Il vous reste cependant une lueur d'espoir. Vos\nchances de succès devraient être à présent plus grandes qu'avant\nla bataille compte tenu de la déroute des armées adverses. Avant\nque vous ne vous mettiez en chemin, le capitaine Gayal vous offre\nles objets suivants, parmi lesquels vous pourrez faire votre choix\n:\n- des vivres équivalant à 3 Repas,\n-1 Corde,\n-1 Potion de Laumspur qui vous permettra de reprendre 4 points\nd'ENDURANCE lorsque vous la boirez après un combat,\n-1 Epée, -1 Lance.\nFaites votre choix et modifiez en conséquence votre Feuille\nd'Aventure. Rendez-vous ensuite au 140.",
-    "choices": []
+    "choices": [
+      {
+        "text": "partir pour Maaken",
+        "nextPage": 140
+      }
+    ],
+    "isBlocking": true
   },
   {
     "pageNumber": 13,
@@ -139,7 +160,13 @@
         "text": "sortez vainqueur,",
         "nextPage": 146
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerrier",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 15,
@@ -172,7 +199,8 @@
   {
     "pageNumber": 17,
     "content": "La pointe d'une lance vous a écorché l'avant-bras. Il ne s'agit que\nd'une simple égratignure et pourtant votre bras s'est soudain\nengourdi au point que vous ne pouvez plus le remuer. Vous\nfrappez votre agresseur, mais votre coup est trop faible et mal\nporté pour se révéler efficace. Votre vue se trouble, vous ne\nparvenez plus à coordonner vos mouvements. Une terreur\naveugle vous envahit lorsque vous vous rendez compte soudain\nque ces bandits utilisent des armes empoisonnées. Une autre\nlance vous atteint à nouveau au bras et une autre encore\ns'enfonce dans votre poitrine. Vous sombrez peu à peu dans\nl'obscurité en emportant de ce monde une dernière vision: celle\ndu rictus triomphant de vos assassins en train de vous achever.\nVotre mission se termine ici en même temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 18,
@@ -187,7 +215,13 @@
   {
     "pageNumber": 19,
     "content": "Vous reconnaissez aussitôt ces amulettes. Elles sont le symbole\ndu « Saint Ordre des Rédempteurs », une communauté de\npèlerins contemplatifs dont la vie est consacrée à la prière et à la\nguérison. Vous présentez vos excuses pour avoir réagi d'une\nmanière trop hâtive et les deux hommes hochent leur tête rasée\nen signe de pardon. Vos soldats ont établi le campement à l'abri\ndu dôme de marbre et tout le monde se prépare à une bonne nuit\nde sommeil. Vous avez faim à présent et il vous faut prendre un\nRepas sinon vous perdrez 3 points d'ENDURANCE. Rendez-vous\nau 233.",
-    "choices": []
+    "choices": [
+      {
+        "text": "prendre un repas et dormir",
+        "nextPage": 233
+      }
+    ],
+    "isBlocking": true
   },
   {
     "pageNumber": 20,
@@ -220,7 +254,12 @@
   {
     "pageNumber": 22,
     "content": "En fouillant dans votre Sac à Dos pour y prendre une Torche,\nvous faites tomber dans le vide un autre des objets qu'il contient\n(si vous n'aviez qu'une Torche dans votre Sac à Dos, à l'exclusion\nde tout autre objet, c'est une Arme que vous aurez perdue ; vous\nchoisirez vous-même l'objet tombé). Vous parvenez enfin à\nallumer la nouvelle Torche et vous traversez le pont sans\nencombre. Poursuivez votre chemin le long du tunnel en vous\nrendant au 157.",
-    "choices": []
+    "choices": [
+      {
+        "text": "traverser le pont",
+        "nextPage": 157
+      }
+    ]
   },
   {
     "pageNumber": 23,
@@ -268,7 +307,13 @@
         "text": "Si vous êtes vainqueur",
         "nextPage": 321
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Créature",
+      "ability": 15,
+      "endurance": 38
+    }
   },
   {
     "pageNumber": 27,
@@ -331,7 +376,8 @@
   {
     "pageNumber": 32,
     "content": "La hideuse créature vous lâche les jambes et sombre au fond de\nl'eau. Votre victoire vous réjouit, mais vous avez l'impression que\nvos poumons sont en feu. Vous vous débattez pour remonter à la\nsurface et vous parvenez enfin à respirer à nouveau, toussant et\nhaletant. Il ne reste du bateau et de vos hommes qu'une rame\nfracassée qui flotte à la surface de la sombre et terrifiante rivière.\nVous vous accrochez à ce débris et vous vous laissez emporter\npar le courant en direction de la rive opposée sur laquelle vous\nvous hissez. En vérifiant le contenu de votre Sac à Dos et de vos\npoches, vous constatez que vous n'avez rien perdu au cours de\nvotre lutte dans l'eau, mais c'est là une mince consolation au\nregard de la catastrophe que représente la mort de vos hommes.\nVous refusez cependant de perdre courage et vous décidez de\npoursuivre votre chemin vers Ruanon pour tenter de percer le\nmystère qui pèse sur la province. Avant d'entrer dans le tunnel\norienté à l'est, vous jetez un dernier regard à la rivière aux eaux\nnoires puis vous vous rendez au 309.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 33,
@@ -391,7 +437,13 @@
         "text": ". S'il vous faut plus de 3 Assauts pour remporter la victoire,",
         "nextPage": 277
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerrier",
+      "ability": 17,
+      "endurance": 25
+    }
   },
   {
     "pageNumber": 37,
@@ -420,7 +472,12 @@
   {
     "pageNumber": 39,
     "content": "La flèche décrit une courbe dans le ciel envahi de fumée et\ntransperce le plastron étincelant de l'officier. Vous entendez son\ncri de douleur dominer le vacarme de la bataille et vous voyez ses\nyeux cruels se brouiller puis se fermer. Il s'effondre et glisse de sa\nselle, votre flèche profondément enfoncée dans le cœur. Rendez-\nvous au 148.",
-    "choices": []
+    "choices": [
+      {
+        "text": "continuer",
+        "nextPage": 148
+      }
+    ]
   },
   {
     "pageNumber": 40,
@@ -449,7 +506,8 @@
   {
     "pageNumber": 42,
     "content": "Vos genoux se fracassent contre la paroi et vous tombez comme\nune pierre dans l'obscurité du puits ; mais bientôt la douleur\nprovoquée par le choc disparaît : vous venez de perdre\nconnaissance. Quelques dizaines de mètres plus bas, vous\ntombez dans l'eau d'une rivière souterraine et, incapable de\nrefaire surface, vous mourez noyé en quelques instants. Votre\nmission s'achève ici en même temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 43,
@@ -463,7 +521,8 @@
         "text": "est de 7 ou plus,",
         "nextPage": 111
       }
-    ]
+    ],
+    "isBlocking": true
   },
   {
     "pageNumber": 44,
@@ -497,7 +556,13 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 281
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Monstre",
+      "ability": 20,
+      "endurance": 10
+    }
   },
   {
     "pageNumber": 47,
@@ -511,12 +576,23 @@
         "text": "remportez la victoire en 5 Assauts ou moins,",
         "nextPage": 32
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Créature",
+      "ability": 16,
+      "endurance": 37
+    }
   },
   {
     "pageNumber": 48,
     "content": "Vous sentez que le tunnel de gauche s'éloigne de Ruanon. Sans\nhésiter un instant, vous empruntez donc celui de droite. Rendez-\nvous au 145.",
-    "choices": []
+    "choices": [
+      {
+        "text": "prendre le tunnel de droite",
+        "nextPage": 145
+      }
+    ]
   },
   {
     "pageNumber": 49,
@@ -560,7 +636,8 @@
         "text": "chancelant de l'entrée du tunnel",
         "nextPage": 248
       }
-    ]
+    ],
+    "isBlocking": true
   },
   {
     "pageNumber": 53,
@@ -570,7 +647,13 @@
         "text": "possibilité de fuir. Si vous remportez la victoire,",
         "nextPage": 109
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Bandit",
+      "ability": 13,
+      "endurance": 16
+    }
   },
   {
     "pageNumber": 54,
@@ -600,7 +683,13 @@
         "text": "Si vous gagnez le combat en 3 Assauts ou moins,",
         "nextPage": 69
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Garde",
+      "ability": 12,
+      "endurance": 18
+    }
   },
   {
     "pageNumber": 57,
@@ -680,7 +769,13 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 148
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerrier",
+      "ability": 17,
+      "endurance": 24
+    }
   },
   {
     "pageNumber": 63,
@@ -705,15 +800,26 @@
   {
     "pageNumber": 65,
     "content": "Lorsque vous marchez dessus, les champignons roses éclatent en\nlaissant échapper des nuages de spores dans le tunnel. Les spores\nvous piquent les yeux et vous empêchent de respirer. Vous\ncontinuez d'avancer à l'aveuglette d'un pas chancelant, mais à\npeine avez-vous émergé de ce nuage qu'un autre danger vous\nmenace. Une nuée de reptiles hideux dotés d'ailes de chauve-\nsouris volent dans votre direction. Leurs pattes couvertes\nd'écaillés enserrent des morceaux pointus de stalagmites. Il vous\nest impossible d'échapper au combat et vous devrez affronter ces\ncréatures en les considérant comme un seul et même ennemi.\nDÉMONS DES SOUTERRAINS HABILETÉ: 20 ENDURANCE:",
-    "choices": []
+    "choices": [
+      {
+        "text": "continuer après le combat",
+        "nextPage": 104
+      }
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Démons des Souterrains",
+      "ability": 20,
+      "endurance": 25
+    }
   },
   {
     "pageNumber": 10,
     "content": "Si vous êtes vainqueur, rendez-vous au 298.",
     "choices": [
       {
-        "text": "Si vous êtes vainqueur,",
-        "nextPage": 298
+        "text": "quitter la tour de guet",
+        "nextPage": 59
       }
     ]
   },
@@ -747,7 +853,13 @@
         "text": ". De 9 à 11,",
         "nextPage": 278
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerrier",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 68,
@@ -794,7 +906,8 @@
   {
     "pageNumber": 71,
     "content": "Tandis que le Guerrier tombe mort à vos pieds, vous vous\nretournez vers vos hommes. Vous constatez alors avec horreur\nque trois d'entre eux sont étendus sur les marches, tués par des\ncarreaux d'arbalète. Le quatrième est blessé et cerné par\nl'ennemi. D'autres Gardes arrivent à ce moment. « Fuyez,\nSeigneur Kaï, fuyez pendant qu'il en est encore temps ! » vous\ncrie le patrouilleur. A peine l'écho de ces paroles a-t-il retenti\nqu'une épée lui transperce le cœur. Vous vous précipitez aussitôt\nen direction d'un tunnel orienté au nord. Une porte est ouverte à\nl'entrée de ce tunnel ; vous la claquez derrière vous dès que vous\nl'avez franchie et vous tirez le verrou. Vous courez ensuite le long\ndu souterrain au sol couvert de poussière en priant le ciel que la\nporte tienne et garde vos poursuivants à distance. Rendez-vous\nau 348.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 72,
@@ -804,7 +917,13 @@
         "text": "galop menant vos dix patrouilleurs le long de la voie de Ruanon",
         "nextPage": 211
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Brigands",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 73,
@@ -832,7 +951,13 @@
         "text": "mène dans les collines,",
         "nextPage": 293
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerrier",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 75,
@@ -846,7 +971,13 @@
         "text": ". De 6 à 12,",
         "nextPage": 16
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerrier",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 76,
@@ -870,12 +1001,24 @@
         "text": "combat,",
         "nextPage": 10
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerrier",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 78,
     "content": "Lorsque vous vous approchez, ils font glisser leur capuchon de\nleur tête, laissant apparaître des visages souriants. Ils semblent\nsoulagés de pouvoir établir un contact amical dans ces terres\ninhospitalières. Ni l'un ni l'autre ne prononcent le moindre mot,\nmais tous deux ôtent de leur cou des Amulettes accrochées à des\nchaînettes. Ils vous donnent ainsi un moyen de les identifier. En\neffet, les petits poissons de bois qu'ils vous montrent sont les\nsymboles d'un Ordre Saint dont les membres sont appelés « les\nRédempteurs ». Il s'agit d'une communauté de pèlerins\ncontemplatifs qui consacrent leur vie à la prière et à l'étude de\nl'art de la Guérison. L'un des pèlerins vous offre un petit flacon\nde terre cuite rempli d'Eau Bénite. Si vous souhaitez conserver ce\nflacon, inscrivez-le sur votre Feuille d'Aventure, dans la case\nObjets Spéciaux. Vos hommes établissent le campement sous le\ndôme de marbre et vous vous préparez tous à une bonne nuit de\nsommeil. Vous êtes affamé et il vous faut à présent prendre un\nRepas, sinon vous perdrez 3 points d'ENDURANCE. Rendez-\nvous au 233.",
-    "choices": []
+    "choices": [
+      {
+        "text": "dormir dans le campement",
+        "nextPage": 233
+      }
+    ],
+    "isBlocking": true
   },
   {
     "pageNumber": 79,
@@ -948,7 +1091,12 @@
   {
     "pageNumber": 85,
     "content": "Vous essayez de dégainer votre arme, mais cette créature est trop\nrapide pour vous. Ses crocs s'enfoncent dans votre colonne\nvertébrale et bientôt vous sentez le sang se retirer de votre corps\nqui reste paralysé. Vous entendez votre arme tomber sur le sol,\npuis vous vous effondrez face contre terre, votre visage heurtant\nla pierre dure. Vous ne ressentez cependant aucune douleur:\ntoute sensibilité vous a en effet quitté et, quelques instants plus\ntard, vous poussez votre dernier soupir. Votre mission s'achève\nici, en même temps que votre vie.",
-    "choices": []
+    "choices": [
+      {
+        "text": "continuer",
+        "nextPage": 330
+      }
+    ]
   },
   {
     "pageNumber": 86,
@@ -992,7 +1140,13 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 7
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerrier",
+      "ability": 17,
+      "endurance": 26
+    }
   },
   {
     "pageNumber": 90,
@@ -1002,7 +1156,13 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 249
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Pillard",
+      "ability": 15,
+      "endurance": 38
+    }
   },
   {
     "pageNumber": 91,
@@ -1040,12 +1200,19 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 2
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerrier",
+      "ability": 15,
+      "endurance": 26
+    }
   },
   {
     "pageNumber": 94,
     "content": "Soudain, le bateau bascule en avant et vous êtes projeté en l'air.\nVous tombez pendant ce qui vous semble être une éternité, avant\nde heurter la surface de l'eau avec une telle violence que vous\nplongez à plus de 6 mètres de profondeur. L'eau glacée vous\nassomme à moitié et brise vos forces. Vous cherchez\ndésespérément à respirer un peu d'air en vous débattant pour\ntenter de remonter à la surface. Votre Sac à Dos, cependant, vous\nentraîne au fond et vous devez vous en débarrasser pour ne pas\nvous noyer. Lorsqu'enfin vous parvenez à l'air libre, le courant\nvous entraîne en vous éloignant de la chute d'eau. Vous vous\néchouez bientôt sur une rive de graviers au fond d'un ravin\nescarpé. Vous avez perdu votre Sac à Dos avec tout ce qu'il\ncontenait ainsi que votre bateau et vos hommes mais, en dépit du\ndésastre, vous êtes toujours vivant et à peu près indemne. Mettez\nà jour votre Feuille d'Aventure avant de vous rendre au 219.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 95,
@@ -1094,7 +1261,8 @@
   {
     "pageNumber": 99,
     "content": "En raison de l'obscurité, vous ne remarquez pas un grand trou\ndans les planches du pont. Vous passez au travers et vous tombez\ntête la première, vous fracassant le crâne après une chute de plus\nde 30 mètres. Votre mission s'achève ici, en même temps que\nvotre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 100,
@@ -1142,7 +1310,13 @@
         "text": "pas chancelant et vous sortez de la tour de guet",
         "nextPage": 59
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerrier",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 104,
@@ -1166,7 +1340,13 @@
         "text": "vous au 285. Si vous préférez lever les mains et vous rendre,",
         "nextPage": 267
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Gardes",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 106,
@@ -1200,7 +1380,13 @@
         "text": "sortez vainqueur du combat,",
         "nextPage": 28
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Gardes",
+      "ability": 20,
+      "endurance": 30
+    }
   },
   {
     "pageNumber": 109,
@@ -1230,7 +1416,13 @@
         "text": "vous au 90. Si vous préférez prendre la fuite,",
         "nextPage": 163
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerrier",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 112,
@@ -1268,7 +1460,13 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 295
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerrier",
+      "ability": 16,
+      "endurance": 25
+    }
   },
   {
     "pageNumber": 115,
@@ -1356,12 +1554,23 @@
         "text": "victoire,",
         "nextPage": 350
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Barraka",
+      "ability": 25,
+      "endurance": 29
+    }
   },
   {
     "pageNumber": 123,
     "content": "Vous escaladez la colline boisée. Vous avez la gorge sèche et votre\ncœur bat avec force comme s'il était près d'éclater, mais vous ne\nvoulez pas prendre le risque de ralentir votre allure. Quatre\nheures passent avant que vous ne soyez certain d'avoir distancé\nl'ennemi. La nuit est presque tombée lorsque vous découvrez par\nhasard un étroit passage aux flancs escarpés, creusé dans la\ncolline pour donner accès à une galerie de mines. Pendant des\ncentaines d'années, les filons de la chaîne de Maaken ont\nreprésenté tout à la fois une bénédiction et un fléau pour ceux\nqui venaient ici chercher fortune. Des hommes, en effet, y ont\ntrouvé des richesses qui dépassaient leurs espérances les plus\ninsensées, tandis que d'autres ont péri sans laisser de traces dans\nun labyrinthe de tunnels sombres et glacés. Vous examinez\nl'entrée de la mine. Si vous parvenez à trouver l'un des tunnels\nprincipaux, vous devriez pouvoir atteindre Ruanon par ces\nsouterrains. Quelques mètres plus loin, vous découvrez une\ncaisse de bois contenant 6 Torches et 1 Briquet d'Amadou. Les\ngaleries de mines sont obscures et vous aurez besoin d'au moins\nune Torche pour vous éclairer. Vous avez cependant le droit d'en\nprendre davantage si vous le désirez, mais rappelez-vous que\nchaque Torche compte pour un objet dans votre Sac à Dos. Faites\nles modifications nécessaires sur votre Feuille d'Aventure avant\nd'entrer dans les mines en vous rendant au 315.",
-    "choices": []
+    "choices": [
+      {
+        "text": "entrer dans la cité",
+        "nextPage": 257
+      }
+    ]
   },
   {
     "pageNumber": 124,
@@ -1395,7 +1604,13 @@
         "text": "un chiffre entre 0 et 4,",
         "nextPage": 25
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Garde",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 127,
@@ -1433,7 +1648,8 @@
         "text": "puis",
         "nextPage": 309
       }
-    ]
+    ],
+    "isBlocking": true
   },
   {
     "pageNumber": 130,
@@ -1485,7 +1701,13 @@
         "text": "d'ENDURANCE,",
         "nextPage": 265
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Brigands",
+      "ability": 18,
+      "endurance": 35
+    }
   },
   {
     "pageNumber": 134,
@@ -1504,8 +1726,18 @@
       {
         "text": "bandits n'aient pu vous rattraper,",
         "nextPage": 30
+      },
+      {
+        "text": "continuer",
+        "nextPage": 93
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Brigands",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 136,
@@ -1524,7 +1756,14 @@
   {
     "pageNumber": 137,
     "content": "Tout autour de la barricade, les ennemis refluent en désordre.\nLes cornes de guerre des brigands sonnent la retraite, exhortant\nles Guerriers vaincus à fuir le champ de bataille. Jubilant, le\ncapitaine Gayal émerge de la fumée les yeux brillants comme des\njoyaux sous les bords de son casque cabossé. «Nous avons\ntriomphé, Loup solitaire, s'exclame-t-il, l'ennemi est vaincu ! »\nLes hommes du capitaine ont entrepris de rebâtir la barricade et\nde soigner leurs camarades blessés. La vue des soldats\nsommerlundais morts dans la bataille vous attriste, mais vous\nvous consolez en songeant que les pertes de vos agresseurs sont\ninfiniment plus lourdes. Le capitaine vous emmène à la tour de\nguet où l'on soigne vos blessures à l'aide d'herbes de Laumspur.\nVous regagnez aussitôt 6 points d'ENDURANCE. « Nous avons\nvaincu ces brigands, mais je crains bien qu'il ne s'agisse là que\nd'un bref répit, dit le capitaine dont le visage à présent a pris une\nexpression grave et sombre. Le sacrifice de la fille du baron\nVanalund doit être empêché à tout prix si nous voulons éviter la\ncatastrophe. Nous n'aurions pas la force en effet de nous opposer\naux légions des morts ressuscités de leur tombe. » Les vers de la\nprophétie vous reviennent aussitôt en mémoire et un frisson\nvous parcourt l'échiné quand vous repensez à la menace qu'ils\nfont peser. Dans trois jours, lorsque la lune sera pleine, Barraka\nsacrifiera la fille du baron dans le temple souterrain et ce\nsacrifice libérera les morts des gorges de Maaken, le gouffre\nmaudit. Il vous faut à tout prix empêcher ce sacrifice. Rendez-\nvous au 12.",
-    "choices": []
+    "choices": [],
+    "endingType": "death",
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerriers",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 138,
@@ -1533,8 +1772,18 @@
       {
         "text": "remportez la victoire,",
         "nextPage": 152
+      },
+      {
+        "text": "entrer dans le tunnel",
+        "nextPage": 4
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Garde",
+      "ability": 13,
+      "endurance": 29
+    }
   },
   {
     "pageNumber": 139,
@@ -1548,17 +1797,30 @@
         "text": "partir à leur recherche,",
         "nextPage": 330
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Brigands",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 140,
     "content": "L'obscurité du crépuscule enveloppe l'avant-poste assiégé de\nRuanon et vous profitez de la nuit pour traverser la plaine\njonchée de cadavres en direction du sud. Une ancienne route\nmène à Maaken, mais elle est contrôlée par les Guerriers\nvassagoniens. Ils y sont rassemblés par groupes, soignant leurs\nblessés et ruminant leur défaite. Bien qu'ils soient abattus et\ndémoralisés, ils n'en restent pas moins des ennemis mortels et il\nserait trop dangereux d'essayer de franchir leurs lignes ; il vous\nfaut donc passer par la forêt pour pouvoir vous cacher. Si vous\nsouhaitez pénétrer dans la forêt à droite de la route, rendez-vous\nau 70. Si vous préférez traverser la forêt du côté gauche, rendez-\nvous au 314.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 141,
     "content": "Vous n'êtes pas allé bien loin, lorsque soudain éclate un orage qui\ndéverse sur vos têtes une pluie torrentielle. En quelques minutes,\nla route sèche et poussiéreuse se transforme en marécage. Il vous\nsera impossible d'établir votre campement sous cette pluie\nbattante et vous décidez donc de poursuivre votre chemin toute\nla nuit en espérant que l'orage cessera bientôt. Au cours de cette\nnuit passée à cheval, il vous faudra prendre un Repas, sinon vous\nperdrez 3 points d'ENDURANCE. Au matin, la pluie a cessé,\nmais cette épreuve vous a épuisés, vous et vos hommes. Rendez-\nvous au 253.",
-    "choices": []
+    "choices": [
+      {
+        "text": "continuer sous la pluie",
+        "nextPage": 105
+      }
+    ],
+    "isBlocking": true
   },
   {
     "pageNumber": 142,
@@ -1571,6 +1833,10 @@
       {
         "text": "de marbre qui, lui, n'est pas gardé,",
         "nextPage": 270
+      },
+      {
+        "text": "continuer votre progression",
+        "nextPage": 202
       }
     ]
   },
@@ -1582,12 +1848,19 @@
         "text": "Gardes,",
         "nextPage": 230
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Garde",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 144,
     "content": "Vous sautez du chariot et vous courez à toutes jambes sans vous\ndouter de ce qui vous attend. Une profonde excavation s'ouvre en\neffet à quelques mètres et vous y tombez tête la première. Avant\nde disparaître dans ce gouffre d'une trentaine de mètres de\nprofondeur, vous avez le temps d'apercevoir l'expression\nhorrifiée de votre ami anonyme. Quelques instants plus tard,\nvous vous fracassez le crâne. Votre mission s'achève ici en même\ntemps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 145,
@@ -1620,8 +1893,18 @@
       {
         "text": "Si vous remportez la victoire,",
         "nextPage": 280
+      },
+      {
+        "text": "continuer",
+        "nextPage": 81
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Garde",
+      "ability": 14,
+      "endurance": 23
+    }
   },
   {
     "pageNumber": 148,
@@ -1665,12 +1948,23 @@
         "text": "les Gardes,",
         "nextPage": 320
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Garde",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 152,
     "content": "En fouillant le cadavre du Garde, vous trouvez les objets suivants\n:\n-1 Epée,\n- 6 Pièces d'Or,\n- des vivres équivalants à deux Repas\n-1 Clé de Cuivre.\nVous pouvez prendre un ou plusieurs de ces objets à condition de\nles noter sur votre Feuille d'Aventure. Au moment où vous vous\napprêtez à pénétrer dans le tunnel, un autre Garde apparaît au\npied de la rampe. Il vous voit et donne aussitôt l'alerte en\nsoufflant dans la corne de guerre qu'il porte autour du cou. Vous\nne perdez pas de temps à attendre de voir ce qui va se passer et\nvous vous hâtez de fuir à toutes jambes dans le tunnel, tandis que\nles échos de la corne retentissent encore à vos oreilles. Rendez-\nvous au 81.",
-    "choices": []
+    "choices": [
+      {
+        "text": "prendre les objets et continuer",
+        "nextPage": 240
+      }
+    ]
   },
   {
     "pageNumber": 153,
@@ -1680,7 +1974,13 @@
         "text": "la victoire,",
         "nextPage": 174
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerrier",
+      "ability": 17,
+      "endurance": 26
+    }
   },
   {
     "pageNumber": 154,
@@ -1704,7 +2004,13 @@
         "text": "à courir à toutes jambes en direction de Ruanon",
         "nextPage": 225
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Brigands",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 156,
@@ -1717,6 +2023,10 @@
       {
         "text": "rebrousser chemin pour prendre le tunnel orienté au sud,",
         "nextPage": 101
+      },
+      {
+        "text": "continuer",
+        "nextPage": 170
       }
     ]
   },
@@ -1728,7 +2038,8 @@
         "text": "vous poursuivez votre exploration du tunnel",
         "nextPage": 309
       }
-    ]
+    ],
+    "isBlocking": true
   },
   {
     "pageNumber": 158,
@@ -1738,7 +2049,8 @@
         "text": "nécessaires à votre Feuille d'Aventure, puis",
         "nextPage": 219
       }
-    ]
+    ],
+    "isBlocking": true
   },
   {
     "pageNumber": 159,
@@ -1748,7 +2060,13 @@
         "text": "d'ENDURANCE en suçant votre sang",
         "nextPage": 204
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Brigands",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 160,
@@ -1799,6 +2117,10 @@
       {
         "text": "Sommerlund qui vient de vous sauver",
         "nextPage": 249
+      },
+      {
+        "text": "continuer",
+        "nextPage": 346
       }
     ]
   },
@@ -1813,6 +2135,10 @@
       {
         "text": "immédiatement en retraite et de se réfugier dans la mine,",
         "nextPage": 52
+      },
+      {
+        "text": "continuer",
+        "nextPage": 201
       }
     ]
   },
@@ -1828,7 +2154,8 @@
         "text": "points d'ENDURANCE",
         "nextPage": 13
       }
-    ]
+    ],
+    "isBlocking": true
   },
   {
     "pageNumber": 166,
@@ -1843,7 +2170,12 @@
   {
     "pageNumber": 167,
     "content": "Vous avez la satisfaction de découvrir au fond du chariot de mine\nun Sac à Dos de mineur et une Pelle. A l'intérieur du Sac à Dos,\nvous trouvez des provisions équivalant à un Repas. Vous ajustez\nle Sac à Dos sur vos épaules puis vous montez la pente raide du\ntunnel. Apportez à votre Feuille d'Aventure les modifications\nnécessaires avant de vous rendre au 185.",
-    "choices": []
+    "choices": [
+      {
+        "text": "équiper le sac et continuer",
+        "nextPage": 224
+      }
+    ]
   },
   {
     "pageNumber": 168,
@@ -1857,7 +2189,13 @@
         "text": ". Sinon,",
         "nextPage": 85
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Monstre",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 169,
@@ -1867,7 +2205,13 @@
         "text": "tout juste le temps de vous enfuir",
         "nextPage": 123
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerrier",
+      "ability": 16,
+      "endurance": 24
+    }
   },
   {
     "pageNumber": 170,
@@ -1932,6 +2276,10 @@
       {
         "text": "de sa selle, la flèche profondément enfoncée dans le cœur",
         "nextPage": 148
+      },
+      {
+        "text": "continuer",
+        "nextPage": 110
       }
     ]
   },
@@ -1952,13 +2300,24 @@
       {
         "text": "Si vous êtes vainqueur,",
         "nextPage": 7
+      },
+      {
+        "text": "continuer",
+        "nextPage": 336
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerriers",
+      "ability": 17,
+      "endurance": 25
+    }
   },
   {
     "pageNumber": 177,
     "content": "Vous n'avez fait qu'un pas à l'intérieur de la caverne, lorsqu'un\ncoup porté par-derrière vous assomme net. Deux Gardes vous\navaient vu au croisement et vous ont tendu cette embuscade.\nVotre équipement est confisqué et vous êtes jeté sans\nconnaissance dans une cellule par les hommes de Barraka. Il\nvous sera désormais impossible d'empêcher le sacrifice et,\nlorsque la porte de votre prison s'ouvrira à nouveau, c'est la main\ndécharnée d'un squelette qui aura tourné la clé dans la serrure.\nVotre mission s'achève ici.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 178,
@@ -1993,7 +2352,8 @@
   {
     "pageNumber": 181,
     "content": "Vous entendez le claquement de la corde de l'arc et le sifflement\nde la flèche. Ce sont les deux derniers bruits que vous percevrez\nen ce monde. La flèche, en effet, vous transperce le crâne et vous\nmourez sur le coup. Votre mission s'achève ici, en même temps\nque votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 182,
@@ -2031,7 +2391,13 @@
         "text": "sautant pardessus le parapet du pont,",
         "nextPage": 342
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Gardes",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 185,
@@ -2041,7 +2407,8 @@
         "text": "kilomètres avant d'aboutir enfin à une longue galerie déserte",
         "nextPage": 40
       }
-    ]
+    ],
+    "isBlocking": true
   },
   {
     "pageNumber": 186,
@@ -2051,7 +2418,13 @@
         "text": "victoire,",
         "nextPage": 243
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerrier",
+      "ability": 18,
+      "endurance": 25
+    }
   },
   {
     "pageNumber": 187,
@@ -2071,7 +2444,13 @@
         "text": "préparez à une nuit de sommeil dont vous avez grand besoin",
         "nextPage": 233
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Sentinelles",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 189,
@@ -2096,17 +2475,30 @@
   {
     "pageNumber": 191,
     "content": "Vous arrivez bientôt à un croisement où le sentier aboutit à la\ngrand-route. Vous apercevez alors un chariot calciné abandonné\nsur le bas-côté. Si vous souhaitez examiner ce chariot, rendez-\nvous au 337. Si vous préférez ne pas y prêter attention, vous\npoursuivrez votre chemin le long de la grand-route en vous\nrendant au 297.",
-    "choices": []
+    "choices": [
+      {
+        "text": "continuer",
+        "nextPage": 8
+      }
+    ]
   },
   {
     "pageNumber": 192,
     "content": "Vous êtes à moins de 2 mètres de la porte lorsqu'un brigand\nsurgit soudain devant vous. Instinctivement, vous faites un écart\nmais vous n'êtes pas suffisamment rapide pour éviter le coup\nqu'il vous porte à l'aide de sa hallebarde. L'acier glacé s'enfonce\ndans votre poitrine et le sang ruisselle sur votre corps. Votre\nblessure est mortelle : vous rendez l'âme quelques instants plus\ntard. Votre mission s'achève ici en même temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 193,
     "content": "Hurlant et grognant, les Chiens de Guerre bondissent sur la\nbarricade, leurs yeux grands ouverts lançant des éclats écarlates\ndans le feu de la bataille. Piétinant les corps des morts et des\nmourants, ils se ruent sur les défenseurs sommerlundais. Tout\nautour de vous, des soldats sont projetés à terre par les molosses\nimpitoyables. Vous faites un pas en arrière au moment où un\nChien hurlant renverse la barrière de sacs et de tonneaux. Mais\navant qu'il ait pu vous atteindre, vous lui fracassez la tête avec\nvotre arme. Un autre Chien de Guerre vous attaque par-derrière\net vous jette contre la barricade effondrée. Avant que vous n'ayez\npu vous dégager, deux autres molosses plantent leurs crocs dans\nvotre jambe. Il vous faut à présent livrer un combat sans merci.\nCHIENS DE GUERRE HABILETÉ : 17 ENDURANCE : 30\nSi vous êtes toujours vivant après avoir mené 2 Assauts, rendez-\nvous au 311.",
-    "choices": []
+    "choices": [],
+    "endingType": "death",
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Chiens De Guerre",
+      "ability": 17,
+      "endurance": 30
+    }
   },
   {
     "pageNumber": 194,
@@ -2116,7 +2508,13 @@
         "text": "vous remportez la victoire,",
         "nextPage": 32
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Ennemi",
+      "ability": 16,
+      "endurance": 37
+    }
   },
   {
     "pageNumber": 195,
@@ -2140,7 +2538,13 @@
         "text": "vous êtes vainqueur,",
         "nextPage": 217
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerrier",
+      "ability": 16,
+      "endurance": 23
+    }
   },
   {
     "pageNumber": 197,
@@ -2163,7 +2567,18 @@
   {
     "pageNumber": 198,
     "content": "Les Gardes ne se laissent pas prendre à votre stratagème. Ils\ntirent aussitôt leur épée et se lancent à l'attaque. Il vous faut les\ncombattre en les considérant comme un seul et même ennemi.",
-    "choices": []
+    "choices": [
+      {
+        "text": "continuer après le combat",
+        "nextPage": 290
+      }
+    ],
+    "monster": {
+      "monsterName": "Gardes",
+      "ability": 16,
+      "endurance": 24
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 199,
@@ -2177,7 +2592,13 @@
         "text": "d'atteindre la corde,",
         "nextPage": 56
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Gardes",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 200,
@@ -2191,7 +2612,13 @@
         "text": "les brigands,",
         "nextPage": 133
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Gardes",
+      "ability": 18,
+      "endurance": 30
+    }
   },
   {
     "pageNumber": 201,
@@ -2235,7 +2662,13 @@
         "text": "tâche terrifiante qui vous attend",
         "nextPage": 142
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerrier",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 205,
@@ -2268,6 +2701,10 @@
       {
         "text": "obtenez un total de 0 à 4,",
         "nextPage": 336
+      },
+      {
+        "text": "continuer",
+        "nextPage": 309
       }
     ]
   },
@@ -2332,7 +2769,12 @@
   {
     "pageNumber": 213,
     "content": "Une fouille systématique vous permet de trouver les objets\nsuivants :\n-1 Pioche,\n-1 Pelle,\n-1 Hache,\n-1 Torche,\n-1 Briquet à Amadou,\n-1 Sablier,\nSi vous souhaitez conserver un ou plusieurs de ces objets, notez-\nles sur votre Feuille d'Aventure (la Pioche et la Pelle comptent\nchacune pour deux objets). Tous ces objets, si vous les prenez,\ndoivent être inscrits dans la case Sac à Dos. Après avoir vérifié\nqu'il n'y a rien d'autre à découvrir dans le hangar, vous ordonnez\nà vos hommes de mettre à l'eau le bateau à rames. Rendez-vous\nau 180.",
-    "choices": []
+    "choices": [
+      {
+        "text": "continuer",
+        "nextPage": 266
+      }
+    ]
   },
   {
     "pageNumber": 214,
@@ -2360,7 +2802,13 @@
         "text": ". Si vous préférez distraire son attention sans l'attaquer,",
         "nextPage": 119
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Barraka",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 216,
@@ -2393,13 +2841,22 @@
       {
         "text": "l'escalier quatre à quatre, pour aller voir de quoi il retourne",
         "nextPage": 223
+      },
+      {
+        "text": "continuer",
+        "nextPage": 89
       }
     ]
   },
   {
     "pageNumber": 219,
     "content": "Il vous faut une demi-heure pour reprendre vos esprits et\nlocaliser l'endroit où vous vous trouvez à présent. Vous vous\napercevez bientôt que vous êtes au pied d'un énorme crassier qui\némerge de la rivière souterraine. A moins de 6 mètres de son\nsommet, une faible lueur éclaire un long tunnel de pierre qui sert\nde plan incliné. Il vous est possible d'y grimper, bien que cette\nescalade soit difficile et périlleuse. Il vous faut une heure d'efforts\npour arriver enfin au sommet du crassier. Vous pénétrez alors\ndans le petit tunnel désert où vous trouvez un chariot de mine\nprès de l'entrée. Si vous souhaitez examiner ce chariot, rendez-\nvous au 167. Si vous préférez ne pas y prêter attention, vous\nmonterez la pente escarpée de ce tunnel en vous rendant au 185.",
-    "choices": []
+    "choices": [
+      {
+        "text": "escalader le crassier",
+        "nextPage": 115
+      }
+    ]
   },
   {
     "pageNumber": 220,
@@ -2549,7 +3006,13 @@
         "text": "enfuir avant qu'ils puissent vous attaquer",
         "nextPage": 224
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Gardes",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 231,
@@ -2572,6 +3035,10 @@
       {
         "text": "de traverser la rivière,",
         "nextPage": 130
+      },
+      {
+        "text": "continuer",
+        "nextPage": 304
       }
     ]
   },
@@ -2582,8 +3049,18 @@
       {
         "text": "Si vous êtes vainqueur,",
         "nextPage": 312
+      },
+      {
+        "text": "partir au matin",
+        "nextPage": 140
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerriers",
+      "ability": 17,
+      "endurance": 26
+    }
   },
   {
     "pageNumber": 234,
@@ -2593,7 +3070,13 @@
         "text": "manque d'oxygène. Si vous remportez la victoire,",
         "nextPage": 32
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Ennemi",
+      "ability": 16,
+      "endurance": 37
+    }
   },
   {
     "pageNumber": 235,
@@ -2621,7 +3104,13 @@
         "text": "direction dès que vous serez à couvert des arbres,",
         "nextPage": 169
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerriers",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 237,
@@ -2684,7 +3173,8 @@
   {
     "pageNumber": 242,
     "content": "Vous vous jetez de côté pour éviter le disque mortel, mais vos\nréflexes n'ont pas été suffisamment rapides pour vous sauver.\nL'arme tranchante comme un rasoir s'enfonce dans votre gorge\nen vous projetant en arrière sous la force du choc. Votre mission\ns'achève ici en même temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 243,
@@ -2717,6 +3207,10 @@
       {
         "text": "l'escalier,",
         "nextPage": 83
+      },
+      {
+        "text": "continuer",
+        "nextPage": 119
       }
     ]
   },
@@ -2732,7 +3226,13 @@
         "text": "cette arme,",
         "nextPage": 85
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Créature",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 247,
@@ -2742,7 +3242,13 @@
         "text": "au 171. De 5 à 9,",
         "nextPage": 25
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Pillards",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 248,
@@ -2893,7 +3399,12 @@
   {
     "pageNumber": 259,
     "content": "«Allez-vous-en! crie une voix inquiète, c'est une taverne ici, pas\nune caserne ! » Vous essayez de convaincre les occupants des\nlieux de vos intentions pacifiques mais ils restent inflexibles et\nrefusent de vous laisser entrer. Il ne vous reste donc plus qu'à\npoursuivre votre chemin le long de la grand-route. Rendez-vous\nau 141.",
-    "choices": []
+    "choices": [
+      {
+        "text": "continuer",
+        "nextPage": 267
+      }
+    ]
   },
   {
     "pageNumber": 260,
@@ -2903,7 +3414,13 @@
         "text": "Si vous êtes toujours vivant après 3 Assauts,",
         "nextPage": 311
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Chiens De Guerre",
+      "ability": 18,
+      "endurance": 30
+    }
   },
   {
     "pageNumber": 261,
@@ -2918,7 +3435,8 @@
   {
     "pageNumber": 262,
     "content": "Vous vous ruez en avant pour frapper, mais le brigand cabre son\ncheval et esquive votre coup. Les sabots de l'étalon s'abattent sur\nvotre tête, vous tombez à terre et vous êtes piétiné dans une mare\nde sang. Assommé et mortellement blessé, vous percevez à peine\nle ricanement maléfique du cavalier qui lève son arme pour vous\nporter le coup de grâce. Votre mission s'achève ici en même\ntemps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 263,
@@ -2932,7 +3450,13 @@
         "text": "courir vers l'ouest,",
         "nextPage": 169
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Brigands",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 264,
@@ -2971,7 +3495,12 @@
   {
     "pageNumber": 267,
     "content": "Une douleur fulgurante vous déchire la poitrine. Un carreau\nd'arbalète vous a projeté à terre et, les mains crispées sur la\nflèche, vous apercevez le visage d'un Garde qui lève son épée\npour vous porter le coup de grâce. Votre mission s'achève ici en\nmême temps que votre vie.",
-    "choices": []
+    "choices": [
+      {
+        "text": "continuer",
+        "nextPage": 329
+      }
+    ]
   },
   {
     "pageNumber": 268,
@@ -2985,12 +3514,24 @@
         "text": "descendre l'escalier en colimaçon,",
         "nextPage": 228
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Gardes",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 269,
     "content": "Vous suivez le couloir pendant environ une heure avant d'arriver\ndevant une paroi rocheuse. Des Pelles et des brouettes ont été\nabandonnées sur le sol comme si les hommes qui creusaient ce\nsouterrain l'avaient fui en toute hâte. Vous pouvez prendre l'une\ndes Pelles, si vous le souhaitez, mais sachez qu'elle occupera dans\nvotre Sac à Dos la place de deux objets. Vous avez faim à présent\net il vous faut prendre un Repas, sinon vous perdrez 3 points\nd'ENDURANCE. Maudissant votre malchance, vous êtes\ncontraint de rebrousser chemin jusqu'au croisement. Vous\npoursuivez ensuite votre exploration en vous rendant au 145.",
-    "choices": []
+    "choices": [
+      {
+        "text": "continuer",
+        "nextPage": 73
+      }
+    ],
+    "isBlocking": true
   },
   {
     "pageNumber": 270,
@@ -3003,6 +3544,10 @@
       {
         "text": "Sphère de Feu,",
         "nextPage": 168
+      },
+      {
+        "text": "continuer",
+        "nextPage": 315
       }
     ]
   },
@@ -3028,7 +3573,8 @@
         "text": "Feuille d'Aventure, puis",
         "nextPage": 79
       }
-    ]
+    ],
+    "isBlocking": true
   },
   {
     "pageNumber": 273,
@@ -3062,7 +3608,8 @@
         "text": "pas soufflées",
         "nextPage": 335
       }
-    ]
+    ],
+    "isBlocking": true
   },
   {
     "pageNumber": 276,
@@ -3082,7 +3629,13 @@
         "text": "Si vous remportez la victoire,",
         "nextPage": 155
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Chien De Guerre",
+      "ability": 22,
+      "endurance": 35
+    }
   },
   {
     "pageNumber": 278,
@@ -3091,6 +3644,10 @@
       {
         "text": "vous au 123. Si vous préférez aller vers l'ouest,",
         "nextPage": 169
+      },
+      {
+        "text": "continuer",
+        "nextPage": 28
       }
     ]
   },
@@ -3126,7 +3683,13 @@
         "text": "votre Torche et vous reprenez votre chemin le long du tunnel",
         "nextPage": 185
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Créature",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 282,
@@ -3146,7 +3709,13 @@
         "text": "par le gouffre maudit",
         "nextPage": 350
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Barraka",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 284,
@@ -3156,7 +3725,13 @@
         "text": "rendant au 89. Si vous remportez la victoire,",
         "nextPage": 7
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerrier",
+      "ability": 16,
+      "endurance": 25
+    }
   },
   {
     "pageNumber": 285,
@@ -3166,7 +3741,13 @@
         "text": "Si vous remportez la victoire,",
         "nextPage": 71
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Gardes",
+      "ability": 16,
+      "endurance": 28
+    }
   },
   {
     "pageNumber": 286,
@@ -3186,7 +3767,13 @@
         "text": "Si vous remportez la victoire,",
         "nextPage": 75
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerrier",
+      "ability": 17,
+      "endurance": 27
+    }
   },
   {
     "pageNumber": 288,
@@ -3232,12 +3819,18 @@
         "text": "de les capturer vivants,",
         "nextPage": 102
       }
-    ]
+    ],
+    "isBlocking": true
   },
   {
     "pageNumber": 291,
     "content": "Le passage mène à une porte cloutée de fer. Collant votre oreille\ncontre le panneau de bois brut, vous percevez des voix de l'autre\ncôté. Si vous maîtrisez la Discipline Kaï du Camouflage, rendez-\nvous au 172. Sinon, vous pouvez dégainer votre arme, ouvrir la\nporte et vous rendre au 93. Vous avez également la possibilité de\nrevenir sur vos pas dans la galerie pour suivre la voie ferrée dans\nle tunnel orientée à l'ouest. Rendez-vous dans ce cas au 55.",
-    "choices": []
+    "choices": [
+      {
+        "text": "continuer",
+        "nextPage": 6
+      }
+    ]
   },
   {
     "pageNumber": 292,
@@ -3270,7 +3863,12 @@
   {
     "pageNumber": 294,
     "content": "Le chariot s'arrête sous un portique et les hommes au visage\nhagard sont reconduits dans le tunnel. Il vous faut attendre une\nheure avant que l'entrée du souterrain soit à nouveau libre. Vous\nvous glissez alors hors du chariot, et vous courez le long de la\nvoie ferrée. Vous apercevez d'un côté une forêt touffue et de\nl'autre une profonde excavation aux parois abruptes. Vous vous\nprécipitez vers l'abri des arbres en comprenant à ce moment que\nl'étranger au visage ruisselant de sueur avait essayé de vous aider\nà fuir. Vous lui adressez de silencieux remerciements, et vous\npoursuivez votre chemin en direction de Ruanon. Rendez-vous\nau 200.",
-    "choices": []
+    "choices": [
+      {
+        "text": "continuer",
+        "nextPage": 173
+      }
+    ]
   },
   {
     "pageNumber": 295,
@@ -3322,7 +3920,13 @@
         "text": "maléfiques",
         "nextPage": 185
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Créatures",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 299,
@@ -3332,7 +3936,13 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 121
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Brigands",
+      "ability": 19,
+      "endurance": 29
+    }
   },
   {
     "pageNumber": 300,
@@ -3361,7 +3971,9 @@
   {
     "pageNumber": 302,
     "content": "Le coffre n'est pas fermé à clé. Ce qui vient d'arriver à vos\nhommes vous rend cependant très prudent, et vous décidez de ne\npas prendre de risques. Vous tenant à l'écart du coffre, vous\nsoulevez le couvercle de la pointe de votre arme et vous le\nrabattez d'un coup sec. Vous attendez un instant en retenant\nvotre souffle, mais rien ne se produit. Le propriétaire du coffre\nestime sans doute que le piège aménagé dans le passage suffit à\nle protéger des voleurs. Le coffre contient nombre d'objets de\nvaleur: des assiettes et des coupes d'or incrustées de pierreries,\ndes colliers de turquoise, des perles, des statuettes de jade et une\npierre précieuse d'un grand prix. Vous contemplez ces richesses\navec émerveillement, mais vous décidez de n'en emporter\naucune. Elles seraient trop lourdes, en effet, et inutiles à votre\nmission. Vous remarquez alors, sous les assiettes d'or, un sac de\ncuir. Vous le retirez du coffre et vous reconnaissez aussitôt sa\nforme caractéristique ; il s'agit d'un sac d'herboriste qui contient\nles objets suivants :\n— 2 flacons de Potion de Laumspur : chaque dose vous permet de\nregagner 4 points d'ENDURANCE ;\n— 1 fiole de Potion d'Aléther : elle vous permet d'augmenter de 2\npoints votre HABILETÉ au cours d'un combat (et un seul) ;\n- 1 flacon d'Eau Bénite.\nSi vous souhaitez conserver l'un ou l'autre de ces objets,\ninscrivez-les sur votre Feuille d'Aventure. Dirigez-vous à présent\nvers la porte située de l'autre côté en vous rendant au 131.",
-    "choices": []
+    "choices": [],
+    "endingType": "death",
+    "isBlocking": true
   },
   {
     "pageNumber": 303,
@@ -3371,7 +3983,8 @@
         "text": "l'ouest",
         "nextPage": 348
       }
-    ]
+    ],
+    "isBlocking": true
   },
   {
     "pageNumber": 304,
@@ -3421,7 +4034,13 @@
         "text": "Si vous remportez la victoire,",
         "nextPage": 127
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Créature",
+      "ability": 17,
+      "endurance": 30
+    }
   },
   {
     "pageNumber": 309,
@@ -3445,7 +4064,13 @@
         "text": "Si vous remportez la victoire,",
         "nextPage": 24
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerrier",
+      "ability": 18,
+      "endurance": 25
+    }
   },
   {
     "pageNumber": 311,
@@ -3459,7 +4084,13 @@
         "text": "les soldats du Sommerlund pour repousser l'avance des lanciers,",
         "nextPage": 3
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerrier",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 312,
@@ -3488,7 +4119,12 @@
   {
     "pageNumber": 314,
     "content": "Des groupes de brigands patrouillent dans la forêt, mais sans\nmanifester de zèle excessif dans l'accomplissement de leur tâche,\net vous parvenez à les éviter sans difficulté. Vous découvrez alors,\npar hasard, une petite cabane en rondins cachée au fond des\nbois. La flamme d'une chandelle vacille à la fenêtre et la porte est\nentrouverte. Si vous souhaitez entrer dans la cabane, rendez-\nvous au 53. Si vous préférez vous en abstenir, vous poursuivrez\nvotre chemin en vous rendant au 258.",
-    "choices": []
+    "choices": [
+      {
+        "text": "continuer",
+        "nextPage": 101
+      }
+    ]
   },
   {
     "pageNumber": 315,
@@ -3516,7 +4152,13 @@
         "text": "Si vous remportez la victoire,",
         "nextPage": 146
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Guerrier",
+      "ability": 16,
+      "endurance": 26
+    }
   },
   {
     "pageNumber": 317,
@@ -3592,12 +4234,14 @@
         "text": "prendre celui orienté au sud,",
         "nextPage": 129
       }
-    ]
+    ],
+    "isBlocking": true
   },
   {
     "pageNumber": 323,
     "content": "Vous lâchez la corde de votre arc ; la flèche siffle et vient\ns'enfoncer profondément dans l'épaule du chef des brigands.\nVous l'entendez hurler de douleur mais, bien qu'il soit gravement\nblessé, il tente malgré tout de rassembler ses hommes. Vous vous\npenchez pour ramasser une autre flèche, mais vous constatez\navec horreur que le carquois du soldat mort est vide. Relevant la\ntête, vous apercevez deux Guerriers vassagoniens qui ont mis\npied à terre et escaladent la barricade en se dirigeant vers vous.\nVous jetez votre arc et vous courez vers un grand tonneau d'eau\ndéfendu par un robuste sergent du Sommerlund. Autour de lui,\nle sol est jonché de cadavres ennemis. « Tirez sur le chef ! »\nordonnez-vous en montrant l'officier blessé. Le sergent vise et\ntire aussitôt une flèche. Celle-ci décrit une courbe dans un ciel\nenvahi de fumée et transperce le plastron étincelant du chef des\nbrigands. Ses yeux cruels se brouillent et se ferment, puis il glisse\nà bas de son cheval, la flèche plantée dans le cœur. Rendez-vous\nau 148.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 324,
@@ -3607,7 +4251,13 @@
         "text": "l'écurie. Si vous souhaitez passer par la porte,",
         "nextPage": 114
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Brigands",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 325,
@@ -3617,7 +4267,13 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 350
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Barraka",
+      "ability": 25,
+      "endurance": 29
+    }
   },
   {
     "pageNumber": 326,
@@ -3652,7 +4308,8 @@
   {
     "pageNumber": 329,
     "content": "L'eau de la rivière vous emplit les oreilles, les yeux, le nez. Dans\nvotre quête désespérée d'une bouffée d'oxygène, vous êtes pris\nd'une quinte de toux incontrôlable. Aveuglé, vous ne voyez pas\nl'énorme rocher qui se dresse devant vous. Avec un craquement\nsinistre, votre crâne vient se fracasser contre la surface de pierre\net vous sombrez à jamais dans les eaux torrentielles. Votre\nmission s'achève ici en même temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 330,
@@ -3708,12 +4365,23 @@
         "text": "perdez tous deux le même nombre de points d'ENDURANCE,",
         "nextPage": 344
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Ennemi",
+      "ability": 20,
+      "endurance": 28
+    }
   },
   {
     "pageNumber": 334,
     "content": "Lorsque vous heurtez la surface de l'eau, votre arme vous\néchappe. Saisi de panique, vous sentez alors des tentacules\ngluants s'enrouler autour de votre corps. Vous vous débattez\npour essayer de vous dégager, mais vous êtes bientôt étouffé.\nQuelques bulles éclatant à la surface et une cape déchirée sont les\nderniers signes qui trahissent votre présence au fond de cette\ntombe aquatique. Votre mission s'achève ici en même temps que\nvotre vie.",
-    "choices": []
+    "choices": [
+      {
+        "text": "continuer",
+        "nextPage": 327
+      }
+    ]
   },
   {
     "pageNumber": 335,
@@ -3727,7 +4395,13 @@
         "text": "le Garde par surprise",
         "nextPage": 147
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Garde",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 336,
@@ -3752,12 +4426,28 @@
   {
     "pageNumber": 338,
     "content": "Votre stratagème a réussi. En entendant le mot de passe, les\nGardes vous laissent entrer dans la crypte. Ils referment ensuite\nla porte de pierre derrière vous et vous vous retrouvez dans un\nlarge couloir éclairé par des Torches et orienté à l'est. Rendez-\nvous au 235.",
-    "choices": []
+    "choices": [
+      {
+        "text": "continuer",
+        "nextPage": 226
+      }
+    ]
   },
   {
     "pageNumber": 339,
     "content": "Bien que les deux étrangers semblent inoffensifs, vous préférez\nne pas prendre de risques et vous décidez d'établir des tours de\ngarde. Vous avez faim et il vous faut prendre un Repas, sinon\nvous perdrez 3 points d'ENDURANCE. Après avoir mangé, vous\nvous préparez à passer une bonne nuit de sommeil. Rendez-vous\nau 233.",
-    "choices": []
+    "choices": [
+      {
+        "text": "continuer",
+        "nextPage": 132
+      }
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "Garde",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 340,
@@ -3767,7 +4457,8 @@
         "text": "d'ENDURANCE",
         "nextPage": 32
       }
-    ]
+    ],
+    "isBlocking": true
   },
   {
     "pageNumber": 341,
@@ -3777,7 +4468,8 @@
         "text": "vous-même, dans la tour de guet",
         "nextPage": 116
       }
-    ]
+    ],
+    "isBlocking": true
   },
   {
     "pageNumber": 342,
@@ -3844,7 +4536,8 @@
   {
     "pageNumber": 347,
     "content": "Vous êtes arrivé au fond de la cave, lorsque la trappe se referme\nsoudain. Vous entendez qu'on la verrouille, et vous vous mettez à\nfrapper le panneau à coups redoublés, essayant désespérément\nde vous échapper. Ceux qui vous ont ainsi enfermé condamnent\nla trappe à l'aide d'un énorme tonneau. Des Gardes restent dans\nla cabane pour surveiller votre prison. Quatre jours se passent\navant que la trappe ne s'ouvre à nouveau. C'est alors la main\ndécharnée d'un squelette qui rabat le panneau de bois. Les morts\nde Maaken se sont réveillés. Votre mission a échoué.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 348,
@@ -3869,6 +4562,7 @@
   {
     "pageNumber": 350,
     "content": "Tandis que meurt Barraka, le vent se met à souffler plus fort et\nson mugissement s'intensifie, emplissant le temple d'une longue\nplainte désespérée. Vous sentez l'esprit maléfique et glacé de\nVashna, Maître des Ténèbres, vous envelopper dans une ultime\nétreinte, mais il ne peut rien contre vous, le sacrifice a été\nempêché, et il est désormais condamné à se lamenter, en rêvant\nd'une victoire qui ne viendra jamais. Le Poignard de Vashna\nrepose sur le sol noir du temple. Vous le ramassez et vous le\nglissez dans votre ceinture (inscrivez-le sur votre Feuille\nd'Aventure dans la case Objets Spéciaux.) La diabolique flamme\nbleue s'est éteinte et, aussi longtemps que vous resterez en\npossession de cette arme maudite, Vashna, Maître des Ténèbres,\net ses légions de guerriers morts, demeureront prisonniers du\ngouffre maudit. Vous libérez la blonde Madelon, attachée sur\nl'autel, et vous la portez à l'air libre à travers les couloirs du\ntemple. Lorsque vous émergez parmi les ruines que baigne la\nclarté de la pleine lune, un spectacle extraordinaire s'offre à vos\nyeux. Les Guerriers de Barraka fuient en tous sens la cité\nfantôme, poursuivis par une armée de cavaliers. Les flammes de\nleurs Torches et le clair de lune illuminent le soleil qui orne leurs\ntuniques. C'est l'armée du Sommerlund commandée par le roi\nUlnar en personne qui leur donne ainsi la chasse. Vos\ncompatriotes lancent des cris enthousiastes pour saluer votre\ncourage, et leurs acclamations étouffent les longs gémissements\nqui s'élèvent des profondeurs du gouffre maudit. Une fois de\nplus, vous vous êtes révélé comme un authentique héros de votre\npatrie. Lorsque vous déposez Madelon dans les bras de son père,\nl'intensité de son bonheur vous donne le sentiment d'avoir\npleinement accompli votre mission. En vérité, vous êtes plus que\ntout autre digne du titre de Seigneur Kaï. Vous avez triomphé à\nl'issue d'une quête périlleuse, mais vos exploits ne s'arrêteront\npas ici. L'épopée du Loup Solitaire, dernier des Seigneurs Kaï, est\nloin en effet d'être terminée car un nouveau défi, tout aussi\nimplacable que les précédents, vous attend à présent dans le\ncinquième volume de la série.",
-    "choices": []
+    "choices": [],
+    "endingType": "victory"
   }
 ]
