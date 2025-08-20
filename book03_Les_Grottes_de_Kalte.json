@@ -1374,14 +1374,20 @@
   {
     "pageNumber": 106,
     "content": "Lorsque vous franchissez l'ouverture pratiquée dans la porte,\nvous voyez trois Barbares des Glaces qui avancent vers vous le\nlong du couloir. Ce sont des guerriers vêtus de fourrure et armés\nd'épées en os qui sont chacune incrustée de dents pointues sur\ntoute la longueur de la lame. En dépit de la rapidité de leur\nattaque, vous avez le temps de remarquer un étrange détail :\nleurs yeux sont complètement blancs et dépourvus de pupilles.\nIls vous attaquent comme un seul homme, portant leurs coups et\névitant les vôtres d'un même mouvement. Il vous faut les\ncombattre comme s'il s'agissait d'un seul et même adversaire.\nCes j trois Barbares sont insensibles à la Discipline Kaï de la\nPuissance Psychique.\nBARBARES DES GLACES HABILETÉ : 19 ENDURANCE : 36\nVous pouvez prendre la fuite à tout moment en vous glissant à\nnouveau dans la salle que vous venez de quitter pour vous\néchapper ensuite par le passade orienté au nord. Rendez-vous\npour cela au 145. Si vous sortez vainqueur du combat, rendez-\nvous au 338.",
+    "monster": {
+      "name": "Barbares des glaces",
+      "ability": 19,
+      "endurance": 36,
+      "isBlocking": false
+    },
     "choices": [
       {
-        "text": "vous dirigez vers l'est",
-        "nextPage": 297
+        "text": "prendre la fuite par le passage orienté au nord",
+        "nextPage": 145
       },
       {
-        "text": "vous préférez aller au nord",
-        "nextPage": 126
+        "text": "sortez vainqueur du combat",
+        "nextPage": 338
       }
     ]
   },
@@ -1390,12 +1396,12 @@
     "content": "Lorsque vous jetez un regard dans la vaste caverne de glace, un\npeu plus loin, vous apercevez avec horreur trois grosses créatures\nà l'aspect repoussant qui sont en train de se battre en échangeant\ndes coups de griffes, Elles se disputent une carcasse déchirée,\nétalée sur le sol. Ces créatures sont des Languabarbs, de\nsauvages 1 prédateurs du pays de Kalte. Si vous vous êtes enduit\nla peau d'huile de Bakanal, rendez-vous au 202. Si vous n'êtes\npas imprégné d'huile de Bakanal, vous pouvez éviter les\nLanguabarbs en revenant sur vos pas, en direction de l'autre\ntunnel. Rendez-vous pour cela au 284. Si enfin vous souhaitez\nattaquer les trois créatures, rendez-vous au 138.",
     "choices": [
       {
-        "text": "la peau d'huile de Bakanal,",
-        "nextPage": 202
+        "text": "éviter les Languabarbs en revenant sur vos pas",
+        "nextPage": 284
       },
       {
-        "text": "attaquer les trois créatures,",
-        "nextPage": 138
+        "text": "attaquer les trois créatures",
+        "nextPage": 238
       }
     ]
   },
@@ -1498,8 +1504,12 @@
     "content": "Vous vous apercevez qu'un grand nombre de ces os répandus\nparmi les stalagmites ont appartenu à des squelettes humains.\nDes crânes fracassés, des phalanges, des morceaux de thorax\nsont ainsi à demi ensevelis dans la glace. Vous êtes sur le point\nd'abandonner vos investigations lorsqu'une petite boîte en os\ngravé attire votre attention. Si vous souhaitez ouvrir cette boîte,\nrendez-vous au 218. Si vous préférez ne pas y toucher, vous\npouvez à présent examiner la porte de la forteresse en vous\nrendant au 52.",
     "choices": [
       {
-        "text": "gravé attire votre attention. Si vous souhaitez ouvrir cette boîte,",
+        "text": "ouvrir cette boîte",
         "nextPage": 218
+      },
+      {
+        "text": "examiner la porte de la forteresse",
+        "nextPage": 52
       }
     ]
   },
@@ -1508,8 +1518,8 @@
     "content": "Vous versez la potion sur votre peau irritée et meurtrie, et vous\nressentez immédiatement les effets bienfaisants du liquide. La\ndouleur disparaît peu à peu et l'enflure se résorbe. La Pierre\nRayonnante est une roche maudite qui émet une énergie mortelle\nà laquelle tous les êtres vivants sont sensibles. Si vous n'aviez pas\neu la Potion de Laumspur en votre possession, la pierre\nmaléfique vous aurait certainement tué. Vous jetez la Pierre\nRayonnante ainsi que la fiole à présent vide, puis vous mettez\nvotre Feuille d'Aventure à jour. Vous poursuivrez ensuite votre\nchemin le long du couloir en vous rendant au 97.",
     "choices": [
       {
-        "text": "direction du nord",
-        "nextPage": 30
+        "text": "poursuivre votre chemin le long du couloir",
+        "nextPage": 97
       }
     ]
   },
@@ -1518,12 +1528,16 @@
     "content": "Le vent se calme au cours de la nuit et le jour se lève en une aube\npaisible. Loin au nord, se dessinant à l'horizon, vous apercevez\nIkaya, la forteresse de glace. L'immense citadelle aux tours de\ncristal offre un spectacle fascinant, rendu plus magnifique encore\npar un étrange phénomène : la forteresse semble en effet avoir\nété retournée et suspendue dans les airs, au-dessus d'un gros\nnuage. « C'est un mirage, comme il y en a parfois dans les terres\nde Kalte, vous explique Dyce ; ici, l'air est tout à fait pur, sans la\nmoindre poussière et la terre se reflète dans les nuages. C'est\nbien Ikaya que vous voyez là-bas, mais la forteresse elle-même se\ntrouve au-delà de l'horizon. Elle doit être à une soixantaine de\nkilomètres, environ. » Dyce saisit une pelle et entreprend de\ndégager les chiens Kanu enterrés sous la neige. Vous réveillez les\nautres, et tout le monde prend son petit déjeuner avant de\nrepartir. Vers midi, vous atteignez le bord d'une gorge profonde.\nElle est large d'une douzaine de mètres et, apparemment, il\nn'existe aucun moyen de la traverser. Vous êtes donc contraint de\nsuivre le bord du précipice en direction de l'est. Après avoir\nparcouru ainsi plus de quatre kilomètres, vous découvrez un\nétroit pont de glace. Il semble malheureusement fort mince, et il\nest peu probable qu'il puisse supporter le poids d'un traîneau\nchargé. A présent, vous distinguez à l'horizon la forteresse\nd'Ikaya mais, cette fois, ce n'est pas un mirage. Si vous souhaitez\nprendre le risque de traverser le pont avec votre traîneau,\nrendez-vous au 73. Si vous préférez décharger le traîneau et\ntransporter votre équipement de l'autre côté à raison d'un objet à\nla fois, rendez-vous au 162. Si enfin vous jugez plus sage\nd'abandonner votre traîneau et de continuer à pied, rendez-vous\nau 223.",
     "choices": [
       {
-        "text": "prendre le risque de traverser le pont avec votre traîneau,",
+        "text": "prendre le risque de traverser le pont avec votre traîneau",
         "nextPage": 73
       },
       {
-        "text": "la fois,",
+        "text": "décharger le traîneau et transporter votre équipement",
         "nextPage": 162
+      },
+      {
+        "text": "abandonner votre traîneau et continuer à pied",
+        "nextPage": 223
       }
     ]
   },
@@ -1532,7 +1546,7 @@
     "content": "Le vieil homme est beaucoup trop faible pour grimper tout seul.\nVous lui conseillez alors d'attacher la Corde autour de sa taille\npour que vous puissiez ainsi le hisser hors de sa prison. Avec des\ngestes lents, il suit vos instructions et, lorsqu'il est enfin prêt,\nvous avez la surprise de constater, en le soulevant, qu'il ne pèse\npas plus lourd qu'un enfant. Quelques minutes plus tard, vous\navez réussi à le tirer hors de son cachot et il se retrouve en face\nde vous, dans le couloir. Il vous faut à présent découvrir qui il\nest. Rendez-vous au 56.",
     "choices": [
       {
-        "text": "est",
+        "text": "Il vous faut à présent découvrir qui il est",
         "nextPage": 56
       }
     ]
@@ -1542,8 +1556,12 @@
     "content": "De gros morceaux de glace se détachent du pont et une large\nfissure apparaît. Vous parvenez malgré tout à maintenir le\ntraîneau sur sa trajectoire et vous atteignez le bord opposé de la\ngorge. Malheureusement, vous avez tôt fait de constater que l'un\ndes patins est cassé et irréparable. Vous êtes donc contraint\nd'abandonner le traîneau et de continuer à pied. Il contient\ntoujours, cependant, du matériel fort utile. Vous pouvez\nemporter une partie de ce matériel en le rangeant dans votre Sac\nà Dos (mais souvenez-vous que vous n'avez pas le droit de\ntransporter plus de 8 objets). Voici le choix qui vous est offert :\n- Des vivres équivalents à 5 Repas (chaque Repas compte pour\nun objet et vous pouvez en prendre un ou plusieurs selon vos\nbesoins).\n- Des Couvertures de Fourrure (elles comptent pour 2 objets).\n-Une Tente (elle compte pour 3 objets). - Une Corde (elle compte\npour 2 objets).\nFenor, Irian et Dyce se hâtent de vous rejoindre, mais lorsqu'ils\nsont parvenus au milieu du pont, une catastrophe se produit.\nDyce, en effet, se prend le pied dans une fissure et tombe.\nHorrifié, vous le voyez glisser dans le vide ; au dernier moment,\ncependant, il parvient à s'accrocher au bord du pont et reste ainsi\nsuspendu, les doigts crispés sur la glace. « Au secours ! Aidez-\nmoi ! » hurle-t-il, tandis que ses mains glissent peu à peu. Si vous\nsouhaitez venir en aide à Dyce, rendez-vous au 19. Si vous\nestimez qu'il est trop dangereux de lui porter secours, rendez-\nvous au 257.",
     "choices": [
       {
-        "text": "souhaitez venir en aide à Dyce,",
+        "text": "venir en aide à Dyce",
         "nextPage": 19
+      },
+      {
+        "text": "trop dangereux de lui porter secours",
+        "nextPage": 257
       }
     ]
   },
@@ -1552,8 +1570,15 @@
     "content": "Le cyclone souffle avec tant de rage qu'il en déchire presque vos\nvêtements en vous bombardant sans cesse d'éclats de pierre ou\nde glace, pointus comme des aiguilles. Lorsque vous levez le\nGlaive de Sommer, un mugissement sonore retentit à vos\noreilles. C'est un hurlement d'horreur et de désespoir. Vous\nportez alors un coup de votre arme redoutable, fendant le\ntourbillon, transperçant la substance impalpable du Démon. Un\ninstant plus tard, le cyclone a disparu et les effroyables\ngémissements se sont tus. Il ne reste plus, éparpillés sur le sol,\nque les débris fracassés d'une statue creuse. Si vous souhaitez\nexaminer l'autel, rendez-vous au 274. Si vous préférez quitter le\ntemple, vous pouvez partir en franchissant l'arcade située au\nnord. Rendez-vous pour cela au 306.",
     "choices": [
       {
-        "text": "examiner l'autel,",
+        "text": "examiner l'autel",
         "nextPage": 274
+      },
+      {
+        "text": "quitter le temple par l'arcade située au nord",
+        "nextPage": 306
+      }
+    ]
+  }
       }
     ]
   },
