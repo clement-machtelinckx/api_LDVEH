@@ -31,13 +31,7 @@
         "text": "point d'ENDURANCE",
         "nextPage": 62
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Brigands",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 4,
@@ -160,13 +154,7 @@
         "text": "sortez vainqueur,",
         "nextPage": 146
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Guerrier",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 15,
@@ -310,7 +298,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Créature",
+      "monsterName": "VER DE PIERRE",
       "ability": 15,
       "endurance": 38
     }
@@ -440,7 +428,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Guerrier",
+      "monsterName": "CHIEN DE GUERRE",
       "ability": 17,
       "endurance": 25
     }
@@ -559,7 +547,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Monstre",
+      "monsterName": "DÉMONDES SOUTERRAINS",
       "ability": 20,
       "endurance": 10
     }
@@ -579,7 +567,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Créature",
+      "monsterName": "MÉGACALMAR",
       "ability": 16,
       "endurance": 37
     }
@@ -650,7 +638,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Bandit",
+      "monsterName": "BANDIT BLESSÉ",
       "ability": 13,
       "endurance": 16
     }
@@ -686,7 +674,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Garde",
+      "monsterName": "GARDE BLESSÉ",
       "ability": 12,
       "endurance": 18
     }
@@ -772,7 +760,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Guerrier",
+      "monsterName": "GUERRIER PILLARD",
       "ability": 17,
       "endurance": 24
     }
@@ -805,13 +793,7 @@
         "text": "continuer après le combat",
         "nextPage": 104
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Démons des Souterrains",
-      "ability": 20,
-      "endurance": 25
-    }
+    ]
   },
   {
     "pageNumber": 10,
@@ -853,13 +835,7 @@
         "text": ". De 9 à 11,",
         "nextPage": 278
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Guerrier",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 68,
@@ -917,13 +893,7 @@
         "text": "galop menant vos dix patrouilleurs le long de la voie de Ruanon",
         "nextPage": 211
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Brigands",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 73,
@@ -951,13 +921,7 @@
         "text": "mène dans les collines,",
         "nextPage": 293
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Guerrier",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 75,
@@ -971,13 +935,7 @@
         "text": ". De 6 à 12,",
         "nextPage": 16
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Guerrier",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 76,
@@ -1001,13 +959,7 @@
         "text": "combat,",
         "nextPage": 10
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Guerrier",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 78,
@@ -1143,7 +1095,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Guerrier",
+      "monsterName": "GUERRIER PILLARD",
       "ability": 17,
       "endurance": 26
     }
@@ -1159,7 +1111,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Pillard",
+      "monsterName": "VER DE PIERRE",
       "ability": 15,
       "endurance": 38
     }
@@ -1203,7 +1155,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Guerrier",
+      "monsterName": "GUERRIER PILLARD",
       "ability": 15,
       "endurance": 26
     }
@@ -1310,13 +1262,7 @@
         "text": "pas chancelant et vous sortez de la tour de guet",
         "nextPage": 59
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Guerrier",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 104,
@@ -1340,13 +1286,7 @@
         "text": "vous au 285. Si vous préférez lever les mains et vous rendre,",
         "nextPage": 267
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Gardes",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 106,
@@ -1383,7 +1323,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Gardes",
+      "monsterName": "OFFICIER DES GARDES",
       "ability": 20,
       "endurance": 30
     }
@@ -1416,13 +1356,7 @@
         "text": "vous au 90. Si vous préférez prendre la fuite,",
         "nextPage": 163
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Guerrier",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 112,
@@ -1463,7 +1397,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Guerrier",
+      "monsterName": "GUERRIER PILLARD",
       "ability": 16,
       "endurance": 25
     }
@@ -1557,7 +1491,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Barraka",
+      "monsterName": "BARRAKA",
       "ability": 25,
       "endurance": 29
     }
@@ -1604,13 +1538,7 @@
         "text": "un chiffre entre 0 et 4,",
         "nextPage": 25
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Garde",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 127,
@@ -1704,7 +1632,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Brigands",
+      "monsterName": "PATROUILLE DE BRIGANDS",
       "ability": 18,
       "endurance": 35
     }
@@ -1731,13 +1659,7 @@
         "text": "continuer",
         "nextPage": 93
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Brigands",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 136,
@@ -1757,13 +1679,7 @@
     "pageNumber": 137,
     "content": "Tout autour de la barricade, les ennemis refluent en désordre.\nLes cornes de guerre des brigands sonnent la retraite, exhortant\nles Guerriers vaincus à fuir le champ de bataille. Jubilant, le\ncapitaine Gayal émerge de la fumée les yeux brillants comme des\njoyaux sous les bords de son casque cabossé. «Nous avons\ntriomphé, Loup solitaire, s'exclame-t-il, l'ennemi est vaincu ! »\nLes hommes du capitaine ont entrepris de rebâtir la barricade et\nde soigner leurs camarades blessés. La vue des soldats\nsommerlundais morts dans la bataille vous attriste, mais vous\nvous consolez en songeant que les pertes de vos agresseurs sont\ninfiniment plus lourdes. Le capitaine vous emmène à la tour de\nguet où l'on soigne vos blessures à l'aide d'herbes de Laumspur.\nVous regagnez aussitôt 6 points d'ENDURANCE. « Nous avons\nvaincu ces brigands, mais je crains bien qu'il ne s'agisse là que\nd'un bref répit, dit le capitaine dont le visage à présent a pris une\nexpression grave et sombre. Le sacrifice de la fille du baron\nVanalund doit être empêché à tout prix si nous voulons éviter la\ncatastrophe. Nous n'aurions pas la force en effet de nous opposer\naux légions des morts ressuscités de leur tombe. » Les vers de la\nprophétie vous reviennent aussitôt en mémoire et un frisson\nvous parcourt l'échiné quand vous repensez à la menace qu'ils\nfont peser. Dans trois jours, lorsque la lune sera pleine, Barraka\nsacrifiera la fille du baron dans le temple souterrain et ce\nsacrifice libérera les morts des gorges de Maaken, le gouffre\nmaudit. Il vous faut à tout prix empêcher ce sacrifice. Rendez-\nvous au 12.",
     "choices": [],
-    "endingType": "death",
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Guerriers",
-      "ability": 15,
-      "endurance": 20
-    }
+    "endingType": "death"
   },
   {
     "pageNumber": 138,
@@ -1780,7 +1696,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Garde",
+      "monsterName": "GARDE IVRE",
       "ability": 13,
       "endurance": 29
     }
@@ -1797,13 +1713,7 @@
         "text": "partir à leur recherche,",
         "nextPage": 330
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Brigands",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 140,
@@ -1848,13 +1758,7 @@
         "text": "Gardes,",
         "nextPage": 230
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Garde",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 144,
@@ -1901,7 +1805,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Garde",
+      "monsterName": "GARDE DU PONT",
       "ability": 14,
       "endurance": 23
     }
@@ -1948,13 +1852,7 @@
         "text": "les Gardes,",
         "nextPage": 320
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Garde",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 152,
@@ -1977,7 +1875,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Guerrier",
+      "monsterName": "GUERRIER VASSAGONIEN",
       "ability": 17,
       "endurance": 26
     }
@@ -2004,13 +1902,7 @@
         "text": "à courir à toutes jambes en direction de Ruanon",
         "nextPage": 225
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Brigands",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 156,
@@ -2060,13 +1952,7 @@
         "text": "d'ENDURANCE en suçant votre sang",
         "nextPage": 204
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Brigands",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 160,
@@ -2189,13 +2075,7 @@
         "text": ". Sinon,",
         "nextPage": 85
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Monstre",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 169,
@@ -2208,7 +2088,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Guerrier",
+      "monsterName": "GUERRIER PILLARD",
       "ability": 16,
       "endurance": 24
     }
@@ -2308,7 +2188,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Guerriers",
+      "monsterName": "GUERRIER PILLARD",
       "ability": 17,
       "endurance": 25
     }
@@ -2391,13 +2271,7 @@
         "text": "sautant pardessus le parapet du pont,",
         "nextPage": 342
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Gardes",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 185,
@@ -2421,7 +2295,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Guerrier",
+      "monsterName": "GUERRIER VASSAGONIEN",
       "ability": 18,
       "endurance": 25
     }
@@ -2444,13 +2318,7 @@
         "text": "préparez à une nuit de sommeil dont vous avez grand besoin",
         "nextPage": 233
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Sentinelles",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 189,
@@ -2495,7 +2363,7 @@
     "endingType": "death",
     "isBlocking": true,
     "monster": {
-      "monsterName": "Chiens De Guerre",
+      "monsterName": "CHIENS DE GUERRE",
       "ability": 17,
       "endurance": 30
     }
@@ -2511,7 +2379,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Ennemi",
+      "monsterName": "MÉGA CALMAR",
       "ability": 16,
       "endurance": 37
     }
@@ -2541,7 +2409,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Guerrier",
+      "monsterName": "GUERRIER PILLARD",
       "ability": 16,
       "endurance": 23
     }
@@ -2572,13 +2440,7 @@
         "text": "continuer après le combat",
         "nextPage": 290
       }
-    ],
-    "monster": {
-      "monsterName": "Gardes",
-      "ability": 16,
-      "endurance": 24
-    },
-    "isBlocking": true
+    ]
   },
   {
     "pageNumber": 199,
@@ -2592,13 +2454,7 @@
         "text": "d'atteindre la corde,",
         "nextPage": 56
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Gardes",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 200,
@@ -2615,7 +2471,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Gardes",
+      "monsterName": "GARDES DE LA CRYPTE",
       "ability": 18,
       "endurance": 30
     }
@@ -2662,13 +2518,7 @@
         "text": "tâche terrifiante qui vous attend",
         "nextPage": 142
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Guerrier",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 205,
@@ -2802,13 +2652,7 @@
         "text": ". Si vous préférez distraire son attention sans l'attaquer,",
         "nextPage": 119
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Barraka",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 216,
@@ -3006,13 +2850,7 @@
         "text": "enfuir avant qu'ils puissent vous attaquer",
         "nextPage": 224
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Gardes",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 231,
@@ -3057,7 +2895,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Guerriers",
+      "monsterName": "GUERRIER PILLARD",
       "ability": 17,
       "endurance": 26
     }
@@ -3073,7 +2911,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Ennemi",
+      "monsterName": "MÉGACALMAR",
       "ability": 16,
       "endurance": 37
     }
@@ -3104,13 +2942,7 @@
         "text": "direction dès que vous serez à couvert des arbres,",
         "nextPage": 169
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Guerriers",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 237,
@@ -3226,13 +3058,7 @@
         "text": "cette arme,",
         "nextPage": 85
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Créature",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 247,
@@ -3242,13 +3068,7 @@
         "text": "au 171. De 5 à 9,",
         "nextPage": 25
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Pillards",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 248,
@@ -3417,7 +3237,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Chiens De Guerre",
+      "monsterName": "CHIENS DE GUERRE\nVASSAGONIENS",
       "ability": 18,
       "endurance": 30
     }
@@ -3450,13 +3270,7 @@
         "text": "courir vers l'ouest,",
         "nextPage": 169
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Brigands",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 264,
@@ -3514,13 +3328,7 @@
         "text": "descendre l'escalier en colimaçon,",
         "nextPage": 228
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Gardes",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 269,
@@ -3632,7 +3440,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Chien De Guerre",
+      "monsterName": "CHIENS DE GUERRE",
       "ability": 22,
       "endurance": 35
     }
@@ -3683,13 +3491,7 @@
         "text": "votre Torche et vous reprenez votre chemin le long du tunnel",
         "nextPage": 185
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Créature",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 282,
@@ -3709,13 +3511,7 @@
         "text": "par le gouffre maudit",
         "nextPage": 350
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Barraka",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 284,
@@ -3728,7 +3524,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Guerrier",
+      "monsterName": "GUERRIER PILLARD",
       "ability": 16,
       "endurance": 25
     }
@@ -3744,7 +3540,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Gardes",
+      "monsterName": "GARDE",
       "ability": 16,
       "endurance": 28
     }
@@ -3770,7 +3566,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Guerrier",
+      "monsterName": "GUERRIER PILLARD",
       "ability": 17,
       "endurance": 27
     }
@@ -3920,13 +3716,7 @@
         "text": "maléfiques",
         "nextPage": 185
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Créatures",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 299,
@@ -3939,7 +3729,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Brigands",
+      "monsterName": "CHEF BRIGAND",
       "ability": 19,
       "endurance": 29
     }
@@ -4037,7 +3827,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Créature",
+      "monsterName": "ÉLIX",
       "ability": 17,
       "endurance": 30
     }
@@ -4067,7 +3857,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Guerrier",
+      "monsterName": "GUERRIER VASSAGONIEN",
       "ability": 18,
       "endurance": 25
     }
@@ -4084,13 +3874,7 @@
         "text": "les soldats du Sommerlund pour repousser l'avance des lanciers,",
         "nextPage": 3
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Guerrier",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 312,
@@ -4155,7 +3939,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Guerrier",
+      "monsterName": "GUERRIER PILLARD",
       "ability": 16,
       "endurance": 26
     }
@@ -4251,13 +4035,7 @@
         "text": "l'écurie. Si vous souhaitez passer par la porte,",
         "nextPage": 114
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Brigands",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 325,
@@ -4270,7 +4048,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Barraka",
+      "monsterName": "BARRAKA",
       "ability": 25,
       "endurance": 29
     }
@@ -4368,7 +4146,7 @@
     ],
     "isBlocking": true,
     "monster": {
-      "monsterName": "Ennemi",
+      "monsterName": "CAVALIER VASSAGONIEN",
       "ability": 20,
       "endurance": 28
     }
@@ -4395,13 +4173,7 @@
         "text": "le Garde par surprise",
         "nextPage": 147
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Garde",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 336,
@@ -4441,13 +4213,7 @@
         "text": "continuer",
         "nextPage": 132
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "Garde",
-      "ability": 15,
-      "endurance": 20
-    }
+    ]
   },
   {
     "pageNumber": 340,
