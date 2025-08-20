@@ -1578,9 +1578,6 @@
         "nextPage": 306
       }
     ]
-  }
-      }
-    ]
   },
   {
     "pageNumber": 121,
@@ -2716,12 +2713,16 @@
     "content": "Vous pouvez prendre l'arme du Barbare si vous le souhaitez : il\ns'agit d'une épée en os incrustée de dents. En examinant son\ncadavre, vous découvrez un Bracelet d'Or passé à son poignet\ndroit. Si vous maîtrisez la Discipline Kaï du Sixième Sens,\nrendez-vous au 316. Si vous souhaitez vous emparer du Bracelet\nd'Or, rendez-vous au 236 après l'avoir inscrit sur votre Feuille\nd'Aventure dans la case Objets Spéciaux. Si vous ne souhaitez\npas prendre le Bracelet, hâtez-vous de repartir le long du couloir\nen direction d'un croisement situé un peu plus loin. Rendez-vous\nalors au 215.",
     "choices": [
       {
-        "text": "droit. Si vous maîtrisez la Discipline Kaï du Sixième Sens,",
+        "text": "Si vous maîtrisez la Discipline Kaï du Sixième Sens",
         "nextPage": 316
       },
       {
-        "text": "d'Or,",
+        "text": "Si vous souhaitez vous emparer du Bracelet d'Or",
         "nextPage": 236
+      },
+      {
+        "text": "Si vous ne souhaitez pas prendre le Bracelet",
+        "nextPage": 215
       }
     ]
   },
@@ -2744,7 +2745,7 @@
     "content": "Lorsque vous revenez sous la tente, Dyce prépare un délicieux\nRepas qui vient à point pour vous remplir l'estomac et vous\nredonner courage. Vous avez parcouru à présent une distance\nappréciable et, en dépit des épreuves physiques que vous avez dû\nsupporter, vous vous sentez confiant et impatient de continuer.\nIrian va chercher les Couvertures de Fourrure dans le traîneau et\nvous vous préparez tous à passer une bonne nuit de sommeil. La\nnuit, vous gardez toujours vos vêtements pour vous protéger du\nfroid et vous n'enlevez que vos bottes. Les quelques jours que\nvous avez passés sur ces terres désolées ont suffi à vous en\napprendre long sur les techniques de survie. Lorsque vous vous\ndéchaussez, vous prenez garde à ce que vos bottes conservent\nbien la forme de vos pieds : par ces températures glaciales, en\neffet, elles ont tôt fait de geler et de devenir dures comme la\npierre ; vous avez alors toutes les peines du monde à les chausser\nà nouveau si elles se sont déformées. Pour dénouer vos lacets,\nvous devez ôter vos gants, mais il vous faut interrompre\nl'opération à plusieurs reprises pour remettre vos moufles dès\nque vous sentez la morsure du gel vous engourdir les doigts.\nLorsque vous êtes enfin pelotonné sous vos fourrures, vous\nclaquez encore des dents pendant quelques instants avant de\nsombrer dans un profond sommeil, tandis que le vent mugit au\ndehors. Rendez-vous au 238.",
     "choices": [
       {
-        "text": "dehors",
+        "text": "Rendez-vous au 238",
         "nextPage": 238
       }
     ]
@@ -2814,12 +2815,22 @@
   {
     "pageNumber": 218,
     "content": "La boîte en os contient un magnifique Diamant. Même dans la\npénombre des lieux, ses multiples facettes étincellent. Dans le\nroyaume du Sommerlund, une pierre de cette taille et de cette\nqualité vaudrait des milliers de Couronnes d'Or. Si vous\nsouhaitez conserver ce Diamant, glissez-le dans votre poche et\ninscrivez-le sur votre Feuille d'Aventure dans la case Objets\nSpéciaux. Vous pouvez à présent examiner la porte de la\nforteresse en vous rendant au 52.",
-    "choices": []
+    "choices": [
+      {
+        "text": "examiner la porte de la forteresse",
+        "nextPage": 52
+      }
+    ]
   },
   {
     "pageNumber": 219,
     "content": "Vous sentez que le sourd grondement qui résonne dans cette\npartie de la forteresse est beaucoup plus intense dans le couloir\norienté à l'ouest que dans celui orienté à l'est. Ce bruit a quelque\nchose d'insolite qui vous met mal à l'aise. Vous décidez donc\nd'éviter le couloir de l'ouest et d'emprunter celui de l'est. Rendez-\nvous au 349.",
-    "choices": []
+    "choices": [
+      {
+        "text": "emprunter celui de l'est",
+        "nextPage": 349
+      }
+    ]
   },
   {
     "pageNumber": 220,
@@ -2864,8 +2875,12 @@
     "content": "Le traîneau contient le matériel détaillé ci-dessous. Vous pouvez\nprendre n'importe lequel de ces objets et le ranger dans votre Sac\nà Dos, mais n'oubliez pas que vous n'avez pas le droit d'y\ntransporter plus de huit objets: des provisions équivalentes à 5\nRepas (chaque Repas compte pour un objet ; vous pouvez en\nemporter autant que vous le désirez, de 1 à 5, dans la limite bien\nsûr de la place dont vous disposez) ; une Tente (elle compte pour\n3 objets) ; des Couvertures de Fourrure (elles comptent pour 2\nobjets) ; une Longue Corde (elle compte pour 2 objets). Dyce se\nporte volontaire pour retourner avec le traîneau et les chiens à\nl'endroit où est ancré le vaisseau Cardonal, tandis que vos deux\nautres guides et vous-même poursuivrez votre chemin en\ndirection d'Ikaya, la Forteresse des Glaces. Ikaya a été taillée\ndans la chaîne de Hrod en des temps très anciens, par une race\nde créatures qui a depuis longtemps disparu. Des milliers\nd'années ont passé avant que les Barbares des Glaces, émigrant\ndes Étendues Inexplorées, ne viennent s'approprier la forteresse.\nDepuis cette époque leurs chefs, que l'on appelle les\n«Brumalmarc», exercent leur pouvoir sur les terres de Kalte à\nl'abri des murs de glace d'Ikaya. Vous avez parcouru environ 8\nkilomètres lorsqu'Irian pointe soudain l'index en direction de\nl'ouest. « Là, là-bas, dit-il, j'ai vu quelque chose, j'en suis sûr ! »\nVous vous arrêtez et vous essayez d'apercevoir ce qui a pu lui\napparaître inhabituel dans ce paysage monotone de glace et de\nneige. « Regardez là-bas ! » s'écrie alors Fenor, en montrant une\nhauteur située à 1,5 kilomètre environ. Vous distinguez alors\ndeux guerriers vêtus de fourrure qui se tiennent debout sur un\ngros bloc de glace. Les deux guerriers vous observent. « Des\nBarbares des Glaces, murmure Irian, la voix tremblante de peur.\nSi jamais ils arrivent avant nous à Ikaya et signalent notre\nprésence, autant dire que nous sommes morts. »Vous avez\nencore une quinzaine de kilomètres à parcourir pour atteindre la\nforteresse et il ne reste que deux heures de jour. Si vous\nsouhaitez ne pas prêter attention à ces Barbares et poursuivre\nvotre chemin vers Ikaya, rendez-vous au 327. Si vous préférez les\nattaquer pour essayer de les empêcher de donner l'alerte, rendez-\nvous au 307.",
     "choices": [
       {
-        "text": "votre chemin vers Ikaya,",
+        "text": "poursuivre votre chemin vers Ikaya",
         "nextPage": 327
+      },
+      {
+        "text": "les attaquer pour essayer de les empêcher de donner l'alerte",
+        "nextPage": 307
       }
     ]
   },
@@ -2886,7 +2901,12 @@
   {
     "pageNumber": 225,
     "content": "Le bouchon est scellé avec de la cire. Si vous voulez briser la cire,\nsachez que vous prenez le risque de casser le verre peu épais de la\nfiole. Pour essayer de briser la cire qui scelle le bouchon, rendez-\nvous au 54. Si le contenu de cette fiole ne vous inspire pas\nconfiance et que vous ne souhaitiez pas risquer de la casser,\nabandonnez-la et retournez au 10 pour faire un nouveau choix.",
-    "choices": []
+    "choices": [
+      {
+        "text": "retournez au 10 pour faire un nouveau choix",
+        "nextPage": 10
+      }
+    ]
   },
   {
     "pageNumber": 226,
@@ -2933,6 +2953,10 @@
       {
         "text": "de Feu,",
         "nextPage": 46
+      },
+      {
+        "text": "il faut vous préparer au combat",
+        "nextPage": 88
       }
     ]
   },
@@ -2967,13 +2991,22 @@
       {
         "text": "au 85. Si vous tirez 7, 8 ou 9,",
         "nextPage": 300
+      },
+      {
+        "text": "Si vous tirez un chiffre de 0 à 6",
+        "nextPage": 85
       }
     ]
   },
   {
     "pageNumber": 233,
     "content": "Vous reconnaissez ce liquide : c'est une décoction de Laumspur,\nune herbe aux propriétés curatives particulièrement efficace.\nCette Potion concentrée permet à celui qui la boit de récupérer 5\npoints d'ENDURANCE. Si vous souhaitez conserver la fiole,\ninscrivez-la sur votre Feuille d'Aventure dans la case Objets\nSpéciaux. Retournez à présent au 10 pour faire un autre choix.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Retournez au 10 pour faire un autre choix",
+        "nextPage": 10
+      }
+    ]
   },
   {
     "pageNumber": 234,
@@ -2982,6 +3015,10 @@
       {
         "text": "prisonnier,",
         "nextPage": 170
+      },
+      {
+        "text": "retournez dans le couloir principal",
+        "nextPage": 254
       }
     ]
   },
@@ -3002,7 +3039,16 @@
   {
     "pageNumber": 236,
     "content": "Dès que le Bracelet d'Or se referme autour de votre poignet, une\ndouleur fulgurante vous déchire la tête. Vous êtes soumis à\nl'attaque d'une puissante Force Mentale qui essaie d'annihiler\nvotre volonté. Si vous maîtrisez la Discipline Kaï du Bouclier\nPsychique, rendez-vous immédiatement au 345. Sinon, rendez-\nvous au 9.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Si vous maîtrisez la Discipline Kaï du Bouclier Psychique",
+        "nextPage": 345
+      },
+      {
+        "text": "Sinon",
+        "nextPage": 9
+      }
+    ]
   },
   {
     "pageNumber": 237,
@@ -3031,7 +3077,8 @@
   {
     "pageNumber": 239,
     "content": "Vous perdez très vite conscience. Vous venez en effet de\nsuccomber au pouvoir terrifiant d'une ancienne Pierre Maudite,\nun pouvoir auquel nul être vivant ne peut survivre. La mort est\ninévitable et ne tardera plus. Peut-être éprouverez-vous malgré\ntout quelque consolation à apprendre que votre cadavre sera\nbientôt découvert par un Barbare des Glaces qui l'amènera\ndevant Vonotar (en même temps que la Pierre Maudite). Le\ntraître éprouvera alors tant de joie à vous voir mort qu'il\nordonnera que votre corps soit conservé dans un bloc de glace et\nexposé dans sa salle du Trône, comme un trophée. Mais les\nradiations de la Pierre Maudite, restée dans votre poche,\natteindront le sorcier maléfique en dépit de la couche de glace et\nVonotar devra subir de longues souffrances avant de mourir à\nson tour. Bien entendu, votre mission s'achève ici en même\ntemps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 240,
@@ -3051,7 +3098,13 @@
         "text": "Si vous sortez vainqueur de cet affrontement,",
         "nextPage": 186
       }
-    ]
+    ],
+    "monster": {
+      "name": "Barbare des glaces",
+      "ability": 17,
+      "endurance": 29,
+      "isBlocking": false
+    }
   },
   {
     "pageNumber": 242,
@@ -3060,6 +3113,10 @@
       {
         "text": "disposez du Glaive de Sommer,",
         "nextPage": 42
+      },
+      {
+        "text": "Rendez-vous au 145",
+        "nextPage": 145
       }
     ]
   },
@@ -3118,17 +3175,32 @@
   {
     "pageNumber": 247,
     "content": "Le vieil homme relève lentement la tête. 11 a les yeux fatigués et\nmeurtris, et sa longue barbe grise est tachée de sang caillé. Avec\ndifficulté, il se remet sur pied et scrute l'obscurité au-dessus de\nlui. « Qui se cache là-haut ? Est-ce toi, Vonotar ? Montre-toi,\nmisérable ver de terre ou alors, va-t-en. Je n'ai pas peur de toi et\nsache que tu m'inspires le plus profond dégoût. Jamais tu ne\nparviendras à me briser, traître infâme ! » crie-t-il en\nbrandissant un poing décharné. Son accent vous est familier :\nc'est en effet le même que le vôtre. Cet homme est l'un de vos\ncompatriotes, un citoyen du Sommerlund originaire du port de\nToran. Si vous disposez d'une Corde, vous pouvez la dérouler et\nla jeter au vieil homme afin de le tirer de sa prison, rendez-vous\npour cela au 118. Si vous n'avez pas de Corde, ou si vous ne\nsouhaitez pas porter secours au prisonnier, vous pouvez\npoursuivre votre chemin le long du passage en vous rendant au\n30.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous au 30",
+        "nextPage": 30
+      },
+      {
+        "text": "Rendez-vous au 118",
+        "nextPage": 118
+      }
+    ]
   },
   {
     "pageNumber": 248,
     "content": "Vous êtes arrivé à une centaine de mètres du défilé lorsqu'un\nvertige vous saisit et vous fait perdre l'équilibre. Vous essayez\ndésespérément de vous accrocher à la paroi rocheuse, mais vous\navez les mains engourdies par le froid et vous tombez dans la\nvallée. Votre corps, parfaitement conservé dans la glace, sera\ndécouvert par une équipe d'explorateurs dans environ deux mille\nans, à quelques années près. Il va sans dire que votre mission\ns'achève ici en même temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 249,
     "content": "Vous sentez qu'une patrouille de soldats s'approche, venant du\nsud. Vous empruntez donc le couloir orienté au nord en vous\nrendant au 104.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous au 104",
+        "nextPage": 104
+      }
+    ]
   },
   {
     "pageNumber": 250,
@@ -3137,6 +3209,10 @@
       {
         "text": "traverser le Cimetière des Anciens,",
         "nextPage": 77
+      },
+      {
+        "text": "Rendez-vous au 10",
+        "nextPage": 10
       }
     ]
   },
@@ -3365,6 +3441,10 @@
       {
         "text": "Anciens,",
         "nextPage": 177
+      },
+      {
+        "text": "Rendez-vous au 10",
+        "nextPage": 10
       }
     ]
   },
@@ -3423,6 +3503,10 @@
       {
         "text": "un chiffre entre 0 et 3,",
         "nextPage": 143
+      },
+      {
+        "text": "Rendez-vous au 58",
+        "nextPage": 58
       }
     ]
   },
@@ -3595,7 +3679,11 @@
     "content": "La porte s'ouvre en coulissant latéralement, et vous découvrez\navec horreur le regard d'un Barbare des Glaces qui vous fixe de\nses yeux blancs totalement dépourvus de pupilles. Un cri rauque,\nqui ne ressemble à aucun son connu, monte de sa gorge et, un\ninstant plus tard, les Loups Maudits s'éveillent et se mettent à\ngrogner. Si vous souhaitez vous enfuir, il vous faut faire volte-\nface et redescendre l'escalier quatre à quatre ; rendez-vous alors\nau 261. Si vous préférez faire face et combattre, rendez-vous au\n343.",
     "choices": [
       {
-        "text": "au 261. Si vous préférez faire face et combattre,",
+        "text": "Si vous souhaitez vous enfuir",
+        "nextPage": 261
+      },
+      {
+        "text": "Si vous préférez faire face et combattre",
         "nextPage": 343
       }
     ]
@@ -3637,6 +3725,10 @@
       {
         "text": "vous maîtrisez au moins 6 Disciplines Kaï),",
         "nextPage": 156
+      },
+      {
+        "text": "Rendez-vous au 10",
+        "nextPage": 10
       }
     ]
   },
@@ -3651,6 +3743,10 @@
       {
         "text": "l'arcade baignée de brume",
         "nextPage": 264
+      },
+      {
+        "text": "Rendez-vous au 124",
+        "nextPage": 124
       }
     ]
   },
@@ -3661,6 +3757,10 @@
       {
         "text": "vous au 103. Entre 5 et 9,",
         "nextPage": 220
+      },
+      {
+        "text": "Rendez-vous au 103",
+        "nextPage": 103
       }
     ]
   },
@@ -3689,6 +3789,10 @@
       {
         "text": "endormies,",
         "nextPage": 109
+      },
+      {
+        "text": "Rendez-vous au 125",
+        "nextPage": 125
       }
     ]
   },
@@ -3705,7 +3809,12 @@
   {
     "pageNumber": 295,
     "content": "En vous voyant entrer, les deux hommes se relèvent d'un bond et\ns'enfuient par un petit couloir. Leurs cris de panique retentissent\nen écho dans les profondeurs des souterrains. Vous avez grand-\nfaim et vous dévorez gloutonnement la carcasse rôtie, en ne\ncessant d'engloutir la viande que pour cracher parfois quelques\nos. Bientôt, vous remarquez que le feu allumé devant vous brûle\ndans une demi-sphère de métal. Une autre demi-sphère est\nposée sur le sol de glace un peu plus loin, et vous constatez que\nles deux moitiés s'ajustent parfaitement pour former une sphère\ncomplète. Lorsque vous séparez à nouveau les deux moitiés, le\nfeu continue de brûler à l'intérieur: c'est donc un feu perpétuel\nqui est enfermé dans ce globe. Si vous souhaitez conserver cette\nSphère de Feu, rangez-la dans votre tunique et inscrivez-la sur\nvotre Feuille d'Aventure dans la case Objets Spéciaux. Retournez\nensuite dans le tunnel en vous rendant au 132.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous au 132",
+        "nextPage": 132
+      }
+    ]
   },
   {
     "pageNumber": 296,
@@ -3758,6 +3867,10 @@
       {
         "text": "vous au 65. Si vous préférez quitter le temple,",
         "nextPage": 306
+      },
+      {
+        "text": "Rendez-vous au 65",
+        "nextPage": 65
       }
     ]
   },
@@ -3790,6 +3903,10 @@
       {
         "text": "Si vous maîtrisez la Discipline Kaï de la Chasse,",
         "nextPage": 347
+      },
+      {
+        "text": "ne maîtrisez aucune de ces Disciplines",
+        "nextPage": 179
       }
     ]
   },
@@ -3804,6 +3921,10 @@
       {
         "text": "vous au 193. De 8 à 11,",
         "nextPage": 243
+      },
+      {
+        "text": "Rendez-vous au 193",
+        "nextPage": 193
       }
     ]
   },
@@ -3814,6 +3935,10 @@
       {
         "text": "souhaitez vous coiffer de ce Casque,",
         "nextPage": 308
+      },
+      {
+        "text": "Rendez-vous au 323",
+        "nextPage": 323
       }
     ]
   },
@@ -3902,13 +4027,22 @@
       {
         "text": "l'abrite,",
         "nextPage": 72
+      },
+      {
+        "text": "Rendez-vous au 306",
+        "nextPage": 306
       }
     ]
   },
   {
     "pageNumber": 311,
     "content": "Ce liquide vous est familier, il s'agit d'une décoction d'Alether,\nune Potion de Force dont vos maîtres Kaï se servaient pour\naugmenter leur HABILETÉ au combat. Cette fiole contient\nsuffisamment de Potion d'Alether pour augmenter de 4 points\nvotre total d'HABILETÉ pour la durée d'un seul combat. Vous\ndevrez la boire juste avant le combat pendant lequel vous\nsouhaiterez voir votre HABILETÉ ainsi accrue. Si vous voulez\nconserver cette Potion, inscrivez-la sur votre Feuille d'Aventure\ndans la liste des objets contenus dans votre Sac à Dos. Retournez\nà présent au 10 et faites un nouveau choix.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous au 10",
+        "nextPage": 10
+      }
+    ]
   },
   {
     "pageNumber": 312,
@@ -3957,6 +4091,10 @@
       {
         "text": "décidez de passer ce Bracelet à votre poignet,",
         "nextPage": 236
+      },
+      {
+        "text": "Rendez-vous au 215",
+        "nextPage": 215
       }
     ]
   },
@@ -4087,6 +4225,10 @@
       {
         "text": "au 105. Si vous tirez le 9,",
         "nextPage": 144
+      },
+      {
+        "text": "tirez un chiffre de 0 à 8",
+        "nextPage": 105
       }
     ]
   },
@@ -4115,6 +4257,10 @@
       {
         "text": "attaquer ces créatures,",
         "nextPage": 138
+      },
+      {
+        "text": "Rendez-vous au 284",
+        "nextPage": 284
       }
     ]
   },
@@ -4125,6 +4271,10 @@
       {
         "text": "examiner la porte, au bout du balcon,",
         "nextPage": 61
+      },
+      {
+        "text": "Rendez-vous au 148",
+        "nextPage": 148
       }
     ]
   },
@@ -4187,7 +4337,12 @@
   {
     "pageNumber": 335,
     "content": "La paroi glacée offre de nombreuses prises, mais vous ne pouvez\npas vous y agripper tant que vous portez vos moufles ; en\nrevanche, si vous ôtez vos moufles, vous aurez sans nul doute à\nsubir la morsure du gel. Si vous souhaitez risquer votre vie et vos\nmains, vous pouvez entreprendre l'escalade en vous rendant au\n55. Si vous préférez y renoncer, vous pouvez essayer de trouver\nune issue pour quitter la caverne en vous rendant au 182.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous au 182",
+        "nextPage": 182
+      }
+    ]
   },
   {
     "pageNumber": 336,
@@ -4220,6 +4375,10 @@
       {
         "text": "poursuite de l'étrange créature,",
         "nextPage": 87
+      },
+      {
+        "text": "Rendez-vous au 26",
+        "nextPage": 26
       }
     ]
   },
@@ -4232,7 +4391,12 @@
   {
     "pageNumber": 340,
     "content": "Vous traînez les cadavres hors de la cuisine et vous les\nabandonnez derrière la porte secrète. Lorsque vous revenez, Loi-\nKymar est occupé à examiner les bocaux remplis d'herbes qui\nsont alignés sur les étagères. Il prend plusieurs de ces bocaux\nqu'il range dans ses poches, puis il en ouvre deux autres dont il\nmélange le contenu dans un petit bol de pierre. Il vous tend\nensuite une poignée d'herbes sèches en vous conseillant de les\nmanger. « Elles vous rendront vos forces, Loup Solitaire», dit-il.\nVous mangez les herbes au goût douceâtre et une chaleur\nbienfaisante rayonne aussitôt dans tout votre corps. Vous pouvez\najouter 6 points d'ENDURANCE à votre total actuel. Rendez-\nvous à présent au 301.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous au 301",
+        "nextPage": 301
+      }
+    ]
   },
   {
     "pageNumber": 341,
@@ -4281,6 +4445,10 @@
       {
         "text": "Triangle de Pierre Bleue",
         "nextPage": 41
+      },
+      {
+        "text": "Rendez-vous au 147",
+        "nextPage": 147
       }
     ]
   },
@@ -4321,7 +4489,12 @@
   {
     "pageNumber": 348,
     "content": "Votre Discipline Kaï vous révèle qu'il existe, à moins de 200\nmètres en direction du sud, un réseau de grottes et de\nsouterrains. Vous abandonnez alors votre traîneau et vous partez\nvers le sud pour essayer de découvrir quelque chose. Rendez-\nvous au 314.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous au 314",
+        "nextPage": 314
+      }
+    ]
   },
   {
     "pageNumber": 349,
