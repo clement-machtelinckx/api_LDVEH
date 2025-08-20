@@ -816,16 +816,6 @@
     ]
   },
   {
-    "pageNumber": 10,
-    "content": "Si vous êtes vainqueur, rendez-vous au 298.",
-    "choices": [
-      {
-        "text": "quitter la tour de guet",
-        "nextPage": 59
-      }
-    ]
-  },
-  {
     "pageNumber": 66,
     "content": "Vous atterrissez sur le sol en roulant sur vous-même. Le\nVassagonien bondit à votre suite, espérant vous porter un coup\nmortel avant que vous n'ayez pu vous relever. Mais il ne semble\npas se rendre compte qu'il a affaire à un Seigneur Kaï. Vous le\nfrappez, en effet, alors qu'il n'a pas encore touché terre et il\ns'effondre à côté de vous, tué sur le coup. Le capitaine Gayal\npasse en courant à votre gauche. Il mène une contre-offensive à\nla tête de ses meilleurs combattants et repousse l'ennemi vers la\nbarricade. Bientôt les lignes adverses sont anéanties et les\nattaquants qui ont survécu aux coups portés par les soldats du\ncapitaine sont abattus par ses archers, tandis qu'ils tentent de\ns'enfuir dans la plaine. Mais à peine le cri de victoire des soldats\ndu Sommerlund a-t-il retenti qu'il vous faut faire face à une\nnouvelle et redoutable attaque. Rendez-vous au 124.",
     "choices": [
