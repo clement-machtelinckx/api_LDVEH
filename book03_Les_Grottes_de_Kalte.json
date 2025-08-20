@@ -2028,8 +2028,12 @@
     "content": "Votre jambe droite est blessée ; la plaie saigne abondamment, et\nil semble que l'hémorragie ne s'arrêtera pas d'elle-même ; vous\nposez donc un garrot de fortune autour de votre cuisse, puis vous\nvous relevez tant bien que mal et vous jetez un coup d'œil\nalentour. Ce monolithe, de toute évidence, avait pour fonction\nd'empêcher les intrus de passer, ou de les prendre au piège. C'est\nsans doute un mage qui, jadis, l'a ainsi doté d'un puissant\npouvoir d'explosion. Vous remarquez alors qu'un panneau s'est\nouvert dans le mur nord, découvrant un passage obscur qui\npermet de quitter cette salle. Si vous souhaitez explorer ce\nnouveau couloir, rendez-vous au 145. Si vous préférez essayer\nd'ouvrir à nouveau la porte par laquelle vous êtes entré, rendez-\nvous au 242.",
     "choices": [
       {
-        "text": "nouveau couloir,",
+        "text": "explorer ce nouveau couloir",
         "nextPage": 145
+      },
+      {
+        "text": "ouvrir à nouveau la porte par laquelle vous êtes entré",
+        "nextPage": 242
       }
     ]
   },
@@ -2050,12 +2054,22 @@
   {
     "pageNumber": 156,
     "content": "Vous reconnaissez l'odeur d'un concentré de Brosse à Potences,\nou « Dent de Sommeil » comme on l'appelle plus communément\nau Sommerlund. Il s'agit d'un buisson épineux dont vos Maîtres\nKaï se servaient pour endormir les chevaux malades ou blessés,\nle concentré préparé à l'aide de cette plante constituant une\npuissante Potion somnifère. Si vous souhaitez la conserver,\ninscrivez-la sur votre Feuille d'Aventure, dans la case des objets\ncontenus dans votre Sac à Dos. Retournez à présent au 10 pour\nfaire un nouveau choix.",
-    "choices": []
+    "choices": [
+      {
+        "text": "retourner au 10 pour faire un nouveau choix",
+        "nextPage": 10
+      }
+    ]
   },
   {
     "pageNumber": 157,
     "content": "Vous prenez la Potion dans votre Sac à Dos et vous entrebâillez\nprudemment la porte, juste assez pour pouvoir vider la fiole dans\nle chaudron bouillonnant. Quelques minutes plus tard, les\nBarbares des Glaces tombent dans un profond sommeil juste\naprès avoir achevé leur repas. Vous pouvez à présent inspecter\nles lieux. La cuisine est petite et elle contient une étonnante\nprovision d'herbes. « Ces herbes viennent du comptoir de\nLiouk», assure Loi-Kymar en examinant attentivement les\nétiquettes qui indiquent ce que les bocaux contiennent. Il remplit\nses poches de plusieurs de ces bocaux, puis il en ouvre deux\nautres et mélange les herbes qu'ils renferment. Il vous tend\nensuite cette mixture : « Voici qui vous donnera des forces, Loup\nSolitaire», dit-il. Vous mangez les feuilles séchées et, aussitôt,\nune chaleur bienfaisante se répand dans tout votre corps. Vous\nrécupérez 6 points d'ENDURANCE et vous vous rendez au 301.",
-    "choices": []
+    "choices": [
+      {
+        "text": "récupérez 6 points d'ENDURANCE",
+        "nextPage": 301
+      }
+    ]
   },
   {
     "pageNumber": 158,
@@ -2086,8 +2100,16 @@
     "content": "L'homme vous regarde droit dans les yeux et répond : « Le\nRagad. » Si vous souhaitez à présent effacer le pentagramme afin\nde le libérer, rendez-vous au 170. Si vous préférez vous en\nabstenir, refermez la porte de sa cellule et retournez dans le\ncouloir principal en vous rendant au 254.",
     "choices": [
       {
-        "text": "de le libérer,",
+        "text": "effacer le pentagramme pour le libérer",
         "nextPage": 170
+      },
+      {
+        "text": "retourner dans le couloir principal",
+        "nextPage": 254
+      },
+      {
+        "text": "continuer votre exploration",
+        "nextPage": 245
       }
     ]
   },
@@ -2226,8 +2248,12 @@
     "content": "Lorsque vous arrivez devant la porte massive, vous essayez\ndésespérément de trouver un moyen de l'ouvrir, mais elle est\nparfaitement lisse et ne comporte ni poignée, ni serrure, ni trou\nde serrure. La créature aura bientôt atteint le sommet de la\nrampe et vous êtes sur le point de pousser un cri de désespoir\nlorsque vous apercevez un bloc de granité encastré dans le mur.\nUn petit triangle est gravé dans la pierre. Si vous possédez un\nTriangle de Pierre Bleue, rendez-vous au 41. Sinon, rendez-vous\nau 265.",
     "choices": [
       {
-        "text": "Triangle de Pierre Bleue,",
+        "text": "vous possédez un Triangle de Pierre Bleue",
         "nextPage": 41
+      },
+      {
+        "text": "vous ne possédez pas le Triangle",
+        "nextPage": 265
       }
     ]
   },
@@ -2244,7 +2270,16 @@
   {
     "pageNumber": 171,
     "content": "Le bouchon est coincé dans la fiole et il vous faut l'ôter avec\nprécaution pour ne pas prendre le risque de briser le verre. Peu à\npeu, le bouchon glisse et vous parvenez enfin à l'enlever ; vous\nreniflez alors le liquide orange. Si vous possédez laDiscipline Kaï\ndu Sixième Sens ou celle de la Maîtrise des Armes, rendez-vous\nau 311. Si vous ne maîtrisez aucune de ces deux Disciplines, cette\npotion ne vous inspire guère confiance et vous décidez de vous en\ndébarrasser. Retournez alors au 10 et faites un nouveau choix.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Sixième Sens ou Maîtrise des Armes",
+        "nextPage": 311
+      },
+      {
+        "text": "retourner au 10 et faire un nouveau choix",
+        "nextPage": 10
+      }
+    ]
   },
   {
     "pageNumber": 172,
@@ -2308,8 +2343,8 @@
     "content": "Vous reconnaissez aussitôt l'odeur âcre de Ronces des Cimetières\ndistillées. Cette décoction de couleur noire est un poison puissant\net vous rebouchez aussitôt la fiole pour empêcher les vapeurs\nnocives de s'en échapper. Si vous souhaitez conserver cette\nPotion, inscrivez-la sur votre Feuille d'Aventure dans la case des\nobjets contenus dans votre Sac à Dos. Retournez à présent au 10\npour faire un nouveau choix.",
     "choices": [
       {
-        "text": "direction de l'ouest",
-        "nextPage": 257
+        "text": "retourner au 10 pour faire un nouveau choix",
+        "nextPage": 10
       }
     ]
   },
@@ -2328,7 +2363,11 @@
     "content": "Vous imaginez un plan particulièrement audacieux. En vous\nfaisant passer pour un Barbare des Glaces, vous pourriez en effet\nposer le bol près des gardes ; dans la pénombre du couloir, il leur\nserait difficile d'apercevoir la fumée. Loi-Kymar approuve votre\nplan et prépare un mélange d'herbes destiné à vous protéger\nvous-même contre les vapeurs nocives. Vêtu des fourrures d'un\nBarbare des Glaces, vous avancez bientôt dans le couloir, le bol\ncaché sous vos vêtements. Utilisez la Table de Hasard pour\nobtenir un chiffre. Si vous tirez un chiffre entre 0 et 4, rendez-\nvous au 39. Entre 5 et 9, rendez-vous au 296.",
     "choices": [
       {
-        "text": "vous au 39. Entre 5 et 9,",
+        "text": "chiffre entre 0 et 4",
+        "nextPage": 39
+      },
+      {
+        "text": "chiffre entre 5 et 9",
         "nextPage": 296
       }
     ]
