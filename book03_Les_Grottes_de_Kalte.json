@@ -20,6 +20,10 @@
       {
         "text": "vous souhaitez tirer ce levier,",
         "nextPage": 290
+      },
+      {
+        "text": "continuer à monter l'escalier",
+        "nextPage": 76
       }
     ]
   },
@@ -106,7 +110,8 @@
   {
     "pageNumber": 9,
     "content": "Vous essayez désespérément de lutter contre l'atroce douleur,\nmais elle est si intense que vous perdez bientôt conscience. Dans\nquelques minutes, vous serez complètement vidé de votre\nénergie et vous deviendrez l'esclave docile de Vonotar, incapable\nde résister au pouvoir de sa force psychique ; il vous ordonnera\nalors de ramasser l'épée du Barbare des Glaces et de vous en\nservir pour vous trancher la gorge. Vous obéirez sans murmure et\nvous vous tuerez vous-même d'un simple geste du poignet. Votre\nmission s'achèvera donc ici en même temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 10,
@@ -127,6 +132,10 @@
       {
         "text": "Noir",
         "nextPage": 225
+      },
+      {
+        "text": "vous poursuivrez alors votre chemin vers le nord",
+        "nextPage": 126
       }
     ]
   },
@@ -184,7 +193,13 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 309
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Barbare des Glaces",
+      "ability": 15,
+      "endurance": 14
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 15,
@@ -203,7 +218,12 @@
   {
     "pageNumber": 16,
     "content": "Vous parvenez tout juste à vous faufiler par l'entrebâillement\navant que la porte de pierre ne claque derrière vous.\nMalheureusement, si vous portez un Sac à Dos sur les épaules, la\nporte, en se fermant, a cassé deux des objets que vous\ntransportiez. Ils vous faut donc les rayer de votre Feuille\nd'Aventure (choisissez vous-même les objets ainsi perdus). Vous\npoursuivrez ensuite votre chemin le long du passage. Rendez-\nvous au 63.",
-    "choices": []
+    "choices": [
+      {
+        "text": "poursuivrez ensuite votre chemin le long du passage",
+        "nextPage": 63
+      }
+    ]
   },
   {
     "pageNumber": 17,
@@ -238,7 +258,11 @@
     "content": "Vous courez le long du pont de glace et vous plongez pour\nattraper la main de Dyce, mais il est trop tard. Une seconde à\npeine avant que vous ne l'ayez atteint, il lâche prise et tombe en\narrière dans le vide béant. Un frisson vous parcourt l'échiné\ntandis que vous entendez son hurlement disparaître dans les\nprofondeurs obscures. Vous scrutez le fond du précipice sans\npouvoir rien faire, lorsqu'Irian pousse soudain un cri : « Là, là-\nbas ! s'exclame-t-il, je suis sûr que j'ai vu quelque chose ! » Vous\nregardez avec attention dans l'espoir de voir quelque chose à\nvotre tour, mais la gorge est aussi noire qu'une nuit sans lune.\nVous vous tournez alors vers Irian qui vous désigne non pas le\nprécipice, mais l'horizon en direction de l'ouest. « Regardez là-\nbas ! » dit-il en montrant une hauteur qui se dessine au loin.\nDeux guerriers vêtus de fourrure se tiennent debout au sommet\nd'une vaste étendue de glace. Ils regardent vers vous, alertés sans\naucun doute par le cri désespéré de Dyce. « Des Barbares des\nGlaces, avertit Fenor, la voix tremblante de peur, s'ils atteignent\nIkaya avant nous, c'est comme si nous étions déjà morts ! » Vous\nêtes à présent à 25 kilomètres de la forteresse et il reste moins de\ntrois heures de jour. Si vous souhaitez poursuivre votre chemin\nen espérant que vous arriverez avant les Barbares, rendez-vous\nau 327. Si vous préférez les attaquer pour les empêcher de\ndonner l'alerte, rendez-vous au 307.",
     "choices": [
       {
-        "text": "donner l'alerte,",
+        "text": "poursuivre votre chemin en espérant que vous arriverez avant les Barbares",
+        "nextPage": 327
+      },
+      {
+        "text": "les attaquer pour les empêcher de donner l'alerte",
         "nextPage": 307
       }
     ]
@@ -330,7 +354,16 @@
   {
     "pageNumber": 28,
     "content": "Essuyant le sang qui vous a éclaboussé le visage, vous sortez de la\ncellule d'un pas chancelant et vous pénétrez dans le couloir. Au\nloin, vous apercevez une bifurcation. Si vous souhaitez fouiller le\ncadavre du Barbare des Glaces, il va falloir le traîner dans la\nlumière du couloir en vous rendant au 210. Si vous préférez\npoursuivre votre mission aussi rapidement que possible,\nrefermez la porte de la cellule et avancez le long du couloir\njusqu'à la bifurcation. Rendez-vous pour cela au 215.",
-    "choices": []
+    "choices": [
+      {
+        "text": "fouiller le cadavre du Barbare des Glaces",
+        "nextPage": 210
+      },
+      {
+        "text": "avancez le long du couloir jusqu'à la bifurcation",
+        "nextPage": 215
+      }
+    ]
   },
   {
     "pageNumber": 29,
@@ -363,8 +396,12 @@
     "content": "Le passage se prolonge tout droit pendant quelques mètres, puis\nil tourne brusquement vers l'est. Un peu plus loin, vous\napercevez une lueur qui filtre à travers une fente dans le mur. En\ny regardant de plus près, vous découvrez une porte secrète et un\npetit levier de pierre. Vous tirez sur le levier et la porte s'ouvre\naussitôt en glissant latéralement, révélant un large couloir bien\néclairé. A votre gauche, à moins de 10 mètres, vous remarquez un\ncroisement. A votre droite, vous voyez une porte de pierre\nfermée. Si vous souhaitez examiner cette porte, rendez-vous au\n203. Si vous préférez vous diriger vers le croisement, rendez-\nvous au 276.",
     "choices": [
       {
-        "text": "fermée. Si vous souhaitez examiner cette porte,",
+        "text": "examiner cette porte",
         "nextPage": 203
+      },
+      {
+        "text": "vous diriger vers le croisement",
+        "nextPage": 276
       }
     ]
   },
@@ -373,7 +410,11 @@
     "content": "La statue se dresse lentement sur l'autel et s'avance vers vous.\nTandis qu'elle s'approche, vous sentez un froid intense rayonner\nde sa surface de pierre lisse. Ses mouvements, cependant, sont\nraides et imprécis ; il ne vous serait pas difficile d'éviter ses bras\ntendus. Si vous souhaitez attaquer cette étrange statue, rendez-\nvous au 150. Si vous préférez la contourner et courir vers l'arcade\nqui se trouve derrière elle, rendez-vous au 306.",
     "choices": [
       {
-        "text": "qui se trouve derrière elle,",
+        "text": "attaquer cette étrange statue",
+        "nextPage": 150
+      },
+      {
+        "text": "la contourner et courir vers l'arcade qui se trouve derrière elle",
         "nextPage": 306
       }
     ]
@@ -386,7 +427,13 @@
         "text": "sans perdre de points d'ENDURANCE,",
         "nextPage": 25
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Languabarb",
+      "ability": 11,
+      "endurance": 35
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 33,
@@ -431,19 +478,24 @@
     "content": "Vous montez plus de cinquante marches avant d'atteindre\nl'arcade. Tandis que vous reprenez votre souffle, vous remarquez\nque des volutes de brume virevoltant et serpentant dans les airs\ndissimulent l'ouverture et ce qui se trouve derrière. Vous vous\napercevez également que la température est beaucoup plus\nfraîche aux environs de cette porte voûtée. Si vous maîtrisez la\nDiscipline Kaï du Sixième Sens et si vous avez le titre Kaï de\nGardien (ce qui signifie que vous maîtrisez 7 Disciplines Kaï),\nrendez-vous au 341. Si vous maîtrisez la Discipline Kaï du\nSixième Sens sans avoir le rang de Gardien, rendez-vous au 124.\nEnfin, si vous ne maîtrisez pas la Discipline Kaï du Sixième Sens,\npréparez-vous à passer à l'attaque et franchissez l'arcade en vous\nrendant au 264.",
     "choices": [
       {
-        "text": "Gardien (ce qui signifie que vous maîtrisez 7 Disciplines Kaï),",
+        "text": "Gardien (ce qui signifie que vous maîtrisez 7 Disciplines Kaï)",
         "nextPage": 341
       },
       {
-        "text": "Sixième Sens sans avoir le rang de Gardien,",
+        "text": "Sixième Sens sans avoir le rang de Gardien",
         "nextPage": 124
+      },
+      {
+        "text": "ne maîtrisez pas la Discipline Kaï du Sixième Sens",
+        "nextPage": 264
       }
     ]
   },
   {
     "pageNumber": 37,
     "content": "Dans l'obscurité, vous n'avez pas vu une étroite et profonde\ncrevasse qui se dissimulait dans le sol de glace. Vous tombez\ndedans, vous faites une chute de plus de 15 mètres, et vous\natterrissez sur des rochers pointus en vous cassant les deux\njambes. Vous êtes immobilisé et il n'y a personne pour venir à\nvotre secours. Votre mission s'achève donc ici en même temps\nque votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 38,
@@ -498,27 +550,40 @@
     "content": "Vous tirez le Glaive magnifique de son fourreau et vous en\nfrappez la porte à coups redoublés. A chaque fois que le Glaive de\nSommer ébrèche l'antique pierre, une gerbe d'étincelles illumine\nla pièce. La lame de l'épée rayonne d'un intense flamboiement\nd'or tandis que vous l'abattez avec force. Le Glaive de Sommer\nparviendra sans nul doute à détruire la pierre, mais il vous\nfaudra plusieurs heures pour pratiquer une ouverture qui vous\npermette de vous enfuir. Si vous souhaitez continuer à marteler\nla porte à l'aide du Glaive de Sommer, rendez-vous au 294. Si\nvous préférez abandonner, vous pouvez quitter la pièce par le\npassage secret aménagé dans le mur nord ; rendez-vous pour cela\nau 145.",
     "choices": [
       {
-        "text": "la porte à l'aide du Glaive de Sommer,",
+        "text": "continuer à marteler la porte à l'aide du Glaive de Sommer",
         "nextPage": 294
+      },
+      {
+        "text": "abandonner, vous pouvez quitter la pièce par le passage secret",
+        "nextPage": 145
       }
     ]
   },
   {
     "pageNumber": 43,
     "content": "Vous tirez le Glaive d'Or hors de son fourreau et, d'un geste, vous\ntranchez les cordes qui vous retiennent. Votre pied est à présent\nlibéré et vous sautez du traîneau quelques secondes avant qu'il\nne disparaisse dans le gouffre. Fenor se précipite vers vous et\nvous tire en arrière, loin du bord instable de la crevasse. Vous\navez perdu vos chiens Kanu, votre traîneau et vos provisions,\nmais vous êtes en vie. Vous sautez tous deux par-dessus la\ncrevasse, Fenor et vous, puis vous rejoignez les autres. Bien que\nvous ayez perdu votre équipement, les guides sont d'accord pour\ncontinuer la mission, tout en sachant que les épreuves qui vous\nattendent désormais seront encore plus pénibles qu'auparavant.\nAu loin, vous apercevez un étroit passage, au bord de la\nbanquise, là où elle jouxte la plaine de Hrod. A la nuit tombée,\nvous atteignez l'abri de ce défilé et vous y installez votre\ncampement. En faisant l'inventaire des provisions qui vous\nrestent, vous vous rendez compte qu'il vous faudra diminuer les\nrations de moitié si vous voulez que toute l'expédition puisse\natteindre la forteresse d'Ikaya. Le maigre Repas qui vous tient\nlieu de dîner vous fait perdre 1 point d'ENDURANCE. Rendez-\nvous au 325.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous au 325",
+        "nextPage": 325
+      }
+    ]
   },
   {
     "pageNumber": 44,
     "content": "« Suivez-moi, dit Loi-Kymar, j'ai écouté attentivement tous les\nbruits de la forteresse pendant plus d'un an et je connais à\nprésent toutes les portes dérobées, tous les passages cachés. Du\nfond de ma cellule, j'en ai appris davantage sur ces couloirs que\nVonotar lui-même avec toute sa ruse. » Vous suivez alors le\nmagicien à travers un réseau de tunnels et de passages secrets,\nd'escaliers et de salles froides et obscures. Au sommet d'un\nescalier particulièrement raide, vous arrivez devant une porte de\npierre. Une odeur étrange et écœurante filtre à travers un petit\njudas. « Ce sont les cuisines », murmure Loi-Kymar en faisant\nune grimace éloquente pour exprimer tout le dégoût que lui\ninspire la pitance servie dans la forteresse. Cette porte secrète est\nsituée juste à côté d'une cheminée dans laquelle brûle un feu\nd'enfer. Un grand chaudron de pierre rempli de gruau est\nsuspendu au-dessus du feu. Deux Barbares des Glaces sont assis\nà une table proche, devant des bols vides. Si vous avez une Potion\nNoire de Ronces des Cimetières, rendez-vous au 79. Si vous avez\nune Potion Verte de Brosse à Potences, rendez-vous au 157. Si\nvous ne possédez aucune de ces deux potions, il vous reste à\nouvrir la porte pour attaquer par surprise les Barbares désarmés\n; rendez-vous pour cela au 270.",
     "choices": [
       {
-        "text": "Noire de Ronces des Cimetières,",
+        "text": "Potion Noire de Ronces des Cimetières",
         "nextPage": 79
       },
       {
-        "text": "une Potion Verte de Brosse à Potences,",
+        "text": "Potion Verte de Brosse à Potences",
         "nextPage": 157
+      },
+      {
+        "text": "ne possédez aucune de ces deux potions",
+        "nextPage": 270
       }
     ]
   },
@@ -607,8 +672,12 @@
     "content": "Vous sentez que les Loups Maudits sont profondément\nendormis. Vous avez une chance de pouvoir passer devant eux,\nde maîtriser le Barbare des Glaces et de refermer la porte de la\ncellule avant qu'ils ne s'éveillent. Vous savez cependant que vous\ncourez là un grand risque et que vos chances de réussite sont\nfaibles. Si vous êtes suffisamment courageux pour entrer dans\nune cellule remplie de Loups Maudits, rendez-vous au 285. Si\nvous préférez ne pas prendre ce risque, il vous faut quitter les\nlieux et descendre l'escalier. Rendez-vous pour cela au 261.",
     "choices": [
       {
-        "text": "une cellule remplie de Loups Maudits,",
+        "text": "entrer dans une cellule remplie de Loups Maudits",
         "nextPage": 285
+      },
+      {
+        "text": "ne pas prendre ce risque, il vous faut quitter les lieux",
+        "nextPage": 261
       }
     ]
   },
@@ -629,18 +698,19 @@
   {
     "pageNumber": 53,
     "content": "Malheureusement, vous avez mal calculé votre élan et la porte se\nreferme en vous broyant les jambes. Dans quelques minutes,\nvous vous serez vidé de votre sang. Votre mission s'achève donc\nici, en même temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 54,
     "content": "Le verre est très fin et vous avez besoin de toute votre\nconcentration et de toute votre habileté pour éviter de le casser.\nUtilisez la Table de Hasard pour obtenir un chiffre. Si vous\npossédez la Discipline Kaï de la Maîtrise Psychique de la Matière\nou celle de la Puissance Psychique, ajoutez 3 au chiffre que vous\naurez tiré. Si votre total est de 0 à 4, rendez-vous au 250. De 5 à\n12, rendez-vous au 268.",
     "choices": [
       {
-        "text": "aurez tiré. Si votre total est de 0 à 4,",
+        "text": "Si votre total est de 0 à 4",
         "nextPage": 250
       },
       {
-        "text": "12,",
+        "text": "De 5 a 12",
         "nextPage": 268
       }
     ]
@@ -692,7 +762,12 @@
   {
     "pageNumber": 59,
     "content": "Emporté par son élan, le Languabarb continue de charger sur la\nmince couche de glace qui cède sous son poids. Sous la surface\ngelée, une ombre file alors vers la créature qui se débat\nfurieusement dans l'eau glacée et l'emporte soudain dans les\nprofondeurs. Tout devient aussitôt étrangement immobile,\ntandis qu'une nappe d'eau rougie s'étale lentement sous la glace.\nVous vous hâtez en direction du tunnel dont les contours\ndéchiquetés se dessinent de l'autre côté du lac. Lorsque vous\nprenez pied sur la glace épaisse de la rive, vous remarquez un\nobjet à terre. C'est un petit Triangle de Pierre Bleue attaché à une\nchaînette. Si vous souhaitez conserver ce Triangle de Pierre\nBleue, passez la chaîne autour de votre cou, et inscrivez l'objet\nsur votre Feuille d'Aventure, dans la case Objets Spéciaux. Entrez\nensuite dans le tunnel en vous rendant au 235.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Entrez ensuite dans le tunnel",
+        "nextPage": 235
+      }
+    ]
   },
   {
     "pageNumber": 60,
@@ -715,7 +790,8 @@
   {
     "pageNumber": 61,
     "content": "Vous pénétrez dans une galerie couverte qui entoure une cour\nintérieure. Soudain, vous entendez le tintement sourd d'une\ncloche de pierre que l'on sonne dans une tour de guet située au-\ndessus de la forteresse ; c'est une cloche d'alarme. La galerie et la\ncour intérieure sont complètement vides ; vous n'apercevez\nqu'un traîneau à voile rangé près de l'entrée. Vous décidez alors\nde prendre le risque d'aller voir et vous descendez l'escalier qui\nmène dans la cour. Quelques instants plus tard, vous découvrez\nque le traîneau est chargé de vivres et de matériel en provenance\nde Liouk. Toute la forteresse est à présent alertée de votre arrivée\net il ne vous est donc plus possible d'accomplir votre mission. La\nseule chose qui vous reste à faire, c'est de vous enfuir sur le\ntraîneau à voile pendant qu'il en est encore temps. Dans dix\njours, vous aurez rejoint le navire Cardonal et vous n'aurez plus\nqu'à reconnaître l'échec de votre mission.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 62,
@@ -732,8 +808,12 @@
     "content": "Vous suivez le passage qui se prolonge vers le nord puis tourne\nbrusquement vers l'ouest. Un peu plus loin, un escalier de pierre\nmène à une arcade située à une dizaine de mètres plus haut. De\nl'autre côté de l'escalier, vous remarquez une autre porte de\npierre à côté de laquelle se trouve un levier fixé au mur. Le levier\nest relevé et la porte fermée. Si vous souhaitez monter l'escalier,\nrendez-vous au 323. Si vous préférez examiner la porte, rendez-\nvous au 246.",
     "choices": [
       {
-        "text": "est relevé et la porte fermée. Si vous souhaitez monter l'escalier,",
+        "text": "monter l'escalier",
         "nextPage": 323
+      },
+      {
+        "text": "examiner la porte",
+        "nextPage": 246
       }
     ]
   },
@@ -764,12 +844,22 @@
   {
     "pageNumber": 66,
     "content": "Le crin qui recouvre la langue des Languabarbs contient un\npuissant venin grâce auquel la créature paralyse ses victimes\navant de les dévorer. Le venin agit en quelques secondes ; or,\nmalheureusement pour vous, le poil rêche de la langue du\nmonstre vous a inoculé le poison et vous perdez très vite\nconscience. Jamais vous ne vous réveillerez de ce sommeil qui\nmet fin à votre mission en même temps qu'à votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 67,
     "content": "L'homme rejette soudain la tête en arrière comme si on venait de\nl'éveiller brusquement d'une transe. « Qui est là ? murmure-t-il\nen scrutant l'obscurité de ses yeux profondément enfoncés dans\nleurs orbites. Y a-t-il quelqu'un ici ou est-ce la folie qui me visite\n?»\nVous tendez alors la main à travers l'ouverture et vous lui faites\nun signe pour montrer où vous êtes. « Loués soient les dieux !\ns'écrit l'homme en se levant d'un bond. Je m'appelle Tygon et je\nsuis un marchand de Radagorn. Les Barbares des Glaces m'ont\ncapturé, ils ont volé ma marchandise et m'ont amené ici.\nJ'attends maintenant d'être reçu par leur nouveau Brumalmarc,\nle mage Vonotar du Sommerlund. C'est lui, semble-t-il, qui doit\ndécider de mon sort. Si vous me libérez, je ferai tout ce qui sera\nen mon pouvoir pour vous aider. » Si vous disposez d'une Corde,\nvous pouvez la descendre à travers l'ouverture et aider l'homme à\nsortir de sa cellule ; rendez-vous pour cela au 328. Si vous n'avez\npas de Corde, ou si vous ne souhaitez pas aider cet homme, vous\nreprendrez votre chemin le long du tunnel en direction de\nl'escalier. Rendez-vous alors au 166.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Si vous disposez d'une Corde",
+        "nextPage": 328
+      },
+      {
+        "text": "Si vous n'avez pas de Corde, ou si vous ne souhaitez pas aider cet homme",
+        "nextPage": 166
+      }
+    ]
   },
   {
     "pageNumber": 68,
@@ -779,7 +869,13 @@
         "text": "Si vous sortez vainqueur de ce combat,",
         "nextPage": 186
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Barbare des Glaces",
+      "ability": 18,
+      "endurance": 28
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 69,
@@ -816,7 +912,12 @@
   {
     "pageNumber": 71,
     "content": "Vous sentez que l'enfant Barbare cache un poignard en os dans\nl'une de ses bottes. Il essaie de s'en saisir pour vous attaquer. A\nprésent que votre Sixième Sens vous a averti du danger, rendez-\nvous au 320.",
-    "choices": []
+    "choices": [
+      {
+        "text": "A présent que votre Sixième Sens vous a averti du danger",
+        "nextPage": 320
+      }
+    ]
   },
   {
     "pageNumber": 72,
@@ -833,7 +934,11 @@
     "content": "Les guides vous regardent comme si vous étiez fou et refusent de\nvous accompagner. Tout d'abord, les chiens Kanu sont réticents\nlorsque vous approchez de la gorge, mais en les encourageant à\nl'aide de quelques bons coups de fouet, vous parvenez à les faire\nchanger d'avis. Il y a moins de 15 centimètres de glace de chaque\ncôté des patins de votre traîneau et vous avez besoin de toute\nvotre concentration pour vous maintenir au centre de ce pont\ngelé. Vous êtes parvenu à moins de 5 mètres du bord opposé\nquand soudain un terrible craquement retentit. Le traîneau est\nalors violemment secoué. Utilisez la Table de Hasard pour\nobtenir un chiffre. Si vous tirez un chiffre entre 0 et 7, rendez-\nvous au 119. Si vous tirez le 8 ou le 9, rendez-vous au 136.",
     "choices": [
       {
-        "text": "vous au 119. Si vous tirez le 8 ou le 9,",
+        "text": "Si vous tirez un chiffre entre 0 et 7",
+        "nextPage": 119
+      },
+      {
+        "text": "Si vous tirez le 8 ou le 9",
         "nextPage": 136
       }
     ]
@@ -843,11 +948,11 @@
     "content": "Les murs de pierre du couloir sont couverts d'étranges sculptures\nqui projettent de grandes ombres. Vous vous servez de ces\nombres pour vous y dissimuler avec l'agilité qui vous est\ncoutumière. Le Barbare des Glaces avance lentement dans votre\ndirection, les muscles tendus, la démarche hésitante. Vous avez\nalors la chair de poule en remarquant pour la première fois que\nses yeux blancs sont dépourvus de pupilles. Retenant votre\nsouffle, vous faites des prières pour qu'il ne vous ait pas vu.\nUtilisez la Table de Hasard pour obtenir un chiffre. Si vous tirez\nun chiffre entre 0 et 4, rendez-vous au 48. Si vous tirez entre 5 et\n9, rendez-vous au 287.",
     "choices": [
       {
-        "text": "un chiffre entre 0 et 4,",
+        "text": "Si vous tirez un chiffre entre 0 et 4",
         "nextPage": 48
       },
       {
-        "text": "9,",
+        "text": "entre 5 et 9",
         "nextPage": 287
       }
     ]
@@ -871,15 +976,28 @@
     "content": "Vous continuez à monter des marches jusqu'à ce que vous\narriviez devant une étroite porte de pierre. Comme toutes les\nautres portes que vous avez vues jusqu'à présent, celle-ci est\négalement actionnée par un levier fixé au mur. Un petit judas a\nété aménagé au milieu de la porte. Avec prudence, vous collez un\nœil contre cette minuscule ouverture et vous jetez un regard dans\nla petite pièce située derrière. Vous apercevez alors trois Loups\nMaudits endormis sur le sol de cette cellule. La porte d'une autre\ncellule s'ouvre dans le mur nord et vous apercevez, se découpant\ndans l'embrasure, la silhouette d'un Barbare des Glaces qui vous\ntourne le dos. Si vous maîtrisez la Discipline Kaï de la Chasse ou\ncelle de la Communication Animale, rendez-vous au 51. Si vous\nne possédez aucune de ces deux Disciplines, vous pouvez ouvrir\nla porte et attaquer les Loups Maudits en vous rendant au 137. Si\nvous préférez vous éloigner de la porte de cette cellule,\nredescendez l'escalier en vous rendant au 261.",
     "choices": [
       {
-        "text": "celle de la Communication Animale,",
+        "text": "maîtrisez la Discipline Kaï de la Chasse ou celle de la Communication Animale",
         "nextPage": 51
+      },
+      {
+        "text": "ne possédez aucune de ces deux Disciplines, vous pouvez ouvrir la porte et attaquer les Loups Maudits",
+        "nextPage": 137
+      },
+      {
+        "text": "préférez vous éloigner de la porte de cette cellule",
+        "nextPage": 261
       }
     ]
   },
   {
     "pageNumber": 77,
     "content": "Vous reconnaissez l'odeur âcre de Ronces des Cimetières que l'on\na distillées. C'est là un poison violent et les simples vapeurs qui\ns'en dégagent sont suffisantes pour vous faire tourner la tête et\nvous troubler la vue. Vous vous hâtez de vous débarrasser du\nverre cassé et vous vous couvrez le nez avec la manche de votre\ntunique. Les vapeurs empoisonnées vous font perdre 1 point\nd'ENDURANCE. Retournez au 10 pour faire un autre choix.",
-    "choices": []
+    "choices": [
+      {
+        "text": "rendez-vous au 305",
+        "nextPage": 305
+      }
+    ]
   },
   {
     "pageNumber": 78,
@@ -889,12 +1007,23 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 245
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Bakanal",
+      "ability": 19,
+      "endurance": 30
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 79,
     "content": "Vous entrouvrez la porte, juste assez pour pouvoir verser la fiole\nde Ronces des Cimetières dans le gruau bouillonnant. Vous\nn'avez pas à attendre très longtemps : bientôt, les Barbares des\nGlaces ont absorbé leur dernier dîner, et dès que leurs cadavres\nsont étendus sur le sol, vous commencez à inspecter la cuisine en\ntoute tranquillité. C'est une petite cuisine qui comporte des\nréserves d'herbes étonnamment abondantes. « Elles viennent\nsans doute des comptoirs de Liouk », dit Loi-Kymar en regardant\nle contenu des bocaux et des pots rangés sur des étagères. Il\nprend plusieurs bocaux d'herbes et les entasse dans les vastes\npoches de sa toge. Vous avez hâte, pour votre part, de quitter les\nlieux, de peur que d'autres gardes n'arrivent, mais le vieux\nmagicien semble complètement absorbé par ses découvertes. Il\nouvre deux petits bocaux et en mélange le contenu en insistant\npour que vous partagiez avec lui cette mixture. « Elle vous\ndonnera des forces, Loup Solitaire », assure-t-il. Tandis que vous\nmangez les feuilles séchées qu'il vous offre, vous sentez tout votre\ncorps rayonner de chaleur. Vous gagnez 6 points d'ENDURANCE\nà ajouter à votre total actuel. Rendez-vous à présent au 301.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous à présent au 301",
+        "nextPage": 301
+      }
+    ]
   },
   {
     "pageNumber": 80,
@@ -912,10 +1041,14 @@
   },
   {
     "pageNumber": 81,
-    "content": "Vous vous apprêtez à cacher le cadavre sous l'escalier lorsque\nvous entendez soudain d'étranges cris et des hurlements rauques\nqui viennent du couloir. Un groupe de Barbares des Glaces\ns'avance vers vous. La vue de ces guerriers vous laisse un instant\nbouche bée : ce sont en effet de hideux mutants. Rempli de\ncrainte et de dégoût, vous montez l'escalier quatre à quatre\njusqu'à un vaste palier où vous trouvez un couloir orienté nord-\nsud. Si vous souhaitez courir en direction du nord, rendez-vous\nau 198. Si vous préférez aller vers le sud, rendez-vous au 69.",
+    "content": "Vous vous apprêtez à cacher le cadavre sous l'escalier lorsque\nvous entendez soudain d'étranges cris et des hurlements rauques\nqui viennent du couloir. Un groupe de Barbares des Glaces\ns'avance vers vous. La vue de ces guerriers vous laisse un instant\nbouche bée : ce sont en effet de hideux mutants. Rempli de\ncrainte et de dégoût, vous montez l'escalier quatre à quatre\njusqu'à un vaste palier où vous trouvez un couloir orienté nord-\nsud. Si vous souhaitez courir en direction du nord, rendez-vous\nau 189. Si vous préférez aller vers le sud, rendez-vous au 69.",
     "choices": [
       {
-        "text": "au 198. Si vous préférez aller vers le sud,",
+        "text": "courir en direction du nord",
+        "nextPage": 189
+      },
+      {
+        "text": "aller vers le sud",
         "nextPage": 69
       }
     ]
@@ -946,7 +1079,13 @@
         "text": "Si vous sortez vainqueur de ce combat,",
         "nextPage": 313
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Barbares des Glaces Mutants",
+      "ability": 18,
+      "endurance": 24
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 84,
@@ -1008,17 +1147,29 @@
         "text": "vous sortez vainqueur de ce combat,",
         "nextPage": 269
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Javek",
+      "ability": 15,
+      "endurance": 15
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 89,
     "content": "Le Barbare des Glaces se met à hurler dans votre dos, en\nprononçant des paroles incompréhensibles. Vous avez été\ndécouvert. Maudissant votre malchance, vous dégainez aussitôt\nvotre arme. En vous retournant, vous voyez le Barbare tirer sur\nun levier fixé au mur du fond. Trois Loups Maudits apparaissent\nalors dans l'encadrement d'une porte secrète qui vient de\ns'ouvrir. Les trois créatures se précipitent sur vous et vous allez\ndevoir les combattre jusqu'à la mort, chacune à son tour.\nHABILETÉ ENDURANCE\nPremier LOUP MAUDIT 15 24\nDeuxième LOUP MAUDIT 14 23\nTroisième LOUP MAUDIT 14 20\nSi vous sortez vainqueur de ce combat, rendez-vous au 161.",
     "choices": [
       {
-        "text": "Si vous sortez vainqueur de ce combat,",
+        "text": "Si vous sortez vainqueur de ce combat",
         "nextPage": 161
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Loup Maudit",
+      "ability": 15,
+      "endurance": 24
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 90,
@@ -1045,33 +1196,48 @@
     "content": "Vous suivez le passage pendant quelques minutes jusqu'à ce qu'il\ntourne vers la gauche ; à votre grande consternation, vous\nconstatez alors qu'au-delà de cette courbe une fissure s'est\nouverte, provoquant l'écroulement du sol et des murs. Un large\ntrou noir béant s'ouvre devant vous. Si vous avez une Corde,\nrendez-vous au 133. Dans le cas contraire, vous n'aurez plus qu'à\nrebrousser chemin pour aller explorer l'autre tunnel. Rendez-\nvous pour cela au 297.",
     "choices": [
       {
-        "text": "trou noir béant s'ouvre devant vous. Si vous avez une Corde,",
+        "text": "Si vous avez une Corde",
         "nextPage": 133
+      },
+      {
+        "text": "rebrousser chemin pour aller explorer l'autre tunnel",
+        "nextPage": 297
       }
     ]
   },
   {
     "pageNumber": 93,
     "content": "Vous luttez pendant presque cinq minutes qui vous semblent\ninterminables tant la douleur que vous éprouvez est intense. Peu\nà peu, toute volonté vous quitte, vous ne pouvez plus résister à la\ndomination psychique de Vonotar et vous vous jetez sur la lame\ndu Glaive de Sommer, ainsi qu'il vous l'ordonne. Votre mission\ns'achève ici en même temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 94,
     "content": "Vous avez glissé et vous êtes tombé dans l'eau glacée, vous hurlez\nde douleur tandis que le froid vous saisit jusqu'à la moelle des os.\nVous luttez de toutes vos forces pour essayer de regagner la rive,\nmais c'est une entreprise désespérée. Utilisez la Table de Hasard\npour obtenir un chiffre. Si vous tirez un chiffre entre 0 et 6, vous\navez de la chance : vous parvenez en effet à vous hisser hors de\nl'eau glacée et vous vous écroulez épuisé sur la rive. Vous perdez\n3 points d'ENDURANCE avant i le vous rendre au 176. Si vous\ntirez un chiffre entre 7 et 9, l'eau glacée a tôt fait de vous\nparalyser les bras et quelques minutes plus tard vous vous êtes\nnoyé. Votre mission s'achève donc ici.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Si vous tirez un chiffre entre 0 et 6",
+        "nextPage": 176
+      }
+    ]
   },
   {
     "pageNumber": 95,
     "content": "11' froid intense et les assauts incessants du cyclone épuisent très\nvite vos réserves d'énergie. Un engourdissement inexorable vous\nenvahit tandis que le Démon de Glace prend possession de votre\ncorps, impatient de commencer une nouvelle existence au cours\nde laquelle il exercera ses redoutables pouvoirs. Pour les\ncréatures d'Ikaya et bientôt du pays de Kalte tout entier, l'aube\nvient de se lever sur un âge de tyrannie, une tyrannie terrifiante\net implacable dont vous ne verrez cependant jamais les effets, car\nvotre vie s'achève ici, en même temps, bien entendu, que votre\nmission.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 96,
     "content": "Vous vous enveloppez dans votre cape blanche et vous vous\ncachez derrière une stalagmite, à quelques mètres de la rive du\nlac. Retenant votre souffle, le corps parfaitement immobile, vous\nentendez les pas et les grognements du Languabarb s'approcher\nde plus en plus près. Pour savoir si la mise en pratique de votre\nDiscipline Kaï vous a permis de passer inaperçu, utilisez la Table\nde Hasard. Si vous vous êtes enduit le torse d'huile de Bakanal,\nvous ajouterez 2 au chiffre obtenu. Si le total se situe entre 0 et 8,\nrendez-vous au 59. Si ce total se situe entre 9 et 11, rendez-vous\nau 214.",
     "choices": [
       {
-        "text": "vous ajouterez 2 au chiffre obtenu. Si le total se situe entre 0 et 8,",
+        "text": "Si le total se situe entre 0 et 8",
         "nextPage": 59
+      },
+      {
+        "text": "Si ce total se situe entre 9 et 11",
+        "nextPage": 214
       }
     ]
   },
@@ -1111,7 +1277,13 @@
         "text": "Si vous sortez vainqueur de l'affrontement,",
         "nextPage": 230
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Monstre d'Enfer",
+      "ability": 22,
+      "endurance": 30
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 100,
@@ -1130,7 +1302,12 @@
   {
     "pageNumber": 101,
     "content": "Vous avez de la chance, car les Bakanals ont pour particularité de\ndormir profondément et longtemps, parfois trois jours de suite\nlorsqu'ils ont fait un bon repas. Aussi n'avez-vous eu aucune\ndifficulté à plonger la créature dans un sommeil éternel : le coup\nque vous lui avez porté l'a tuée sans qu'elle se rende compte de\nrien. Vous pouvez à présent quitter les lieux en vous rendant au\n235.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Vous pouvez à présent quitter les lieux",
+        "nextPage": 235
+      }
+    ]
   },
   {
     "pageNumber": 102,
@@ -1151,18 +1328,28 @@
     "content": "Le lendemain, un fort vent se lève en provenance du nord. Des\nheures durant, il vous souffle au visage sans un instant de répit.\nLa banquise de Liouk se transforme peu à peu, au fur et à mesure\nde votre avance, en une masse de blocs de glace déchiquetés qui\npointent leurs arêtes vers le ciel. Vous ne parvenez à progresser\nque lentement et avec difficulté. Vers midi, vous tremblez de\nfroid, vos lèvres gercées saignent et les rafales de vent glacé vous\nont recouvert des pieds à la tête d'une fine pellicule de neige.\nVous dirigez votre traîneau vers un étroit passage qui marque la\njonction entre la banquise et la plaine de Hrod. Ce défilé vous\nprotège du vent et, pour la première fois de la journée, vous\nbénéficiez d'une bonne visibilité. Soudain, des cris au-dessus de\nvotre tête vous indiquent que vous n'êtes pas, vos guides et vous-\nmême, les seules créatures à avoir choisi cet endroit pour vous\nabriter. Quelques secondes plus tard, en effet, trois gros Bakanals\nsautant du mur de glace se jettent sur vos traîneaux et y\natterrissent dans un grand fracas. Votre compagnon de traîneau,\nIrian, est projeté sur la glace et tombe assommé. Un Bakanal\naffamé vous empêche de lui porter secours et il est inutile de\ntenter d'échapper à la créature Carnivore : il vous faut la\ncombattre jusqu'à la mort de l'un de vous deux.\nBAKANAL HABILETÉ: 19 ENDURANCE: 30\nSi vous sortez vainqueur de l'affrontement, rendez-vous au 305.",
     "choices": [
       {
-        "text": "Si vous sortez vainqueur de l'affrontement,",
+        "text": "Si vous sortez vainqueur de l'affrontement",
         "nextPage": 305
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Bakanal",
+      "ability": 19,
+      "endurance": 30
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 104,
     "content": "Vous arrivez enfin devant une grande porte de pierre. A la\ndifférence des autres, celle-ci n'est pas actionnée par un levier\nmais vous remarquez en revanche une petite fente creusée dans\nle mur, juste à côté de la porte. Si vous possédez un Disque de\nPierre Bleue, rendez-vous au 135. Dans le cas contraire, il vous\nfaudra rebrousser chemin le long du couloir et prendre la\ndirection du sud en vous rendant au 330.",
     "choices": [
       {
-        "text": "Pierre Bleue,",
+        "text": "Si vous possédez un Disque de Pierre Bleue",
         "nextPage": 135
+      },
+      {
+        "text": "Dans le cas contraire, il vous faudra rebrousser chemin",
+        "nextPage": 330
       }
     ]
   },
@@ -1187,19 +1374,34 @@
   {
     "pageNumber": 106,
     "content": "Lorsque vous franchissez l'ouverture pratiquée dans la porte,\nvous voyez trois Barbares des Glaces qui avancent vers vous le\nlong du couloir. Ce sont des guerriers vêtus de fourrure et armés\nd'épées en os qui sont chacune incrustée de dents pointues sur\ntoute la longueur de la lame. En dépit de la rapidité de leur\nattaque, vous avez le temps de remarquer un étrange détail :\nleurs yeux sont complètement blancs et dépourvus de pupilles.\nIls vous attaquent comme un seul homme, portant leurs coups et\névitant les vôtres d'un même mouvement. Il vous faut les\ncombattre comme s'il s'agissait d'un seul et même adversaire.\nCes j trois Barbares sont insensibles à la Discipline Kaï de la\nPuissance Psychique.\nBARBARES DES GLACES HABILETÉ : 19 ENDURANCE : 36\nVous pouvez prendre la fuite à tout moment en vous glissant à\nnouveau dans la salle que vous venez de quitter pour vous\néchapper ensuite par le passade orienté au nord. Rendez-vous\npour cela au 145. Si vous sortez vainqueur du combat, rendez-\nvous au 338.",
-    "choices": []
+    "monster": {
+      "name": "Barbares des glaces",
+      "ability": 19,
+      "endurance": 36,
+      "isBlocking": false
+    },
+    "choices": [
+      {
+        "text": "prendre la fuite par le passage orienté au nord",
+        "nextPage": 145
+      },
+      {
+        "text": "sortez vainqueur du combat",
+        "nextPage": 338
+      }
+    ]
   },
   {
     "pageNumber": 107,
     "content": "Lorsque vous jetez un regard dans la vaste caverne de glace, un\npeu plus loin, vous apercevez avec horreur trois grosses créatures\nà l'aspect repoussant qui sont en train de se battre en échangeant\ndes coups de griffes, Elles se disputent une carcasse déchirée,\nétalée sur le sol. Ces créatures sont des Languabarbs, de\nsauvages 1 prédateurs du pays de Kalte. Si vous vous êtes enduit\nla peau d'huile de Bakanal, rendez-vous au 202. Si vous n'êtes\npas imprégné d'huile de Bakanal, vous pouvez éviter les\nLanguabarbs en revenant sur vos pas, en direction de l'autre\ntunnel. Rendez-vous pour cela au 284. Si enfin vous souhaitez\nattaquer les trois créatures, rendez-vous au 138.",
     "choices": [
       {
-        "text": "la peau d'huile de Bakanal,",
-        "nextPage": 202
+        "text": "éviter les Languabarbs en revenant sur vos pas",
+        "nextPage": 284
       },
       {
-        "text": "attaquer les trois créatures,",
-        "nextPage": 138
+        "text": "attaquer les trois créatures",
+        "nextPage": 238
       }
     ]
   },
@@ -1302,27 +1504,40 @@
     "content": "Vous vous apercevez qu'un grand nombre de ces os répandus\nparmi les stalagmites ont appartenu à des squelettes humains.\nDes crânes fracassés, des phalanges, des morceaux de thorax\nsont ainsi à demi ensevelis dans la glace. Vous êtes sur le point\nd'abandonner vos investigations lorsqu'une petite boîte en os\ngravé attire votre attention. Si vous souhaitez ouvrir cette boîte,\nrendez-vous au 218. Si vous préférez ne pas y toucher, vous\npouvez à présent examiner la porte de la forteresse en vous\nrendant au 52.",
     "choices": [
       {
-        "text": "gravé attire votre attention. Si vous souhaitez ouvrir cette boîte,",
+        "text": "ouvrir cette boîte",
         "nextPage": 218
+      },
+      {
+        "text": "examiner la porte de la forteresse",
+        "nextPage": 52
       }
     ]
   },
   {
     "pageNumber": 116,
     "content": "Vous versez la potion sur votre peau irritée et meurtrie, et vous\nressentez immédiatement les effets bienfaisants du liquide. La\ndouleur disparaît peu à peu et l'enflure se résorbe. La Pierre\nRayonnante est une roche maudite qui émet une énergie mortelle\nà laquelle tous les êtres vivants sont sensibles. Si vous n'aviez pas\neu la Potion de Laumspur en votre possession, la pierre\nmaléfique vous aurait certainement tué. Vous jetez la Pierre\nRayonnante ainsi que la fiole à présent vide, puis vous mettez\nvotre Feuille d'Aventure à jour. Vous poursuivrez ensuite votre\nchemin le long du couloir en vous rendant au 97.",
-    "choices": []
+    "choices": [
+      {
+        "text": "poursuivre votre chemin le long du couloir",
+        "nextPage": 97
+      }
+    ]
   },
   {
     "pageNumber": 117,
     "content": "Le vent se calme au cours de la nuit et le jour se lève en une aube\npaisible. Loin au nord, se dessinant à l'horizon, vous apercevez\nIkaya, la forteresse de glace. L'immense citadelle aux tours de\ncristal offre un spectacle fascinant, rendu plus magnifique encore\npar un étrange phénomène : la forteresse semble en effet avoir\nété retournée et suspendue dans les airs, au-dessus d'un gros\nnuage. « C'est un mirage, comme il y en a parfois dans les terres\nde Kalte, vous explique Dyce ; ici, l'air est tout à fait pur, sans la\nmoindre poussière et la terre se reflète dans les nuages. C'est\nbien Ikaya que vous voyez là-bas, mais la forteresse elle-même se\ntrouve au-delà de l'horizon. Elle doit être à une soixantaine de\nkilomètres, environ. » Dyce saisit une pelle et entreprend de\ndégager les chiens Kanu enterrés sous la neige. Vous réveillez les\nautres, et tout le monde prend son petit déjeuner avant de\nrepartir. Vers midi, vous atteignez le bord d'une gorge profonde.\nElle est large d'une douzaine de mètres et, apparemment, il\nn'existe aucun moyen de la traverser. Vous êtes donc contraint de\nsuivre le bord du précipice en direction de l'est. Après avoir\nparcouru ainsi plus de quatre kilomètres, vous découvrez un\nétroit pont de glace. Il semble malheureusement fort mince, et il\nest peu probable qu'il puisse supporter le poids d'un traîneau\nchargé. A présent, vous distinguez à l'horizon la forteresse\nd'Ikaya mais, cette fois, ce n'est pas un mirage. Si vous souhaitez\nprendre le risque de traverser le pont avec votre traîneau,\nrendez-vous au 73. Si vous préférez décharger le traîneau et\ntransporter votre équipement de l'autre côté à raison d'un objet à\nla fois, rendez-vous au 162. Si enfin vous jugez plus sage\nd'abandonner votre traîneau et de continuer à pied, rendez-vous\nau 223.",
     "choices": [
       {
-        "text": "prendre le risque de traverser le pont avec votre traîneau,",
+        "text": "prendre le risque de traverser le pont avec votre traîneau",
         "nextPage": 73
       },
       {
-        "text": "la fois,",
+        "text": "décharger le traîneau et transporter votre équipement",
         "nextPage": 162
+      },
+      {
+        "text": "abandonner votre traîneau et continuer à pied",
+        "nextPage": 223
       }
     ]
   },
@@ -1331,7 +1546,7 @@
     "content": "Le vieil homme est beaucoup trop faible pour grimper tout seul.\nVous lui conseillez alors d'attacher la Corde autour de sa taille\npour que vous puissiez ainsi le hisser hors de sa prison. Avec des\ngestes lents, il suit vos instructions et, lorsqu'il est enfin prêt,\nvous avez la surprise de constater, en le soulevant, qu'il ne pèse\npas plus lourd qu'un enfant. Quelques minutes plus tard, vous\navez réussi à le tirer hors de son cachot et il se retrouve en face\nde vous, dans le couloir. Il vous faut à présent découvrir qui il\nest. Rendez-vous au 56.",
     "choices": [
       {
-        "text": "est",
+        "text": "Il vous faut à présent découvrir qui il est",
         "nextPage": 56
       }
     ]
@@ -1341,8 +1556,12 @@
     "content": "De gros morceaux de glace se détachent du pont et une large\nfissure apparaît. Vous parvenez malgré tout à maintenir le\ntraîneau sur sa trajectoire et vous atteignez le bord opposé de la\ngorge. Malheureusement, vous avez tôt fait de constater que l'un\ndes patins est cassé et irréparable. Vous êtes donc contraint\nd'abandonner le traîneau et de continuer à pied. Il contient\ntoujours, cependant, du matériel fort utile. Vous pouvez\nemporter une partie de ce matériel en le rangeant dans votre Sac\nà Dos (mais souvenez-vous que vous n'avez pas le droit de\ntransporter plus de 8 objets). Voici le choix qui vous est offert :\n- Des vivres équivalents à 5 Repas (chaque Repas compte pour\nun objet et vous pouvez en prendre un ou plusieurs selon vos\nbesoins).\n- Des Couvertures de Fourrure (elles comptent pour 2 objets).\n-Une Tente (elle compte pour 3 objets). - Une Corde (elle compte\npour 2 objets).\nFenor, Irian et Dyce se hâtent de vous rejoindre, mais lorsqu'ils\nsont parvenus au milieu du pont, une catastrophe se produit.\nDyce, en effet, se prend le pied dans une fissure et tombe.\nHorrifié, vous le voyez glisser dans le vide ; au dernier moment,\ncependant, il parvient à s'accrocher au bord du pont et reste ainsi\nsuspendu, les doigts crispés sur la glace. « Au secours ! Aidez-\nmoi ! » hurle-t-il, tandis que ses mains glissent peu à peu. Si vous\nsouhaitez venir en aide à Dyce, rendez-vous au 19. Si vous\nestimez qu'il est trop dangereux de lui porter secours, rendez-\nvous au 257.",
     "choices": [
       {
-        "text": "souhaitez venir en aide à Dyce,",
+        "text": "venir en aide à Dyce",
         "nextPage": 19
+      },
+      {
+        "text": "trop dangereux de lui porter secours",
+        "nextPage": 257
       }
     ]
   },
@@ -1351,8 +1570,12 @@
     "content": "Le cyclone souffle avec tant de rage qu'il en déchire presque vos\nvêtements en vous bombardant sans cesse d'éclats de pierre ou\nde glace, pointus comme des aiguilles. Lorsque vous levez le\nGlaive de Sommer, un mugissement sonore retentit à vos\noreilles. C'est un hurlement d'horreur et de désespoir. Vous\nportez alors un coup de votre arme redoutable, fendant le\ntourbillon, transperçant la substance impalpable du Démon. Un\ninstant plus tard, le cyclone a disparu et les effroyables\ngémissements se sont tus. Il ne reste plus, éparpillés sur le sol,\nque les débris fracassés d'une statue creuse. Si vous souhaitez\nexaminer l'autel, rendez-vous au 274. Si vous préférez quitter le\ntemple, vous pouvez partir en franchissant l'arcade située au\nnord. Rendez-vous pour cela au 306.",
     "choices": [
       {
-        "text": "examiner l'autel,",
+        "text": "examiner l'autel",
         "nextPage": 274
+      },
+      {
+        "text": "quitter le temple par l'arcade située au nord",
+        "nextPage": 306
       }
     ]
   },
@@ -1384,7 +1607,13 @@
         "text": "sans perdre de points d'ENDURANCE,",
         "nextPage": 174
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Languabarb",
+      "ability": 11,
+      "endurance": 30
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 124,
@@ -1433,8 +1662,12 @@
     "content": "Vous sentez que ce Casque est doté d'un pouvoir magique qui\npourrait se révéler utile lors de vos futurs combats. Vous ne\ndécelez aucune onde maléfique provenant de cet objet ni du\ncoffre de pierre dans lequel il est conservé. Si vous souhaitez\nprendre ce Casque et vous en coiffer, rendez-vous au 308. Si\nvous continuez malgré tout à vous méfier des effets nocifs qu'il\npourrait produire, n'y touchez pas et dirigez-vous plutôt vers\nl'escalier pour voir où il mène. Rendez-vous pour cela au 323.",
     "choices": [
       {
-        "text": "prendre ce Casque et vous en coiffer,",
+        "text": "prendre ce Casque et vous en coiffer",
         "nextPage": 308
+      },
+      {
+        "text": "dirigez-vous vers l'escalier",
+        "nextPage": 323
       }
     ]
   },
@@ -1443,11 +1676,15 @@
     "content": "Lorsque la porte de pierre s'ouvre en grinçant, l'homme, dans\nune réaction de surprise, rejette la tête en arrière.\n« Qui est là ?» murmure-t-il d'une voix fluette et étranglée. Ses\nyeux brillent dans l'ombre de son capuchon en lambeaux. Puis\nsoudain, il semble vous reconnaître et se relève d'un bond. « Un\nSeigneur Kaï ! s'exclame-t-il, les dieux soient loués ! Je m'appelle\nTygon et je suis un marchand de Ragadorn. Les Barbares des\nGlaces m'ont capturé à Liouk et amené ici. J'attends à présent\nd'être reçu en audience par leur nouveau Brumalmarc, le sorcier\ndu Sommerlund qu'ils appellent Vonotar. Il semble que ce soit\nlui qui doive décider de mon sort. Mais si vous me délivrez de ce\npentagramme magique, je ferai de mon mieux pour vous aider. »\nCe pentagramme ne vous est pas inconnu : il s'agit en effet d'un\ncercle de claustration, une prison magique qui ne peut être\ndétruite que de l'extérieur. Pour libérer cet homme, il vous suffit\nd'effacer une partie du cercle tracé sur le sol. Si vous souhaitez le\nlibérer, rendez-vous au 170. S'il vous est arrivé de vous rendre à\nRagadorn, vous voudrez peut-être lui poser quelques questions\nsur cette ville afin de dissiper les soupçons que vous pourriez\navoir quant à son identité véritable ; rendez-vous pour cela au 11.\nEnfin, si vous préférez refermer la porte de la cellule et retourner\ndans le couloir principal, rendez-vous au 254.",
     "choices": [
       {
-        "text": "libérer,",
+        "text": "libérer cet homme",
         "nextPage": 170
       },
       {
-        "text": "dans le couloir principal,",
+        "text": "lui poser quelques questions sur Ragadorn",
+        "nextPage": 11
+      },
+      {
+        "text": "retourner dans le couloir principal",
         "nextPage": 254
       }
     ]
@@ -1481,8 +1718,12 @@
     "content": "Vous sentez que ces boutons commandent quelque ancien\nmécanisme et que, si on appuie dessus dans le bon ordre, une\nquelconque cachette, coffre ou compartiment secret, sera\ndévoilée. Mais il se peut aussi qu'en appuyant dessus dans le\nmauvais ordre ils déclenchent un piège. Si vous souhaitez\nappuyer sur ces boutons, rendez-vous au 227. Si vous ne voulez\npas prendre le risque d'actionner un piège, vous pouvez quitter le\ntemple en vous rendant au 306.",
     "choices": [
       {
-        "text": "appuyer sur ces boutons,",
+        "text": "appuyer sur ces boutons",
         "nextPage": 227
+      },
+      {
+        "text": "quitter le temple",
+        "nextPage": 306
       }
     ]
   },
@@ -1491,15 +1732,28 @@
     "content": "A moins que vous ne veniez de prendre un Repas, vous perdez 3\npoints d'ENDURANCE, tant vous êtes affamé. Vous poursuivez\nvotre chemin le long du tunnel pendant encore plus d'un\nkilomètre, mais bientôt, vous êtes fatigué et vous vous arrêtez\npour dormir. Lorsque vous vous réveillez, vous vous sentez\nmieux ; vous n'avez cependant aucune idée du temps qu'a duré\nvotre sommeil, car la lumière qui éclaire ces grottes ne change\njamais, qu'il fasse jour ou nuit. Vous reprenez votre marche en\ncontinuant tout droit pendant des kilomètres. Vous traversez\nplusieurs grottes immenses où se dressent d'imposants piliers de\ncristal. Dans l'une de ces vastes cavernes, vous êtes fasciné par\nune magnifique voûte de glace étincelante. Mais un peu plus loin,\nun spectacle encore plus impressionnant vous attend. Un étroit\npassage conduit en effet à une corniche qui longe le bord d'un\ngouffre gigantesque de près d'un kilomètre de largeur. Vous\ncontournez ce vide terrifiant en essayant de ne pas baisser le\nregard vers ses profondeurs agitées par les vents, à plusieurs\nkilomètres au-dessous. Vous marchez sur la corniche depuis\nseulement quelques minutes lorsqu'un bruit dans votre dos attire\nvotre attention. Vous jetez un coup d'œil en arrière et vous vous\napercevez alors avec horreur qu'un monstrueux serpent à deux\ntêtes vous suit à quelques mètres. Si vous maîtrisez les\nDisciplines Kaï de l'Orientation ou de la Communication\nAnimale, rendez-vous au 229. Dans le cas contraire, rendez-vous\nau 88.",
     "choices": [
       {
-        "text": "Animale,",
+        "text": "Orientation ou Communication Animale",
         "nextPage": 229
+      },
+      {
+        "text": "dans le cas contraire",
+        "nextPage": 88
       }
     ]
   },
   {
     "pageNumber": 133,
     "content": "Une coupe de M'iare est suspendue au plafond, juste au-dessus\nde la crevasse. Si vous voulez essayer d'attacher votre Corde à\ncette coupe pour vous élancer ensuite de l'autre côté, rendez-\nvous au 201. Si vous ne voulez pas prendre le risque de tomber\ndans la crevasse, vous devrez revenir sur vos pas et emprunter un\nautre chemin en vous rendant au 297.",
-    "choices": []
+    "choices": [
+      {
+        "text": "revenir sur vos pas et emprunter un autre chemin",
+        "nextPage": 297
+      },
+      {
+        "text": "attacher votre Corde à cette coupe",
+        "nextPage": 201
+      }
+    ]
   },
   {
     "pageNumber": 134,
@@ -1532,7 +1786,7 @@
   {
     "pageNumber": 136,
     "content": "Soudain, vous êtes projeté en arrière tandis que le pont de glace\ncommence à se disloquer. Pendant quelques secondes, le\ntraîneau reste en équilibre instable sur le bord, comme une\nbalançoire, et vous entendez les cris d'horreur de vos guides\nimpuissants à vous venir en aide. C'est d'ailleurs là le dernier son\nque vous entendrez jamais, car le pont s'effondre et vous\nprécipite dans le gouffre. Vous faites une chute de 600 mètres au\nterme de laquelle vous êtes, bien entendu, tué sur le coup. Votre\nmission s'achève donc ici en même temps que votre vie.",
-    "choices": []
+    "endingType": "death"
   },
   {
     "pageNumber": 137,
@@ -1542,12 +1796,33 @@
         "text": "Si vous sortez vainqueur de l'affrontement,",
         "nextPage": 28
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Barbare des Glaces et Loup Maudit",
+      "ability": 30,
+      "endurance": 30
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 138,
     "content": "Vous avez pris les Languabarbs par surprise et vous parvenez à\ntuer l'un d'eux avant que les autres n'aient le temps de réagir. Les\ndeux créatures vous attaquent l'une après l'autre en essayant de\nvous piquer avec les poils rêches qui leur couvrent la langue.\nHABILETÉ ENDURANCE\nPremier LANGUABARB 11 35\nDeuxième LANGUABARB 10 32\nSi vous perdez des points d'ENDURANCE au cours de ce combat,\nrendez-vous immédiatement au 66. Si vous parvenez à\nl'emporter sans perdre un seul point d'ENDURANCE, rendez-\nvous au 25. Enfin, vous avez le droit de prendre la fuite en vous\nrendant au 277.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Si vous êtes vainqueur",
+        "nextPage": 25
+      },
+      {
+        "text": "prendre la fuite",
+        "nextPage": 277
+      }
+    ],
+    "monster": {
+      "monsterName": "Languabarb",
+      "ability": 11,
+      "endurance": 35
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 139,
@@ -1578,36 +1853,55 @@
     "content": "L'homme observe un instant de silence, puis il donne sa réponse\n: « Killean le Suzerain. » Si vous souhaitez à présent effacer le\npentagramme pour le libérer, rendez-vous au 170. Si vous ne\nvoulez pas le libérer, refermez la porte de sa cellule et retournez\ndans le couloir principal en vous rendant au 254.",
     "choices": [
       {
-        "text": "pentagramme pour le libérer,",
+        "text": "effacer le pentagramme pour le libérer",
         "nextPage": 170
+      },
+      {
+        "text": "retourner dans le couloir principal",
+        "nextPage": 254
+      },
+      {
+        "text": "continuer votre exploration",
+        "nextPage": 245
       }
     ]
   },
   {
     "pageNumber": 142,
     "content": "Lorsque vous abattez votre arme sur le rocher, des centaines\nd'échardes argentées jaillissent sous le coup et le bloc commence\nà se fissurer, mais les Languabarbs sont déjà sur vous. Utilisez la\nTable de Hasard pour obtenir un chiffre. Si vous tirez un chiffre\nentre 0 et 5, le bloc s'effondre et obstrue l'entrée de la grotte.\nVous pouvez dès lors retourner dans l'autre tunnel en vous\nrendant au 284. Si vous tirez un chiffre entre 6 et 9, le bloc ne\ntombe pas et il vous faut combattre les Languabarbs. Rendez-\nvous alors au 32.",
-    "choices": []
+    "choices": [
+      {
+        "text": "retourner dans l'autre tunnel",
+        "nextPage": 284
+      },
+      {
+        "text": "combattre les Languabarbs",
+        "nextPage": 32
+      }
+    ]
   },
   {
     "pageNumber": 143,
     "content": "Le cône de givre s'enfonce dans le feuillage des plantes en les\ngelant instantanément. Tiges et feuilles deviennent alors\ncassantes et commencent à céder sous votre poids. Vous essayez\nde bondir sur la plateforme où se tient Vonotar, mais il est trop\ntard, le pont s'effondre et vous êtes précipité dans le fossé tête la\npremière. La dernière vision que vous emporterez de ce monde\nsera celle d'un Vonotar ricanant qui pointe sur votre tête sa\nbaguette de cristal. Votre mission s'achève ici en même temps\nque votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 144,
     "content": "Vous êtes précipité dans les ténèbres et vous vous écrasez contre\nune corniche de glace après une chute de plus de 30 mètres.\nVotre corps disloqué rebondit pour tomber plus bas encore, mais\nvotre colonne vertébrale a été fracassée sous le choc et vous êtes\ndonc déjà mort lorsque vous atterrissez enfin sur la neige molle\nqui tapisse le fond de la crevasse. Votre mission s'achève ici en\nmême temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 145,
     "content": "Ce couloir n'est pas très long et vous arrivez bientôt dans une\nautre salle aux murs de pierre. Un peu plus loin un escalier mène\nà une arcade plongée dans l'ombre, à bonne distance au-dessus\ndu sol. Au pied de cet escalier, vous distinguez le squelette d'un\nancien gardien de tombes, encore vêtu de son armure et toujours\ndebout. Ses phalanges nues tiennent une grande épée noire. Si\nvous souhaitez monter l'escalier sans prêter attention au\nsquelette, rendez-vous au 36. Si vous préférez attaquer le\nsquelette, rendez-vous au 278.",
     "choices": [
       {
-        "text": "squelette,",
+        "text": "monter l'escalier en ignorant le squelette gardien",
         "nextPage": 36
       },
       {
-        "text": "squelette,",
+        "text": "attaquer le squelette armé de l'épée noire",
         "nextPage": 278
       }
     ]
@@ -1642,12 +1936,19 @@
         "text": "remportez la victoire sans perdre un seul point d'ENDURANCE,",
         "nextPage": 84
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Languabarb",
+      "ability": 10,
+      "endurance": 28
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 148,
     "content": "Vous avez descendu la moitié des marches lorsque vous vous\nheurtez à une patrouille de Barbares des Glaces. Vous essayez de\nles repousser pour pouvoir continuer votre chemin, mais ils sont\npuissamment armés, disposant à la fois d'épées et de lances.\nVous vous battez avec fureur et vous en tuez un bon nombre,\nmais les autres parviennent à vous encercler et à vous porter le\ncoup de grâce. Votre mission s'achève ici en même temps que\nvotre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 149,
@@ -1665,18 +1966,22 @@
   },
   {
     "pageNumber": 150,
-    "content": "Le coup que vous assénez fracasse la surface lisse et blanche de la\nStatue. Aussitôt une rafale de vent glacé s'échappe en sifflant de\nl'ouverture et, quelques secondes plus tard, tous les murs de la\nsalle sont recouverts d'une couche de glace étincelante. La chute\nsoudaine de la température vous fait perdre 2 points\nd'ENDURANCE, à moins que votre peau ne soit protégée par de\nl'huile de Bakanal. Vous constatez alors avec un sentiment\nd'horreur que la rafale de vent prend peu à peu la forme d'un\npetit cyclone qui attire dans son œil tous les morceaux de pierre\net de glace traînant alentour. Vous venez de libérer un Démon de\nGlace et cette terrifiante créature a l'intention de vous anéantir.\nSi vous disposez du Glaive de Sommer, rendez-vous\nimmédiatement au 120. Si vous souhaitez attaquer le cyclone\navec une arme normale, rendez-vous au 18. Si vous préférez\nessayer de vous enfuir en courant vers l'arcade, rendez-vous au\n211. Enfin, si vous possédez une Sphère de Feu, rendez-vous au\n310.",
+    "content": "Le coup que vous assênez fracasse la surface lisse et blanche de la\nStatue. Aussitôt une rafale de vent glacé s'échappe en sifflant de\nl'ouverture et, quelques secondes plus tard, tous les murs de la\nsalle sont recouverts d'une couche de glace étincelante. La chute\nsoudaine de la température vous fait perdre 2 points\nd'ENDURANCE, à moins que votre peau ne soit protégée par de\nl'huile de Bakanal. Vous constatez alors avec un sentiment\nd'horreur que la rafale de vent prend peu à peu la forme d'un\npetit cyclone qui attire dans son œil tous les morceaux de pierre\net de glace traînant alentour. Vous venez de libérer un Démon de\nGlace et cette terrifiante créature a l'intention de vous anéantir.\nSi vous disposez du Glaive de Sommer, rendez-vous\nimmédiatement au 120. Si vous souhaitez attaquer le cyclone\navec une arme normale, rendez-vous au 18. Si vous préférez\nessayer de vous enfuir en courant vers l'arcade, rendez-vous au\n211. Enfin, si vous possédez une Sphère de Feu, rendez-vous au\n310.",
     "choices": [
       {
-        "text": "avec une arme normale,",
+        "text": "vous disposez du Glaive de Sommer",
+        "nextPage": 120
+      },
+      {
+        "text": "attaquer le cyclone avec une arme normale",
         "nextPage": 18
       },
       {
-        "text": "essayer de vous enfuir en courant vers l'arcade,",
+        "text": "vous enfuir en courant vers l'arcade",
         "nextPage": 211
       },
       {
-        "text": ". Enfin, si vous possédez une Sphère de Feu,",
+        "text": "vous possédez une Sphère de Feu",
         "nextPage": 310
       }
     ]
@@ -1712,15 +2017,20 @@
   {
     "pageNumber": 153,
     "content": "Vous avez presque réussi à traverser le lac lorsqu'une catastrophe\nsurvient. Votre pied droit, en effet, passe à travers la glace et vous\nêtes coincé à hauteur du genou. Vous essayez désespérément de\nvous libérer, mais il n'y a rien à faire, vous êtes pris au piège.\nQuelques secondes plus tard, la couche de glace qui recouvre le\nlac se fracasse dans un terrible craquement : le monstre des\nprofondeurs dont vous aviez auparavant aperçu la silhouette\nvient ainsi de faire son apparition à la surface. Paralysé\nd'horreur, vous voyez alors la gueule noire et visqueuse de la\ncréature s'ouvrir pour exhiber deux rangées de dents tranchantes\ncomme des rasoirs. Le monstre venu du fond des âges se\nprécipite sur vous et cette gueule béante sera la dernière vision\nque vous emporterez de ce monde, avant que la bête ne vous\navale. Votre mission s'achève ici en même temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 154,
     "content": "Votre jambe droite est blessée ; la plaie saigne abondamment, et\nil semble que l'hémorragie ne s'arrêtera pas d'elle-même ; vous\nposez donc un garrot de fortune autour de votre cuisse, puis vous\nvous relevez tant bien que mal et vous jetez un coup d'œil\nalentour. Ce monolithe, de toute évidence, avait pour fonction\nd'empêcher les intrus de passer, ou de les prendre au piège. C'est\nsans doute un mage qui, jadis, l'a ainsi doté d'un puissant\npouvoir d'explosion. Vous remarquez alors qu'un panneau s'est\nouvert dans le mur nord, découvrant un passage obscur qui\npermet de quitter cette salle. Si vous souhaitez explorer ce\nnouveau couloir, rendez-vous au 145. Si vous préférez essayer\nd'ouvrir à nouveau la porte par laquelle vous êtes entré, rendez-\nvous au 242.",
     "choices": [
       {
-        "text": "nouveau couloir,",
+        "text": "explorer ce nouveau couloir",
         "nextPage": 145
+      },
+      {
+        "text": "ouvrir à nouveau la porte par laquelle vous êtes entré",
+        "nextPage": 242
       }
     ]
   },
@@ -1741,23 +2051,43 @@
   {
     "pageNumber": 156,
     "content": "Vous reconnaissez l'odeur d'un concentré de Brosse à Potences,\nou « Dent de Sommeil » comme on l'appelle plus communément\nau Sommerlund. Il s'agit d'un buisson épineux dont vos Maîtres\nKaï se servaient pour endormir les chevaux malades ou blessés,\nle concentré préparé à l'aide de cette plante constituant une\npuissante Potion somnifère. Si vous souhaitez la conserver,\ninscrivez-la sur votre Feuille d'Aventure, dans la case des objets\ncontenus dans votre Sac à Dos. Retournez à présent au 10 pour\nfaire un nouveau choix.",
-    "choices": []
+    "choices": [
+      {
+        "text": "retourner au 10 pour faire un nouveau choix",
+        "nextPage": 10
+      }
+    ]
   },
   {
     "pageNumber": 157,
     "content": "Vous prenez la Potion dans votre Sac à Dos et vous entrebâillez\nprudemment la porte, juste assez pour pouvoir vider la fiole dans\nle chaudron bouillonnant. Quelques minutes plus tard, les\nBarbares des Glaces tombent dans un profond sommeil juste\naprès avoir achevé leur repas. Vous pouvez à présent inspecter\nles lieux. La cuisine est petite et elle contient une étonnante\nprovision d'herbes. « Ces herbes viennent du comptoir de\nLiouk», assure Loi-Kymar en examinant attentivement les\nétiquettes qui indiquent ce que les bocaux contiennent. Il remplit\nses poches de plusieurs de ces bocaux, puis il en ouvre deux\nautres et mélange les herbes qu'ils renferment. Il vous tend\nensuite cette mixture : « Voici qui vous donnera des forces, Loup\nSolitaire», dit-il. Vous mangez les feuilles séchées et, aussitôt,\nune chaleur bienfaisante se répand dans tout votre corps. Vous\nrécupérez 6 points d'ENDURANCE et vous vous rendez au 301.",
-    "choices": []
+    "choices": [
+      {
+        "text": "récupérez 6 points d'ENDURANCE",
+        "nextPage": 301
+      }
+    ]
   },
   {
     "pageNumber": 158,
     "content": "L'éclaireur Barbare étant à skis, vous ne pourrez livrer contre lui\nqu'un seul Assaut ; emporté par son élan, en effet, il passera\ndevant vous sans s'arrêter, en essayant de vous porter un coup.\nVous devrez alors tenter de le blesser au moment où il arrivera à\nvotre hauteur.\nÉCLAIREUR BARBARE HABILETÉ: 20 ENDURANCE: 28\nSi vous subissez une perte de points d'ENDURANCE supérieure\nà celle de votre adversaire au cours de cet unique Assaut, rendez-\nvous au 165. Si, en revanche, c'est le Barbare qui perd plus de\npoints d'ENDURANCE que vous, rendez-vous au 271. Enfin, si\nvous perdez tous deux le même nombre de points\nd'ENDURANCE, rendez-vous au 337.",
+    "monster": {
+      "name": "Eclaireur Barbare",
+      "ability": 20,
+      "endurance": 28,
+      "isBlocking": false
+    },
     "choices": [
       {
-        "text": "points d'ENDURANCE que vous,",
+        "text": "vous subissez une perte supérieure",
+        "nextPage": 165
+      },
+      {
+        "text": "le Barbare perd plus de points que vous",
         "nextPage": 271
       },
       {
-        "text": "d'ENDURANCE,",
+        "text": "vous perdez le même nombre de points",
         "nextPage": 337
       }
     ]
@@ -1767,8 +2097,16 @@
     "content": "L'homme vous regarde droit dans les yeux et répond : « Le\nRagad. » Si vous souhaitez à présent effacer le pentagramme afin\nde le libérer, rendez-vous au 170. Si vous préférez vous en\nabstenir, refermez la porte de sa cellule et retournez dans le\ncouloir principal en vous rendant au 254.",
     "choices": [
       {
-        "text": "de le libérer,",
+        "text": "effacer le pentagramme pour le libérer",
         "nextPage": 170
+      },
+      {
+        "text": "retourner dans le couloir principal",
+        "nextPage": 254
+      },
+      {
+        "text": "continuer votre exploration",
+        "nextPage": 245
       }
     ]
   },
@@ -1793,9 +2131,15 @@
   {
     "pageNumber": 161,
     "content": "Le Barbare des Glaces s'avance lentement et ses yeux blancs\ndépourvus de pupilles vous donnent la chair de poule. Dans sa\nmain droite, il tient un cimeterre en os, mais, bien qu'il soit prêt\nà frapper, ses gestes sont raides et incertains, comme s'il vous\nattaquait contre sa volonté. Le Barbare est insensible à la\nDiscipline Kaï de la Puissance Psychique.\nBARBARE DES GLACES HABILETÉ : 17 ENDURANCE : 29\nSi vous sortez vainqueur de ce combat, rendez-vous au 210.",
+    "monster": {
+      "name": "Barbare des glaces",
+      "ability": 17,
+      "endurance": 29,
+      "isBlocking": true
+    },
     "choices": [
       {
-        "text": "Si vous sortez vainqueur de ce combat,",
+        "text": "sortez vainqueur de ce combat",
         "nextPage": 210
       }
     ]
@@ -1805,7 +2149,11 @@
     "content": "Le traîneau est déchargé et le matériel qu'il contenait transporté\nde l'autre côté de la gorge à raison d'un objet par voyage. Tout se\npasse comme prévu, et il ne reste plus qu'à franchir une dernière\nfois le pont avec le traîneau lui-même. C'est Dyce qui le conduit\nen le maintenant à grand-peine au milieu du pont étroit. Mais\nsoudain les deux chiens de tête glissent et tombent dans la gorge.\nIls restent suspendus par leur harnais et poussent de longs\ngémissements en se débattant inutilement dans le vide. Dyce tire\nfrénétiquement sur les rênes pour essayer d'empêcher les autres\nchiens de tomber à leur tour, mais ses efforts restent vains : un\npar un, en effet, les quatre autres chiens de l'attelage sont attirés\ndans le précipice par le poids grandissant de ceux qui sont déjà\ntombés. « Saute, Dyce, saute ! » hurle Irian tandis que le dernier\nchien disparaît dans le vide. Dyce bondit juste à temps, avant que\nle traîneau ne bascule dans la gorge, mais il atterrit à l'endroit où\nle pont est le plus étroit et perd l'équilibre. Dans un geste\ndésespéré, il parvient à s'agripper au rebord de glace, mais ses\nmains glissent inexorablement. « Au secours ! Aidez-moi ! »\ns'écrie-t-il. Si vous souhaitez essayer de sauver Dyce, rendez-vous\nau 19. Si vous pensez qu'il n'y a aucun moyen de lui venir en\naide, rendez-vous au 257.",
     "choices": [
       {
-        "text": "aide,",
+        "text": "essayer de sauver Dyce",
+        "nextPage": 19
+      },
+      {
+        "text": "il n'y a aucun moyen de lui venir en aide",
         "nextPage": 257
       }
     ]
@@ -1827,7 +2175,22 @@
   {
     "pageNumber": 164,
     "content": "Le monstre aux tentacules se hisse hors du fossé et vous attaque.\nEn même temps, vous remarquez que Vonotar lève sa Crosse\nnoire en fixant les yeux sur Loi-Kymar. Il est en train d'attaquer\nle magicien à l'aide de sa Puissance Psychique. Vous vous rendez\ncompte alors que si Loi-Kymar est tué, il emportera dans la mort\nle secret de la Crosse de la Guilde. Mais avant tout, il vous faut\ncombattre le monstre. Cette créature est un Akranionor qui\nappartient au monde des morts vivants. Vous pourrez donc\nmultiplier par deux tous les points d'ENDURANCE que votre\nadversaire perdra au cours du combat, en raison de la puissance\ndu Glaive de Sommer.\nAKRANIONOR HABILETÉ: 23 ENDURANCE: 50\nSi vous remportez la victoire en 5 Assauts ou moins, rendez-vous\nau 272. Si le combat se prolonge au-delà de 5 Assauts, rendez-\nvous au 324.",
-    "choices": []
+    "monster": {
+      "name": "Akranionor",
+      "ability": 23,
+      "endurance": 50,
+      "isBlocking": true
+    },
+    "choices": [
+      {
+        "text": "victoire en 5 Assauts ou moins",
+        "nextPage": 272
+      },
+      {
+        "text": "combat se prolonge au-delà de 5 Assauts",
+        "nextPage": 324
+      }
+    ]
   },
   {
     "pageNumber": 165,
@@ -1844,7 +2207,11 @@
     "content": "Au pied de l'escalier, vous découvrez un autre tunnel orienté au\nnord. Vous vous apprêtez à l'emprunter lorsque votre main entre\nsoudain en contact avec un levier qui dépasse du mur, à votre\ndroite. En regardant de plus près, vous constatez l'existence\nd'une porte secrète. Si vous souhaitez ouvrir cette porte, rendez-\nvous au 111. Si vous préférez poursuivre votre chemin le long du\nnouveau tunnel, rendez-vous au 336.",
     "choices": [
       {
-        "text": "nouveau tunnel,",
+        "text": "ouvrir cette porte",
+        "nextPage": 111
+      },
+      {
+        "text": "poursuivre votre chemin le long du nouveau tunnel",
         "nextPage": 336
       }
     ]
@@ -1878,8 +2245,12 @@
     "content": "Lorsque vous arrivez devant la porte massive, vous essayez\ndésespérément de trouver un moyen de l'ouvrir, mais elle est\nparfaitement lisse et ne comporte ni poignée, ni serrure, ni trou\nde serrure. La créature aura bientôt atteint le sommet de la\nrampe et vous êtes sur le point de pousser un cri de désespoir\nlorsque vous apercevez un bloc de granité encastré dans le mur.\nUn petit triangle est gravé dans la pierre. Si vous possédez un\nTriangle de Pierre Bleue, rendez-vous au 41. Sinon, rendez-vous\nau 265.",
     "choices": [
       {
-        "text": "Triangle de Pierre Bleue,",
+        "text": "vous possédez un Triangle de Pierre Bleue",
         "nextPage": 41
+      },
+      {
+        "text": "vous ne possédez pas le Triangle",
+        "nextPage": 265
       }
     ]
   },
@@ -1896,7 +2267,16 @@
   {
     "pageNumber": 171,
     "content": "Le bouchon est coincé dans la fiole et il vous faut l'ôter avec\nprécaution pour ne pas prendre le risque de briser le verre. Peu à\npeu, le bouchon glisse et vous parvenez enfin à l'enlever ; vous\nreniflez alors le liquide orange. Si vous possédez laDiscipline Kaï\ndu Sixième Sens ou celle de la Maîtrise des Armes, rendez-vous\nau 311. Si vous ne maîtrisez aucune de ces deux Disciplines, cette\npotion ne vous inspire guère confiance et vous décidez de vous en\ndébarrasser. Retournez alors au 10 et faites un nouveau choix.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Sixième Sens ou Maîtrise des Armes",
+        "nextPage": 311
+      },
+      {
+        "text": "retourner au 10 et faire un nouveau choix",
+        "nextPage": 10
+      }
+    ]
   },
   {
     "pageNumber": 172,
@@ -1939,7 +2319,7 @@
   {
     "pageNumber": 175,
     "content": "Vous faites un pas de côté pour esquiver la créature et vous lui\nportez à la tête un coup qui aurait mis hors de combat n'importe\nquel mortel. Mais, à votre grand dam, le Monstre d'Enfer est\nindemne et se lance à nouveau à l'attaque. C'est un mort vivant\naux pouvoirs redoutables, invulnérable aux armes normales. Les\nMaîtres des Ténèbres l'ont envoyé ici en mission pour tuer\nVonotar et le punir ainsi de sa défaite dans la bataille du golfe de\nHolm. A présent qu'il est libéré du pentagramme qui\nl'emprisonnait, le Monstre d'Enfer peut accomplir sa mission et\nretourner chez lui pour y recevoir de ses maîtres récompenses et\nhonneurs. Vous hurlez de terreur lorsque les doigts de la créature\ns'enfoncent dans les chairs de votre cou, mais vos hurlements ne\nsont entendus de personne dans ce sombre couloir et seule la\nmort mettra un terme à l'insupportable douleur qui vous étreint\nla gorge. Votre mission s'achève ici en même temps que votre vie.",
-    "choices": []
+    "endingType": "death"
   },
   {
     "pageNumber": 176,
@@ -1958,7 +2338,12 @@
   {
     "pageNumber": 177,
     "content": "Vous reconnaissez aussitôt l'odeur âcre de Ronces des Cimetières\ndistillées. Cette décoction de couleur noire est un poison puissant\net vous rebouchez aussitôt la fiole pour empêcher les vapeurs\nnocives de s'en échapper. Si vous souhaitez conserver cette\nPotion, inscrivez-la sur votre Feuille d'Aventure dans la case des\nobjets contenus dans votre Sac à Dos. Retournez à présent au 10\npour faire un nouveau choix.",
-    "choices": []
+    "choices": [
+      {
+        "text": "retourner au 10 pour faire un nouveau choix",
+        "nextPage": 10
+      }
+    ]
   },
   {
     "pageNumber": 178,
@@ -1975,7 +2360,11 @@
     "content": "Vous imaginez un plan particulièrement audacieux. En vous\nfaisant passer pour un Barbare des Glaces, vous pourriez en effet\nposer le bol près des gardes ; dans la pénombre du couloir, il leur\nserait difficile d'apercevoir la fumée. Loi-Kymar approuve votre\nplan et prépare un mélange d'herbes destiné à vous protéger\nvous-même contre les vapeurs nocives. Vêtu des fourrures d'un\nBarbare des Glaces, vous avancez bientôt dans le couloir, le bol\ncaché sous vos vêtements. Utilisez la Table de Hasard pour\nobtenir un chiffre. Si vous tirez un chiffre entre 0 et 4, rendez-\nvous au 39. Entre 5 et 9, rendez-vous au 296.",
     "choices": [
       {
-        "text": "vous au 39. Entre 5 et 9,",
+        "text": "chiffre entre 0 et 4",
+        "nextPage": 39
+      },
+      {
+        "text": "chiffre entre 5 et 9",
         "nextPage": 296
       }
     ]
@@ -1988,7 +2377,13 @@
         "text": "Si vous tuez la créature sans perdre aucun point d'ENDURANCE,",
         "nextPage": 70
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Languabarb",
+      "ability": 11,
+      "endurance": 35
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 181,
@@ -2165,7 +2560,8 @@
   {
     "pageNumber": 198,
     "content": "Le couloir aboutit à une grande porte de pierre. A la différence\ndes autres, cette porte n'est pas actionnée par un levier; en\nrevanche, vous découvrez, juste à côté, une fente creusée dans le\nmur. Vous êtes en train d'examiner cette fente lorsque, soudain,\nune meute hurlante de Barbares des Glaces mutants se précipite\nsur vous le long du couloir. Vous vous préparez à vous défendre,\nmais ils sont trop nombreux et, bien que vous les affrontiez avec\ncourage, ils finissent par avoir raison de vous. Inutile d'attendre\nd'eux la moindre pitié : quelques instants plus tard, vous mourez\nsous leurs coups. Votre mission s'achève donc ici en même temps\nque votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 199,
@@ -2184,13 +2580,19 @@
   {
     "pageNumber": 200,
     "content": "L'effroyable monstre aux longs tentacules surgit du fossé et vous\nattaque. Il vous faut le combattre jusqu'à la mort de l'un de vous.\nAKRANION OR HABILETÉ: 22 ENDURANCE: 50\nAu cours du combat, vous apercevez parfois Vonotar qui brandit\nson bâton noir de magicien en gardant les yeux fixés sur Loi-\nKymar. Il est en train d'attaquer le vieil homme à l'aide de sa\npuissante Force Mentale. Et si Loi-Kymar succombe, il\nemportera dans la mort le secret de la Crosse de la Guilde. Si\nvous remportez la victoire en 7 Assauts ou moins, rendez-vous au\n272. S'il vous faut livrer plus de 7 Assauts pour gagner le combat,\nrendez-vous au 324.",
+    "monster": {
+      "name": "Arkranion",
+      "ability": 22,
+      "endurance": 50,
+      "isBlocking": true
+    },
     "choices": [
       {
-        "text": "vous remportez la victoire en 7 Assauts ou moins,",
+        "text": "victoire en 7 Assauts ou moins",
         "nextPage": 272
       },
       {
-        "text": ". S'il vous faut livrer plus de 7 Assauts pour gagner le combat,",
+        "text": "plus de 7 Assauts pour gagner le combat",
         "nextPage": 324
       }
     ]
@@ -2242,15 +2644,23 @@
   {
     "pageNumber": 205,
     "content": "La nuit durant, un violent blizzard fait rage, enterrant votre abri\nde fortune sous une couche de neige de 3,50 mètres d'épaisseur.\nLe froid vous engourdit les mains et les pieds et, peu à peu, votre\ncorps se vide de toute son énergie. Vous glissez alors dans un\nsommeil dont vous ne vous éveillerez jamais: vous étouffez en\neffet sous les neiges de Kalte. Votre mission s'achève donc ici en\nmême temps que votre vie.",
-    "choices": []
+    "endingType": "death"
   },
   {
     "pageNumber": 206,
     "content": "Retenant à la fois votre souffle et votre matériel, vous essayez\nd'atterrir le plus silencieusement possible sur le sol poussiéreux\ndu couloir. Malheureusement, vous vous tordez la cheville en\ntombant et vous laissez échapper un cri de douleur. Vous perdez\n1 point d'ENDURANCE. Vous apercevez alors avec horreur un\nBarbare des Glaces assis à une dizaine de mètres de vous, sur\nvotre gauche. Il tourne lentement la tête dans votre direction\nmais, en jetant un bref coup d'œil vers la droite, vous découvrez\nun autre couloir orienté au nord, à moins de 5 mètres de l'endroit\noù vous êtes agenouillé. Si vous maîtrisez la Discipline Kaï du\nCamouflage, rendez-vous au 74. Sinon, vous pouvez essayer de\ncourir en direction du couloir orienté au nord, en priant le ciel\nque le Barbare des Glaces ne vous voie pas. Rendez-vous pour\ncela au 183. Enfin, si vous préférez attaquer le Barbare pour\ntenter de le neutraliser avant qu'il ait pu donner l'alerte, rendez-\nvous au 161.",
     "choices": [
       {
-        "text": "Camouflage,",
+        "text": "maîtrisez la Discipline Kaï du Camouflage",
         "nextPage": 74
+      },
+      {
+        "text": "courir vers le couloir orienté au nord",
+        "nextPage": 183
+      },
+      {
+        "text": "attaquer le Barbare pour le neutraliser",
+        "nextPage": 161
       }
     ]
   },
@@ -2271,24 +2681,48 @@
   {
     "pageNumber": 208,
     "content": "Le Barbare des Glaces vous voit approcher et tire aussitôt son\népée en os, puis il se poste devant l'escalier pour vous empêcher\nde passer. Il vous faut l'affronter.\nBARBARE DES GLACES HABILETÉ : 17 ENDURANCE : 30\nSi vous remportez la victoire en 4 Assauts ou moins, rendez-vous\nau 4. Si vous gagnez le combat en plus de 4 Assauts, rendez-vous\nau 81.",
-    "choices": []
+    "choices": [
+      {
+        "text": "remportez la victoire en 4 Assauts ou moins,",
+        "nextPage": 4
+      },
+      {
+        "text": "gagnez le combat en plus de 4 Assauts,",
+        "nextPage": 81
+      }
+    ],
+    "monster": {
+      "monsterName": "Barbare des Glaces",
+      "ability": 17,
+      "endurance": 30
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 209,
     "content": "Vous vous cramponnez à la paroi rocheuse pendant toute la nuit.\nLe vent glacial vous cingle le visage et vous êtes saisi de\ntremblements incontrôlables, luttant de toutes vos forces pour ne\npas vous évanouir. Vous perdez 2 points d'ENDURANCE. L'huile\nde Bakanal vous permet cependant de conserver suffisamment\nde chaleur dans votre corps pour arriver à survivre : sans elle, le\nfroid aurait eu raison de vous. Rendez-vous à présent au 155.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous à présent",
+        "nextPage": 155
+      }
+    ]
   },
   {
     "pageNumber": 210,
     "content": "Vous pouvez prendre l'arme du Barbare si vous le souhaitez : il\ns'agit d'une épée en os incrustée de dents. En examinant son\ncadavre, vous découvrez un Bracelet d'Or passé à son poignet\ndroit. Si vous maîtrisez la Discipline Kaï du Sixième Sens,\nrendez-vous au 316. Si vous souhaitez vous emparer du Bracelet\nd'Or, rendez-vous au 236 après l'avoir inscrit sur votre Feuille\nd'Aventure dans la case Objets Spéciaux. Si vous ne souhaitez\npas prendre le Bracelet, hâtez-vous de repartir le long du couloir\nen direction d'un croisement situé un peu plus loin. Rendez-vous\nalors au 215.",
     "choices": [
       {
-        "text": "droit. Si vous maîtrisez la Discipline Kaï du Sixième Sens,",
+        "text": "Si vous maîtrisez la Discipline Kaï du Sixième Sens",
         "nextPage": 316
       },
       {
-        "text": "d'Or,",
+        "text": "Si vous souhaitez vous emparer du Bracelet d'Or",
         "nextPage": 236
+      },
+      {
+        "text": "Si vous ne souhaitez pas prendre le Bracelet",
+        "nextPage": 215
       }
     ]
   },
@@ -2311,7 +2745,7 @@
     "content": "Lorsque vous revenez sous la tente, Dyce prépare un délicieux\nRepas qui vient à point pour vous remplir l'estomac et vous\nredonner courage. Vous avez parcouru à présent une distance\nappréciable et, en dépit des épreuves physiques que vous avez dû\nsupporter, vous vous sentez confiant et impatient de continuer.\nIrian va chercher les Couvertures de Fourrure dans le traîneau et\nvous vous préparez tous à passer une bonne nuit de sommeil. La\nnuit, vous gardez toujours vos vêtements pour vous protéger du\nfroid et vous n'enlevez que vos bottes. Les quelques jours que\nvous avez passés sur ces terres désolées ont suffi à vous en\napprendre long sur les techniques de survie. Lorsque vous vous\ndéchaussez, vous prenez garde à ce que vos bottes conservent\nbien la forme de vos pieds : par ces températures glaciales, en\neffet, elles ont tôt fait de geler et de devenir dures comme la\npierre ; vous avez alors toutes les peines du monde à les chausser\nà nouveau si elles se sont déformées. Pour dénouer vos lacets,\nvous devez ôter vos gants, mais il vous faut interrompre\nl'opération à plusieurs reprises pour remettre vos moufles dès\nque vous sentez la morsure du gel vous engourdir les doigts.\nLorsque vous êtes enfin pelotonné sous vos fourrures, vous\nclaquez encore des dents pendant quelques instants avant de\nsombrer dans un profond sommeil, tandis que le vent mugit au\ndehors. Rendez-vous au 238.",
     "choices": [
       {
-        "text": "dehors",
+        "text": "Rendez-vous au 238",
         "nextPage": 238
       }
     ]
@@ -2381,12 +2815,22 @@
   {
     "pageNumber": 218,
     "content": "La boîte en os contient un magnifique Diamant. Même dans la\npénombre des lieux, ses multiples facettes étincellent. Dans le\nroyaume du Sommerlund, une pierre de cette taille et de cette\nqualité vaudrait des milliers de Couronnes d'Or. Si vous\nsouhaitez conserver ce Diamant, glissez-le dans votre poche et\ninscrivez-le sur votre Feuille d'Aventure dans la case Objets\nSpéciaux. Vous pouvez à présent examiner la porte de la\nforteresse en vous rendant au 52.",
-    "choices": []
+    "choices": [
+      {
+        "text": "examiner la porte de la forteresse",
+        "nextPage": 52
+      }
+    ]
   },
   {
     "pageNumber": 219,
     "content": "Vous sentez que le sourd grondement qui résonne dans cette\npartie de la forteresse est beaucoup plus intense dans le couloir\norienté à l'ouest que dans celui orienté à l'est. Ce bruit a quelque\nchose d'insolite qui vous met mal à l'aise. Vous décidez donc\nd'éviter le couloir de l'ouest et d'emprunter celui de l'est. Rendez-\nvous au 349.",
-    "choices": []
+    "choices": [
+      {
+        "text": "emprunter celui de l'est",
+        "nextPage": 349
+      }
+    ]
   },
   {
     "pageNumber": 220,
@@ -2431,8 +2875,12 @@
     "content": "Le traîneau contient le matériel détaillé ci-dessous. Vous pouvez\nprendre n'importe lequel de ces objets et le ranger dans votre Sac\nà Dos, mais n'oubliez pas que vous n'avez pas le droit d'y\ntransporter plus de huit objets: des provisions équivalentes à 5\nRepas (chaque Repas compte pour un objet ; vous pouvez en\nemporter autant que vous le désirez, de 1 à 5, dans la limite bien\nsûr de la place dont vous disposez) ; une Tente (elle compte pour\n3 objets) ; des Couvertures de Fourrure (elles comptent pour 2\nobjets) ; une Longue Corde (elle compte pour 2 objets). Dyce se\nporte volontaire pour retourner avec le traîneau et les chiens à\nl'endroit où est ancré le vaisseau Cardonal, tandis que vos deux\nautres guides et vous-même poursuivrez votre chemin en\ndirection d'Ikaya, la Forteresse des Glaces. Ikaya a été taillée\ndans la chaîne de Hrod en des temps très anciens, par une race\nde créatures qui a depuis longtemps disparu. Des milliers\nd'années ont passé avant que les Barbares des Glaces, émigrant\ndes Étendues Inexplorées, ne viennent s'approprier la forteresse.\nDepuis cette époque leurs chefs, que l'on appelle les\n«Brumalmarc», exercent leur pouvoir sur les terres de Kalte à\nl'abri des murs de glace d'Ikaya. Vous avez parcouru environ 8\nkilomètres lorsqu'Irian pointe soudain l'index en direction de\nl'ouest. « Là, là-bas, dit-il, j'ai vu quelque chose, j'en suis sûr ! »\nVous vous arrêtez et vous essayez d'apercevoir ce qui a pu lui\napparaître inhabituel dans ce paysage monotone de glace et de\nneige. « Regardez là-bas ! » s'écrie alors Fenor, en montrant une\nhauteur située à 1,5 kilomètre environ. Vous distinguez alors\ndeux guerriers vêtus de fourrure qui se tiennent debout sur un\ngros bloc de glace. Les deux guerriers vous observent. « Des\nBarbares des Glaces, murmure Irian, la voix tremblante de peur.\nSi jamais ils arrivent avant nous à Ikaya et signalent notre\nprésence, autant dire que nous sommes morts. »Vous avez\nencore une quinzaine de kilomètres à parcourir pour atteindre la\nforteresse et il ne reste que deux heures de jour. Si vous\nsouhaitez ne pas prêter attention à ces Barbares et poursuivre\nvotre chemin vers Ikaya, rendez-vous au 327. Si vous préférez les\nattaquer pour essayer de les empêcher de donner l'alerte, rendez-\nvous au 307.",
     "choices": [
       {
-        "text": "votre chemin vers Ikaya,",
+        "text": "poursuivre votre chemin vers Ikaya",
         "nextPage": 327
+      },
+      {
+        "text": "les attaquer pour essayer de les empêcher de donner l'alerte",
+        "nextPage": 307
       }
     ]
   },
@@ -2453,7 +2901,12 @@
   {
     "pageNumber": 225,
     "content": "Le bouchon est scellé avec de la cire. Si vous voulez briser la cire,\nsachez que vous prenez le risque de casser le verre peu épais de la\nfiole. Pour essayer de briser la cire qui scelle le bouchon, rendez-\nvous au 54. Si le contenu de cette fiole ne vous inspire pas\nconfiance et que vous ne souhaitiez pas risquer de la casser,\nabandonnez-la et retournez au 10 pour faire un nouveau choix.",
-    "choices": []
+    "choices": [
+      {
+        "text": "retournez au 10 pour faire un nouveau choix",
+        "nextPage": 10
+      }
+    ]
   },
   {
     "pageNumber": 226,
@@ -2500,6 +2953,10 @@
       {
         "text": "de Feu,",
         "nextPage": 46
+      },
+      {
+        "text": "il faut vous préparer au combat",
+        "nextPage": 88
       }
     ]
   },
@@ -2534,13 +2991,22 @@
       {
         "text": "au 85. Si vous tirez 7, 8 ou 9,",
         "nextPage": 300
+      },
+      {
+        "text": "Si vous tirez un chiffre de 0 à 6",
+        "nextPage": 85
       }
     ]
   },
   {
     "pageNumber": 233,
     "content": "Vous reconnaissez ce liquide : c'est une décoction de Laumspur,\nune herbe aux propriétés curatives particulièrement efficace.\nCette Potion concentrée permet à celui qui la boit de récupérer 5\npoints d'ENDURANCE. Si vous souhaitez conserver la fiole,\ninscrivez-la sur votre Feuille d'Aventure dans la case Objets\nSpéciaux. Retournez à présent au 10 pour faire un autre choix.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Retournez au 10 pour faire un autre choix",
+        "nextPage": 10
+      }
+    ]
   },
   {
     "pageNumber": 234,
@@ -2549,6 +3015,10 @@
       {
         "text": "prisonnier,",
         "nextPage": 170
+      },
+      {
+        "text": "retournez dans le couloir principal",
+        "nextPage": 254
       }
     ]
   },
@@ -2569,7 +3039,16 @@
   {
     "pageNumber": 236,
     "content": "Dès que le Bracelet d'Or se referme autour de votre poignet, une\ndouleur fulgurante vous déchire la tête. Vous êtes soumis à\nl'attaque d'une puissante Force Mentale qui essaie d'annihiler\nvotre volonté. Si vous maîtrisez la Discipline Kaï du Bouclier\nPsychique, rendez-vous immédiatement au 345. Sinon, rendez-\nvous au 9.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Si vous maîtrisez la Discipline Kaï du Bouclier Psychique",
+        "nextPage": 345
+      },
+      {
+        "text": "Sinon",
+        "nextPage": 9
+      }
+    ]
   },
   {
     "pageNumber": 237,
@@ -2598,7 +3077,8 @@
   {
     "pageNumber": 239,
     "content": "Vous perdez très vite conscience. Vous venez en effet de\nsuccomber au pouvoir terrifiant d'une ancienne Pierre Maudite,\nun pouvoir auquel nul être vivant ne peut survivre. La mort est\ninévitable et ne tardera plus. Peut-être éprouverez-vous malgré\ntout quelque consolation à apprendre que votre cadavre sera\nbientôt découvert par un Barbare des Glaces qui l'amènera\ndevant Vonotar (en même temps que la Pierre Maudite). Le\ntraître éprouvera alors tant de joie à vous voir mort qu'il\nordonnera que votre corps soit conservé dans un bloc de glace et\nexposé dans sa salle du Trône, comme un trophée. Mais les\nradiations de la Pierre Maudite, restée dans votre poche,\natteindront le sorcier maléfique en dépit de la couche de glace et\nVonotar devra subir de longues souffrances avant de mourir à\nson tour. Bien entendu, votre mission s'achève ici en même\ntemps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 240,
@@ -2618,7 +3098,13 @@
         "text": "Si vous sortez vainqueur de cet affrontement,",
         "nextPage": 186
       }
-    ]
+    ],
+    "monster": {
+      "name": "Barbare des glaces",
+      "ability": 17,
+      "endurance": 29,
+      "isBlocking": false
+    }
   },
   {
     "pageNumber": 242,
@@ -2627,6 +3113,10 @@
       {
         "text": "disposez du Glaive de Sommer,",
         "nextPage": 42
+      },
+      {
+        "text": "Rendez-vous au 145",
+        "nextPage": 145
       }
     ]
   },
@@ -2685,17 +3175,32 @@
   {
     "pageNumber": 247,
     "content": "Le vieil homme relève lentement la tête. 11 a les yeux fatigués et\nmeurtris, et sa longue barbe grise est tachée de sang caillé. Avec\ndifficulté, il se remet sur pied et scrute l'obscurité au-dessus de\nlui. « Qui se cache là-haut ? Est-ce toi, Vonotar ? Montre-toi,\nmisérable ver de terre ou alors, va-t-en. Je n'ai pas peur de toi et\nsache que tu m'inspires le plus profond dégoût. Jamais tu ne\nparviendras à me briser, traître infâme ! » crie-t-il en\nbrandissant un poing décharné. Son accent vous est familier :\nc'est en effet le même que le vôtre. Cet homme est l'un de vos\ncompatriotes, un citoyen du Sommerlund originaire du port de\nToran. Si vous disposez d'une Corde, vous pouvez la dérouler et\nla jeter au vieil homme afin de le tirer de sa prison, rendez-vous\npour cela au 118. Si vous n'avez pas de Corde, ou si vous ne\nsouhaitez pas porter secours au prisonnier, vous pouvez\npoursuivre votre chemin le long du passage en vous rendant au\n30.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous au 30",
+        "nextPage": 30
+      },
+      {
+        "text": "Rendez-vous au 118",
+        "nextPage": 118
+      }
+    ]
   },
   {
     "pageNumber": 248,
     "content": "Vous êtes arrivé à une centaine de mètres du défilé lorsqu'un\nvertige vous saisit et vous fait perdre l'équilibre. Vous essayez\ndésespérément de vous accrocher à la paroi rocheuse, mais vous\navez les mains engourdies par le froid et vous tombez dans la\nvallée. Votre corps, parfaitement conservé dans la glace, sera\ndécouvert par une équipe d'explorateurs dans environ deux mille\nans, à quelques années près. Il va sans dire que votre mission\ns'achève ici en même temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 249,
     "content": "Vous sentez qu'une patrouille de soldats s'approche, venant du\nsud. Vous empruntez donc le couloir orienté au nord en vous\nrendant au 104.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous au 104",
+        "nextPage": 104
+      }
+    ]
   },
   {
     "pageNumber": 250,
@@ -2704,6 +3209,10 @@
       {
         "text": "traverser le Cimetière des Anciens,",
         "nextPage": 77
+      },
+      {
+        "text": "Rendez-vous au 10",
+        "nextPage": 10
       }
     ]
   },
@@ -2730,7 +3239,8 @@
   {
     "pageNumber": 253,
     "content": "Le Languabarb vous heurte avec tant de force que vous êtes\nviolemment projeté en arrière, sur la mince couche de glace qui\nrecouvre le lac. Assommé pour le compte, vous ne sentez même\npas que des dents pointues s'enfoncent dans votre chair. Qui\nvous a dévoré 1 Le Languabarb, ou la créature du lac dont vous\naviez aperçu la silhouette 1 Vous ne le saurez jamais. La seule\nchose certaine, c'est que votre mission s'achève ici en même\ntemps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 254,
@@ -2801,7 +3311,18 @@
   {
     "pageNumber": 259,
     "content": "Soudain, Fenor se relève d'un bond et saisit son épée. « C'est un\nLanguabarb ! s'écrie-t-il. Vite ! prenez vos armes ou nous\nsommes perdus. » Les autres se hâtent d'empoigner leurs armes\ntandis que Fenor disparaît au-dehors. Presque immédiatement,\nun hurlement de douleur retentit et quelque chose se trouve\nviolemment projeté contre la toile de la tente qui s'écroule\naussitôt sous le choc. Vous vous retrouvez alors couché côte à\ncôte avec le cadavre mutilé de Fenor. Saisi de panique, vous vous\ndépêtrez de la toile de tente et vous tirez votre arme. A ce\nmoment, un énorme monstre quadrupède vous saute dessus. Ses\nyeux rouges brillent comme deux charbons ardents et sa gueule\nouverte, hérissée de dents pointues, laisse apparaître une langue\ncouverte d'un poil rêche. La bête est sur vous et il vous faut la\ncombattre.\nLANGUABARB HABILETÉ: 11 ENDURANCE: 35\nSi vous perdez des points d'ENDURANCE au cours de ce combat,\nrendez-vous immédiatement au 129. Si vous parvenez à tuer la\ncréature sans perdre un seul point d'ENDURANCE, rendez-vous\nau 151.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Si vous parvenez à tuer la créature sans perdre un seul point d'ENDURANCE,",
+        "nextPage": 151
+      }
+    ],
+    "monster": {
+      "monsterName": "Languabarb",
+      "ability": 11,
+      "endurance": 35
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 260,
@@ -2811,7 +3332,13 @@
         "text": "Si vous remportez la victoire,",
         "nextPage": 210
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Barbare des Glaces",
+      "ability": 17,
+      "endurance": 29
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 261,
@@ -2843,8 +3370,19 @@
   },
   {
     "pageNumber": 263,
-    "content": "Le passage étant étroit, il vous faut combattre I Languabarbs un\npar un. Leurs langues venimeus. pointées sur vous, ils\ns'apprêtent à vous piquer.\nHABILETÉ ENDURANCE\nPremier LANGUABARB 11 35\nDeuxième LANGUABARB 10 32\nTroisième LANGUABARB 8 30",
-    "choices": []
+    "content": "Le passage étant étroit, il vous faut combattre I Languabarbs un\npar un. Leurs langues venimeus. pointées sur vous, ils\ns'apprêtent à vous piquer.\nHABILETÉ ENDURANCE\nPremier LANGUABARB 11 35\nDeuxième LANGUABARB 10 32\nTroisième LANGUABARB 8 30\nSi vous perdez des points d'ENDURANCE au cours de ce combat,\nrendez-vous immédiatement au 66. Si vous remportez le combat\nsans perdre de points d'ENDURANCE, rendez-vous au 25.",
+    "choices": [
+      {
+        "text": "sans perdre de points d'ENDURANCE,",
+        "nextPage": 25
+      }
+    ],
+    "monster": {
+      "monsterName": "Languabarb",
+      "ability": 11,
+      "endurance": 35
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 264,
@@ -2868,7 +3406,13 @@
         "text": "vous remportez la victoire,",
         "nextPage": 3
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Serpent de Cristal",
+      "ability": 15,
+      "endurance": 30
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 266,
@@ -2883,7 +3427,12 @@
   {
     "pageNumber": 267,
     "content": "Loi-Kymar montre soudain la poche dans laquelle vous avez\nrangé la Pierre Rayonnante. « Pourquoi donc conservez-vous une\npierre maudite, Seigneur Kaï ? Ignorez-vous les dangers qu'elle\nprésente ?» Vous retirez aussitôt la Pierre de votre poche et vous\nla montrez au magicien. « Argh ! s'écrie-t-il comme si le simple\nfait de la regarder lui causait une intense douleur. Jetez-la au\nplus vite, avant que nous ne succombions au terrible mal. C'est\nune pierre maudite des Anciens, elle ne peut apporter que\nmaladie et mort à quiconque d'entre les mortels convoite sa\nbeauté. » A contrecœur, vous obéissez à Loi-Kymar et vous vous\ndébarrassez de la Pierre. Rayez-la de votre Feuille d'Aventure.\nRendez-vous ensuite au 44.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous ensuite",
+        "nextPage": 44
+      }
+    ]
   },
   {
     "pageNumber": 268,
@@ -2892,6 +3441,10 @@
       {
         "text": "Anciens,",
         "nextPage": 177
+      },
+      {
+        "text": "Rendez-vous au 10",
+        "nextPage": 10
       }
     ]
   },
@@ -2917,7 +3470,13 @@
         "text": "vous êtes vainqueur,",
         "nextPage": 340
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Barbare des Glaces",
+      "ability": 14,
+      "endurance": 25
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 271,
@@ -2944,6 +3503,10 @@
       {
         "text": "un chiffre entre 0 et 3,",
         "nextPage": 143
+      },
+      {
+        "text": "Rendez-vous au 58",
+        "nextPage": 58
       }
     ]
   },
@@ -3014,7 +3577,16 @@
   {
     "pageNumber": 277,
     "content": "Vous vous enfuyez à toutes jambes en revenant sur vos pas, mais\nles Languabarbs sont familiers des lieux et ils gagnent du terrain.\nLorsque vous atteignez la cascade gelée, vous remarquez qu'un\ngros bloc rocheux aux couleurs argentées forme saillie au-dessus\nde l'entrée de la grotte. Si vous possédez une arme, vous pouvez\nessayer de faire tomber ce roc pour obstruer le passage ; rendez-\nvous pour cela au 142. Si vous ne disposez d'aucune arme, vous\ndevrez faire face aux créatures et les combattre ; rendez-vous\nalors au 32.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous possédez une arme",
+        "nextPage": 142
+      },
+      {
+        "text": "vous ne disposez d'aucune arme",
+        "nextPage": 32
+      }
+    ]
   },
   {
     "pageNumber": 278,
@@ -3039,14 +3611,19 @@
   {
     "pageNumber": 280,
     "content": "La Clé est recouverte d'un suc digestif particulièrement acide qui\ntransperce vos moufles et vous brûle les doigts. Vous perdez 1\npoint d'ENDURANCE. Lâchant aussitôt la Clé, vous plongez vos\nmains dans la neige pour calmer la douleur. Si vous tenez quand\nmême à conserver cette Clé, essuyez-la dans la neige avant de la\nglisser dans votre poche, et inscrivez-la sur votre Feuille\nd'Aventure dans la case Objets Spéciaux. Il vous faut à présent\ntrouver le moyen d'ouvrir la porte de la forteresse. Rendez-vous\nau 344.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous au 344",
+        "nextPage": 344
+      }
+    ]
   },
   {
     "pageNumber": 281,
     "content": "Vous vous enfouissez le nez dans votre manche et vous vous\ndétournez de la carcasse. Irian a repris connaissance et il se hâte\nde plonger à son tour les mains dans l'huile de Bakanal dont il\ns'enduit également le corps. Le jour tombe vite et vous décidez\nd'établir votre campement ici même. Un repas est bientôt\npréparé et, après avoir mangé, vous vous portez volontaire pour\nmonter la garde au cas où des Bakanals reviendraient. Vous\npréférez de beaucoup, en effet, passer une nuit sans dormir en\nbravant le souffle du vent plutôt que de dormir sous la tente,\ndans l'effroyable odeur d'huile de Bakanal que dégagent vos\nguides. Rendez-vous au 325.",
     "choices": [
       {
-        "text": "guides",
+        "text": "Rendez-vous au 325",
         "nextPage": 325
       }
     ]
@@ -3054,7 +3631,16 @@
   {
     "pageNumber": 282,
     "content": "Le Barbare des Glaces était armé d'une Lance que vous pouvez\nvous approprier si vous le désirez. En fouillant le cadavre, vous\ndécouvrez un étrange Disque de Pierre Bleue. Si vous souhaitez\nconserver ce Disque de Pierre Bleue, glissez-le dans votre poche\net inscrivez-le sur votre Feuille d'Aventure, dans la case Objets\nSpéciaux. Une fois parvenu en haut de l'escalier, vous pouvez\nprendre à gauche, en direction du nord, en vous rendant au 104.\nSi vous préférez prendre à droite en direction du sud, rendez-\nvous au 330.",
-    "choices": []
+    "choices": [
+      {
+        "text": "direction du nord",
+        "nextPage": 104
+      },
+      {
+        "text": "direction du sud",
+        "nextPage": 330
+      }
+    ]
   },
   {
     "pageNumber": 283,
@@ -3093,7 +3679,11 @@
     "content": "La porte s'ouvre en coulissant latéralement, et vous découvrez\navec horreur le regard d'un Barbare des Glaces qui vous fixe de\nses yeux blancs totalement dépourvus de pupilles. Un cri rauque,\nqui ne ressemble à aucun son connu, monte de sa gorge et, un\ninstant plus tard, les Loups Maudits s'éveillent et se mettent à\ngrogner. Si vous souhaitez vous enfuir, il vous faut faire volte-\nface et redescendre l'escalier quatre à quatre ; rendez-vous alors\nau 261. Si vous préférez faire face et combattre, rendez-vous au\n343.",
     "choices": [
       {
-        "text": "au 261. Si vous préférez faire face et combattre,",
+        "text": "Si vous souhaitez vous enfuir",
+        "nextPage": 261
+      },
+      {
+        "text": "Si vous préférez faire face et combattre",
         "nextPage": 343
       }
     ]
@@ -3135,6 +3725,10 @@
       {
         "text": "vous maîtrisez au moins 6 Disciplines Kaï),",
         "nextPage": 156
+      },
+      {
+        "text": "Rendez-vous au 10",
+        "nextPage": 10
       }
     ]
   },
@@ -3149,6 +3743,10 @@
       {
         "text": "l'arcade baignée de brume",
         "nextPage": 264
+      },
+      {
+        "text": "Rendez-vous au 124",
+        "nextPage": 124
       }
     ]
   },
@@ -3159,6 +3757,10 @@
       {
         "text": "vous au 103. Entre 5 et 9,",
         "nextPage": 220
+      },
+      {
+        "text": "Rendez-vous au 103",
+        "nextPage": 103
       }
     ]
   },
@@ -3187,6 +3789,10 @@
       {
         "text": "endormies,",
         "nextPage": 109
+      },
+      {
+        "text": "Rendez-vous au 125",
+        "nextPage": 125
       }
     ]
   },
@@ -3203,7 +3809,12 @@
   {
     "pageNumber": 295,
     "content": "En vous voyant entrer, les deux hommes se relèvent d'un bond et\ns'enfuient par un petit couloir. Leurs cris de panique retentissent\nen écho dans les profondeurs des souterrains. Vous avez grand-\nfaim et vous dévorez gloutonnement la carcasse rôtie, en ne\ncessant d'engloutir la viande que pour cracher parfois quelques\nos. Bientôt, vous remarquez que le feu allumé devant vous brûle\ndans une demi-sphère de métal. Une autre demi-sphère est\nposée sur le sol de glace un peu plus loin, et vous constatez que\nles deux moitiés s'ajustent parfaitement pour former une sphère\ncomplète. Lorsque vous séparez à nouveau les deux moitiés, le\nfeu continue de brûler à l'intérieur: c'est donc un feu perpétuel\nqui est enfermé dans ce globe. Si vous souhaitez conserver cette\nSphère de Feu, rangez-la dans votre tunique et inscrivez-la sur\nvotre Feuille d'Aventure dans la case Objets Spéciaux. Retournez\nensuite dans le tunnel en vous rendant au 132.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous au 132",
+        "nextPage": 132
+      }
+    ]
   },
   {
     "pageNumber": 296,
@@ -3213,7 +3824,13 @@
         "text": "le Traître",
         "nextPage": 173
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Barbares des Glaces",
+      "ability": 17,
+      "endurance": 30
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 297,
@@ -3232,7 +3849,16 @@
   {
     "pageNumber": 298,
     "content": "Vous découvrez un étrange Triangle de Pierre Bleue attaché à\nune chaînette. La main décharnée de l'un des cadavres le tient\nétroitement serré et vous êtes obligé de fracasser les phalanges\nblanchies pour libérer l'objet. Si vous souhaitez conserver ce\nTriangle de Pierre Bleue, passez la chaînette autour de votre cou\net glissez l'objet sous votre tunique. Inscrivez-le ensuite sur votre\nFeuille d'Aventure dans la case Objets Spéciaux. Vous pouvez\nquitter les lieux par un tunnel dont l'entrée se trouve dans le mur\ndu fond ; rendez-vous pour cela au 315. Vous pouvez également\nrevenir sur vos pas et emprunter l'autre tunnel en vous rendant\nau 125.",
-    "choices": []
+    "choices": [
+      {
+        "text": "tunnel dont l'entrée se trouve dans le mur du fond",
+        "nextPage": 315
+      },
+      {
+        "text": "revenir sur vos pas et emprunter l'autre tunnel",
+        "nextPage": 125
+      }
+    ]
   },
   {
     "pageNumber": 299,
@@ -3241,6 +3867,10 @@
       {
         "text": "vous au 65. Si vous préférez quitter le temple,",
         "nextPage": 306
+      },
+      {
+        "text": "Rendez-vous au 65",
+        "nextPage": 65
       }
     ]
   },
@@ -3273,6 +3903,10 @@
       {
         "text": "Si vous maîtrisez la Discipline Kaï de la Chasse,",
         "nextPage": 347
+      },
+      {
+        "text": "ne maîtrisez aucune de ces Disciplines",
+        "nextPage": 179
       }
     ]
   },
@@ -3287,6 +3921,10 @@
       {
         "text": "vous au 193. De 8 à 11,",
         "nextPage": 243
+      },
+      {
+        "text": "Rendez-vous au 193",
+        "nextPage": 193
       }
     ]
   },
@@ -3297,6 +3935,10 @@
       {
         "text": "souhaitez vous coiffer de ce Casque,",
         "nextPage": 308
+      },
+      {
+        "text": "Rendez-vous au 323",
+        "nextPage": 323
       }
     ]
   },
@@ -3308,7 +3950,13 @@
         "text": "Si vous remportez la victoire,",
         "nextPage": 20
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Monstre d'Enfer",
+      "ability": 22,
+      "endurance": 30
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 305,
@@ -3355,12 +4003,22 @@
   {
     "pageNumber": 308,
     "content": "En dépit de sa taille, le Casque vous paraît léger et agréable à\nporter. Inscrivez-le sur votre Feuille d'Aventure, dans la case\nObjets Spéciaux. Chaque fois que vous en serez coiffé au cours\nd'un combat, il augmentera de 2 points votre total d'HABILETÉ.\nLe couvercle du coffre se referme lentement et vous quittez les\nlieux, enchanté de votre trouvaille. Vous poursuivez ensuite votre\nchemin le long du couloir et vous montez l'escalier. Rendez-vous\nau 323.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous montez l'escalier",
+        "nextPage": 323
+      }
+    ]
   },
   {
     "pageNumber": 309,
     "content": "Vous fouillez les cadavres des Barbares et vous découvrez, passée\nau cou de l'un d'eux, une chaînette à laquelle est accroché un\nTriangle de Pierre Bleue. Si vous souhaitez conserver cet objet,\ninscrivez-le sur votre Feuille d'Aventure dans la case Objets\nSpéciaux. Vous êtes affamé et vous dévorez gloutonnement la\ncarcasse rôtie en ne cessant d'engloutir la viande que pour\ncracher parfois quelques os. Bientôt, vous remarquez que le feu\nallumé devant vous brûle dans une demi-sphère de métal. Une\nautre demi-sphère est posée sur le sol de glace, un peu plus loin,\net vous constatez que les deux moitiés s'ajustent parfaitement\npour former une sphère complète. Lorsque vous séparez à\nnouveau les deux moitiés, le feu continue de brûler à l'intérieur :\nc'est donc un feu perpétuel qui est enfermé dans ce globe. Si vous\nsouhaitez conserver cette Sphère de Feu, rangez-la dans votre\ntunique et inscrivez-la sur votre Feuille d'Aventure dans la case\nObjets Spéciaux. Vous finissez alors les derniers restes de viande\nencore attachés aux os et vous retournez dans le tunnel. Rendez-\nvous au 132.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous retournez dans le tunnel",
+        "nextPage": 132
+      }
+    ]
   },
   {
     "pageNumber": 310,
@@ -3369,18 +4027,28 @@
       {
         "text": "l'abrite,",
         "nextPage": 72
+      },
+      {
+        "text": "Rendez-vous au 306",
+        "nextPage": 306
       }
     ]
   },
   {
     "pageNumber": 311,
     "content": "Ce liquide vous est familier, il s'agit d'une décoction d'Alether,\nune Potion de Force dont vos maîtres Kaï se servaient pour\naugmenter leur HABILETÉ au combat. Cette fiole contient\nsuffisamment de Potion d'Alether pour augmenter de 4 points\nvotre total d'HABILETÉ pour la durée d'un seul combat. Vous\ndevrez la boire juste avant le combat pendant lequel vous\nsouhaiterez voir votre HABILETÉ ainsi accrue. Si vous voulez\nconserver cette Potion, inscrivez-la sur votre Feuille d'Aventure\ndans la liste des objets contenus dans votre Sac à Dos. Retournez\nà présent au 10 et faites un nouveau choix.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous au 10",
+        "nextPage": 10
+      }
+    ]
   },
   {
     "pageNumber": 312,
     "content": "Vous essayez désespérément de dégager votre pied, mais le\ntraîneau bascule déjà dans la crevasse. Vous êtes alors précipité\ndans le vide. Votre chute vous semble interminable et, tandis que\nvous tombez ainsi d'une hauteur de plusieurs centaines de\nmètres, les cris horrifiés de vos guides retentissent à la surface,\nde plus en plus lointains. Votre mission s'achève ici en même\ntemps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 313,
@@ -3395,7 +4063,12 @@
   {
     "pageNumber": 314,
     "content": "Vous parcourez encore une centaine de mètres le long de la paroi\nrocheuse, et vous découvrez alors une grande fissure : c'est\nl'entrée d'une grotte. Dans votre impatience d'échapper à la\nmorsure du vent, vous vous hâtez d'y entrer et, dans l'obscurité,\nvous ne remarquez pas la crevasse qui s'ouvre dans le sol de la\ngrotte. Vous tombez aussitôt tête la première dans les ténèbres,\naccompagné d'une avalanche de glace et de pierres. Rendez-vous\nau 240.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous",
+        "nextPage": 240
+      }
+    ]
   },
   {
     "pageNumber": 315,
@@ -3418,6 +4091,10 @@
       {
         "text": "décidez de passer ce Bracelet à votre poignet,",
         "nextPage": 236
+      },
+      {
+        "text": "Rendez-vous au 215",
+        "nextPage": 215
       }
     ]
   },
@@ -3510,7 +4187,12 @@
   {
     "pageNumber": 324,
     "content": "Tandis que le répugnant Akranionor meurt à vos pieds, vous\nvoyez le traître bossu descendre de sa plate-forme et se précipiter\nvers une porte, un peu plus loin. Vous vous apprêtez à le\npoursuivre lorsque vous vous immobilisez soudain en découvrant\nle corps de Loi-Kymar étendu dans le fossé. Il est mort, tué au\ncours du combat psychique qui l'a opposé à Vonotar. La colère\nbouillonne en vous et vous brandissez votre arme en vous\nlançant à la poursuite de l'infâme renégat ; cette fois, vous êtes\ndécidé à le tuer. La porte s'ouvre sur un long couloir au bout\nduquel se trouve une arcade fermée par des rideaux. D'un geste\nvif, vous écartez les rideaux et vous continuez à courir. Rendez-\nvous au 61.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous continuez à courir",
+        "nextPage": 61
+      }
+    ]
   },
   {
     "pageNumber": 325,
@@ -3543,6 +4225,10 @@
       {
         "text": "au 105. Si vous tirez le 9,",
         "nextPage": 144
+      },
+      {
+        "text": "tirez un chiffre de 0 à 8",
+        "nextPage": 105
       }
     ]
   },
@@ -3571,6 +4257,10 @@
       {
         "text": "attaquer ces créatures,",
         "nextPage": 138
+      },
+      {
+        "text": "Rendez-vous au 284",
+        "nextPage": 284
       }
     ]
   },
@@ -3581,6 +4271,10 @@
       {
         "text": "examiner la porte, au bout du balcon,",
         "nextPage": 61
+      },
+      {
+        "text": "Rendez-vous au 148",
+        "nextPage": 148
       }
     ]
   },
@@ -3643,7 +4337,12 @@
   {
     "pageNumber": 335,
     "content": "La paroi glacée offre de nombreuses prises, mais vous ne pouvez\npas vous y agripper tant que vous portez vos moufles ; en\nrevanche, si vous ôtez vos moufles, vous aurez sans nul doute à\nsubir la morsure du gel. Si vous souhaitez risquer votre vie et vos\nmains, vous pouvez entreprendre l'escalade en vous rendant au\n55. Si vous préférez y renoncer, vous pouvez essayer de trouver\nune issue pour quitter la caverne en vous rendant au 182.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous au 182",
+        "nextPage": 182
+      }
+    ]
   },
   {
     "pageNumber": 336,
@@ -3676,18 +4375,28 @@
       {
         "text": "poursuite de l'étrange créature,",
         "nextPage": 87
+      },
+      {
+        "text": "Rendez-vous au 26",
+        "nextPage": 26
       }
     ]
   },
   {
     "pageNumber": 339,
     "content": "Dix minutes plus tard, vos pieds et vos mains ont subi les effets\ndu gel. Sur cette paroi exposée, les vents glacés soufflent à plus\nde 150 kilomètres à l'heure. Vous tenez bon pendant encore une\ndemi-heure, mais le froid a finalement raison de vous : vous\nperdez connaissance et vous tombez d'une hauteur de 900\nmètres. Faut-il préciser que votre mission s'achève ici en même\ntemps que votre vie ?",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 340,
     "content": "Vous traînez les cadavres hors de la cuisine et vous les\nabandonnez derrière la porte secrète. Lorsque vous revenez, Loi-\nKymar est occupé à examiner les bocaux remplis d'herbes qui\nsont alignés sur les étagères. Il prend plusieurs de ces bocaux\nqu'il range dans ses poches, puis il en ouvre deux autres dont il\nmélange le contenu dans un petit bol de pierre. Il vous tend\nensuite une poignée d'herbes sèches en vous conseillant de les\nmanger. « Elles vous rendront vos forces, Loup Solitaire», dit-il.\nVous mangez les herbes au goût douceâtre et une chaleur\nbienfaisante rayonne aussitôt dans tout votre corps. Vous pouvez\najouter 6 points d'ENDURANCE à votre total actuel. Rendez-\nvous à présent au 301.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous au 301",
+        "nextPage": 301
+      }
+    ]
   },
   {
     "pageNumber": 341,
@@ -3721,7 +4430,13 @@
         "text": "Si vous sortez vainqueur de ce quadruple combat,",
         "nextPage": 28
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Loup Maudit",
+      "ability": 15,
+      "endurance": 24
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 344,
@@ -3730,6 +4445,10 @@
       {
         "text": "Triangle de Pierre Bleue",
         "nextPage": 41
+      },
+      {
+        "text": "Rendez-vous au 147",
+        "nextPage": 147
       }
     ]
   },
@@ -3770,7 +4489,12 @@
   {
     "pageNumber": 348,
     "content": "Votre Discipline Kaï vous révèle qu'il existe, à moins de 200\nmètres en direction du sud, un réseau de grottes et de\nsouterrains. Vous abandonnez alors votre traîneau et vous partez\nvers le sud pour essayer de découvrir quelque chose. Rendez-\nvous au 314.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous au 314",
+        "nextPage": 314
+      }
+    ]
   },
   {
     "pageNumber": 349,
@@ -3789,6 +4513,7 @@
   {
     "pageNumber": 350,
     "content": "La multitude de couleurs s'estompe et vous ressentez soudain\nune soudaine chute de température. Vous vous trouvez à présent\nsur la banquise de Liouk, à moins de 800 mètres de l'endroit où\nle Cardonal est ancré. Loi-Kymar et Vonotar sont auprès de vous\net tous deux frissonnent dans la fraîcheur de l'air du matin.\nQuelques minutes plus tard, l'homme de vigie du Cardonal vous\naperçoit et une chaloupe est immédiatement mise à la mer pour\nvenir vous chercher. Le capitaine vous accueille à bord du navire\nen vous félicitant pour votre courage et votre habileté, tandis que\nVonotar le Traître est hissé sans ménagement sur le pont et\naussitôt enfermé à fond de cale. « Mais comment avez-vous fait\npour revenir si vite ? demande le capitaine incrédule, nous ne\nvous attendions que dans dix jours. » « Disons, intervient Loi-\nKymar, que la sagesse d'un Seigneur Kaï et le savoir d'un\nmagicien de la Guilde peuvent parfois vaincre le temps lui-\nmême. » Une expression perplexe apparaît sur le visage du\ncapitaine, mais elle laisse place peu à peu à un sourire : il semble\nqu'il ait compris à demi-mot ce que le magicien voulait dire.\nVotre voyage de retour à Anskavern se déroule sans encombre,\nmais vous êtes quelque peu attristé, cependant, par le souvenir\nde vos guides courageux que vous avez dû laisser derrière vous.\nVotre arrivée dans le port de la côte sommerlundaise est\nattendue par une foule anxieuse de savoir ce qui s'est passé. On\ncraint en effet que votre retour si prompt ne soit un signe que\nvotre mission a échoué. Mais, lorsque la nouvelle se répand que\nVonotar le Traître a été capturé, il vous faut à nouveau montrer\ntous vos talents de guerrier. Et cette fois, ironie du destin, c'est\nVonotar lui-même que vous devez défendre contre la foule\ndéchaînée qui monte à l'assaut de la prison d'Anskavern pour\nlyncher l'infâme bossu. Vous parvenez malgré tout à protéger le\nprisonnier et à l'amener à Toran où l'attend son procès. A l'aube\nde la fête de Maesmarn, Vonotar le Traître est jugé par ses\nanciens compagnons, rassemblés dans les sous-sols du temple\nqui abrite la Guilde de l'Etoile de Cristal ; à l'issue des débats, il\nest reconnu coupable de tous les terribles crimes qu'il a commis.\nOn le conduit alors en silence dans une salle du temple située\nloin dans ses profondeurs et où se trouve l'Aveugloir : il s'agit\nd'un point de passage vers d'infinies ténèbres, le seuil d'une\nprison éternelle de laquelle il est impossible de s'échapper. Vous\nêtes le vengeur de ses crimes et c'est à vous que revient la tâche\nde précipiter le traître abject dans les limbes de l'Aveugloir. Votre\nmission est désormais accomplie. Vous avez survécu aux Grottes\nde Kalte et libéré le Sommerlund de la menace que Vonotar\nfaisait peser sur lui. Mais le feu des batailles et le défi d'une\nnouvelle quête tout aussi désespérée vous attendent maintenant\ndans le quatrième volume de la série du Loup Solitaire intitulé :\nLE GOUFFRE MAUDIT",
-    "choices": []
+    "choices": [],
+    "endingType": "victory"
   }
 ]
