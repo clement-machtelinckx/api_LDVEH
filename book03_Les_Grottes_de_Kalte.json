@@ -662,7 +662,8 @@
   {
     "pageNumber": 53,
     "content": "Malheureusement, vous avez mal calculé votre élan et la porte se\nreferme en vous broyant les jambes. Dans quelques minutes,\nvous vous serez vidé de votre sang. Votre mission s'achève donc\nici, en même temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 54,
@@ -725,7 +726,12 @@
   {
     "pageNumber": 59,
     "content": "Emporté par son élan, le Languabarb continue de charger sur la\nmince couche de glace qui cède sous son poids. Sous la surface\ngelée, une ombre file alors vers la créature qui se débat\nfurieusement dans l'eau glacée et l'emporte soudain dans les\nprofondeurs. Tout devient aussitôt étrangement immobile,\ntandis qu'une nappe d'eau rougie s'étale lentement sous la glace.\nVous vous hâtez en direction du tunnel dont les contours\ndéchiquetés se dessinent de l'autre côté du lac. Lorsque vous\nprenez pied sur la glace épaisse de la rive, vous remarquez un\nobjet à terre. C'est un petit Triangle de Pierre Bleue attaché à une\nchaînette. Si vous souhaitez conserver ce Triangle de Pierre\nBleue, passez la chaîne autour de votre cou, et inscrivez l'objet\nsur votre Feuille d'Aventure, dans la case Objets Spéciaux. Entrez\nensuite dans le tunnel en vous rendant au 235.",
-    "choices": []
+    "choices": [
+      {
+        "text": "rendez-vous au 176",
+        "nextPage": 176
+      }
+    ]
   },
   {
     "pageNumber": 60,
@@ -748,7 +754,8 @@
   {
     "pageNumber": 61,
     "content": "Vous pénétrez dans une galerie couverte qui entoure une cour\nintérieure. Soudain, vous entendez le tintement sourd d'une\ncloche de pierre que l'on sonne dans une tour de guet située au-\ndessus de la forteresse ; c'est une cloche d'alarme. La galerie et la\ncour intérieure sont complètement vides ; vous n'apercevez\nqu'un traîneau à voile rangé près de l'entrée. Vous décidez alors\nde prendre le risque d'aller voir et vous descendez l'escalier qui\nmène dans la cour. Quelques instants plus tard, vous découvrez\nque le traîneau est chargé de vivres et de matériel en provenance\nde Liouk. Toute la forteresse est à présent alertée de votre arrivée\net il ne vous est donc plus possible d'accomplir votre mission. La\nseule chose qui vous reste à faire, c'est de vous enfuir sur le\ntraîneau à voile pendant qu'il en est encore temps. Dans dix\njours, vous aurez rejoint le navire Cardonal et vous n'aurez plus\nqu'à reconnaître l'échec de votre mission.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 62,
@@ -797,7 +804,12 @@
   {
     "pageNumber": 66,
     "content": "Le crin qui recouvre la langue des Languabarbs contient un\npuissant venin grâce auquel la créature paralyse ses victimes\navant de les dévorer. Le venin agit en quelques secondes ; or,\nmalheureusement pour vous, le poil rêche de la langue du\nmonstre vous a inoculé le poison et vous perdez très vite\nconscience. Jamais vous ne vous réveillerez de ce sommeil qui\nmet fin à votre mission en même temps qu'à votre vie.",
-    "choices": []
+    "choices": [
+      {
+        "text": "vous atteignez l'autre rive",
+        "nextPage": 284
+      }
+    ]
   },
   {
     "pageNumber": 67,
@@ -860,7 +872,12 @@
   {
     "pageNumber": 71,
     "content": "Vous sentez que l'enfant Barbare cache un poignard en os dans\nl'une de ses bottes. Il essaie de s'en saisir pour vous attaquer. A\nprésent que votre Sixième Sens vous a averti du danger, rendez-\nvous au 320.",
-    "choices": []
+    "choices": [
+      {
+        "text": "rendez-vous au 242",
+        "nextPage": 242
+      }
+    ]
   },
   {
     "pageNumber": 72,
@@ -923,7 +940,12 @@
   {
     "pageNumber": 77,
     "content": "Vous reconnaissez l'odeur âcre de Ronces des Cimetières que l'on\na distillées. C'est là un poison violent et les simples vapeurs qui\ns'en dégagent sont suffisantes pour vous faire tourner la tête et\nvous troubler la vue. Vous vous hâtez de vous débarrasser du\nverre cassé et vous vous couvrez le nez avec la manche de votre\ntunique. Les vapeurs empoisonnées vous font perdre 1 point\nd'ENDURANCE. Retournez au 10 pour faire un autre choix.",
-    "choices": []
+    "choices": [
+      {
+        "text": "rendez-vous au 305",
+        "nextPage": 305
+      }
+    ]
   },
   {
     "pageNumber": 78,
@@ -944,7 +966,12 @@
   {
     "pageNumber": 79,
     "content": "Vous entrouvrez la porte, juste assez pour pouvoir verser la fiole\nde Ronces des Cimetières dans le gruau bouillonnant. Vous\nn'avez pas à attendre très longtemps : bientôt, les Barbares des\nGlaces ont absorbé leur dernier dîner, et dès que leurs cadavres\nsont étendus sur le sol, vous commencez à inspecter la cuisine en\ntoute tranquillité. C'est une petite cuisine qui comporte des\nréserves d'herbes étonnamment abondantes. « Elles viennent\nsans doute des comptoirs de Liouk », dit Loi-Kymar en regardant\nle contenu des bocaux et des pots rangés sur des étagères. Il\nprend plusieurs bocaux d'herbes et les entasse dans les vastes\npoches de sa toge. Vous avez hâte, pour votre part, de quitter les\nlieux, de peur que d'autres gardes n'arrivent, mais le vieux\nmagicien semble complètement absorbé par ses découvertes. Il\nouvre deux petits bocaux et en mélange le contenu en insistant\npour que vous partagiez avec lui cette mixture. « Elle vous\ndonnera des forces, Loup Solitaire », assure-t-il. Tandis que vous\nmangez les feuilles séchées qu'il vous offre, vous sentez tout votre\ncorps rayonner de chaleur. Vous gagnez 6 points d'ENDURANCE\nà ajouter à votre total actuel. Rendez-vous à présent au 301.",
-    "choices": []
+    "choices": [
+      {
+        "text": "rendez-vous au 296",
+        "nextPage": 296
+      }
+    ]
   },
   {
     "pageNumber": 80,
@@ -1195,7 +1222,12 @@
   {
     "pageNumber": 101,
     "content": "Vous avez de la chance, car les Bakanals ont pour particularité de\ndormir profondément et longtemps, parfois trois jours de suite\nlorsqu'ils ont fait un bon repas. Aussi n'avez-vous eu aucune\ndifficulté à plonger la créature dans un sommeil éternel : le coup\nque vous lui avez porté l'a tuée sans qu'elle se rende compte de\nrien. Vous pouvez à présent quitter les lieux en vous rendant au\n235.",
-    "choices": []
+    "choices": [
+      {
+        "text": "sortez de la cellule",
+        "nextPage": 210
+      }
+    ]
   },
   {
     "pageNumber": 102,
@@ -1616,7 +1648,12 @@
   {
     "pageNumber": 136,
     "content": "Soudain, vous êtes projeté en arrière tandis que le pont de glace\ncommence à se disloquer. Pendant quelques secondes, le\ntraîneau reste en équilibre instable sur le bord, comme une\nbalançoire, et vous entendez les cris d'horreur de vos guides\nimpuissants à vous venir en aide. C'est d'ailleurs là le dernier son\nque vous entendrez jamais, car le pont s'effondre et vous\nprécipite dans le gouffre. Vous faites une chute de 600 mètres au\nterme de laquelle vous êtes, bien entendu, tué sur le coup. Votre\nmission s'achève donc ici en même temps que votre vie.",
-    "choices": []
+    "choices": [
+      {
+        "text": "rendez-vous au 111",
+        "nextPage": 111
+      }
+    ]
   },
   {
     "pageNumber": 137,
@@ -1675,7 +1712,16 @@
   {
     "pageNumber": 142,
     "content": "Lorsque vous abattez votre arme sur le rocher, des centaines\nd'échardes argentées jaillissent sous le coup et le bloc commence\nà se fissurer, mais les Languabarbs sont déjà sur vous. Utilisez la\nTable de Hasard pour obtenir un chiffre. Si vous tirez un chiffre\nentre 0 et 5, le bloc s'effondre et obstrue l'entrée de la grotte.\nVous pouvez dès lors retourner dans l'autre tunnel en vous\nrendant au 284. Si vous tirez un chiffre entre 6 et 9, le bloc ne\ntombe pas et il vous faut combattre les Languabarbs. Rendez-\nvous alors au 32.",
-    "choices": []
+    "choices": [
+      {
+        "text": "retourner dans l'autre tunnel",
+        "nextPage": 284
+      },
+      {
+        "text": "combattre les Languabarbs",
+        "nextPage": 32
+      }
+    ]
   },
   {
     "pageNumber": 143,
