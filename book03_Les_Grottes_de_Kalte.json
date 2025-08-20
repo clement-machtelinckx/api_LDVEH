@@ -976,8 +976,16 @@
     "content": "Vous continuez à monter des marches jusqu'à ce que vous\narriviez devant une étroite porte de pierre. Comme toutes les\nautres portes que vous avez vues jusqu'à présent, celle-ci est\négalement actionnée par un levier fixé au mur. Un petit judas a\nété aménagé au milieu de la porte. Avec prudence, vous collez un\nœil contre cette minuscule ouverture et vous jetez un regard dans\nla petite pièce située derrière. Vous apercevez alors trois Loups\nMaudits endormis sur le sol de cette cellule. La porte d'une autre\ncellule s'ouvre dans le mur nord et vous apercevez, se découpant\ndans l'embrasure, la silhouette d'un Barbare des Glaces qui vous\ntourne le dos. Si vous maîtrisez la Discipline Kaï de la Chasse ou\ncelle de la Communication Animale, rendez-vous au 51. Si vous\nne possédez aucune de ces deux Disciplines, vous pouvez ouvrir\nla porte et attaquer les Loups Maudits en vous rendant au 137. Si\nvous préférez vous éloigner de la porte de cette cellule,\nredescendez l'escalier en vous rendant au 261.",
     "choices": [
       {
-        "text": "celle de la Communication Animale,",
+        "text": "maîtrisez la Discipline Kaï de la Chasse ou celle de la Communication Animale",
         "nextPage": 51
+      },
+      {
+        "text": "ne possédez aucune de ces deux Disciplines, vous pouvez ouvrir la porte et attaquer les Loups Maudits",
+        "nextPage": 137
+      },
+      {
+        "text": "préférez vous éloigner de la porte de cette cellule",
+        "nextPage": 261
       }
     ]
   },
@@ -1012,8 +1020,8 @@
     "content": "Vous entrouvrez la porte, juste assez pour pouvoir verser la fiole\nde Ronces des Cimetières dans le gruau bouillonnant. Vous\nn'avez pas à attendre très longtemps : bientôt, les Barbares des\nGlaces ont absorbé leur dernier dîner, et dès que leurs cadavres\nsont étendus sur le sol, vous commencez à inspecter la cuisine en\ntoute tranquillité. C'est une petite cuisine qui comporte des\nréserves d'herbes étonnamment abondantes. « Elles viennent\nsans doute des comptoirs de Liouk », dit Loi-Kymar en regardant\nle contenu des bocaux et des pots rangés sur des étagères. Il\nprend plusieurs bocaux d'herbes et les entasse dans les vastes\npoches de sa toge. Vous avez hâte, pour votre part, de quitter les\nlieux, de peur que d'autres gardes n'arrivent, mais le vieux\nmagicien semble complètement absorbé par ses découvertes. Il\nouvre deux petits bocaux et en mélange le contenu en insistant\npour que vous partagiez avec lui cette mixture. « Elle vous\ndonnera des forces, Loup Solitaire », assure-t-il. Tandis que vous\nmangez les feuilles séchées qu'il vous offre, vous sentez tout votre\ncorps rayonner de chaleur. Vous gagnez 6 points d'ENDURANCE\nà ajouter à votre total actuel. Rendez-vous à présent au 301.",
     "choices": [
       {
-        "text": "rendez-vous au 296",
-        "nextPage": 296
+        "text": "Rendez-vous à présent au 301",
+        "nextPage": 301
       }
     ]
   },
@@ -1033,10 +1041,14 @@
   },
   {
     "pageNumber": 81,
-    "content": "Vous vous apprêtez à cacher le cadavre sous l'escalier lorsque\nvous entendez soudain d'étranges cris et des hurlements rauques\nqui viennent du couloir. Un groupe de Barbares des Glaces\ns'avance vers vous. La vue de ces guerriers vous laisse un instant\nbouche bée : ce sont en effet de hideux mutants. Rempli de\ncrainte et de dégoût, vous montez l'escalier quatre à quatre\njusqu'à un vaste palier où vous trouvez un couloir orienté nord-\nsud. Si vous souhaitez courir en direction du nord, rendez-vous\nau 198. Si vous préférez aller vers le sud, rendez-vous au 69.",
+    "content": "Vous vous apprêtez à cacher le cadavre sous l'escalier lorsque\nvous entendez soudain d'étranges cris et des hurlements rauques\nqui viennent du couloir. Un groupe de Barbares des Glaces\ns'avance vers vous. La vue de ces guerriers vous laisse un instant\nbouche bée : ce sont en effet de hideux mutants. Rempli de\ncrainte et de dégoût, vous montez l'escalier quatre à quatre\njusqu'à un vaste palier où vous trouvez un couloir orienté nord-\nsud. Si vous souhaitez courir en direction du nord, rendez-vous\nau 189. Si vous préférez aller vers le sud, rendez-vous au 69.",
     "choices": [
       {
-        "text": "au 198. Si vous préférez aller vers le sud,",
+        "text": "courir en direction du nord",
+        "nextPage": 189
+      },
+      {
+        "text": "aller vers le sud",
         "nextPage": 69
       }
     ]
@@ -1148,10 +1160,16 @@
     "content": "Le Barbare des Glaces se met à hurler dans votre dos, en\nprononçant des paroles incompréhensibles. Vous avez été\ndécouvert. Maudissant votre malchance, vous dégainez aussitôt\nvotre arme. En vous retournant, vous voyez le Barbare tirer sur\nun levier fixé au mur du fond. Trois Loups Maudits apparaissent\nalors dans l'encadrement d'une porte secrète qui vient de\ns'ouvrir. Les trois créatures se précipitent sur vous et vous allez\ndevoir les combattre jusqu'à la mort, chacune à son tour.\nHABILETÉ ENDURANCE\nPremier LOUP MAUDIT 15 24\nDeuxième LOUP MAUDIT 14 23\nTroisième LOUP MAUDIT 14 20\nSi vous sortez vainqueur de ce combat, rendez-vous au 161.",
     "choices": [
       {
-        "text": "Si vous sortez vainqueur de ce combat,",
+        "text": "Si vous sortez vainqueur de ce combat",
         "nextPage": 161
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Loup Maudit",
+      "ability": 15,
+      "endurance": 24
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 90,
@@ -1178,8 +1196,12 @@
     "content": "Vous suivez le passage pendant quelques minutes jusqu'à ce qu'il\ntourne vers la gauche ; à votre grande consternation, vous\nconstatez alors qu'au-delà de cette courbe une fissure s'est\nouverte, provoquant l'écroulement du sol et des murs. Un large\ntrou noir béant s'ouvre devant vous. Si vous avez une Corde,\nrendez-vous au 133. Dans le cas contraire, vous n'aurez plus qu'à\nrebrousser chemin pour aller explorer l'autre tunnel. Rendez-\nvous pour cela au 297.",
     "choices": [
       {
-        "text": "trou noir béant s'ouvre devant vous. Si vous avez une Corde,",
+        "text": "Si vous avez une Corde",
         "nextPage": 133
+      },
+      {
+        "text": "rebrousser chemin pour aller explorer l'autre tunnel",
+        "nextPage": 297
       }
     ]
   },
@@ -1192,8 +1214,12 @@
   {
     "pageNumber": 94,
     "content": "Vous avez glissé et vous êtes tombé dans l'eau glacée, vous hurlez\nde douleur tandis que le froid vous saisit jusqu'à la moelle des os.\nVous luttez de toutes vos forces pour essayer de regagner la rive,\nmais c'est une entreprise désespérée. Utilisez la Table de Hasard\npour obtenir un chiffre. Si vous tirez un chiffre entre 0 et 6, vous\navez de la chance : vous parvenez en effet à vous hisser hors de\nl'eau glacée et vous vous écroulez épuisé sur la rive. Vous perdez\n3 points d'ENDURANCE avant i le vous rendre au 176. Si vous\ntirez un chiffre entre 7 et 9, l'eau glacée a tôt fait de vous\nparalyser les bras et quelques minutes plus tard vous vous êtes\nnoyé. Votre mission s'achève donc ici.",
-    "choices": [],
-    "endingType": "death"
+    "choices": [
+      {
+        "text": "Si vous tirez un chiffre entre 0 et 6",
+        "nextPage": 176
+      }
+    ]
   },
   {
     "pageNumber": 95,
@@ -1206,8 +1232,12 @@
     "content": "Vous vous enveloppez dans votre cape blanche et vous vous\ncachez derrière une stalagmite, à quelques mètres de la rive du\nlac. Retenant votre souffle, le corps parfaitement immobile, vous\nentendez les pas et les grognements du Languabarb s'approcher\nde plus en plus près. Pour savoir si la mise en pratique de votre\nDiscipline Kaï vous a permis de passer inaperçu, utilisez la Table\nde Hasard. Si vous vous êtes enduit le torse d'huile de Bakanal,\nvous ajouterez 2 au chiffre obtenu. Si le total se situe entre 0 et 8,\nrendez-vous au 59. Si ce total se situe entre 9 et 11, rendez-vous\nau 214.",
     "choices": [
       {
-        "text": "vous ajouterez 2 au chiffre obtenu. Si le total se situe entre 0 et 8,",
+        "text": "Si le total se situe entre 0 et 8",
         "nextPage": 59
+      },
+      {
+        "text": "Si ce total se situe entre 9 et 11",
+        "nextPage": 214
       }
     ]
   },
@@ -1274,8 +1304,8 @@
     "content": "Vous avez de la chance, car les Bakanals ont pour particularité de\ndormir profondément et longtemps, parfois trois jours de suite\nlorsqu'ils ont fait un bon repas. Aussi n'avez-vous eu aucune\ndifficulté à plonger la créature dans un sommeil éternel : le coup\nque vous lui avez porté l'a tuée sans qu'elle se rende compte de\nrien. Vous pouvez à présent quitter les lieux en vous rendant au\n235.",
     "choices": [
       {
-        "text": "sortez de la cellule",
-        "nextPage": 210
+        "text": "Vous pouvez à présent quitter les lieux",
+        "nextPage": 235
       }
     ]
   },
@@ -1298,18 +1328,28 @@
     "content": "Le lendemain, un fort vent se lève en provenance du nord. Des\nheures durant, il vous souffle au visage sans un instant de répit.\nLa banquise de Liouk se transforme peu à peu, au fur et à mesure\nde votre avance, en une masse de blocs de glace déchiquetés qui\npointent leurs arêtes vers le ciel. Vous ne parvenez à progresser\nque lentement et avec difficulté. Vers midi, vous tremblez de\nfroid, vos lèvres gercées saignent et les rafales de vent glacé vous\nont recouvert des pieds à la tête d'une fine pellicule de neige.\nVous dirigez votre traîneau vers un étroit passage qui marque la\njonction entre la banquise et la plaine de Hrod. Ce défilé vous\nprotège du vent et, pour la première fois de la journée, vous\nbénéficiez d'une bonne visibilité. Soudain, des cris au-dessus de\nvotre tête vous indiquent que vous n'êtes pas, vos guides et vous-\nmême, les seules créatures à avoir choisi cet endroit pour vous\nabriter. Quelques secondes plus tard, en effet, trois gros Bakanals\nsautant du mur de glace se jettent sur vos traîneaux et y\natterrissent dans un grand fracas. Votre compagnon de traîneau,\nIrian, est projeté sur la glace et tombe assommé. Un Bakanal\naffamé vous empêche de lui porter secours et il est inutile de\ntenter d'échapper à la créature Carnivore : il vous faut la\ncombattre jusqu'à la mort de l'un de vous deux.\nBAKANAL HABILETÉ: 19 ENDURANCE: 30\nSi vous sortez vainqueur de l'affrontement, rendez-vous au 305.",
     "choices": [
       {
-        "text": "Si vous sortez vainqueur de l'affrontement,",
+        "text": "Si vous sortez vainqueur de l'affrontement",
         "nextPage": 305
       }
-    ]
+    ],
+    "monster": {
+      "monsterName": "Bakanal",
+      "ability": 19,
+      "endurance": 30
+    },
+    "isBlocking": true
   },
   {
     "pageNumber": 104,
     "content": "Vous arrivez enfin devant une grande porte de pierre. A la\ndifférence des autres, celle-ci n'est pas actionnée par un levier\nmais vous remarquez en revanche une petite fente creusée dans\nle mur, juste à côté de la porte. Si vous possédez un Disque de\nPierre Bleue, rendez-vous au 135. Dans le cas contraire, il vous\nfaudra rebrousser chemin le long du couloir et prendre la\ndirection du sud en vous rendant au 330.",
     "choices": [
       {
-        "text": "Pierre Bleue,",
+        "text": "Si vous possédez un Disque de Pierre Bleue",
         "nextPage": 135
+      },
+      {
+        "text": "Dans le cas contraire, il vous faudra rebrousser chemin",
+        "nextPage": 330
       }
     ]
   },
