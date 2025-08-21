@@ -4346,7 +4346,7 @@
     "content": "Vous tirez l'épée de votre ceinture et vous l'offrez au capitaine.\nUne expression de surprise et de contentement apparaît sur son\nvisage tandis qu'il examine la lame. «Je n'espérais plus jamais\nrevoir ma fidèle épée, dit-il. C'est un bon présage pour la bataille\nqui nous attend. » Après vous avoir remercié, le capitaine remet\nson épée dans son fourreau qui, jusqu'alors, pendait vide à son\ncôté. Rendez-vous au 289.",
     "choices": [
       {
-        "text": "côté",
+        "text": "Continuer après avoir rendu l'épée au capitaine",
         "nextPage": 289
       }
     ]
@@ -4356,7 +4356,7 @@
     "content": "Lorsque vous parvenez au sommet du monticule, un spectacle\nsinistre s'offre à vos yeux. Des cadavres d'hommes et de chevaux\njonchent une vallée peu profonde qui s'étend devant vous. Les\ncorbeaux sont en train de déchiqueter leurs restes, ne laissant\nplus que des ossements nus. Vos patrouilleurs ne peuvent retenir\ndes exclamations horrifiées lorsqu'ils reconnaissent les armures\net les uniformes en lambeaux dont sont encore vêtus certains de\nces squelettes. Ces hommes, en effet, étaient des soldats de la\ncavalerie royale du Sommerlund. Sans doute sont-ils morts en\nlivrant bataille, car des cadavres de Guerriers Pillards sont\négalement étendus à leurs côtés. Quarante vaillants soldats, c'est-\nà-dire presque la moitié de l'escadron qui a quitté Holmgard il y\na un mois, reposent ainsi devant vous. Le cœur lourd, vos\npatrouilleurs entreprennent alors la triste tâche de leur offrir une\nsépulture décente. Une fois cette besogne accomplie, vous quittez\ncette vallée de la mort en n'éprouvant qu'un seul réconfort : le\ncapitaine Gayal ne faisait pas partie des cadavres que vous avez\nenterrés. Rendez-vous au 120.",
     "choices": [
       {
-        "text": "enterrés",
+        "text": "Quitter cette vallée de la mort",
         "nextPage": 120
       }
     ]
@@ -4390,8 +4390,12 @@
     "content": "Vous découvrez bientôt un puits de mine qui descend\nverticalement dans le flanc de la colline. L'entrée en est\npartiellement dissimulée par des buissons d'épines que vos\nhommes se hâtent de dégager. Vous remarquez alors une échelle\nfixée à la paroi du puits. Il s'agit là sans doute d'une issue de\nsecours des mines de Maaken qui sillonnent les profondeurs des\ncontreforts de la chaîne. Si vous parveniez à découvrir l'une des\ngaleries principales de ces mines, il vous serait alors possible de\nrejoindre Ruanon par les souterrains. Vous vous penchez au bord\ndu puits et vous scrutez l'obscurité au-dessous. Une telle odeur\nd'humidité et de pourriture s'échappe du trou que vous décidez\nd'envoyer le plus léger de vos hommes essayer l'échelle pour\nvérifier si elle est encore solide. Tout semble aller pour le mieux :\nvotre éclaireur, en effet, atteint bientôt l'entrée d'un tunnel situé\nau fond du puits et vous crie de le suivre. Ce tunnel mène à une\nsalle de forme ovale grossièrement taillée dans la roche. Un\nétrange liquide gluant brille sur le sol. Si vous maîtrisez la\nDiscipline Kaï de la Communication Animale, rendez-vous au 41.\nSinon, vous chercherez une issue en vous rendant au 276.",
     "choices": [
       {
-        "text": "Discipline Kaï de la Communication Animale,",
+        "text": "Si vous maîtrisez la Communication Animale",
         "nextPage": 41
+      },
+      {
+        "text": "Si vous ne maîtrisez pas cette discipline, chercher une issue",
+        "nextPage": 276
       }
     ]
   },
@@ -4478,8 +4482,8 @@
     "content": "Votre stratagème a réussi. En entendant le mot de passe, les\nGardes vous laissent entrer dans la crypte. Ils referment ensuite\nla porte de pierre derrière vous et vous vous retrouvez dans un\nlarge couloir éclairé par des Torches et orienté à l'est. Rendez-\nvous au 235.",
     "choices": [
       {
-        "text": "continuer",
-        "nextPage": 226
+        "text": "Avancer dans le couloir éclairé",
+        "nextPage": 235
       }
     ]
   },
@@ -4488,8 +4492,8 @@
     "content": "Bien que les deux étrangers semblent inoffensifs, vous préférez\nne pas prendre de risques et vous décidez d'établir des tours de\ngarde. Vous avez faim et il vous faut prendre un Repas, sinon\nvous perdrez 3 points d'ENDURANCE. Après avoir mangé, vous\nvous préparez à passer une bonne nuit de sommeil. Rendez-vous\nau 233.",
     "choices": [
       {
-        "text": "continuer",
-        "nextPage": 132
+        "text": "Se préparer à passer une bonne nuit de sommeil",
+        "nextPage": 233
       }
     ]
   },
@@ -4498,7 +4502,7 @@
     "content": "La tête commence à vous tourner et vos jambes deviennent\nlourdes en raison du manque d'oxygène. Vous perdez 2 points\nd'ENDURANCE. Rendez-vous au 32.",
     "choices": [
       {
-        "text": "d'ENDURANCE",
+        "text": "Continuer malgré le manque d'oxygène",
         "nextPage": 32
       }
     ]
