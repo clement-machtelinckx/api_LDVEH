@@ -4,6 +4,10 @@
     "content": "Pendant trois jours vous menez votre détachement de\npatrouilleurs à travers les plaines fertiles situées au sud du\nSommerlund. C'est là la première étape de votre voyage. Les\nchamps qui vous entourent sont entièrement dépourvus d'arbres\net vous n'apercevez que de vastes surfaces de blé qui semblent\ns'étendre à l'infini. Bien que vous soyez à cheval, les épis de blé\nvous arrivent au-dessus du genou et vos montures paraissent\nnager dans un immense océan d'un jaune éclatant où\napparaissent parfois un sentier ou un groupe de fermes isolées.\nLes habitants de la région vous accueillent avec chaleur, mais\nvous ne faites que de brèves haltes pour vous restaurer et vous\nreposer. Vous ne voulez pas, en effet, abuser de l'hospitalité des\npaysans ni les inquiéter en leur laissant deviner la nature de\nvotre mission. Le quatrième jour vers midi, vous atteignez la\npasse de Moytura. Là, les plaines font place aux contreforts\ndéchiquetés des monts Durncrag. Bientôt vous arrivez sur une\ngrande route orientée au sud et dont la surface est creusée\nd'ornières et de nids-de-poule. C'est la célèbre voie de Ruanon.\nAu sud de la passe, la voie de Ruanon traverse sur 150 km\nenviron un territoire à découvert qu'on appelle la Contrée des\nPillards. Des bandes de brigands venues du Pays Sauvage et des\nhordes de Gloks descendues des montagnes de l'ouest tendent\nfréquemment des embuscades aux voyageurs qui empruntent la\ngrande route. A plusieurs reprises, les chargements d'or et de\npierres précieuses en provenance des mines de Ruanon ont ainsi\noffert de riches butins à ces voleurs impitoyables. « Éclaireurs,\nen position ! » C'est vous qui venez de donner cet ordre ; aussitôt\ntrois groupes de patrouilleurs s'écartent de la colonne et lancent\nleurs chevaux au galop. Vous regardez avec fierté ces habiles\ncavaliers prendre position pour reconnaître le terrain en avant et\nsur les flancs de la troupe en marche. A la fin de l'après-midi, l'un\ndes éclaireurs revenant de l'ouest vient vous montrer une sorte\nde cratère rocheux d'où s'élève un filet de fumée : de toute\névidence il y a là une maison dissimulée à l'abri des rocs en\nsurplomb. Si vous souhaitez examiner cette maison, rendez-vous\nau 160. Si vous préférez ne pas y prêter attention et poursuivre\nvotre chemin le long de la voie de Ruanon, rendez-vous au 273.",
     "choices": [
       {
+        "text": "examiner cette maison",
+        "nextPage": 160
+      },
+      {
         "text": "votre chemin le long de la voie de Ruanon,",
         "nextPage": 273
       }
@@ -54,6 +58,10 @@
     "content": "Vous arrivez bientôt au croisement où le sentier aboutit à la\ngrand-route. Vous apercevez à nouveau le chariot brûlé,\nabandonné sur le bas-côté. Si vous n'avez pas encore examiné ce\nchariot, vous pouvez le faire en vous rendant au 80. Si vous\npréférez ne pas y prêter attention et poursuivre votre chemin le\nlong de la grand-route en direction du sud, rendez-vous au 175.",
     "choices": [
       {
+        "text": "examiner ce chariot",
+        "nextPage": 80
+      },
+      {
         "text": "long de la grand-route en direction du sud,",
         "nextPage": 175
       }
@@ -76,6 +84,10 @@
       {
         "text": "entrer dans le tunnel qui s'ouvre devant vous,",
         "nextPage": 151
+      },
+      {
+        "text": "continuer le long de la rivière souterraine",
+        "nextPage": 240
       }
     ]
   },
@@ -96,7 +108,12 @@
   {
     "pageNumber": 10,
     "content": "Le Guerrier recule en vacillant puis bascule par-dessus les\nremparts, tombant parmi les combattants engagés dans la\nbataille qui fait rage. Sa monture emplumée s'envole en poussant\nun hideux croassement dans le ciel d'orage. Vous trouvez alors\nsur le sol taché de sang un magnifique Médaillon d'Onyx arraché\nà l'armure du Guerrier au moment de sa chute. Si vous souhaitez\nconserver ce Médaillon d'Onyx, glissez-le dans votre poche et\ninscrivez-le sur votre Feuille d'Aventure dans la case Objets\nSpéciaux. Quittez à présent la tour de guet en vous rendant au\n59.",
-    "choices": []
+    "choices": [
+      {
+        "text": "quitter la tour de guet",
+        "nextPage": 59
+      }
+    ]
   },
   {
     "pageNumber": 11,
@@ -115,7 +132,12 @@
   {
     "pageNumber": 12,
     "content": "A 80 kilomètres au sud de Ruanon, la cité en ruines de Maaken\nse dresse tout au bord des gorges du même nom. Vous sentez\nsoudain une sueur froide perler à votre front. Vous venez en effet\nde vous rendre compte que, pour atteindre votre but, il vous\nfaudra parcourir 80 kilomètres de terrain entièrement contrôlé\npar l'ennemi. Il vous reste cependant une lueur d'espoir. Vos\nchances de succès devraient être à présent plus grandes qu'avant\nla bataille compte tenu de la déroute des armées adverses. Avant\nque vous ne vous mettiez en chemin, le capitaine Gayal vous offre\nles objets suivants, parmi lesquels vous pourrez faire votre choix\n:\n- des vivres équivalant à 3 Repas,\n-1 Corde,\n-1 Potion de Laumspur qui vous permettra de reprendre 4 points\nd'ENDURANCE lorsque vous la boirez après un combat,\n-1 Epée, -1 Lance.\nFaites votre choix et modifiez en conséquence votre Feuille\nd'Aventure. Rendez-vous ensuite au 140.",
-    "choices": []
+    "choices": [
+      {
+        "text": "partir pour Maaken",
+        "nextPage": 140
+      }
+    ]
   },
   {
     "pageNumber": 13,
@@ -136,10 +158,20 @@
     "content": "Vos patrouilleurs se déploient et avancent sans bruit à l'abri de\ngros rochers. Lorsque vous êtes arrivé à proximité de l'ennemi,\nvous lancez un sifflement perçant : c'est le signal de l'attaque !\nImmédiatement vos soldats se précipitent sur les brigands. Deux\nde ces derniers meurent sur le coup, le crâne fracassé par les\népées des patrouilleurs. Un troisième fait volte-face pour\ns'enfuir, mais il est tué à son tour et précipité dans l'eau\nparsemée d'écume. Votre propre adversaire est un redoutable\nGuerrier: d'énormes bracelets d'acier lui protègent les poignets et\nles avant-bras, et un sinistre collier composé de têtes réduites\norne sa poitrine. Vous portez le premier coup, mais ses réflexes\nsont vifs comme l'éclair. Il esquive en effet et contre-attaque à\nl'aide de sa lance.\nGUERRIER PILLARD HABILITÉ: 17 ENDURANCE: 28\nVous pouvez prendre la fuite à tout moment en plongeant dans la\nrivière Xane : rendez-vous pour cela au 31. Si vous combattez et\nsortez vainqueur, rendez-vous au 146.",
     "choices": [
       {
-        "text": "sortez vainqueur,",
-        "nextPage": 146
+        "text": "prendre la fuite en plongeant dans la rivière Xane",
+        "nextPage": 31
+      },
+      {
+        "text": "Si vous combattez et sortez vainqueur",
+        "nextPage": 32
       }
-    ]
+    ],
+    "isBlocking": false,
+    "monster": {
+      "name": "GUERRIER PILLARD",
+      "skill": 17,
+      "endurance": 28
+    }
   },
   {
     "pageNumber": 15,
@@ -172,7 +204,8 @@
   {
     "pageNumber": 17,
     "content": "La pointe d'une lance vous a écorché l'avant-bras. Il ne s'agit que\nd'une simple égratignure et pourtant votre bras s'est soudain\nengourdi au point que vous ne pouvez plus le remuer. Vous\nfrappez votre agresseur, mais votre coup est trop faible et mal\nporté pour se révéler efficace. Votre vue se trouble, vous ne\nparvenez plus à coordonner vos mouvements. Une terreur\naveugle vous envahit lorsque vous vous rendez compte soudain\nque ces bandits utilisent des armes empoisonnées. Une autre\nlance vous atteint à nouveau au bras et une autre encore\ns'enfonce dans votre poitrine. Vous sombrez peu à peu dans\nl'obscurité en emportant de ce monde une dernière vision: celle\ndu rictus triomphant de vos assassins en train de vous achever.\nVotre mission se termine ici en même temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 18,
@@ -187,7 +220,12 @@
   {
     "pageNumber": 19,
     "content": "Vous reconnaissez aussitôt ces amulettes. Elles sont le symbole\ndu « Saint Ordre des Rédempteurs », une communauté de\npèlerins contemplatifs dont la vie est consacrée à la prière et à la\nguérison. Vous présentez vos excuses pour avoir réagi d'une\nmanière trop hâtive et les deux hommes hochent leur tête rasée\nen signe de pardon. Vos soldats ont établi le campement à l'abri\ndu dôme de marbre et tout le monde se prépare à une bonne nuit\nde sommeil. Vous avez faim à présent et il vous faut prendre un\nRepas sinon vous perdrez 3 points d'ENDURANCE. Rendez-vous\nau 233.",
-    "choices": []
+    "choices": [
+      {
+        "text": "prendre un repas et dormir",
+        "nextPage": 233
+      }
+    ]
   },
   {
     "pageNumber": 20,
@@ -220,7 +258,12 @@
   {
     "pageNumber": 22,
     "content": "En fouillant dans votre Sac à Dos pour y prendre une Torche,\nvous faites tomber dans le vide un autre des objets qu'il contient\n(si vous n'aviez qu'une Torche dans votre Sac à Dos, à l'exclusion\nde tout autre objet, c'est une Arme que vous aurez perdue ; vous\nchoisirez vous-même l'objet tombé). Vous parvenez enfin à\nallumer la nouvelle Torche et vous traversez le pont sans\nencombre. Poursuivez votre chemin le long du tunnel en vous\nrendant au 157.",
-    "choices": []
+    "choices": [
+      {
+        "text": "traverser le pont",
+        "nextPage": 157
+      }
+    ]
   },
   {
     "pageNumber": 23,
@@ -241,6 +284,10 @@
     "content": "Vous sautez par-dessus le corps du Guerrier mort et vous\npénétrez dans la tour de guet. Montant quatre à quatre le large\nescalier de pierre, vous atteignez un palier au premier étage où\ndeux soldats tirent des flèches à travers des meurtrières.\nSoudain, l'un d'eux pousse un cri de douleur et recule en\nchancelant, une flèche enfoncée dans la poitrine. Si vous\nmaîtrisez la Discipline Kaï de la Guérison, vous pouvez venir en\naide à ce soldat blessé en vous rendant au 238. Si vous souhaitez\ncontinuer à monter les marches jusqu'au sommet de la tour,\nrendez-vous au 223. Si vous préférez ramasser l'arc du soldat\nblessé et prendre sa place derrière la meurtrière, rendez-vous au\n207.",
     "choices": [
       {
+        "text": "venir en aide à ce soldat blessé",
+        "nextPage": 238
+      },
+      {
         "text": "continuer à monter les marches jusqu'au sommet de la tour,",
         "nextPage": 223
       },
@@ -255,7 +302,11 @@
     "content": "Après avoir traversé les riches champs de blé situés au sud du\nSommerlund, le spectacle qui s'offre à présent à vos yeux vous\nparaît singulièrement morne et sinistre. Un paysage plat et\ndésolé, parsemé çà et là de fougères rabougries et de tertres\nrocheux, s'étend devant vous. Au cours de l'après-midi, des\nnuages d'orage s'amoncellent au sommet des monts Durncrag, à\nl'ouest, et un lointain grondement de tonnerre annonce l'arrivée\nimminente de la pluie. En début de soirée, vos éclai-reurs vous\nannoncent qu'ils ont découvert les ruines d'un ancien temple à\nmoins d'un kilomètre et demi de la grand-route. Si vous\nsouhaitez établir votre campement à l'abri de ces ruines, rendez-\nvous au 290. Si vous préférez éviter ce temple et poursuivre\nvotre chemin, rendez-vous au 141.",
     "choices": [
       {
-        "text": "votre chemin,",
+        "text": "Si vous souhaitez établir votre campement à l'abri de ces ruines",
+        "nextPage": 290
+      },
+      {
+        "text": "Si vous préférez éviter ce temple et poursuivre votre chemin",
         "nextPage": 141
       }
     ]
@@ -268,7 +319,13 @@
         "text": "Si vous êtes vainqueur",
         "nextPage": 321
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "VER DE PIERRE",
+      "ability": 15,
+      "endurance": 38
+    }
   },
   {
     "pageNumber": 27,
@@ -299,6 +356,10 @@
         "nextPage": 168
       },
       {
+        "text": "poursuivre votre chemin dans l'obscurité,",
+        "nextPage": 246
+      },
+      {
         "text": "la porte de la crypte que surveillent les Gardes,",
         "nextPage": 183
       }
@@ -319,11 +380,11 @@
     "content": "L'eau est sombre, très froide et son courant tumultueux vous\nemporte irrésistiblement vers un nouveau danger que vous\nn'aviez pas prévu : des rapides. Le fracas de l'eau bouillonnante\nest si intense qu'il en devient assourdissant. Vous aspirez une\ngrande bouffée d'air en vous préparant à affronter les remous\ntorrentiels qui menacent de vous engloutir. Utilisez la Table de\nHasard pour obtenir un chiffre. Si vous tirez un chiffre entre 0 et\n4, rendez-vous au 272. Entre 5 et 9, rendez-vous au 329.",
     "choices": [
       {
-        "text": "4,",
+        "text": "Si vous tirez un chiffre entre 0 et 4",
         "nextPage": 272
       },
       {
-        "text": ". Entre 5 et 9,",
+        "text": "Si vous tirez un chiffre entre 5 et 9",
         "nextPage": 329
       }
     ]
@@ -331,7 +392,12 @@
   {
     "pageNumber": 32,
     "content": "La hideuse créature vous lâche les jambes et sombre au fond de\nl'eau. Votre victoire vous réjouit, mais vous avez l'impression que\nvos poumons sont en feu. Vous vous débattez pour remonter à la\nsurface et vous parvenez enfin à respirer à nouveau, toussant et\nhaletant. Il ne reste du bateau et de vos hommes qu'une rame\nfracassée qui flotte à la surface de la sombre et terrifiante rivière.\nVous vous accrochez à ce débris et vous vous laissez emporter\npar le courant en direction de la rive opposée sur laquelle vous\nvous hissez. En vérifiant le contenu de votre Sac à Dos et de vos\npoches, vous constatez que vous n'avez rien perdu au cours de\nvotre lutte dans l'eau, mais c'est là une mince consolation au\nregard de la catastrophe que représente la mort de vos hommes.\nVous refusez cependant de perdre courage et vous décidez de\npoursuivre votre chemin vers Ruanon pour tenter de percer le\nmystère qui pèse sur la province. Avant d'entrer dans le tunnel\norienté à l'est, vous jetez un dernier regard à la rivière aux eaux\nnoires puis vous vous rendez au 309.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Entrer dans le tunnel",
+        "nextPage": 309
+      }
+    ]
   },
   {
     "pageNumber": 33,
@@ -391,7 +457,13 @@
         "text": ". S'il vous faut plus de 3 Assauts pour remporter la victoire,",
         "nextPage": 277
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "CHIEN DE GUERRE",
+      "ability": 17,
+      "endurance": 25
+    }
   },
   {
     "pageNumber": 37,
@@ -412,27 +484,40 @@
     "content": "Il ne reste plus rien dans la carcasse calcinée du chariot. Le bois\nest entièrement noirci et les garnitures de métal se sont\ndéformées sous l'effet de la chaleur. Ces débris, cependant,\nconfirment vos soupçons. C'est là ce qui reste d'un chariot de la\ncavalerie du Sommerlund, l'un des trois qui ont quitté Ruanon il\ny a plus d'un mois, escortés par les hommes du capitaine Gayal.\nTandis que vous vous trouvez devant le chariot, essuyant les\ncendres de vos mains, l'un de vos patrouilleurs pousse soudain\nun hurlement de douleur. Jetant un coup d'œil dans sa direction,\nvous le voyez tomber de son cheval, un disque d'acier acéré\nenfoncé dans la poitrine. « Une embuscade ! Tout le monde à\nl'abri ! » Alors que vous donnez cet ordre, d'autres disques\nmortels sont lancés des arbres, traversant l'air en sifflant. Les\nchevaux, pris de panique, s'enfuient en tous sens, vos hommes\ns'accrochant désespérément aux rênes. Vos agresseurs cachés\ndisparaissent aussi vite qu'ils sont venus, mais trois de vos\nsoldats ont été tués. Après avoir enterré les morts, il vous faut à\nprésent prendre une décision. Il ne reste en effet que quatre\nhommes à vos côtés et l'ennemi peut revenir à tout moment pour\nachever sa sinistre besogne. Si vous souhaitez poursuivre votre\nchemin le long de la grand-route en galopant vers Ruanon,\nrendez-vous au 297. Si vous préférez éviter la route principale et\ncontinuer en empruntant le chemin orienté à l'est, rendez-vous\nau 15.",
     "choices": [
       {
-        "text": "chemin le long de la grand-route en galopant vers Ruanon,",
+        "text": "Poursuivre votre chemin le long de la grand-route en galopant vers Ruanon",
         "nextPage": 297
+      },
+      {
+        "text": "Emprunter le chemin orienté à l'est",
+        "nextPage": 15
       }
     ]
   },
   {
     "pageNumber": 39,
     "content": "La flèche décrit une courbe dans le ciel envahi de fumée et\ntransperce le plastron étincelant de l'officier. Vous entendez son\ncri de douleur dominer le vacarme de la bataille et vous voyez ses\nyeux cruels se brouiller puis se fermer. Il s'effondre et glisse de sa\nselle, votre flèche profondément enfoncée dans le cœur. Rendez-\nvous au 148.",
-    "choices": []
+    "choices": [
+      {
+        "text": "continuer",
+        "nextPage": 148
+      }
+    ]
   },
   {
     "pageNumber": 40,
     "content": "Des chariots de mine vides sont alignés sur une voie ferrée, le\nlong d'un tunnel qui s'ouvre dans le mur ouest de cette galerie.\nAu-dessus de l'entrée du tunnel, un escalier de bois mène à un\ncouloir plus étroit éclairé par la flamme vacillante d'une torche.\nVous restez caché dans l'ombre en observant la galerie pendant\nune demi-heure. Vous estimez alors que vous pouvez y pénétrer\nsans risque. Si vous souhaitez suivre la voie ferrée en direction de\nl'ouest, rendez-vous au 55. Si vous préférez monter l'escalier\npour explorer le passage auquel il mène, rendez-vous au 291.\nEnfin, si vous maîtrisez la Discipline Kaï de l'Orientation et si\nvous avez le rang Kaï d'Aspirant (ou un rang supérieur), rendez-\nvous au 349.",
     "choices": [
       {
-        "text": "l'ouest,",
+        "text": "Suivre la voie ferrée en direction de l'ouest",
         "nextPage": 55
       },
       {
-        "text": "pour explorer le passage auquel il mène,",
+        "text": "Monter l'escalier pour explorer le passage auquel il mène",
         "nextPage": 291
+      },
+      {
+        "text": "Vous avez le rang Kaï d'Aspirant (ou un rang supérieur)",
+        "nextPage": 349
       }
     ]
   },
@@ -449,7 +534,8 @@
   {
     "pageNumber": 42,
     "content": "Vos genoux se fracassent contre la paroi et vous tombez comme\nune pierre dans l'obscurité du puits ; mais bientôt la douleur\nprovoquée par le choc disparaît : vous venez de perdre\nconnaissance. Quelques dizaines de mètres plus bas, vous\ntombez dans l'eau d'une rivière souterraine et, incapable de\nrefaire surface, vous mourez noyé en quelques instants. Votre\nmission s'achève ici en même temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 43,
@@ -484,7 +570,7 @@
     "content": "La pointe de leurs lances est enduite de sève de Gandum. Il s'agit\nlà d'un poison mortel et vous ne voulez pas prendre le risque\nd'engager le combat avec ces brigands : en effet, une simple\nécorchure provoquée par ces armes empoisonnées pourrait vous\nêtre fatale. Vous vous relevez alors d'un bond et vous courez à\ntoutes jambes en direction de Ruanon, laissant la forêt derrière\nvous. Rendez-vous au 307.",
     "choices": [
       {
-        "text": "vous",
+        "text": "Vous courez à toutes jambes en direction de Ruanon",
         "nextPage": 307
       }
     ]
@@ -497,7 +583,13 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 281
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "DÉMONDES SOUTERRAINS",
+      "ability": 20,
+      "endurance": 10
+    }
   },
   {
     "pageNumber": 47,
@@ -511,12 +603,23 @@
         "text": "remportez la victoire en 5 Assauts ou moins,",
         "nextPage": 32
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "MÉGACALMAR",
+      "ability": 16,
+      "endurance": 37
+    }
   },
   {
     "pageNumber": 48,
     "content": "Vous sentez que le tunnel de gauche s'éloigne de Ruanon. Sans\nhésiter un instant, vous empruntez donc celui de droite. Rendez-\nvous au 145.",
-    "choices": []
+    "choices": [
+      {
+        "text": "prendre le tunnel de droite",
+        "nextPage": 145
+      }
+    ]
   },
   {
     "pageNumber": 49,
@@ -533,8 +636,12 @@
     "content": "Les grandes portes s'ouvrent pour livrer passage à une patrouille\nde six Gardes des Tunnels. Chacun d'eux est armé d'une arbalète.\nEn vous voyant sur le pont, ils réagissent instantanément. «\nChargez ! » Vous venez de lancer cet ordre en espérant que vos\nhommes pourront maîtriser les Gardes avant qu'ils n'aient le\ntemps d'actionner leurs armes mortelles. Utilisez la Table de\nHasard pour obtenir un chiffre. Si vous tirez un chiffre entre 0 et\n6, rendez-vous au 184. Si vous tirez le 7, le 8 ou le 9, rendez-vous\nau 267.",
     "choices": [
       {
-        "text": "6,",
+        "text": "Si vous tirez un chiffre entre 0 et 6,",
         "nextPage": 184
+      },
+      {
+        "text": "Si vous tirez le 7, le 8 ou le 9,",
+        "nextPage": 267
       }
     ]
   },
@@ -543,11 +650,15 @@
     "content": "Vous avez chevauché pendant plus de quatre heures, lorsque\nvous apercevez soudain de gros oiseaux noirs qui tournoient au\nsommet d'une éminence de terre, un peu plus loin. Si vous\nsouhaitez monter sur cette éminence pour l'examiner, rendez-\nvous au 328. Si vous préférez ne pas prêter attention à ces\noiseaux et poursuivre votre chemin, rendez-vous au 120. Enfin,\nsi vous maîtrisez la Discipline Kaï de la Communication Animale,\nrendez-vous au 227.",
     "choices": [
       {
-        "text": "oiseaux et poursuivre votre chemin,",
+        "text": "Monter sur cette éminence pour l'examiner",
+        "nextPage": 328
+      },
+      {
+        "text": "Poursuivre votre chemin",
         "nextPage": 120
       },
       {
-        "text": "si vous maîtrisez la Discipline Kaï de la Communication Animale,",
+        "text": "Si vous maîtrisez la Discipline Kaï de la Communication Animale",
         "nextPage": 227
       }
     ]
@@ -567,10 +678,16 @@
     "content": "Dès que vous êtes entré, la porte se referme dans votre dos en\nclaquant. Vous faites aussitôt volte-face au moment où un Bandit\némergeant de l'ombre, se précipite sur vous. Il a la tête\nenveloppée de pansements tachés de sang, ce qui ne l'empêche\npas d'être armé et bien décidé à vous combattre.\nBANDIT BLESSÉ HABILETÉ : 13 ENDURANCE : 16\nIl vous affronte le dos contre la porte et vous n'avez donc pas la\npossibilité de fuir. Si vous remportez la victoire, rendez-vous au\n109.",
     "choices": [
       {
-        "text": "possibilité de fuir. Si vous remportez la victoire,",
+        "text": "Si vous remportez la victoire",
         "nextPage": 109
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "BANDIT BLESSÉ",
+      "ability": 13,
+      "endurance": 16
+    }
   },
   {
     "pageNumber": 54,
@@ -579,6 +696,14 @@
       {
         "text": "Guerrier,",
         "nextPage": 4
+      },
+      {
+        "text": "poursuivre votre chemin sur ce sol envahi de champignons",
+        "nextPage": 65
+      },
+      {
+        "text": "manger quelques-uns de ces champignons,",
+        "nextPage": 201
       }
     ]
   },
@@ -587,7 +712,11 @@
     "content": "La voie ferrée suit un tunnel éclairé par des Torches. Vous passez\ndevant des chariots de mine qui portent tous la même marque\nsur leurs flancs de bois : une croix ancrée surmontant les initiales\nO.V. Il s'agit là du sceau d'Oren Vanalund, baron de Ruanon.\nCette découverte vous confirme que vous avez pris la bonne\ndirection. Soudain, des bruits de pas retentissent dans le tunnel,\ns'approchant de vous. Ils deviennent de plus en plus sonores et\ns'accompagnent de cris et de claquements de fouet. Si vous\nsouhaitez vous cacher dans l'un des chariots vides, rendez-vous\nau 161. Si vous préférez vous dissimuler dans l'ombre des murs\ndu tunnel, rendez-vous au 286.",
     "choices": [
       {
-        "text": "du tunnel,",
+        "text": "vous cacher dans l'un des chariots vides,",
+        "nextPage": 161
+      },
+      {
+        "text": "vous dissimuler dans l'ombre des murs du tunnel,",
         "nextPage": 286
       }
     ]
@@ -599,8 +728,18 @@
       {
         "text": "Si vous gagnez le combat en 3 Assauts ou moins,",
         "nextPage": 69
+      },
+      {
+        "text": "S'il vous faut plus de 3 Assauts pour l'emporter,",
+        "nextPage": 203
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "GARDE BLESSÉ",
+      "ability": 12,
+      "endurance": 18
+    }
   },
   {
     "pageNumber": 57,
@@ -680,14 +819,24 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 148
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "GUERRIER PILLARD",
+      "ability": 17,
+      "endurance": 24
+    }
   },
   {
     "pageNumber": 63,
     "content": "Le son d'un glas retentit dans le paysage désolé. Les volets des\nfenêtres se ferment en claquant, mais des regards continuent de\nvous observer à travers des meurtrières aménagées dans le mur.\nVous faites arrêter vos hommes devant les larges portes de la\ntaverne. « Nous sommes des soldats du Sommerlund, annoncez-\nvous, nous cherchons un abri pour la nuit et du fourrage pour\nnos montures. » Après un long moment de silence, une voix vous\nrépond enfin. Pour savoir ce qu'elle vous dit, tirez un chiffre à\nl'aide de la Table de Hasard. Si ce chiffre est de 0 à 4, rendez-\nvous au 259. De 5 à 9, rendez-vous au 95.",
     "choices": [
       {
-        "text": "vous au 259. De 5 à 9,",
+        "text": "Si ce chiffre est de 0 à 4,",
+        "nextPage": 259
+      },
+      {
+        "text": "De 5 à 9,",
         "nextPage": 95
       }
     ]
@@ -697,25 +846,30 @@
     "content": "En dehors du puits et du tunnel par lequel vous êtes entré, il\nexiste une troisième issue qui vous permet de quitter cette salle:\nc'est un escalier en colimaçon aménagé devant le mur nord. Si\nvous souhaitez monter les marches de cet escalier, rendez-vous\nau 170. Si vous préférez descendre l'escalier, rendez-vous au\n228.",
     "choices": [
       {
-        "text": "au 170. Si vous préférez descendre l'escalier,",
+        "text": "monter les marches de cet escalier,",
+        "nextPage": 170
+      },
+      {
+        "text": "descendre l'escalier,",
         "nextPage": 228
       }
     ]
   },
   {
     "pageNumber": 65,
-    "content": "Lorsque vous marchez dessus, les champignons roses éclatent en\nlaissant échapper des nuages de spores dans le tunnel. Les spores\nvous piquent les yeux et vous empêchent de respirer. Vous\ncontinuez d'avancer à l'aveuglette d'un pas chancelant, mais à\npeine avez-vous émergé de ce nuage qu'un autre danger vous\nmenace. Une nuée de reptiles hideux dotés d'ailes de chauve-\nsouris volent dans votre direction. Leurs pattes couvertes\nd'écaillés enserrent des morceaux pointus de stalagmites. Il vous\nest impossible d'échapper au combat et vous devrez affronter ces\ncréatures en les considérant comme un seul et même ennemi.\nDÉMONS DES SOUTERRAINS HABILETÉ: 20 ENDURANCE:",
-    "choices": []
-  },
-  {
-    "pageNumber": 10,
-    "content": "Si vous êtes vainqueur, rendez-vous au 298.",
+    "content": "Lorsque vous marchez dessus, les champignons roses éclatent en\nlaissant échapper des nuages de spores dans le tunnel. Les spores\nvous piquent les yeux et vous empêchent de respirer. Vous\ncontinuez d'avancer à l'aveuglette d'un pas chancelant, mais à\npeine avez-vous émergé de ce nuage qu'un autre danger vous\nmenace. Une nuée de reptiles hideux dotés d'ailes de chauve-\nsouris volent dans votre direction. Leurs pattes couvertes\nd'écaillés enserrent des morceaux pointus de stalagmites. Il vous\nest impossible d'échapper au combat et vous devrez affronter ces\ncréatures en les considérant comme un seul et même ennemi.\nDÉMONS DES SOUTERRAINS HABILETÉ: 20 ENDURANCE: 10",
     "choices": [
       {
-        "text": "Si vous êtes vainqueur,",
+        "text": "Si vous êtes vainqueur.",
         "nextPage": 298
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "DÉMONS DES SOUTERRAINS",
+      "ability": 20,
+      "endurance": 10
+    }
   },
   {
     "pageNumber": 66,
@@ -754,11 +908,11 @@
     "content": "Il vous suffit de frapper la serrure d'un coup sec de la main pour\nforcer la porte du hangar à bateaux. Vous apercevez alors un\nbateau à rames retourné sur des tréteaux. Un seau de poix est\nposé au-dessous. A en juger par la couche de poussière qui\ncouvre la coque du bateau, il semble qu'il soit resté là pendant\nplusieurs mois. Si vous souhaitez mettre ce bateau à l'eau,\nrendez-vous au 180. Si vous préférez fouiller le hangar dans\nl'espoir d'y trouver des objets utiles, rendez-vous au 213.",
     "choices": [
       {
-        "text": "plusieurs mois. Si vous souhaitez mettre ce bateau à l'eau,",
+        "text": "Si vous souhaitez mettre ce bateau à l'eau",
         "nextPage": 180
       },
       {
-        "text": "l'espoir d'y trouver des objets utiles,",
+        "text": "Vous préférez fouiller le hangar",
         "nextPage": 213
       }
     ]
@@ -782,11 +936,15 @@
     "content": "Les feux de camp allumés le long de la grand-route vous\npermettent de repérer votre chemin dans la forêt. Les Guerriers\nPillards sont rassemblés autour des flammes cherchant quelque\nréconfort dans leur chaleur. De toute évidence ils négligent leur\ntour de garde et vous n'avez aucune difficulté à éviter leurs\npatrouilles. Au matin, vous avez atteint la lisière de la forêt.\nDevant vous s'étendent des champs de blé; vous apercevez au-\ndelà un petit village niché au fond d'une vallée peu profonde.\nQuelques sentiers étroits traversent les champs et vous\ndistinguez des essaims d'insectes qui volettent çà et là. Vous\nmarchez le long d'un de ces sentiers, lorsque vous apercevez\nsoudain des brigands qui se dirigent vers vous, leurs lances jetées\nsur l'épaule. Ils avancent d'un pas insouciant, comme s'ils se\npromenaient. Si vous possédez un Médaillon d'Onyx, rendez-\nvous au 305. Si vous souhaitez vous cacher parmi les épis de blé,\nrendez-vous au 159. Enfin, si vous maîtrisez la Discipline Kaï du\nCamouflage et que vous ayez atteint le rang Kaï de Gardien (ou\nun rang supérieur), rendez-vous au 49.",
     "choices": [
       {
-        "text": "vous au 305. Si vous souhaitez vous cacher parmi les épis de blé,",
+        "text": "Si vous possédez un Médaillon d'Onyx",
+        "nextPage": 305
+      },
+      {
+        "text": "Si vous souhaitez vous cacher parmi les épis de blé",
         "nextPage": 159
       },
       {
-        "text": "un rang supérieur),",
+        "text": "Vous ayez atteint le rang Kaï de Gardien (ou un rang supérieur)",
         "nextPage": 49
       }
     ]
@@ -794,7 +952,12 @@
   {
     "pageNumber": 71,
     "content": "Tandis que le Guerrier tombe mort à vos pieds, vous vous\nretournez vers vos hommes. Vous constatez alors avec horreur\nque trois d'entre eux sont étendus sur les marches, tués par des\ncarreaux d'arbalète. Le quatrième est blessé et cerné par\nl'ennemi. D'autres Gardes arrivent à ce moment. « Fuyez,\nSeigneur Kaï, fuyez pendant qu'il en est encore temps ! » vous\ncrie le patrouilleur. A peine l'écho de ces paroles a-t-il retenti\nqu'une épée lui transperce le cœur. Vous vous précipitez aussitôt\nen direction d'un tunnel orienté au nord. Une porte est ouverte à\nl'entrée de ce tunnel ; vous la claquez derrière vous dès que vous\nl'avez franchie et vous tirez le verrou. Vous courez ensuite le long\ndu souterrain au sol couvert de poussière en priant le ciel que la\nporte tienne et garde vos poursuivants à distance. Rendez-vous\nau 348.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Vous courez ensuite le long du souterrain",
+        "nextPage": 348
+      }
+    ]
   },
   {
     "pageNumber": 72,
@@ -811,11 +974,15 @@
     "content": "Vous vous approchez de l'autel dans un mouvement tournant en\nrestant hors de portée du poignard à la lame enflammée. De son\nautre main, Barraka dégaine alors son cimeterre et tente de vous\nfrapper de sa lame brillante comme un miroir. Il vous rate\ncependant. Si vous possédez un flacon d'Eau Bénite, rendez-vous\nau 283. Si vous possédez le Glaive de Sommer, rendez-vous au\n325. Si vous ne possédez ni l'un ni l'autre, rendez-vous au 122.",
     "choices": [
       {
-        "text": "au 283. Si vous possédez le Glaive de Sommer,",
+        "text": "Si vous possédez un flacon d'Eau Bénite,",
+        "nextPage": 283
+      },
+      {
+        "text": "Si vous possédez le Glaive de Sommer,",
         "nextPage": 325
       },
       {
-        "text": ". Si vous ne possédez ni l'un ni l'autre,",
+        "text": "Si vous ne possédez ni l'un ni l'autre,",
         "nextPage": 122
       }
     ]
@@ -825,11 +992,15 @@
     "content": "La nuit se déroule sans incident et vous vous sentez bien reposé\naprès ces heures de sommeil. Vous gagnez aussitôt 1 point\nd'ENDURANCE. Vous levez le camp, puis vous pénétrez dans la\nforêt qui s'étend sur les versants de la vallée. Votre instinct de\nguerrier vous avertit que la grand-route constitue un lieu idéal\npour une embuscade. Les arbres au feuillage dense qui la\nbordent offrent en effet une excellente cachette pour d'éventuels\nagresseurs. Afin de prévenir une attaque surprise, vous envoyez\ntrois de vos hommes en reconnaissance avec ordre de signaler\ntout élément suspect. Après avoir parcouru une certaine\ndistance, vous découvrez la carcasse d'un chariot calciné\nabandonné sur le bas-côté de la route. Derrière, un sentier\ns'éloigne vers l'est en remontant les collines. Vos éclaireurs, qui\nauraient dû vous informer de l'existence du chariot, n'ont pas\ndonné signe de vie. Si vous souhaitez examiner les débris du\nchariot, rendez-vous au 38. Si vous préférez ne pas y prêter\nattention et poursuivre votre chemin le long de la route, rendez-\nvous au 175. Enfin, si vous souhaitez explorer le sentier qui\nmène dans les collines, rendez-vous au 293.",
     "choices": [
       {
-        "text": "chariot,",
+        "text": "examiner les débris du chariot,",
         "nextPage": 38
       },
       {
-        "text": "mène dans les collines,",
+        "text": "poursuivre votre chemin le long de la route,",
+        "nextPage": 175
+      },
+      {
+        "text": "explorer le sentier qui mène dans les collines,",
         "nextPage": 293
       }
     ]
@@ -867,15 +1038,30 @@
     "content": "Un rictus cruel déforme son visage repoussant. Vous l'entendez\nparler dans votre tête, bien que ses lèvres restent immobiles: ce\nGuerrier est doté d'une puissante force mentale. Si vous ne\nmaîtrisez pas la Discipline Kaï du Bouclier Psychique, vous\nperdrez 1 point d'ENDURANCE supplémentaire à chaque Assaut\nau cours du combat que vous livrerez contre lui. Votre adversaire\nest invulnérable à votre propre Puissance Psychique.\nCAPITAINE VASSAGONIEN HABILITÉ: 22 ENDURANCE: 28\nVous aurez le droit de prendre la fuite après avoir mené au moins\n2 Assauts. Rendez-vous alors au 98. Si vous sortez vainqueur du\ncombat, rendez-vous au 10.",
     "choices": [
       {
-        "text": "combat,",
+        "text": "Vous aurez le droit de prendre la fuite après avoir mené au moins 2 Assauts.",
+        "nextPage": 98
+      },
+      {
+        "text": "Si vous sortez vainqueur du combat,",
         "nextPage": 10
       }
-    ]
+    ],
+    "isBlocking": false,
+    "monster": {
+      "monsterName": "CAPITAINE VASSAGONIEN",
+      "ability": 22,
+      "endurance": 28
+    }
   },
   {
     "pageNumber": 78,
     "content": "Lorsque vous vous approchez, ils font glisser leur capuchon de\nleur tête, laissant apparaître des visages souriants. Ils semblent\nsoulagés de pouvoir établir un contact amical dans ces terres\ninhospitalières. Ni l'un ni l'autre ne prononcent le moindre mot,\nmais tous deux ôtent de leur cou des Amulettes accrochées à des\nchaînettes. Ils vous donnent ainsi un moyen de les identifier. En\neffet, les petits poissons de bois qu'ils vous montrent sont les\nsymboles d'un Ordre Saint dont les membres sont appelés « les\nRédempteurs ». Il s'agit d'une communauté de pèlerins\ncontemplatifs qui consacrent leur vie à la prière et à l'étude de\nl'art de la Guérison. L'un des pèlerins vous offre un petit flacon\nde terre cuite rempli d'Eau Bénite. Si vous souhaitez conserver ce\nflacon, inscrivez-le sur votre Feuille d'Aventure, dans la case\nObjets Spéciaux. Vos hommes établissent le campement sous le\ndôme de marbre et vous vous préparez tous à une bonne nuit de\nsommeil. Vous êtes affamé et il vous faut à présent prendre un\nRepas, sinon vous perdrez 3 points d'ENDURANCE. Rendez-\nvous au 233.",
-    "choices": []
+    "choices": [
+      {
+        "text": "dormir dans le campement",
+        "nextPage": 233
+      }
+    ]
   },
   {
     "pageNumber": 79,
@@ -948,7 +1134,8 @@
   {
     "pageNumber": 85,
     "content": "Vous essayez de dégainer votre arme, mais cette créature est trop\nrapide pour vous. Ses crocs s'enfoncent dans votre colonne\nvertébrale et bientôt vous sentez le sang se retirer de votre corps\nqui reste paralysé. Vous entendez votre arme tomber sur le sol,\npuis vous vous effondrez face contre terre, votre visage heurtant\nla pierre dure. Vous ne ressentez cependant aucune douleur:\ntoute sensibilité vous a en effet quitté et, quelques instants plus\ntard, vous poussez votre dernier soupir. Votre mission s'achève\nici, en même temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 86,
@@ -965,11 +1152,15 @@
     "content": "Le garde est bientôt rejoint par plusieurs de ses compagnons qui\nse lancent à votre poursuite. Vous entendez derrière vous leurs\npas précipités et leur respiration haletante. Soudain, le tunnel se\nrétrécit et bifurque. Si vous souhaitez prendre à gauche, rendez-\nvous au 199. Si vous préférez aller à droite, rendez-vous au 208.\nEnfin, si vous maîtrisez la Discipline Kaï du Sixième Sens ou de\nl'Orientation, rendez-vous au 60.",
     "choices": [
       {
-        "text": "vous au 199. Si vous préférez aller à droite,",
+        "text": "Si vous souhaitez prendre à gauche,",
+        "nextPage": 199
+      },
+      {
+        "text": "Si vous préférez aller à droite,",
         "nextPage": 208
       },
       {
-        "text": "l'Orientation,",
+        "text": "si vous maîtrisez la Discipline Kaï du Sixième Sens ou de l'Orientation,",
         "nextPage": 60
       }
     ]
@@ -979,10 +1170,16 @@
     "content": "Une odeur fétide vous monte aux narines en vous donnant des\nhaut-le-cœur et en vous étouffant à moitié. Vous vous protégez la\nbouche et le nez, puis vous faites un pas en arrière en\nbrandissant votre arme, prêt à frapper la créature qui ondule\nvers vous à une allure impressionnante. Vos hommes portent des\ncoups d'épée à ses mâchoires grandes ouvertes, mais leurs lames\nne font qu'égratigner la peau grise et luisante du monstre avant\nque celui-ci les avale vivants. Le Ver de Pierre poursuit\ninexorablement son avance et il est bientôt sur vous : impossible\nde vous échapper, vous devrez le combattre jusqu'à la mort de\nl'un de vous deux. Cette créature est invulnérable à la Discipline\nKaï de la Puissance Psychique.\nSi vous remportez la victoire, rendez-vous au 321.",
     "choices": [
       {
-        "text": "Si vous remportez la victoire,",
+        "text": "Si vous remportez la victoire",
         "nextPage": 321
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "VER DE PIERRE",
+      "ability": 15,
+      "endurance": 38
+    }
   },
   {
     "pageNumber": 89,
@@ -992,7 +1189,13 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 7
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "GUERRIER PILLARD",
+      "ability": 17,
+      "endurance": 26
+    }
   },
   {
     "pageNumber": 90,
@@ -1002,15 +1205,25 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 249
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "VER DE PIERRE",
+      "ability": 15,
+      "endurance": 38
+    }
   },
   {
     "pageNumber": 91,
     "content": "Il est impossible de pénétrer à cheval dans la mine et vous êtes\ndonc contraints d'abandonner vos montures à l'extérieur. Les\ngaleries sont totalement obscures mais vous remarquez bientôt\nque des Torches éteintes sont fixées aux murs à intervalles\nréguliers. Vos hommes et vous-même prenez chacun une Torche\nque vous allumez avant de poursuivre votre chemin. Dans la\nfaible clarté qu'elles diffusent vous découvrez des traces de pas\nmenant vers un endroit où le tunnel s'est éboulé. Les traces se\npoursuivent jusqu'au sommet d'un énorme tas de terre qui\natteint presque le plafond, ne laissant qu'une petite ouverture\nentre les deux. Si vous souhaitez escalader ce tas de terre et vous\nglisser dans l'ouverture, rendez-vous au 254. Si vous préférez\nrenoncer à cette exploration, vous pouvez ressortir, reprendre\nvos chevaux et descendre le sentier de la colline en vous rendant\nau 191.",
     "choices": [
       {
-        "text": "glisser dans l'ouverture,",
+        "text": "escalader ce tas de terre et vous glisser dans l'ouverture,",
         "nextPage": 254
+      },
+      {
+        "text": "ressortir, reprendre vos chevaux et descendre le sentier de la colline",
+        "nextPage": 191
       }
     ]
   },
@@ -1040,19 +1253,34 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 2
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "GUERRIER PILLARD",
+      "ability": 15,
+      "endurance": 26
+    }
   },
   {
     "pageNumber": 94,
     "content": "Soudain, le bateau bascule en avant et vous êtes projeté en l'air.\nVous tombez pendant ce qui vous semble être une éternité, avant\nde heurter la surface de l'eau avec une telle violence que vous\nplongez à plus de 6 mètres de profondeur. L'eau glacée vous\nassomme à moitié et brise vos forces. Vous cherchez\ndésespérément à respirer un peu d'air en vous débattant pour\ntenter de remonter à la surface. Votre Sac à Dos, cependant, vous\nentraîne au fond et vous devez vous en débarrasser pour ne pas\nvous noyer. Lorsqu'enfin vous parvenez à l'air libre, le courant\nvous entraîne en vous éloignant de la chute d'eau. Vous vous\néchouez bientôt sur une rive de graviers au fond d'un ravin\nescarpé. Vous avez perdu votre Sac à Dos avec tout ce qu'il\ncontenait ainsi que votre bateau et vos hommes mais, en dépit du\ndésastre, vous êtes toujours vivant et à peu près indemne. Mettez\nà jour votre Feuille d'Aventure avant de vous rendre au 219.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Toujours vivant et à peu près indemne",
+        "nextPage": 219
+      }
+    ]
   },
   {
     "pageNumber": 95,
     "content": "« Quelle preuve avons-nous que vous n'êtes pas des brigands\nrevêtus d'uniformes volés ? » Qu'allez-vous faire ou dire qui\npuisse les convaincre que vous ne mentez pas 1 Si vous souhaitez\nleur expliquer que vous êtes un Seigneur Kaï et que vos hommes\nsont des patrouilleurs frontaliers du Sommerlund, rendez-vous\nau 259. Si vous préférez leur montrer l'insigne qui témoigne de\nvotre rang, rendez-vous au 195.",
     "choices": [
       {
-        "text": "votre rang,",
+        "text": "Leur expliquer que vous êtes un Seigneur Kaï et que vos hommes sont des patrouilleurs frontaliers du Sommerlund",
+        "nextPage": 259
+      },
+      {
+        "text": "Si vous préférez leur montrer l'insigne qui témoigne de votre rang",
         "nextPage": 195
       }
     ]
@@ -1062,11 +1290,15 @@
     "content": "Un tentacule fracasse le fond du bateau avec tant de force que\nvous êtes projeté en l'air et que vous retombez tête la première\ndans l'eau glacée de la rivière. Utilisez la Table de Hasard pour\nobtenir un chiffre. Si vous tirez un chiffre entre 0 et 4, rendez-\nvous au 47. Entre 5 et 8, rendez-vous au 234. Enfin, si vous tirez\nle 9, rendez-vous au 334.",
     "choices": [
       {
-        "text": "vous au 47. Entre 5 et 8,",
+        "text": "Si vous tirez un chiffre entre 0 et 4,",
+        "nextPage": 47
+      },
+      {
+        "text": "Entre 5 et 8,",
         "nextPage": 234
       },
       {
-        "text": "le 9,",
+        "text": "si vous tirez le 9,",
         "nextPage": 334
       }
     ]
@@ -1086,7 +1318,7 @@
     "content": "Le cimeterre du Guerrier siffle à quelques centimètres au-dessus\nde votre tête alors que vous vous laissez tomber dans l'ouverture\nde la trappe. Il essaie de vous suivre, mais les coups que vous lui\nportez le forcent à reculer. Vous parvenez à refermer la trappe et\nà tirer le verrou, empêchant désormais votre adversaire de\npénétrer à l'intérieur de la tour de guet. Essayant de chasser de\nvotre esprit les images sanglantes de la bataille, vous descendez\nquatre à quatre les marches de l'escalier et vous sortez de la tour\nde guet. Rendez-vous au 59.",
     "choices": [
       {
-        "text": "de guet",
+        "text": "Vous sortez de la tour de guet",
         "nextPage": 59
       }
     ]
@@ -1094,7 +1326,8 @@
   {
     "pageNumber": 99,
     "content": "En raison de l'obscurité, vous ne remarquez pas un grand trou\ndans les planches du pont. Vous passez au travers et vous tombez\ntête la première, vous fracassant le crâne après une chute de plus\nde 30 mètres. Votre mission s'achève ici, en même temps que\nvotre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 100,
@@ -1163,7 +1396,11 @@
     "content": "Un groupe de Gardes en armes apparaît soudain en haut de\nl'escalier et leur chef vous ordonne de vous arrêter. En vous\nvoyant hésiter, les Gardes saisissent les arbalètes qu'ils portent\nen bandoulière. Si vous souhaitez attaquer ces Gardes, rendez-\nvous au 285. Si vous préférez lever les mains et vous rendre,\nrendez-vous au 267.",
     "choices": [
       {
-        "text": "vous au 285. Si vous préférez lever les mains et vous rendre,",
+        "text": "Si vous souhaitez attaquer ces Gardes,",
+        "nextPage": 285
+      },
+      {
+        "text": "Si vous préférez lever les mains et vous rendre,",
         "nextPage": 267
       }
     ]
@@ -1173,8 +1410,12 @@
     "content": "Ces petits chevaux trapus appartiennent à une race connue sous\nle nom de Kucheks. Ils ont été baptisés ainsi d'après le nom d'une\nville et d'une province situées en Vassagonie, à plusieurs\ncentaines de kilomètres à l'est. Les brigands que vous avez\nrencontrés sur la voie de Ruanon chevauchaient précisément des\nKucheks. Si vous souhaitez quitter Eshnar le plus vite possible,\nrendez-vous au 67. Si vous préférez fouiller les écuries, rendez-\nvous au 236.",
     "choices": [
       {
-        "text": "Kucheks. Si vous souhaitez quitter Eshnar le plus vite possible,",
+        "text": "Si vous souhaitez quitter Eshnar le plus vite possible,",
         "nextPage": 67
+      },
+      {
+        "text": "Si vous préférez fouiller les écuries,",
+        "nextPage": 236
       }
     ]
   },
@@ -1197,18 +1438,32 @@
     "content": "Le chef des Gardes des Tunnels lance un ordre à ses hommes, qui\ns'immobilisent aussitôt. De toute évidence, il vient de leur\nordonner de ne pas se mêler d'un combat qu'il se réserve pour\nlui-même. L'officier porte un grand heaume empanaché ainsi\nqu'une écharpe d'un rouge vif en travers de la poitrine. D'un bref\nmouvement, il pointe sa hallebarde en direction de votre tête et\npasse à l'attaque.\nOFFICIER DES GARDES HABILETÉ : 20 ENDURANCE : 30\nVous pouvez prendre la fuite à tout moment en vous précipitant\nde l'autre côté du pont. Rendez-vous pour cela au 271. Si vous\nsortez vainqueur du combat, rendez-vous au 28.",
     "choices": [
       {
-        "text": "sortez vainqueur du combat,",
+        "text": "Vous pouvez prendre la fuite à tout moment",
+        "nextPage": 271
+      },
+      {
+        "text": "Si vous sortez vainqueur du combat,",
         "nextPage": 28
       }
-    ]
+    ],
+    "isBlocking": false,
+    "monster": {
+      "monsterName": "OFFICIER DES GARDES",
+      "ability": 20,
+      "endurance": 30
+    }
   },
   {
     "pageNumber": 109,
     "content": "D'un coup de pied vous retournez le cadavre du bandit puis vous\nle fouillez. Vous découvrez alors les objets suivants :\n- 3 Pièces d'Or,\n-1 Poignard,\n-1 Epée,\nVous pouvez prendre l'un ou l'autre de ces objets, en n'oubliant\npas de les inscrire sur votre Feuille d'Aventure. Vous vous\napprêtez à repartir, lorsque vous remarquez une trappe dans le\nplancher. En l'ouvrant, vous découvrez un escalier qui descend\ndans la cave de la cabane. Si vous souhaitez fouiller la cave,\nrendez-vous au 347. Si vous préférez quitter la cabane, rendez-\nvous au 258.",
     "choices": [
       {
-        "text": "dans la cave de la cabane. Si vous souhaitez fouiller la cave,",
+        "text": "Si vous souhaitez fouiller la cave,",
         "nextPage": 347
+      },
+      {
+        "text": "Si vous préférez quitter la cabane,",
+        "nextPage": 258
       }
     ]
   },
@@ -1227,7 +1482,11 @@
     "content": "Vous vous mettez en position et vous vous concentrez pour\nchoisir le meilleur moment où frapper. Tous vos sens de Guerrier\nKaï en éveil, vous lancez une attaque éclair. Plongeant sous le\ncimeterre qui siffle au-dessus de votre tête, vous tranchez la\nsangle de selle de votre adversaire. La selle bascule sur le côté et\nle cavalier tombe à bas de son cheval, s'écrasant à terre dans un\nnuage de poussière et de cendre. Vous avancez vers lui pour\nl'achever, mais il est prompt à réagir et se relève d'un bond. Il\nvous fait face à présent. Si vous souhaitez le combattre, rendez-\nvous au 90. Si vous préférez prendre la fuite, rendez-vous au\n163.",
     "choices": [
       {
-        "text": "vous au 90. Si vous préférez prendre la fuite,",
+        "text": "Si vous souhaitez le combattre,",
+        "nextPage": 90
+      },
+      {
+        "text": "Si vous préférez prendre la fuite,",
         "nextPage": 163
       }
     ]
@@ -1251,12 +1510,20 @@
     "content": "Vous pénétrez dans la forêt et vous descendez le flanc de la\ncolline en direction de la rivière Xane. Au bout de quelques\nmètres, la végétation devient trop dense pour que vous puissiez\ncontinuer à cheval. A contrecœur, vous faites donc signe à vos\nhommes de descendre de selle pour poursuivre votre chemin à\npied. Vous parvenez bientôt au bord de la rivière dont vous\nremontez le courant parsemé d'écume. Vous escaladez ainsi\nplusieurs terrasses rocheuses dont la surface a été rendue\nparfaitement lisse par la force du torrent. Vous parvenez ensuite\nà un endroit où de petits cours d'eau se jettent dans la rivière.\nVous apercevez alors six brigands qui donnent des coups de\nlance dans l'eau bouillonnante le long de la berge. Sur la rive\nopposée, des poissons gris sont entassés à côté d'un chariot\nattelé. Vous reconnaissez aussitôt ce chariot : il appartient à la\ncavalerie du Sommerlund. Si vous avez atteint le rang Kaï de\nGuerrier, rendez-vous au 166. Sinon, vous pouvez lancez une\nattaque surprise contre les bandits en vous rendant au 14. Si\nvous préférez essayer de traverser la rivière à l'abri des rochers,\nrendez-vous au 316. Enfin, si vous pensez qu'il serait imprudent\nde traverser à cet endroit, vous pouvez rebrousser chemin en\nvous rendant au 232.",
     "choices": [
       {
-        "text": "Guerrier,",
+        "text": "Si vous avez atteint le rang Kaï de Guerrier",
         "nextPage": 166
+      },
+      {
+        "text": "attaque surprise contre les bandits",
+        "nextPage": 14
       },
       {
         "text": "vous préférez essayer de traverser la rivière à l'abri des rochers,",
         "nextPage": 316
+      },
+      {
+        "text": "rebrousser chemin",
+        "nextPage": 232
       }
     ]
   },
@@ -1268,7 +1535,13 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 295
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "GUERRIER PILLARD",
+      "ability": 16,
+      "endurance": 25
+    }
   },
   {
     "pageNumber": 115,
@@ -1296,7 +1569,7 @@
     "choices": [
       {
         "text": "plongé dans les ténèbres. Si vous disposez d'une autre Torche,",
-        "nextPage": 22
+        "nextPage": 99
       },
       {
         "text": "au 99. De 7 à 12,",
@@ -1308,6 +1581,10 @@
     "pageNumber": 118,
     "content": "La porte de fer est fermée à clé. Elle comporte une grosse\npoignée à laquelle est suspendu un Fouet. Si vous voulez prendre\nce Fouet, inscrivez-le sur votre Feuille d'Aventure dans la case\ndes objets contenus dans votre Sac à Dos. Si vous possédez une\nClé de Fer, vous pouvez ouvrir la porte en vous rendant au 308.\nSi vous ne possédez pas cette Clé, ou si vous ne souhaitez pas\nouvrir la porte, vous pouvez quitter les lieux en empruntant un\nescalier en colimaçon. Pour monter cet escalier, rendez-vous au\n170. Si vous préférez descendre les marches, rendez-vous au\n228.",
     "choices": [
+      {
+        "text": "ouvrir la porte",
+        "nextPage": 308
+      },
       {
         "text": "escalier en colimaçon. Pour monter cet escalier,",
         "nextPage": 170
@@ -1323,8 +1600,12 @@
     "content": "« Plus un geste, Barraka ! Sa vie ne t'appartient pas ! » Vos\nparoles ont résonné en dominant le mugissement du vent. Le\nrenégat se tourne pour vous faire face en éclatant d'un rire aussi\nsonore que votre ordre. Il s'avance alors vers vous en serrant\ndans son poing le poignard à la lame enflammée. Vous dégainez\nvotre arme et vous entrez dans le temple. Si vous souhaitez\nengager le combat avec ce Seigneur de la Guerre, rendez-vous au\n296. Si vous préférez essayer de libérer Madelon, rendez-vous\nau 73.",
     "choices": [
       {
-        "text": "engager le combat avec ce Seigneur de la Guerre,",
+        "text": "Si vous souhaitez engager le combat avec ce Seigneur de la Guerre,",
         "nextPage": 296
+      },
+      {
+        "text": "Si vous préférez essayer de libérer Madelon,",
+        "nextPage": 73
       }
     ]
   },
@@ -1333,7 +1614,11 @@
     "content": "Après avoir chevauché pendant plusieurs heures, vous arrivez à\nun croisement. Un grand panneau de signalisation indique deux\ndirections : Ruanon au sud, distante de 95 km ; Eshnar à l'est, à\n65 km. Si vous souhaitez prendre la direction du sud, rendez-\nvous au 33. Si vous préférez aller à l'est, rendez-vous au 92.",
     "choices": [
       {
-        "text": "vous au 33. Si vous préférez aller à l'est,",
+        "text": "Si vous souhaitez prendre la direction du sud,",
+        "nextPage": 33
+      },
+      {
+        "text": "Si vous préférez aller à l'est,",
         "nextPage": 92
       }
     ]
@@ -1356,12 +1641,23 @@
         "text": "victoire,",
         "nextPage": 350
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "BARRAKA",
+      "ability": 25,
+      "endurance": 29
+    }
   },
   {
     "pageNumber": 123,
     "content": "Vous escaladez la colline boisée. Vous avez la gorge sèche et votre\ncœur bat avec force comme s'il était près d'éclater, mais vous ne\nvoulez pas prendre le risque de ralentir votre allure. Quatre\nheures passent avant que vous ne soyez certain d'avoir distancé\nl'ennemi. La nuit est presque tombée lorsque vous découvrez par\nhasard un étroit passage aux flancs escarpés, creusé dans la\ncolline pour donner accès à une galerie de mines. Pendant des\ncentaines d'années, les filons de la chaîne de Maaken ont\nreprésenté tout à la fois une bénédiction et un fléau pour ceux\nqui venaient ici chercher fortune. Des hommes, en effet, y ont\ntrouvé des richesses qui dépassaient leurs espérances les plus\ninsensées, tandis que d'autres ont péri sans laisser de traces dans\nun labyrinthe de tunnels sombres et glacés. Vous examinez\nl'entrée de la mine. Si vous parvenez à trouver l'un des tunnels\nprincipaux, vous devriez pouvoir atteindre Ruanon par ces\nsouterrains. Quelques mètres plus loin, vous découvrez une\ncaisse de bois contenant 6 Torches et 1 Briquet d'Amadou. Les\ngaleries de mines sont obscures et vous aurez besoin d'au moins\nune Torche pour vous éclairer. Vous avez cependant le droit d'en\nprendre davantage si vous le désirez, mais rappelez-vous que\nchaque Torche compte pour un objet dans votre Sac à Dos. Faites\nles modifications nécessaires sur votre Feuille d'Aventure avant\nd'entrer dans les mines en vous rendant au 315.",
-    "choices": []
+    "choices": [
+      {
+        "text": "entrer dans les mines",
+        "nextPage": 315
+      }
+    ]
   },
   {
     "pageNumber": 124,
@@ -1385,15 +1681,25 @@
         "text": "Si vous êtes vainqueur",
         "nextPage": 261
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "CHEF DES GARDES",
+      "ability": 20,
+      "endurance": 30
+    }
   },
   {
     "pageNumber": 126,
     "content": "L'obscurité de la nuit descend bientôt sur la Voie de Ruanon et\nvous êtes contraints de vous arrêter pour établir votre\ncampement. Vos hommes allument un grand feu et des\nsentinelles montent la garde pour prévenir toute attaque-\nsurprise au cours de la nuit. Il vous faut à présent prendre un\nRepas, sinon vous perdrez trois points d'ENDURANCE. La nuit\nse passe sans incident et vous levez le camp à l'aube en\npoursuivant votre chemin à travers la Contrée des Pillards.\nUtilisez la Table de Hasard pour obtenir un chiffre. Si vous tirez\nun chiffre entre 0 et 4, rendez-vous au 25. Entre 5 et 9, rendez-\nvous au 171.",
     "choices": [
       {
-        "text": "un chiffre entre 0 et 4,",
+        "text": "Si vous tirez un chiffre entre 0 et 4,",
         "nextPage": 25
+      },
+      {
+        "text": "Entre 5 et 9,",
+        "nextPage": 171
       }
     ]
   },
@@ -1478,22 +1784,36 @@
     "content": "Les brigands vous cernent et s'avancent vers vous bien décidés à\nvous tuer. Ils vous attaquent simultanément et vous devrez les\ncombattre en les considérant comme un seul et même adversaire.\nPATROUILLE DE BRIGANDS HABILETÉ: 18 ENDURANCE: 35\nVous avez le droit de prendre la fuite à tout moment, en courant\nvers Ruanon. Rendez-vous pour cela au 307. Si vous perdez des\npoints d'ENDURANCE au cours de ce combat, rendez-vous au\n17. Si vous remportez la victoire, sans perdre un seul point\nd'ENDURANCE, rendez-vous au 265.",
     "choices": [
       {
-        "text": "points d'ENDURANCE au cours de ce combat,",
+        "text": "Vous avez le droit de prendre la fuite à tout moment",
+        "nextPage": 307
+      },
+      {
+        "text": "Si vous perdez des points d'ENDURANCE au cours de ce combat,",
         "nextPage": 17
       },
       {
-        "text": "d'ENDURANCE,",
+        "text": "Si vous remportez la victoire, sans perdre un seul point d'ENDURANCE,",
         "nextPage": 265
       }
-    ]
+    ],
+    "isBlocking": false,
+    "monster": {
+      "monsterName": "PATROUILLE DE BRIGANDS",
+      "ability": 18,
+      "endurance": 35
+    }
   },
   {
     "pageNumber": 134,
     "content": "Vous arrivez bientôt à l'entrée d'une galerie de mine. Deux\nrangées d'empreintes de pas s'enfoncent dans l'obscurité du\ntunnel. A en juger par leur forme et leur taille, elles ont été\nlaissées par deux de vos éclaireurs disparus. Vous criez dans la\ngalerie, mais personne ne vous répond. Si vous souhaitez entrer\ndans cette mine, rendez-vous au 91. Si vous préférez abandonner\nvos recherches, revenez le long du sentier de la colline en vous\nrendant au 191.",
     "choices": [
       {
-        "text": "dans cette mine,",
+        "text": "Si vous souhaitez entrer dans cette mine,",
         "nextPage": 91
+      },
+      {
+        "text": "Si vous préférez abandonner vos recherches",
+        "nextPage": 191
       }
     ]
   },
@@ -1502,7 +1822,15 @@
     "content": "Les étendues plates et désolées du Pays Sauvage n'offrent aucun\nabri pour vous dissimuler aux yeux des hordes de brigands. Ces\nderniers sont quatre fois plus nombreux que vous et la vie ou la\nmort de toute votre troupe dépend à présent de la décision que\nvous prendrez. Si vous souhaitez partir à l'attaque des brigands\ndans l'espoir qu'une action audacieuse saura les effrayer, rendez-\nvous au 284. Si vous préférez séparer vos hommes en deux\ngroupes, vous partirez d'un côté avec dix patrouilleurs, tandis\nque les autres prendront la direction de l'ouest pour essayer\nd'attirer les bandits vers les monts Durncrag. Rendez-vous pour\ncela au 211. Enfin, si vous estimez plus judicieux de galoper vers\nle sud pour essayer d'atteindre la forêt de Ruanon avant que les\nbandits n'aient pu vous rattraper, rendez-vous au 30.",
     "choices": [
       {
-        "text": "bandits n'aient pu vous rattraper,",
+        "text": "Si vous souhaitez partir à l'attaque des brigands",
+        "nextPage": 284
+      },
+      {
+        "text": "Si vous préférez séparer vos hommes en deux groupes",
+        "nextPage": 211
+      },
+      {
+        "text": "si vous estimez plus judicieux de galoper vers le sud",
         "nextPage": 30
       }
     ]
@@ -1524,7 +1852,12 @@
   {
     "pageNumber": 137,
     "content": "Tout autour de la barricade, les ennemis refluent en désordre.\nLes cornes de guerre des brigands sonnent la retraite, exhortant\nles Guerriers vaincus à fuir le champ de bataille. Jubilant, le\ncapitaine Gayal émerge de la fumée les yeux brillants comme des\njoyaux sous les bords de son casque cabossé. «Nous avons\ntriomphé, Loup solitaire, s'exclame-t-il, l'ennemi est vaincu ! »\nLes hommes du capitaine ont entrepris de rebâtir la barricade et\nde soigner leurs camarades blessés. La vue des soldats\nsommerlundais morts dans la bataille vous attriste, mais vous\nvous consolez en songeant que les pertes de vos agresseurs sont\ninfiniment plus lourdes. Le capitaine vous emmène à la tour de\nguet où l'on soigne vos blessures à l'aide d'herbes de Laumspur.\nVous regagnez aussitôt 6 points d'ENDURANCE. « Nous avons\nvaincu ces brigands, mais je crains bien qu'il ne s'agisse là que\nd'un bref répit, dit le capitaine dont le visage à présent a pris une\nexpression grave et sombre. Le sacrifice de la fille du baron\nVanalund doit être empêché à tout prix si nous voulons éviter la\ncatastrophe. Nous n'aurions pas la force en effet de nous opposer\naux légions des morts ressuscités de leur tombe. » Les vers de la\nprophétie vous reviennent aussitôt en mémoire et un frisson\nvous parcourt l'échiné quand vous repensez à la menace qu'ils\nfont peser. Dans trois jours, lorsque la lune sera pleine, Barraka\nsacrifiera la fille du baron dans le temple souterrain et ce\nsacrifice libérera les morts des gorges de Maaken, le gouffre\nmaudit. Il vous faut à tout prix empêcher ce sacrifice. Rendez-\nvous au 12.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rendez-vous au",
+        "nextPage": 12
+      }
+    ]
   },
   {
     "pageNumber": 138,
@@ -1533,8 +1866,18 @@
       {
         "text": "remportez la victoire,",
         "nextPage": 152
+      },
+      {
+        "text": "entrer dans le tunnel",
+        "nextPage": 81
       }
-    ]
+    ],
+    "isBlocking": false,
+    "monster": {
+      "monsterName": "GARDE IVRE",
+      "ability": 13,
+      "endurance": 29
+    }
   },
   {
     "pageNumber": 139,
@@ -1553,23 +1896,37 @@
   {
     "pageNumber": 140,
     "content": "L'obscurité du crépuscule enveloppe l'avant-poste assiégé de\nRuanon et vous profitez de la nuit pour traverser la plaine\njonchée de cadavres en direction du sud. Une ancienne route\nmène à Maaken, mais elle est contrôlée par les Guerriers\nvassagoniens. Ils y sont rassemblés par groupes, soignant leurs\nblessés et ruminant leur défaite. Bien qu'ils soient abattus et\ndémoralisés, ils n'en restent pas moins des ennemis mortels et il\nserait trop dangereux d'essayer de franchir leurs lignes ; il vous\nfaut donc passer par la forêt pour pouvoir vous cacher. Si vous\nsouhaitez pénétrer dans la forêt à droite de la route, rendez-vous\nau 70. Si vous préférez traverser la forêt du côté gauche, rendez-\nvous au 314.",
-    "choices": []
+    "choices": [
+      {
+        "text": "pénétrer dans la forêt à droite de la route,",
+        "nextPage": 70
+      },
+      {
+        "text": "traverser la forêt du côté gauche,",
+        "nextPage": 314
+      }
+    ]
   },
   {
     "pageNumber": 141,
     "content": "Vous n'êtes pas allé bien loin, lorsque soudain éclate un orage qui\ndéverse sur vos têtes une pluie torrentielle. En quelques minutes,\nla route sèche et poussiéreuse se transforme en marécage. Il vous\nsera impossible d'établir votre campement sous cette pluie\nbattante et vous décidez donc de poursuivre votre chemin toute\nla nuit en espérant que l'orage cessera bientôt. Au cours de cette\nnuit passée à cheval, il vous faudra prendre un Repas, sinon vous\nperdrez 3 points d'ENDURANCE. Au matin, la pluie a cessé,\nmais cette épreuve vous a épuisés, vous et vos hommes. Rendez-\nvous au 253.",
-    "choices": []
+    "choices": [
+      {
+        "text": "continuer sous la pluie",
+        "nextPage": 253
+      }
+    ]
   },
   {
     "pageNumber": 142,
     "content": "L'aube arrive, sinistre et pluvieuse. Un voile de bruine enveloppe\nla cité fantôme et les gémissements lugubres des vents qui\nsoufflent au fond des gorges de Maaken vous mettent mal à\nl'aise. Vous contemplez longuement les ruines, votre cape de\nSeigneur Kaï serrée autour de vos épaules pour vous protéger du\nfroid et de l'humidité. C'est ici même, au temps de la lune noire,\nque le roi Ulnar du Sommerlund tua le Seigneur Vashna, le plus\npuissant des Maîtres des Ténèbres. A l'issue d'un mortel combat\nlivré au bord même de cet abîme, le redoutable Maître des\nTénèbres fut tué par le Glaive de Sommer. On dit que son cri de\nmort, lorsqu'il tomba dans le gouffre, résonnera dans ces\nprofondeurs jusqu'au jour où Vashna se relèvera pour mener sa\nvengeance contre le Sommerlund et la maison d'Ulnar. Vous\nsentez votre estomac se contracter à la pensée que ce jour est\npeut-être venu. Cinq heures durant, vous observez la ville morte\nen notant le moindre détail. Le premier vers de l'étrange\nprophétie tourne sans cesse dans votre tête : « Au soir de pleine\nlune, en un temple profond... » Ce temple, de toute évidence, se\ntrouve quelque part sous terre et il doit exister un moyen d'y\naccéder. Mais par où peut-on y entrer ? Vous étudiez chaque\nfissure du terrain accidenté et vous arrivez à la conclusion que\nseuls deux chemins peuvent y mener. Il faut soit franchir la porte\nd'une crypte, gardée par deux Guerriers vassagoniens, soit\ndescendre un escalier de marbre qui s'enfonce sous terre entre\ndeux colonnes en ruines. Si vous souhaitez essayer de pénétrer\ndans le temple par la porte de la crypte que surveillent les\nGardes, rendez-vous au 183. Si vous préférez descendre l'escalier\nde marbre qui, lui, n'est pas gardé, rendez-vous au 270.",
     "choices": [
       {
-        "text": "Gardes,",
+        "text": "essayer de pénétrer dans le temple par la porte de la crypte que surveillent les Gardes,",
         "nextPage": 183
       },
       {
-        "text": "de marbre qui, lui, n'est pas gardé,",
+        "text": "descendre l'escalier de marbre qui, lui, n'est pas gardé,",
         "nextPage": 270
       }
     ]
@@ -1579,15 +1936,26 @@
     "content": "Quels que soient vos efforts, l'étai refuse de bouger. Soudain, vos\npoursuivants émergent des tunnels obscurs et vous attaquent. Ils\nne sont que deux, mais d'autres les suivent un peu plus loin. Le\ncombat est inévitable, et vous allez devoir les affronter un par un.\nHABILETÉ ENDURANCE\n1e GARDE DES TUNNELS 16 22\n2e GARDE DES TUNNELS 15 21\nSi vous parvenez à tuer le premier Garde, vous aurez le droit de\nprendre la fuite en vous rendant au 87. Si vous tuez les deux\nGardes, rendez-vous au 230.",
     "choices": [
       {
-        "text": "Gardes,",
+        "text": "prendre la fuite",
+        "nextPage": 87
+      },
+      {
+        "text": "Si vous tuez les deux Gardes,",
         "nextPage": 230
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "GARDES DES TUNNELS",
+      "ability": 16,
+      "endurance": 22
+    }
   },
   {
     "pageNumber": 144,
     "content": "Vous sautez du chariot et vous courez à toutes jambes sans vous\ndouter de ce qui vous attend. Une profonde excavation s'ouvre en\neffet à quelques mètres et vous y tombez tête la première. Avant\nde disparaître dans ce gouffre d'une trentaine de mètres de\nprofondeur, vous avez le temps d'apercevoir l'expression\nhorrifiée de votre ami anonyme. Quelques instants plus tard,\nvous vous fracassez le crâne. Votre mission s'achève ici en même\ntemps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 145,
@@ -1620,8 +1988,18 @@
       {
         "text": "Si vous remportez la victoire,",
         "nextPage": 280
+      },
+      {
+        "text": "continuer",
+        "nextPage": 81
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "GARDE DU PONT",
+      "ability": 14,
+      "endurance": 23
+    }
   },
   {
     "pageNumber": 148,
@@ -1654,6 +2032,10 @@
       {
         "text": "galerie,",
         "nextPage": 288
+      },
+      {
+        "text": "revenir sur vos pas le long du sentier de la colline",
+        "nextPage": 6
       }
     ]
   },
@@ -1670,7 +2052,12 @@
   {
     "pageNumber": 152,
     "content": "En fouillant le cadavre du Garde, vous trouvez les objets suivants\n:\n-1 Epée,\n- 6 Pièces d'Or,\n- des vivres équivalants à deux Repas\n-1 Clé de Cuivre.\nVous pouvez prendre un ou plusieurs de ces objets à condition de\nles noter sur votre Feuille d'Aventure. Au moment où vous vous\napprêtez à pénétrer dans le tunnel, un autre Garde apparaît au\npied de la rampe. Il vous voit et donne aussitôt l'alerte en\nsoufflant dans la corne de guerre qu'il porte autour du cou. Vous\nne perdez pas de temps à attendre de voir ce qui va se passer et\nvous vous hâtez de fuir à toutes jambes dans le tunnel, tandis que\nles échos de la corne retentissent encore à vos oreilles. Rendez-\nvous au 81.",
-    "choices": []
+    "choices": [
+      {
+        "text": "prendre les objets et continuer",
+        "nextPage": 240
+      }
+    ]
   },
   {
     "pageNumber": 153,
@@ -1680,7 +2067,13 @@
         "text": "la victoire,",
         "nextPage": 174
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "GUERRIER VASSAGONIEN",
+      "ability": 17,
+      "endurance": 26
+    }
   },
   {
     "pageNumber": 154,
@@ -1717,6 +2110,10 @@
       {
         "text": "rebrousser chemin pour prendre le tunnel orienté au sud,",
         "nextPage": 101
+      },
+      {
+        "text": "continuer",
+        "nextPage": 170
       }
     ]
   },
@@ -1755,12 +2152,16 @@
     "content": "Une escorte de cinq patrouilleurs vous accompagne le long du\nsentier sinueux qui mène à la maison. Il s'agit d'une masure dont\nles murs de pierre brute sont recouverts d'une mousse humide.\nElle est dépourvue de fenêtres et l'on y entre par une étrange\nporte ovale. Vous avez mis pied à terre et vous vous approchez de\ncette porte lorsqu'une voix d'homme à l'intérieur de la masure\nlance soudain : « Entrez, Loup Solitaire ! Je vous attendais. » Si\nvous souhaitez pousser la porte et entrer, rendez-vous au 84. Si\nvous préférez dégainer votre arme et ouvrir la porte d'un coup de\npied, rendez-vous au 205. Enfin, s'il vous semble plus judicieux\nd'envoyer quelques-uns de vos hommes dans la maison, rendez-\nvous au 306.",
     "choices": [
       {
-        "text": "vous souhaitez pousser la porte et entrer,",
-        "nextPage": 84
+        "text": "Si vous souhaitez pousser la porte et entrer,",
+        "nextPage": 306
       },
       {
-        "text": "pied,",
+        "text": "Si vous préférez dégainer votre arme et ouvrir la porte d'un coup de pied,",
         "nextPage": 205
+      },
+      {
+        "text": "s'il vous semble plus judicieux d'envoyer quelques-uns de vos hommes dans la maison,",
+        "nextPage": 306
       }
     ]
   },
@@ -1769,11 +2170,15 @@
     "content": "Vous relevez le capuchon de votre cape de Seigneur Kaï et vous\nvous accroupissez au fond du chariot vide en retenant votre\nsouffle. Par un interstice entre deux planches, vous apercevez\nune procession d'hommes au visage hagard qui avancent vers\nvous en traînant les pieds. Des Guerriers Pillards les escortent en\nfrappant ceux qui chancellent ou s'écartent des rangs. Une\nsoudaine secousse vous indique que le chariot est à présent\npoussé le long du tunnel. En levant les yeux vous apercevez le\nvisage ruisselant de sueur d'un homme qui se penche vers vous.\n« Fuyez à gauche quand je vous dirai : Allez-y ! » murmure\nl'homme. Il relève alors la tête et vous ne pouvez plus voir son\nvisage. Lorsque le chariot émerge du tunnel, vous êtes ébloui par\nla lumière du soleil. A travers l'interstice vous parvenez à voir\nl'endroit vers lequel on pousse votre chariot. Il s'agit d'un\nportique sous lequel s'arrête la voie ferrée, à quelque 15 mètres\nau-dessus d'un énorme entassement de minerai. Vous n'avez pas\nl'occasion cependant de poursuivre longtemps votre\ncontemplation : un ordre bref vous interrompt en effet : « Allez-y\n! » murmure l'homme au visage ruisselant de sueur. Si vous\nsouhaitez sauter du chariot en courant vers la gauche, rendez-\nvous au 27. Si vous préférez sauter du chariot en courant vers la\ndroite, rendez-vous au 144. Enfin, si vous estimez plus sage de\nne pas tenir compte de ce conseil et de rester où vous êtes,\nrendez-vous au 294.",
     "choices": [
       {
-        "text": "droite,",
+        "text": "Si vous souhaitez sauter du chariot en courant vers la gauche,",
+        "nextPage": 27
+      },
+      {
+        "text": "Si vous préférez sauter du chariot en courant vers la droite,",
         "nextPage": 144
       },
       {
-        "text": "ne pas tenir compte de ce conseil et de rester où vous êtes,",
+        "text": "si vous estimez plus sage de ne pas tenir compte de ce conseil et de rester où vous êtes,",
         "nextPage": 294
       }
     ]
@@ -1799,6 +2204,10 @@
       {
         "text": "Sommerlund qui vient de vous sauver",
         "nextPage": 249
+      },
+      {
+        "text": "continuer",
+        "nextPage": 346
       }
     ]
   },
@@ -1813,6 +2222,10 @@
       {
         "text": "immédiatement en retraite et de se réfugier dans la mine,",
         "nextPage": 52
+      },
+      {
+        "text": "continuer",
+        "nextPage": 201
       }
     ]
   },
@@ -1843,7 +2256,12 @@
   {
     "pageNumber": 167,
     "content": "Vous avez la satisfaction de découvrir au fond du chariot de mine\nun Sac à Dos de mineur et une Pelle. A l'intérieur du Sac à Dos,\nvous trouvez des provisions équivalant à un Repas. Vous ajustez\nle Sac à Dos sur vos épaules puis vous montez la pente raide du\ntunnel. Apportez à votre Feuille d'Aventure les modifications\nnécessaires avant de vous rendre au 185.",
-    "choices": []
+    "choices": [
+      {
+        "text": "équiper le sac et continuer",
+        "nextPage": 185
+      }
+    ]
   },
   {
     "pageNumber": 168,
@@ -1867,7 +2285,13 @@
         "text": "tout juste le temps de vous enfuir",
         "nextPage": 123
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "GUERRIER PILLARD",
+      "ability": 16,
+      "endurance": 24
+    }
   },
   {
     "pageNumber": 170,
@@ -1930,7 +2354,7 @@
     "content": "D'autres Guerriers ennemis avancent parmi les débris de la\nbarricade en se dirigeant vers vous. Vous vous précipitez alors\nvers un grand tonneau d'eau défendu par un robuste sergent du\nSommerlund. Autour du tonneau, le sol est jonché de cadavres\nennemis. « Tuez leur chef ! » ordonnez-vous en montrant du\ndoigt l'officier qui commande les brigands. D'un geste rapide, le\nsergent tend son arc, vise et tire. La flèche décrit une courbe dans\nle ciel noirci de fumée et transperce le plastron étincelant de\nl'officier. Ses yeux cruels se brouillent, puis se ferment et il glisse\nde sa selle, la flèche profondément enfoncée dans le cœur.\nRendez-vous au 148.",
     "choices": [
       {
-        "text": "de sa selle, la flèche profondément enfoncée dans le cœur",
+        "text": "Continuer après avoir éliminé le chef ennemi",
         "nextPage": 148
       }
     ]
@@ -1953,12 +2377,19 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 7
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "GUERRIER PILLARD",
+      "ability": 17,
+      "endurance": 25
+    }
   },
   {
     "pageNumber": 177,
     "content": "Vous n'avez fait qu'un pas à l'intérieur de la caverne, lorsqu'un\ncoup porté par-derrière vous assomme net. Deux Gardes vous\navaient vu au croisement et vous ont tendu cette embuscade.\nVotre équipement est confisqué et vous êtes jeté sans\nconnaissance dans une cellule par les hommes de Barraka. Il\nvous sera désormais impossible d'empêcher le sacrifice et,\nlorsque la porte de votre prison s'ouvrira à nouveau, c'est la main\ndécharnée d'un squelette qui aura tourné la clé dans la serrure.\nVotre mission s'achève ici.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 178,
@@ -1993,19 +2424,24 @@
   {
     "pageNumber": 181,
     "content": "Vous entendez le claquement de la corde de l'arc et le sifflement\nde la flèche. Ce sont les deux derniers bruits que vous percevrez\nen ce monde. La flèche, en effet, vous transperce le crâne et vous\nmourez sur le coup. Votre mission s'achève ici, en même temps\nque votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 182,
     "content": "Les roulottes sont disposées en un cercle à l'intérieur duquel\nvous établissez votre campement. Un patrouilleur reçoit pour\nmission de surveiller les abords du camp. Les troubadours, quant\nà eux, construisent une petite scène sur laquelle bientôt s'avance\nYesu. Il demande le silence puis annonce le titre de la pièce qui\nva être jouée : « Les Vaillants Guerriers du Sommerlund ». C'est\nlà un programme qui provoque les cris d'enthousiasme de vos\nhommes. Au cours de la représentation, un détail étrange attire\nvotre attention : l'un des acteurs utilise en effet une épée\nvéritable. Or, ce genre d'épée n'appartient qu'aux officiers de la\ncavalerie du Sommerlund. A la fin de la pièce, vous vous\napprochez de l'homme pour l'interroger au sujet de cette arme. Il\nvous regarde alors d'un air inquiet puis s'enfuit dans l'obscurité\nqui règne autour du camp. Si vous souhaitez le poursuivre et que\nvous maîtrisiez les Disciplines Kaï de l'Orientation ou de la\nChasse, rendez-vous au 332. Si ces Disciplines vous sont\ninconnues, mais que vous vouliez malgré tout poursuivre\nl'acteur, rendez-vous au 58. Si vous préférez le laisser s'enfuir,\nrevenez auprès de vos hommes en vous rendant au 165.",
     "choices": [
       {
-        "text": "Chasse,",
+        "text": "Si vous maîtrisez l'Orientation ou la Chasse",
         "nextPage": 332
       },
       {
-        "text": "l'acteur,",
+        "text": "Si vous voulez poursuivre sans ces Disciplines",
         "nextPage": 58
+      },
+      {
+        "text": "Si vous préférez le laisser s'enfuir",
+        "nextPage": 165
       }
     ]
   },
@@ -2014,7 +2450,11 @@
     "content": "Vous vous approchez d'un enchevêtrement de buissons d'épines\nqui poussent à proximité de la porte de la crypte. De cette\ncachette, vous pouvez observer les Gardes vassagoniens sans être\nvu. D'autres soldats à cheval apparaissent alors. Ils viennent du\nnord et pénètrent dans les ruines de Maaken. Ils mettent ensuite\npied à terre et s'avancent vers la porte. « Le mot de passe ! »\ns'écrie l'un des gardes. « Lohn ! » répondent les soldats. La porte\ns'ouvre aussitôt et ils sont autorisés à entrer. Maintenant que\nvous connaissez le mot de passe, vous décidez d'essayer d'entrer\ndans la crypte de la même manière. Dissimulé par le capuchon de\nvotre cape, vous vous avancez d'un pas assuré vers les Gardes.\nUtilisez la Table de Hasard pour obtenir un chiffre. Si vous\nmaîtrisez la Discipline Kaï du Camouflage, ajoutez 4 au chiffre\nque vous aurez tiré. Si vous obtenez un total de 0 à 6, rendez-\nvous au 198. De 7 à 13, rendez-vous au 338.",
     "choices": [
       {
-        "text": "vous au 198. De 7 à 13,",
+        "text": "Si vous obtenez un total de 0 à 6",
+        "nextPage": 198
+      },
+      {
+        "text": "Si vous obtenez un total de 7 à 13",
         "nextPage": 338
       }
     ]
@@ -2048,10 +2488,20 @@
     "content": "Les brigands vassagoniens surgissent soudain des ruines et se\nlancent à l'attaque. Vous donnez aussitôt l'ordre de tirer. Une\npluie de flèches s'abat alors sur les hommes en armure et les\npointes d'acier transpercent leurs plastrons écarlates. La\npremière vague d'attaquants s'effondre. La seconde hésite. Une\nautre volée de flèches oblige l'ennemi à battre en retraite parmi\nles ruines. Quelques groupes de brigands ont survécu à la grêle\nmortelle et sont parvenus à atteindre la barricade. D'autres sont\ntués au moment où ils tentent de franchir la ligne de défense. Les\nplus hardis d'entre eux réussissent cependant à passer la\nbarricade à proximité de l'endroit où vous vous trouvez. Soudain,\nun Guerrier à la carrure impressionnante, aux longs cheveux\nnoirs et huileux noués derrière sa tête couturée de cicatrices,\nbondit sur le chariot et vous attaque. Il vous faut le combattre.\nGUERRIER VASSAGONIEN HABILETÉ: 18 ENDURANCE: 25\nVous pouvez prendre la fuite à tout moment en sautant du\nchariot. Rendez-vous pour cela au 66. Si vous remportez la\nvictoire, rendez-vous au 243.",
     "choices": [
       {
-        "text": "victoire,",
+        "text": "Prendre la fuite en sautant du chariot",
+        "nextPage": 66
+      },
+      {
+        "text": "Si vous remportez la victoire",
         "nextPage": 243
       }
-    ]
+    ],
+    "isBlocking": false,
+    "monster": {
+      "monsterName": "GUERRIER VASSAGONIEN",
+      "ability": 18,
+      "endurance": 25
+    }
   },
   {
     "pageNumber": 187,
@@ -2078,7 +2528,11 @@
     "content": "Vous essayez à grands coups de rames d'amener ce qui reste du\nbateau sur la rive opposée, mais, alors que vous plongez vos\navirons dans la rivière, ils vous sont arrachés des mains. Horrifié\nvous voyez l'un de vos patrouilleurs emporté dans l'eau noire par\nun énorme tentacule gluant. Un instant plus tard, un autre\ntentacule fracasse le fond du bateau avec une telle violence que\nl'embarcation est projetée en l'air. Vous retombez tête la\npremière dans la rivière glacée. Utilisez la Table de Hasard pour\nobtenir un chiffre. Si vous tirez un chiffre de 0 à 4, rendez-vous\nau 234. De .5 à 9 rendez-vous au 47.",
     "choices": [
       {
-        "text": "au 234. De .5 à 9",
+        "text": "Si vous tirez un chiffre de 0 à 4",
+        "nextPage": 234
+      },
+      {
+        "text": "Si vous tirez un chiffre de 5 à 9",
         "nextPage": 47
       }
     ]
@@ -2096,17 +2550,38 @@
   {
     "pageNumber": 191,
     "content": "Vous arrivez bientôt à un croisement où le sentier aboutit à la\ngrand-route. Vous apercevez alors un chariot calciné abandonné\nsur le bas-côté. Si vous souhaitez examiner ce chariot, rendez-\nvous au 337. Si vous préférez ne pas y prêter attention, vous\npoursuivrez votre chemin le long de la grand-route en vous\nrendant au 297.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Si vous souhaitez examiner ce chariot",
+        "nextPage": 337
+      },
+      {
+        "text": "Si vous préférez poursuivre votre chemin",
+        "nextPage": 297
+      }
+    ]
   },
   {
     "pageNumber": 192,
     "content": "Vous êtes à moins de 2 mètres de la porte lorsqu'un brigand\nsurgit soudain devant vous. Instinctivement, vous faites un écart\nmais vous n'êtes pas suffisamment rapide pour éviter le coup\nqu'il vous porte à l'aide de sa hallebarde. L'acier glacé s'enfonce\ndans votre poitrine et le sang ruisselle sur votre corps. Votre\nblessure est mortelle : vous rendez l'âme quelques instants plus\ntard. Votre mission s'achève ici en même temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 193,
     "content": "Hurlant et grognant, les Chiens de Guerre bondissent sur la\nbarricade, leurs yeux grands ouverts lançant des éclats écarlates\ndans le feu de la bataille. Piétinant les corps des morts et des\nmourants, ils se ruent sur les défenseurs sommerlundais. Tout\nautour de vous, des soldats sont projetés à terre par les molosses\nimpitoyables. Vous faites un pas en arrière au moment où un\nChien hurlant renverse la barrière de sacs et de tonneaux. Mais\navant qu'il ait pu vous atteindre, vous lui fracassez la tête avec\nvotre arme. Un autre Chien de Guerre vous attaque par-derrière\net vous jette contre la barricade effondrée. Avant que vous n'ayez\npu vous dégager, deux autres molosses plantent leurs crocs dans\nvotre jambe. Il vous faut à présent livrer un combat sans merci.\nCHIENS DE GUERRE HABILETÉ : 17 ENDURANCE : 30\nSi vous êtes toujours vivant après avoir mené 2 Assauts, rendez-\nvous au 311.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Si vous survivez au combat après 2 Assauts",
+        "nextPage": 311
+      }
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "CHIENS DE GUERRE",
+      "ability": 17,
+      "endurance": 30
+    }
   },
   {
     "pageNumber": 194,
@@ -2116,19 +2591,29 @@
         "text": "vous remportez la victoire,",
         "nextPage": 32
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "MÉGA CALMAR",
+      "ability": 16,
+      "endurance": 37
+    }
   },
   {
     "pageNumber": 195,
     "content": "Quelqu'un déverrouille la porte qui, à en juger par le bruit, doit\nêtre fermée à l'aide d'une lourde barre de fer. Un homme\nd'aspect robuste, vêtu d'une tunique de cuir apparaît à l'entrée de\nla taverne. « Bienvenue dans ma modeste auberge, Seigneur Kaï,\ndit-il, pardonnez ma méfiance, mais la région est très dangereuse\net la moindre erreur pourrait nous coûter la vie. » Vous faites\nsigne à vos hommes d'emmener leurs chevaux à l'écurie et vous\nsuivez le tenancier de la taverne. A l'intérieur, la salle ressemble\ndavantage à une armurerie qu'à une auberge. Des carquois\nremplis d'arcs sont posés devant chaque fenêtre fermée par des\nvolets cloutés de fer, et des lances sont alignées contre le mur du\nfond. Il n'y a dans la salle que trois hommes jeunes qui ont\nchacun un air de ressemblance très prononcé avec le tenancier.\nL'un de ces jeunes gens a la tête entourée de bandages. Vous\ndemandez à l'homme qui vous a ouvert le prix qu'il vous en\ncoûtera pour passer la nuit ici en compagnie de vos patrouilleurs.\n«Ce sera gratuit», répond-il à votre grande surprise. Il déplace\nalors les tables pour que vos soldats puissent s'installer sur le\nplancher. « Votre présence ici cette nuit, poursuit-il, a beaucoup\nplus de valeur pour nous que des Pièces d'Or. Nous subissons en\neffet des attaques incessantes de brigands depuis la dernière\npleine lune. » Dès que le dernier de vos hommes est revenu des\nécuries, les portes sont à nouveau fermées et verrouillées. Il a\ncommencé à pleuvoir et vos patrouilleurs semblent\nsingulièrement soulagés de se trouver à l'abri, au chaud et au sec.\nSi vous souhaitez interroger le tenancier de la taverne au sujet\ndes attaques de brigands, rendez-vous au 239. Si vous préférez\nlui demander s'il a eu des nouvelles en provenance de Ruanon,\nau cours du mois dernier, rendez-vous au 266. Enfin, si vous\nn'estimez pas nécessaire de poser d'autres questions à cet\nhomme, préparez-vous à une nuit de sommeil en vous rendant\nau 324.",
     "choices": [
       {
-        "text": "des attaques de brigands,",
+        "text": "Si vous souhaitez interroger le tenancier au sujet des attaques de brigands",
         "nextPage": 239
       },
       {
-        "text": "au cours du mois dernier,",
+        "text": "Si vous préférez lui demander des nouvelles de Ruanon",
         "nextPage": 266
+      },
+      {
+        "text": "Si vous préférez vous préparer à dormir",
+        "nextPage": 324
       }
     ]
   },
@@ -2140,7 +2625,13 @@
         "text": "vous êtes vainqueur,",
         "nextPage": 217
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "GUERRIER PILLARD",
+      "ability": 16,
+      "endurance": 23
+    }
   },
   {
     "pageNumber": 197,
@@ -2163,7 +2654,18 @@
   {
     "pageNumber": 198,
     "content": "Les Gardes ne se laissent pas prendre à votre stratagème. Ils\ntirent aussitôt leur épée et se lancent à l'attaque. Il vous faut les\ncombattre en les considérant comme un seul et même ennemi.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Si vous gagnez",
+        "nextPage": 235
+      }
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "GARDE",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 199,
@@ -2184,12 +2686,16 @@
     "content": "La forêt grouille de brigands, mais vos réflexes sont prompts et\nvotre habileté de Seigneur Kaï vous permet de ne pas être repéré.\nVous arrivez enfin de l'autre côté de la forêt touffue. Au-delà\ns'étendent des plaines dépourvues d'arbres qu'il faut traverser\npour atteindre Ruanon. Le spectacle qui s'offre à vos yeux est\nsingulièrement inquiétant. Une grande partie de la ville minière\na été en effet incendiée. Les boutiques, les maisons, les tavernes\nqui s'alignaient le long des rues ne sont plus que des tas de\ncendres fumantes. Vous craignez\nGARDES DE LA CRYPTE HABILETÉ : 18 ENDURANCE : 30\nalors que Ruanon n'ait été entièrement détruite. Une faible brise,\ncependant, dissipe bientôt les nuages de fumée qui masquent les\nruines comme des rideaux gris, et vous apercevez une barricade\ndressée autour d'une tour de pierre. Une bannière en lambeaux\nflotte au sommet de la tour et une lueur d'espoir s'allume aussitôt\nen vous. Il s'agit là, en effet, du drapeau du Sommerlund.\nL'habituel soleil qui symbolise votre pays est ici bordé d'une\nsoutache blanche indiquant que ce drapeau appartient à un\nrégiment de la cavalerie royale. Soudain, un craquement retentit\nderrière vous. Vous faites aussitôt volte-face et vous apercevez\ntrois brigands qui s'avancent dans votre direction. La pointe\nd'acier de leurs lances scintille. On dirait que ces armes ont été\ntrempées dans un liquide clair et gluant. Si vous maîtrisez la\nDiscipline Kaï de la Chasse ou s'il vous est déjà arrivé de visiter\nCrique-en-Gorn, rendez-vous au 45. Si vous souhaitez affronter\nles brigands, rendez-vous au 133. Si vous préférez prendre la\nfuite, vous devrez traverser la plaine en courant pour essayer\nd'atteindre Ruanon qui se trouve à 800 mètres de distance.\nRendez-vous pour cela au 307.",
     "choices": [
       {
-        "text": "Crique-en-Gorn,",
+        "text": "Si vous maîtrisez la Chasse ou avez visité Crique-en-Gorn",
         "nextPage": 45
       },
       {
-        "text": "les brigands,",
+        "text": "Si vous souhaitez affronter les brigands",
         "nextPage": 133
+      },
+      {
+        "text": "Si vous préférez prendre la fuite",
+        "nextPage": 307
       }
     ]
   },
@@ -2208,10 +2714,20 @@
     "content": "Vous allez devoir affronter un par un ces six Gardes lourdement\narmés.\nHABILETÉ ENDURANCE\n1er GARDE 23 24\n2e GARDE 21 25\n3e GARDE 24 22\n4e GARDE 18 15\n5e GARDE 15 16\n6e GARDE 14 14\nVous pouvez fuir ce combat à tout moment en sautant du pont.\nRendez-vous pour cela au 342. Si vous remportez la victoire,\nrendez-vous au 237.",
     "choices": [
       {
-        "text": "Rendez-vous pour cela au 342. Si vous remportez la victoire,",
+        "text": "Fuir le combat en sautant du pont",
+        "nextPage": 342
+      },
+      {
+        "text": "Si vous remportez la victoire",
         "nextPage": 237
       }
-    ]
+    ],
+    "isBlocking": false,
+    "monster": {
+      "monsterName": "GROUPE DE GARDES",
+      "ability": 21,
+      "endurance": 70
+    }
   },
   {
     "pageNumber": 203,
@@ -2266,8 +2782,12 @@
     "content": "Vous saisissez une flèche dans un carquois accroché au mur et\nvous tendez votre arc de toutes vos forces. Un des brigands à\ncheval galope dans la plaine en brandissant un javelot. Il vise un\nsoldat blessé du Sommerlund qui est tombé de la barricade et\nreste étendu là, incapable de se défendre. Le brigand s'apprête à\nlancer son javelot lorsque vous tirez votre flèche. Utilisez la Table\nde Hasard pour obtenir un chiffre. Si vous possédez la Discipline\nKaï de la Maîtrise des Armes (quelle que soit l'arme dont il\ns'agit), vous ajouterez 2 au chiffre que vous aurez tiré. Si vous\nobtenez un total de 0 à 4, rendez-vous au 336. De 5 à 11, rendez-\nvous au 218.",
     "choices": [
       {
-        "text": "obtenez un total de 0 à 4,",
+        "text": "Si vous obtenez un total de 0 à 4",
         "nextPage": 336
+      },
+      {
+        "text": "Si vous obtenez un total de 5 à 11",
+        "nextPage": 218
       }
     ]
   },
@@ -2276,10 +2796,16 @@
     "content": "Vous parcourez une vingtaine de mètres en courant et vous\narrivez soudain devant une paroi verticale. Ce souterrain n'a été\ncreusé que récemment et vous êtes dans un cul-de-sac.\nEntendant le bruit des pas de vos poursuivants, vous faites\naussitôt volte-face. Votre seule chance de survie, désormais,\nconsiste à combattre les Gardes pour essayer de vous enfuir de ce\npiège. Vous retournerez ensuite au croisement et vous prendrez\nle tunnel de gauche. Mais vous n'aurez le droit de poursuivre\nvotre chemin qu'après avoir tué vos trois adversaires.\nHABILETÉ ENDURANCE\nPremier GARDE DES TUNNELS 25 24\n2e GARDE 22 15\n3e GARDE 15 14\nSi vous remportez la victoire, rendez-vous au 199.",
     "choices": [
       {
-        "text": "Si vous remportez la victoire,",
+        "text": "Si vous remportez la victoire",
         "nextPage": 199
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "GROUPE DE GARDES",
+      "ability": 22,
+      "endurance": 47
+    }
   },
   {
     "pageNumber": 209,
@@ -2300,8 +2826,16 @@
     "content": "Cette ville vous inspire un sentiment de malaise. Jusqu'à présent,\nvous n'avez vu marcher dans la rue que des femmes et des\nenfants traînant les pieds. A aucun moment la silhouette d'un\nhomme n'est apparue. Les habitants semblent nerveux et évitent\nvotre regard. Votre instinct de Guerrier Kaï vous incite à quitter\nles lieux le plus vite possible. Si vous souhaitez obéir à cet\ninstinct, rendez-vous au 67. Si vous préférez ne pas en tenir\ncompte, vous pouvez entrer dans la taverne en vous rendant au\n132. Enfin il vous est également possible de poursuivre votre\nchemin le long de la rue. Rendez-vous pour cela au 301.",
     "choices": [
       {
-        "text": "instinct,",
+        "text": "Si vous souhaitez obéir à cet instinct",
         "nextPage": 67
+      },
+      {
+        "text": "Si vous préférez entrer dans la taverne",
+        "nextPage": 132
+      },
+      {
+        "text": "Si vous préférez poursuivre votre chemin le long de la rue",
+        "nextPage": 301
       }
     ]
   },
@@ -2326,13 +2860,22 @@
       {
         "text": "de la Communication Animale,",
         "nextPage": 41
+      },
+      {
+        "text": "chercher une issue à cette salle",
+        "nextPage": 276
       }
     ]
   },
   {
     "pageNumber": 213,
     "content": "Une fouille systématique vous permet de trouver les objets\nsuivants :\n-1 Pioche,\n-1 Pelle,\n-1 Hache,\n-1 Torche,\n-1 Briquet à Amadou,\n-1 Sablier,\nSi vous souhaitez conserver un ou plusieurs de ces objets, notez-\nles sur votre Feuille d'Aventure (la Pioche et la Pelle comptent\nchacune pour deux objets). Tous ces objets, si vous les prenez,\ndoivent être inscrits dans la case Sac à Dos. Après avoir vérifié\nqu'il n'y a rien d'autre à découvrir dans le hangar, vous ordonnez\nà vos hommes de mettre à l'eau le bateau à rames. Rendez-vous\nau 180.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Mettre le bateau à l'eau",
+        "nextPage": 180
+      }
+    ]
   },
   {
     "pageNumber": 214,
@@ -2391,7 +2934,7 @@
     "content": "La flèche atteint le brigand sous son bras levé. L'homme pousse\nun hurlement et tombe en arrière, s'empalant sur son propre\njavelot. Vous vous apprêtez à tirer une nouvelle flèche,\nlorsqu'une forme noire et menaçante apparaît soudain dans le\nciel. Elle descend alors vers la tour et se pose à son sommet. Vous\njetez votre arc à terre et vous dégainez votre arme en montant\nl'escalier quatre à quatre, pour aller voir de quoi il retourne.\nRendez-vous au 223.",
     "choices": [
       {
-        "text": "l'escalier quatre à quatre, pour aller voir de quoi il retourne",
+        "text": "Monter l'escalier pour voir de quoi il retourne",
         "nextPage": 223
       }
     ]
@@ -2399,7 +2942,16 @@
   {
     "pageNumber": 219,
     "content": "Il vous faut une demi-heure pour reprendre vos esprits et\nlocaliser l'endroit où vous vous trouvez à présent. Vous vous\napercevez bientôt que vous êtes au pied d'un énorme crassier qui\némerge de la rivière souterraine. A moins de 6 mètres de son\nsommet, une faible lueur éclaire un long tunnel de pierre qui sert\nde plan incliné. Il vous est possible d'y grimper, bien que cette\nescalade soit difficile et périlleuse. Il vous faut une heure d'efforts\npour arriver enfin au sommet du crassier. Vous pénétrez alors\ndans le petit tunnel désert où vous trouvez un chariot de mine\nprès de l'entrée. Si vous souhaitez examiner ce chariot, rendez-\nvous au 167. Si vous préférez ne pas y prêter attention, vous\nmonterez la pente escarpée de ce tunnel en vous rendant au 185.",
-    "choices": []
+    "choices": [
+      {
+        "text": "examiner ce chariot,",
+        "nextPage": 167
+      },
+      {
+        "text": "monterez la pente escarpée de ce tunnel",
+        "nextPage": 185
+      }
+    ]
   },
   {
     "pageNumber": 220,
@@ -2566,11 +3118,11 @@
     "content": "Vous remontez la berge de la rivière en direction du pont de\nRuanon en prenant soin de vous dissimuler aux yeux des\nbrigands à cheval qui, à présent, montent la garde devant le pont\nlui-même. Une centaine de mètres plus loin vous découvrez un\nsentier étroit qui mène à un hangar à bateaux passablement\ndélabré. Si vous pouviez y trouver une embarcation, il vous serait\npossible de traverser la rivière sans difficulté. Si vous souhaitez\ninspecter le hangar à bateaux, rendez-vous au 68. Si vous\npréférez poursuivre votre chemin en cherchant un autre moyen\nde traverser la rivière, rendez-vous au 130.",
     "choices": [
       {
-        "text": "inspecter le hangar à bateaux,",
+        "text": "Si vous souhaitez inspecter le hangar à bateaux",
         "nextPage": 68
       },
       {
-        "text": "de traverser la rivière,",
+        "text": "Si vous préférez chercher un autre moyen de traverser",
         "nextPage": 130
       }
     ]
@@ -2580,10 +3132,16 @@
     "content": "Vous êtes réveillé par des cris inquiets: «Debout! Debout ! On\nnous attaque ! » s'exclame la sentinelle. Rejetant aussitôt leurs\ncouvertures, vos hommes se lèvent d'un bond, scrutant à travers\nle rideau de pluie les ruines parmi lesquelles apparaissent des\nsilhouettes de cavaliers. Soudain, une flèche siffle dans\nl'obscurité. La sentinelle pousse un cri et s'effondre. Vous donnez\naussitôt vos ordres : « Formez un cercle ! Restez à couvert ! » Les\npatrouilleurs rassemblent épées et boucliers et s'abritent sous le\ndôme de marbre. Des bruits de pas produits par des bottes aux\nsemelles ferrées résonnent alors sur le sol de pierre. Vous faites\nvolte-face. Une douzaine de Guerriers vêtus d'armures d'un\nrouge étincelant avancent parmi les colonnes en ruine. Deux\npatrouilleurs se précipitent à leur rencontre, mais ils tombent\nsous les coups du chef ennemi qui les transperce de son glaive.\nLe Guerrier vous aperçoit alors et hâte le pas, brandissant sa\nlame ensanglantée pour frapper à nouveau. Il vous est impossible\nde prendre la fuite et vous devrez combattre cet adversaire\njusqu'à la mort de l'un de vous deux.\nGUERRIER PILLARD HABILETÉ: 17 ENDURANCE: 26\nSi vous êtes vainqueur, rendez-vous au 312.",
     "choices": [
       {
-        "text": "Si vous êtes vainqueur,",
+        "text": "Si vous êtes vainqueur",
         "nextPage": 312
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "GUERRIER PILLARD",
+      "ability": 17,
+      "endurance": 26
+    }
   },
   {
     "pageNumber": 234,
@@ -2593,7 +3151,13 @@
         "text": "manque d'oxygène. Si vous remportez la victoire,",
         "nextPage": 32
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "MÉGACALMAR",
+      "ability": 16,
+      "endurance": 37
+    }
   },
   {
     "pageNumber": 235,
@@ -2684,7 +3248,8 @@
   {
     "pageNumber": 242,
     "content": "Vous vous jetez de côté pour éviter le disque mortel, mais vos\nréflexes n'ont pas été suffisamment rapides pour vous sauver.\nL'arme tranchante comme un rasoir s'enfonce dans votre gorge\nen vous projetant en arrière sous la force du choc. Votre mission\ns'achève ici en même temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 243,
@@ -2701,11 +3266,15 @@
     "content": "Vous passez derrière les Gardes et vous pénétrez dans le tunnel\nsans avoir été repéré. Le souterrain est large et éclairé par des\nTorches fixées le long des murs. Leurs flammes penchées\nvacillent en crépitant avec bruit. Vous arrivez bientôt à un\ncroisement où le tunnel se rétrécit avant de se séparer en deux. Si\nvous maîtrisez la Discipline Kaï du Sixième Sens ou celle de\nl'Orientation, rendez-vous au 250. Dans le cas contraire, vous\npouvez prendre le passage de gauche en vous rendant au 335. Si\nvous préférez emprunter le passage de droite, rendez-vous au 11.",
     "choices": [
       {
-        "text": "l'Orientation,",
+        "text": "Si vous maîtrisez le Sixième Sens ou l'Orientation",
         "nextPage": 250
       },
       {
-        "text": "vous préférez emprunter le passage de droite,",
+        "text": "Si vous prenez le passage de gauche",
+        "nextPage": 335
+      },
+      {
+        "text": "Si vous préférez emprunter le passage de droite",
         "nextPage": 11
       }
     ]
@@ -2715,7 +3284,11 @@
     "content": "Deux coups bien ajustés suffisent à abattre les Elix. Le\npatrouilleur s'est effondré sur le sol; il a perdu beaucoup de sang\net s'est presque évanoui. Son pied gauche est à demi sectionné à\nhauteur de la cheville. De toute évidence, il n'a plus que quelques\nminutes à vivre et vous ne pouvez rien faire pour l'aider. L'autre\npatrouilleur étant déjà mort, vous êtes seul désormais. Si vous\nsouhaitez à présent vous enfuir en montant l'escalier, rendez-\nvous au 346. Si vous préférez quitter les lieux en descendant\nl'escalier, rendez-vous au 83.",
     "choices": [
       {
-        "text": "l'escalier,",
+        "text": "Si vous souhaitez vous enfuir en montant l'escalier",
+        "nextPage": 346
+      },
+      {
+        "text": "Si vous préférez quitter les lieux en descendant l'escalier",
         "nextPage": 83
       }
     ]
@@ -2725,11 +3298,11 @@
     "content": "Vous avancez avec précaution dans l'obscurité en prenant soin de\ntâter le sol devant vous à l'aide de votre arme. Vous ignorez alors\nque deux yeux observent chacun de vos mouvements. Dans les\nténèbres se cache en effet une créature satanique. Il s'agit d'un\nDémoniak, un vampire assoiffé de sang. Son attaque rapide et\nsilencieuse est indolore, bien que redoutable. Avant de vous être\naperçu que ce parasite s'est accroché dans votre dos, vous avez\ndéjà perdu 8 points d'ENDURANCE. Si vous êtes toujours vivant\net que vous possédiez le Glaive de Sommer, rendez-vous au 34.\nSi vous êtes toujours vivant mais que vous ne disposiez pas de\ncette arme, rendez-vous au 85.",
     "choices": [
       {
-        "text": "et que vous possédiez le Glaive de Sommer,",
+        "text": "Si vous possédez le Glaive de Sommer",
         "nextPage": 34
       },
       {
-        "text": "cette arme,",
+        "text": "Si vous ne possédez pas le Glaive de Sommer",
         "nextPage": 85
       }
     ]
@@ -2739,7 +3312,11 @@
     "content": "Vos hommes semblent déçus par votre décision. Mais vous êtes\nleur chef et ce sont des soldats d'élite du Sommerlund. Ils\nobéissent donc sans discuter et sans manifester le moindre signe\nde mécontentement. Tandis que vous avancez en direction du\nsud, l'obscurité de la nuit enveloppe bientôt la grand-route et\nvous êtes contraints de vous arrêter et de dresser le camp sur le\nbas-côté. Les hommes rassemblent du bois pour faire du feu et\nune sentinelle reçoit pour mission de surveiller les chevaux. Vous\navez faim, il vous faut donc prendre un Repas, sinon vous\nperdrez 3 points d'ENDURANCE. La nuit se passe sans incident ;\nà l'aube vous levez le camp et vous poursuivez votre chemin à\ntravers la Contrée des Pillards. Utilisez la Table de Hasard pour\nobtenir un chiffre. Si vous tirez un chiffre de 0 à 4, rendez-vous\nau 171. De 5 à 9, rendez-vous au 25.",
     "choices": [
       {
-        "text": "au 171. De 5 à 9,",
+        "text": "Si vous tirez un chiffre de 0 à 4",
+        "nextPage": 171
+      },
+      {
+        "text": "Si vous tirez un chiffre de 5 à 9",
         "nextPage": 25
       }
     ]
@@ -2787,12 +3364,16 @@
     "content": "Vous êtes aidés par un ciel sans nuage qui permet à la lune\nd'éclairer la grand-route. Vous ordonnez à trois de vos hommes\nde partir devant en éclaireurs: vous connaissez en effet la sinistre\nréputation de cette route forestière sur laquelle les voyageurs\nsont fréquemment surpris par des embuscades de brigands. La\nforêt dense qui borde la voie pourrait dissimuler une armée\nentière de voleurs. Vos éclaireurs partent donc au galop avec\npour consigne de signaler tout élément suspect qu'ils pourraient\ndécouvrir au cours de leur reconnaissance. Une heure plus tard,\nvous arrivez à un croisement où un sentier orienté à l'est s'écarte\nde la grand-route. Un chariot calciné a été abandonné sur le bas-\ncôté. Vous sentez qu'il se passe quelque chose d'anormal. Vos\néclaireurs, en effet, auraient dû vous signaler la présence de ce\nchariot bien avant que vous ne le trouviez vous-même. De toute\névidence, vos patrouilleurs sont inquiets : ils se demandent ce\nqui a bien pu arriver à leurs camarades. Vous ne voulez pas\nprendre le risque de continuer de peur de tomber dans une\nembuscade. Vous décidez donc de vous arrêter à ce croisement\nen attendant que vos éclaireurs reviennent. Six heures plus tard,\nalors que le soleil s'élève lentement au-dessus de la cime des\narbres, vos hommes partis en reconnaissance n'ont toujours pas\ndonné signe de vie. Si vous souhaitez poursuivre votre chemin\nsur la grand-route, rendez-vous au 175. Si vous préférez\nexaminer les débris du chariot, rendez-vous au 38. Enfin, si vous\nestimez plus judicieux d'explorer le sentier orienté à l'est, rendez-\nvous au 293.",
     "choices": [
       {
-        "text": "sur la grand-route,",
+        "text": "Si vous souhaitez poursuivre votre chemin sur la grand-route",
         "nextPage": 175
       },
       {
-        "text": "examiner les débris du chariot,",
+        "text": "Si vous préférez examiner les débris du chariot",
         "nextPage": 38
+      },
+      {
+        "text": "Si vous estimez plus judicieux d'explorer le sentier orienté à l'est",
+        "nextPage": 293
       }
     ]
   },
@@ -2801,11 +3382,11 @@
     "content": "Vous menez vos hommes en file indienne dans la forêt, mais\nmoins d'une minute plus tard la végétation est devenue trop\ndense pour que vous puissiez continuer à cheval. Vous êtes\ncontraints de mettre pied à terre et de cacher vos montures avant\nde poursuivre votre chemin. Un peu plus tard vous avez la\nchance de découvrir un étroit sentier qui mène à un hangar à\nbateaux délabré, au bord de la rivière Xane. S'il y a une\nembarcation dans ce hangar, vous devriez pouvoir traverser la\nrivière sans difficulté. Si vous souhaitez inspecter le hangar à\nbateaux, rendez-vous au 68. Si vous préférez longer la rivière\ndans le sens du courant en espérant trouver un autre moyen de la\nfranchir, rendez-vous au 130.",
     "choices": [
       {
-        "text": "bateaux,",
+        "text": "Si vous souhaitez inspecter le hangar à bateaux",
         "nextPage": 68
       },
       {
-        "text": "franchir,",
+        "text": "Si vous préférez longer la rivière pour trouver un autre moyen de la franchir",
         "nextPage": 130
       }
     ]
@@ -2867,7 +3448,11 @@
     "content": "La porte n'est pas fermée à clé et elle ouvre sur une petite pièce\nau sol couvert de paille. Un gros coffre aux garnitures de fer est\nposé auprès d'un lit défait. De l'autre côté, vous apercevez une\ndeuxième porte. Si vous souhaitez examiner le coffre, rendez-\nvous au 302. Si vous préférez ne pas y prêter attention et vous\napprocher de la porte, rendez-vous au 131.",
     "choices": [
       {
-        "text": "approcher de la porte,",
+        "text": "Si vous souhaitez examiner le coffre",
+        "nextPage": 302
+      },
+      {
+        "text": "Si vous préférez vous approcher de la porte",
         "nextPage": 131
       }
     ]
@@ -2893,7 +3478,12 @@
   {
     "pageNumber": 259,
     "content": "«Allez-vous-en! crie une voix inquiète, c'est une taverne ici, pas\nune caserne ! » Vous essayez de convaincre les occupants des\nlieux de vos intentions pacifiques mais ils restent inflexibles et\nrefusent de vous laisser entrer. Il ne vous reste donc plus qu'à\npoursuivre votre chemin le long de la grand-route. Rendez-vous\nau 141.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Poursuivre votre chemin le long de la grand-route",
+        "nextPage": 141
+      }
+    ]
   },
   {
     "pageNumber": 260,
@@ -2903,7 +3493,13 @@
         "text": "Si vous êtes toujours vivant après 3 Assauts,",
         "nextPage": 311
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "CHIENS DE GUERRE\nVASSAGONIENS",
+      "ability": 18,
+      "endurance": 30
+    }
   },
   {
     "pageNumber": 261,
@@ -2918,7 +3514,8 @@
   {
     "pageNumber": 262,
     "content": "Vous vous ruez en avant pour frapper, mais le brigand cabre son\ncheval et esquive votre coup. Les sabots de l'étalon s'abattent sur\nvotre tête, vous tombez à terre et vous êtes piétiné dans une mare\nde sang. Assommé et mortellement blessé, vous percevez à peine\nle ricanement maléfique du cavalier qui lève son arme pour vous\nporter le coup de grâce. Votre mission s'achève ici en même\ntemps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 263,
@@ -2971,18 +3568,23 @@
   {
     "pageNumber": 267,
     "content": "Une douleur fulgurante vous déchire la poitrine. Un carreau\nd'arbalète vous a projeté à terre et, les mains crispées sur la\nflèche, vous apercevez le visage d'un Garde qui lève son épée\npour vous porter le coup de grâce. Votre mission s'achève ici en\nmême temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 268,
     "content": "En fouillant les Gardes, vous trouvez les objets suivants :\n- 4 Pièces d'Or,\n-1 Lance,\n-1 Glaive,\n-1 Clé de Fer,\n-1 Clé de Cuivre,\n- des vivres équivalant à 2 Repas\n-1 Flacon contenant un liquide rouge.\nVous reconnaissez aussitôt ce liquide : c'est une Potion de\nLaumspur aux puissantes vertus curatives. Si vous la buvez après\nun combat, elle vous permettra de regagner 4 points\nd'ENDURANCE. Vous pouvez prendre un ou plusieurs de ces\nobjets, à condition de les noter sur votre Feuille d'Aventure. Une\ngrande porte de fer est aménagée dans le mur nord. A côté de la\nporte une arcade de pierre permet d'accéder à un escalier en\ncolimaçon. Si vous souhaitez examiner la porte de fer, rendez-\nvous au 118. Si vous préférez monter l'escalier en colimaçon,\nrendez-vous au 170. S'il vous semble plus opportun de\ndescendre l'escalier en colimaçon, rendez-vous au 228.",
     "choices": [
       {
-        "text": "vous au 118. Si vous préférez monter l'escalier en colimaçon,",
+        "text": "Si vous souhaitez examiner la porte de fer",
+        "nextPage": 118
+      },
+      {
+        "text": "Si vous préférez monter l'escalier en colimaçon",
         "nextPage": 170
       },
       {
-        "text": "descendre l'escalier en colimaçon,",
+        "text": "S'il vous semble plus opportun de descendre l'escalier",
         "nextPage": 228
       }
     ]
@@ -2990,19 +3592,32 @@
   {
     "pageNumber": 269,
     "content": "Vous suivez le couloir pendant environ une heure avant d'arriver\ndevant une paroi rocheuse. Des Pelles et des brouettes ont été\nabandonnées sur le sol comme si les hommes qui creusaient ce\nsouterrain l'avaient fui en toute hâte. Vous pouvez prendre l'une\ndes Pelles, si vous le souhaitez, mais sachez qu'elle occupera dans\nvotre Sac à Dos la place de deux objets. Vous avez faim à présent\net il vous faut prendre un Repas, sinon vous perdrez 3 points\nd'ENDURANCE. Maudissant votre malchance, vous êtes\ncontraint de rebrousser chemin jusqu'au croisement. Vous\npoursuivez ensuite votre exploration en vous rendant au 145.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Rebrousser chemin et poursuivre l'exploration",
+        "nextPage": 145
+      }
+    ]
   },
   {
     "pageNumber": 270,
     "content": "La pluie et l'obscurité dissimulent votre approche, vous\npermettant d'atteindre les marches de marbre sans être vu.\nL'escalier est envahi de mauvaises herbes et de moisissures, mais\nun chemin y a été tracé qui permet de descendre dans les\nténèbres d'une vaste cave voûtée. Si vous possédez une Torche\ndans votre Sac à Dos, rendez-vous au 29. Si vous possédez une\nSphère de Feu, rendez-vous au 168. Si vous n'avez ni l'une ni\nl'autre, vous pouvez poursuivre votre chemin dans l'obscurité en\nvous rendant au 246. Il vous est également possible de quitter la\ncave pour essayer d'entrer dans le temple par la porte de la\ncrypte rendez-vous pour cela au 183.",
     "choices": [
       {
-        "text": "dans votre Sac à Dos,",
-        "nextPage": 29
+        "text": "Essayer d'entrer par la porte de la crypte",
+        "nextPage": 183
       },
       {
-        "text": "Sphère de Feu,",
+        "text": "Poursuivre dans l'obscurité",
+        "nextPage": 246
+      },
+      {
+        "text": "Si vous possédez une Sphère de Feu",
         "nextPage": 168
+      },
+      {
+        "text": "Si vous possédez une Torche",
+        "nextPage": 29
       }
     ]
   },
@@ -3049,7 +3664,7 @@
     "content": "Barraka dégaine son cimeterre à la lame étincelante et\ntranchante comme un rasoir, puis il s'avance sur vous avec une\nsouplesse terrifiante qui en dit long sur sa puissance de guerrier\net son parfait sang-froid. Vous allez devoir engager contre lui un\nrude combat qu'il faudra poursuivre jusqu'à la mort de l'un de\nvous deux. Rendez-vous au 122.",
     "choices": [
       {
-        "text": "vous deux",
+        "text": "Engager le combat mortel contre Barraka",
         "nextPage": 122
       }
     ]
@@ -3069,8 +3684,12 @@
     "content": "Un grognement terrifiant retentit bientôt. Vos hommes et vous-\nmême vous immobilisez en voyant le mur du fond s'avancer\nsoudain vers vous. Une crevasse apparaît qui s'élargit en révélant\ndeux rangées de dents tranchantes comme des rasoirs. Vous avez\nréveillé un Ver de Pierre affamé qui a l'intention de vous inscrire\nau menu de son prochain repas. Vos patrouilleurs dégainent\nleurs épées et se préparent au combat. Il est trop tard pour qu'ils\npuissent prendre la fuite. Si vous souhaitez combattre le Ver de\nPierre, rendez-vous au 88. Contrairement à vos hommes qui se\ntrouvent devant, vous pouvez peut-être essayer de fuir en\nretournant vers l'échelle. Rendez-vous pour cela au 26.",
     "choices": [
       {
-        "text": "Pierre,",
+        "text": "Si vous souhaitez combattre le Ver de Pierre",
         "nextPage": 88
+      },
+      {
+        "text": "Si vous essayez de fuir en retournant vers l'échelle",
+        "nextPage": 26
       }
     ]
   },
@@ -3082,14 +3701,24 @@
         "text": "Si vous remportez la victoire,",
         "nextPage": 155
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "CHIENS DE GUERRE",
+      "ability": 22,
+      "endurance": 35
+    }
   },
   {
     "pageNumber": 278,
     "content": "La promptitude de vos réflexes vous a sauvé d'une mort certaine.\nLe disque mortel vous rate en effet et vient se loger dans une\nroue. Vous éloignant du chariot, vous courez à toutes jambes le\nlong d'un étroit sentier qui mène à un bosquet d'arbres au\nfeuillage touffu. Vous plongez parmi les branchages pour vous\nmettre à couvert, tandis que retentissent derrière vous les cris\ndes brigands. Si vous souhaitez poursuivre votre chemin tout\ndroit en direction du sud, parmi les arbres de la forêt, rendez-\nvous au 123. Si vous préférez aller vers l'ouest, rendez-vous au\n169.",
     "choices": [
       {
-        "text": "vous au 123. Si vous préférez aller vers l'ouest,",
+        "text": "Si vous souhaitez poursuivre vers le sud dans la forêt",
+        "nextPage": 123
+      },
+      {
+        "text": "Si vous préférez aller vers l'ouest",
         "nextPage": 169
       }
     ]
@@ -3153,10 +3782,20 @@
     "content": "Vous ordonnez à vos hommes de se déployer sur une seule ligne\net d'avancer vers les brigands. Lorsqu'ils ne sont plus qu'à une\ncentaine de mètres de l'ennemi, vous donnez le signal de\nl'attaque. Le vent vous cingle le visage en vous portant l'écho des\ncris de guerre qui retentissent dans la plaine. Les adversaires, se\nprécipitant à la rencontre les uns des autres, se heurtent avec une\nformidable violence. Vous êtes vous-même à demi assommé par\nle choc lorsque votre cheval vient frapper de plein fouet le flanc\nd'une monture ennemie. L'animal et son cavalier sont projetés à\nterre. Quant à vous, vous vacillez sur votre selle, et vous ne\nparvenez pas à éviter un coup de lance qui ouvre une blessure\ndans votre cuisse. Vous perdez aussitôt 3 points d'ENDURANCE\navant de vous tourner vers votre agresseur pour le combattre.\nGUERRIER PILLARD HABILETÉ: 16 ENDURANCE: 25\nVous avez le droit de prendre la fuite à tout moment en vous\nrendant au 89. Si vous remportez la victoire, rendez-vous au 7.",
     "choices": [
       {
-        "text": "rendant au 89. Si vous remportez la victoire,",
+        "text": "Prendre la fuite",
+        "nextPage": 89
+      },
+      {
+        "text": "Si vous remportez la victoire",
         "nextPage": 7
       }
-    ]
+    ],
+    "isBlocking": false,
+    "monster": {
+      "monsterName": "GUERRIER PILLARD",
+      "ability": 16,
+      "endurance": 25
+    }
   },
   {
     "pageNumber": 285,
@@ -3166,7 +3805,13 @@
         "text": "Si vous remportez la victoire,",
         "nextPage": 71
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "GARDE",
+      "ability": 16,
+      "endurance": 28
+    }
   },
   {
     "pageNumber": 286,
@@ -3186,7 +3831,13 @@
         "text": "Si vous remportez la victoire,",
         "nextPage": 75
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "GUERRIER PILLARD",
+      "ability": 17,
+      "endurance": 27
+    }
   },
   {
     "pageNumber": 288,
@@ -3225,19 +3876,36 @@
     "content": "Les ruines sont envahies de racines et de mauvaises herbes, mais\nvous parvenez cependant à distinguer les contours du sanctuaire\nqui constitue le centre du temple. L'immense dôme de marbre\nest toujours intact et vous offrira un excellent abri. Tandis que\nvous attachez votre cheval à un arbre rabougri, vous apercevez\ndeux hommes vêtus de longues capes noires, cachés sous le\ndôme. Vous leur donnez aussitôt l'ordre de sortir du sanctuaire et\nde décliner leur identité, mais ni l'un ni l'autre ne vous répond ni\nne bouge. Si vous souhaitez faire signe à vos hommes d'attaquer\nces deux étrangers, rendez-vous au 44. Si vous préférez essayer\nde les capturer vivants, rendez-vous au 102. Enfin, si vous\ndécidez plutôt de remettre votre arme au fourreau et de vous\napprocher d'eux la main tendue en signe d'amitié, rendez-vous\nau 78.",
     "choices": [
       {
-        "text": "ces deux étrangers,",
+        "text": "Si vous souhaitez faire signe à vos hommes d'attaquer",
         "nextPage": 44
       },
       {
-        "text": "de les capturer vivants,",
+        "text": "Si vous préférez essayer de les capturer vivants",
         "nextPage": 102
+      },
+      {
+        "text": "Si vous décidez de vous approcher en signe d'amitié",
+        "nextPage": 78
       }
     ]
   },
   {
     "pageNumber": 291,
     "content": "Le passage mène à une porte cloutée de fer. Collant votre oreille\ncontre le panneau de bois brut, vous percevez des voix de l'autre\ncôté. Si vous maîtrisez la Discipline Kaï du Camouflage, rendez-\nvous au 172. Sinon, vous pouvez dégainer votre arme, ouvrir la\nporte et vous rendre au 93. Vous avez également la possibilité de\nrevenir sur vos pas dans la galerie pour suivre la voie ferrée dans\nle tunnel orientée à l'ouest. Rendez-vous dans ce cas au 55.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Si vous maîtrisez la Discipline Kaï du Camouflage",
+        "nextPage": 172
+      },
+      {
+        "text": "Si vous dégainez votre arme et ouvrez la porte",
+        "nextPage": 93
+      },
+      {
+        "text": "Si vous revenez sur vos pas pour suivre la voie ferrée vers l'ouest",
+        "nextPage": 55
+      }
+    ]
   },
   {
     "pageNumber": 292,
@@ -3270,7 +3938,12 @@
   {
     "pageNumber": 294,
     "content": "Le chariot s'arrête sous un portique et les hommes au visage\nhagard sont reconduits dans le tunnel. Il vous faut attendre une\nheure avant que l'entrée du souterrain soit à nouveau libre. Vous\nvous glissez alors hors du chariot, et vous courez le long de la\nvoie ferrée. Vous apercevez d'un côté une forêt touffue et de\nl'autre une profonde excavation aux parois abruptes. Vous vous\nprécipitez vers l'abri des arbres en comprenant à ce moment que\nl'étranger au visage ruisselant de sueur avait essayé de vous aider\nà fuir. Vous lui adressez de silencieux remerciements, et vous\npoursuivez votre chemin en direction de Ruanon. Rendez-vous\nau 200.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Poursuivre votre chemin en direction de Ruanon",
+        "nextPage": 200
+      }
+    ]
   },
   {
     "pageNumber": 295,
@@ -3332,7 +4005,13 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 121
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "CHEF BRIGAND",
+      "ability": 19,
+      "endurance": 29
+    }
   },
   {
     "pageNumber": 300,
@@ -3361,7 +4040,12 @@
   {
     "pageNumber": 302,
     "content": "Le coffre n'est pas fermé à clé. Ce qui vient d'arriver à vos\nhommes vous rend cependant très prudent, et vous décidez de ne\npas prendre de risques. Vous tenant à l'écart du coffre, vous\nsoulevez le couvercle de la pointe de votre arme et vous le\nrabattez d'un coup sec. Vous attendez un instant en retenant\nvotre souffle, mais rien ne se produit. Le propriétaire du coffre\nestime sans doute que le piège aménagé dans le passage suffit à\nle protéger des voleurs. Le coffre contient nombre d'objets de\nvaleur: des assiettes et des coupes d'or incrustées de pierreries,\ndes colliers de turquoise, des perles, des statuettes de jade et une\npierre précieuse d'un grand prix. Vous contemplez ces richesses\navec émerveillement, mais vous décidez de n'en emporter\naucune. Elles seraient trop lourdes, en effet, et inutiles à votre\nmission. Vous remarquez alors, sous les assiettes d'or, un sac de\ncuir. Vous le retirez du coffre et vous reconnaissez aussitôt sa\nforme caractéristique ; il s'agit d'un sac d'herboriste qui contient\nles objets suivants :\n— 2 flacons de Potion de Laumspur : chaque dose vous permet de\nregagner 4 points d'ENDURANCE ;\n— 1 fiole de Potion d'Aléther : elle vous permet d'augmenter de 2\npoints votre HABILETÉ au cours d'un combat (et un seul) ;\n- 1 flacon d'Eau Bénite.\nSi vous souhaitez conserver l'un ou l'autre de ces objets,\ninscrivez-les sur votre Feuille d'Aventure. Dirigez-vous à présent\nvers la porte située de l'autre côté en vous rendant au 131.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Se diriger vers la porte située de l'autre côté",
+        "nextPage": 131
+      }
+    ]
   },
   {
     "pageNumber": 303,
@@ -3378,7 +4062,11 @@
     "content": "Un seul coup de votre arme suffit à sectionner le tentacule qui\nemprisonne le pied du patrouilleur. L'homme vous remercie avec\nchaleur, puis tranche à son tour l'extrémité d'un autre tentacule\ngluant qui émerge de l'eau boueuse. Soudain, un craquement\nterrifiant retentit. Un troisième tentacule vient de fracasser le\nfond du bateau en projetant l'embarcation dans les airs. Vous\nêtes alors précipité dans l'eau glacée. Utilisez la Table de Hasard\npour obtenir un chiffre. Si vous tirez un chiffre de 0 à 4, rendez-\nvous au 47. Si vous tirez un chiffre de 5 à 9, rendez-vous au 234.",
     "choices": [
       {
-        "text": "vous au 47. Si vous tirez un chiffre de 5 à 9,",
+        "text": "Si vous tirez un chiffre de 0 à 4",
+        "nextPage": 47
+      },
+      {
+        "text": "Si vous tirez un chiffre de 5 à 9",
         "nextPage": 234
       }
     ]
@@ -3408,8 +4096,12 @@
     "content": "Des groupes de brigands sortent de la forêt, fouettés par des\nsergents furieux qu'ils vous aient laissé échapper. Cette vision\nvous incite à hâter le pas. Vous parcourez les cent premiers\nmètres sans difficulté. C'est alors que des flèches commencent à\ntomber autour de vous. Vous vous baissez aussitôt et vous courez\nen zigzag, constituant ainsi une cible difficile à atteindre. Peu à\npeu, le nombre de flèches diminue sans que vous ayez été touché\nune seule fois. Les vains efforts des archers vous font sourire,\nmais votre confiance en vous-même est bientôt ébranlée par un\nnouveau péril : une meute de Chiens de Guerre vient en effet de\nsurgir de la forêt à votre droite. De toute évidence, ils sont\nassoiffés de sang et personne n'est là pour les retenir. Vous êtes à\nmoins de 500 mètres de Ruanon, mais les molosses se\nrapprochent à une allure inquiétante. Si vous souhaitez essayer\nde courir plus vite dans l'espoir de les distancer, rendez-vous au\n225. Si vous préférez vous arrêter et les combattre, rendez-vous\nau 36.",
     "choices": [
       {
-        "text": "de courir plus vite dans l'espoir de les distancer,",
+        "text": "Si vous souhaitez essayer de courir plus vite",
         "nextPage": 225
+      },
+      {
+        "text": "Si vous préférez vous arrêter et les combattre",
+        "nextPage": 36
       }
     ]
   },
@@ -3421,7 +4113,13 @@
         "text": "Si vous remportez la victoire,",
         "nextPage": 127
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "ÉLIX",
+      "ability": 17,
+      "endurance": 30
+    }
   },
   {
     "pageNumber": 309,
@@ -3445,7 +4143,13 @@
         "text": "Si vous remportez la victoire,",
         "nextPage": 24
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "GUERRIER VASSAGONIEN",
+      "ability": 18,
+      "endurance": 25
+    }
   },
   {
     "pageNumber": 311,
@@ -3488,7 +4192,16 @@
   {
     "pageNumber": 314,
     "content": "Des groupes de brigands patrouillent dans la forêt, mais sans\nmanifester de zèle excessif dans l'accomplissement de leur tâche,\net vous parvenez à les éviter sans difficulté. Vous découvrez alors,\npar hasard, une petite cabane en rondins cachée au fond des\nbois. La flamme d'une chandelle vacille à la fenêtre et la porte est\nentrouverte. Si vous souhaitez entrer dans la cabane, rendez-\nvous au 53. Si vous préférez vous en abstenir, vous poursuivrez\nvotre chemin en vous rendant au 258.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Si vous souhaitez entrer dans la cabane",
+        "nextPage": 53
+      },
+      {
+        "text": "Si vous préférez poursuivre votre chemin",
+        "nextPage": 258
+      }
+    ]
   },
   {
     "pageNumber": 315,
@@ -3513,10 +4226,20 @@
     "content": "Vous êtes arrivé à mi-chemin, lorsqu'un de vos hommes glisse\nsoudain et se trouve emporté par le courant torrentiel de la\nrivière. Ses cris désespérés alertent les brigands et, tout à coup,\nun Guerrier Pillard surgit au sommet du gros rocher derrière\nlequel vous vous cachiez. Il pousse un hurlement et vous porte un\ncoup de lance. Pendant toute la durée de ce combat, vous devrez\nréduire de 2 points votre total d'HABILETÉ en raison de votre\nposition désavantagée. Le brigand se trouve en effet au-dessus de\nvous, et vous vous tenez sur un sol humide et glissant.\nGUERRIER PILLARD HABILETÉ: 16 ENDURANCE: 26\nSi vous remportez la victoire, rendez-vous au 146. Mais vous\navez le droit de vous enfuir à tout moment en plongeant dans\nl'eau de la rivière Xane. Rendez-vous pour cela au 31.",
     "choices": [
       {
-        "text": "Si vous remportez la victoire,",
+        "text": "Vous enfuir en plongeant dans l'eau de la rivière",
+        "nextPage": 31
+      },
+      {
+        "text": "Si vous remportez la victoire",
         "nextPage": 146
       }
-    ]
+    ],
+    "isBlocking": false,
+    "monster": {
+      "monsterName": "GUERRIER PILLARD",
+      "ability": 16,
+      "endurance": 26
+    }
   },
   {
     "pageNumber": 317,
@@ -3597,15 +4320,24 @@
   {
     "pageNumber": 323,
     "content": "Vous lâchez la corde de votre arc ; la flèche siffle et vient\ns'enfoncer profondément dans l'épaule du chef des brigands.\nVous l'entendez hurler de douleur mais, bien qu'il soit gravement\nblessé, il tente malgré tout de rassembler ses hommes. Vous vous\npenchez pour ramasser une autre flèche, mais vous constatez\navec horreur que le carquois du soldat mort est vide. Relevant la\ntête, vous apercevez deux Guerriers vassagoniens qui ont mis\npied à terre et escaladent la barricade en se dirigeant vers vous.\nVous jetez votre arc et vous courez vers un grand tonneau d'eau\ndéfendu par un robuste sergent du Sommerlund. Autour de lui,\nle sol est jonché de cadavres ennemis. « Tirez sur le chef ! »\nordonnez-vous en montrant l'officier blessé. Le sergent vise et\ntire aussitôt une flèche. Celle-ci décrit une courbe dans un ciel\nenvahi de fumée et transperce le plastron étincelant du chef des\nbrigands. Ses yeux cruels se brouillent et se ferment, puis il glisse\nà bas de son cheval, la flèche plantée dans le cœur. Rendez-vous\nau 148.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Continuer après avoir éliminé le chef des brigands",
+        "nextPage": 148
+      }
+    ]
   },
   {
     "pageNumber": 324,
     "content": "Vous avez faim et il vous faut prendre un Repas avant de vous\nendormir, sinon vous perdrez 3 points d'ENDURANCE. Vous\ndormez depuis environ deux heures, lorsque le son d'une cloche\nvous réveille brusquement. « Des brigands ! s'écrie le tenancier\nde la taverne. Ils sont entrés dans les écuries ! » Il vous faut\nréagir immédiatement, sinon vos ennemis vous voleront vos\nchevaux. Le tenancier vous indique qu'il existe deux moyens\nd'accéder aux écuries. Vous pouvez soit sortir par la porte et\ncourir à l'extrémité du bâtiment, soit monter l'escalier jusqu'à un\nbalcon du premier étage d'où vous pourrez sauter sur le toit de\nl'écurie. Si vous souhaitez passer par la porte, rendez-vous au\n114. Si vous préférez sauter du balcon du premier étage, rendez-\nvous au 196.",
     "choices": [
       {
-        "text": "l'écurie. Si vous souhaitez passer par la porte,",
+        "text": "Si vous souhaitez passer par la porte",
         "nextPage": 114
+      },
+      {
+        "text": "Si vous préférez sauter du balcon du premier étage",
+        "nextPage": 196
       }
     ]
   },
@@ -3617,7 +4349,13 @@
         "text": "Si vous êtes vainqueur,",
         "nextPage": 350
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "BARRAKA",
+      "ability": 25,
+      "endurance": 29
+    }
   },
   {
     "pageNumber": 326,
@@ -3634,7 +4372,7 @@
     "content": "Vous tirez l'épée de votre ceinture et vous l'offrez au capitaine.\nUne expression de surprise et de contentement apparaît sur son\nvisage tandis qu'il examine la lame. «Je n'espérais plus jamais\nrevoir ma fidèle épée, dit-il. C'est un bon présage pour la bataille\nqui nous attend. » Après vous avoir remercié, le capitaine remet\nson épée dans son fourreau qui, jusqu'alors, pendait vide à son\ncôté. Rendez-vous au 289.",
     "choices": [
       {
-        "text": "côté",
+        "text": "Continuer après avoir rendu l'épée au capitaine",
         "nextPage": 289
       }
     ]
@@ -3644,7 +4382,7 @@
     "content": "Lorsque vous parvenez au sommet du monticule, un spectacle\nsinistre s'offre à vos yeux. Des cadavres d'hommes et de chevaux\njonchent une vallée peu profonde qui s'étend devant vous. Les\ncorbeaux sont en train de déchiqueter leurs restes, ne laissant\nplus que des ossements nus. Vos patrouilleurs ne peuvent retenir\ndes exclamations horrifiées lorsqu'ils reconnaissent les armures\net les uniformes en lambeaux dont sont encore vêtus certains de\nces squelettes. Ces hommes, en effet, étaient des soldats de la\ncavalerie royale du Sommerlund. Sans doute sont-ils morts en\nlivrant bataille, car des cadavres de Guerriers Pillards sont\négalement étendus à leurs côtés. Quarante vaillants soldats, c'est-\nà-dire presque la moitié de l'escadron qui a quitté Holmgard il y\na un mois, reposent ainsi devant vous. Le cœur lourd, vos\npatrouilleurs entreprennent alors la triste tâche de leur offrir une\nsépulture décente. Une fois cette besogne accomplie, vous quittez\ncette vallée de la mort en n'éprouvant qu'un seul réconfort : le\ncapitaine Gayal ne faisait pas partie des cadavres que vous avez\nenterrés. Rendez-vous au 120.",
     "choices": [
       {
-        "text": "enterrés",
+        "text": "Quitter cette vallée de la mort",
         "nextPage": 120
       }
     ]
@@ -3652,7 +4390,8 @@
   {
     "pageNumber": 329,
     "content": "L'eau de la rivière vous emplit les oreilles, les yeux, le nez. Dans\nvotre quête désespérée d'une bouffée d'oxygène, vous êtes pris\nd'une quinte de toux incontrôlable. Aveuglé, vous ne voyez pas\nl'énorme rocher qui se dresse devant vous. Avec un craquement\nsinistre, votre crâne vient se fracasser contre la surface de pierre\net vous sombrez à jamais dans les eaux torrentielles. Votre\nmission s'achève ici en même temps que votre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 330,
@@ -3677,8 +4416,12 @@
     "content": "Vous découvrez bientôt un puits de mine qui descend\nverticalement dans le flanc de la colline. L'entrée en est\npartiellement dissimulée par des buissons d'épines que vos\nhommes se hâtent de dégager. Vous remarquez alors une échelle\nfixée à la paroi du puits. Il s'agit là sans doute d'une issue de\nsecours des mines de Maaken qui sillonnent les profondeurs des\ncontreforts de la chaîne. Si vous parveniez à découvrir l'une des\ngaleries principales de ces mines, il vous serait alors possible de\nrejoindre Ruanon par les souterrains. Vous vous penchez au bord\ndu puits et vous scrutez l'obscurité au-dessous. Une telle odeur\nd'humidité et de pourriture s'échappe du trou que vous décidez\nd'envoyer le plus léger de vos hommes essayer l'échelle pour\nvérifier si elle est encore solide. Tout semble aller pour le mieux :\nvotre éclaireur, en effet, atteint bientôt l'entrée d'un tunnel situé\nau fond du puits et vous crie de le suivre. Ce tunnel mène à une\nsalle de forme ovale grossièrement taillée dans la roche. Un\nétrange liquide gluant brille sur le sol. Si vous maîtrisez la\nDiscipline Kaï de la Communication Animale, rendez-vous au 41.\nSinon, vous chercherez une issue en vous rendant au 276.",
     "choices": [
       {
-        "text": "Discipline Kaï de la Communication Animale,",
+        "text": "Si vous maîtrisez la Communication Animale",
         "nextPage": 41
+      },
+      {
+        "text": "Si vous ne maîtrisez pas cette discipline, chercher une issue",
+        "nextPage": 276
       }
     ]
   },
@@ -3697,34 +4440,45 @@
     "content": "Le cavalier se précipite sur vous au galop. Vous ne pourrez livrer\nqu'un seul Assaut car, dans son élan, il sera emporté à plusieurs\nmètres de distance après avoir essayé de vous frapper.\nCAVALIER VASSAGONIEN HABILETÉ: 20 ENDURANCE: 28\nSi vous perdez plus de points d'ENDURANCE que votre\nadversaire lors de cet unique Assaut, rendez-vous au 209. Si\nc'est votre ennemi qui perd plus de points d'ENDURANCE que\nvous à l'issue de l'Assaut, rendez-vous au 220. Enfin, si vous\nperdez tous deux le même nombre de points d'ENDURANCE,\nrendez-vous au 344.",
     "choices": [
       {
-        "text": "adversaire lors de cet unique Assaut,",
+        "text": "Si vous perdez plus de points d'ENDURANCE",
         "nextPage": 209
       },
       {
-        "text": "vous à l'issue de l'Assaut,",
+        "text": "Si votre ennemi perd plus de points d'ENDURANCE",
         "nextPage": 220
       },
       {
-        "text": "perdez tous deux le même nombre de points d'ENDURANCE,",
+        "text": "Si vous perdez tous deux le même nombre de points",
         "nextPage": 344
       }
-    ]
+    ],
+    "isBlocking": false,
+    "monster": {
+      "monsterName": "CAVALIER VASSAGONIEN",
+      "ability": 20,
+      "endurance": 28
+    }
   },
   {
     "pageNumber": 334,
     "content": "Lorsque vous heurtez la surface de l'eau, votre arme vous\néchappe. Saisi de panique, vous sentez alors des tentacules\ngluants s'enrouler autour de votre corps. Vous vous débattez\npour essayer de vous dégager, mais vous êtes bientôt étouffé.\nQuelques bulles éclatant à la surface et une cape déchirée sont les\nderniers signes qui trahissent votre présence au fond de cette\ntombe aquatique. Votre mission s'achève ici en même temps que\nvotre vie.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 335,
     "content": "Le tunnel aboutit bientôt à une vaste salle séparée en deux par\nun profond puits de mine. Une passerelle permet de le franchir,\nmais elle est gardée par un soldat vêtu d'une armure de cuir\nquelque peu fatiguée. Il est en train de tailler un bloc de bois et\ngrommelle en se plaignant d'avoir sans cesse à accomplir de\nbasses besognes. De l'autre côté de la salle, un tunnel s'ouvre\ndans le mur ouest. Pour l'atteindre il vous faudra franchir le\npont. Si vous maîtrisez la Discipline Kaï du Camouflage, rendez-\nvous au 35. Si vous possédez la Discipline Kaï de la Maîtrise\nPsychique de la Matière, rendez-vous au 317. Si vous ne\nmaîtrisez aucune de ces deux Disciplines, il vous faudra attaquer\nle Garde par surprise. Rendez-vous au 147.",
     "choices": [
       {
-        "text": "Psychique de la Matière,",
+        "text": "Si vous maîtrisez la Discipline Kaï du Camouflage",
+        "nextPage": 35
+      },
+      {
+        "text": "Si vous possédez la Maîtrise Psychique de la Matière",
         "nextPage": 317
       },
       {
-        "text": "le Garde par surprise",
+        "text": "Si vous n'avez aucune de ces Disciplines, attaquer par surprise",
         "nextPage": 147
       }
     ]
@@ -3752,19 +4506,29 @@
   {
     "pageNumber": 338,
     "content": "Votre stratagème a réussi. En entendant le mot de passe, les\nGardes vous laissent entrer dans la crypte. Ils referment ensuite\nla porte de pierre derrière vous et vous vous retrouvez dans un\nlarge couloir éclairé par des Torches et orienté à l'est. Rendez-\nvous au 235.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Avancer dans le couloir éclairé",
+        "nextPage": 235
+      }
+    ]
   },
   {
     "pageNumber": 339,
     "content": "Bien que les deux étrangers semblent inoffensifs, vous préférez\nne pas prendre de risques et vous décidez d'établir des tours de\ngarde. Vous avez faim et il vous faut prendre un Repas, sinon\nvous perdrez 3 points d'ENDURANCE. Après avoir mangé, vous\nvous préparez à passer une bonne nuit de sommeil. Rendez-vous\nau 233.",
-    "choices": []
+    "choices": [
+      {
+        "text": "Se préparer à passer une bonne nuit de sommeil",
+        "nextPage": 233
+      }
+    ]
   },
   {
     "pageNumber": 340,
     "content": "La tête commence à vous tourner et vos jambes deviennent\nlourdes en raison du manque d'oxygène. Vous perdez 2 points\nd'ENDURANCE. Rendez-vous au 32.",
     "choices": [
       {
-        "text": "d'ENDURANCE",
+        "text": "Continuer malgré le manque d'oxygène",
         "nextPage": 32
       }
     ]
@@ -3844,7 +4608,8 @@
   {
     "pageNumber": 347,
     "content": "Vous êtes arrivé au fond de la cave, lorsque la trappe se referme\nsoudain. Vous entendez qu'on la verrouille, et vous vous mettez à\nfrapper le panneau à coups redoublés, essayant désespérément\nde vous échapper. Ceux qui vous ont ainsi enfermé condamnent\nla trappe à l'aide d'un énorme tonneau. Des Gardes restent dans\nla cabane pour surveiller votre prison. Quatre jours se passent\navant que la trappe ne s'ouvre à nouveau. C'est alors la main\ndécharnée d'un squelette qui rabat le panneau de bois. Les morts\nde Maaken se sont réveillés. Votre mission a échoué.",
-    "choices": []
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 348,
@@ -3869,6 +4634,7 @@
   {
     "pageNumber": 350,
     "content": "Tandis que meurt Barraka, le vent se met à souffler plus fort et\nson mugissement s'intensifie, emplissant le temple d'une longue\nplainte désespérée. Vous sentez l'esprit maléfique et glacé de\nVashna, Maître des Ténèbres, vous envelopper dans une ultime\nétreinte, mais il ne peut rien contre vous, le sacrifice a été\nempêché, et il est désormais condamné à se lamenter, en rêvant\nd'une victoire qui ne viendra jamais. Le Poignard de Vashna\nrepose sur le sol noir du temple. Vous le ramassez et vous le\nglissez dans votre ceinture (inscrivez-le sur votre Feuille\nd'Aventure dans la case Objets Spéciaux.) La diabolique flamme\nbleue s'est éteinte et, aussi longtemps que vous resterez en\npossession de cette arme maudite, Vashna, Maître des Ténèbres,\net ses légions de guerriers morts, demeureront prisonniers du\ngouffre maudit. Vous libérez la blonde Madelon, attachée sur\nl'autel, et vous la portez à l'air libre à travers les couloirs du\ntemple. Lorsque vous émergez parmi les ruines que baigne la\nclarté de la pleine lune, un spectacle extraordinaire s'offre à vos\nyeux. Les Guerriers de Barraka fuient en tous sens la cité\nfantôme, poursuivis par une armée de cavaliers. Les flammes de\nleurs Torches et le clair de lune illuminent le soleil qui orne leurs\ntuniques. C'est l'armée du Sommerlund commandée par le roi\nUlnar en personne qui leur donne ainsi la chasse. Vos\ncompatriotes lancent des cris enthousiastes pour saluer votre\ncourage, et leurs acclamations étouffent les longs gémissements\nqui s'élèvent des profondeurs du gouffre maudit. Une fois de\nplus, vous vous êtes révélé comme un authentique héros de votre\npatrie. Lorsque vous déposez Madelon dans les bras de son père,\nl'intensité de son bonheur vous donne le sentiment d'avoir\npleinement accompli votre mission. En vérité, vous êtes plus que\ntout autre digne du titre de Seigneur Kaï. Vous avez triomphé à\nl'issue d'une quête périlleuse, mais vos exploits ne s'arrêteront\npas ici. L'épopée du Loup Solitaire, dernier des Seigneurs Kaï, est\nloin en effet d'être terminée car un nouveau défi, tout aussi\nimplacable que les précédents, vous attend à présent dans le\ncinquième volume de la série.",
-    "choices": []
+    "choices": [],
+    "endingType": "victory"
   }
 ]
