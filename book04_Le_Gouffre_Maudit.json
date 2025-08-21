@@ -1360,7 +1360,11 @@
     "content": "Un groupe de Gardes en armes apparaît soudain en haut de\nl'escalier et leur chef vous ordonne de vous arrêter. En vous\nvoyant hésiter, les Gardes saisissent les arbalètes qu'ils portent\nen bandoulière. Si vous souhaitez attaquer ces Gardes, rendez-\nvous au 285. Si vous préférez lever les mains et vous rendre,\nrendez-vous au 267.",
     "choices": [
       {
-        "text": "vous au 285. Si vous préférez lever les mains et vous rendre,",
+        "text": "Si vous souhaitez attaquer ces Gardes,",
+        "nextPage": 285
+      },
+      {
+        "text": "Si vous préférez lever les mains et vous rendre,",
         "nextPage": 267
       }
     ]
@@ -1370,8 +1374,12 @@
     "content": "Ces petits chevaux trapus appartiennent à une race connue sous\nle nom de Kucheks. Ils ont été baptisés ainsi d'après le nom d'une\nville et d'une province situées en Vassagonie, à plusieurs\ncentaines de kilomètres à l'est. Les brigands que vous avez\nrencontrés sur la voie de Ruanon chevauchaient précisément des\nKucheks. Si vous souhaitez quitter Eshnar le plus vite possible,\nrendez-vous au 67. Si vous préférez fouiller les écuries, rendez-\nvous au 236.",
     "choices": [
       {
-        "text": "Kucheks. Si vous souhaitez quitter Eshnar le plus vite possible,",
+        "text": "Si vous souhaitez quitter Eshnar le plus vite possible,",
         "nextPage": 67
+      },
+      {
+        "text": "Si vous préférez fouiller les écuries,",
+        "nextPage": 236
       }
     ]
   },
@@ -1394,11 +1402,15 @@
     "content": "Le chef des Gardes des Tunnels lance un ordre à ses hommes, qui\ns'immobilisent aussitôt. De toute évidence, il vient de leur\nordonner de ne pas se mêler d'un combat qu'il se réserve pour\nlui-même. L'officier porte un grand heaume empanaché ainsi\nqu'une écharpe d'un rouge vif en travers de la poitrine. D'un bref\nmouvement, il pointe sa hallebarde en direction de votre tête et\npasse à l'attaque.\nOFFICIER DES GARDES HABILETÉ : 20 ENDURANCE : 30\nVous pouvez prendre la fuite à tout moment en vous précipitant\nde l'autre côté du pont. Rendez-vous pour cela au 271. Si vous\nsortez vainqueur du combat, rendez-vous au 28.",
     "choices": [
       {
-        "text": "sortez vainqueur du combat,",
+        "text": "Vous pouvez prendre la fuite à tout moment",
+        "nextPage": 271
+      },
+      {
+        "text": "Si vous sortez vainqueur du combat,",
         "nextPage": 28
       }
     ],
-    "isBlocking": true,
+    "isBlocking": false,
     "monster": {
       "monsterName": "OFFICIER DES GARDES",
       "ability": 20,
@@ -1410,8 +1422,12 @@
     "content": "D'un coup de pied vous retournez le cadavre du bandit puis vous\nle fouillez. Vous découvrez alors les objets suivants :\n- 3 Pièces d'Or,\n-1 Poignard,\n-1 Epée,\nVous pouvez prendre l'un ou l'autre de ces objets, en n'oubliant\npas de les inscrire sur votre Feuille d'Aventure. Vous vous\napprêtez à repartir, lorsque vous remarquez une trappe dans le\nplancher. En l'ouvrant, vous découvrez un escalier qui descend\ndans la cave de la cabane. Si vous souhaitez fouiller la cave,\nrendez-vous au 347. Si vous préférez quitter la cabane, rendez-\nvous au 258.",
     "choices": [
       {
-        "text": "dans la cave de la cabane. Si vous souhaitez fouiller la cave,",
+        "text": "Si vous souhaitez fouiller la cave,",
         "nextPage": 347
+      },
+      {
+        "text": "Si vous préférez quitter la cabane,",
+        "nextPage": 258
       }
     ]
   },
@@ -1430,7 +1446,11 @@
     "content": "Vous vous mettez en position et vous vous concentrez pour\nchoisir le meilleur moment où frapper. Tous vos sens de Guerrier\nKaï en éveil, vous lancez une attaque éclair. Plongeant sous le\ncimeterre qui siffle au-dessus de votre tête, vous tranchez la\nsangle de selle de votre adversaire. La selle bascule sur le côté et\nle cavalier tombe à bas de son cheval, s'écrasant à terre dans un\nnuage de poussière et de cendre. Vous avancez vers lui pour\nl'achever, mais il est prompt à réagir et se relève d'un bond. Il\nvous fait face à présent. Si vous souhaitez le combattre, rendez-\nvous au 90. Si vous préférez prendre la fuite, rendez-vous au\n163.",
     "choices": [
       {
-        "text": "vous au 90. Si vous préférez prendre la fuite,",
+        "text": "Si vous souhaitez le combattre,",
+        "nextPage": 90
+      },
+      {
+        "text": "Si vous préférez prendre la fuite,",
         "nextPage": 163
       }
     ]
@@ -1454,7 +1474,7 @@
     "content": "Vous pénétrez dans la forêt et vous descendez le flanc de la\ncolline en direction de la rivière Xane. Au bout de quelques\nmètres, la végétation devient trop dense pour que vous puissiez\ncontinuer à cheval. A contrecœur, vous faites donc signe à vos\nhommes de descendre de selle pour poursuivre votre chemin à\npied. Vous parvenez bientôt au bord de la rivière dont vous\nremontez le courant parsemé d'écume. Vous escaladez ainsi\nplusieurs terrasses rocheuses dont la surface a été rendue\nparfaitement lisse par la force du torrent. Vous parvenez ensuite\nà un endroit où de petits cours d'eau se jettent dans la rivière.\nVous apercevez alors six brigands qui donnent des coups de\nlance dans l'eau bouillonnante le long de la berge. Sur la rive\nopposée, des poissons gris sont entassés à côté d'un chariot\nattelé. Vous reconnaissez aussitôt ce chariot : il appartient à la\ncavalerie du Sommerlund. Si vous avez atteint le rang Kaï de\nGuerrier, rendez-vous au 166. Sinon, vous pouvez lancez une\nattaque surprise contre les bandits en vous rendant au 14. Si\nvous préférez essayer de traverser la rivière à l'abri des rochers,\nrendez-vous au 316. Enfin, si vous pensez qu'il serait imprudent\nde traverser à cet endroit, vous pouvez rebrousser chemin en\nvous rendant au 232.",
     "choices": [
       {
-        "text": "Guerrier,",
+        "text": "Si vous avez atteint le rang Kaï de Guerrier",
         "nextPage": 166
       },
       {
@@ -1544,8 +1564,12 @@
     "content": "« Plus un geste, Barraka ! Sa vie ne t'appartient pas ! » Vos\nparoles ont résonné en dominant le mugissement du vent. Le\nrenégat se tourne pour vous faire face en éclatant d'un rire aussi\nsonore que votre ordre. Il s'avance alors vers vous en serrant\ndans son poing le poignard à la lame enflammée. Vous dégainez\nvotre arme et vous entrez dans le temple. Si vous souhaitez\nengager le combat avec ce Seigneur de la Guerre, rendez-vous au\n296. Si vous préférez essayer de libérer Madelon, rendez-vous\nau 73.",
     "choices": [
       {
-        "text": "engager le combat avec ce Seigneur de la Guerre,",
+        "text": "Si vous souhaitez engager le combat avec ce Seigneur de la Guerre,",
         "nextPage": 296
+      },
+      {
+        "text": "Si vous préférez essayer de libérer Madelon,",
+        "nextPage": 73
       }
     ]
   },
@@ -1554,7 +1578,11 @@
     "content": "Après avoir chevauché pendant plusieurs heures, vous arrivez à\nun croisement. Un grand panneau de signalisation indique deux\ndirections : Ruanon au sud, distante de 95 km ; Eshnar à l'est, à\n65 km. Si vous souhaitez prendre la direction du sud, rendez-\nvous au 33. Si vous préférez aller à l'est, rendez-vous au 92.",
     "choices": [
       {
-        "text": "vous au 33. Si vous préférez aller à l'est,",
+        "text": "Si vous souhaitez prendre la direction du sud,",
+        "nextPage": 33
+      },
+      {
+        "text": "Si vous préférez aller à l'est,",
         "nextPage": 92
       }
     ]
