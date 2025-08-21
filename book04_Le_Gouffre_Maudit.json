@@ -2756,12 +2756,12 @@
     "content": "Vous saisissez une flèche dans un carquois accroché au mur et\nvous tendez votre arc de toutes vos forces. Un des brigands à\ncheval galope dans la plaine en brandissant un javelot. Il vise un\nsoldat blessé du Sommerlund qui est tombé de la barricade et\nreste étendu là, incapable de se défendre. Le brigand s'apprête à\nlancer son javelot lorsque vous tirez votre flèche. Utilisez la Table\nde Hasard pour obtenir un chiffre. Si vous possédez la Discipline\nKaï de la Maîtrise des Armes (quelle que soit l'arme dont il\ns'agit), vous ajouterez 2 au chiffre que vous aurez tiré. Si vous\nobtenez un total de 0 à 4, rendez-vous au 336. De 5 à 11, rendez-\nvous au 218.",
     "choices": [
       {
-        "text": "obtenez un total de 0 à 4,",
+        "text": "Si vous obtenez un total de 0 à 4",
         "nextPage": 336
       },
       {
-        "text": "continuer",
-        "nextPage": 309
+        "text": "Si vous obtenez un total de 5 à 11",
+        "nextPage": 218
       }
     ]
   },
@@ -2770,10 +2770,16 @@
     "content": "Vous parcourez une vingtaine de mètres en courant et vous\narrivez soudain devant une paroi verticale. Ce souterrain n'a été\ncreusé que récemment et vous êtes dans un cul-de-sac.\nEntendant le bruit des pas de vos poursuivants, vous faites\naussitôt volte-face. Votre seule chance de survie, désormais,\nconsiste à combattre les Gardes pour essayer de vous enfuir de ce\npiège. Vous retournerez ensuite au croisement et vous prendrez\nle tunnel de gauche. Mais vous n'aurez le droit de poursuivre\nvotre chemin qu'après avoir tué vos trois adversaires.\nHABILETÉ ENDURANCE\nPremier GARDE DES TUNNELS 25 24\n2e GARDE 22 15\n3e GARDE 15 14\nSi vous remportez la victoire, rendez-vous au 199.",
     "choices": [
       {
-        "text": "Si vous remportez la victoire,",
+        "text": "Si vous remportez la victoire",
         "nextPage": 199
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "GROUPE DE GARDES",
+      "ability": 22,
+      "endurance": 47
+    }
   },
   {
     "pageNumber": 209,
@@ -2794,8 +2800,16 @@
     "content": "Cette ville vous inspire un sentiment de malaise. Jusqu'à présent,\nvous n'avez vu marcher dans la rue que des femmes et des\nenfants traînant les pieds. A aucun moment la silhouette d'un\nhomme n'est apparue. Les habitants semblent nerveux et évitent\nvotre regard. Votre instinct de Guerrier Kaï vous incite à quitter\nles lieux le plus vite possible. Si vous souhaitez obéir à cet\ninstinct, rendez-vous au 67. Si vous préférez ne pas en tenir\ncompte, vous pouvez entrer dans la taverne en vous rendant au\n132. Enfin il vous est également possible de poursuivre votre\nchemin le long de la rue. Rendez-vous pour cela au 301.",
     "choices": [
       {
-        "text": "instinct,",
+        "text": "Si vous souhaitez obéir à cet instinct",
         "nextPage": 67
+      },
+      {
+        "text": "Si vous préférez entrer dans la taverne",
+        "nextPage": 132
+      },
+      {
+        "text": "Si vous préférez poursuivre votre chemin le long de la rue",
+        "nextPage": 301
       }
     ]
   },
@@ -2832,8 +2846,8 @@
     "content": "Une fouille systématique vous permet de trouver les objets\nsuivants :\n-1 Pioche,\n-1 Pelle,\n-1 Hache,\n-1 Torche,\n-1 Briquet à Amadou,\n-1 Sablier,\nSi vous souhaitez conserver un ou plusieurs de ces objets, notez-\nles sur votre Feuille d'Aventure (la Pioche et la Pelle comptent\nchacune pour deux objets). Tous ces objets, si vous les prenez,\ndoivent être inscrits dans la case Sac à Dos. Après avoir vérifié\nqu'il n'y a rien d'autre à découvrir dans le hangar, vous ordonnez\nà vos hommes de mettre à l'eau le bateau à rames. Rendez-vous\nau 180.",
     "choices": [
       {
-        "text": "continuer",
-        "nextPage": 266
+        "text": "Mettre le bateau à l'eau",
+        "nextPage": 180
       }
     ]
   },
@@ -2894,12 +2908,8 @@
     "content": "La flèche atteint le brigand sous son bras levé. L'homme pousse\nun hurlement et tombe en arrière, s'empalant sur son propre\njavelot. Vous vous apprêtez à tirer une nouvelle flèche,\nlorsqu'une forme noire et menaçante apparaît soudain dans le\nciel. Elle descend alors vers la tour et se pose à son sommet. Vous\njetez votre arc à terre et vous dégainez votre arme en montant\nl'escalier quatre à quatre, pour aller voir de quoi il retourne.\nRendez-vous au 223.",
     "choices": [
       {
-        "text": "l'escalier quatre à quatre, pour aller voir de quoi il retourne",
+        "text": "Monter l'escalier pour voir de quoi il retourne",
         "nextPage": 223
-      },
-      {
-        "text": "continuer",
-        "nextPage": 89
       }
     ]
   },
@@ -3082,16 +3092,12 @@
     "content": "Vous remontez la berge de la rivière en direction du pont de\nRuanon en prenant soin de vous dissimuler aux yeux des\nbrigands à cheval qui, à présent, montent la garde devant le pont\nlui-même. Une centaine de mètres plus loin vous découvrez un\nsentier étroit qui mène à un hangar à bateaux passablement\ndélabré. Si vous pouviez y trouver une embarcation, il vous serait\npossible de traverser la rivière sans difficulté. Si vous souhaitez\ninspecter le hangar à bateaux, rendez-vous au 68. Si vous\npréférez poursuivre votre chemin en cherchant un autre moyen\nde traverser la rivière, rendez-vous au 130.",
     "choices": [
       {
-        "text": "inspecter le hangar à bateaux,",
+        "text": "Si vous souhaitez inspecter le hangar à bateaux",
         "nextPage": 68
       },
       {
-        "text": "de traverser la rivière,",
+        "text": "Si vous préférez chercher un autre moyen de traverser",
         "nextPage": 130
-      },
-      {
-        "text": "continuer",
-        "nextPage": 304
       }
     ]
   },
@@ -3100,12 +3106,8 @@
     "content": "Vous êtes réveillé par des cris inquiets: «Debout! Debout ! On\nnous attaque ! » s'exclame la sentinelle. Rejetant aussitôt leurs\ncouvertures, vos hommes se lèvent d'un bond, scrutant à travers\nle rideau de pluie les ruines parmi lesquelles apparaissent des\nsilhouettes de cavaliers. Soudain, une flèche siffle dans\nl'obscurité. La sentinelle pousse un cri et s'effondre. Vous donnez\naussitôt vos ordres : « Formez un cercle ! Restez à couvert ! » Les\npatrouilleurs rassemblent épées et boucliers et s'abritent sous le\ndôme de marbre. Des bruits de pas produits par des bottes aux\nsemelles ferrées résonnent alors sur le sol de pierre. Vous faites\nvolte-face. Une douzaine de Guerriers vêtus d'armures d'un\nrouge étincelant avancent parmi les colonnes en ruine. Deux\npatrouilleurs se précipitent à leur rencontre, mais ils tombent\nsous les coups du chef ennemi qui les transperce de son glaive.\nLe Guerrier vous aperçoit alors et hâte le pas, brandissant sa\nlame ensanglantée pour frapper à nouveau. Il vous est impossible\nde prendre la fuite et vous devrez combattre cet adversaire\njusqu'à la mort de l'un de vous deux.\nGUERRIER PILLARD HABILETÉ: 17 ENDURANCE: 26\nSi vous êtes vainqueur, rendez-vous au 312.",
     "choices": [
       {
-        "text": "Si vous êtes vainqueur,",
+        "text": "Si vous êtes vainqueur",
         "nextPage": 312
-      },
-      {
-        "text": "partir au matin",
-        "nextPage": 140
       }
     ],
     "isBlocking": true,
@@ -3238,11 +3240,15 @@
     "content": "Vous passez derrière les Gardes et vous pénétrez dans le tunnel\nsans avoir été repéré. Le souterrain est large et éclairé par des\nTorches fixées le long des murs. Leurs flammes penchées\nvacillent en crépitant avec bruit. Vous arrivez bientôt à un\ncroisement où le tunnel se rétrécit avant de se séparer en deux. Si\nvous maîtrisez la Discipline Kaï du Sixième Sens ou celle de\nl'Orientation, rendez-vous au 250. Dans le cas contraire, vous\npouvez prendre le passage de gauche en vous rendant au 335. Si\nvous préférez emprunter le passage de droite, rendez-vous au 11.",
     "choices": [
       {
-        "text": "l'Orientation,",
+        "text": "Si vous maîtrisez le Sixième Sens ou l'Orientation",
         "nextPage": 250
       },
       {
-        "text": "vous préférez emprunter le passage de droite,",
+        "text": "Si vous prenez le passage de gauche",
+        "nextPage": 335
+      },
+      {
+        "text": "Si vous préférez emprunter le passage de droite",
         "nextPage": 11
       }
     ]
@@ -3252,12 +3258,12 @@
     "content": "Deux coups bien ajustés suffisent à abattre les Elix. Le\npatrouilleur s'est effondré sur le sol; il a perdu beaucoup de sang\net s'est presque évanoui. Son pied gauche est à demi sectionné à\nhauteur de la cheville. De toute évidence, il n'a plus que quelques\nminutes à vivre et vous ne pouvez rien faire pour l'aider. L'autre\npatrouilleur étant déjà mort, vous êtes seul désormais. Si vous\nsouhaitez à présent vous enfuir en montant l'escalier, rendez-\nvous au 346. Si vous préférez quitter les lieux en descendant\nl'escalier, rendez-vous au 83.",
     "choices": [
       {
-        "text": "l'escalier,",
-        "nextPage": 83
+        "text": "Si vous souhaitez vous enfuir en montant l'escalier",
+        "nextPage": 346
       },
       {
-        "text": "continuer",
-        "nextPage": 119
+        "text": "Si vous préférez quitter les lieux en descendant l'escalier",
+        "nextPage": 83
       }
     ]
   },
@@ -3266,11 +3272,11 @@
     "content": "Vous avancez avec précaution dans l'obscurité en prenant soin de\ntâter le sol devant vous à l'aide de votre arme. Vous ignorez alors\nque deux yeux observent chacun de vos mouvements. Dans les\nténèbres se cache en effet une créature satanique. Il s'agit d'un\nDémoniak, un vampire assoiffé de sang. Son attaque rapide et\nsilencieuse est indolore, bien que redoutable. Avant de vous être\naperçu que ce parasite s'est accroché dans votre dos, vous avez\ndéjà perdu 8 points d'ENDURANCE. Si vous êtes toujours vivant\net que vous possédiez le Glaive de Sommer, rendez-vous au 34.\nSi vous êtes toujours vivant mais que vous ne disposiez pas de\ncette arme, rendez-vous au 85.",
     "choices": [
       {
-        "text": "et que vous possédiez le Glaive de Sommer,",
+        "text": "Si vous possédez le Glaive de Sommer",
         "nextPage": 34
       },
       {
-        "text": "cette arme,",
+        "text": "Si vous ne possédez pas le Glaive de Sommer",
         "nextPage": 85
       }
     ]
@@ -3280,7 +3286,11 @@
     "content": "Vos hommes semblent déçus par votre décision. Mais vous êtes\nleur chef et ce sont des soldats d'élite du Sommerlund. Ils\nobéissent donc sans discuter et sans manifester le moindre signe\nde mécontentement. Tandis que vous avancez en direction du\nsud, l'obscurité de la nuit enveloppe bientôt la grand-route et\nvous êtes contraints de vous arrêter et de dresser le camp sur le\nbas-côté. Les hommes rassemblent du bois pour faire du feu et\nune sentinelle reçoit pour mission de surveiller les chevaux. Vous\navez faim, il vous faut donc prendre un Repas, sinon vous\nperdrez 3 points d'ENDURANCE. La nuit se passe sans incident ;\nà l'aube vous levez le camp et vous poursuivez votre chemin à\ntravers la Contrée des Pillards. Utilisez la Table de Hasard pour\nobtenir un chiffre. Si vous tirez un chiffre de 0 à 4, rendez-vous\nau 171. De 5 à 9, rendez-vous au 25.",
     "choices": [
       {
-        "text": "au 171. De 5 à 9,",
+        "text": "Si vous tirez un chiffre de 0 à 4",
+        "nextPage": 171
+      },
+      {
+        "text": "Si vous tirez un chiffre de 5 à 9",
         "nextPage": 25
       }
     ]
