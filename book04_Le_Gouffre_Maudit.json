@@ -686,7 +686,11 @@
     "content": "La voie ferrée suit un tunnel éclairé par des Torches. Vous passez\ndevant des chariots de mine qui portent tous la même marque\nsur leurs flancs de bois : une croix ancrée surmontant les initiales\nO.V. Il s'agit là du sceau d'Oren Vanalund, baron de Ruanon.\nCette découverte vous confirme que vous avez pris la bonne\ndirection. Soudain, des bruits de pas retentissent dans le tunnel,\ns'approchant de vous. Ils deviennent de plus en plus sonores et\ns'accompagnent de cris et de claquements de fouet. Si vous\nsouhaitez vous cacher dans l'un des chariots vides, rendez-vous\nau 161. Si vous préférez vous dissimuler dans l'ombre des murs\ndu tunnel, rendez-vous au 286.",
     "choices": [
       {
-        "text": "du tunnel,",
+        "text": "vous cacher dans l'un des chariots vides,",
+        "nextPage": 161
+      },
+      {
+        "text": "vous dissimuler dans l'ombre des murs du tunnel,",
         "nextPage": 286
       }
     ]
@@ -698,6 +702,10 @@
       {
         "text": "Si vous gagnez le combat en 3 Assauts ou moins,",
         "nextPage": 69
+      },
+      {
+        "text": "S'il vous faut plus de 3 Assauts pour l'emporter,",
+        "nextPage": 203
       }
     ],
     "isBlocking": true,
@@ -798,7 +806,11 @@
     "content": "Le son d'un glas retentit dans le paysage désolé. Les volets des\nfenêtres se ferment en claquant, mais des regards continuent de\nvous observer à travers des meurtrières aménagées dans le mur.\nVous faites arrêter vos hommes devant les larges portes de la\ntaverne. « Nous sommes des soldats du Sommerlund, annoncez-\nvous, nous cherchons un abri pour la nuit et du fourrage pour\nnos montures. » Après un long moment de silence, une voix vous\nrépond enfin. Pour savoir ce qu'elle vous dit, tirez un chiffre à\nl'aide de la Table de Hasard. Si ce chiffre est de 0 à 4, rendez-\nvous au 259. De 5 à 9, rendez-vous au 95.",
     "choices": [
       {
-        "text": "vous au 259. De 5 à 9,",
+        "text": "Si ce chiffre est de 0 à 4,",
+        "nextPage": 259
+      },
+      {
+        "text": "De 5 à 9,",
         "nextPage": 95
       }
     ]
@@ -808,7 +820,11 @@
     "content": "En dehors du puits et du tunnel par lequel vous êtes entré, il\nexiste une troisième issue qui vous permet de quitter cette salle:\nc'est un escalier en colimaçon aménagé devant le mur nord. Si\nvous souhaitez monter les marches de cet escalier, rendez-vous\nau 170. Si vous préférez descendre l'escalier, rendez-vous au\n228.",
     "choices": [
       {
-        "text": "au 170. Si vous préférez descendre l'escalier,",
+        "text": "monter les marches de cet escalier,",
+        "nextPage": 170
+      },
+      {
+        "text": "descendre l'escalier,",
         "nextPage": 228
       }
     ]
@@ -928,11 +944,15 @@
     "content": "Vous vous approchez de l'autel dans un mouvement tournant en\nrestant hors de portée du poignard à la lame enflammée. De son\nautre main, Barraka dégaine alors son cimeterre et tente de vous\nfrapper de sa lame brillante comme un miroir. Il vous rate\ncependant. Si vous possédez un flacon d'Eau Bénite, rendez-vous\nau 283. Si vous possédez le Glaive de Sommer, rendez-vous au\n325. Si vous ne possédez ni l'un ni l'autre, rendez-vous au 122.",
     "choices": [
       {
-        "text": "au 283. Si vous possédez le Glaive de Sommer,",
+        "text": "Si vous possédez un flacon d'Eau Bénite,",
+        "nextPage": 283
+      },
+      {
+        "text": "Si vous possédez le Glaive de Sommer,",
         "nextPage": 325
       },
       {
-        "text": ". Si vous ne possédez ni l'un ni l'autre,",
+        "text": "Si vous ne possédez ni l'un ni l'autre,",
         "nextPage": 122
       }
     ]
@@ -942,11 +962,15 @@
     "content": "La nuit se déroule sans incident et vous vous sentez bien reposé\naprès ces heures de sommeil. Vous gagnez aussitôt 1 point\nd'ENDURANCE. Vous levez le camp, puis vous pénétrez dans la\nforêt qui s'étend sur les versants de la vallée. Votre instinct de\nguerrier vous avertit que la grand-route constitue un lieu idéal\npour une embuscade. Les arbres au feuillage dense qui la\nbordent offrent en effet une excellente cachette pour d'éventuels\nagresseurs. Afin de prévenir une attaque surprise, vous envoyez\ntrois de vos hommes en reconnaissance avec ordre de signaler\ntout élément suspect. Après avoir parcouru une certaine\ndistance, vous découvrez la carcasse d'un chariot calciné\nabandonné sur le bas-côté de la route. Derrière, un sentier\ns'éloigne vers l'est en remontant les collines. Vos éclaireurs, qui\nauraient dû vous informer de l'existence du chariot, n'ont pas\ndonné signe de vie. Si vous souhaitez examiner les débris du\nchariot, rendez-vous au 38. Si vous préférez ne pas y prêter\nattention et poursuivre votre chemin le long de la route, rendez-\nvous au 175. Enfin, si vous souhaitez explorer le sentier qui\nmène dans les collines, rendez-vous au 293.",
     "choices": [
       {
-        "text": "chariot,",
+        "text": "examiner les débris du chariot,",
         "nextPage": 38
       },
       {
-        "text": "mène dans les collines,",
+        "text": "poursuivre votre chemin le long de la route,",
+        "nextPage": 175
+      },
+      {
+        "text": "explorer le sentier qui mène dans les collines,",
         "nextPage": 293
       }
     ]
@@ -984,10 +1008,20 @@
     "content": "Un rictus cruel déforme son visage repoussant. Vous l'entendez\nparler dans votre tête, bien que ses lèvres restent immobiles: ce\nGuerrier est doté d'une puissante force mentale. Si vous ne\nmaîtrisez pas la Discipline Kaï du Bouclier Psychique, vous\nperdrez 1 point d'ENDURANCE supplémentaire à chaque Assaut\nau cours du combat que vous livrerez contre lui. Votre adversaire\nest invulnérable à votre propre Puissance Psychique.\nCAPITAINE VASSAGONIEN HABILITÉ: 22 ENDURANCE: 28\nVous aurez le droit de prendre la fuite après avoir mené au moins\n2 Assauts. Rendez-vous alors au 98. Si vous sortez vainqueur du\ncombat, rendez-vous au 10.",
     "choices": [
       {
-        "text": "combat,",
+        "text": "Vous aurez le droit de prendre la fuite après avoir mené au moins 2 Assauts.",
+        "nextPage": 98
+      },
+      {
+        "text": "Si vous sortez vainqueur du combat,",
         "nextPage": 10
       }
-    ]
+    ],
+    "isBlocking": false,
+    "monster": {
+      "monsterName": "CAPITAINE VASSAGONIEN",
+      "ability": 22,
+      "endurance": 28
+    }
   },
   {
     "pageNumber": 78,
@@ -1088,11 +1122,15 @@
     "content": "Le garde est bientôt rejoint par plusieurs de ses compagnons qui\nse lancent à votre poursuite. Vous entendez derrière vous leurs\npas précipités et leur respiration haletante. Soudain, le tunnel se\nrétrécit et bifurque. Si vous souhaitez prendre à gauche, rendez-\nvous au 199. Si vous préférez aller à droite, rendez-vous au 208.\nEnfin, si vous maîtrisez la Discipline Kaï du Sixième Sens ou de\nl'Orientation, rendez-vous au 60.",
     "choices": [
       {
-        "text": "vous au 199. Si vous préférez aller à droite,",
+        "text": "Si vous souhaitez prendre à gauche,",
+        "nextPage": 199
+      },
+      {
+        "text": "Si vous préférez aller à droite,",
         "nextPage": 208
       },
       {
-        "text": "l'Orientation,",
+        "text": "si vous maîtrisez la Discipline Kaï du Sixième Sens ou de l'Orientation,",
         "nextPage": 60
       }
     ]
@@ -1144,8 +1182,12 @@
     "content": "Il est impossible de pénétrer à cheval dans la mine et vous êtes\ndonc contraints d'abandonner vos montures à l'extérieur. Les\ngaleries sont totalement obscures mais vous remarquez bientôt\nque des Torches éteintes sont fixées aux murs à intervalles\nréguliers. Vos hommes et vous-même prenez chacun une Torche\nque vous allumez avant de poursuivre votre chemin. Dans la\nfaible clarté qu'elles diffusent vous découvrez des traces de pas\nmenant vers un endroit où le tunnel s'est éboulé. Les traces se\npoursuivent jusqu'au sommet d'un énorme tas de terre qui\natteint presque le plafond, ne laissant qu'une petite ouverture\nentre les deux. Si vous souhaitez escalader ce tas de terre et vous\nglisser dans l'ouverture, rendez-vous au 254. Si vous préférez\nrenoncer à cette exploration, vous pouvez ressortir, reprendre\nvos chevaux et descendre le sentier de la colline en vous rendant\nau 191.",
     "choices": [
       {
-        "text": "glisser dans l'ouverture,",
+        "text": "escalader ce tas de terre et vous glisser dans l'ouverture,",
         "nextPage": 254
+      },
+      {
+        "text": "ressortir, reprendre vos chevaux et descendre le sentier de la colline",
+        "nextPage": 191
       }
     ]
   },
@@ -1212,11 +1254,15 @@
     "content": "Un tentacule fracasse le fond du bateau avec tant de force que\nvous êtes projeté en l'air et que vous retombez tête la première\ndans l'eau glacée de la rivière. Utilisez la Table de Hasard pour\nobtenir un chiffre. Si vous tirez un chiffre entre 0 et 4, rendez-\nvous au 47. Entre 5 et 8, rendez-vous au 234. Enfin, si vous tirez\nle 9, rendez-vous au 334.",
     "choices": [
       {
-        "text": "vous au 47. Entre 5 et 8,",
+        "text": "Si vous tirez un chiffre entre 0 et 4,",
+        "nextPage": 47
+      },
+      {
+        "text": "Entre 5 et 8,",
         "nextPage": 234
       },
       {
-        "text": "le 9,",
+        "text": "si vous tirez le 9,",
         "nextPage": 334
       }
     ]
@@ -1812,10 +1858,16 @@
         "nextPage": 87
       },
       {
-        "text": "Gardes,",
+        "text": "Si vous tuez les deux Gardes,",
         "nextPage": 230
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "GARDES DES TUNNELS",
+      "ability": 16,
+      "endurance": 22
+    }
   },
   {
     "pageNumber": 144,
