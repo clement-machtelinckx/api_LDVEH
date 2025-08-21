@@ -378,8 +378,12 @@
   {
     "pageNumber": 32,
     "content": "La hideuse créature vous lâche les jambes et sombre au fond de\nl'eau. Votre victoire vous réjouit, mais vous avez l'impression que\nvos poumons sont en feu. Vous vous débattez pour remonter à la\nsurface et vous parvenez enfin à respirer à nouveau, toussant et\nhaletant. Il ne reste du bateau et de vos hommes qu'une rame\nfracassée qui flotte à la surface de la sombre et terrifiante rivière.\nVous vous accrochez à ce débris et vous vous laissez emporter\npar le courant en direction de la rive opposée sur laquelle vous\nvous hissez. En vérifiant le contenu de votre Sac à Dos et de vos\npoches, vous constatez que vous n'avez rien perdu au cours de\nvotre lutte dans l'eau, mais c'est là une mince consolation au\nregard de la catastrophe que représente la mort de vos hommes.\nVous refusez cependant de perdre courage et vous décidez de\npoursuivre votre chemin vers Ruanon pour tenter de percer le\nmystère qui pèse sur la province. Avant d'entrer dans le tunnel\norienté à l'est, vous jetez un dernier regard à la rivière aux eaux\nnoires puis vous vous rendez au 309.",
-    "choices": [],
-    "endingType": "death"
+    "choices": [
+      {
+        "text": "Rendez-vous au",
+        "nextPage": 309
+      }
+    ]
   },
   {
     "pageNumber": 33,
@@ -610,8 +614,12 @@
     "content": "Les grandes portes s'ouvrent pour livrer passage à une patrouille\nde six Gardes des Tunnels. Chacun d'eux est armé d'une arbalète.\nEn vous voyant sur le pont, ils réagissent instantanément. «\nChargez ! » Vous venez de lancer cet ordre en espérant que vos\nhommes pourront maîtriser les Gardes avant qu'ils n'aient le\ntemps d'actionner leurs armes mortelles. Utilisez la Table de\nHasard pour obtenir un chiffre. Si vous tirez un chiffre entre 0 et\n6, rendez-vous au 184. Si vous tirez le 7, le 8 ou le 9, rendez-vous\nau 267.",
     "choices": [
       {
-        "text": "6,",
+        "text": "Si vous tirez un chiffre entre 0 et 6,",
         "nextPage": 184
+      },
+      {
+        "text": "Si vous tirez le 7, le 8 ou le 9,",
+        "nextPage": 267
       }
     ]
   },
@@ -807,13 +815,19 @@
   },
   {
     "pageNumber": 65,
-    "content": "Lorsque vous marchez dessus, les champignons roses éclatent en\nlaissant échapper des nuages de spores dans le tunnel. Les spores\nvous piquent les yeux et vous empêchent de respirer. Vous\ncontinuez d'avancer à l'aveuglette d'un pas chancelant, mais à\npeine avez-vous émergé de ce nuage qu'un autre danger vous\nmenace. Une nuée de reptiles hideux dotés d'ailes de chauve-\nsouris volent dans votre direction. Leurs pattes couvertes\nd'écaillés enserrent des morceaux pointus de stalagmites. Il vous\nest impossible d'échapper au combat et vous devrez affronter ces\ncréatures en les considérant comme un seul et même ennemi.\nDÉMONS DES SOUTERRAINS HABILETÉ: 20 ENDURANCE:",
+    "content": "Lorsque vous marchez dessus, les champignons roses éclatent en\nlaissant échapper des nuages de spores dans le tunnel. Les spores\nvous piquent les yeux et vous empêchent de respirer. Vous\ncontinuez d'avancer à l'aveuglette d'un pas chancelant, mais à\npeine avez-vous émergé de ce nuage qu'un autre danger vous\nmenace. Une nuée de reptiles hideux dotés d'ailes de chauve-\nsouris volent dans votre direction. Leurs pattes couvertes\nd'écaillés enserrent des morceaux pointus de stalagmites. Il vous\nest impossible d'échapper au combat et vous devrez affronter ces\ncréatures en les considérant comme un seul et même ennemi.\nDÉMONS DES SOUTERRAINS HABILETÉ: 20 ENDURANCE: 10",
     "choices": [
       {
-        "text": "continuer après le combat",
-        "nextPage": 104
+        "text": "Si vous êtes vainqueur.",
+        "nextPage": 298
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "DÉMONS DES SOUTERRAINS",
+      "ability": 20,
+      "endurance": 10
+    }
   },
   {
     "pageNumber": 66,
@@ -892,8 +906,12 @@
   {
     "pageNumber": 71,
     "content": "Tandis que le Guerrier tombe mort à vos pieds, vous vous\nretournez vers vos hommes. Vous constatez alors avec horreur\nque trois d'entre eux sont étendus sur les marches, tués par des\ncarreaux d'arbalète. Le quatrième est blessé et cerné par\nl'ennemi. D'autres Gardes arrivent à ce moment. « Fuyez,\nSeigneur Kaï, fuyez pendant qu'il en est encore temps ! » vous\ncrie le patrouilleur. A peine l'écho de ces paroles a-t-il retenti\nqu'une épée lui transperce le cœur. Vous vous précipitez aussitôt\nen direction d'un tunnel orienté au nord. Une porte est ouverte à\nl'entrée de ce tunnel ; vous la claquez derrière vous dès que vous\nl'avez franchie et vous tirez le verrou. Vous courez ensuite le long\ndu souterrain au sol couvert de poussière en priant le ciel que la\nporte tienne et garde vos poursuivants à distance. Rendez-vous\nau 348.",
-    "choices": [],
-    "endingType": "death"
+    "choices": [
+      {
+        "text": "Rendez-vous au",
+        "nextPage": 348
+      }
+    ]
   },
   {
     "pageNumber": 72,
@@ -1052,12 +1070,8 @@
   {
     "pageNumber": 85,
     "content": "Vous essayez de dégainer votre arme, mais cette créature est trop\nrapide pour vous. Ses crocs s'enfoncent dans votre colonne\nvertébrale et bientôt vous sentez le sang se retirer de votre corps\nqui reste paralysé. Vous entendez votre arme tomber sur le sol,\npuis vous vous effondrez face contre terre, votre visage heurtant\nla pierre dure. Vous ne ressentez cependant aucune douleur:\ntoute sensibilité vous a en effet quitté et, quelques instants plus\ntard, vous poussez votre dernier soupir. Votre mission s'achève\nici, en même temps que votre vie.",
-    "choices": [
-      {
-        "text": "continuer",
-        "nextPage": 330
-      }
-    ]
+    "choices": [],
+    "endingType": "death"
   },
   {
     "pageNumber": 86,
@@ -1172,16 +1186,24 @@
   {
     "pageNumber": 94,
     "content": "Soudain, le bateau bascule en avant et vous êtes projeté en l'air.\nVous tombez pendant ce qui vous semble être une éternité, avant\nde heurter la surface de l'eau avec une telle violence que vous\nplongez à plus de 6 mètres de profondeur. L'eau glacée vous\nassomme à moitié et brise vos forces. Vous cherchez\ndésespérément à respirer un peu d'air en vous débattant pour\ntenter de remonter à la surface. Votre Sac à Dos, cependant, vous\nentraîne au fond et vous devez vous en débarrasser pour ne pas\nvous noyer. Lorsqu'enfin vous parvenez à l'air libre, le courant\nvous entraîne en vous éloignant de la chute d'eau. Vous vous\néchouez bientôt sur une rive de graviers au fond d'un ravin\nescarpé. Vous avez perdu votre Sac à Dos avec tout ce qu'il\ncontenait ainsi que votre bateau et vos hommes mais, en dépit du\ndésastre, vous êtes toujours vivant et à peu près indemne. Mettez\nà jour votre Feuille d'Aventure avant de vous rendre au 219.",
-    "choices": [],
-    "endingType": "death"
+    "choices": [
+      {
+        "text": "vous rendre au",
+        "nextPage": 219
+      }
+    ]
   },
   {
     "pageNumber": 95,
     "content": "« Quelle preuve avons-nous que vous n'êtes pas des brigands\nrevêtus d'uniformes volés ? » Qu'allez-vous faire ou dire qui\npuisse les convaincre que vous ne mentez pas 1 Si vous souhaitez\nleur expliquer que vous êtes un Seigneur Kaï et que vos hommes\nsont des patrouilleurs frontaliers du Sommerlund, rendez-vous\nau 259. Si vous préférez leur montrer l'insigne qui témoigne de\nvotre rang, rendez-vous au 195.",
     "choices": [
       {
-        "text": "votre rang,",
+        "text": "au 259. Si vous préférez leur montrer l'insigne qui témoigne de votre rang,",
         "nextPage": 195
+      },
+      {
+        "text": "leur expliquer que vous êtes un Seigneur Kaï",
+        "nextPage": 259
       }
     ]
   },
@@ -1445,7 +1467,7 @@
     "choices": [
       {
         "text": "plongé dans les ténèbres. Si vous disposez d'une autre Torche,",
-        "nextPage": 22
+        "nextPage": 99
       },
       {
         "text": "au 99. De 7 à 12,",
@@ -1698,8 +1720,12 @@
   {
     "pageNumber": 137,
     "content": "Tout autour de la barricade, les ennemis refluent en désordre.\nLes cornes de guerre des brigands sonnent la retraite, exhortant\nles Guerriers vaincus à fuir le champ de bataille. Jubilant, le\ncapitaine Gayal émerge de la fumée les yeux brillants comme des\njoyaux sous les bords de son casque cabossé. «Nous avons\ntriomphé, Loup solitaire, s'exclame-t-il, l'ennemi est vaincu ! »\nLes hommes du capitaine ont entrepris de rebâtir la barricade et\nde soigner leurs camarades blessés. La vue des soldats\nsommerlundais morts dans la bataille vous attriste, mais vous\nvous consolez en songeant que les pertes de vos agresseurs sont\ninfiniment plus lourdes. Le capitaine vous emmène à la tour de\nguet où l'on soigne vos blessures à l'aide d'herbes de Laumspur.\nVous regagnez aussitôt 6 points d'ENDURANCE. « Nous avons\nvaincu ces brigands, mais je crains bien qu'il ne s'agisse là que\nd'un bref répit, dit le capitaine dont le visage à présent a pris une\nexpression grave et sombre. Le sacrifice de la fille du baron\nVanalund doit être empêché à tout prix si nous voulons éviter la\ncatastrophe. Nous n'aurions pas la force en effet de nous opposer\naux légions des morts ressuscités de leur tombe. » Les vers de la\nprophétie vous reviennent aussitôt en mémoire et un frisson\nvous parcourt l'échiné quand vous repensez à la menace qu'ils\nfont peser. Dans trois jours, lorsque la lune sera pleine, Barraka\nsacrifiera la fille du baron dans le temple souterrain et ce\nsacrifice libérera les morts des gorges de Maaken, le gouffre\nmaudit. Il vous faut à tout prix empêcher ce sacrifice. Rendez-\nvous au 12.",
-    "choices": [],
-    "endingType": "death"
+    "choices": [
+      {
+        "text": "Rendez-vous au",
+        "nextPage": 12
+      }
+    ]
   },
   {
     "pageNumber": 138,
@@ -1711,10 +1737,10 @@
       },
       {
         "text": "entrer dans le tunnel",
-        "nextPage": 4
+        "nextPage": 81
       }
     ],
-    "isBlocking": true,
+    "isBlocking": false,
     "monster": {
       "monsterName": "GARDE IVRE",
       "ability": 13,
@@ -1738,8 +1764,16 @@
   {
     "pageNumber": 140,
     "content": "L'obscurité du crépuscule enveloppe l'avant-poste assiégé de\nRuanon et vous profitez de la nuit pour traverser la plaine\njonchée de cadavres en direction du sud. Une ancienne route\nmène à Maaken, mais elle est contrôlée par les Guerriers\nvassagoniens. Ils y sont rassemblés par groupes, soignant leurs\nblessés et ruminant leur défaite. Bien qu'ils soient abattus et\ndémoralisés, ils n'en restent pas moins des ennemis mortels et il\nserait trop dangereux d'essayer de franchir leurs lignes ; il vous\nfaut donc passer par la forêt pour pouvoir vous cacher. Si vous\nsouhaitez pénétrer dans la forêt à droite de la route, rendez-vous\nau 70. Si vous préférez traverser la forêt du côté gauche, rendez-\nvous au 314.",
-    "choices": [],
-    "endingType": "death"
+    "choices": [
+      {
+        "text": "pénétrer dans la forêt à droite de la route,",
+        "nextPage": 70
+      },
+      {
+        "text": "traverser la forêt du côté gauche,",
+        "nextPage": 314
+      }
+    ]
   },
   {
     "pageNumber": 141,
@@ -1747,7 +1781,7 @@
     "choices": [
       {
         "text": "continuer sous la pluie",
-        "nextPage": 105
+        "nextPage": 253
       }
     ]
   },
