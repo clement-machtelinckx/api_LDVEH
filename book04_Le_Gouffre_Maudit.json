@@ -158,10 +158,20 @@
     "content": "Vos patrouilleurs se déploient et avancent sans bruit à l'abri de\ngros rochers. Lorsque vous êtes arrivé à proximité de l'ennemi,\nvous lancez un sifflement perçant : c'est le signal de l'attaque !\nImmédiatement vos soldats se précipitent sur les brigands. Deux\nde ces derniers meurent sur le coup, le crâne fracassé par les\népées des patrouilleurs. Un troisième fait volte-face pour\ns'enfuir, mais il est tué à son tour et précipité dans l'eau\nparsemée d'écume. Votre propre adversaire est un redoutable\nGuerrier: d'énormes bracelets d'acier lui protègent les poignets et\nles avant-bras, et un sinistre collier composé de têtes réduites\norne sa poitrine. Vous portez le premier coup, mais ses réflexes\nsont vifs comme l'éclair. Il esquive en effet et contre-attaque à\nl'aide de sa lance.\nGUERRIER PILLARD HABILITÉ: 17 ENDURANCE: 28\nVous pouvez prendre la fuite à tout moment en plongeant dans la\nrivière Xane : rendez-vous pour cela au 31. Si vous combattez et\nsortez vainqueur, rendez-vous au 146.",
     "choices": [
       {
-        "text": "sortez vainqueur,",
-        "nextPage": 146
+        "text": "prendre la fuite en plongeant dans la rivière Xane",
+        "nextPage": 31
+      },
+      {
+        "text": "Si vous combattez et sortez vainqueur",
+        "nextPage": 32
       }
-    ]
+    ],
+    "isBlocking": false,
+    "monster": {
+      "name": "GUERRIER PILLARD",
+      "skill": 17,
+      "endurance": 28
+    }
   },
   {
     "pageNumber": 15,
@@ -2223,7 +2233,7 @@
     "choices": [
       {
         "text": "équiper le sac et continuer",
-        "nextPage": 224
+        "nextPage": 185
       }
     ]
   },
@@ -2318,12 +2328,8 @@
     "content": "D'autres Guerriers ennemis avancent parmi les débris de la\nbarricade en se dirigeant vers vous. Vous vous précipitez alors\nvers un grand tonneau d'eau défendu par un robuste sergent du\nSommerlund. Autour du tonneau, le sol est jonché de cadavres\nennemis. « Tuez leur chef ! » ordonnez-vous en montrant du\ndoigt l'officier qui commande les brigands. D'un geste rapide, le\nsergent tend son arc, vise et tire. La flèche décrit une courbe dans\nle ciel noirci de fumée et transperce le plastron étincelant de\nl'officier. Ses yeux cruels se brouillent, puis se ferment et il glisse\nde sa selle, la flèche profondément enfoncée dans le cœur.\nRendez-vous au 148.",
     "choices": [
       {
-        "text": "de sa selle, la flèche profondément enfoncée dans le cœur",
+        "text": "Continuer après avoir éliminé le chef ennemi",
         "nextPage": 148
-      },
-      {
-        "text": "continuer",
-        "nextPage": 110
       }
     ]
   },
@@ -2344,10 +2350,6 @@
       {
         "text": "Si vous êtes vainqueur,",
         "nextPage": 7
-      },
-      {
-        "text": "continuer",
-        "nextPage": 336
       }
     ],
     "isBlocking": true,
@@ -2404,15 +2406,15 @@
     "content": "Les roulottes sont disposées en un cercle à l'intérieur duquel\nvous établissez votre campement. Un patrouilleur reçoit pour\nmission de surveiller les abords du camp. Les troubadours, quant\nà eux, construisent une petite scène sur laquelle bientôt s'avance\nYesu. Il demande le silence puis annonce le titre de la pièce qui\nva être jouée : « Les Vaillants Guerriers du Sommerlund ». C'est\nlà un programme qui provoque les cris d'enthousiasme de vos\nhommes. Au cours de la représentation, un détail étrange attire\nvotre attention : l'un des acteurs utilise en effet une épée\nvéritable. Or, ce genre d'épée n'appartient qu'aux officiers de la\ncavalerie du Sommerlund. A la fin de la pièce, vous vous\napprochez de l'homme pour l'interroger au sujet de cette arme. Il\nvous regarde alors d'un air inquiet puis s'enfuit dans l'obscurité\nqui règne autour du camp. Si vous souhaitez le poursuivre et que\nvous maîtrisiez les Disciplines Kaï de l'Orientation ou de la\nChasse, rendez-vous au 332. Si ces Disciplines vous sont\ninconnues, mais que vous vouliez malgré tout poursuivre\nl'acteur, rendez-vous au 58. Si vous préférez le laisser s'enfuir,\nrevenez auprès de vos hommes en vous rendant au 165.",
     "choices": [
       {
-        "text": "Chasse,",
+        "text": "Si vous maîtrisez l'Orientation ou la Chasse",
         "nextPage": 332
       },
       {
-        "text": "l'acteur,",
+        "text": "Si vous voulez poursuivre sans ces Disciplines",
         "nextPage": 58
       },
       {
-        "text": "le laisser s'enfuir, revenez auprès de vos hommes",
+        "text": "Si vous préférez le laisser s'enfuir",
         "nextPage": 165
       }
     ]
@@ -2422,7 +2424,11 @@
     "content": "Vous vous approchez d'un enchevêtrement de buissons d'épines\nqui poussent à proximité de la porte de la crypte. De cette\ncachette, vous pouvez observer les Gardes vassagoniens sans être\nvu. D'autres soldats à cheval apparaissent alors. Ils viennent du\nnord et pénètrent dans les ruines de Maaken. Ils mettent ensuite\npied à terre et s'avancent vers la porte. « Le mot de passe ! »\ns'écrie l'un des gardes. « Lohn ! » répondent les soldats. La porte\ns'ouvre aussitôt et ils sont autorisés à entrer. Maintenant que\nvous connaissez le mot de passe, vous décidez d'essayer d'entrer\ndans la crypte de la même manière. Dissimulé par le capuchon de\nvotre cape, vous vous avancez d'un pas assuré vers les Gardes.\nUtilisez la Table de Hasard pour obtenir un chiffre. Si vous\nmaîtrisez la Discipline Kaï du Camouflage, ajoutez 4 au chiffre\nque vous aurez tiré. Si vous obtenez un total de 0 à 6, rendez-\nvous au 198. De 7 à 13, rendez-vous au 338.",
     "choices": [
       {
-        "text": "vous au 198. De 7 à 13,",
+        "text": "Si vous obtenez un total de 0 à 6",
+        "nextPage": 198
+      },
+      {
+        "text": "Si vous obtenez un total de 7 à 13",
         "nextPage": 338
       }
     ]
@@ -2456,11 +2462,15 @@
     "content": "Les brigands vassagoniens surgissent soudain des ruines et se\nlancent à l'attaque. Vous donnez aussitôt l'ordre de tirer. Une\npluie de flèches s'abat alors sur les hommes en armure et les\npointes d'acier transpercent leurs plastrons écarlates. La\npremière vague d'attaquants s'effondre. La seconde hésite. Une\nautre volée de flèches oblige l'ennemi à battre en retraite parmi\nles ruines. Quelques groupes de brigands ont survécu à la grêle\nmortelle et sont parvenus à atteindre la barricade. D'autres sont\ntués au moment où ils tentent de franchir la ligne de défense. Les\nplus hardis d'entre eux réussissent cependant à passer la\nbarricade à proximité de l'endroit où vous vous trouvez. Soudain,\nun Guerrier à la carrure impressionnante, aux longs cheveux\nnoirs et huileux noués derrière sa tête couturée de cicatrices,\nbondit sur le chariot et vous attaque. Il vous faut le combattre.\nGUERRIER VASSAGONIEN HABILETÉ: 18 ENDURANCE: 25\nVous pouvez prendre la fuite à tout moment en sautant du\nchariot. Rendez-vous pour cela au 66. Si vous remportez la\nvictoire, rendez-vous au 243.",
     "choices": [
       {
-        "text": "victoire,",
+        "text": "Prendre la fuite en sautant du chariot",
+        "nextPage": 66
+      },
+      {
+        "text": "Si vous remportez la victoire",
         "nextPage": 243
       }
     ],
-    "isBlocking": true,
+    "isBlocking": false,
     "monster": {
       "monsterName": "GUERRIER VASSAGONIEN",
       "ability": 18,
@@ -2492,7 +2502,11 @@
     "content": "Vous essayez à grands coups de rames d'amener ce qui reste du\nbateau sur la rive opposée, mais, alors que vous plongez vos\navirons dans la rivière, ils vous sont arrachés des mains. Horrifié\nvous voyez l'un de vos patrouilleurs emporté dans l'eau noire par\nun énorme tentacule gluant. Un instant plus tard, un autre\ntentacule fracasse le fond du bateau avec une telle violence que\nl'embarcation est projetée en l'air. Vous retombez tête la\npremière dans la rivière glacée. Utilisez la Table de Hasard pour\nobtenir un chiffre. Si vous tirez un chiffre de 0 à 4, rendez-vous\nau 234. De .5 à 9 rendez-vous au 47.",
     "choices": [
       {
-        "text": "au 234. De .5 à 9",
+        "text": "Si vous tirez un chiffre de 0 à 4",
+        "nextPage": 234
+      },
+      {
+        "text": "Si vous tirez un chiffre de 5 à 9",
         "nextPage": 47
       }
     ]
@@ -2512,8 +2526,12 @@
     "content": "Vous arrivez bientôt à un croisement où le sentier aboutit à la\ngrand-route. Vous apercevez alors un chariot calciné abandonné\nsur le bas-côté. Si vous souhaitez examiner ce chariot, rendez-\nvous au 337. Si vous préférez ne pas y prêter attention, vous\npoursuivrez votre chemin le long de la grand-route en vous\nrendant au 297.",
     "choices": [
       {
-        "text": "continuer",
-        "nextPage": 8
+        "text": "Si vous souhaitez examiner ce chariot",
+        "nextPage": 337
+      },
+      {
+        "text": "Si vous préférez poursuivre votre chemin",
+        "nextPage": 297
       }
     ]
   },
@@ -2526,8 +2544,12 @@
   {
     "pageNumber": 193,
     "content": "Hurlant et grognant, les Chiens de Guerre bondissent sur la\nbarricade, leurs yeux grands ouverts lançant des éclats écarlates\ndans le feu de la bataille. Piétinant les corps des morts et des\nmourants, ils se ruent sur les défenseurs sommerlundais. Tout\nautour de vous, des soldats sont projetés à terre par les molosses\nimpitoyables. Vous faites un pas en arrière au moment où un\nChien hurlant renverse la barrière de sacs et de tonneaux. Mais\navant qu'il ait pu vous atteindre, vous lui fracassez la tête avec\nvotre arme. Un autre Chien de Guerre vous attaque par-derrière\net vous jette contre la barricade effondrée. Avant que vous n'ayez\npu vous dégager, deux autres molosses plantent leurs crocs dans\nvotre jambe. Il vous faut à présent livrer un combat sans merci.\nCHIENS DE GUERRE HABILETÉ : 17 ENDURANCE : 30\nSi vous êtes toujours vivant après avoir mené 2 Assauts, rendez-\nvous au 311.",
-    "choices": [],
-    "endingType": "death",
+    "choices": [
+      {
+        "text": "Si vous survivez au combat après 2 Assauts",
+        "nextPage": 311
+      }
+    ],
     "isBlocking": true,
     "monster": {
       "monsterName": "CHIENS DE GUERRE",
@@ -2556,12 +2578,16 @@
     "content": "Quelqu'un déverrouille la porte qui, à en juger par le bruit, doit\nêtre fermée à l'aide d'une lourde barre de fer. Un homme\nd'aspect robuste, vêtu d'une tunique de cuir apparaît à l'entrée de\nla taverne. « Bienvenue dans ma modeste auberge, Seigneur Kaï,\ndit-il, pardonnez ma méfiance, mais la région est très dangereuse\net la moindre erreur pourrait nous coûter la vie. » Vous faites\nsigne à vos hommes d'emmener leurs chevaux à l'écurie et vous\nsuivez le tenancier de la taverne. A l'intérieur, la salle ressemble\ndavantage à une armurerie qu'à une auberge. Des carquois\nremplis d'arcs sont posés devant chaque fenêtre fermée par des\nvolets cloutés de fer, et des lances sont alignées contre le mur du\nfond. Il n'y a dans la salle que trois hommes jeunes qui ont\nchacun un air de ressemblance très prononcé avec le tenancier.\nL'un de ces jeunes gens a la tête entourée de bandages. Vous\ndemandez à l'homme qui vous a ouvert le prix qu'il vous en\ncoûtera pour passer la nuit ici en compagnie de vos patrouilleurs.\n«Ce sera gratuit», répond-il à votre grande surprise. Il déplace\nalors les tables pour que vos soldats puissent s'installer sur le\nplancher. « Votre présence ici cette nuit, poursuit-il, a beaucoup\nplus de valeur pour nous que des Pièces d'Or. Nous subissons en\neffet des attaques incessantes de brigands depuis la dernière\npleine lune. » Dès que le dernier de vos hommes est revenu des\nécuries, les portes sont à nouveau fermées et verrouillées. Il a\ncommencé à pleuvoir et vos patrouilleurs semblent\nsingulièrement soulagés de se trouver à l'abri, au chaud et au sec.\nSi vous souhaitez interroger le tenancier de la taverne au sujet\ndes attaques de brigands, rendez-vous au 239. Si vous préférez\nlui demander s'il a eu des nouvelles en provenance de Ruanon,\nau cours du mois dernier, rendez-vous au 266. Enfin, si vous\nn'estimez pas nécessaire de poser d'autres questions à cet\nhomme, préparez-vous à une nuit de sommeil en vous rendant\nau 324.",
     "choices": [
       {
-        "text": "des attaques de brigands,",
+        "text": "Si vous souhaitez interroger le tenancier au sujet des attaques de brigands",
         "nextPage": 239
       },
       {
-        "text": "au cours du mois dernier,",
+        "text": "Si vous préférez lui demander des nouvelles de Ruanon",
         "nextPage": 266
+      },
+      {
+        "text": "Si vous préférez vous préparer à dormir",
+        "nextPage": 324
       }
     ]
   },
@@ -2604,10 +2630,16 @@
     "content": "Les Gardes ne se laissent pas prendre à votre stratagème. Ils\ntirent aussitôt leur épée et se lancent à l'attaque. Il vous faut les\ncombattre en les considérant comme un seul et même ennemi.",
     "choices": [
       {
-        "text": "continuer après le combat",
-        "nextPage": 290
+        "text": "Si vous gagnez",
+        "nextPage": 235
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "GARDE",
+      "ability": 15,
+      "endurance": 20
+    }
   },
   {
     "pageNumber": 199,
@@ -2628,20 +2660,18 @@
     "content": "La forêt grouille de brigands, mais vos réflexes sont prompts et\nvotre habileté de Seigneur Kaï vous permet de ne pas être repéré.\nVous arrivez enfin de l'autre côté de la forêt touffue. Au-delà\ns'étendent des plaines dépourvues d'arbres qu'il faut traverser\npour atteindre Ruanon. Le spectacle qui s'offre à vos yeux est\nsingulièrement inquiétant. Une grande partie de la ville minière\na été en effet incendiée. Les boutiques, les maisons, les tavernes\nqui s'alignaient le long des rues ne sont plus que des tas de\ncendres fumantes. Vous craignez\nGARDES DE LA CRYPTE HABILETÉ : 18 ENDURANCE : 30\nalors que Ruanon n'ait été entièrement détruite. Une faible brise,\ncependant, dissipe bientôt les nuages de fumée qui masquent les\nruines comme des rideaux gris, et vous apercevez une barricade\ndressée autour d'une tour de pierre. Une bannière en lambeaux\nflotte au sommet de la tour et une lueur d'espoir s'allume aussitôt\nen vous. Il s'agit là, en effet, du drapeau du Sommerlund.\nL'habituel soleil qui symbolise votre pays est ici bordé d'une\nsoutache blanche indiquant que ce drapeau appartient à un\nrégiment de la cavalerie royale. Soudain, un craquement retentit\nderrière vous. Vous faites aussitôt volte-face et vous apercevez\ntrois brigands qui s'avancent dans votre direction. La pointe\nd'acier de leurs lances scintille. On dirait que ces armes ont été\ntrempées dans un liquide clair et gluant. Si vous maîtrisez la\nDiscipline Kaï de la Chasse ou s'il vous est déjà arrivé de visiter\nCrique-en-Gorn, rendez-vous au 45. Si vous souhaitez affronter\nles brigands, rendez-vous au 133. Si vous préférez prendre la\nfuite, vous devrez traverser la plaine en courant pour essayer\nd'atteindre Ruanon qui se trouve à 800 mètres de distance.\nRendez-vous pour cela au 307.",
     "choices": [
       {
-        "text": "Crique-en-Gorn,",
+        "text": "Si vous maîtrisez la Chasse ou avez visité Crique-en-Gorn",
         "nextPage": 45
       },
       {
-        "text": "les brigands,",
+        "text": "Si vous souhaitez affronter les brigands",
         "nextPage": 133
+      },
+      {
+        "text": "Si vous préférez prendre la fuite",
+        "nextPage": 307
       }
-    ],
-    "isBlocking": true,
-    "monster": {
-      "monsterName": "GARDES DE LA CRYPTE",
-      "ability": 18,
-      "endurance": 30
-    }
+    ]
   },
   {
     "pageNumber": 201,
@@ -2658,10 +2688,20 @@
     "content": "Vous allez devoir affronter un par un ces six Gardes lourdement\narmés.\nHABILETÉ ENDURANCE\n1er GARDE 23 24\n2e GARDE 21 25\n3e GARDE 24 22\n4e GARDE 18 15\n5e GARDE 15 16\n6e GARDE 14 14\nVous pouvez fuir ce combat à tout moment en sautant du pont.\nRendez-vous pour cela au 342. Si vous remportez la victoire,\nrendez-vous au 237.",
     "choices": [
       {
-        "text": "Rendez-vous pour cela au 342. Si vous remportez la victoire,",
+        "text": "Fuir le combat en sautant du pont",
+        "nextPage": 342
+      },
+      {
+        "text": "Si vous remportez la victoire",
         "nextPage": 237
       }
-    ]
+    ],
+    "isBlocking": false,
+    "monster": {
+      "monsterName": "GROUPE DE GARDES",
+      "ability": 21,
+      "endurance": 70
+    }
   },
   {
     "pageNumber": 203,
