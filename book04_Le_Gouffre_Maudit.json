@@ -1645,15 +1645,25 @@
         "text": "Si vous êtes vainqueur",
         "nextPage": 261
       }
-    ]
+    ],
+    "isBlocking": true,
+    "monster": {
+      "monsterName": "CHEF DES GARDES",
+      "ability": 20,
+      "endurance": 30
+    }
   },
   {
     "pageNumber": 126,
     "content": "L'obscurité de la nuit descend bientôt sur la Voie de Ruanon et\nvous êtes contraints de vous arrêter pour établir votre\ncampement. Vos hommes allument un grand feu et des\nsentinelles montent la garde pour prévenir toute attaque-\nsurprise au cours de la nuit. Il vous faut à présent prendre un\nRepas, sinon vous perdrez trois points d'ENDURANCE. La nuit\nse passe sans incident et vous levez le camp à l'aube en\npoursuivant votre chemin à travers la Contrée des Pillards.\nUtilisez la Table de Hasard pour obtenir un chiffre. Si vous tirez\nun chiffre entre 0 et 4, rendez-vous au 25. Entre 5 et 9, rendez-\nvous au 171.",
     "choices": [
       {
-        "text": "un chiffre entre 0 et 4,",
+        "text": "Si vous tirez un chiffre entre 0 et 4,",
         "nextPage": 25
+      },
+      {
+        "text": "Entre 5 et 9,",
+        "nextPage": 171
       }
     ]
   },
@@ -1738,15 +1748,19 @@
     "content": "Les brigands vous cernent et s'avancent vers vous bien décidés à\nvous tuer. Ils vous attaquent simultanément et vous devrez les\ncombattre en les considérant comme un seul et même adversaire.\nPATROUILLE DE BRIGANDS HABILETÉ: 18 ENDURANCE: 35\nVous avez le droit de prendre la fuite à tout moment, en courant\nvers Ruanon. Rendez-vous pour cela au 307. Si vous perdez des\npoints d'ENDURANCE au cours de ce combat, rendez-vous au\n17. Si vous remportez la victoire, sans perdre un seul point\nd'ENDURANCE, rendez-vous au 265.",
     "choices": [
       {
-        "text": "points d'ENDURANCE au cours de ce combat,",
+        "text": "Vous avez le droit de prendre la fuite à tout moment",
+        "nextPage": 307
+      },
+      {
+        "text": "Si vous perdez des points d'ENDURANCE au cours de ce combat,",
         "nextPage": 17
       },
       {
-        "text": "d'ENDURANCE,",
+        "text": "Si vous remportez la victoire, sans perdre un seul point d'ENDURANCE,",
         "nextPage": 265
       }
     ],
-    "isBlocking": true,
+    "isBlocking": false,
     "monster": {
       "monsterName": "PATROUILLE DE BRIGANDS",
       "ability": 18,
@@ -1758,8 +1772,12 @@
     "content": "Vous arrivez bientôt à l'entrée d'une galerie de mine. Deux\nrangées d'empreintes de pas s'enfoncent dans l'obscurité du\ntunnel. A en juger par leur forme et leur taille, elles ont été\nlaissées par deux de vos éclaireurs disparus. Vous criez dans la\ngalerie, mais personne ne vous répond. Si vous souhaitez entrer\ndans cette mine, rendez-vous au 91. Si vous préférez abandonner\nvos recherches, revenez le long du sentier de la colline en vous\nrendant au 191.",
     "choices": [
       {
-        "text": "dans cette mine,",
+        "text": "Si vous souhaitez entrer dans cette mine,",
         "nextPage": 91
+      },
+      {
+        "text": "Si vous préférez abandonner vos recherches",
+        "nextPage": 191
       }
     ]
   },
@@ -1768,12 +1786,16 @@
     "content": "Les étendues plates et désolées du Pays Sauvage n'offrent aucun\nabri pour vous dissimuler aux yeux des hordes de brigands. Ces\nderniers sont quatre fois plus nombreux que vous et la vie ou la\nmort de toute votre troupe dépend à présent de la décision que\nvous prendrez. Si vous souhaitez partir à l'attaque des brigands\ndans l'espoir qu'une action audacieuse saura les effrayer, rendez-\nvous au 284. Si vous préférez séparer vos hommes en deux\ngroupes, vous partirez d'un côté avec dix patrouilleurs, tandis\nque les autres prendront la direction de l'ouest pour essayer\nd'attirer les bandits vers les monts Durncrag. Rendez-vous pour\ncela au 211. Enfin, si vous estimez plus judicieux de galoper vers\nle sud pour essayer d'atteindre la forêt de Ruanon avant que les\nbandits n'aient pu vous rattraper, rendez-vous au 30.",
     "choices": [
       {
-        "text": "bandits n'aient pu vous rattraper,",
-        "nextPage": 30
+        "text": "Si vous souhaitez partir à l'attaque des brigands",
+        "nextPage": 284
       },
       {
-        "text": "continuer",
-        "nextPage": 93
+        "text": "Si vous préférez séparer vos hommes en deux groupes",
+        "nextPage": 211
+      },
+      {
+        "text": "si vous estimez plus judicieux de galoper vers le sud",
+        "nextPage": 30
       }
     ]
   },
@@ -1864,16 +1886,12 @@
     "content": "L'aube arrive, sinistre et pluvieuse. Un voile de bruine enveloppe\nla cité fantôme et les gémissements lugubres des vents qui\nsoufflent au fond des gorges de Maaken vous mettent mal à\nl'aise. Vous contemplez longuement les ruines, votre cape de\nSeigneur Kaï serrée autour de vos épaules pour vous protéger du\nfroid et de l'humidité. C'est ici même, au temps de la lune noire,\nque le roi Ulnar du Sommerlund tua le Seigneur Vashna, le plus\npuissant des Maîtres des Ténèbres. A l'issue d'un mortel combat\nlivré au bord même de cet abîme, le redoutable Maître des\nTénèbres fut tué par le Glaive de Sommer. On dit que son cri de\nmort, lorsqu'il tomba dans le gouffre, résonnera dans ces\nprofondeurs jusqu'au jour où Vashna se relèvera pour mener sa\nvengeance contre le Sommerlund et la maison d'Ulnar. Vous\nsentez votre estomac se contracter à la pensée que ce jour est\npeut-être venu. Cinq heures durant, vous observez la ville morte\nen notant le moindre détail. Le premier vers de l'étrange\nprophétie tourne sans cesse dans votre tête : « Au soir de pleine\nlune, en un temple profond... » Ce temple, de toute évidence, se\ntrouve quelque part sous terre et il doit exister un moyen d'y\naccéder. Mais par où peut-on y entrer ? Vous étudiez chaque\nfissure du terrain accidenté et vous arrivez à la conclusion que\nseuls deux chemins peuvent y mener. Il faut soit franchir la porte\nd'une crypte, gardée par deux Guerriers vassagoniens, soit\ndescendre un escalier de marbre qui s'enfonce sous terre entre\ndeux colonnes en ruines. Si vous souhaitez essayer de pénétrer\ndans le temple par la porte de la crypte que surveillent les\nGardes, rendez-vous au 183. Si vous préférez descendre l'escalier\nde marbre qui, lui, n'est pas gardé, rendez-vous au 270.",
     "choices": [
       {
-        "text": "Gardes,",
+        "text": "essayer de pénétrer dans le temple par la porte de la crypte que surveillent les Gardes,",
         "nextPage": 183
       },
       {
-        "text": "de marbre qui, lui, n'est pas gardé,",
+        "text": "descendre l'escalier de marbre qui, lui, n'est pas gardé,",
         "nextPage": 270
-      },
-      {
-        "text": "continuer votre progression",
-        "nextPage": 202
       }
     ]
   },
@@ -2098,12 +2116,16 @@
     "content": "Une escorte de cinq patrouilleurs vous accompagne le long du\nsentier sinueux qui mène à la maison. Il s'agit d'une masure dont\nles murs de pierre brute sont recouverts d'une mousse humide.\nElle est dépourvue de fenêtres et l'on y entre par une étrange\nporte ovale. Vous avez mis pied à terre et vous vous approchez de\ncette porte lorsqu'une voix d'homme à l'intérieur de la masure\nlance soudain : « Entrez, Loup Solitaire ! Je vous attendais. » Si\nvous souhaitez pousser la porte et entrer, rendez-vous au 84. Si\nvous préférez dégainer votre arme et ouvrir la porte d'un coup de\npied, rendez-vous au 205. Enfin, s'il vous semble plus judicieux\nd'envoyer quelques-uns de vos hommes dans la maison, rendez-\nvous au 306.",
     "choices": [
       {
-        "text": "vous souhaitez pousser la porte et entrer,",
-        "nextPage": 84
+        "text": "Si vous souhaitez pousser la porte et entrer,",
+        "nextPage": 306
       },
       {
-        "text": "pied,",
+        "text": "Si vous préférez dégainer votre arme et ouvrir la porte d'un coup de pied,",
         "nextPage": 205
+      },
+      {
+        "text": "s'il vous semble plus judicieux d'envoyer quelques-uns de vos hommes dans la maison,",
+        "nextPage": 306
       }
     ]
   },
@@ -2112,11 +2134,15 @@
     "content": "Vous relevez le capuchon de votre cape de Seigneur Kaï et vous\nvous accroupissez au fond du chariot vide en retenant votre\nsouffle. Par un interstice entre deux planches, vous apercevez\nune procession d'hommes au visage hagard qui avancent vers\nvous en traînant les pieds. Des Guerriers Pillards les escortent en\nfrappant ceux qui chancellent ou s'écartent des rangs. Une\nsoudaine secousse vous indique que le chariot est à présent\npoussé le long du tunnel. En levant les yeux vous apercevez le\nvisage ruisselant de sueur d'un homme qui se penche vers vous.\n« Fuyez à gauche quand je vous dirai : Allez-y ! » murmure\nl'homme. Il relève alors la tête et vous ne pouvez plus voir son\nvisage. Lorsque le chariot émerge du tunnel, vous êtes ébloui par\nla lumière du soleil. A travers l'interstice vous parvenez à voir\nl'endroit vers lequel on pousse votre chariot. Il s'agit d'un\nportique sous lequel s'arrête la voie ferrée, à quelque 15 mètres\nau-dessus d'un énorme entassement de minerai. Vous n'avez pas\nl'occasion cependant de poursuivre longtemps votre\ncontemplation : un ordre bref vous interrompt en effet : « Allez-y\n! » murmure l'homme au visage ruisselant de sueur. Si vous\nsouhaitez sauter du chariot en courant vers la gauche, rendez-\nvous au 27. Si vous préférez sauter du chariot en courant vers la\ndroite, rendez-vous au 144. Enfin, si vous estimez plus sage de\nne pas tenir compte de ce conseil et de rester où vous êtes,\nrendez-vous au 294.",
     "choices": [
       {
-        "text": "droite,",
+        "text": "Si vous souhaitez sauter du chariot en courant vers la gauche,",
+        "nextPage": 27
+      },
+      {
+        "text": "Si vous préférez sauter du chariot en courant vers la droite,",
         "nextPage": 144
       },
       {
-        "text": "ne pas tenir compte de ce conseil et de rester où vous êtes,",
+        "text": "si vous estimez plus sage de ne pas tenir compte de ce conseil et de rester où vous êtes,",
         "nextPage": 294
       }
     ]
