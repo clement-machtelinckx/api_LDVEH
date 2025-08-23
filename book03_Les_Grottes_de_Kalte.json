@@ -1375,7 +1375,7 @@
     "pageNumber": 106,
     "content": "Lorsque vous franchissez l'ouverture pratiquée dans la porte,\nvous voyez trois Barbares des Glaces qui avancent vers vous le\nlong du couloir. Ce sont des guerriers vêtus de fourrure et armés\nd'épées en os qui sont chacune incrustée de dents pointues sur\ntoute la longueur de la lame. En dépit de la rapidité de leur\nattaque, vous avez le temps de remarquer un étrange détail :\nleurs yeux sont complètement blancs et dépourvus de pupilles.\nIls vous attaquent comme un seul homme, portant leurs coups et\névitant les vôtres d'un même mouvement. Il vous faut les\ncombattre comme s'il s'agissait d'un seul et même adversaire.\nCes j trois Barbares sont insensibles à la Discipline Kaï de la\nPuissance Psychique.\nBARBARES DES GLACES HABILETÉ : 19 ENDURANCE : 36\nVous pouvez prendre la fuite à tout moment en vous glissant à\nnouveau dans la salle que vous venez de quitter pour vous\néchapper ensuite par le passade orienté au nord. Rendez-vous\npour cela au 145. Si vous sortez vainqueur du combat, rendez-\nvous au 338.",
     "monster": {
-      "name": "Barbares des glaces",
+      "monsterName": "Barbares des glaces",
       "ability": 19,
       "endurance": 36,
       "isBlocking": false
@@ -2072,7 +2072,7 @@
     "pageNumber": 158,
     "content": "L'éclaireur Barbare étant à skis, vous ne pourrez livrer contre lui\nqu'un seul Assaut ; emporté par son élan, en effet, il passera\ndevant vous sans s'arrêter, en essayant de vous porter un coup.\nVous devrez alors tenter de le blesser au moment où il arrivera à\nvotre hauteur.\nÉCLAIREUR BARBARE HABILETÉ: 20 ENDURANCE: 28\nSi vous subissez une perte de points d'ENDURANCE supérieure\nà celle de votre adversaire au cours de cet unique Assaut, rendez-\nvous au 165. Si, en revanche, c'est le Barbare qui perd plus de\npoints d'ENDURANCE que vous, rendez-vous au 271. Enfin, si\nvous perdez tous deux le même nombre de points\nd'ENDURANCE, rendez-vous au 337.",
     "monster": {
-      "name": "Eclaireur Barbare",
+      "monsterName": "Eclaireur Barbare",
       "ability": 20,
       "endurance": 28,
       "isBlocking": false
@@ -2132,7 +2132,7 @@
     "pageNumber": 161,
     "content": "Le Barbare des Glaces s'avance lentement et ses yeux blancs\ndépourvus de pupilles vous donnent la chair de poule. Dans sa\nmain droite, il tient un cimeterre en os, mais, bien qu'il soit prêt\nà frapper, ses gestes sont raides et incertains, comme s'il vous\nattaquait contre sa volonté. Le Barbare est insensible à la\nDiscipline Kaï de la Puissance Psychique.\nBARBARE DES GLACES HABILETÉ : 17 ENDURANCE : 29\nSi vous sortez vainqueur de ce combat, rendez-vous au 210.",
     "monster": {
-      "name": "Barbare des glaces",
+      "monsterName": "Barbare des glaces",
       "ability": 17,
       "endurance": 29,
       "isBlocking": true
@@ -2176,7 +2176,7 @@
     "pageNumber": 164,
     "content": "Le monstre aux tentacules se hisse hors du fossé et vous attaque.\nEn même temps, vous remarquez que Vonotar lève sa Crosse\nnoire en fixant les yeux sur Loi-Kymar. Il est en train d'attaquer\nle magicien à l'aide de sa Puissance Psychique. Vous vous rendez\ncompte alors que si Loi-Kymar est tué, il emportera dans la mort\nle secret de la Crosse de la Guilde. Mais avant tout, il vous faut\ncombattre le monstre. Cette créature est un Akranionor qui\nappartient au monde des morts vivants. Vous pourrez donc\nmultiplier par deux tous les points d'ENDURANCE que votre\nadversaire perdra au cours du combat, en raison de la puissance\ndu Glaive de Sommer.\nAKRANIONOR HABILETÉ: 23 ENDURANCE: 50\nSi vous remportez la victoire en 5 Assauts ou moins, rendez-vous\nau 272. Si le combat se prolonge au-delà de 5 Assauts, rendez-\nvous au 324.",
     "monster": {
-      "name": "Akranionor",
+      "monsterName": "Akranionor",
       "ability": 23,
       "endurance": 50,
       "isBlocking": true
@@ -2398,7 +2398,16 @@
   {
     "pageNumber": 182,
     "content": "Vous découvrez un étroit passage qui mène à une caverne\nhérissée de stalagmites. Deux tunnels s'ouvrent dans la paroi\nopposée, tous deux s'enfonçant dans l'obscurité. Des traces\nétranges et nombreuses sont visibles dans la neige, à l'entrée de\nchaque tunnel.\nSi vous maîtrisez la Discipline Kaï de l'Orientation, rendez-vous\nau 75. Si vous souhaitez explorer le tunnel de droite, rendez-vous\nau 114. Si vous préférez emprunter celui de gauche, rendez-vous\nau 235.",
-    "choices": []
+    "choices": [
+      {
+        "text": "de gauche,",
+        "nextPage": 235
+      },
+      {
+        "text": "de droite,",
+        "nextPage": 114
+      }
+    ]
   },
   {
     "pageNumber": 183,
@@ -2581,7 +2590,7 @@
     "pageNumber": 200,
     "content": "L'effroyable monstre aux longs tentacules surgit du fossé et vous\nattaque. Il vous faut le combattre jusqu'à la mort de l'un de vous.\nAKRANION OR HABILETÉ: 22 ENDURANCE: 50\nAu cours du combat, vous apercevez parfois Vonotar qui brandit\nson bâton noir de magicien en gardant les yeux fixés sur Loi-\nKymar. Il est en train d'attaquer le vieil homme à l'aide de sa\npuissante Force Mentale. Et si Loi-Kymar succombe, il\nemportera dans la mort le secret de la Crosse de la Guilde. Si\nvous remportez la victoire en 7 Assauts ou moins, rendez-vous au\n272. S'il vous faut livrer plus de 7 Assauts pour gagner le combat,\nrendez-vous au 324.",
     "monster": {
-      "name": "Arkranion",
+      "monsterName": "Arkranion",
       "ability": 22,
       "endurance": 50,
       "isBlocking": true
@@ -3100,7 +3109,7 @@
       }
     ],
     "monster": {
-      "name": "Barbare des glaces",
+      "monsterName": "Barbare des glaces",
       "ability": 17,
       "endurance": 29,
       "isBlocking": false

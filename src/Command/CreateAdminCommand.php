@@ -13,7 +13,7 @@ use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 
 #[AsCommand(
     name: 'app:create-admin',
-    description: 'Crée un utilisateur admin vite fait.',
+    description: 'Crée un utilisateur admin.',
 )]
 class CreateAdminCommand extends Command
 {

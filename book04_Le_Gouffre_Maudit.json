@@ -168,8 +168,8 @@
     ],
     "isBlocking": false,
     "monster": {
-      "name": "GUERRIER PILLARD",
-      "skill": 17,
+      "monsterName": "GUERRIER PILLARD",
+      "ability": 17,
       "endurance": 28
     }
   },
