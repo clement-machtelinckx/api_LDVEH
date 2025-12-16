@@ -83,7 +83,13 @@
         "symfony": {
             "allow-contrib": false,
             "require": "7.2.*"
-        }   
+        },
+        "paas": {
+            "framework": "symfony",
+            "document-root": "public",
+            "engines": {
+            "php": "8.4.*"
+      }
     },
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.6",
