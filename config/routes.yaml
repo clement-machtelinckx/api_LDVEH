@@ -4,7 +4,6 @@ controllers:
         namespace: App\Controller
     type: attribute
 
-
 # config/routes.yaml
 redirect_root_to_login:
     path: /

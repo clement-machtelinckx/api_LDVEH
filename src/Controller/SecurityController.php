@@ -15,6 +15,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenManagerInterface;
+use Gesdinet\JWTRefreshTokenBundle\Model\RefreshTokenManagerInterface;
+use Gesdinet\JWTRefreshTokenBundle\Generator\RefreshTokenGeneratorInterface;
 
 class SecurityController extends AbstractController
 {
@@ -46,7 +48,9 @@ class SecurityController extends AbstractController
     #[Route('/api/login', name: 'api_login', methods: ['POST'])]
     public function loginCheck(
         Request $request,
-        JWTTokenManagerInterface $jwtManager
+        JWTTokenManagerInterface $jwtManager,
+        RefreshTokenGeneratorInterface $refreshTokenGenerator,
+        RefreshTokenManagerInterface $refreshTokenManager
     ): JsonResponse {
         // Vérifier si l'utilisateur a bien soumis des identifiants
         $user = $this->getUser();
@@ -57,8 +61,15 @@ class SecurityController extends AbstractController
         // Générer le token JWT
         $token = $jwtManager->create($user);
 
+        // Générer le refresh token
+        $refreshToken = $refreshTokenGenerator->createForUserWithTtl($user, (time() + 2592000)); // 30 jours
+        
+        // Sauvegarder le refresh token en base
+        $refreshTokenManager->save($refreshToken);
+
         return new JsonResponse([
             'token' => $token,
+            'refresh_token' => $refreshToken->getRefreshToken(),
             'user' => [
                 'id' => $user->getId(),
                 'email' => $user->getEmail(),
@@ -106,6 +117,54 @@ class SecurityController extends AbstractController
         $em->flush();
 
         return $this->json(['message' => 'Utilisateur créé avec succès.']);
+    }
+
+    #[Route('/api/token/refresh', name: 'api_token_refresh', methods: ['POST'])]
+    public function refreshToken(
+        Request $request,
+        RefreshTokenManagerInterface $refreshTokenManager,
+        JWTTokenManagerInterface $jwtManager,
+        RefreshTokenGeneratorInterface $refreshTokenGenerator,
+        EntityManagerInterface $em
+    ): JsonResponse {
+        $data = json_decode($request->getContent(), true);
+        $refreshTokenValue = $data['refresh_token'] ?? null;
+
+        if (!$refreshTokenValue) {
+            return new JsonResponse(['error' => 'refresh_token is required'], JsonResponse::HTTP_BAD_REQUEST);
+        }
+
+        // Trouver le refresh token
+        $refreshToken = $refreshTokenManager->get($refreshTokenValue);
+
+        if (!$refreshToken || !$refreshToken->isValid()) {
+            return new JsonResponse(['error' => 'Invalid refresh token'], JsonResponse::HTTP_UNAUTHORIZED);
+        }
+
+        // Charger l'utilisateur depuis le refresh token
+        $userRepository = $em->getRepository(User::class);
+        $user = $userRepository->findOneBy(['email' => $refreshToken->getUsername()]);
+
+        if (!$user) {
+            return new JsonResponse(['error' => 'User not found'], JsonResponse::HTTP_UNAUTHORIZED);
+        }
+
+        // Générer un nouveau JWT
+        $token = $jwtManager->create($user);
+
+        // Générer un nouveau refresh token (rotation)
+        $newRefreshToken = $refreshTokenGenerator->createForUserWithTtl($user, (time() + 2592000));
+        
+        // Sauvegarder le nouveau refresh token en base
+        $refreshTokenManager->save($newRefreshToken);
+        
+        // Supprimer l'ancien refresh token (après avoir sauvegardé le nouveau)
+        $refreshTokenManager->delete($refreshToken);
+
+        return new JsonResponse([
+            'token' => $token,
+            'refresh_token' => $newRefreshToken->getRefreshToken(),
+        ]);
     }
 
     #[Route('/logout', name: 'app_logout', methods: ['GET'])]
