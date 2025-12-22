@@ -56,7 +56,7 @@ security:
     - { path: ^/api/feedback$, roles: ROLE_ADMIN, methods: [GET] }
 
     # Puis le catch-all API
-    - { path: ^/api, roles: PUBLIC_ACCESS } 
+    - { path: ^/api, roles: IS_AUTHENTICATED_FULLY } 
 
     # Le reste
     - { path: ^/fight, roles: IS_AUTHENTICATED_FULLY }
