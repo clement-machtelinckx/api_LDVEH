@@ -4,11 +4,6 @@ controllers:
         namespace: App\Controller
     type: attribute
 
-# Refresh Token
-api_refresh_token:
-    path: /api/token/refresh
-    controller: gesdinet.jwtrefreshtoken::refresh
-
 # config/routes.yaml
 redirect_root_to_login:
     path: /
