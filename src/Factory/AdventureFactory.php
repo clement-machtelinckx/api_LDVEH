@@ -12,8 +12,6 @@ final class AdventureFactory extends PersistentProxyObjectFactory
 {
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#factories-as-services
-     *
-     * @todo inject services if required
      */
     public function __construct()
     {
@@ -26,18 +24,31 @@ final class AdventureFactory extends PersistentProxyObjectFactory
 
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#model-factories
-     *
-     * @todo add your default values here
      */
     protected function defaults(): array|callable
     {
-        return [
-            'adventurer' => AdventurerFactory::new(),
-            'book' => BookFactory::new(),
-            'currentPage' => PageFactory::new(),
-            'startedAt' => \DateTimeImmutable::createFromMutable(self::faker()->dateTime()),
-            'user' => UserFactory::new(),
-        ];
+        return function() {
+            // Create a user first
+            $user = UserFactory::new()->create();
+            
+            // Create an adventurer with the same user
+            $adventurer = AdventurerFactory::new()->create(['user' => $user]);
+            
+            // Create a book
+            $book = BookFactory::new()->create();
+            
+            // Create a page for the book
+            $currentPage = PageFactory::new()->create(['book' => $book]);
+            
+            return [
+                'user' => $user,
+                'adventurer' => $adventurer,
+                'book' => $book,
+                'currentPage' => $currentPage,
+                'startedAt' => \DateTimeImmutable::createFromMutable(self::faker()->dateTimeBetween('-1 month', 'now')),
+                'isFinished' => false,
+            ];
+        };
     }
 
     /**
@@ -48,5 +59,21 @@ final class AdventureFactory extends PersistentProxyObjectFactory
         return $this
             // ->afterInstantiate(function(Adventure $adventure): void {})
         ;
+    }
+
+    public function finished(): static
+    {
+        return $this->with([
+            'isFinished' => true,
+            'endedAt' => \DateTimeImmutable::createFromMutable(self::faker()->dateTimeBetween('-1 week', 'now')),
+        ]);
+    }
+
+    public function inProgress(): static
+    {
+        return $this->with([
+            'isFinished' => false,
+            'endedAt' => null,
+        ]);
     }
 }

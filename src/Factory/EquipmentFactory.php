@@ -12,8 +12,6 @@ final class EquipmentFactory extends PersistentProxyObjectFactory
 {
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#factories-as-services
-     *
-     * @todo inject services if required
      */
     public function __construct()
     {
@@ -26,13 +24,22 @@ final class EquipmentFactory extends PersistentProxyObjectFactory
 
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#model-factories
-     *
-     * @todo add your default values here
      */
     protected function defaults(): array|callable
     {
+        $equipmentTypes = [
+            ['name' => 'Sword', 'description' => 'A sharp blade', 'effect' => '+2 Ability'],
+            ['name' => 'Shield', 'description' => 'A sturdy shield', 'effect' => '+2 Endurance'],
+            ['name' => 'Healing Potion', 'description' => 'Restores health', 'effect' => '+4 Endurance'],
+            ['name' => 'Magic Ring', 'description' => 'Enhances abilities', 'effect' => '+1 Ability'],
+        ];
+        
+        $equipment = self::faker()->randomElement($equipmentTypes);
+        
         return [
-            'name' => self::faker()->text(255),
+            'name' => $equipment['name'],
+            'description' => $equipment['description'],
+            'effect' => $equipment['effect'],
         ];
     }
 
