@@ -12,8 +12,6 @@ final class MonsterFactory extends PersistentProxyObjectFactory
 {
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#factories-as-services
-     *
-     * @todo inject services if required
      */
     public function __construct()
     {
@@ -26,15 +24,15 @@ final class MonsterFactory extends PersistentProxyObjectFactory
 
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#model-factories
-     *
-     * @todo add your default values here
      */
     protected function defaults(): array|callable
     {
+        $monsterNames = ['Goblin', 'Orc', 'Troll', 'Dragon', 'Skeleton', 'Zombie', 'Spider', 'Wolf'];
+        
         return [
-            'ability' => self::faker()->randomNumber(),
-            'endurance' => self::faker()->randomNumber(),
-            'monsterName' => self::faker()->text(255),
+            'monsterName' => self::faker()->randomElement($monsterNames),
+            'ability' => self::faker()->numberBetween(8, 18),
+            'endurance' => self::faker()->numberBetween(10, 25),
         ];
     }
 
@@ -46,5 +44,29 @@ final class MonsterFactory extends PersistentProxyObjectFactory
         return $this
             // ->afterInstantiate(function(Monster $monster): void {})
         ;
+    }
+
+    public function weak(): static
+    {
+        return $this->with([
+            'ability' => self::faker()->numberBetween(5, 10),
+            'endurance' => self::faker()->numberBetween(5, 10),
+        ]);
+    }
+
+    public function strong(): static
+    {
+        return $this->with([
+            'ability' => self::faker()->numberBetween(16, 22),
+            'endurance' => self::faker()->numberBetween(20, 30),
+        ]);
+    }
+
+    public function withStats(int $ability, int $endurance): static
+    {
+        return $this->with([
+            'ability' => $ability,
+            'endurance' => $endurance,
+        ]);
     }
 }

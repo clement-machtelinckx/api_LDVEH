@@ -3,6 +3,7 @@
 namespace App\Factory;
 
 use App\Entity\User;
+use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Zenstruck\Foundry\Persistence\PersistentProxyObjectFactory;
 
 /**
@@ -12,11 +13,10 @@ final class UserFactory extends PersistentProxyObjectFactory
 {
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#factories-as-services
-     *
-     * @todo inject services if required
      */
-    public function __construct()
-    {
+    public function __construct(
+        private UserPasswordHasherInterface $passwordHasher
+    ) {
     }
 
     public static function class(): string
@@ -26,26 +26,53 @@ final class UserFactory extends PersistentProxyObjectFactory
 
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#model-factories
-     *
-     * @todo add your default values here
      */
     protected function defaults(): array|callable
     {
         return [
-            'email' => self::faker()->text(180),
-            'password' => self::faker()->text(),
+            'email' => self::faker()->unique()->safeEmail(),
+            'password' => 'password', // Plain password, will be hashed in afterInstantiate
             'roles' => [],
         ];
     }
     
-
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#initialization
      */
     protected function initialize(): static
     {
         return $this
-            // ->afterInstantiate(function(User $user): void {})
+            ->afterInstantiate(function(User $user): void {
+                $password = $user->getPassword();
+                // Hash the password if it appears to be plain text (not already hashed)
+                // Hashed passwords are typically much longer and contain special characters
+                if ($password && strlen($password) < 50) {
+                    $user->setPassword(
+                        $this->passwordHasher->hashPassword($user, $password)
+                    );
+                }
+            })
         ;
+    }
+
+    public function asAdmin(): static
+    {
+        return $this->with([
+            'roles' => ['ROLE_ADMIN'],
+        ]);
+    }
+
+    public function asUser(): static
+    {
+        return $this->with([
+            'roles' => ['ROLE_USER'],
+        ]);
+    }
+
+    public function withPlainPassword(string $plainPassword): static
+    {
+        return $this->with([
+            'password' => $plainPassword,
+        ]);
     }
 }

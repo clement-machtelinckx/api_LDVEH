@@ -12,8 +12,6 @@ final class AdventurerFactory extends PersistentProxyObjectFactory
 {
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#factories-as-services
-     *
-     * @todo inject services if required
      */
     public function __construct()
     {
@@ -26,15 +24,13 @@ final class AdventurerFactory extends PersistentProxyObjectFactory
 
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#model-factories
-     *
-     * @todo add your default values here
      */
     protected function defaults(): array|callable
     {
         return [
-            'Ability' => self::faker()->randomNumber(),
-            'AdventurerName' => self::faker()->text(255),
-            'Endurance' => self::faker()->randomNumber(),
+            'AdventurerName' => self::faker()->firstName(),
+            'Ability' => self::faker()->numberBetween(10, 20),
+            'Endurance' => self::faker()->numberBetween(15, 30),
             'user' => UserFactory::new(),
         ];
     }
@@ -47,5 +43,29 @@ final class AdventurerFactory extends PersistentProxyObjectFactory
         return $this
             // ->afterInstantiate(function(Adventurer $adventurer): void {})
         ;
+    }
+
+    public function withHighStats(): static
+    {
+        return $this->with([
+            'Ability' => self::faker()->numberBetween(18, 24),
+            'Endurance' => self::faker()->numberBetween(25, 35),
+        ]);
+    }
+
+    public function withLowStats(): static
+    {
+        return $this->with([
+            'Ability' => self::faker()->numberBetween(8, 12),
+            'Endurance' => self::faker()->numberBetween(10, 15),
+        ]);
+    }
+
+    public function withStats(int $ability, int $endurance): static
+    {
+        return $this->with([
+            'Ability' => $ability,
+            'Endurance' => $endurance,
+        ]);
     }
 }
