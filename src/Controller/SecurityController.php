@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\User;
+use App\Service\RefreshTokenManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Component\HttpFoundation\Request;
@@ -46,7 +47,8 @@ class SecurityController extends AbstractController
     #[Route('/api/login', name: 'api_login', methods: ['POST'])]
     public function loginCheck(
         Request $request,
-        JWTTokenManagerInterface $jwtManager
+        JWTTokenManagerInterface $jwtManager,
+        RefreshTokenManager $refreshTokenManager
     ): JsonResponse {
         // Vérifier si l'utilisateur a bien soumis des identifiants
         $user = $this->getUser();
@@ -57,8 +59,13 @@ class SecurityController extends AbstractController
         // Générer le token JWT
         $token = $jwtManager->create($user);
 
+        // Générer le refresh token
+        $refreshData = $refreshTokenManager->issueForUser($user);
+
         return new JsonResponse([
             'token' => $token,
+            'refresh_token' => $refreshData['rawToken'],
+            'refresh_token_expires_at' => $refreshData['expiresAt']->format(\DateTimeInterface::ATOM),
             'user' => [
                 'id' => $user->getId(),
                 'email' => $user->getEmail(),
