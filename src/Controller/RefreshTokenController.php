@@ -55,10 +55,6 @@ class RefreshTokenController extends AbstractController
         }
 
         $refreshToken = $dto->getRefreshToken();
-        
-        if (empty($refreshToken)) {
-            return new JsonResponse(['error' => 'Refresh token is required'], JsonResponse::HTTP_BAD_REQUEST);
-        }
 
         try {
             $result = $this->refreshTokenManager->refresh($refreshToken);

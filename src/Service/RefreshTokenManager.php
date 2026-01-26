@@ -31,7 +31,11 @@ class RefreshTokenManager
         $rawToken = $this->generateRawToken();
         $tokenHash = $this->hashToken($rawToken);
         
-        $ttl = (int) $this->params->get('refresh_token_ttl');
+        // Get TTL with fallback to 30 days if not configured
+        $ttl = $this->params->has('refresh_token_ttl') 
+            ? (int) $this->params->get('refresh_token_ttl') 
+            : 2592000; // 30 days default
+        
         $expiresAt = new \DateTimeImmutable("+{$ttl} seconds");
 
         $refreshToken = new RefreshToken();

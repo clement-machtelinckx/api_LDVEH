@@ -14,7 +14,7 @@ final class Version20260126145449 extends AbstractMigration
 {
     public function getDescription(): string
     {
-        return '';
+        return 'Add refresh_token table for JWT token rotation mechanism';
     }
 
     public function up(Schema $schema): void
