@@ -27,28 +27,15 @@ final class AdventureFactory extends PersistentProxyObjectFactory
      */
     protected function defaults(): array|callable
     {
-        return function() {
-            // Create a user first
-            $user = UserFactory::new()->create();
-            
-            // Create an adventurer with the same user
-            $adventurer = AdventurerFactory::new()->create(['user' => $user]);
-            
-            // Create a book
-            $book = BookFactory::new()->create();
-            
-            // Create a page for the book
-            $currentPage = PageFactory::new()->create(['book' => $book]);
-            
-            return [
-                'user' => $user,
-                'adventurer' => $adventurer,
-                'book' => $book,
-                'currentPage' => $currentPage,
-                'startedAt' => \DateTimeImmutable::createFromMutable(self::faker()->dateTimeBetween('-1 month', 'now')),
-                'isFinished' => false,
-            ];
-        };
+        // Use lazy references instead of creating entities immediately
+        return [
+            'user' => UserFactory::new(),
+            'adventurer' => AdventurerFactory::new(),
+            'book' => BookFactory::new(),
+            'currentPage' => PageFactory::new(),
+            'startedAt' => \DateTimeImmutable::createFromMutable(self::faker()->dateTimeBetween('-1 month', 'now')),
+            'isFinished' => false,
+        ];
     }
 
     /**
@@ -57,7 +44,17 @@ final class AdventureFactory extends PersistentProxyObjectFactory
     protected function initialize(): static
     {
         return $this
-            // ->afterInstantiate(function(Adventure $adventure): void {})
+            ->afterInstantiate(function(Adventure $adventure): void {
+                // Ensure relational consistency
+                // Make sure adventurer.user is the same as adventure.user
+                if ($adventure->getAdventurer() && $adventure->getUser()) {
+                    $adventure->getAdventurer()->setUser($adventure->getUser());
+                }
+                // Make sure currentPage.book is the same as adventure.book
+                if ($adventure->getCurrentPage() && $adventure->getBook()) {
+                    $adventure->getCurrentPage()->setBook($adventure->getBook());
+                }
+            })
         ;
     }
 

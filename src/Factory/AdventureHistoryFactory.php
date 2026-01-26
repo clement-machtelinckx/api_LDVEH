@@ -27,17 +27,13 @@ final class AdventureHistoryFactory extends PersistentProxyObjectFactory
      */
     protected function defaults(): array|callable
     {
-        return function() {
-            $book = BookFactory::new()->create();
-            
-            return [
-                'user' => UserFactory::new(),
-                'book' => $book,
-                'bookTitle' => $book->getTitle(),
-                'adventurerName' => self::faker()->firstName(),
-                'finishAt' => \DateTimeImmutable::createFromMutable(self::faker()->dateTimeBetween('-1 month', 'now')),
-            ];
-        };
+        return [
+            'user' => UserFactory::new(),
+            'book' => BookFactory::new(),
+            'bookTitle' => self::faker()->sentence(3),
+            'adventurerName' => self::faker()->firstName(),
+            'finishAt' => \DateTimeImmutable::createFromMutable(self::faker()->dateTimeBetween('-1 month', 'now')),
+        ];
     }
 
     /**
@@ -46,7 +42,12 @@ final class AdventureHistoryFactory extends PersistentProxyObjectFactory
     protected function initialize(): static
     {
         return $this
-            // ->afterInstantiate(function(AdventureHistory $adventureHistory): void {})
+            ->afterInstantiate(function(AdventureHistory $adventureHistory): void {
+                // Sync bookTitle with the actual book title if book is set
+                if ($adventureHistory->getBook() && !$adventureHistory->getBookTitle()) {
+                    $adventureHistory->setBookTitle($adventureHistory->getBook()->getTitle());
+                }
+            })
         ;
     }
 }

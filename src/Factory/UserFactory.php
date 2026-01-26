@@ -43,10 +43,12 @@ final class UserFactory extends PersistentProxyObjectFactory
     {
         return $this
             ->afterInstantiate(function(User $user): void {
-                // Hash the password if it's not already hashed
-                if ($user->getPassword() && !str_starts_with($user->getPassword(), '$2y$')) {
+                $password = $user->getPassword();
+                // Hash the password if it appears to be plain text (not already hashed)
+                // Hashed passwords are typically much longer and contain special characters
+                if ($password && strlen($password) < 50) {
                     $user->setPassword(
-                        $this->passwordHasher->hashPassword($user, $user->getPassword())
+                        $this->passwordHasher->hashPassword($user, $password)
                     );
                 }
             })

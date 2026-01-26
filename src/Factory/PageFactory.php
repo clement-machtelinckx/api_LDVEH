@@ -10,6 +10,11 @@ use Zenstruck\Foundry\Persistence\PersistentProxyObjectFactory;
  */
 final class PageFactory extends PersistentProxyObjectFactory
 {
+    /**
+     * Static counter to generate unique page numbers.
+     * Note: This approach is acceptable for test purposes. For production use cases
+     * or parallel test execution, consider using database sequences.
+     */
     private static int $pageNumberCounter = 1;
 
     /**
