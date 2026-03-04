@@ -12,8 +12,6 @@ final class BookFactory extends PersistentProxyObjectFactory
 {
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#factories-as-services
-     *
-     * @todo inject services if required
      */
     public function __construct()
     {
@@ -26,15 +24,15 @@ final class BookFactory extends PersistentProxyObjectFactory
 
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#model-factories
-     *
-     * @todo add your default values here
      */
     protected function defaults(): array|callable
     {
         return [
-            'createdAt' => \DateTimeImmutable::createFromMutable(self::faker()->dateTime()),
-            'title' => self::faker()->text(255),
-            'updatedAt' => \DateTimeImmutable::createFromMutable(self::faker()->dateTime()),
+            'title' => self::faker()->sentence(3),
+            'author' => self::faker()->name(),
+            'description' => self::faker()->paragraph(),
+            'publicationDate' => self::faker()->dateTimeBetween('-50 years', 'now'),
+            // Note: createdAt and updatedAt are set automatically by the Book entity lifecycle callbacks
         ];
     }
 

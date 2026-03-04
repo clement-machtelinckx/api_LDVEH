@@ -12,8 +12,6 @@ final class SkillFactory extends PersistentProxyObjectFactory
 {
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#factories-as-services
-     *
-     * @todo inject services if required
      */
     public function __construct()
     {
@@ -26,13 +24,22 @@ final class SkillFactory extends PersistentProxyObjectFactory
 
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#model-factories
-     *
-     * @todo add your default values here
      */
     protected function defaults(): array|callable
     {
+        $skillTypes = [
+            ['name' => 'Stealth', 'description' => 'Move silently', 'effect' => 'Avoid detection'],
+            ['name' => 'Healing', 'description' => 'Heal wounds', 'effect' => 'Restore 2 Endurance'],
+            ['name' => 'Combat Mastery', 'description' => 'Expert in combat', 'effect' => '+1 Ability in fights'],
+            ['name' => 'Tracking', 'description' => 'Follow trails', 'effect' => 'Detect hidden paths'],
+        ];
+        
+        $skill = self::faker()->randomElement($skillTypes);
+        
         return [
-            'name' => self::faker()->text(255),
+            'name' => $skill['name'],
+            'description' => $skill['description'],
+            'effect' => $skill['effect'],
         ];
     }
 
