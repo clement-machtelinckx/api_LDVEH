@@ -40,6 +40,9 @@
             "symfony/flex": true,
             "symfony/runtime": true
         },
+        "audit": {
+            "ignore": ["PKSA-365x-2zjk-pt47"]
+        },
         "bump-after-update": true,
         "sort-packages": true
     },
@@ -81,7 +84,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "7.2.*"
+            "require": "7.3.*"
         },
         "paas": {
             "framework": "symfony",
