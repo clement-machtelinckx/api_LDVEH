@@ -12,8 +12,6 @@ final class AdventureFactory extends PersistentProxyObjectFactory
 {
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#factories-as-services
-     *
-     * @todo inject services if required
      */
     public function __construct()
     {
@@ -26,17 +24,17 @@ final class AdventureFactory extends PersistentProxyObjectFactory
 
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#model-factories
-     *
-     * @todo add your default values here
      */
     protected function defaults(): array|callable
     {
+        // Use lazy references instead of creating entities immediately
         return [
+            'user' => UserFactory::new(),
             'adventurer' => AdventurerFactory::new(),
             'book' => BookFactory::new(),
             'currentPage' => PageFactory::new(),
-            'startedAt' => \DateTimeImmutable::createFromMutable(self::faker()->dateTime()),
-            'user' => UserFactory::new(),
+            'startedAt' => \DateTimeImmutable::createFromMutable(self::faker()->dateTimeBetween('-1 month', 'now')),
+            'isFinished' => false,
         ];
     }
 
@@ -46,7 +44,33 @@ final class AdventureFactory extends PersistentProxyObjectFactory
     protected function initialize(): static
     {
         return $this
-            // ->afterInstantiate(function(Adventure $adventure): void {})
+            ->afterInstantiate(function(Adventure $adventure): void {
+                // Ensure relational consistency
+                // Make sure adventurer.user is the same as adventure.user
+                if ($adventure->getAdventurer() && $adventure->getUser()) {
+                    $adventure->getAdventurer()->setUser($adventure->getUser());
+                }
+                // Make sure currentPage.book is the same as adventure.book
+                if ($adventure->getCurrentPage() && $adventure->getBook()) {
+                    $adventure->getCurrentPage()->setBook($adventure->getBook());
+                }
+            })
         ;
+    }
+
+    public function finished(): static
+    {
+        return $this->with([
+            'isFinished' => true,
+            'endedAt' => \DateTimeImmutable::createFromMutable(self::faker()->dateTimeBetween('-1 week', 'now')),
+        ]);
+    }
+
+    public function inProgress(): static
+    {
+        return $this->with([
+            'isFinished' => false,
+            'endedAt' => null,
+        ]);
     }
 }

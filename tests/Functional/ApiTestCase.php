@@ -2,6 +2,8 @@
 
 namespace App\Tests\Functional;
 
+use App\Entity\User;
+use Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 use Zenstruck\Browser\HttpOptions;
 use Zenstruck\Browser\Test\HasBrowser;
@@ -23,5 +25,19 @@ class ApiTestCase extends KernelTestCase
                 HttpOptions::create()
                     ->withHeader('Accept', 'application/ld+json')
             );
+    }
+
+    /**
+     * Generate JWT authentication headers for a given user
+     */
+    protected function authHeadersFor(User $user): array
+    {
+        $container = static::getContainer();
+        $jwtManager = $container->get(JWTTokenManagerInterface::class);
+        $token = $jwtManager->create($user);
+        
+        return [
+            'HTTP_AUTHORIZATION' => 'Bearer ' . $token,
+        ];
     }
 }
