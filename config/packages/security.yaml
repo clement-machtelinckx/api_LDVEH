@@ -47,6 +47,7 @@ security:
     access_control:
     - { path: ^/admin, roles: ROLE_ADMIN }
     - { path: ^/api/login, roles: PUBLIC_ACCESS }
+    - { path: ^/api/token/refresh, roles: PUBLIC_ACCESS }
     - { path: ^/api/register, roles: PUBLIC_ACCESS }
     - { path: ^/about, roles: PUBLIC_ACCESS }
 
@@ -55,7 +56,7 @@ security:
     - { path: ^/api/feedback$, roles: ROLE_ADMIN, methods: [GET] }
 
     # Puis le catch-all API
-    - { path: ^/api, roles: PUBLIC_ACCESS } 
+    - { path: ^/api, roles: IS_AUTHENTICATED_FULLY } 
 
     # Le reste
     - { path: ^/fight, roles: IS_AUTHENTICATED_FULLY }
