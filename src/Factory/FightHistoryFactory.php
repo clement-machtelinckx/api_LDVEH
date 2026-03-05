@@ -12,8 +12,6 @@ final class FightHistoryFactory extends PersistentProxyObjectFactory
 {
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#factories-as-services
-     *
-     * @todo inject services if required
      */
     public function __construct()
     {
@@ -26,13 +24,13 @@ final class FightHistoryFactory extends PersistentProxyObjectFactory
 
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#model-factories
-     *
-     * @todo add your default values here
      */
     protected function defaults(): array|callable
     {
         return [
             'adventurer' => AdventurerFactory::new(),
+            'monster' => MonsterFactory::new(),
+            'victory' => self::faker()->boolean(),
         ];
     }
 
@@ -44,5 +42,26 @@ final class FightHistoryFactory extends PersistentProxyObjectFactory
         return $this
             // ->afterInstantiate(function(FightHistory $fightHistory): void {})
         ;
+    }
+
+    public function asVictory(): static
+    {
+        return $this->with([
+            'victory' => true,
+        ]);
+    }
+
+    public function asDefeat(): static
+    {
+        return $this->with([
+            'victory' => false,
+        ]);
+    }
+
+    public function withoutMonster(): static
+    {
+        return $this->with([
+            'monster' => null,
+        ]);
     }
 }

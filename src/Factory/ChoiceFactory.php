@@ -12,8 +12,6 @@ final class ChoiceFactory extends PersistentProxyObjectFactory
 {
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#factories-as-services
-     *
-     * @todo inject services if required
      */
     public function __construct()
     {
@@ -26,13 +24,15 @@ final class ChoiceFactory extends PersistentProxyObjectFactory
 
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#model-factories
-     *
-     * @todo add your default values here
      */
     protected function defaults(): array|callable
     {
         return [
             'page' => PageFactory::new(),
+            'text' => self::faker()->sentence(),
+            'requiresVictory' => false,
+            // nextPageNumber is intentionally left null to avoid triggering ChoiceListener
+            // Use withNextPage() or withNextPageNumber() states to set it explicitly
         ];
     }
 
@@ -44,5 +44,26 @@ final class ChoiceFactory extends PersistentProxyObjectFactory
         return $this
             // ->afterInstantiate(function(Choice $choice): void {})
         ;
+    }
+
+    public function withNextPage(): static
+    {
+        return $this->with([
+            'nextPage' => PageFactory::new(),
+        ]);
+    }
+
+    public function withNextPageNumber(int $pageNumber): static
+    {
+        return $this->with([
+            'nextPageNumber' => $pageNumber,
+        ]);
+    }
+
+    public function requiresVictory(): static
+    {
+        return $this->with([
+            'requiresVictory' => true,
+        ]);
     }
 }

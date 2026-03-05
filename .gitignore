@@ -18,7 +18,4 @@
 /phpunit.xml
 .phpunit.result.cache
 ###< phpunit/phpunit ###
-
-###> IDE files ###
-/.idea/
-###< IDE files ###
+var/data_test.db
