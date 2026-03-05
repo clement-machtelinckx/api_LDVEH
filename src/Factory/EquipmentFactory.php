@@ -10,9 +10,6 @@ use Zenstruck\Foundry\Persistence\PersistentProxyObjectFactory;
  */
 final class EquipmentFactory extends PersistentProxyObjectFactory
 {
-    /**
-     * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#factories-as-services
-     */
     public function __construct()
     {
     }
@@ -22,34 +19,51 @@ final class EquipmentFactory extends PersistentProxyObjectFactory
         return Equipment::class;
     }
 
-    /**
-     * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#model-factories
-     */
     protected function defaults(): array|callable
     {
-        $equipmentTypes = [
-            ['name' => 'Sword', 'description' => 'A sharp blade', 'effect' => '+2 Ability'],
-            ['name' => 'Shield', 'description' => 'A sturdy shield', 'effect' => '+2 Endurance'],
-            ['name' => 'Healing Potion', 'description' => 'Restores health', 'effect' => '+4 Endurance'],
-            ['name' => 'Magic Ring', 'description' => 'Enhances abilities', 'effect' => '+1 Ability'],
-        ];
-        
-        $equipment = self::faker()->randomElement($equipmentTypes);
-        
         return [
-            'name' => $equipment['name'],
-            'description' => $equipment['description'],
-            'effect' => $equipment['effect'],
+            'name' => self::faker()->randomElement([
+                'Épée',
+                'Sabre',
+                'Lance',
+                'Masse d’armes',
+                'Potion de Laumspur',
+                'Rations spéciales',
+            ]),
+            'description' => self::faker()->sentence(),
+            'effect' => self::faker()->sentence(),
         ];
     }
 
-    /**
-     * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#initialization
-     */
     protected function initialize(): static
     {
-        return $this
-            // ->afterInstantiate(function(Equipment $equipment): void {})
-        ;
+        return $this;
+    }
+
+    public function weapon(string $name = 'Épée'): static
+    {
+        return $this->with([
+            'name' => $name,
+            'description' => 'Arme de combat.',
+            'effect' => 'Peut être utilisée en combat.',
+        ]);
+    }
+
+    public function meal(): static
+    {
+        return $this->with([
+            'name' => 'Rations spéciales',
+            'description' => 'Compte comme 1 repas.',
+            'effect' => 'Repas',
+        ]);
+    }
+
+    public function potion(): static
+    {
+        return $this->with([
+            'name' => 'Potion de Laumspur',
+            'description' => 'Potion de soin.',
+            'effect' => '+4 ENDURANCE en fin de combat',
+        ]);
     }
 }

@@ -10,9 +10,6 @@ use Zenstruck\Foundry\Persistence\PersistentProxyObjectFactory;
  */
 final class BookFactory extends PersistentProxyObjectFactory
 {
-    /**
-     * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#factories-as-services
-     */
     public function __construct()
     {
     }
@@ -22,9 +19,6 @@ final class BookFactory extends PersistentProxyObjectFactory
         return Book::class;
     }
 
-    /**
-     * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#model-factories
-     */
     protected function defaults(): array|callable
     {
         return [
@@ -32,17 +26,50 @@ final class BookFactory extends PersistentProxyObjectFactory
             'author' => self::faker()->name(),
             'description' => self::faker()->paragraph(),
             'publicationDate' => self::faker()->dateTimeBetween('-50 years', 'now'),
-            // Note: createdAt and updatedAt are set automatically by the Book entity lifecycle callbacks
         ];
     }
 
-    /**
-     * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#initialization
-     */
     protected function initialize(): static
     {
-        return $this
-            // ->afterInstantiate(function(Book $book): void {})
-        ;
+        return $this;
+    }
+
+    public function titled(string $title): static
+    {
+        return $this->with([
+            'title' => $title,
+        ]);
+    }
+
+    public function book1(): static
+    {
+        return $this->with([
+            'title' => 'Loup Solitaire - Les Maîtres des Ténèbres',
+            'author' => 'Joe Dever',
+        ]);
+    }
+
+    public function book2(): static
+    {
+        return $this->with([
+            'title' => 'Loup Solitaire - La Traversée Infernale',
+            'author' => 'Joe Dever',
+        ]);
+    }
+
+    public function book3(): static
+    {
+        return $this->with([
+            'title' => 'Loup Solitaire - Les Grottes de Kalte',
+            'author' => 'Joe Dever',
+        ]);
+    }
+
+    public function book4(): static
+    {
+        return $this->with([
+            'title' => 'Loup Solitaire - Le Gouffre Maudit',
+            'author' => 'Joe Dever',
+        ]);
     }
 }

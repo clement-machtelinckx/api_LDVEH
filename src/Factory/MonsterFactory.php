@@ -10,9 +10,6 @@ use Zenstruck\Foundry\Persistence\PersistentProxyObjectFactory;
  */
 final class MonsterFactory extends PersistentProxyObjectFactory
 {
-    /**
-     * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#factories-as-services
-     */
     public function __construct()
     {
     }
@@ -22,28 +19,32 @@ final class MonsterFactory extends PersistentProxyObjectFactory
         return Monster::class;
     }
 
-    /**
-     * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#model-factories
-     */
     protected function defaults(): array|callable
     {
-        $monsterNames = ['Goblin', 'Orc', 'Troll', 'Dragon', 'Skeleton', 'Zombie', 'Spider', 'Wolf'];
-        
         return [
-            'monsterName' => self::faker()->randomElement($monsterNames),
-            'ability' => self::faker()->numberBetween(8, 18),
-            'endurance' => self::faker()->numberBetween(10, 25),
+            'monsterName' => self::faker()->randomElement([
+                'Giak',
+                'Drakkar',
+                'Vordak',
+                'Monstre des glaces',
+                'Kraan',
+                'Gourgaz',
+            ]),
+            'ability' => self::faker()->numberBetween(10, 22),
+            'endurance' => self::faker()->numberBetween(15, 35),
         ];
     }
 
-    /**
-     * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#initialization
-     */
     protected function initialize(): static
     {
-        return $this
-            // ->afterInstantiate(function(Monster $monster): void {})
-        ;
+        return $this;
+    }
+
+    public function named(string $name): static
+    {
+        return $this->with([
+            'monsterName' => $name,
+        ]);
     }
 
     public function weak(): static

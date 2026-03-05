@@ -10,9 +10,6 @@ use Zenstruck\Foundry\Persistence\PersistentProxyObjectFactory;
  */
 final class SkillFactory extends PersistentProxyObjectFactory
 {
-    /**
-     * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#factories-as-services
-     */
     public function __construct()
     {
     }
@@ -22,20 +19,33 @@ final class SkillFactory extends PersistentProxyObjectFactory
         return Skill::class;
     }
 
-    /**
-     * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#model-factories
-     */
     protected function defaults(): array|callable
     {
-        $skillTypes = [
-            ['name' => 'Stealth', 'description' => 'Move silently', 'effect' => 'Avoid detection'],
-            ['name' => 'Healing', 'description' => 'Heal wounds', 'effect' => 'Restore 2 Endurance'],
-            ['name' => 'Combat Mastery', 'description' => 'Expert in combat', 'effect' => '+1 Ability in fights'],
-            ['name' => 'Tracking', 'description' => 'Follow trails', 'effect' => 'Detect hidden paths'],
+        $skills = [
+            [
+                'name' => 'Camouflage',
+                'description' => 'Se fondre dans le décor.',
+                'effect' => 'Permet de se cacher ou passer inaperçu.',
+            ],
+            [
+                'name' => 'Chasse',
+                'description' => 'Trouver de la nourriture en milieu naturel.',
+                'effect' => 'Évite de dépenser un repas hors zone aride.',
+            ],
+            [
+                'name' => 'Guérison',
+                'description' => 'Récupération progressive.',
+                'effect' => '+1 ENDURANCE hors combat sans dépasser le maximum.',
+            ],
+            [
+                'name' => 'Maîtrise des Armes',
+                'description' => 'Spécialisation martiale.',
+                'effect' => '+2 HABILETÉ avec l’arme maîtrisée.',
+            ],
         ];
-        
-        $skill = self::faker()->randomElement($skillTypes);
-        
+
+        $skill = self::faker()->randomElement($skills);
+
         return [
             'name' => $skill['name'],
             'description' => $skill['description'],
@@ -43,13 +53,44 @@ final class SkillFactory extends PersistentProxyObjectFactory
         ];
     }
 
-    /**
-     * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#initialization
-     */
     protected function initialize(): static
     {
-        return $this
-            // ->afterInstantiate(function(Skill $skill): void {})
-        ;
+        return $this;
+    }
+
+    public function named(string $name, string $description = 'Description', string $effect = 'Effet'): static
+    {
+        return $this->with([
+            'name' => $name,
+            'description' => $description,
+            'effect' => $effect,
+        ]);
+    }
+
+    public function camouflage(): static
+    {
+        return $this->with([
+            'name' => 'Camouflage',
+            'description' => 'Se fondre dans le décor.',
+            'effect' => 'Permet de se cacher ou passer inaperçu.',
+        ]);
+    }
+
+    public function healing(): static
+    {
+        return $this->with([
+            'name' => 'Guérison',
+            'description' => 'Récupération progressive.',
+            'effect' => '+1 ENDURANCE hors combat sans dépasser le maximum.',
+        ]);
+    }
+
+    public function weaponMastery(): static
+    {
+        return $this->with([
+            'name' => 'Maîtrise des Armes',
+            'description' => 'Spécialisation martiale.',
+            'effect' => '+2 HABILETÉ avec l’arme maîtrisée.',
+        ]);
     }
 }
