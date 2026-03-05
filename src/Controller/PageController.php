@@ -7,6 +7,8 @@ use App\Repository\AdventurerRepository;
 use App\Repository\PageRepository;
 use App\Service\AdventureService;
 use App\Service\CombatService;
+use App\Service\EquipmentService;
+use App\Service\SkillService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
@@ -23,6 +25,8 @@ class PageController extends AbstractController
         AdventureRepository $adventureRepo,
         CombatService $combatService,
         AdventureService $adventureService,
+        SkillService $skillService,
+        EquipmentService $equipmentService,
         ?int $fromPageId = null,
     ): JsonResponse {
         $adventurer = $adventurerRepo->find($adventurerId);
@@ -73,8 +77,19 @@ class PageController extends AbstractController
     
             // ✅ Mise à jour de la progression
             $adventureService->updatePage($adventure, $targetPage, $fromPage);
+
+            // 🩹 Guérison : +1 END si discipline Guérison et pas de combat sur cette page
+            $hasCombat = $targetPage->getMonster() !== null;
+            if (!$hasCombat) {
+                $skillService->applyHealing($adventurer);
+            }
         }
-    
+
+        // 🍖 Repas obligatoire sur cette page
+        if ($targetPage->isRequiresMeal()) {
+            $skillService->handleMeal($adventurer, $equipmentService);
+        }
+
         $choices = [];
         foreach ($targetPage->getChoices() as $choice) {
             $choices[] = [

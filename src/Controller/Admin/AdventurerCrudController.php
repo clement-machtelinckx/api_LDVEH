@@ -23,7 +23,12 @@ class AdventurerCrudController extends AbstractCrudController
             TextField::new('AdventurerName'),
             IntegerField::new('Ability'),
             IntegerField::new('Endurance'),
-            AssociationField::new('user')
+            IntegerField::new('maxEndurance', 'Endurance Max'),
+            TextField::new('masteredWeaponSlug', 'Arme maîtrisée (slug)'),
+            IntegerField::new('gold', 'Or'),
+            AssociationField::new('user'),
+            AssociationField::new('adventurerEquipments', 'Équipements'),
+            AssociationField::new('skills', 'Disciplines'),
         ];
     }
 
