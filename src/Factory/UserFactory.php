@@ -11,9 +11,6 @@ use Zenstruck\Foundry\Persistence\PersistentProxyObjectFactory;
  */
 final class UserFactory extends PersistentProxyObjectFactory
 {
-    /**
-     * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#factories-as-services
-     */
     public function __construct(
         private UserPasswordHasherInterface $passwordHasher
     ) {
@@ -24,41 +21,34 @@ final class UserFactory extends PersistentProxyObjectFactory
         return User::class;
     }
 
-    /**
-     * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#model-factories
-     */
     protected function defaults(): array|callable
     {
         return [
             'email' => self::faker()->unique()->safeEmail(),
-            'password' => 'password', // Plain password, will be hashed in afterInstantiate
-            'roles' => [],
+            'password' => 'password',
+            'roles' => ['ROLE_USER'],
         ];
     }
-    
-    /**
-     * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#initialization
-     */
+
     protected function initialize(): static
     {
         return $this
-            ->afterInstantiate(function(User $user): void {
+            ->afterInstantiate(function (User $user): void {
                 $password = $user->getPassword();
-                // Hash the password if it appears to be plain text (not already hashed)
-                // Hashed passwords are typically much longer and contain special characters
+
+                // Hash uniquement si le mot de passe semble être en clair
                 if ($password && strlen($password) < 50) {
                     $user->setPassword(
                         $this->passwordHasher->hashPassword($user, $password)
                     );
                 }
-            })
-        ;
+            });
     }
 
     public function asAdmin(): static
     {
         return $this->with([
-            'roles' => ['ROLE_ADMIN'],
+            'roles' => ['ROLE_ADMIN', 'ROLE_USER'],
         ]);
     }
 
@@ -66,6 +56,13 @@ final class UserFactory extends PersistentProxyObjectFactory
     {
         return $this->with([
             'roles' => ['ROLE_USER'],
+        ]);
+    }
+
+    public function withEmail(string $email): static
+    {
+        return $this->with([
+            'email' => $email,
         ]);
     }
 

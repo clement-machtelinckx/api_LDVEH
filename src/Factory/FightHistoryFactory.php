@@ -2,17 +2,17 @@
 
 namespace App\Factory;
 
+use App\Entity\Adventurer;
 use App\Entity\FightHistory;
+use App\Entity\Monster;
 use Zenstruck\Foundry\Persistence\PersistentProxyObjectFactory;
+use Zenstruck\Foundry\Proxy;
 
 /**
  * @extends PersistentProxyObjectFactory<FightHistory>
  */
 final class FightHistoryFactory extends PersistentProxyObjectFactory
 {
-    /**
-     * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#factories-as-services
-     */
     public function __construct()
     {
     }
@@ -22,26 +22,18 @@ final class FightHistoryFactory extends PersistentProxyObjectFactory
         return FightHistory::class;
     }
 
-    /**
-     * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#model-factories
-     */
     protected function defaults(): array|callable
     {
         return [
             'adventurer' => AdventurerFactory::new(),
             'monster' => MonsterFactory::new(),
-            'victory' => self::faker()->boolean(),
+            'victory' => true,
         ];
     }
 
-    /**
-     * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#initialization
-     */
     protected function initialize(): static
     {
-        return $this
-            // ->afterInstantiate(function(FightHistory $fightHistory): void {})
-        ;
+        return $this;
     }
 
     public function asVictory(): static
@@ -55,6 +47,20 @@ final class FightHistoryFactory extends PersistentProxyObjectFactory
     {
         return $this->with([
             'victory' => false,
+        ]);
+    }
+
+    public function forAdventurer(AdventurerFactory|Adventurer|Proxy $adventurer): static
+    {
+        return $this->with([
+            'adventurer' => $adventurer,
+        ]);
+    }
+
+    public function againstMonster(MonsterFactory|Monster|Proxy $monster): static
+    {
+        return $this->with([
+            'monster' => $monster,
         ]);
     }
 
