@@ -53,7 +53,7 @@ class Adventurer
     #[ORM\Column]
     #[Groups(['adventurer:read', 'adventurer:write'])]
     #[Assert\NotNull]
-    #[Assert\Range(min: 11, max: 20, notInRangeMessage: 'Habileté doit être entre {{ min }} et {{ max }} (tirage 1-10 + 10).')]
+    #[Assert\Range(min: 10, max: 19, notInRangeMessage: 'Habileté doit être entre {{ min }} et {{ max }} (tirage 0-9 + 10).')]
     private ?int $Ability = null;
 
     #[ORM\Column]
@@ -95,7 +95,7 @@ class Adventurer
 
     #[ORM\Column]
     #[Assert\NotNull]
-    #[Assert\Range(min: 21, max: 30, notInRangeMessage: 'Endurance max doit être entre {{ min }} et {{ max }} (tirage 1-10 + 20).')]
+    #[Assert\Range(min: 20, max: 29, notInRangeMessage: 'Endurance max doit être entre {{ min }} et {{ max }} (tirage 0-9 + 20).')]
     private ?int $maxEndurance = null;
 
     #[ORM\Column(length: 50, nullable: true)]
@@ -293,7 +293,6 @@ class Adventurer
     {
         if (!$this->skills->contains($skill)) {
             $this->skills->add($skill);
-            $skill->addAdventurer($this);
         }
 
         return $this;
@@ -301,9 +300,7 @@ class Adventurer
 
     public function removeSkill(Skill $skill): static
     {
-        if ($this->skills->removeElement($skill)) {
-            $skill->removeAdventurer($this);
-        }
+        $this->skills->removeElement($skill);
 
         return $this;
     }
@@ -322,7 +319,7 @@ class Adventurer
 
     public function addGold(int $amount): static
     {
-        $this->gold = min(self::MAX_GOLD, max(0, $this->gold + $amount));
+        $this->gold = min(self::MAX_GOLD, $this->gold + $amount);
 
         return $this;
     }
@@ -367,11 +364,10 @@ class Adventurer
     #[Assert\Callback]
     public function validateEndurance(ExecutionContextInterface $context): void
     {
-        $effectiveMax = $this->getEffectiveMaxEndurance();
-        if ($this->Endurance !== null && $this->maxEndurance !== null && $this->Endurance > $effectiveMax) {
+        if ($this->Endurance !== null && $this->maxEndurance !== null && $this->Endurance > $this->maxEndurance) {
             $context->buildViolation('L\'endurance ({{ current }}) ne peut pas dépasser l\'endurance max ({{ max }}).')
                 ->setParameter('{{ current }}', (string) $this->Endurance)
-                ->setParameter('{{ max }}', (string) $effectiveMax)
+                ->setParameter('{{ max }}', (string) $this->maxEndurance)
                 ->atPath('Endurance')
                 ->addViolation();
         }
@@ -382,24 +378,13 @@ class Adventurer
      */
     public function hasSlug(string $slug): bool
     {
-        return $this->hasEquipmentSlug($slug) || $this->hasSkillSlug($slug);
-    }
-
-    public function hasSkillSlug(string $slug): bool
-    {
-        foreach ($this->skills as $sk) {
-            if ($sk->getSlug() === $slug) {
+        foreach ($this->adventurerEquipments as $ae) {
+            if ($ae->getEquipment()->getSlug() === $slug) {
                 return true;
             }
         }
-
-        return false;
-    }
-
-    public function hasEquipmentSlug(string $slug): bool
-    {
-        foreach ($this->adventurerEquipments as $ae) {
-            if ($ae->getEquipment()->getSlug() === $slug) {
+        foreach ($this->skills as $sk) {
+            if ($sk->getSlug() === $slug) {
                 return true;
             }
         }

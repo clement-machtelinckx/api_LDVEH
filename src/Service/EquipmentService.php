@@ -19,22 +19,13 @@ class EquipmentService
      */
     public function addEquipment(Adventurer $adventurer, Equipment $equipment, int $quantity = 1): ?Equipment
     {
-        if ($quantity < 1) {
-            throw new \InvalidArgumentException('La quantité doit être supérieure ou égale à 1.');
-        }
-
         $removed = null;
 
         // Slot occupé → remplacement automatique (ex: gilet → cotte de mailles)
-        // Un équipement slotté ne peut exister qu'en un seul exemplaire
         if ($equipment->getSlot() !== null) {
-            $quantity = 1;
             $removed = $this->findEquipmentInSlot($adventurer, $equipment);
             if ($removed) {
-                $ae = $adventurer->findAdventurerEquipment($removed);
-                if ($ae) {
-                    $adventurer->removeEquipment($removed, $ae->getQuantity());
-                }
+                $adventurer->removeEquipment($removed);
             }
         }
 

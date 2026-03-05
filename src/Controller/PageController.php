@@ -29,7 +29,7 @@ class PageController extends AbstractController
         EquipmentService $equipmentService,
         ?int $fromPageId = null,
     ): JsonResponse {
-        $adventurer = $adventurerRepo->findWithFullInventory($adventurerId, $this->getUser());
+        $adventurer = $adventurerRepo->find($adventurerId);
         $targetPage = $pageRepo->find($pageId);
         $fromPage = $fromPageId ? $pageRepo->find($fromPageId) : null;
     
@@ -75,24 +75,19 @@ class PageController extends AbstractController
                 ], 403);
             }
     
-            // Vérifier si c'est une vraie transition (pas un refresh)
-            $isNewPage = $adventure->getCurrentPage()?->getId() !== $targetPage->getId();
-
             // ✅ Mise à jour de la progression
             $adventureService->updatePage($adventure, $targetPage, $fromPage);
 
-            if ($isNewPage) {
-                // 🩹 Guérison : +1 END si discipline Guérison et pas de combat sur cette page
-                $hasCombat = $targetPage->getMonster() !== null;
-                if (!$hasCombat) {
-                    $skillService->applyHealing($adventurer);
-                }
-
-                // 🍖 Repas obligatoire sur cette page
-                if ($targetPage->isRequiresMeal()) {
-                    $skillService->handleMeal($adventurer, $equipmentService);
-                }
+            // 🩹 Guérison : +1 END si discipline Guérison et pas de combat sur cette page
+            $hasCombat = $targetPage->getMonster() !== null;
+            if (!$hasCombat) {
+                $skillService->applyHealing($adventurer);
             }
+        }
+
+        // 🍖 Repas obligatoire sur cette page
+        if ($targetPage->isRequiresMeal()) {
+            $skillService->handleMeal($adventurer, $equipmentService);
         }
 
         $choices = [];

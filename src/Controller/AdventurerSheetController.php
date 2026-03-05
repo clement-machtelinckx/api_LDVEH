@@ -16,10 +16,16 @@ class AdventurerSheetController extends AbstractController
         int $id,
         AdventurerRepository $adventurerRepo,
     ): JsonResponse {
-        $adventurer = $adventurerRepo->findWithFullInventory($id, $this->getUser());
+        $adventurer = $adventurerRepo->find($id);
 
         if (!$adventurer) {
             return $this->json(['error' => 'Aventurier introuvable.'], 404);
+        }
+
+        // Sécurité : seul le propriétaire ou un admin peut voir la fiche
+        $user = $this->getUser();
+        if ($adventurer->getUser() !== $user && !$this->isGranted('ROLE_ADMIN')) {
+            return $this->json(['error' => 'Accès refusé.'], 403);
         }
 
         // Armes
