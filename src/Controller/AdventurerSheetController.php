@@ -16,7 +16,7 @@ class AdventurerSheetController extends AbstractController
         int $id,
         AdventurerRepository $adventurerRepo,
     ): JsonResponse {
-        $adventurer = $adventurerRepo->find($id);
+        $adventurer = $adventurerRepo->findWithFullInventory($id);
 
         if (!$adventurer) {
             return $this->json(['error' => 'Aventurier introuvable.'], 404);

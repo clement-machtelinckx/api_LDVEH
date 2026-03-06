@@ -16,28 +16,18 @@ class AdventurerRepository extends ServiceEntityRepository
         parent::__construct($registry, Adventurer::class);
     }
 
-    //    /**
-    //     * @return Adventurer[] Returns an array of Adventurer objects
-    //     */
-    //    public function findByExampleField($value): array
-    //    {
-    //        return $this->createQueryBuilder('a')
-    //            ->andWhere('a.exampleField = :val')
-    //            ->setParameter('val', $value)
-    //            ->orderBy('a.id', 'ASC')
-    //            ->setMaxResults(10)
-    //            ->getQuery()
-    //            ->getResult()
-    //        ;
-    //    }
-
-    //    public function findOneBySomeField($value): ?Adventurer
-    //    {
-    //        return $this->createQueryBuilder('a')
-    //            ->andWhere('a.exampleField = :val')
-    //            ->setParameter('val', $value)
-    //            ->getQuery()
-    //            ->getOneOrNullResult()
-    //        ;
-    //    }
+    /**
+     * Charge un aventurier avec ses équipements et skills en une seule requête.
+     */
+    public function findWithFullInventory(int $id): ?Adventurer
+    {
+        return $this->createQueryBuilder('a')
+            ->leftJoin('a.adventurerEquipments', 'ae')->addSelect('ae')
+            ->leftJoin('ae.equipment', 'e')->addSelect('e')
+            ->leftJoin('a.skills', 's')->addSelect('s')
+            ->where('a.id = :id')
+            ->setParameter('id', $id)
+            ->getQuery()
+            ->getOneOrNullResult();
+    }
 }
