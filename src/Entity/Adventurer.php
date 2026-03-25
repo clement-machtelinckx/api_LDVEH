@@ -277,6 +277,7 @@ class Adventurer
     {
         if (!$this->skills->contains($skill)) {
             $this->skills->add($skill);
+            $skill->addAdventurer($this);
         }
 
         return $this;
@@ -284,7 +285,9 @@ class Adventurer
 
     public function removeSkill(Skill $skill): static
     {
-        $this->skills->removeElement($skill);
+        if ($this->skills->removeElement($skill)) {
+            $skill->removeAdventurer($this);
+        }
 
         return $this;
     }
@@ -303,7 +306,7 @@ class Adventurer
 
     public function addGold(int $amount): static
     {
-        $this->gold = min(self::MAX_GOLD, $this->gold + $amount);
+        $this->gold = min(self::MAX_GOLD, max(0, $this->gold + $amount));
 
         return $this;
     }
@@ -348,10 +351,11 @@ class Adventurer
     #[Assert\Callback]
     public function validateEndurance(ExecutionContextInterface $context): void
     {
-        if ($this->Endurance !== null && $this->maxEndurance !== null && $this->Endurance > $this->maxEndurance) {
+        $effectiveMax = $this->getEffectiveMaxEndurance();
+        if ($this->Endurance !== null && $this->maxEndurance !== null && $this->Endurance > $effectiveMax) {
             $context->buildViolation('L\'endurance ({{ current }}) ne peut pas dépasser l\'endurance max ({{ max }}).')
                 ->setParameter('{{ current }}', (string) $this->Endurance)
-                ->setParameter('{{ max }}', (string) $this->maxEndurance)
+                ->setParameter('{{ max }}', (string) $effectiveMax)
                 ->atPath('Endurance')
                 ->addViolation();
         }

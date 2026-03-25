@@ -2,7 +2,7 @@
 
 namespace App\Service;
 
-use App\DTO\CombatModifiers;
+use App\Dto\CombatModifiers;
 use App\Entity\Adventurer;
 use App\Entity\Skill;
 use App\Enum\EquipmentType;
@@ -23,7 +23,12 @@ class SkillService
             throw new \LogicException('Impossible : maximum ' . Adventurer::MAX_SKILLS . ' disciplines Kaï.');
         }
 
-        if ($adventurer->hasSlug($skill->getSlug())) {
+        $slug = $skill->getSlug();
+        if ($slug === null || $slug === '') {
+            throw new \LogicException('La discipline Kaï fournie n\'a pas de slug valide.');
+        }
+
+        if ($adventurer->hasSlug($slug)) {
             throw new \LogicException('L\'aventurier possède déjà la discipline ' . $skill->getName() . '.');
         }
 

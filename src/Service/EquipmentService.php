@@ -22,10 +22,15 @@ class EquipmentService
         $removed = null;
 
         // Slot occupé → remplacement automatique (ex: gilet → cotte de mailles)
+        // Un équipement slotté ne peut exister qu'en un seul exemplaire
         if ($equipment->getSlot() !== null) {
+            $quantity = 1;
             $removed = $this->findEquipmentInSlot($adventurer, $equipment);
             if ($removed) {
-                $adventurer->removeEquipment($removed);
+                $ae = $adventurer->findAdventurerEquipment($removed);
+                if ($ae) {
+                    $adventurer->removeEquipment($removed, $ae->getQuantity());
+                }
             }
         }
 
