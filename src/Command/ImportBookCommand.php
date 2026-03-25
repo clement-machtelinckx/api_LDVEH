@@ -11,6 +11,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
 #[AsCommand(name: 'app:import-books')]
@@ -21,8 +22,24 @@ class ImportBookCommand extends Command
         parent::__construct();
     }
 
+    protected function configure(): void
+    {
+        $this->addOption('delete', 'd', InputOption::VALUE_NONE, 'Supprimer tous les livres existants avant import');
+    }
+
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
+        if ($input->getOption('delete')) {
+            $output->writeln('<comment>Suppression des livres existants...</comment>');
+            $this->em->getConnection()->executeStatement('SET FOREIGN_KEY_CHECKS=0');
+            $this->em->getConnection()->executeStatement('DELETE FROM choice');
+            $this->em->getConnection()->executeStatement('DELETE FROM monster');
+            $this->em->getConnection()->executeStatement('DELETE FROM page');
+            $this->em->getConnection()->executeStatement('DELETE FROM book');
+            $this->em->getConnection()->executeStatement('SET FOREIGN_KEY_CHECKS=1');
+            $output->writeln('<info>Base nettoyee.</info>');
+        }
+
         $booksToImport = [
             ['file' => 'book01_maitre_tenebre.json', 'title' => 'Loup Solitaire - Les Maîtres des Ténèbres'],
             ['file' => 'book02_traversee_infernal.json', 'title' => 'Loup Solitaire - La Traversée Infernale'],
@@ -59,14 +76,34 @@ class ImportBookCommand extends Command
                     $page->setEndingType($entry['endingType']);
                 }
 
-                if (isset($entry['monster'])) {
-                    $monsterData = $entry['monster'];
-                    $monster = new Monster();
-                    $monster->setMonsterName($monsterData['monsterName']);
-                    $monster->setAbility($monsterData['ability']);
-                    $monster->setEndurance($monsterData['endurance']);
-                    $this->em->persist($monster);
-                    $page->setMonster($monster);
+                // Stocker les events d'inventaire/stats en JSON
+                $events = [];
+                if (!empty($entry['itemsGained'])) $events['itemsGained'] = $entry['itemsGained'];
+                if (!empty($entry['itemsLost'])) $events['itemsLost'] = $entry['itemsLost'];
+                if (isset($entry['enduranceChange']) && $entry['enduranceChange'] !== null) $events['enduranceChange'] = $entry['enduranceChange'];
+                if (isset($entry['abilityChange']) && $entry['abilityChange'] !== null) $events['abilityChange'] = $entry['abilityChange'];
+                if (!empty($events)) {
+                    $page->setEvents($events);
+                }
+
+                if (isset($entry['monster']) && $entry['monster']) {
+                    $monsters = $entry['monster'];
+                    if (isset($monsters['monsterName'])) {
+                        $monsters = [$monsters];
+                    }
+                    foreach ($monsters as $i => $monsterData) {
+                        if (empty($monsterData['ability']) || empty($monsterData['endurance'])) {
+                            continue;
+                        }
+                        $monster = new Monster();
+                        $monster->setMonsterName($monsterData['monsterName']);
+                        $monster->setAbility($monsterData['ability']);
+                        $monster->setEndurance($monsterData['endurance']);
+                        $this->em->persist($monster);
+                        if ($page->getMonster() === null) {
+                            $page->setMonster($monster);
+                        }
+                    }
                 }
 
                 $this->em->persist($page);
@@ -88,6 +125,9 @@ class ImportBookCommand extends Command
                     $choice->setText($choiceData['text']);
                     $choice->setPage($fromPage);
                     $choice->setNextPage($pageMap[$choiceData['nextPage']] ?? null);
+                    if (!empty($choiceData['condition'])) {
+                        $choice->setCondition($choiceData['condition']);
+                    }
                     $this->em->persist($choice);
                 }
             }

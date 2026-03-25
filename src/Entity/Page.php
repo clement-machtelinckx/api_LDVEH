@@ -59,8 +59,9 @@ class Page
     #[Groups(['page:read', 'adventurer:read'])]
     private ?string $endingType = null; // "death", "victory", or null
 
-    #[ORM\Column(options: ['default' => false])]
-    private bool $requiresMeal = false;
+    #[ORM\Column(type: 'json', nullable: true)]
+    #[Groups(['page:read'])]
+    private ?array $events = null;
 
 
     public function __construct()
@@ -187,14 +188,14 @@ class Page
         return $this;
     }
 
-    public function isRequiresMeal(): bool
+    public function getEvents(): ?array
     {
-        return $this->requiresMeal;
+        return $this->events;
     }
 
-    public function setRequiresMeal(bool $requiresMeal): static
+    public function setEvents(?array $events): static
     {
-        $this->requiresMeal = $requiresMeal;
+        $this->events = $events;
 
         return $this;
     }
