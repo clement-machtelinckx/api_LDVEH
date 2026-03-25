@@ -29,7 +29,7 @@ class PageController extends AbstractController
         EquipmentService $equipmentService,
         ?int $fromPageId = null,
     ): JsonResponse {
-        $adventurer = $adventurerRepo->findWithFullInventory($adventurerId);
+        $adventurer = $adventurerRepo->findWithFullInventory($adventurerId, $this->getUser());
         $targetPage = $pageRepo->find($pageId);
         $fromPage = $fromPageId ? $pageRepo->find($fromPageId) : null;
     

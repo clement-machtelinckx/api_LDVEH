@@ -21,7 +21,7 @@ class FightController extends AbstractController
     ): JsonResponse {
         $data = json_decode($request->getContent(), true);
 
-        $adventurer = $adventurerRepo->findWithFullInventory($data['adventurerId'] ?? 0);
+        $adventurer = $adventurerRepo->findWithFullInventory($data['adventurerId'] ?? 0, $this->getUser());
         $monster = $monsterRepo->find($data['monsterId'] ?? 0);
 
         if (!$adventurer || !$monster) {

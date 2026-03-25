@@ -23,14 +23,10 @@ class ConsumeController extends AbstractController
         EquipmentService $equipmentService,
         EntityManagerInterface $em,
     ): JsonResponse {
-        $adventurer = $adventurerRepo->findWithFullInventory($adventurerId);
+        $adventurer = $adventurerRepo->findWithFullInventory($adventurerId, $this->getUser());
 
         if (!$adventurer) {
             return $this->json(['error' => 'Aventurier introuvable.'], 404);
-        }
-
-        if ($adventurer->getUser() !== $this->getUser() && !$this->isGranted('ROLE_ADMIN')) {
-            return $this->json(['error' => 'Accès refusé.'], 403);
         }
 
         $equipment = $equipmentRepo->findOneBy(['slug' => $equipmentSlug]);
