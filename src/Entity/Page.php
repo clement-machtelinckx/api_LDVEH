@@ -59,6 +59,10 @@ class Page
     #[Groups(['page:read', 'adventurer:read'])]
     private ?string $endingType = null; // "death", "victory", or null
 
+    #[ORM\Column(type: 'json', nullable: true)]
+    #[Groups(['page:read'])]
+    private ?array $events = null;
+
 
     public function __construct()
     {
@@ -180,6 +184,18 @@ class Page
     public function setEndingType(?string $endingType): static
     {
         $this->endingType = $endingType;
+
+        return $this;
+    }
+
+    public function getEvents(): ?array
+    {
+        return $this->events;
+    }
+
+    public function setEvents(?array $events): static
+    {
+        $this->events = $events;
 
         return $this;
     }
