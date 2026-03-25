@@ -38,8 +38,8 @@ class FightControllerTest extends ApiTestCase
                 ],
                 'server' => $this->authHeadersFor($user->_real()),
             ])
-            ->assertStatus(400)
-            ->assertJsonMatches('error', 'Invalid adventurer or monster ID');
+            ->assertStatus(404)
+            ->assertJsonMatches('error', 'Aventurier ou monstre introuvable');
     }
 
     public function testFightReturns400WithInvalidMonsterId(): void
@@ -60,8 +60,8 @@ class FightControllerTest extends ApiTestCase
                 ],
                 'server' => $this->authHeadersFor($user->_real()),
             ])
-            ->assertStatus(400)
-            ->assertJsonMatches('error', 'Invalid adventurer or monster ID');
+            ->assertStatus(404)
+            ->assertJsonMatches('error', 'Aventurier ou monstre introuvable');
     }
 
     public function testFightReturns400WithZeroIds(): void
@@ -76,8 +76,8 @@ class FightControllerTest extends ApiTestCase
                 ],
                 'server' => $this->authHeadersFor($user->_real()),
             ])
-            ->assertStatus(400)
-            ->assertJsonMatches('error', 'Invalid adventurer or monster ID');
+            ->assertStatus(404)
+            ->assertJsonMatches('error', 'Aventurier ou monstre introuvable');
     }
 
     public function testFightSuccessfullyWithAdventurerVictory(): void

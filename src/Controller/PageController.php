@@ -25,7 +25,10 @@ class PageController extends AbstractController
         AdventureService $adventureService,
         ?int $fromPageId = null,
     ): JsonResponse {
-        $adventurer = $adventurerRepo->find($adventurerId);
+        $adventurer = $adventurerRepo->findOneBy([
+            'id' => $adventurerId,
+            'user' => $this->getUser()
+        ]);
         $targetPage = $pageRepo->find($pageId);
         $fromPage = $fromPageId ? $pageRepo->find($fromPageId) : null;
     
