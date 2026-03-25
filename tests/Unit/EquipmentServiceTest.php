@@ -188,6 +188,27 @@ class EquipmentServiceTest extends TestCase
         $this->service->addEquipment($adventurer, $potion, Adventurer::MAX_BACKPACK + 1);
     }
 
+    public function testAddEquipmentWithZeroQuantityThrows(): void
+    {
+        $adventurer = $this->makeAdventurer();
+        $weapon = $this->makeWeapon();
+
+        $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage('supérieure ou égale à 1');
+
+        $this->service->addEquipment($adventurer, $weapon, 0);
+    }
+
+    public function testAddEquipmentWithNegativeQuantityThrows(): void
+    {
+        $adventurer = $this->makeAdventurer();
+        $weapon = $this->makeWeapon();
+
+        $this->expectException(\InvalidArgumentException::class);
+
+        $this->service->addEquipment($adventurer, $weapon, -1);
+    }
+
     // ── consume ─────────────────────────────────────────────
 
     public function testConsumePotion(): void
