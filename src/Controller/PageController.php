@@ -75,19 +75,24 @@ class PageController extends AbstractController
                 ], 403);
             }
     
+            // Vérifier si c'est une vraie transition (pas un refresh)
+            $isNewPage = $adventure->getCurrentPage()?->getId() !== $targetPage->getId();
+
             // ✅ Mise à jour de la progression
             $adventureService->updatePage($adventure, $targetPage, $fromPage);
 
-            // 🩹 Guérison : +1 END si discipline Guérison et pas de combat sur cette page
-            $hasCombat = $targetPage->getMonster() !== null;
-            if (!$hasCombat) {
-                $skillService->applyHealing($adventurer);
-            }
-        }
+            if ($isNewPage) {
+                // 🩹 Guérison : +1 END si discipline Guérison et pas de combat sur cette page
+                $hasCombat = $targetPage->getMonster() !== null;
+                if (!$hasCombat) {
+                    $skillService->applyHealing($adventurer);
+                }
 
-        // 🍖 Repas obligatoire sur cette page
-        if ($targetPage->isRequiresMeal()) {
-            $skillService->handleMeal($adventurer, $equipmentService);
+                // 🍖 Repas obligatoire sur cette page
+                if ($targetPage->isRequiresMeal()) {
+                    $skillService->handleMeal($adventurer, $equipmentService);
+                }
+            }
         }
 
         $choices = [];

@@ -28,7 +28,7 @@ class SkillService
             throw new \LogicException('La discipline Kaï fournie n\'a pas de slug valide.');
         }
 
-        if ($adventurer->hasSlug($slug)) {
+        if ($adventurer->hasSkillSlug($slug)) {
             throw new \LogicException('L\'aventurier possède déjà la discipline ' . $skill->getName() . '.');
         }
 

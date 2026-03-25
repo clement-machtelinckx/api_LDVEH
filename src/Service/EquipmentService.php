@@ -19,6 +19,10 @@ class EquipmentService
      */
     public function addEquipment(Adventurer $adventurer, Equipment $equipment, int $quantity = 1): ?Equipment
     {
+        if ($quantity < 1) {
+            throw new \InvalidArgumentException('La quantité doit être supérieure ou égale à 1.');
+        }
+
         $removed = null;
 
         // Slot occupé → remplacement automatique (ex: gilet → cotte de mailles)
