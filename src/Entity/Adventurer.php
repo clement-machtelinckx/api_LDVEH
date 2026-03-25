@@ -37,6 +37,10 @@ class Adventurer
     #[Groups(['adventurer:read', 'adventurer:write'])]
     private ?string $AdventurerName = null;
 
+    #[ORM\Column(length: 255, nullable: true)]
+    #[Groups(['adventurer:read', 'adventurer:write'])]
+    private ?string $avatar = null;
+
     #[ORM\Column]
     #[Groups(['adventurer:read', 'adventurer:write'])]
     private ?int $Ability = null;
@@ -85,6 +89,18 @@ class Adventurer
     public function setAdventurerName(string $AdventurerName): static
     {
         $this->AdventurerName = $AdventurerName;
+
+        return $this;
+    }
+
+    public function getAvatar(): ?string
+    {
+        return $this->avatar;
+    }
+
+    public function setAvatar(?string $avatar): static
+    {
+        $this->avatar = $avatar;
 
         return $this;
     }
