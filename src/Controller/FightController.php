@@ -21,11 +21,14 @@ class FightController extends AbstractController
     ): JsonResponse {
         $data = json_decode($request->getContent(), true);
 
-        $adventurer = $adventurerRepo->findWithFullInventory($data['adventurerId'] ?? 0, $this->getUser());
+        $adventurer = $adventurerRepo->findOneBy([
+            'id' => $data['adventurerId'] ?? 0,
+            'user' => $this->getUser()
+        ]);
         $monster = $monsterRepo->find($data['monsterId'] ?? 0);
 
         if (!$adventurer || !$monster) {
-            return $this->json(['error' => 'Invalid adventurer or monster ID'], 400);
+            return $this->json(['error' => 'Aventurier ou monstre introuvable'], 404);
         }
 
         $result = $combatService->fight($adventurer, $monster);
