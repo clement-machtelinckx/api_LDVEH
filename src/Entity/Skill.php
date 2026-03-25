@@ -101,6 +101,7 @@ class Skill
     {
         if (!$this->adventurers->contains($adventurer)) {
             $this->adventurers->add($adventurer);
+            $adventurer->addSkill($this);
         }
 
         return $this;
@@ -108,7 +109,9 @@ class Skill
 
     public function removeAdventurer(Adventurer $adventurer): static
     {
-        $this->adventurers->removeElement($adventurer);
+        if ($this->adventurers->removeElement($adventurer)) {
+            $adventurer->removeSkill($this);
+        }
 
         return $this;
     }
