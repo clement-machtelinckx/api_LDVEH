@@ -5,6 +5,7 @@ namespace App\Repository;
 use App\Entity\Adventurer;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @extends ServiceEntityRepository<Adventurer>
@@ -16,28 +17,23 @@ class AdventurerRepository extends ServiceEntityRepository
         parent::__construct($registry, Adventurer::class);
     }
 
-    //    /**
-    //     * @return Adventurer[] Returns an array of Adventurer objects
-    //     */
-    //    public function findByExampleField($value): array
-    //    {
-    //        return $this->createQueryBuilder('a')
-    //            ->andWhere('a.exampleField = :val')
-    //            ->setParameter('val', $value)
-    //            ->orderBy('a.id', 'ASC')
-    //            ->setMaxResults(10)
-    //            ->getQuery()
-    //            ->getResult()
-    //        ;
-    //    }
+    /**
+     * Charge un aventurier avec ses équipements et skills en une seule requête.
+     */
+    public function findWithFullInventory(int $id, ?UserInterface $user = null): ?Adventurer
+    {
+        $qb = $this->createQueryBuilder('a')
+            ->leftJoin('a.adventurerEquipments', 'ae')->addSelect('ae')
+            ->leftJoin('ae.equipment', 'e')->addSelect('e')
+            ->leftJoin('a.skills', 's')->addSelect('s')
+            ->where('a.id = :id')
+            ->setParameter('id', $id);
 
-    //    public function findOneBySomeField($value): ?Adventurer
-    //    {
-    //        return $this->createQueryBuilder('a')
-    //            ->andWhere('a.exampleField = :val')
-    //            ->setParameter('val', $value)
-    //            ->getQuery()
-    //            ->getOneOrNullResult()
-    //        ;
-    //    }
+        if ($user !== null) {
+            $qb->andWhere('a.user = :user')
+               ->setParameter('user', $user);
+        }
+
+        return $qb->getQuery()->getOneOrNullResult();
+    }
 }

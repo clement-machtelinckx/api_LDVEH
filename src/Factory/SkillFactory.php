@@ -21,35 +21,10 @@ final class SkillFactory extends PersistentProxyObjectFactory
 
     protected function defaults(): array|callable
     {
-        $skills = [
-            [
-                'name' => 'Camouflage',
-                'description' => 'Se fondre dans le décor.',
-                'effect' => 'Permet de se cacher ou passer inaperçu.',
-            ],
-            [
-                'name' => 'Chasse',
-                'description' => 'Trouver de la nourriture en milieu naturel.',
-                'effect' => 'Évite de dépenser un repas hors zone aride.',
-            ],
-            [
-                'name' => 'Guérison',
-                'description' => 'Récupération progressive.',
-                'effect' => '+1 ENDURANCE hors combat sans dépasser le maximum.',
-            ],
-            [
-                'name' => 'Maîtrise des Armes',
-                'description' => 'Spécialisation martiale.',
-                'effect' => '+2 HABILETÉ avec l’arme maîtrisée.',
-            ],
-        ];
-
-        $skill = self::faker()->randomElement($skills);
-
         return [
-            'name' => $skill['name'],
-            'description' => $skill['description'],
-            'effect' => $skill['effect'],
+            'name' => self::faker()->word(),
+            'slug' => self::faker()->unique()->slug(2),
+            'description' => self::faker()->sentence(),
         ];
     }
 
@@ -58,12 +33,12 @@ final class SkillFactory extends PersistentProxyObjectFactory
         return $this;
     }
 
-    public function named(string $name, string $description = 'Description', string $effect = 'Effet'): static
+    public function named(string $name, string $slug, string $description = 'Description'): static
     {
         return $this->with([
             'name' => $name,
+            'slug' => $slug,
             'description' => $description,
-            'effect' => $effect,
         ]);
     }
 
@@ -71,8 +46,8 @@ final class SkillFactory extends PersistentProxyObjectFactory
     {
         return $this->with([
             'name' => 'Camouflage',
+            'slug' => 'camouflage',
             'description' => 'Se fondre dans le décor.',
-            'effect' => 'Permet de se cacher ou passer inaperçu.',
         ]);
     }
 
@@ -80,8 +55,17 @@ final class SkillFactory extends PersistentProxyObjectFactory
     {
         return $this->with([
             'name' => 'Guérison',
+            'slug' => 'guerison',
             'description' => 'Récupération progressive.',
-            'effect' => '+1 ENDURANCE hors combat sans dépasser le maximum.',
+        ]);
+    }
+
+    public function hunting(): static
+    {
+        return $this->with([
+            'name' => 'Chasse',
+            'slug' => 'chasse',
+            'description' => 'Trouver de la nourriture en milieu naturel.',
         ]);
     }
 
@@ -89,8 +73,26 @@ final class SkillFactory extends PersistentProxyObjectFactory
     {
         return $this->with([
             'name' => 'Maîtrise des Armes',
+            'slug' => 'maitrise_armes',
             'description' => 'Spécialisation martiale.',
-            'effect' => '+2 HABILETÉ avec l’arme maîtrisée.',
+        ]);
+    }
+
+    public function psychicPower(): static
+    {
+        return $this->with([
+            'name' => 'Puissance Psychique',
+            'slug' => 'puissance_psychique',
+            'description' => 'Attaque mentale en combat.',
+        ]);
+    }
+
+    public function psychicShield(): static
+    {
+        return $this->with([
+            'name' => 'Bouclier Psychique',
+            'slug' => 'bouclier_psychique',
+            'description' => 'Protection contre les agressions mentales.',
         ]);
     }
 }

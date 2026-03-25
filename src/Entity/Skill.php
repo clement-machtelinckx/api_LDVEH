@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\SkillRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -20,9 +22,24 @@ class Skill
     #[ORM\Column(type: Types::TEXT, nullable: true)]
     private ?string $description = null;
 
-    #[ORM\Column(type: Types::TEXT, nullable: true)]
-    private ?string $effect = null;
+    #[ORM\Column(length: 255, unique: true)]
+    private ?string $slug = null;
 
+    /**
+     * @var Collection<int, Adventurer>
+     */
+    #[ORM\ManyToMany(targetEntity: Adventurer::class, mappedBy: 'skills')]
+    private Collection $adventurers;
+
+    public function __construct()
+    {
+        $this->adventurers = new ArrayCollection();
+    }
+
+    public function __toString(): string
+    {
+        return $this->name ?? '';
+    }
 
     public function getId(): ?int
     {
@@ -60,17 +77,42 @@ class Skill
         return $this;
     }
 
-    public function getEffect(): ?string
+    public function getSlug(): ?string
     {
-        return $this->effect;
+        return $this->slug;
     }
 
-    public function setEffect(?string $effect): static
+    public function setSlug(string $slug): static
     {
-        $this->effect = $effect;
+        $this->slug = $slug;
 
         return $this;
     }
-    
 
+    /**
+     * @return Collection<int, Adventurer>
+     */
+    public function getAdventurers(): Collection
+    {
+        return $this->adventurers;
+    }
+
+    public function addAdventurer(Adventurer $adventurer): static
+    {
+        if (!$this->adventurers->contains($adventurer)) {
+            $this->adventurers->add($adventurer);
+            $adventurer->addSkill($this);
+        }
+
+        return $this;
+    }
+
+    public function removeAdventurer(Adventurer $adventurer): static
+    {
+        if ($this->adventurers->removeElement($adventurer)) {
+            $adventurer->removeSkill($this);
+        }
+
+        return $this;
+    }
 }

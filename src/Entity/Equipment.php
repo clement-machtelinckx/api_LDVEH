@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use App\Enum\EquipmentSlot;
+use App\Enum\EquipmentType;
 use App\Repository\EquipmentRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
@@ -20,8 +22,25 @@ class Equipment
     #[ORM\Column(type: Types::TEXT, nullable: true)]
     private ?string $description = null;
 
-    #[ORM\Column(type: Types::TEXT, nullable: true)]
-    private ?string $effect = null;
+    #[ORM\Column(length: 255, unique: true)]
+    private ?string $slug = null;
+
+    #[ORM\Column(length: 50, enumType: EquipmentType::class)]
+    private ?EquipmentType $type = null;
+
+    #[ORM\Column(length: 20, nullable: true, enumType: EquipmentSlot::class)]
+    private ?EquipmentSlot $slot = null;
+
+    #[ORM\Column(options: ['default' => 0])]
+    private int $enduranceBonus = 0;
+
+    #[ORM\Column(options: ['default' => 0])]
+    private int $healAmount = 0;
+
+    public function __toString(): string
+    {
+        return $this->name ?? '';
+    }
 
     public function getId(): ?int
     {
@@ -59,15 +78,84 @@ class Equipment
         return $this;
     }
 
-    public function getEffect(): ?string
+    public function getSlug(): ?string
     {
-        return $this->effect;
+        return $this->slug;
     }
 
-    public function setEffect(?string $effect): static
+    public function setSlug(string $slug): static
     {
-        $this->effect = $effect;
+        $this->slug = $slug;
 
         return $this;
     }
+
+    public function getType(): ?EquipmentType
+    {
+        return $this->type;
+    }
+
+    public function setType(EquipmentType $type): static
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+
+    public function getSlot(): ?EquipmentSlot
+    {
+        return $this->slot;
+    }
+
+    public function setSlot(?EquipmentSlot $slot): static
+    {
+        $this->slot = $slot;
+
+        return $this;
+    }
+
+    public function getTypeLabel(): string
+    {
+        return $this->type?->label() ?? '';
+    }
+
+    public function getSlotLabel(): string
+    {
+        return $this->slot?->label() ?? '-';
+    }
+
+    public function isConsumable(): bool
+    {
+        return $this->type?->isConsumable() ?? false;
+    }
+
+    public function goesInBackpack(): bool
+    {
+        return $this->type?->goesInBackpack() ?? false;
+    }
+
+    public function getEnduranceBonus(): int
+    {
+        return $this->enduranceBonus;
+    }
+
+    public function setEnduranceBonus(int $enduranceBonus): static
+    {
+        $this->enduranceBonus = $enduranceBonus;
+
+        return $this;
+    }
+
+    public function getHealAmount(): int
+    {
+        return $this->healAmount;
+    }
+
+    public function setHealAmount(int $healAmount): static
+    {
+        $this->healAmount = $healAmount;
+
+        return $this;
+    }
+
 }
