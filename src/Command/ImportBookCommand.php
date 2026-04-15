@@ -4,9 +4,11 @@
 namespace App\Command;
 
 use App\Entity\Book;
+use App\Entity\Equipment;
 use App\Entity\Page;
 use App\Entity\Choice;
 use App\Entity\Monster;
+use App\Enum\EquipmentType;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
@@ -36,6 +38,8 @@ class ImportBookCommand extends Command
             $this->em->getConnection()->executeStatement('DELETE FROM monster');
             $this->em->getConnection()->executeStatement('DELETE FROM page');
             $this->em->getConnection()->executeStatement('DELETE FROM book');
+            $this->em->getConnection()->executeStatement('DELETE FROM adventurer_equipment');
+            $this->em->getConnection()->executeStatement('DELETE FROM equipment');
             $this->em->getConnection()->executeStatement('SET FOREIGN_KEY_CHECKS=1');
             $output->writeln('<info>Base nettoyee.</info>');
         }
@@ -56,6 +60,9 @@ class ImportBookCommand extends Command
             }
 
             $data = json_decode(file_get_contents($jsonPath), true);
+
+            // Collecter et créer les Equipment uniques depuis le JSON
+            $equipmentMap = $this->createEquipmentsFromJson($data, $output);
 
             $book = new Book();
             $book->setTitle($bookData['title']);
@@ -81,9 +88,12 @@ class ImportBookCommand extends Command
                 if (!empty($entry['itemsGained'])) $events['itemsGained'] = $entry['itemsGained'];
                 if (!empty($entry['itemsLost'])) $events['itemsLost'] = $entry['itemsLost'];
                 if (isset($entry['enduranceChange']) && $entry['enduranceChange'] !== null) $events['enduranceChange'] = $entry['enduranceChange'];
-                if (isset($entry['abilityChange']) && $entry['abilityChange'] !== null) $events['abilityChange'] = $entry['abilityChange'];
                 if (!empty($events)) {
                     $page->setEvents($events);
+                }
+
+                if (!empty($entry['requiresMeal'])) {
+                    $page->setRequiresMeal(true);
                 }
 
                 if (isset($entry['monster']) && $entry['monster']) {
@@ -99,6 +109,7 @@ class ImportBookCommand extends Command
                         $monster->setMonsterName($monsterData['monsterName']);
                         $monster->setAbility($monsterData['ability']);
                         $monster->setEndurance($monsterData['endurance']);
+                        $monster->setImmunePsychic($monsterData['immunePsychic'] ?? false);
                         $this->em->persist($monster);
                         if ($page->getMonster() === null) {
                             $page->setMonster($monster);
@@ -126,7 +137,14 @@ class ImportBookCommand extends Command
                     $choice->setPage($fromPage);
                     $choice->setNextPage($pageMap[$choiceData['nextPage']] ?? null);
                     if (!empty($choiceData['condition'])) {
-                        $choice->setCondition($choiceData['condition']);
+                        $cond = $choiceData['condition'];
+                        if (is_string($cond)) {
+                            $cond = ['slug' => $cond, 'type' => 'skill'];
+                        }
+                        $choice->setCondition($cond);
+                    }
+                    if (!empty($choiceData['events'])) {
+                        $choice->setEvents($choiceData['events']);
                     }
                     $this->em->persist($choice);
                 }
@@ -138,5 +156,85 @@ class ImportBookCommand extends Command
 
         $output->writeln('<comment>📚 Tous les livres ont été importés avec succès !</comment>');
         return Command::SUCCESS;
+    }
+
+    /**
+     * Parcourt le JSON, collecte tous les slugs uniques (itemsGained + itemsLost + conditions item),
+     * et crée les Equipment en base s'ils n'existent pas déjà.
+     *
+     * @return array<string, Equipment> slug => Equipment
+     */
+    private function createEquipmentsFromJson(array $data, OutputInterface $output): array
+    {
+        $slugs = [];      // slug => type (string)
+        $healAmounts = []; // slug => healAmount (int)
+
+        foreach ($data as $entry) {
+            // Items gagnés/perdus/disponibles
+            foreach (['itemsGained', 'itemsLost', 'itemsAvailable'] as $key) {
+                foreach ($entry[$key] ?? [] as $item) {
+                    if (!empty($item['slug']) && !empty($item['type']) && $item['type'] !== 'gold') {
+                        $slugs[$item['slug']] = $item['type'];
+                        if (!empty($item['healAmount'])) {
+                            $healAmounts[$item['slug']] = (int) $item['healAmount'];
+                        }
+                    }
+                }
+            }
+
+            // Items dans les events des choix
+            foreach ($entry['choices'] ?? [] as $choice) {
+                foreach (['itemsGained', 'itemsLost', 'itemsAvailable'] as $key) {
+                    foreach ($choice['events'][$key] ?? [] as $item) {
+                        if (!empty($item['slug']) && !empty($item['type']) && $item['type'] !== 'gold') {
+                            $slugs[$item['slug']] = $item['type'];
+                            if (!empty($item['healAmount'])) {
+                                $healAmounts[$item['slug']] = (int) $item['healAmount'];
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Récupérer les Equipment déjà en base
+        $existingEquipments = $this->em->getRepository(Equipment::class)->findAll();
+        $equipmentMap = [];
+        foreach ($existingEquipments as $eq) {
+            $equipmentMap[$eq->getSlug()] = $eq;
+        }
+
+        $created = 0;
+        foreach ($slugs as $slug => $typeStr) {
+            if (isset($equipmentMap[$slug])) {
+                continue; // déjà en base
+            }
+
+            $type = EquipmentType::tryFrom($typeStr);
+            if (!$type) {
+                $output->writeln("<comment>⚠️  Type inconnu '$typeStr' pour slug '$slug', ignoré.</comment>");
+                continue;
+            }
+
+            // Générer un nom lisible depuis le slug : "potion_de_guerison" -> "Potion de guérison"
+            $name = ucfirst(str_replace('_', ' ', $slug));
+
+            $equipment = new Equipment();
+            $equipment->setSlug($slug);
+            $equipment->setName($name);
+            $equipment->setType($type);
+            $equipment->setHealAmount($healAmounts[$slug] ?? 0);
+            $this->em->persist($equipment);
+
+            $equipmentMap[$slug] = $equipment;
+            $created++;
+        }
+
+        if ($created > 0) {
+            $this->em->flush();
+            $output->writeln("<info>🎒 $created équipements créés depuis le JSON.</info>");
+        }
+
+        return $equipmentMap;
     }
 }

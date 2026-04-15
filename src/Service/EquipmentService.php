@@ -118,7 +118,7 @@ class EquipmentService
         return $count;
     }
 
-    private function countBackpack(Adventurer $adventurer): int
+    public function countBackpack(Adventurer $adventurer): int
     {
         $count = 0;
         foreach ($adventurer->getAdventurerEquipments() as $ae) {

@@ -22,6 +22,9 @@ class Monster
     #[ORM\Column]
     private ?int $endurance = null;
 
+    #[ORM\Column(type: 'boolean', options: ['default' => false])]
+    private bool $immunePsychic = false;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -59,6 +62,18 @@ class Monster
     public function setEndurance(int $endurance): static
     {
         $this->endurance = $endurance;
+
+        return $this;
+    }
+
+    public function isImmunePsychic(): bool
+    {
+        return $this->immunePsychic;
+    }
+
+    public function setImmunePsychic(bool $immunePsychic): static
+    {
+        $this->immunePsychic = $immunePsychic;
 
         return $this;
     }

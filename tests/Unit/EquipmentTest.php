@@ -123,9 +123,9 @@ class EquipmentTest extends TestCase
         $weapon->setType(EquipmentType::Weapon);
         $this->assertFalse($weapon->goesInBackpack());
 
-        $quest = new Equipment();
-        $quest->setType(EquipmentType::QuestItem);
-        $this->assertFalse($quest->goesInBackpack());
+        $special = new Equipment();
+        $special->setType(EquipmentType::SpecialObject);
+        $this->assertFalse($special->goesInBackpack());
     }
 
     public function testTypeLabel(): void

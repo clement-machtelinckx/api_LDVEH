@@ -91,6 +91,7 @@ class Adventurer
 
     #[ORM\Column(options: ['default' => 0])]
     #[Assert\Range(min: 0, max: 50, notInRangeMessage: 'Or : entre {{ min }} et {{ max }} couronnes.')]
+    #[Groups(['adventurer:read'])]
     private int $gold = 0;
 
     #[ORM\Column]

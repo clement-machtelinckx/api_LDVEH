@@ -201,4 +201,28 @@ class Page
         return $this->endingType === 'victory';
     }
 
+    public function getEvents(): ?array
+    {
+        return $this->events;
+    }
+
+    public function setEvents(?array $events): static
+    {
+        $this->events = $events;
+
+        return $this;
+    }
+
+    public function isRequiresMeal(): bool
+    {
+        return $this->requiresMeal;
+    }
+
+    public function setRequiresMeal(bool $requiresMeal): static
+    {
+        $this->requiresMeal = $requiresMeal;
+
+        return $this;
+    }
+
 }

@@ -96,7 +96,7 @@ final class EquipmentFactory extends PersistentProxyObjectFactory
         return $this->with([
             'name' => 'Clé Dorée',
             'slug' => $slug,
-            'type' => EquipmentType::QuestItem,
+            'type' => EquipmentType::SpecialObject,
         ]);
     }
 }

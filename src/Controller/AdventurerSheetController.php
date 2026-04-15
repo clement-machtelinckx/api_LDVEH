@@ -75,18 +75,6 @@ class AdventurerSheetController extends AbstractController
             }
         }
 
-        // Objets de quête
-        $questItems = [];
-        foreach ($adventurer->getAdventurerEquipments() as $ae) {
-            $eq = $ae->getEquipment();
-            if ($eq->getType() === \App\Enum\EquipmentType::QuestItem) {
-                $questItems[] = [
-                    'name' => $eq->getName(),
-                    'slug' => $eq->getSlug(),
-                ];
-            }
-        }
-
         // Disciplines Kaï
         $skills = [];
         foreach ($adventurer->getSkills() as $skill) {
@@ -119,7 +107,6 @@ class AdventurerSheetController extends AbstractController
                 'count' => $backpackCount,
                 'max' => $adventurer::MAX_BACKPACK,
             ],
-            'questItems' => $questItems,
             'skills' => $skills,
             'limits' => [
                 'maxWeapons' => $adventurer::MAX_WEAPONS,
