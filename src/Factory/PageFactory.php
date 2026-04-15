@@ -2,24 +2,17 @@
 
 namespace App\Factory;
 
+use App\Entity\Book;
+use App\Entity\Monster;
 use App\Entity\Page;
 use Zenstruck\Foundry\Persistence\PersistentProxyObjectFactory;
+use Zenstruck\Foundry\Proxy;
 
 /**
  * @extends PersistentProxyObjectFactory<Page>
  */
 final class PageFactory extends PersistentProxyObjectFactory
 {
-    /**
-     * Static counter to generate unique page numbers.
-     * Note: This approach is acceptable for test purposes. For production use cases
-     * or parallel test execution, consider using database sequences.
-     */
-    private static int $pageNumberCounter = 1;
-
-    /**
-     * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#factories-as-services
-     */
     public function __construct()
     {
     }
@@ -29,29 +22,35 @@ final class PageFactory extends PersistentProxyObjectFactory
         return Page::class;
     }
 
-    /**
-     * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#model-factories
-     */
     protected function defaults(): array|callable
     {
         return [
             'book' => BookFactory::new(),
-            'pageNumber' => self::$pageNumberCounter++,
-            'content' => self::faker()->paragraphs(3, true),
+            'pageNumber' => self::faker()->numberBetween(1, 350),
+            'content' => self::faker()->paragraph(),
+            'monster' => null,
             'combatIsBlocking' => false,
             'endingType' => null,
-            'monster' => null,
         ];
     }
 
-    /**
-     * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#initialization
-     */
     protected function initialize(): static
     {
-        return $this
-            // ->afterInstantiate(function(Page $page): void {})
-        ;
+        return $this;
+    }
+
+    public function forBook(BookFactory|Book|Proxy $book): static
+    {
+        return $this->with([
+            'book' => $book,
+        ]);
+    }
+
+    public function withPageNumber(int $pageNumber): static
+    {
+        return $this->with([
+            'pageNumber' => $pageNumber,
+        ]);
     }
 
     public function withMonster(): static
@@ -59,6 +58,22 @@ final class PageFactory extends PersistentProxyObjectFactory
         return $this->with([
             'monster' => MonsterFactory::new(),
             'combatIsBlocking' => true,
+        ]);
+    }
+
+    public function withSpecificMonster(MonsterFactory|Monster|Proxy $monster, bool $isBlocking = true): static
+    {
+        return $this->with([
+            'monster' => $monster,
+            'combatIsBlocking' => $isBlocking,
+        ]);
+    }
+
+    public function withCombat(bool $isBlocking = true): static
+    {
+        return $this->with([
+            'monster' => MonsterFactory::new(),
+            'combatIsBlocking' => $isBlocking,
         ]);
     }
 
@@ -76,11 +91,12 @@ final class PageFactory extends PersistentProxyObjectFactory
         ]);
     }
 
-    public function withCombat(bool $isBlocking = true): static
+    public function normal(): static
     {
         return $this->with([
-            'monster' => MonsterFactory::new(),
-            'combatIsBlocking' => $isBlocking,
+            'endingType' => null,
+            'monster' => null,
+            'combatIsBlocking' => false,
         ]);
     }
 }

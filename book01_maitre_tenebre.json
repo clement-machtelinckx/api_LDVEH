@@ -1503,7 +1503,13 @@
         "text": "descendre le flanc de la colline",
         "nextPage": 248
       }
-    ]
+    ],
+    "monster":
+    {
+      "monsterName": "GLOK",
+      "ability": 13,
+      "endurance": 10
+    }
   },
   {
     "pageNumber": 113,

@@ -43,7 +43,9 @@ class AdventureController extends AbstractController
         $adventurer->setUser($user);
         $adventurer->setAdventurerName($adventurerName);
         $adventurer->setAbility(10 + random_int(1, 10));
-        $adventurer->setEndurance(20 + random_int(1, 10));
+        $endurance = 20 + random_int(1, 10);
+        $adventurer->setEndurance($endurance);
+        $adventurer->setMaxEndurance($endurance);
         $em->persist($adventurer);
     
         // Création de l’aventure
