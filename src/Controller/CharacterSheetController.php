@@ -47,6 +47,7 @@ class CharacterSheetController extends AbstractController
         $adventurer->setAvatar($avatar !== '' ? $avatar : null);
         $adventurer->setAbility($ability);
         $adventurer->setEndurance($endurance);
+        $adventurer->setMaxEndurance($endurance);
 
         $em->persist($adventurer);
         $em->flush();
