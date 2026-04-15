@@ -1505,13 +1505,11 @@
       }
     ],
     "monster":
-    [
-      {
-        "name": "GLOK",
-        "ability": 13,
-        "endurance": 10
-      }
-    ]
+    {
+      "monsterName": "GLOK",
+      "ability": 13,
+      "endurance": 10
+    }
   },
   {
     "pageNumber": 113,
