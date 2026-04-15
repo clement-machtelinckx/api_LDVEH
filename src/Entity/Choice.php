@@ -45,6 +45,14 @@ class Choice
     #[ORM\Column(nullable: true)]
     private ?bool $requiresVictory = null;
 
+    #[ORM\Column(name: '`condition`', type: 'json', nullable: true)]
+    #[Groups(['choice:read', 'page:read'])]
+    private ?array $condition = null;
+
+    #[ORM\Column(type: 'json', nullable: true)]
+    #[Groups(['choice:read', 'page:read'])]
+    private ?array $events = null;
+
 
     public function getId(): ?int
     {
@@ -113,6 +121,30 @@ class Choice
     public function __toString(): string
     {
         return $this->id; 
+    }
+
+    public function getCondition(): ?array
+    {
+        return $this->condition;
+    }
+
+    public function setCondition(?array $condition): static
+    {
+        $this->condition = $condition;
+
+        return $this;
+    }
+
+    public function getEvents(): ?array
+    {
+        return $this->events;
+    }
+
+    public function setEvents(?array $events): static
+    {
+        $this->events = $events;
+
+        return $this;
     }
 
     public function isRequiresVictory(): ?bool

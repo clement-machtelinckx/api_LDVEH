@@ -16,10 +16,16 @@ class AdventurerSheetController extends AbstractController
         int $id,
         AdventurerRepository $adventurerRepo,
     ): JsonResponse {
-        $adventurer = $adventurerRepo->findWithFullInventory($id, $this->getUser());
+        $adventurer = $adventurerRepo->find($id);
 
         if (!$adventurer) {
             return $this->json(['error' => 'Aventurier introuvable.'], 404);
+        }
+
+        // Sécurité : seul le propriétaire ou un admin peut voir la fiche
+        $user = $this->getUser();
+        if ($adventurer->getUser() !== $user && !$this->isGranted('ROLE_ADMIN')) {
+            return $this->json(['error' => 'Accès refusé.'], 403);
         }
 
         // Armes
@@ -69,18 +75,6 @@ class AdventurerSheetController extends AbstractController
             }
         }
 
-        // Objets de quête
-        $questItems = [];
-        foreach ($adventurer->getAdventurerEquipments() as $ae) {
-            $eq = $ae->getEquipment();
-            if ($eq->getType() === \App\Enum\EquipmentType::QuestItem) {
-                $questItems[] = [
-                    'name' => $eq->getName(),
-                    'slug' => $eq->getSlug(),
-                ];
-            }
-        }
-
         // Disciplines Kaï
         $skills = [];
         foreach ($adventurer->getSkills() as $skill) {
@@ -113,7 +107,6 @@ class AdventurerSheetController extends AbstractController
                 'count' => $backpackCount,
                 'max' => $adventurer::MAX_BACKPACK,
             ],
-            'questItems' => $questItems,
             'skills' => $skills,
             'limits' => [
                 'maxWeapons' => $adventurer::MAX_WEAPONS,

@@ -8,6 +8,7 @@ use App\Repository\PageRepository;
 use App\Service\AdventureService;
 use App\Service\CombatService;
 use App\Service\EquipmentService;
+use App\Service\NavigationService;
 use App\Service\SkillService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -27,6 +28,7 @@ class PageController extends AbstractController
         AdventureService $adventureService,
         SkillService $skillService,
         EquipmentService $equipmentService,
+        NavigationService $navigationService,
         ?int $fromPageId = null,
     ): JsonResponse {
         $adventurer = $adventurerRepo->findWithFullInventory($adventurerId, $this->getUser());
@@ -48,25 +50,35 @@ class PageController extends AbstractController
     
         if ($fromPageId) {
             if (!$fromPage) {
-                return $this->json(['error' => 'Page précédente introuvable'], 404);
+                return $this->json(['error' => 'Page precedente introuvable'], 404);
             }
-    
-            $isAccessible = false;
+
+            // Trouver le choix emprunte
+            $takenChoice = null;
             foreach ($fromPage->getChoices() as $choice) {
                 if ($choice->getNextPage()?->getId() === $pageId) {
-                    $isAccessible = true;
+                    $takenChoice = $choice;
                     break;
                 }
             }
-    
-            if (!$isAccessible) {
+
+            if (!$takenChoice) {
                 return $this->json([
-                    'error' => 'Cette page n’est pas accessible depuis la page précédente.',
+                    'error' => 'Cette page n\'est pas accessible depuis la page precedente.',
                     'fromPageId' => $fromPageId,
                     'requestedPageId' => $pageId,
                 ], 403);
             }
-    
+
+            // Verifier la condition du choix
+            $condition = $takenChoice->getCondition();
+            if ($condition && !$navigationService->checkCondition($adventurer, $condition)) {
+                return $this->json([
+                    'error' => 'Vous ne remplissez pas la condition pour ce choix.',
+                    'condition' => $condition,
+                ], 403);
+            }
+
             if (!$combatService->canAccessPage($fromPage, $adventurer)) {
                 return $this->json([
                     'error' => 'Vous devez vaincre le monstre pour continuer.',
@@ -74,21 +86,28 @@ class PageController extends AbstractController
                     'monsterName' => $fromPage->getMonster()?->getMonsterName(),
                 ], 403);
             }
-    
-            // Vérifier si c'est une vraie transition (pas un refresh)
+
             $isNewPage = $adventure->getCurrentPage()?->getId() !== $targetPage->getId();
 
-            // ✅ Mise à jour de la progression
+            // Mise a jour de la progression
             $adventureService->updatePage($adventure, $targetPage, $fromPage);
 
             if ($isNewPage) {
-                // 🩹 Guérison : +1 END si discipline Guérison et pas de combat sur cette page
-                $hasCombat = $targetPage->getMonster() !== null;
-                if (!$hasCombat) {
+                // Consommer la condition du choix (gold, item)
+                $navigationService->consumeCondition($adventurer, $takenChoice->getCondition());
+
+                // Appliquer les events du choix pris (ex: perte END sur jet de des)
+                $navigationService->applyChoiceEvents($adventurer, $takenChoice);
+
+                // Appliquer les events de la page (items, endurance)
+                $navigationService->applyPageEvents($adventurer, $targetPage);
+
+                // Guerison : +1 END si discipline Guerison et pas de combat
+                if ($targetPage->getMonster() === null) {
                     $skillService->applyHealing($adventurer);
                 }
 
-                // 🍖 Repas obligatoire sur cette page
+                // Repas obligatoire
                 if ($targetPage->isRequiresMeal()) {
                     $skillService->handleMeal($adventurer, $equipmentService);
                 }
@@ -97,10 +116,20 @@ class PageController extends AbstractController
 
         $choices = [];
         foreach ($targetPage->getChoices() as $choice) {
-            $choices[] = [
+            $isDiceRoll = str_starts_with($choice->getText() ?? '', 'Jet de des:');
+            $choiceData = [
                 'text' => $choice->getText(),
                 'nextPage' => $choice->getNextPage()?->getId(),
+                'requiresDiceRoll' => $isDiceRoll,
             ];
+            $cond = $choice->getCondition();
+            if ($cond) {
+                $choiceData['condition'] = $cond;
+                $choiceData['available'] = $navigationService->checkCondition($adventurer, $cond);
+            } else {
+                $choiceData['available'] = true;
+            }
+            $choices[] = $choiceData;
         }
     
         return $this->json([
@@ -113,8 +142,9 @@ class PageController extends AbstractController
             'isBlocking' => $targetPage->isCombatIsBlocking(),
             'choices' => $choices,
             'endingType' => $targetPage->getEndingType(),
+            'adventurerAbility' => $adventurer->getAbility(),
+            'adventurerEndurance' => $adventurer->getEndurance(),
+            'adventurerGold' => $adventurer->getGold(),
         ]);
     }
-    
-    
 }

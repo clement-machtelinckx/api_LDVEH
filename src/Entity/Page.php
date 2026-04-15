@@ -59,6 +59,10 @@ class Page
     #[Groups(['page:read', 'adventurer:read'])]
     private ?string $endingType = null; // "death", "victory", or null
 
+    #[ORM\Column(type: 'json', nullable: true)]
+    #[Groups(['page:read'])]
+    private ?array $events = null;
+
     #[ORM\Column(options: ['default' => false])]
     private bool $requiresMeal = false;
 
@@ -187,6 +191,28 @@ class Page
         return $this;
     }
 
+    public function isEnding(): bool
+    {
+        return $this->endingType !== null;
+    }
+
+    public function isVictory(): bool
+    {
+        return $this->endingType === 'victory';
+    }
+
+    public function getEvents(): ?array
+    {
+        return $this->events;
+    }
+
+    public function setEvents(?array $events): static
+    {
+        $this->events = $events;
+
+        return $this;
+    }
+
     public function isRequiresMeal(): bool
     {
         return $this->requiresMeal;
@@ -197,16 +223,6 @@ class Page
         $this->requiresMeal = $requiresMeal;
 
         return $this;
-    }
-
-    public function isEnding(): bool
-    {
-        return $this->endingType !== null;
-    }
-
-    public function isVictory(): bool
-    {
-        return $this->endingType === 'victory';
     }
 
 }

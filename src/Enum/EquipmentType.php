@@ -9,7 +9,6 @@ enum EquipmentType: string
     case Potion = 'potion';
     case Meal = 'meal';
     case BackpackItem = 'backpack_item';
-    case QuestItem = 'quest_item';
 
     public function label(): string
     {
@@ -19,7 +18,6 @@ enum EquipmentType: string
             self::Potion => 'Potion',
             self::Meal => 'Repas',
             self::BackpackItem => 'Sac à Dos',
-            self::QuestItem => 'Objet de Quête',
         };
     }
 
